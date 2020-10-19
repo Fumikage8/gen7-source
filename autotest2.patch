@@ -1,0 +1,13 @@
+diff --git niji_props/niji/niji.end.common.props niji_props/niji/niji.end.common.props
+index 7c1de46..a5d7962 100644
+--- niji_props/niji/niji.end.common.props
++++ niji_props/niji/niji.end.common.props
+@@ -17,7 +17,7 @@
+       <PreprocessorDefinitions>GF_PLATFORM_CTR;GFL_PLATFORM_3DS;GFL_PLATFORM_NINTENDO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <PreprocessorDefinitions Condition="'$(GFConfig)'=='Debug'">GFL_HIO_ENABLE=1;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <PreprocessorDefinitions Condition="'$(GFConfig)'=='Develop'">GFL_HIO_ENABLE=1;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;NN_SWITCH_ENABLE_HOST_IO=1;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+-      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Release'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
++      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Release'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;GFL_ENABLE_DYNAMIC_HEADER=0;GFL_ENABLE_AUTO_TEST=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <PreprocessorDefinitions Condition="'$(GFConfig)'=='Final'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+     </ClCompile>
+     <ClCompile Label="Configuration" Condition="'$(Platform)'=='Win32'">

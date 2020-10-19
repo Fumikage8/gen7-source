@@ -1,0 +1,148 @@
+diff --git gflib2/debug/source/gfl_debug_print.cpp gflib2/debug/source/gfl_debug_print.cpp
+index f3846e8..a82fc07 100644
+--- gflib2/debug/source/gfl_debug_print.cpp
++++ gflib2/debug/source/gfl_debug_print.cpp
+@@ -28,7 +28,7 @@
+ #include <string.h>
+ #include <stdarg.h>
+ #include <assert.h>
+-
++#include <iostream>
+ 
+ 
+ 
+@@ -107,7 +107,7 @@ void PrintCore(const int flag , const char* pszFormat,...)
+     va_start(argp, pszFormat);
+     vsprintf_s( pszBuf, bufSize, pszFormat, argp);
+     va_end(argp);
+-    ::OutputDebugStringA( pszBuf);	
++    ::std::cout << pszBuf << std::flush;
+ #elif defined(GF_PLATFORM_CTR)
+     va_list	argp;
+     va_start(argp, pszFormat);
+@@ -139,7 +139,7 @@ void UserPrint( const char * fmt, ... )
+   va_start(argp, fmt);
+   vsprintf_s( pszBuf, bufSize, fmt, argp);
+   va_end(argp);
+-  ::OutputDebugStringA( pszBuf);	
++  ::std::cout << pszBuf << std::flush;
+ #elif defined(GF_PLATFORM_CTR)
+   va_list	argp;
+   va_start(argp, fmt);
+@@ -182,7 +182,7 @@ void ReleasePrintCore( const char* pszFormat , ... )
+   va_start(argp, pszFormat);
+   vsprintf_s( pszBuf, bufSize, pszFormat, argp);
+   va_end(argp);
+-  ::OutputDebugStringA( pszBuf);	
++  ::std::cout << pszBuf << std::flush;	
+ #elif defined(GF_PLATFORM_CTR)
+   va_list	argp;
+   va_start(argp, pszFormat);
+diff --git gflib2/gfx/source/WinOpenGL/gfl2_WinOpenGLGL.cpp gflib2/gfx/source/WinOpenGL/gfl2_WinOpenGLGL.cpp
+index b54be9e..b457fb2 100644
+--- gflib2/gfx/source/WinOpenGL/gfl2_WinOpenGLGL.cpp
++++ gflib2/gfx/source/WinOpenGL/gfl2_WinOpenGLGL.cpp
+@@ -22,6 +22,7 @@
+ #include <gfx/include/WinOpenGL/gfl2_WinOpenGLQueryObject.h>
+ 
+ #include <vector>
++#include <iostream>
+ #include <sstream>
+ 
+ #include <system/include/Timer/gfl2_PerformanceCounter.h>
+@@ -242,7 +243,7 @@ void APIENTRY WinOpenGLGL::GlDebugCallback(GLenum source, GLenum type, GLuint id
+   // 通知以外なら表示する
+   if (severity != GL_DEBUG_SEVERITY_NOTIFICATION)
+   {
+-    OutputDebugStringA(ss.str().c_str());
++    ::std::cout << ss.str();
+   }
+ 
+   // エラーの深刻度がHIGHならアサートで止める
+@@ -1081,7 +1082,7 @@ b32 WinOpenGLGL::BeginScene_()
+     }
+ 
+     // フレームバッファの設定が足りない、もしくは間違いがあるまま描画に入ろうとしている
+-    OutputDebugStringA(errorMessage);
++    ::std::cout << errorMessage;
+     GFL_ASSERT(0);
+   }
+ 	glBindFramebuffer( GL_FRAMEBUFFER, pDisplay->m_FrameBufferID );
+diff --git niji_project/prog/Main/project/niji.vcxproj niji_project/prog/Main/project/niji.vcxproj
+index 9049043..978c78f 100644
+--- niji_project/prog/Main/project/niji.vcxproj
++++ niji_project/prog/Main/project/niji.vcxproj
+@@ -237,6 +237,7 @@
+       <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\WinExt\extlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+       <LargeAddressAware>true</LargeAddressAware>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+@@ -247,6 +248,7 @@
+       <OptimizeReferences>false</OptimizeReferences>
+       <EnableCOMDATFolding>false</EnableCOMDATFolding>
+       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+@@ -259,6 +261,7 @@
+       <OptimizeReferences>false</OptimizeReferences>
+       <EnableCOMDATFolding>false</EnableCOMDATFolding>
+       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
++      <SubSystem>Console</SubSystem>
+     </Link>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+@@ -268,30 +271,35 @@
+     <Link>
+       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+       <LargeAddressAware>true</LargeAddressAware>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+     <Link>
+       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+       <LargeAddressAware>true</LargeAddressAware>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+     <Link>
+       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+       <LargeAddressAware>true</LargeAddressAware>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+     <Link>
+       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+       <LargeAddressAware>true</LargeAddressAware>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+     <Link>
+       <IgnoreSpecificDefaultLibraries>msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+       <LargeAddressAware>true</LargeAddressAware>
++      <SubSystem>Console</SubSystem>
+     </Link>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+diff --git niji_project/prog/Main/source/Main.cpp niji_project/prog/Main/source/Main.cpp
+index 83065b1..c620242 100644
+--- niji_project/prog/Main/source/Main.cpp
++++ niji_project/prog/Main/source/Main.cpp
+@@ -29,7 +29,8 @@ namespace Main{
+ #include <windows.h>
+ 
+ 
+-int WINAPI WinMain( HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR szCmdLine, int sw )
++// int WINAPI WinMain( HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR szCmdLine, int sw )
++int main(int argc, char** argv)
+ {
+ 	MSG msg;
+   Main::Framework::IApplication	*app = Main::CreateApplication();
