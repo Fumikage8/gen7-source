@@ -1,0 +1,66 @@
+# VisualStudio2013でniji header, niji sourceを使用する方法
+
+## 背景
+
+VisualStudio2013では,ヘッダー・ソースのテンプレートをセットアップする際に,
+VisualStudio2012と同様の方法を用いることができなかった。
+
+その回避策として,下記の方法を考案した.
+
+## 実行手順
+
+`vcprojectitems`というディレクトリを差し替える方法を用いた。
+そのための手順と成功したか否かを確認する手順を以下に示す。
+
+0. `C:/Program Files (x64)/Microsoft Visual Studio 12.0/VC/`を開く.
+    - そこに`vsprojectitems`というディレクトリがあることを確認する.
+1. `C:/Program Files (x64)/Microsoft Visual Studio 12.0/VC/vcprojectitems`の名前を変える.
+    - 変更後の名前は適当なものでよい。（例, `vcprojectitems_original`）
+    - 削除してもよいが、その場合問題が発生した場合の修復が困難となる.
+2. `vsprojectitems.zip`を解凍する.
+3. 解凍した結果`vsprojectitems`というディレクトリが作成されたことを確認する.
+4. 作成された`vsprojectitems`を`C:/Program Files (x64)/Microsoft Visual Studio 12.0/VC/`に置く.
+5. 変更が反映されているか否かを確認する.
+    0. 既にVisualStudio2013が起動している状態ならば,それを終了する.
+    1. VisualStudio2013を起動する.
+    2. 作成済みのProjectを右クリックし,追加->新しい項目を選択する.
+    3. その際,VisualC++のリストに「niji」が追加されていることを確認する.
+    4. 「niji」を選択し「niji source file(.cpp)」「niji header file(.h)」が表示されていることを確認する.
+
+## vsprojectitemsの構成
+
+差し替えた後のvsprojectitems内のファイル・ディレクトリを示す.
+元のvsprojectitemから変更・追加した箇所を**強調表示**する.
+説明はファイル・ディレクトリ名の後ろに「...」のようにして書き加えた.
+変更・追加していないディレクトリは、それ以降の記載を省略した.
+
+- Code
+- Data
+- **niji** 「新規作成」
+    - **niji.vsdir** 「Code/code.vsdirを元に改変した」
+    - **niji_header.vstemplate** 「niji_header.zipのMyTemplate.vstemplateを改変・改名した」
+    - **niji_source.vstemplate** 「niji_source.zipのMyTemplate.vstemplateを改変・改名した」
+    - **file** 「隠しディレクトリ.内部のファイルがテンプレートの選択候補に現れないようにするため.」
+        - **niji_header.h** 「niji_header.vstemplateから呼び出されるファイル」
+        - **niji_source.cpp** 「niji_header.vstemplateから呼び出されるファイル」
+- PropertySheets
+- Resource
+- Test
+- UI
+- Utility
+- Web
+- hfile.h
+- newc++file.cpp
+- **VCProjectItems.vsdir** 「nijiディレクトリの設定を行う1行を追加した」
+
+## 参考資料: VisualStudio2012での方法(niji_wikiより引用)
+
+0. VisualStudioのテンプレートを所定の場所にコピー
+    - `R:/home/niji/git_program/niji_props/template/ItemTemplates/*.zip`を
+    - `C:/Users/ユーザー名/Documents/Visual Studio 2012/Templates/ItemTemplates/Visual C++ プロジェクト`フォルダへコピー
+1. VisualStudioを再起動
+2. テンプレートを用いてファイルを作成する
+    - ソリューションエクスプローラーからファイルを追加したいフィルタを右クリック
+    - 追加->新しい項目->VisualC++で表示される一覧からniji_headerもしくはniji_sourceを選んで追加
+
+VisualStudio2013では,この方法を用いても反映されなかった.

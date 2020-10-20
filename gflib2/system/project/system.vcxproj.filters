@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\InputDevice">
+      <UniqueIdentifier>{90b76d20-1594-4eba-8afb-b90c820c7782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\InputDevice\WinDX11">
+      <UniqueIdentifier>{62b2eaf8-ff1d-41e4-9648-e2adcf36b607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\InputDevice">
+      <UniqueIdentifier>{70a7016d-b50c-4d3b-8bbb-aacb32218777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\nw">
+      <UniqueIdentifier>{f562230c-0958-4fc6-897d-321f114d3551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Timer">
+      <UniqueIdentifier>{8f5d4ccf-bd10-4e3b-893c-83f7d01f3a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\InputDevice\WinDX11">
+      <UniqueIdentifier>{07501b55-f28a-49ac-987e-7c803291dca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Timer\Win">
+      <UniqueIdentifier>{aef84054-7405-4560-8a96-4f2010ef134d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Timer\Ctr">
+      <UniqueIdentifier>{d99265ca-1c82-43da-ba4d-3bbd22897f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\InputDevice\CTR">
+      <UniqueIdentifier>{3cbeb253-dc88-41d0-8eaf-e0f7d1a5e0ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\InputDevice\CTR">
+      <UniqueIdentifier>{669a7b16-3f76-4266-a367-94a7be05fb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Date">
+      <UniqueIdentifier>{e0557c81-b107-459e-be92-0f8649060498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Date">
+      <UniqueIdentifier>{f4b03036-f1e0-4d1e-a833-940e7d84f8ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\InputDevice\gfl2_Mouse.cpp">
+      <Filter>ソース ファイル\InputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\InputDevice\gfl2_Pad.cpp">
+      <Filter>ソース ファイル\InputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\InputDevice\WinDX11\gfl2_WinDX11Mouse.cpp">
+      <Filter>ソース ファイル\InputDevice\WinDX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\InputDevice\WinDX11\gfl2_WinDX11Pad.cpp">
+      <Filter>ソース ファイル\InputDevice\WinDX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\InputDevice\CTR\gfl2_CTRPad.cpp">
+      <Filter>ソース ファイル\InputDevice\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Date\gfl2_Date.cpp">
+      <Filter>ソース ファイル\Date</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\InputDevice\gfl2_KeyBoard.cpp">
+      <Filter>ソース ファイル\InputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\InputDevice\WinDX11\gfl2_WinDX11KeyBoard.cpp">
+      <Filter>ソース ファイル\InputDevice\WinDX11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\InputDevice\gfl2_InputTypes.h">
+      <Filter>ヘッダー ファイル\InputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\gfl2_Mouse.h">
+      <Filter>ヘッダー ファイル\InputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\gfl2_Pad.h">
+      <Filter>ヘッダー ファイル\InputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\WinDX11\gfl2_WinDX11Mouse.h">
+      <Filter>ヘッダー ファイル\InputDevice\WinDX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\WinDX11\gfl2_WinDX11Pad.h">
+      <Filter>ヘッダー ファイル\InputDevice\WinDX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nw\libnw.h">
+      <Filter>ヘッダー ファイル\nw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Timer\gfl2_PerformanceCounter.h">
+      <Filter>ヘッダー ファイル\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Timer\Win\gfl2_WinPerformanceCounter.h">
+      <Filter>ヘッダー ファイル\Timer\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Timer\Ctr\gfl2_CtrPerformanceCounter.h">
+      <Filter>ヘッダー ファイル\Timer\Ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\CTR\gfl2_CTRPad.h">
+      <Filter>ヘッダー ファイル\InputDevice\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Date\gfl2_Date.h">
+      <Filter>ヘッダー ファイル\Date</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\gfl2_KeyBoard.h">
+      <Filter>ヘッダー ファイル\InputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputDevice\WinDX11\gfl2_WinDX11KeyBoard.h">
+      <Filter>ヘッダー ファイル\InputDevice\WinDX11</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

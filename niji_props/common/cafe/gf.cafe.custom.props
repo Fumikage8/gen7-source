@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <!---Path settings is required for all types -->
+  <PropertyGroup>
+    <IncludePath>$(CAFE_ROOT)\system\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(NW4F_ROOT)\Library\Eft\include;$(NW4F_ROOT)\Library\G3d\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(NW4F_ROOT)\Library\Lyt\include;$(NW4F_ROOT)\Library\Scfont\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(NW4F_ROOT)\Library\Snd\include;$(NW4F_ROOT)\Library\Sys\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(NW4F_ROOT)\Library\WinExt\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile Label="Configuration" Condition="'$(Platform)'=='Win32'">
+      <PreprocessorDefinitions Condition="'$(GFWin32Config)'=='Debug'">NW_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFWin32Config)'=='Develop'">NW_DEVELOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFWin32Config)'=='Release'">NW_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <!---Link settings is required for application type-->
+  <ItemDefinitionGroup Condition="'$(ConfigurationType)'=='Application' or '$(ConfigurationType)'=='RoApplication'">
+    <Link>
+      <!--AdditionalLibraryDirectories-->
+      <AdditionalLibraryDirectories>$(CAFE_ROOT)\system\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\Eft\lib\Win32\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\G3d\lib\Win32\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\Lyt\lib\Win32\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\Scfont\lib\Win32\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\Snd\lib\Win32\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\Sys\lib\Win32\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\WinExt\lib\Win32_vc12\$(GFWin32Config);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\WinExt\extlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <!--AdditionalDependencies-->
+      <AdditionalDependencies>texUtils$(GFCafeLibSuffix).lib;WinExt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libnw_eft.lib;libnw_lyt.lib;libnw_vwrlyt.lib;libnw_scfont.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libnw_snd.lib;libnw_snddev.lib;libnw_sndspy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libnw_dev.lib;libnw_mcs.lib;libnw_sys.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <!---GF_CUSTOM_TAGS_END-->
+</Project>

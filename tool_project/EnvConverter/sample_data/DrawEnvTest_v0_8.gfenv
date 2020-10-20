@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfEnv version="0.8">
+	<Source Path="C:/Users/takebe_makoto/Desktop/fieldsample/fieldsample/t01/drawenv_anim_test.mb" TargetNode="|DrawEnv1"/>
+	<DrawEnv Name="DrawEnv1" Priority="0" IsLinkEnv="false">
+		<WorldPos X="0.000000" Y="0.000000" Z="0.000000"/>
+		<FogLength Near="10000.000000" Far="20000.000000"/>
+		<FogColor R="0.000000" G="0.000000" B="0.000000"/>
+		<DepthOfField>
+			<Front Near="0.000000" Far="0.000000" Scale="0.000000"/>
+			<Back Near="8000.000000" Far="10000.000000" Scale="0.000000"/>
+		</DepthOfField>
+		<GlareFilter Range="0.700000" Intensity="0.000000"/>
+		<AABB>-500000 -500000 -500000 500000 500000 500000</AABB>
+		<LightSets>
+			<LightSet No="0">
+				<Lights>
+					<Light Name="EnvDirLight" Type="DirectionalLight">
+						<LocalPos X="0.000000" Y="0.000000" Z="0.000000"/>
+						<LocalDirection X="0.000000" Y="0.000000" Z="-1.000000"/>
+						<Color R="0.365515" G="0.365515" B="0.365515"/>
+						<ConeAngle Value="0.000000"/>
+						<Intensity Value="0.000000"/>
+					</Light>
+					<Light Name="EnvAmbLight" Type="AmbientLight">
+						<LocalPos X="0.000000" Y="0.000000" Z="0.000000"/>
+						<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+						<Color R="0.601511" G="0.601511" B="0.601511"/>
+						<ConeAngle Value="0.000000"/>
+						<Intensity Value="0.000000"/>
+					</Light>
+					<Light Name="pointLight1" Type="PointLight">
+						<LocalPos X="-240.283005" Y="191.444885" Z="-175.131180"/>
+						<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+						<Color R="1.000000" G="1.000000" B="1.000000"/>
+						<ConeAngle Value="0.000000"/>
+						<Intensity Value="100.000000"/>
+					</Light>
+				</Lights>
+			</LightSet>
+			<LightSet No="1">
+				<Lights/>
+			</LightSet>
+		</LightSets>
+		<Cameras>
+			<Camera Name="EnvCamera1">
+				<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+				<LocalMatrix>0.999048 0.000000 -0.043619 0.000000 -0.014919 0.939693 -0.341695 0.000000 0.040989 0.342020 0.938798 0.000000 0.000000 500.000000 500.000000 1.000000</LocalMatrix>
+				<LocalScale>1 1 1</LocalScale>
+				<LocalRotation>-0.349066 0.043633 0</LocalRotation>
+				<LocalTransform>0 500 500</LocalTransform>
+			</Camera>
+		</Cameras>
+	</DrawEnv>
+</GfEnv>
+

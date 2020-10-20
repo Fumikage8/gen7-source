@@ -1,0 +1,30 @@
+﻿<Window x:Class="MemoryVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="clr-namespace:MemoryVisualizer"
+        Title="Memory Visualizer" Height="720" Width="1280">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="ファイル">
+                <MenuItem Header="開く">
+                    <MenuItem Header="ROMイメージ" Click="MenuItem_OpenCCI_Click"></MenuItem>
+                    <MenuItem Header="ログファイル" Click="MenuItem_OpenLogFile_Click"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="ツール">
+                <MenuItem Header="オプション">
+                    <MenuItem Header="Load multiple lines...">
+                        <TextBox Text="1" Width="100" Name="MultiLoadTextBox"/>
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <UniformGrid Columns="4" DockPanel.Dock="Bottom" Height="50">
+            <Button VerticalContentAlignment="Center">|&lt;</Button>
+            <Button VerticalContentAlignment="Center">||</Button>
+            <Button VerticalContentAlignment="Center">&gt;</Button>
+            <Button VerticalContentAlignment="Center" Click="StepPlayButton_Click">&gt;|</Button>
+        </UniformGrid>
+        <v:HeapViewer x:Name="HeapViewer"></v:HeapViewer>
+    </DockPanel>
+</Window>

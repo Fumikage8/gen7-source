@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GFFileIO</name>
+    </assembly>
+    <members>
+        <member name="T:GFFileIO.BinaryFile">
+            <summary>
+            バイナリファイルの読み書きを扱うクラス
+            </summary>
+        </member>
+        <member name="M:GFFileIO.BinaryFile.Read(System.String)">
+            <summary>
+            ファイルを読み取った内容をbyte[]にして返す
+            </summary>
+            <param name="filePath">ファイルパス</param>
+            <returns>byte[] 読み取ったデータのバイト配列</returns>
+        </member>
+        <member name="M:GFFileIO.BinaryFile.Write(System.String,System.Byte[])">
+            <summary>
+            バイト配列をファイルに出力
+            </summary>
+            <param name="filePath">出力するファイルパス</param>
+            <param name="sourceBytes">書き込み対象となるバイト配列</param>
+        </member>
+        <member name="M:GFFileIO.BinaryFile.ReadAllBytes(System.IO.BinaryReader)">
+            <summary>
+            BinaryReaderからバイナリデータを読み取る
+            </summary>
+            <param name="binaryReader">バイナリリーダオブジェクト</param>
+            <returns>byte[] 読み取ったデータのバイト配列</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2161 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfMotion version="0.93" FrameSize="100" IsLoop="false" CurrrentUnit="film">
+	<Source Path="C:/Users/ishiguro_masateru/Desktop/sample/t01/map01_11_all_anim.mb" TargetNode="|DrawEnv1"/>
+	<ModelAABB>-1.598372 -1.423483 -1.650092 1.598372 1.423483 1.650092</ModelAABB>
+	<EnvAnimation>
+		<DrawEnv Name="DrawEnv1">
+			<LightSets>
+				<LightSet No="0">
+					<Light Name="EnvDirLight" Type="DirectionalLight">
+						<Frame Value="0">
+							<LocalPos X="0.000000" Y="0.000000" Z="0.000000"/>
+							<LocalDirection X="0.000000" Y="-0.707107" Z="-0.707107"/>
+							<Color R="0.362000" G="0.437000" B="0.734000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+					</Light>
+					<Light Name="EnvAmbLight" Type="AmbientLight">
+						<Frame Value="0">
+							<LocalPos X="0.000000" Y="0.000000" Z="0.000000"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="0.000000" G="0.046000" B="0.177000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+					</Light>
+					<Light Name="pointLight1" Type="PointLight">
+						<Frame Value="0">
+							<LocalPos X="0.000000" Y="183.586060" Z="-222.647278"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="100.000000"/>
+						</Frame>
+						<Frame Value="1">
+							<LocalPos X="0.000000" Y="183.586060" Z="-221.612000"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.800003"/>
+						</Frame>
+						<Frame Value="2">
+							<LocalPos X="0.000000" Y="183.586060" Z="-218.562164"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.400002"/>
+						</Frame>
+						<Frame Value="3">
+							<LocalPos X="0.000000" Y="183.586060" Z="-213.581680"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.599998"/>
+						</Frame>
+						<Frame Value="4">
+							<LocalPos X="0.000000" Y="183.586060" Z="-206.754517"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.199997"/>
+						</Frame>
+						<Frame Value="5">
+							<LocalPos X="0.000000" Y="183.586060" Z="-198.164597"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="150.000000"/>
+						</Frame>
+						<Frame Value="6">
+							<LocalPos X="0.000000" Y="183.586060" Z="-187.895859"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.800003"/>
+						</Frame>
+						<Frame Value="7">
+							<LocalPos X="0.000000" Y="183.586060" Z="-176.032257"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.399994"/>
+						</Frame>
+						<Frame Value="8">
+							<LocalPos X="0.000000" Y="183.586060" Z="-162.657715"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.600006"/>
+						</Frame>
+						<Frame Value="9">
+							<LocalPos X="0.000000" Y="183.586060" Z="-147.856186"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.199997"/>
+						</Frame>
+						<Frame Value="10">
+							<LocalPos X="0.000000" Y="183.586060" Z="-131.711609"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="200.000000"/>
+						</Frame>
+						<Frame Value="11">
+							<LocalPos X="0.000000" Y="183.586060" Z="-114.307915"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.199997"/>
+						</Frame>
+						<Frame Value="12">
+							<LocalPos X="0.000000" Y="183.586060" Z="-95.729057"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.599991"/>
+						</Frame>
+						<Frame Value="13">
+							<LocalPos X="0.000000" Y="183.586060" Z="-76.058968"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.399994"/>
+						</Frame>
+						<Frame Value="14">
+							<LocalPos X="0.000000" Y="183.586060" Z="-55.381615"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.800003"/>
+						</Frame>
+						<Frame Value="15">
+							<LocalPos X="0.000000" Y="183.586060" Z="-33.780884"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="150.000000"/>
+						</Frame>
+						<Frame Value="16">
+							<LocalPos X="0.000000" Y="183.586060" Z="-11.340750"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.199982"/>
+						</Frame>
+						<Frame Value="17">
+							<LocalPos X="0.000000" Y="183.586060" Z="11.854818"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.599998"/>
+						</Frame>
+						<Frame Value="18">
+							<LocalPos X="0.000000" Y="183.586060" Z="35.721943"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.399994"/>
+						</Frame>
+						<Frame Value="19">
+							<LocalPos X="0.000000" Y="183.586060" Z="60.176655"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.799995"/>
+						</Frame>
+						<Frame Value="20">
+							<LocalPos X="0.000000" Y="183.586060" Z="85.134972"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="100.000000"/>
+						</Frame>
+						<Frame Value="21">
+							<LocalPos X="0.000000" Y="183.586060" Z="110.513031"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.800003"/>
+						</Frame>
+						<Frame Value="22">
+							<LocalPos X="0.000000" Y="183.586060" Z="136.226852"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.400009"/>
+						</Frame>
+						<Frame Value="23">
+							<LocalPos X="0.000000" Y="183.586060" Z="162.192459"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.599998"/>
+						</Frame>
+						<Frame Value="24">
+							<LocalPos X="0.000000" Y="183.586060" Z="188.325989"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.199997"/>
+						</Frame>
+						<Frame Value="25">
+							<LocalPos X="0.000000" Y="183.586060" Z="214.543411"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="149.999985"/>
+						</Frame>
+						<Frame Value="26">
+							<LocalPos X="0.000000" Y="183.586060" Z="240.760910"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.800018"/>
+						</Frame>
+						<Frame Value="27">
+							<LocalPos X="0.000000" Y="183.586060" Z="266.894409"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.400009"/>
+						</Frame>
+						<Frame Value="28">
+							<LocalPos X="0.000000" Y="183.586060" Z="292.860016"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.599991"/>
+						</Frame>
+						<Frame Value="29">
+							<LocalPos X="0.000000" Y="183.586060" Z="318.573853"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.200012"/>
+						</Frame>
+						<Frame Value="30">
+							<LocalPos X="0.000000" Y="183.586060" Z="343.951874"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="200.000000"/>
+						</Frame>
+						<Frame Value="31">
+							<LocalPos X="0.000000" Y="183.586060" Z="368.910187"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.200012"/>
+						</Frame>
+						<Frame Value="32">
+							<LocalPos X="0.000000" Y="183.586060" Z="393.364929"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.599991"/>
+						</Frame>
+						<Frame Value="33">
+							<LocalPos X="0.000000" Y="183.586060" Z="417.232025"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.399994"/>
+						</Frame>
+						<Frame Value="34">
+							<LocalPos X="0.000000" Y="183.586060" Z="440.427612"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.800003"/>
+						</Frame>
+						<Frame Value="35">
+							<LocalPos X="0.000000" Y="183.586060" Z="462.867767"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="149.999985"/>
+						</Frame>
+						<Frame Value="36">
+							<LocalPos X="0.000000" Y="183.586060" Z="484.468475"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.199997"/>
+						</Frame>
+						<Frame Value="37">
+							<LocalPos X="0.000000" Y="183.586060" Z="505.145813"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.600006"/>
+						</Frame>
+						<Frame Value="38">
+							<LocalPos X="0.000000" Y="183.586060" Z="524.815918"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.399986"/>
+						</Frame>
+						<Frame Value="39">
+							<LocalPos X="0.000000" Y="183.586060" Z="543.394775"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.799995"/>
+						</Frame>
+						<Frame Value="40">
+							<LocalPos X="0.000000" Y="183.586060" Z="560.798462"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="100.000000"/>
+						</Frame>
+						<Frame Value="41">
+							<LocalPos X="0.000000" Y="183.586060" Z="576.943054"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.800011"/>
+						</Frame>
+						<Frame Value="42">
+							<LocalPos X="0.000000" Y="183.586060" Z="591.744568"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.400009"/>
+						</Frame>
+						<Frame Value="43">
+							<LocalPos X="0.000000" Y="183.586060" Z="605.119080"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.600006"/>
+						</Frame>
+						<Frame Value="44">
+							<LocalPos X="0.000000" Y="183.586060" Z="616.982727"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.200027"/>
+						</Frame>
+						<Frame Value="45">
+							<LocalPos X="0.000000" Y="183.586060" Z="627.251404"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="150.000015"/>
+						</Frame>
+						<Frame Value="46">
+							<LocalPos X="0.000000" Y="183.586060" Z="635.841370"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.800003"/>
+						</Frame>
+						<Frame Value="47">
+							<LocalPos X="0.000000" Y="183.586060" Z="642.668518"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.400040"/>
+						</Frame>
+						<Frame Value="48">
+							<LocalPos X="0.000000" Y="183.586060" Z="647.648987"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.600021"/>
+						</Frame>
+						<Frame Value="49">
+							<LocalPos X="0.000000" Y="183.586060" Z="650.698853"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.200027"/>
+						</Frame>
+						<Frame Value="50">
+							<LocalPos X="0.000000" Y="183.586060" Z="651.734070"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="200.000000"/>
+						</Frame>
+						<Frame Value="51">
+							<LocalPos X="0.000000" Y="183.586060" Z="650.698792"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.199997"/>
+						</Frame>
+						<Frame Value="52">
+							<LocalPos X="0.000000" Y="183.586060" Z="647.648987"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.599960"/>
+						</Frame>
+						<Frame Value="53">
+							<LocalPos X="0.000000" Y="183.586060" Z="642.668518"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.400009"/>
+						</Frame>
+						<Frame Value="54">
+							<LocalPos X="0.000000" Y="183.586060" Z="635.841309"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.799988"/>
+						</Frame>
+						<Frame Value="55">
+							<LocalPos X="0.000000" Y="183.586060" Z="627.251404"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="149.999954"/>
+						</Frame>
+						<Frame Value="56">
+							<LocalPos X="0.000000" Y="183.586060" Z="616.982666"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.200012"/>
+						</Frame>
+						<Frame Value="57">
+							<LocalPos X="0.000000" Y="183.586060" Z="605.119019"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.599991"/>
+						</Frame>
+						<Frame Value="58">
+							<LocalPos X="0.000000" Y="183.586060" Z="591.744446"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.399979"/>
+						</Frame>
+						<Frame Value="59">
+							<LocalPos X="0.000000" Y="183.586060" Z="576.942993"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.800011"/>
+						</Frame>
+						<Frame Value="60">
+							<LocalPos X="0.000000" Y="183.586060" Z="560.798401"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="100.000000"/>
+						</Frame>
+						<Frame Value="61">
+							<LocalPos X="0.000000" Y="183.586060" Z="543.394653"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.800011"/>
+						</Frame>
+						<Frame Value="62">
+							<LocalPos X="0.000000" Y="183.586060" Z="524.815857"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.399979"/>
+						</Frame>
+						<Frame Value="63">
+							<LocalPos X="0.000000" Y="183.586060" Z="505.145752"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.599991"/>
+						</Frame>
+						<Frame Value="64">
+							<LocalPos X="0.000000" Y="183.586060" Z="484.468353"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.200012"/>
+						</Frame>
+						<Frame Value="65">
+							<LocalPos X="0.000000" Y="183.586060" Z="462.867706"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="149.999954"/>
+						</Frame>
+						<Frame Value="66">
+							<LocalPos X="0.000000" Y="183.586060" Z="440.427521"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.799988"/>
+						</Frame>
+						<Frame Value="67">
+							<LocalPos X="0.000000" Y="183.586060" Z="417.231903"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.400009"/>
+						</Frame>
+						<Frame Value="68">
+							<LocalPos X="0.000000" Y="183.586060" Z="393.364868"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.599960"/>
+						</Frame>
+						<Frame Value="69">
+							<LocalPos X="0.000000" Y="183.586060" Z="368.910126"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.199997"/>
+						</Frame>
+						<Frame Value="70">
+							<LocalPos X="0.000000" Y="183.586060" Z="343.951721"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="200.000000"/>
+						</Frame>
+						<Frame Value="71">
+							<LocalPos X="0.000000" Y="183.586060" Z="318.573792"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.200012"/>
+						</Frame>
+						<Frame Value="72">
+							<LocalPos X="0.000000" Y="183.586060" Z="292.859924"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.600006"/>
+						</Frame>
+						<Frame Value="73">
+							<LocalPos X="0.000000" Y="183.586060" Z="266.894257"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.399979"/>
+						</Frame>
+						<Frame Value="74">
+							<LocalPos X="0.000000" Y="183.586060" Z="240.760834"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.800034"/>
+						</Frame>
+						<Frame Value="75">
+							<LocalPos X="0.000000" Y="183.586060" Z="214.543335"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="150.000000"/>
+						</Frame>
+						<Frame Value="76">
+							<LocalPos X="0.000000" Y="183.586060" Z="188.325836"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.199966"/>
+						</Frame>
+						<Frame Value="77">
+							<LocalPos X="0.000000" Y="183.586060" Z="162.192429"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.600014"/>
+						</Frame>
+						<Frame Value="78">
+							<LocalPos X="0.000000" Y="183.586060" Z="136.226746"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.399986"/>
+						</Frame>
+						<Frame Value="79">
+							<LocalPos X="0.000000" Y="183.586060" Z="110.512886"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.799980"/>
+						</Frame>
+						<Frame Value="80">
+							<LocalPos X="0.000000" Y="183.586060" Z="85.134941"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="100.000000"/>
+						</Frame>
+						<Frame Value="81">
+							<LocalPos X="0.000000" Y="183.586060" Z="60.176548"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.800011"/>
+						</Frame>
+						<Frame Value="82">
+							<LocalPos X="0.000000" Y="183.586060" Z="35.721806"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.400032"/>
+						</Frame>
+						<Frame Value="83">
+							<LocalPos X="0.000000" Y="183.586060" Z="11.854785"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.599991"/>
+						</Frame>
+						<Frame Value="84">
+							<LocalPos X="0.000000" Y="183.586060" Z="-11.340848"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.200012"/>
+						</Frame>
+						<Frame Value="85">
+							<LocalPos X="0.000000" Y="183.586060" Z="-33.781010"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="150.000046"/>
+						</Frame>
+						<Frame Value="86">
+							<LocalPos X="0.000000" Y="183.586060" Z="-55.381645"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.799988"/>
+						</Frame>
+						<Frame Value="87">
+							<LocalPos X="0.000000" Y="183.586060" Z="-76.059052"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.400009"/>
+						</Frame>
+						<Frame Value="88">
+							<LocalPos X="0.000000" Y="183.586060" Z="-95.729172"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.600021"/>
+						</Frame>
+						<Frame Value="89">
+							<LocalPos X="0.000000" Y="183.586060" Z="-114.307953"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.199997"/>
+						</Frame>
+						<Frame Value="90">
+							<LocalPos X="0.000000" Y="183.586060" Z="-131.711670"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="200.000000"/>
+						</Frame>
+						<Frame Value="91">
+							<LocalPos X="0.000000" Y="183.586060" Z="-147.856277"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="197.199982"/>
+						</Frame>
+						<Frame Value="92">
+							<LocalPos X="0.000000" Y="183.586060" Z="-162.657745"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="189.600006"/>
+						</Frame>
+						<Frame Value="93">
+							<LocalPos X="0.000000" Y="183.586060" Z="-176.032303"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="178.399979"/>
+						</Frame>
+						<Frame Value="94">
+							<LocalPos X="0.000000" Y="183.586060" Z="-187.895920"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="164.799957"/>
+						</Frame>
+						<Frame Value="95">
+							<LocalPos X="0.000000" Y="183.586060" Z="-198.164612"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="150.000000"/>
+						</Frame>
+						<Frame Value="96">
+							<LocalPos X="0.000000" Y="183.586060" Z="-206.754547"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="135.199966"/>
+						</Frame>
+						<Frame Value="97">
+							<LocalPos X="0.000000" Y="183.586060" Z="-213.581680"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="121.600014"/>
+						</Frame>
+						<Frame Value="98">
+							<LocalPos X="0.000000" Y="183.586060" Z="-218.562195"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="110.399933"/>
+						</Frame>
+						<Frame Value="99">
+							<LocalPos X="0.000000" Y="183.586060" Z="-221.612015"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="102.799980"/>
+						</Frame>
+						<Frame Value="100">
+							<LocalPos X="0.000000" Y="183.586060" Z="-222.647278"/>
+							<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.000000"/>
+							<Intensity Value="100.000000"/>
+						</Frame>
+					</Light>
+					<Light Name="spotLight1" Type="SpotLight">
+						<Frame Value="0">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.508172" Y="-0.430628" Z="-0.745869"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="1">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.506949" Y="-0.431345" Z="-0.746287"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="2">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.503337" Y="-0.433448" Z="-0.747512"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="3">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.497415" Y="-0.436853" Z="-0.749491"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="4">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.489250" Y="-0.441462" Z="-0.752160"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="5">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.478901" Y="-0.447164" Z="-0.755446"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="6">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.466421" Y="-0.453834" Z="-0.759267"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="7">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.451857" Y="-0.461342" Z="-0.763537"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="8">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.435258" Y="-0.469546" Z="-0.768165"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="9">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.416675" Y="-0.478299" Z="-0.773054"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="10">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.396159" Y="-0.487449" Z="-0.778108"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="11">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.373770" Y="-0.496840" Z="-0.783228"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="12">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.349574" Y="-0.506316" Z="-0.788316"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="13">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.323646" Y="-0.515718" Z="-0.793276"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="14">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.296072" Y="-0.524893" Z="-0.798015"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="15">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.266947" Y="-0.533689" Z="-0.802443"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="16">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.236379" Y="-0.541961" Z="-0.806476"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="17">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.204487" Y="-0.549573" Z="-0.810034"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="18">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.171403" Y="-0.556397" Z="-0.813046"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="19">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.137268" Y="-0.562319" Z="-0.815448"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="20">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.102233" Y="-0.567236" Z="-0.817185"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="21">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.066460" Y="-0.571064" Z="-0.818211"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="22">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.030116" Y="-0.573731" Z="-0.818490"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="23">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.006625" Y="-0.575186" Z="-0.817996"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="24">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.043585" Y="-0.575394" Z="-0.816714"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="25">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.080586" Y="-0.574342" Z="-0.814640"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="26">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.117448" Y="-0.572032" Z="-0.811779"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="27">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.153993" Y="-0.568488" Z="-0.808151"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="28">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.190050" Y="-0.563751" Z="-0.803782"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="29">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.225452" Y="-0.557882" Z="-0.798711"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="30">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.260041" Y="-0.550956" Z="-0.792985"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="31">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.293669" Y="-0.543064" Z="-0.786664"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="32">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.326196" Y="-0.534313" Z="-0.779811"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="33">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.357498" Y="-0.524819" Z="-0.772502"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="34">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.387462" Y="-0.514711" Z="-0.764818"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="35">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.415985" Y="-0.504125" Z="-0.756845"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="36">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.442982" Y="-0.493205" Z="-0.748676"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="37">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.468376" Y="-0.482098" Z="-0.740409"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="38">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.492105" Y="-0.470956" Z="-0.732142"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="39">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.514117" Y="-0.459930" Z="-0.723980"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="40">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.534370" Y="-0.449173" Z="-0.716026"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="41">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.552828" Y="-0.438832" Z="-0.708383"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="42">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.569465" Y="-0.429056" Z="-0.701157"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="43">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.584256" Y="-0.419984" Z="-0.694448"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="44">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.597179" Y="-0.411754" Z="-0.688357"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="45">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.608214" Y="-0.404494" Z="-0.682980"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="46">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.617334" Y="-0.398325" Z="-0.678407"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="47">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.624511" Y="-0.393362" Z="-0.674724"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="48">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.629705" Y="-0.389709" Z="-0.672011"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="49">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.632869" Y="-0.387458" Z="-0.670338"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="50">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.633940" Y="-0.386691" Z="-0.669769"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="51">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.632869" Y="-0.387458" Z="-0.670338"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="52">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.629705" Y="-0.389709" Z="-0.672011"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="53">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.624511" Y="-0.393362" Z="-0.674724"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="54">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.617334" Y="-0.398325" Z="-0.678407"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="55">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.608214" Y="-0.404494" Z="-0.682980"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="56">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.597179" Y="-0.411754" Z="-0.688357"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="57">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.584256" Y="-0.419984" Z="-0.694448"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="58">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.569465" Y="-0.429056" Z="-0.701157"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="59">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.552828" Y="-0.438832" Z="-0.708383"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="60">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.534370" Y="-0.449173" Z="-0.716026"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="61">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.514117" Y="-0.459930" Z="-0.723980"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="62">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.492105" Y="-0.470956" Z="-0.732143"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="63">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.468376" Y="-0.482098" Z="-0.740409"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="64">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.442981" Y="-0.493205" Z="-0.748676"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="65">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.415985" Y="-0.504125" Z="-0.756845"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="66">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.387461" Y="-0.514711" Z="-0.764818"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="67">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.357498" Y="-0.524819" Z="-0.772502"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="68">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.326196" Y="-0.534313" Z="-0.779811"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="69">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.293668" Y="-0.543064" Z="-0.786664"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="70">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.260041" Y="-0.550956" Z="-0.792986"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="71">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.225452" Y="-0.557882" Z="-0.798711"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="72">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.190050" Y="-0.563751" Z="-0.803782"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="73">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.153993" Y="-0.568488" Z="-0.808151"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="74">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.117447" Y="-0.572032" Z="-0.811779"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="75">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.080586" Y="-0.574342" Z="-0.814640"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="76">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.043585" Y="-0.575394" Z="-0.816714"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="77">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="0.006625" Y="-0.575186" Z="-0.817996"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="78">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.030116" Y="-0.573731" Z="-0.818490"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="79">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.066460" Y="-0.571064" Z="-0.818211"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="80">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.102233" Y="-0.567236" Z="-0.817185"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="81">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.137268" Y="-0.562319" Z="-0.815448"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="82">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.171403" Y="-0.556397" Z="-0.813046"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="83">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.204487" Y="-0.549573" Z="-0.810034"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="84">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.236379" Y="-0.541961" Z="-0.806476"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="85">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.266947" Y="-0.533689" Z="-0.802443"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="86">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.296072" Y="-0.524893" Z="-0.798015"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="87">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.323646" Y="-0.515718" Z="-0.793276"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="88">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.349574" Y="-0.506316" Z="-0.788316"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="89">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.373770" Y="-0.496840" Z="-0.783228"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="90">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.396159" Y="-0.487449" Z="-0.778108"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="91">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.416675" Y="-0.478299" Z="-0.773054"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="92">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.435258" Y="-0.469546" Z="-0.768165"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="93">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.451857" Y="-0.461342" Z="-0.763537"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="94">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.466421" Y="-0.453834" Z="-0.759267"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="95">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.478901" Y="-0.447164" Z="-0.755446"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="96">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.489251" Y="-0.441462" Z="-0.752160"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="97">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.497415" Y="-0.436853" Z="-0.749491"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="98">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.503337" Y="-0.433448" Z="-0.747512"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="99">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.506949" Y="-0.431345" Z="-0.746287"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+						<Frame Value="100">
+							<LocalPos X="0.000000" Y="382.857544" Z="702.561157"/>
+							<LocalDirection X="-0.508172" Y="-0.430628" Z="-0.745869"/>
+							<Color R="1.000000" G="1.000000" B="1.000000"/>
+							<ConeAngle Value="0.985009"/>
+							<Intensity Value="0.000000"/>
+						</Frame>
+					</Light>
+				</LightSet>
+			</LightSets>
+			<Cameras>
+				<Camera Name="EnvCamera1">
+					<Frame Value="0">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>44.939701 0.000000 21.918558 0.000000 8.721597 45.871239 -17.881924 0.000000 -20.108627 19.895464 41.228798 0.000000 -340.362885 466.876343 1091.038452 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.409237 -0.453786 0.000000</LocalRotation>
+						<LocalTransform>-340.362885 466.876343 1091.038452</LocalTransform>
+					</Frame>
+					<Frame Value="1">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>44.970276 -0.000000 21.855759 0.000000 8.695117 45.872719 -17.891022 0.000000 -20.051661 19.892052 41.258179 0.000000 -339.414978 466.800171 1090.876709 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.409162 -0.452389 -0.000000</LocalRotation>
+						<LocalTransform>-339.414978 466.800171 1090.876709</LocalTransform>
+					</Frame>
+					<Frame Value="2">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.059837 0.000000 21.670507 0.000000 8.617060 45.877075 -17.917591 0.000000 -19.883591 19.881996 41.344273 0.000000 -336.622437 466.575745 1090.400269 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.408943 -0.448273 0.000000</LocalRotation>
+						<LocalTransform>-336.622437 466.575745 1090.400269</LocalTransform>
+					</Frame>
+					<Frame Value="3">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.204456 -0.000000 21.367201 0.000000 8.489435 45.884190 -17.960251 0.000000 -19.608334 19.865578 41.483395 0.000000 -332.062195 466.209259 1089.622192 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.408585 -0.441553 -0.000000</LocalRotation>
+						<LocalTransform>-332.062195 466.209259 1089.622192</LocalTransform>
+					</Frame>
+					<Frame Value="4">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.399372 0.000000 20.949867 0.000000 8.314191 45.893929 -18.017254 0.000000 -19.229435 19.843063 41.671112 0.000000 -325.811035 465.706909 1088.555664 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.408095 -0.432341 0.000000</LocalRotation>
+						<LocalTransform>-325.811035 465.706909 1088.555664</LocalTransform>
+					</Frame>
+					<Frame Value="5">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.639141 0.000000 20.422258 0.000000 8.093231 45.906170 -18.086548 0.000000 -18.750153 19.814732 41.902363 0.000000 -317.945862 465.074799 1087.213745 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.407478 -0.420750 0.000000</LocalRotation>
+						<LocalTransform>-317.945862 465.074799 1087.213745</LocalTransform>
+					</Frame>
+					<Frame Value="6">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.917725 0.000000 19.787939 0.000000 7.828446 45.920780 -18.165834 0.000000 -18.173552 19.780851 42.171555 0.000000 -308.543518 464.319183 1085.609497 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.406740 -0.406894 0.000000</LocalRotation>
+						<LocalTransform>-308.543518 464.319183 1085.609497</LocalTransform>
+					</Frame>
+					<Frame Value="7">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.228596 0.000000 19.050379 0.000000 7.521737 45.937626 -18.252619 0.000000 -17.502584 19.741697 42.472637 0.000000 -297.680878 463.446228 1083.756104 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.405887 -0.390886 0.000000</LocalRotation>
+						<LocalTransform>-297.680878 463.446228 1083.756104</LocalTransform>
+					</Frame>
+					<Frame Value="8">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.564850 0.000000 18.213041 0.000000 7.175041 45.956577 -18.344259 0.000000 -16.740179 19.697538 42.799221 0.000000 -285.434753 462.462067 1081.666748 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.404926 -0.372839 0.000000</LocalRotation>
+						<LocalTransform>-285.434753 462.462067 1081.666748</LocalTransform>
+					</Frame>
+					<Frame Value="9">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.919296 -0.000000 17.279459 0.000000 6.790360 45.977501 -18.438013 0.000000 -15.889327 19.648647 43.144638 0.000000 -271.882080 461.372894 1079.354492 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.403862 -0.352867 -0.000000</LocalRotation>
+						<LocalTransform>-271.882080 461.372894 1079.354492</LocalTransform>
+					</Frame>
+					<Frame Value="10">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.284557 0.000000 16.253321 0.000000 6.369772 46.000267 -18.531097 0.000000 -14.953142 19.595295 43.502045 0.000000 -257.099640 460.184906 1076.832397 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.402702 -0.331082 0.000000</LocalRotation>
+						<LocalTransform>-257.099640 460.184906 1076.832397</LocalTransform>
+					</Frame>
+					<Frame Value="11">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.653172 0.000000 15.138531 0.000000 5.915457 46.024734 -18.620716 0.000000 -13.934937 19.537750 43.864494 0.000000 -241.164337 458.904266 1074.113525 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.401452 -0.307598 0.000000</LocalRotation>
+						<LocalTransform>-241.164337 458.904266 1074.113525</LocalTransform>
+					</Frame>
+					<Frame Value="12">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.017673 0.000000 13.939267 0.000000 5.429704 46.050777 -18.704121 0.000000 -12.838283 19.476288 44.225025 0.000000 -224.153030 457.537170 1071.211182 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.400117 -0.282529 0.000000</LocalRotation>
+						<LocalTransform>-224.153030 457.537170 1071.211182</LocalTransform>
+					</Frame>
+					<Frame Value="13">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.370689 0.000000 12.660034 0.000000 4.914924 46.078262 -18.778641 0.000000 -11.667048 19.411177 44.576744 0.000000 -206.142532 456.089752 1068.138306 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.398703 -0.255987 0.000000</LocalRotation>
+						<LocalTransform>-206.142532 456.089752 1068.138306</LocalTransform>
+					</Frame>
+					<Frame Value="14">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.705044 -0.000000 11.305696 0.000000 4.373652 46.107052 -18.841732 0.000000 -10.425447 19.342691 44.912918 0.000000 -187.209778 454.568207 1064.907959 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.397217 -0.228086 -0.000000</LocalRotation>
+						<LocalTransform>-187.209778 454.568207 1064.907959</LocalTransform>
+					</Frame>
+					<Frame Value="15">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.013836 0.000000 9.881497 0.000000 3.808547 46.137020 -18.891010 0.000000 -9.118057 19.271101 45.227047 0.000000 -167.431549 452.978729 1061.533569 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.395665 -0.198940 0.000000</LocalRotation>
+						<LocalTransform>-167.431549 452.978729 1061.533569</LocalTransform>
+					</Frame>
+					<Frame Value="16">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.290527 0.000000 8.393081 0.000000 3.222385 46.168037 -18.924288 0.000000 -7.749841 19.196678 45.512939 0.000000 -146.884735 451.327484 1058.027954 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.394053 -0.168660 0.000000</LocalRotation>
+						<LocalTransform>-146.884735 451.327484 1058.027954</LocalTransform>
+					</Frame>
+					<Frame Value="17">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.529037 0.000000 6.846486 0.000000 2.618055 46.199970 -18.939606 0.000000 -6.326149 19.119699 45.764801 0.000000 -125.646217 449.620667 1054.404297 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.392386 -0.137361 0.000000</LocalRotation>
+						<LocalTransform>-125.646217 449.620667 1054.404297</LocalTransform>
+					</Frame>
+					<Frame Value="18">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.723808 0.000000 5.248128 0.000000 1.998533 46.232693 -18.935259 0.000000 -4.852702 19.040436 45.977310 0.000000 -103.792809 447.864410 1050.675781 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.390671 -0.105156 0.000000</LocalRotation>
+						<LocalTransform>-103.792809 447.864410 1050.675781</LocalTransform>
+					</Frame>
+					<Frame Value="19">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.869884 0.000000 3.604790 0.000000 1.366876 46.266079 -18.909824 0.000000 -3.335590 18.959162 46.145683 0.000000 -81.401390 446.064941 1046.855347 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.388913 -0.072158 0.000000</LocalRotation>
+						<LocalTransform>-81.401390 446.064941 1046.855347</LocalTransform>
+					</Frame>
+					<Frame Value="20">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.962986 0.000000 1.923576 0.000000 0.726194 46.300007 -18.862181 0.000000 -1.781231 18.876154 46.265732 0.000000 -58.548859 444.228394 1042.956421 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.387120 -0.038481 0.000000</LocalRotation>
+						<LocalTransform>-58.548859 444.228394 1042.956421</LocalTransform>
+					</Frame>
+					<Frame Value="21">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.999550 0.000000 0.211861 0.000000 0.079625 46.334354 -18.791521 0.000000 -0.196329 18.791689 46.333939 0.000000 -35.311996 442.360962 1038.991821 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.385296 -0.004237 0.000000</LocalRotation>
+						<LocalTransform>-35.311996 442.360962 1038.991821</LocalTransform>
+					</Frame>
+					<Frame Value="22">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.976807 0.000000 -1.522744 0.000000 -0.569690 46.368999 -18.697365 0.000000 1.412162 18.706043 46.347488 0.000000 -11.767704 440.468842 1034.974731 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.383449 0.030460 0.000000</LocalRotation>
+						<LocalTransform>-11.767704 440.468842 1034.974731</LocalTransform>
+					</Frame>
+					<Frame Value="23">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.892796 0.000000 -3.272467 0.000000 -1.218634 46.403820 -18.579571 0.000000 3.037100 18.619492 46.304325 0.000000 12.007131 438.558167 1030.918457 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.381583 0.065496 0.000000</LocalRotation>
+						<LocalTransform>12.007131 438.558167 1030.918457</LocalTransform>
+					</Frame>
+					<Frame Value="24">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.746403 0.000000 -5.029446 0.000000 -1.864146 46.438705 -18.438322 0.000000 4.671218 18.532316 46.203171 0.000000 35.935715 436.635132 1026.835815 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.379705 0.100759 0.000000</LocalRotation>
+						<LocalTransform>35.935715 436.635132 1026.835815</LocalTransform>
+					</Frame>
+					<Frame Value="25">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.537392 0.000000 -6.785779 0.000000 -2.503246 46.473537 -18.274141 0.000000 6.307182 18.444796 46.043556 0.000000 59.941124 434.705963 1022.740112 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.377821 0.136136 0.000000</LocalRotation>
+						<LocalTransform>59.941124 434.705963 1022.740112</LocalTransform>
+					</Frame>
+					<Frame Value="26">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.266392 0.000000 -8.533626 0.000000 -3.133071 46.508202 -18.087868 0.000000 7.937672 18.357208 45.825825 0.000000 83.946602 432.776764 1018.644348 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.375937 0.171512 0.000000</LocalRotation>
+						<LocalTransform>83.946602 432.776764 1018.644348</LocalTransform>
+					</Frame>
+					<Frame Value="27">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.934902 -0.000000 -10.265246 0.000000 -3.750888 46.542595 -17.880655 0.000000 9.555424 18.269838 45.551147 0.000000 107.875153 430.853729 1014.561768 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.374059 0.206775 -0.000000</LocalRotation>
+						<LocalTransform>107.875153 430.853729 1014.561768</LocalTransform>
+					</Frame>
+					<Frame Value="28">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.545284 -0.000000 -11.973106 0.000000 -4.354132 46.576603 -17.653944 0.000000 11.153332 18.182964 45.221489 0.000000 131.649994 428.943085 1010.505432 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.372193 0.241812 -0.000000</LocalRotation>
+						<LocalTransform>131.649994 428.943085 1010.505432</LocalTransform>
+					</Frame>
+					<Frame Value="29">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.100719 0.000000 -13.649932 0.000000 -4.940421 46.610119 -17.409451 0.000000 12.724500 18.096870 44.839607 0.000000 155.194321 427.050934 1006.488342 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.370345 0.276509 0.000000</LocalRotation>
+						<LocalTransform>155.194321 427.050934 1006.488342</LocalTransform>
+					</Frame>
+					<Frame Value="30">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.605190 0.000000 -15.288755 0.000000 -5.507573 46.643044 -17.149143 0.000000 14.262281 18.011841 44.409019 0.000000 178.431137 425.183502 1002.523804 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.368522 0.310752 0.000000</LocalRotation>
+						<LocalTransform>178.431137 425.183502 1002.523804</LocalTransform>
+					</Frame>
+					<Frame Value="31">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.063408 0.000000 -16.883001 0.000000 -6.053623 46.675274 -16.875206 0.000000 15.760374 17.928160 43.933949 0.000000 201.283676 423.346985 998.624756 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.366728 0.344430 0.000000</LocalRotation>
+						<LocalTransform>201.283676 423.346985 998.624756</LocalTransform>
+					</Frame>
+					<Frame Value="32">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.480785 0.000000 -18.426523 0.000000 -6.576835 46.706707 -16.590023 0.000000 17.212843 17.846111 43.419285 0.000000 223.675125 421.547485 994.804443 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.364971 0.377428 0.000000</LocalRotation>
+						<LocalTransform>223.675125 421.547485 994.804443</LocalTransform>
+					</Frame>
+					<Frame Value="33">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.863358 0.000000 -19.913620 0.000000 -7.075700 46.737244 -16.296150 0.000000 18.614155 17.765980 42.870541 0.000000 245.528503 419.791229 991.075928 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.363256 0.409633 0.000000</LocalRotation>
+						<LocalTransform>245.528503 419.791229 991.075928</LocalTransform>
+					</Frame>
+					<Frame Value="34">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.217724 0.000000 -21.339104 0.000000 -7.548944 46.766792 -15.996270 0.000000 19.959227 17.688053 42.293758 0.000000 266.766998 418.084412 987.452271 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.361589 0.440932 0.000000</LocalRotation>
+						<LocalTransform>266.766998 418.084412 987.452271</LocalTransform>
+					</Frame>
+					<Frame Value="35">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>44.550957 0.000000 -22.698284 0.000000 -7.995524 46.795254 -15.693180 0.000000 21.243439 17.612617 41.695469 0.000000 287.313843 416.433167 983.946655 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.359977 0.471211 0.000000</LocalRotation>
+						<LocalTransform>287.313843 416.433167 983.946655</LocalTransform>
+					</Frame>
+					<Frame Value="36">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>43.870548 0.000000 -23.986977 0.000000 -8.414613 46.822536 -15.389754 0.000000 22.462622 17.539961 41.082603 0.000000 307.092041 414.843689 980.572144 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.358424 0.500358 0.000000</LocalRotation>
+						<LocalTransform>307.092041 414.843689 980.572144</LocalTransform>
+					</Frame>
+					<Frame Value="37">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>43.184303 0.000000 -25.201509 0.000000 -8.805594 46.848545 -15.088915 0.000000 23.613081 17.470371 40.462433 0.000000 326.024811 413.322174 977.341919 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.356939 0.528259 0.000000</LocalRotation>
+						<LocalTransform>326.024811 413.322174 977.341919</LocalTransform>
+					</Frame>
+					<Frame Value="38">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>42.500278 0.000000 -26.338688 0.000000 -9.168041 46.873192 -14.793611 0.000000 24.691566 17.404135 39.842472 0.000000 344.035339 411.874756 974.269043 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.355525 0.554801 0.000000</LocalRotation>
+						<LocalTransform>344.035339 411.874756 974.269043</LocalTransform>
+					</Frame>
+					<Frame Value="39">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>41.826698 -0.000000 -27.395750 0.000000 -9.501691 46.896385 -14.506788 0.000000 25.695234 17.341541 39.230419 0.000000 361.046631 410.507629 971.366638 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.354190 0.579870 -0.000000</LocalRotation>
+						<LocalTransform>361.046631 410.507629 971.366638</LocalTransform>
+					</Frame>
+					<Frame Value="40">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>41.171875 0.000000 -28.370346 0.000000 -9.806425 46.918037 -14.231371 0.000000 26.621618 17.282879 38.634071 0.000000 376.981903 409.226990 968.647827 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.352939 0.603353 0.000000</LocalRotation>
+						<LocalTransform>376.981903 409.226990 968.647827</LocalTransform>
+					</Frame>
+					<Frame Value="41">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>40.544117 -0.000000 -29.260460 0.000000 -10.082239 46.938053 -13.970235 0.000000 27.468580 17.228436 38.061241 0.000000 391.764374 408.039001 966.125732 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.351779 0.625138 -0.000000</LocalRotation>
+						<LocalTransform>391.764374 408.039001 966.125732</LocalTransform>
+					</Frame>
+					<Frame Value="42">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>39.951672 -0.000000 -30.064331 0.000000 -10.329204 46.956352 -13.726197 0.000000 28.234226 17.178503 37.519695 0.000000 405.317047 406.949860 963.813416 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.350716 0.645110 -0.000000</LocalRotation>
+						<LocalTransform>405.317047 406.949860 963.813416</LocalTransform>
+					</Frame>
+					<Frame Value="43">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>39.402626 0.000000 -30.780397 0.000000 -10.547437 46.972839 -13.501992 0.000000 28.916855 17.133366 37.017067 0.000000 417.563141 405.965698 961.724060 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.349755 0.663157 0.000000</LocalRotation>
+						<LocalTransform>417.563141 405.965698 961.724060</LocalTransform>
+					</Frame>
+					<Frame Value="44">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>38.904865 0.000000 -31.407190 0.000000 -10.737060 46.987431 -13.300261 0.000000 29.514862 17.093315 36.560791 0.000000 428.425812 405.092712 959.870667 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.348902 0.679165 0.000000</LocalRotation>
+						<LocalTransform>428.425812 405.092712 959.870667</LocalTransform>
+					</Frame>
+					<Frame Value="45">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>38.465961 0.000000 -31.943226 0.000000 -10.898159 47.000031 -13.123539 0.000000 30.026651 17.058638 36.158028 0.000000 437.828125 404.337097 958.266479 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.348164 0.693021 0.000000</LocalRotation>
+						<LocalTransform>437.828125 404.337097 958.266479</LocalTransform>
+					</Frame>
+					<Frame Value="46">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>38.093140 0.000000 -32.386921 0.000000 -11.030742 47.010551 -12.974237 0.000000 30.450539 17.029623 35.815590 0.000000 445.693298 403.705017 956.924561 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.347547 0.704612 0.000000</LocalRotation>
+						<LocalTransform>445.693298 403.705017 956.924561</LocalTransform>
+					</Frame>
+					<Frame Value="47">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.793175 0.000000 -32.736462 0.000000 -11.134692 47.018902 -12.854637 0.000000 30.784649 17.006559 35.539867 0.000000 451.944458 403.202637 955.858032 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.347056 0.713824 0.000000</LocalRotation>
+						<LocalTransform>451.944458 403.202637 955.858032</LocalTransform>
+					</Frame>
+					<Frame Value="48">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.572319 -0.000000 -32.989708 0.000000 -11.209724 47.024982 -12.766871 0.000000 31.026808 16.989731 35.336754 0.000000 456.504700 402.836151 955.079956 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.346699 0.720545 -0.000000</LocalRotation>
+						<LocalTransform>456.504700 402.836151 955.079956</LocalTransform>
+					</Frame>
+					<Frame Value="49">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.436241 0.000000 -33.144047 0.000000 -11.255337 47.028706 -12.712916 0.000000 31.174433 16.979424 35.211559 0.000000 459.297241 402.611725 954.603516 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.346479 0.724660 0.000000</LocalRotation>
+						<LocalTransform>459.297241 402.611725 954.603516</LocalTransform>
+					</Frame>
+					<Frame Value="50">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.389904 -0.000000 -33.196312 0.000000 -11.270761 47.029968 -12.694565 0.000000 31.224428 16.975925 35.168922 0.000000 460.245148 402.535553 954.441772 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.346405 0.726057 -0.000000</LocalRotation>
+						<LocalTransform>460.245148 402.535553 954.441772</LocalTransform>
+					</Frame>
+					<Frame Value="51">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.436241 0.000000 -33.144047 0.000000 -11.255337 47.028706 -12.712916 0.000000 31.174433 16.979424 35.211559 0.000000 459.297211 402.611725 954.603516 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.346479 0.724660 0.000000</LocalRotation>
+						<LocalTransform>459.297211 402.611725 954.603516</LocalTransform>
+					</Frame>
+					<Frame Value="52">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.572323 0.000000 -32.989704 0.000000 -11.209723 47.024982 -12.766872 0.000000 31.026806 16.989731 35.336758 0.000000 456.504700 402.836151 955.079956 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.346698 0.720545 0.000000</LocalRotation>
+						<LocalTransform>456.504700 402.836151 955.079956</LocalTransform>
+					</Frame>
+					<Frame Value="53">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>37.793175 0.000000 -32.736462 0.000000 -11.134691 47.018902 -12.854637 0.000000 30.784649 17.006559 35.539871 0.000000 451.944427 403.202637 955.858032 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.347056 0.713824 0.000000</LocalRotation>
+						<LocalTransform>451.944427 403.202637 955.858032</LocalTransform>
+					</Frame>
+					<Frame Value="54">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>38.093143 -0.000000 -32.386917 0.000000 -11.030741 47.010551 -12.974237 0.000000 30.450539 17.029625 35.815594 0.000000 445.693268 403.705017 956.924561 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.347547 0.704612 -0.000000</LocalRotation>
+						<LocalTransform>445.693268 403.705017 956.924561</LocalTransform>
+					</Frame>
+					<Frame Value="55">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>38.465965 0.000000 -31.943222 0.000000 -10.898158 47.000031 -13.123540 0.000000 30.026649 17.058638 36.158031 0.000000 437.828094 404.337097 958.266479 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.348164 0.693021 0.000000</LocalRotation>
+						<LocalTransform>437.828094 404.337097 958.266479</LocalTransform>
+					</Frame>
+					<Frame Value="56">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>38.904865 0.000000 -31.407188 0.000000 -10.737060 46.987431 -13.300262 0.000000 29.514862 17.093315 36.560791 0.000000 428.425781 405.092712 959.870667 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.348902 0.679165 0.000000</LocalRotation>
+						<LocalTransform>428.425781 405.092712 959.870667</LocalTransform>
+					</Frame>
+					<Frame Value="57">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>39.402630 0.000000 -30.780396 0.000000 -10.547436 46.972839 -13.501993 0.000000 28.916853 17.133366 37.017067 0.000000 417.563110 405.965698 961.724060 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.349755 0.663157 0.000000</LocalRotation>
+						<LocalTransform>417.563110 405.965698 961.724060</LocalTransform>
+					</Frame>
+					<Frame Value="58">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>39.951675 0.000000 -30.064327 0.000000 -10.329203 46.956352 -13.726198 0.000000 28.234222 17.178503 37.519699 0.000000 405.316956 406.949860 963.813416 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.350716 0.645110 0.000000</LocalRotation>
+						<LocalTransform>405.316956 406.949860 963.813416</LocalTransform>
+					</Frame>
+					<Frame Value="59">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>40.544121 0.000000 -29.260456 0.000000 -10.082238 46.938053 -13.970236 0.000000 27.468578 17.228436 38.061241 0.000000 391.764313 408.039001 966.125732 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.351779 0.625138 0.000000</LocalRotation>
+						<LocalTransform>391.764313 408.039001 966.125732</LocalTransform>
+					</Frame>
+					<Frame Value="60">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>41.171879 0.000000 -28.370344 0.000000 -9.806424 46.918037 -14.231372 0.000000 26.621616 17.282879 38.634075 0.000000 376.981873 409.226990 968.647827 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.352939 0.603353 0.000000</LocalRotation>
+						<LocalTransform>376.981873 409.226990 968.647827</LocalTransform>
+					</Frame>
+					<Frame Value="61">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>41.826702 -0.000000 -27.395744 0.000000 -9.501689 46.896385 -14.506790 0.000000 25.695229 17.341541 39.230423 0.000000 361.046539 410.507629 971.366699 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.354190 0.579870 -0.000000</LocalRotation>
+						<LocalTransform>361.046539 410.507629 971.366699</LocalTransform>
+					</Frame>
+					<Frame Value="62">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>42.500278 -0.000000 -26.338684 0.000000 -9.168040 46.873192 -14.793612 0.000000 24.691565 17.404135 39.842476 0.000000 344.035278 411.874756 974.269043 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.355525 0.554800 -0.000000</LocalRotation>
+						<LocalTransform>344.035278 411.874756 974.269043</LocalTransform>
+					</Frame>
+					<Frame Value="63">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>43.184303 0.000000 -25.201506 0.000000 -8.805593 46.848545 -15.088916 0.000000 23.613077 17.470371 40.462437 0.000000 326.024750 413.322174 977.341919 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.356939 0.528259 0.000000</LocalRotation>
+						<LocalTransform>326.024750 413.322174 977.341919</LocalTransform>
+					</Frame>
+					<Frame Value="64">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>43.870552 0.000000 -23.986971 0.000000 -8.414611 46.822536 -15.389755 0.000000 22.462614 17.539961 41.082607 0.000000 307.091949 414.843689 980.572205 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.358424 0.500358 0.000000</LocalRotation>
+						<LocalTransform>307.091949 414.843689 980.572205</LocalTransform>
+					</Frame>
+					<Frame Value="65">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>44.550961 0.000000 -22.698280 0.000000 -7.995523 46.795254 -15.693181 0.000000 21.243435 17.612617 41.695469 0.000000 287.313782 416.433167 983.946655 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.359977 0.471211 0.000000</LocalRotation>
+						<LocalTransform>287.313782 416.433167 983.946655</LocalTransform>
+					</Frame>
+					<Frame Value="66">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.217728 0.000000 -21.339100 0.000000 -7.548943 46.766792 -15.996271 0.000000 19.959225 17.688053 42.293758 0.000000 266.766937 418.084412 987.452271 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.361589 0.440931 0.000000</LocalRotation>
+						<LocalTransform>266.766937 418.084412 987.452271</LocalTransform>
+					</Frame>
+					<Frame Value="67">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.863361 -0.000000 -19.913612 0.000000 -7.075697 46.737244 -16.296152 0.000000 18.614147 17.765980 42.870544 0.000000 245.528381 419.791260 991.075928 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.363256 0.409633 -0.000000</LocalRotation>
+						<LocalTransform>245.528381 419.791260 991.075928</LocalTransform>
+					</Frame>
+					<Frame Value="68">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.480785 0.000000 -18.426519 0.000000 -6.576834 46.706707 -16.590025 0.000000 17.212839 17.846111 43.419289 0.000000 223.675064 421.547485 994.804443 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.364971 0.377428 0.000000</LocalRotation>
+						<LocalTransform>223.675064 421.547485 994.804443</LocalTransform>
+					</Frame>
+					<Frame Value="69">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.063408 0.000000 -16.882998 0.000000 -6.053622 46.675274 -16.875206 0.000000 15.760370 17.928160 43.933949 0.000000 201.283615 423.346985 998.624817 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.366728 0.344430 0.000000</LocalRotation>
+						<LocalTransform>201.283615 423.346985 998.624817</LocalTransform>
+					</Frame>
+					<Frame Value="70">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.605190 0.000000 -15.288746 0.000000 -5.507570 46.643044 -17.149143 0.000000 14.262273 18.011843 44.409019 0.000000 178.431015 425.183533 1002.523804 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.368522 0.310752 0.000000</LocalRotation>
+						<LocalTransform>178.431015 425.183533 1002.523804</LocalTransform>
+					</Frame>
+					<Frame Value="71">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.100723 -0.000000 -13.649927 0.000000 -4.940420 46.610119 -17.409452 0.000000 12.724495 18.096872 44.839607 0.000000 155.194244 427.050934 1006.488403 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.370345 0.276509 -0.000000</LocalRotation>
+						<LocalTransform>155.194244 427.050934 1006.488403</LocalTransform>
+					</Frame>
+					<Frame Value="72">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.545288 0.000000 -11.973102 0.000000 -4.354130 46.576603 -17.653944 0.000000 11.153328 18.182964 45.221489 0.000000 131.649918 428.943085 1010.505432 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.372193 0.241812 0.000000</LocalRotation>
+						<LocalTransform>131.649918 428.943085 1010.505432</LocalTransform>
+					</Frame>
+					<Frame Value="73">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.934906 0.000000 -10.265236 0.000000 -3.750884 46.542595 -17.880657 0.000000 9.555414 18.269838 45.551147 0.000000 107.875015 430.853760 1014.561829 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.374059 0.206775 0.000000</LocalRotation>
+						<LocalTransform>107.875015 430.853760 1014.561829</LocalTransform>
+					</Frame>
+					<Frame Value="74">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.266392 0.000000 -8.533621 0.000000 -3.133069 46.508202 -18.087870 0.000000 7.937667 18.357210 45.825825 0.000000 83.946533 432.776764 1018.644409 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.375937 0.171512 0.000000</LocalRotation>
+						<LocalTransform>83.946533 432.776764 1018.644409</LocalTransform>
+					</Frame>
+					<Frame Value="75">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.537392 0.000000 -6.785774 0.000000 -2.503244 46.473534 -18.274141 0.000000 6.307178 18.444796 46.043556 0.000000 59.941055 434.705963 1022.740112 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.377821 0.136136 0.000000</LocalRotation>
+						<LocalTransform>59.941055 434.705963 1022.740112</LocalTransform>
+					</Frame>
+					<Frame Value="76">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.746407 0.000000 -5.029435 0.000000 -1.864142 46.438705 -18.438322 0.000000 4.671209 18.532318 46.203171 0.000000 35.935577 436.635162 1026.835815 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.379705 0.100759 0.000000</LocalRotation>
+						<LocalTransform>35.935577 436.635162 1026.835815</LocalTransform>
+					</Frame>
+					<Frame Value="77">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.892796 -0.000000 -3.272465 0.000000 -1.218633 46.403820 -18.579571 0.000000 3.037097 18.619492 46.304325 0.000000 12.007096 438.558167 1030.918457 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.381583 0.065496 -0.000000</LocalRotation>
+						<LocalTransform>12.007096 438.558167 1030.918457</LocalTransform>
+					</Frame>
+					<Frame Value="78">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.976807 0.000000 -1.522736 0.000000 -0.569687 46.368999 -18.697367 0.000000 1.412155 18.706043 46.347488 0.000000 -11.767806 440.468842 1034.974854 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.383449 0.030459 0.000000</LocalRotation>
+						<LocalTransform>-11.767806 440.468842 1034.974854</LocalTransform>
+					</Frame>
+					<Frame Value="79">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.999550 -0.000000 0.211871 0.000000 0.079628 46.334354 -18.791521 0.000000 -0.196338 18.791689 46.333939 0.000000 -35.312130 442.360962 1038.991821 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.385296 -0.004237 -0.000000</LocalRotation>
+						<LocalTransform>-35.312130 442.360962 1038.991821</LocalTransform>
+					</Frame>
+					<Frame Value="80">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.962986 0.000000 1.923578 0.000000 0.726195 46.300007 -18.862181 0.000000 -1.781234 18.876154 46.265732 0.000000 -58.548889 444.228394 1042.956421 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.387120 -0.038481 0.000000</LocalRotation>
+						<LocalTransform>-58.548889 444.228394 1042.956421</LocalTransform>
+					</Frame>
+					<Frame Value="81">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.869884 0.000000 3.604797 0.000000 1.366879 46.266079 -18.909824 0.000000 -3.335597 18.959162 46.145683 0.000000 -81.401489 446.064941 1046.855469 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.388913 -0.072159 0.000000</LocalRotation>
+						<LocalTransform>-81.401489 446.064941 1046.855469</LocalTransform>
+					</Frame>
+					<Frame Value="82">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.723808 0.000000 5.248137 0.000000 1.998537 46.232693 -18.935259 0.000000 -4.852711 19.040436 45.977310 0.000000 -103.792938 447.864441 1050.675781 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.390671 -0.105156 0.000000</LocalRotation>
+						<LocalTransform>-103.792938 447.864441 1050.675781</LocalTransform>
+					</Frame>
+					<Frame Value="83">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.529037 0.000000 6.846488 0.000000 2.618056 46.199970 -18.939606 0.000000 -6.326150 19.119699 45.764801 0.000000 -125.646248 449.620667 1054.404297 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.392386 -0.137361 0.000000</LocalRotation>
+						<LocalTransform>-125.646248 449.620667 1054.404297</LocalTransform>
+					</Frame>
+					<Frame Value="84">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.290527 0.000000 8.393087 0.000000 3.222388 46.168037 -18.924288 0.000000 -7.749847 19.196678 45.512936 0.000000 -146.884811 451.327515 1058.027954 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.394053 -0.168660 0.000000</LocalRotation>
+						<LocalTransform>-146.884811 451.327515 1058.027954</LocalTransform>
+					</Frame>
+					<Frame Value="85">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>49.013832 -0.000000 9.881506 0.000000 3.808550 46.137020 -18.891010 0.000000 -9.118065 19.271101 45.227043 0.000000 -167.431656 452.978760 1061.533569 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.395665 -0.198940 -0.000000</LocalRotation>
+						<LocalTransform>-167.431656 452.978760 1061.533569</LocalTransform>
+					</Frame>
+					<Frame Value="86">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.705044 -0.000000 11.305698 0.000000 4.373653 46.107052 -18.841732 0.000000 -10.425449 19.342691 44.912918 0.000000 -187.209808 454.568207 1064.908081 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.397217 -0.228086 -0.000000</LocalRotation>
+						<LocalTransform>-187.209808 454.568207 1064.908081</LocalTransform>
+					</Frame>
+					<Frame Value="87">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.370686 -0.000000 12.660040 0.000000 4.914926 46.078262 -18.778641 0.000000 -11.667053 19.411179 44.576744 0.000000 -206.142624 456.089752 1068.138306 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.398703 -0.255987 -0.000000</LocalRotation>
+						<LocalTransform>-206.142624 456.089752 1068.138306</LocalTransform>
+					</Frame>
+					<Frame Value="88">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>48.017670 0.000000 13.939275 0.000000 5.429707 46.050777 -18.704121 0.000000 -12.838289 19.476288 44.225021 0.000000 -224.153122 457.537170 1071.211182 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.400117 -0.282529 0.000000</LocalRotation>
+						<LocalTransform>-224.153122 457.537170 1071.211182</LocalTransform>
+					</Frame>
+					<Frame Value="89">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.653172 -0.000000 15.138533 0.000000 5.915458 46.024734 -18.620716 0.000000 -13.934939 19.537750 43.864494 0.000000 -241.164383 458.904266 1074.113525 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.401452 -0.307598 -0.000000</LocalRotation>
+						<LocalTransform>-241.164383 458.904266 1074.113525</LocalTransform>
+					</Frame>
+					<Frame Value="90">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>47.284557 0.000000 16.253325 0.000000 6.369774 46.000267 -18.531097 0.000000 -14.953146 19.595295 43.502045 0.000000 -257.099701 460.184906 1076.832397 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.402702 -0.331082 0.000000</LocalRotation>
+						<LocalTransform>-257.099701 460.184906 1076.832397</LocalTransform>
+					</Frame>
+					<Frame Value="91">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.919292 -0.000000 17.279465 0.000000 6.790362 45.977501 -18.438013 0.000000 -15.889333 19.648647 43.144638 0.000000 -271.882172 461.372894 1079.354492 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.403862 -0.352867 -0.000000</LocalRotation>
+						<LocalTransform>-271.882172 461.372894 1079.354492</LocalTransform>
+					</Frame>
+					<Frame Value="92">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.564850 0.000000 18.213043 0.000000 7.175042 45.956577 -18.344257 0.000000 -16.740181 19.697538 42.799221 0.000000 -285.434784 462.462067 1081.666748 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.404926 -0.372839 0.000000</LocalRotation>
+						<LocalTransform>-285.434784 462.462067 1081.666748</LocalTransform>
+					</Frame>
+					<Frame Value="93">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>46.228596 -0.000000 19.050383 0.000000 7.521738 45.937626 -18.252619 0.000000 -17.502586 19.741697 42.472637 0.000000 -297.680908 463.446228 1083.756226 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.405887 -0.390886 -0.000000</LocalRotation>
+						<LocalTransform>-297.680908 463.446228 1083.756226</LocalTransform>
+					</Frame>
+					<Frame Value="94">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.917725 0.000000 19.787943 0.000000 7.828447 45.920776 -18.165834 0.000000 -18.173555 19.780853 42.171551 0.000000 -308.543579 464.319183 1085.609497 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.406740 -0.406894 0.000000</LocalRotation>
+						<LocalTransform>-308.543579 464.319183 1085.609497</LocalTransform>
+					</Frame>
+					<Frame Value="95">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.639141 0.000000 20.422260 0.000000 8.093232 45.906170 -18.086548 0.000000 -18.750154 19.814732 41.902363 0.000000 -317.945892 465.074799 1087.213745 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.407478 -0.420750 0.000000</LocalRotation>
+						<LocalTransform>-317.945892 465.074799 1087.213745</LocalTransform>
+					</Frame>
+					<Frame Value="96">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.399372 0.000000 20.949869 0.000000 8.314192 45.893929 -18.017254 0.000000 -19.229437 19.843063 41.671112 0.000000 -325.811066 465.706909 1088.555664 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.408095 -0.432341 0.000000</LocalRotation>
+						<LocalTransform>-325.811066 465.706909 1088.555664</LocalTransform>
+					</Frame>
+					<Frame Value="97">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.204456 0.000000 21.367201 0.000000 8.489435 45.884190 -17.960251 0.000000 -19.608334 19.865578 41.483395 0.000000 -332.062195 466.209259 1089.622192 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.408585 -0.441553 0.000000</LocalRotation>
+						<LocalTransform>-332.062195 466.209259 1089.622192</LocalTransform>
+					</Frame>
+					<Frame Value="98">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>45.059837 0.000000 21.670509 0.000000 8.617061 45.877075 -17.917591 0.000000 -19.883593 19.881996 41.344273 0.000000 -336.622467 466.575745 1090.400269 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.408943 -0.448273 0.000000</LocalRotation>
+						<LocalTransform>-336.622467 466.575745 1090.400269</LocalTransform>
+					</Frame>
+					<Frame Value="99">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>44.970276 0.000000 21.855759 0.000000 8.695117 45.872719 -17.891020 0.000000 -20.051661 19.892052 41.258179 0.000000 -339.414978 466.800171 1090.876709 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.409162 -0.452389 0.000000</LocalRotation>
+						<LocalTransform>-339.414978 466.800171 1090.876709</LocalTransform>
+					</Frame>
+					<Frame Value="100">
+						<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+						<LocalMatrix>44.939701 0.000000 21.918558 0.000000 8.721597 45.871239 -17.881924 0.000000 -20.108627 19.895464 41.228798 0.000000 -340.362885 466.876343 1091.038452 1.000000</LocalMatrix>
+						<LocalScale>50.000000 50.000000 50.000000</LocalScale>
+						<LocalRotation>-0.409237 -0.453786 0.000000</LocalRotation>
+						<LocalTransform>-340.362885 466.876343 1091.038452</LocalTransform>
+					</Frame>
+				</Camera>
+			</Cameras>
+		</DrawEnv>
+	</EnvAnimation>
+</GfMotion>
+

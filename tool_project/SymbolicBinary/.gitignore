@@ -1,0 +1,5 @@
+/*/bin/
+/*/obj/
+*.o
+/DynamicBinaryWriterLib/Makefile
+/DynamicBinaryWriterLib/*.so

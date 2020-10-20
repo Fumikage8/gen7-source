@@ -1,0 +1,5 @@
+include $(NIJI_TOOL_DIR)/converter/omake/effect/effect.om
+
+.PHONY:build
+
+build: $(EffectMake EmitterSetDrawDemo.xml,out,_,sample,Win32) $(EffectMake EmitterSetDrawDemo.xml,out,_,sample,Ctr)

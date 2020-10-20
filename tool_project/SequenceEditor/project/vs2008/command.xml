@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+  <define>
+    <!--ポケモン位置指定-->
+    <SEQ_DEF_POS_ATK value="0" comment="攻撃側" />
+    <SEQ_DEF_POS_DEF value="1" comment="防御側" />
+    <SEQ_DEF_POS_DEFTRG value="2" comment="防御側中心キャラ" />
+    <POS_ATK value="0" comment="攻撃側(旧)" />
+    <POS_DEF value="1" comment="防御側(旧)" />
+    <SEQ_DEF_POS_GROUP attr_label0="SEQ_DEF_POS_ATK" attr_label1="SEQ_DEF_POS_DEF" attr_label2="SEQ_DEF_POS_DEFTRG" attr_label3="POS_ATK" attr_label4="POS_DEF" />
+    <!--移動位置特殊系-->
+    <SEQ_DEF_SPPOS_SELF_FIELD value="0" comment="攻撃側場"/>
+    <SEQ_DEF_SPPOS_ENEMY_FIELD value="1" comment="防御側場"/>
+    <SEQ_DEF_SPPOS_ENEMY_CENTER value="2" comment="防御中心"/>
+    <SEQ_DEF_SPPOS_GROUP attr_label0="SEQ_DEF_SPPOS_SELF_FIELD" attr_label1="SEQ_DEF_SPPOS_ENEMY_FIELD"  attr_label2="SEQ_DEF_SPPOS_ENEMY_CENTER" />
+    <!--ON/OFFフラグ-->
+    <OFF value="0" comment="OFF" />
+    <ON value="1" comment="ON" />
+    <!--絶対/相対フラグ-->
+    <RERATIVE value="0" comment="相対座標" />
+    <ABSOLUTE value="1" comment="絶対座標" />
+    <!--モーション指定-->
+    <MOTION_WAIT  value="0" comment="待機"/>
+    <MOTION_ATK_A value="1" comment="攻撃(接触)"/>
+    <MOTION_ATK_B value="2" comment="攻撃(非接触)"/>
+    <MOTION_APPEAL value="3" comment="アピール"/>
+    <MOTION_DAMAGE value="4" comment="ダメージ(自動分岐)"/>
+    <MOTION_SPECIAL value="5" comment="特殊"/>
+    <MOTION_DAMAGE_S value="6" comment="ダメージ小"/>
+    <MOTION_DAMAGE_B value="7" comment="ダメージ大"/>
+    <MOTION_DOWN value="8" comment="ダウン"/>
+    <MOTION_LAND_A value="9" comment="登場(飛び出し)"/>
+    <MOTION_LAND_B value="10" comment="登場(落下ループ)"/>
+    <MOTION_LAND_C value="11" comment="登場(着地)"/>
+    <MOTION_LAND value="12" comment="登場"/>
+    <!--ノード指定-->
+    <SEQ_DEF_NODE_ORIGIN value="0" comment="原点"/>
+    <SEQ_DEF_NODE_BUTURI value="1" comment="接触攻撃"/>
+    <SEQ_DEF_NODE_SHOOT value="2" comment="非接触攻撃"/>
+    <SEQ_DEF_NODE_WAIST value="3" comment="Waist(腰)"/>
+    <SEQ_DEF_NODE_HEAD value="4" comment="頭上"/>
+    <SEQ_DEF_NODE_FRONT value="5" comment="正面"/>
+    <SEQ_DEF_NODE_FACE value="6" comment="頭中心"/>
+    <SEQ_DEF_NODE_EYE value="7" comment="目中心"/>
+    <SEQ_DEF_NODE_MOUTH value="8" comment="口"/>
+    <SEQ_DEF_NODE_HORN value="9" comment="角"/>
+    <SEQ_DEF_NODE_TAIL value="10" comment="尻尾"/>
+    <SEQ_DEF_NODE_HAND1 value="11" comment="手１"/>
+    <SEQ_DEF_NODE_HAND2 value="12" comment="手２"/>
+    <SEQ_DEF_NODE_FOOT1 value="13" comment="足１"/>
+    <SEQ_DEF_NODE_FOOT2 value="14" comment="足２"/>
+    <SEQ_DEF_NODE_CENTER value="15" comment="中心"/>
+    <NODE_ORIGIN value="0" comment="原点(旧)"/>
+    <NODE_WAIST value="3" comment="Waist(腰)(旧)"/>
+    <NODE_ENDJAW value="20" comment="EndJaw"/>
+    <SEQ_DEF_NODE_GROUP attr_label0="SEQ_DEF_NODE_ORIGIN" attr_label1="SEQ_DEF_NODE_BUTURI" attr_label2="SEQ_DEF_NODE_SHOOT" attr_label3="SEQ_DEF_NODE_WAIST" attr_label4="SEQ_DEF_NODE_HEAD" attr_label5="SEQ_DEF_NODE_FRONT" attr_label6="SEQ_DEF_NODE_FACE" attr_label7="SEQ_DEF_NODE_EYE" attr_label8="SEQ_DEF_NODE_MOUTH" attr_label9="SEQ_DEF_NODE_HORN" attr_label10="SEQ_DEF_NODE_TAIL" attr_label11="SEQ_DEF_NODE_HAND1" attr_label12="SEQ_DEF_NODE_HAND2" attr_label13="SEQ_DEF_NODE_FOOT1" attr_label14="SEQ_DEF_NODE_FOOT2" attr_label15="NODE_ORIGIN" attr_label16="NODE_WAIST" attr_label17="NODE_ENDJAW" />
+    <!--相対移動オプション bitフラグ管理するので注意！-->
+    <OPT_NORMAL               value="1" comment="通常補正"/>
+    <OPT_NONE                 value="2" comment="サイズ補正なし"/>
+    <OPT_NOT_REVERCE          value="4" comment="自動反転なし(定義用)"/>
+    <OPT_NOT_REVERCE_NORMAL   value="5" comment="自動反転なし"/>
+    <SEQ_DEF_RETVAL_OPT attr_label0="OPT_NORMAL" attr_label1="OPT_NONE" attr_label2="OPT_NOT_REVERCE_NORMAL"/>
+    <!--カメラ追従オプション-->
+    <FOLLOW_ALL value="0" comment="位置・注視点"/>
+    <FOLLOW_TRG value="1" comment="注視点のみ(未対応)"/>
+    <!--補完移動オプション-->
+    <SEQ_DEF_MOVETYPE_LINER value="0" comment="等速移動"/>
+    <SEQ_DEF_MOVETYPE_FAST  value="1" comment="最初速く"/>
+    <SEQ_DEF_MOVETYPE_SLOW  value="2" comment="最初遅く"/>
+    <SEQ_DEF_MOVETYPE_SIN   value="3" comment="遅い→早い→遅い"/>
+    <SEQ_DEF_MOVETYPE_GROUP attr_label0="SEQ_DEF_MOVETYPE_LINER" attr_label1="SEQ_DEF_MOVETYPE_FAST" attr_label2="SEQ_DEF_MOVETYPE_SLOW" attr_label3="SEQ_DEF_MOVETYPE_SIN"/>
+    <!--背景破壊属性-->
+    <BREAK_TYPE_WIND value="0" comment="風"/>
+    <BREAK_TYPE_FIRE value="1" comment="炎(仮)"/>
+    <!--郡体制御モデル生成形状-->
+    <CLUSTER_SPAWN_POINT value="0" comment="点"/>
+    <CLUSTER_SPAWN_SPHERE value="1" comment="球"/>
+    <CLUSTER_SPAWN_CYLINDER1 value="2" comment="円柱(底面基準)"/>
+    <CLUSTER_SPAWN_CYLINDER2 value="3" comment="円柱(中央基準)"/>
+    <CLUSTER_SPAWN_BOX value="4" comment="箱"/>
+    <!--汎用軸(カメラ揺らし)-->
+    <SEQ_DEF_AXIS_X value="0" comment="X軸"/>
+    <SEQ_DEF_AXIS_Y value="1" comment="Y軸"/>
+    <SEQ_DEF_AXIS_Z value="2" comment="Z軸"/>
+    <SEQ_DEF_AXIS_GROUP attr_label0="SEQ_DEF_AXIS_X" attr_label1="SEQ_DEF_AXIS_Y" attr_label2="SEQ_DEF_AXIS_Z"/>
+    <!--郡体制御モデル生成形状軸-->
+    <CLUSTER_ORIGIN value="0" comment="原点"/>
+    <CLUSTER_AXIS_X value="1" comment="X軸"/>
+    <CLUSTER_AXIS_Y value="2" comment="Y軸"/>
+    <CLUSTER_AXIS_Z value="3" comment="Z軸"/>
+    <CLUSTER_PLANE_X value="4" comment="X面"/>
+    <CLUSTER_PLANE_Y value="5" comment="Y面"/>
+    <CLUSTER_PLANE_Z value="6" comment="Z面"/>
+    <!--郡体制御モデル反射制御(0は内部で無効扱い)-->
+    <REFRECT_NONE value="0" comment="処理無し"/>
+    <REFRECT_NORMAL value="1" comment="反射"/>
+    <REFRECT_STOP value="2" comment="停止"/>
+    <REFRECT_DEATH value="3" comment="死亡"/>
+    <!--天気-->
+    <SEQ_DEF_WEATHER_NONE value="0" comment="リセット"/>
+    <SEQ_DEF_WEATHER_SHINE value="1" comment="晴れ"/>
+    <SEQ_DEF_WEATHER_RAIN value="2" comment="雨"/>
+    <SEQ_DEF_WEATHER_SNOW value="3" comment="雪"/>
+    <SEQ_DEF_WEATHER_SAND value="4" comment="砂嵐"/>
+    <!--フェードイン設定-->
+    <SEQ_DEF_FADE_UPPER value="0" comment="上画面"/>
+    <SEQ_DEF_FADE_LOWER value="1" comment="下画面"/>
+    <SEQ_DEF_FADE_BOTH value="2" comment="両画面"/>
+    <SEQ_DEF_FADE_WHITE value="0" comment="白フェード"/>
+    <SEQ_DEF_FADE_BLACK value="1" comment="黒フェード"/>
+    <!--特殊待ち定義-->
+    <SEQ_DEF_WAIT_KEY value="0" comment="キー待ち"/>
+    <SEQ_DEF_WAIT_MESSAGE value="1" comment="メッセージ待ち"/>
+    <SEQ_DEF_WAIT_LOAD value="2" comment="読み込み待ち"/>
+    <SEQ_DEF_WAIT_ENEMY_MOTION value="3" comment="敵トレーナーアニメ待ち"/>
+    <SEQ_DEF_WAIT_ENEMY_MOTION2 value="4" comment="敵トレーナーアニメ待ち2"/>
+    <SEQ_DEF_WAIT_GROUP attr_label0="SEQ_DEF_WAIT_KEY" attr_label1="SEQ_DEF_WAIT_MESSAGE"  attr_label2="SEQ_DEF_WAIT_LOAD" attr_label3="SEQ_DEF_WAIT_ENEMY_MOTION" attr_label4="SEQ_DEF_WAIT_ENEMY_MOTION2" />
+    <!--3Dサウンド追従物設定-->
+    <SEQ_DEF_FOLLOW_PARTICLE value="0" comment="パーティクル"/>
+    <SEQ_DEF_FOLLOW_MODEL value="1" comment="モデル"/>
+    <SEQ_DEF_FOLLOW_GROUP attr_label0="SEQ_DEF_FOLLOW_PARTICLE" attr_label1="SEQ_DEF_FOLLOW_MODEL" />
+    <!--サウンドパン設定-->
+    <SEQ_DEF_SEPAN_NONE value="0" comment="パン補正なし"/>
+    <SEQ_DEF_SEPAN_ATK value="1" comment="攻撃側"/>
+    <SEQ_DEF_SEPAN_DEF value="2" comment="防御側"/>
+    <SEQ_DEF_SEPAN_GROUP attr_label0="SEQ_DEF_SEPAN_NONE" attr_label1="SEQ_DEF_SEPAN_ATK" attr_label2="SEQ_DEF_SEPAN_DEF" />
+    <!--トレーナー位置指定-->
+    <SEQ_DEF_TRAINER_SELF1 value="0" comment="プレイヤー１"/>
+    <SEQ_DEF_TRAINER_ENEMY1 value="1" comment="敵１"/>
+    <SEQ_DEF_TRAINER_SELF2 value="2" comment="プレイヤー２"/>
+    <SEQ_DEF_TRAINER_ENEMY2 value="3" comment="敵２"/>
+    <SEQ_DEF_TRAINER_GROUP attr_label0="SEQ_DEF_TRAINER_SELF1" attr_label1="SEQ_DEF_TRAINER_ENEMY1" attr_label2="SEQ_DEF_TRAINER_SELF2" attr_label3="SEQ_DEF_TRAINER_ENEMY2" />
+    <!--トレーナーモーション-->
+    <SEQ_DEF_TR_MOTION_IN value="0" comment="登場"/>
+    <SEQ_DEF_TR_MOTION_BALL value="1" comment="ボール投げ"/>
+    <SEQ_DEF_TR_MOTION_BALL_CAP value="2" comment="ボール投げ(捕獲)"/>
+    <SEQ_DEF_TR_MOTION_LOSE value="3" comment="負け"/>
+    <SEQ_DEF_TR_MOTION_WAIT value="4" comment="待機"/>
+    <SEQ_DEF_TR_MOTION_GROUP attr_label0="SEQ_DEF_TR_MOTION_IN" attr_label1="SEQ_DEF_TR_MOTION_BALL" attr_label2="SEQ_DEF_TR_MOTION_WAIT" attr_label3="SEQ_DEF_TR_MOTION_LOSE" attr_label4="SEQ_DEF_TR_MOTION_BALL_CAP"/>
+    <!--レイアウト表示位置-->
+    <SEQ_DEF_LYT_DISP_FRONT value="0" comment="前面"/>
+    <SEQ_DEF_LYT_DISP_BACK value="1" comment="背面"/>
+    <SEQ_DEF_LYT_DISP_GROUP attr_label0="SEQ_DEF_LYT_DISP_FRONT" attr_label1="SEQ_DEF_LYT_DISP_BACK"/>
+    <!--レイアウト張り替えようテクスチャ-->
+    <SEQ_DEF_LYT_TEX_TRAINER_FULL value="0" comment="トレーナー(全身) 引数:ClientID"/>
+    <SEQ_DEF_LYT_TEX_TRAINER_UP value="1" comment="トレーナー(上半身) 引数:ClientID"/>
+    <SEQ_DEF_LYT_TEX_TRAINER_UP2 value="2" comment="トレーナー(上半身2) 引数:ClientID"/>
+    <SEQ_DEF_LYT_TEX_GROUP attr_label0="SEQ_DEF_LYT_TEX_TRAINER_FULL" attr_label1="SEQ_DEF_LYT_TEX_TRAINER_UP" attr_label2="SEQ_DEF_LYT_TEX_TRAINER_UP2"/>
+  </define>
+  <path_define>
+    <PROJECT_ROOT value="g:\home_xy\xy_project\" comment="プロジェクト定義用"/>
+    
+    <GARC_PARTICLE value="resource\wazaeffect\wazaeff_particle.gaix" comment="パーティクル用" parent="PROJECT_ROOT"/>
+    <GARC_BTL_MODEL value="g:\home_xy\xy_project\resource\battle\models\battle_3d.gaix" comment="バトルモデル"/>
+    <GARC_MODEL value="g:\home_xy\xy_project\resource\wazaeffect\wazaeff_model.gaix" comment="バトルモデル"/>
+    <GARC_LAYOUT value="g:\home_xy\xy_project\resource\wazaeffect\wazaeff_layout.gaix" comment="バトルレイアウト"/>
+    <SOUND_ID value="g:\home_xy\xy_project\prog\include\sound\xy_sound.csid" comment="サウンド用"/>
+    <SOUND_MID_ID value="g:\home_xy\xy_project\prog\include\sound\SoundMiddleID.h" comment="サウンド中間ID用"/>
+    <MESSAGE_STD value="g:\home_xy\xy_project\prog\include\message\msg_btl_std.h" comment="メッセージUI"/>
+  </path_define>
+
+  <group_option>
+    <GRP_OPT_NONE value="0" label="オプション無" label_s="無"/>
+    <GRP_OPT_DOUBLE value="10" label="ダブル以上" label_s="double"/>
+    <GRP_OPT_TRIPLE value="11" label="トリプル・ローテ以上" label_s="triple"/>
+  </group_option>
+  
+  <macro>
+    <LabelPokemon brief="----1:ポケモン関係----" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <PokemonMoveAbsolute brief="1: 1 ポケモン移動(絶対座標)" color="red" comment="現在位置からポケモンを移動させます。{br}移動先は絶対座標で移動します。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </PokemonMoveAbsolute>
+    <PokemonMoveRelative brief="1: 2 ポケモン移動(相対座標)" color="red" comment="現在位置からポケモンを移動させます。{br}移動先は相対座標で移動します。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+    </PokemonMoveRelative>
+    <PokemonMoveRelativePoke brief="1: 3 ポケモン移動(ポケモン相対座標)" color="red" comment="現在位置からポケモンを移動させます。{br}移動先はポケモン(自分含む)相対座標で移動します。">
+      <moveTrg comment="移動対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <posTrg comment="座標対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="対象ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </PokemonMoveRelativePoke>
+    <PokemonMoveReset brief="1: 4 ポケモン位置初期化" color="red" comment="初期位置にポケモンを移動させます。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+    </PokemonMoveReset>
+    <PokemonRotate brief="1:11 ポケモン回転" color="red" comment="ポケモンを回転させます。{br}回転量は現在の回転量に加算されます。{br}管理はグループの番号で行います。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <scale comment="回転量" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </PokemonRotate>
+    <PokemonRotatePoke brief="1:12 ポケモン回転(ポケモン指定)" color="red" comment="ポケモンを回転させます。">
+      <moveTrg comment="回転対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <posTrg comment="方向対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </PokemonRotatePoke>
+    <PokemonScale brief="1:13 ポケモン拡縮" color="red" comment="ポケモンを拡縮させます。{br}管理はグループの番号で行います。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <scale comment="拡縮量" type="VALUE_VECFX32" />
+    </PokemonScale>
+    <PokemonVisible brief="1:20 ポケモン表示切替" color="red" comment="ポケモンの表示・非表示を切り替えます。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </PokemonVisible>
+    <PokemonMotion brief="1:30 ポケモンモーション再生" color="red" comment="ポケモンのモーションを再生します。{br}ダメージモーションは効果によって小と大をプログラムで分岐します。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <motion comment="モーション種類" type="COMBOBOX_TEXT" attr_label0="MOTION_WAIT" attr_label1="MOTION_ATK_A" attr_label2="MOTION_ATK_B" attr_label3="MOTION_APPEAL" attr_label4="MOTION_DAMAGE" attr_label5="MOTION_SPECIAL" attr_label6="MOTION_DAMAGE_S"  attr_label7="MOTION_DAMAGE_B" attr_label8="MOTION_DOWN"/>
+    </PokemonMotion>
+    <PokemonAttackMotion brief="1:31 ポケモン攻撃モーション再生" color="red" comment="ポケモンのモーションを再生します。{br}ダメージモーションは効果によって小と大をプログラムで分岐します。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <motion comment="モーション種類" type="COMBOBOX_TEXT" attr_label0="MOTION_ATK_A" attr_label1="MOTION_ATK_B" />
+    </PokemonAttackMotion>
+    <PokemonSetAnimeSpeed brief="1:32 ポケモン モーション速度変更" color="red" comment="ポケモンのアニメーション速度を変更します。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <speed comment="速度" type="VALUE_FX32" init0="1.0" />
+    </PokemonSetAnimeSpeed>
+    <PokemonEdgeEnable brief="1:40 ポケモンエッジ切替" color="red" comment="ポケモンのエッジを切り替えます。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </PokemonEdgeEnable>
+    <PokemonShaderCol brief="1:41 ポケモンカラーシェーダー" color="red" comment="ポケモンの色をシェーダーで変更します。{br}状態異常と同居しません。" >
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <start_col comment="開始RGB(0.0-1.0)" type="VALUE_VECFX32" label0="R" label1="G" label2="B" min="0" max="1"/>
+      <start_pow comment="開始強さ" type="VALUE_FX32" />
+      <end_col comment="終了RGB(0.0-1.0)" type="VALUE_VECFX32" label0="R" label1="G" label2="B" min="0" max="1"/>
+      <end_pow comment="終了強さ" type="VALUE_FX32" />
+    </PokemonShaderCol>
+    
+    <PokemonSpMoveReset brief="1:80 ポケモン特殊移動：初期化" color="pink" comment="ポケモンの特殊移動の値をリセットします。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+    </PokemonSpMoveReset>
+    <PokemonSpMoveShake brief="1:81 ポケモン特殊移動：揺れ" color="pink" comment="ポケモンを揺らします。{br}開始幅と終了幅はゆれの大きさです。{br}振幅量はゆれる量で、1で往復一山です。{br}通常の移動と併用可！。{font color=red}ヒットバック併用不可{/font}">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <srate comment="開始幅" type="VALUE_FX32"/>
+      <erate comment="終了幅" type="VALUE_FX32"/>
+      <sdec comment="開始振幅" type="VALUE_FX32"/>
+      <edec comment="終了振幅" type="VALUE_FX32"/>
+      <axis comment="振動方向" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_AXIS_GROUP"/>
+    </PokemonSpMoveShake>
+
+    <LabelCamera brief="-----2:カメラ関係-----" color="yellow" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <CameraMoveAbsolute brief="2: 1 カメラ移動(絶対座標)" color="yellow" comment="現在位置からカメラを移動させます。{br}移動先は絶対座標で指定します。{br}視野角は0の場合現在値を維持します。">
+      <pos comment="POS移動先" type="VALUE_VECFX32" />
+      <trg comment="TRG移動先" type="VALUE_VECFX32" />
+      <fov comment="視野角" type="VALUE_FX32"/>
+      <move comment="移動オプション" type="COMBOBOX_TEXT"  attr_group="SEQ_DEF_MOVETYPE_GROUP" />
+    </CameraMoveAbsolute>
+    <CameraMoveRelative brief="2: 2 カメラ移動(相対座標)" color="yellow" comment="現在位置からカメラを移動させます。{br}移動先は相対座標で指定します。{br}視野角は0の場合現在値を維持します。">
+      <pos comment="POS移動先" type="VALUE_VECFX32" />
+      <trg comment="TRG移動先" type="VALUE_VECFX32" />
+      <fov comment="視野角" type="VALUE_FX32"/>
+      <move comment="移動オプション" type="COMBOBOX_TEXT"  attr_group="SEQ_DEF_MOVETYPE_GROUP" />
+    </CameraMoveRelative>
+    <CameraMoveRelativePoke brief="2: 3 カメラ移動(ポケモン相対座標)" color="yellow" comment="現在位置からカメラを移動させます。{br}移動先はポケモンの相対座標で指定します。{br}視野角は0の場合現在値を維持します。">
+      <poke comment="対象キャラ" type="COMBOBOX_TEXT"  attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="対象ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <pos comment="POS差分" type="VALUE_VECFX32" />
+      <trg comment="TRG差分" type="VALUE_VECFX32" />
+      <fov comment="視野角" type="VALUE_FX32"/>
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+      <move comment="移動オプション" type="COMBOBOX_TEXT"  attr_group="SEQ_DEF_MOVETYPE_GROUP" />
+    </CameraMoveRelativePoke>
+    <CameraMoveFixed brief="2: 4 カメラ移動(固定位置)" color="yellow" comment="現在位置からカメラを移動させます。{br}指定されたタイプの座標へ移動します。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <move comment="移動オプション" type="COMBOBOX_TEXT"  attr_group="SEQ_DEF_MOVETYPE_GROUP" />
+    </CameraMoveFixed>
+    <CameraReset brief="2: 5 カメラリセット" color="yellow" comment="現在位置からカメラをデフォルト位置へ移動させます。">
+      <isFlip comment="自動反転" type="VALUE_CHECKBOX"/>
+      <move comment="移動オプション" type="COMBOBOX_TEXT"  attr_group="SEQ_DEF_MOVETYPE_GROUP" />
+    </CameraReset>
+    <CameraShake brief="2:10 カメラ揺らし" color="yellow" comment="カメラを揺らします。{br}開始幅と終了幅はゆれの大きさです。{br}振幅量はゆれる量で、1で往復一山です。{br}">
+      <srate comment="開始幅" type="VALUE_FX32"/>
+      <erate comment="終了幅" type="VALUE_FX32"/>
+      <dec comment="振幅量" type="VALUE_FX32"/>
+      <axis comment="振動方向" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_AXIS_GROUP" init="SEQ_DEF_AXIS_Y" />
+    </CameraShake>
+    <CameraAnimetionPoke brief="2:20 カメラアニメーション" color="yellow" type="one_frame" comment="カメラアニメーションを再生します。{br}ポケモンの位置を基準にします。">
+      <file comment="GARCファイル" type="FILE_GARC" extension="BCCAM" file="GARC_MODEL" />
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <reverse comment="反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </CameraAnimetionPoke>
+    <CameraAnimetionPosition brief="2:21 カメラアニメーション(座標)" color="yellow" type="one_frame" comment="カメラアニメーションを再生します。{br}ポケモンの位置を基準にします。">
+      <file comment="GARCファイル" type="FILE_GARC" extension="BCCAM" file="GARC_MODEL" />
+      <pos comment="位置" type="VALUE_VECFX32" />
+    </CameraAnimetionPosition>
+    <CameraAnimeSetFollow brief="2:23 カメラアニメーション追従" color="yellow" comment="カメラアニメーションを特定箇所に追従させます。{br}現在は平行移動のみです。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="オフセット" type="VALUE_VECFX32" />
+      <reverse comment="反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="OFF" />
+      <opt comment="追従オプション" type="COMBOBOX_TEXT" attr_label0="FOLLOW_ALL" attr_label1="FOLLOW_TRG" />
+    </CameraAnimeSetFollow>
+    <CameraAnimetionEnd brief="2:24 カメラアニメーション終了" color="yellow" type="one_frame" comment="カメラアニメーションを終了します。{br}技ではない場合、カメラのアニメーション再生をしたまま終了するとまずいことがあるので。">
+      <isHoldPos  comment="位置保持" type="VALUE_CHECKBOX" init0="1"/>
+    </CameraAnimetionEnd>
+    <CameraNearFar brief="2:30 カメラNear・Far設定" color="yellow" type="one_frame" comment="カメラのNearとFarを設定します。あまり小さい値にしないでください。{br}デフォルトは32の6000">
+      <Near comment="Near" type="VALUE_FX32"/>
+      <Far comment="Far" type="VALUE_FX32"/>
+    </CameraNearFar>
+    <CameraSetOrthoCamera brief="2:40 カメラ正射影カメラ設定" color="yellow" type="one_frame" comment="演出用の正射影カメラを設定します。">
+      <isActive  comment="有効化" type="VALUE_CHECKBOX"/>
+    </CameraSetOrthoCamera>
+
+    <LabelParticle brief="--3:パーティクル関係--" color="green" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <ParticleCreate brief="3: 1 パーティクル作成" color="green" comment="パーティクルを作成します。{br}フレーム数が寿命になります。0の場合は永遠に存在しますが、現在削除方法がありません。{br}管理はグループの番号で行います。">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_PARTICLE" />
+      <isMulti  comment="複数作成" type="VALUE_CHECKBOX" />
+    </ParticleCreate>
+    <ParticleMoveAbsolute brief="3:11 パーティクル移動(絶対座標)" color="green" comment="パーティクルを移動させます。{br}移動先は絶対座標で指定します。{br}管理はグループの番号で行います。">
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </ParticleMoveAbsolute>
+    <ParticleMoveRelative brief="3:12 パーティクル移動(相対座標)" color="green" comment="パーティクルを移動させます。{br}移動先は相対座標で指定します。{br}管理はグループの番号で行います。">
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+    </ParticleMoveRelative>
+    <ParticleMoveFixedNew brief="3:13 パーティクル移動(固定位置+相対座標)" color="green" comment="パーティクルを移動させます。{br}移動先は固定位置からの相対座標で指定します。{br}移動量・スケール・回転にポケモンのサイズ補正が入ります。{br}管理はグループの番号で行います。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動先差分" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </ParticleMoveFixedNew>
+    <ParticleMoveFixedRotateNew brief="3:14 パーティクル移動+自動回転" color="green" comment="パーティクルを移動させます。{br}移動先は固定位置からの相対座標で指定し、カメラ位置に併せ回転します。{br}移動量・スケール・回転にポケモンのサイズ補正が入ります。{br}管理はグループの番号で行います。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動先差分(ポケモン)" type="VALUE_VECFX32" />
+      <ofsRot comment="回転量差分" type="VALUE_FX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </ParticleMoveFixedRotateNew>
+    <ParticleMoveSpecialPos brief="3:15 パーティクル移動(特殊座標)" color="green" comment="パーティクルを移動させます。{br}移動先は自分場、相手場など特殊な位置です。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_SPPOS_GROUP" />
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+    </ParticleMoveSpecialPos>
+    <ParticleScale brief="3:20 パーティクルスケール" color="green" comment="パーティクルを拡縮させます。{br}拡縮は現在の拡縮量に乗算されます。{br}管理はグループの番号で行います。">
+      <scale comment="拡大率" type="VALUE_VECFX32" init0="1" init1="1" init2="1" sync="1"/>
+    </ParticleScale>
+    <ParticleRotate brief="3:21 パーティクル回転" color="green" comment="パーティクルを回転させます。{br}回転量は現在の回転量に加算されます。{br}管理はグループの番号で行います。">
+      <scale comment="回転" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </ParticleRotate>
+    <ParticleFollowCamera brief="3:30 パーティクルカメラ追従" color="green" comment="パーティクルをカメラに追従させます。{br}自動回転を入れるとビルボードのように動作します。{br}カメラからの距離はnearに気をつけてください。">
+      <len comment="カメラからの距離" type="VALUE_FX32"/>
+      <rotFlg comment="自動回転"  type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+      <rotOfs comment="自動回転差分"  type="VALUE_VECFX32"/>
+    </ParticleFollowCamera>
+    <ParticleFollowModel brief="3:31 パーティクルモデル追従" color="green" comment="パーティクルをモデルに追従させます。{br}-1で無効化させます。" type="one_frame">
+      <grpNo comment="グループ番号(-1無効化)" type="VALUE_INT"/>
+      <node comment="ノード名(16文字)" type="VALUE_STRING" length="16" />
+    </ParticleFollowModel>
+    <ParticleLockDisp brief="3:32 パーティクル画面貼り付け" color="green" comment="パーティクルを画面に貼り付けます。{br}デプステストの値とかいじります。{br}仕組み的には0,0,0にあり、0,0,100を向くカメラに表示させます。回転などはお好みで。" type="one_frame">
+      <len comment="カメラからの距離" type="VALUE_FX32"/>
+      <depth  comment="デプステスト書き換え" type="VALUE_CHECKBOX" init0="1"/>
+      <isReverse  comment="自動反転" type="VALUE_CHECKBOX"/>
+    </ParticleLockDisp>
+    <ParticleSetAutoRotate brief="3:33 パーティクル移動方向自動回転" color="pink" comment="パーティクルを移動方向へ回転させる設定をします。{br}回転設定を上書きします。{br}" type="one_frame">
+      <isEnable comment="有効" type="VALUE_CHECKBOX" init0="1"/>
+    </ParticleSetAutoRotate>
+    
+    <ParticleSpMoveReset brief="3:80 パーティクル特殊移動：初期化" color="pink" comment="パーティクルの特殊移動の値をリセットします。">
+    </ParticleSpMoveReset>
+    <ParticleSpMoveShake brief="3:81 パーティクル特殊移動：揺れ" color="pink" comment="パーティクルを揺らします。{br}開始幅と終了幅はゆれの大きさです。{br}振幅量はゆれる量で、1で往復一山です。{br}通常の移動と併用可！。{font color=red}ヒットバック併用不可{/font}">
+      <srate comment="開始幅" type="VALUE_FX32"/>
+      <erate comment="終了幅" type="VALUE_FX32"/>
+      <sdec comment="開始振幅" type="VALUE_FX32"/>
+      <edec comment="終了振幅" type="VALUE_FX32"/>
+      <axis comment="振動方向" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_AXIS_GROUP"/>
+    </ParticleSpMoveShake>
+
+    <LabelModel brief="--4:モデル関係--" color="pink" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <ModelCreate brief="4: 1 モデル作成" color="pink" comment="モデルを作成します。{br}フレーム数が寿命になります。0の場合は永遠に存在しますが、現在削除方法がありません。{br}管理はグループの番号で行います。">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHMDL" />
+      <isBillboard comment="後描画フラグ"  type="COMBOBOX_TEXT" attr_label0="OFF" attr_label1="ON" />
+      <isMulti comment="複数作成" type="VALUE_CHECKBOX" />
+      <isLight comment="専用ライト使用" type="VALUE_CHECKBOX" />
+      <isEdge comment="法線エッジ使用" type="VALUE_CHECKBOX" init0="1" />
+      <isDist comment="歪みシェーダー用" type="VALUE_CHECKBOX"/>
+    </ModelCreate>
+    <ModelBallCreate brief="4: 2 モンスターボール作成" color="pink" comment="モンスターボールを作成します。{br}フレーム数が寿命になります。0の場合は永遠に存在しますが、現在削除方法がありません。{br}管理はグループの番号で行います。">
+      <ballIdx comment="インデックス" type="VALUE_INT" />
+    </ModelBallCreate>
+    <ModelMoveAbsolute brief="4:10 モデル移動(絶対座標)" color="pink" comment="現在位置からモデルを移動させます。{br}管理はグループの番号で行います。">
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </ModelMoveAbsolute>
+    <ModelMoveRelative brief="4:11 モデル移動(相対座標)" color="pink" comment="現在位置から相対的に移動させます。{br}管理はグループの番号で行います。">
+      <pos comment="移動差分POS" type="VALUE_VECFX32" />
+    </ModelMoveRelative>
+    <ModelMoveRelativePoke brief="4:12 モデル移動(ポケモン相対座標)" color="pink" comment="ポケモンからの相対座標に移動させます。{br}管理はグループの番号で行います。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <pos comment="移動差分POS" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </ModelMoveRelativePoke>
+    <ModelMoveFixedRotateNew brief="4:13 モデル移動+自動回転" color="pink" comment="モデルを移動させます。{br}移動先は固定位置からの相対座標で指定し、カメラ位置に併せ回転します。{br}移動量・スケール・回転にポケモンのサイズ補正が入ります。{br}管理はグループの番号で行います。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動先差分(ポケモン)" type="VALUE_VECFX32" />
+      <ofsRot comment="回転量差分" type="VALUE_FX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </ModelMoveFixedRotateNew>
+    <ModelMoveSpecialPos brief="4:14 モデル移動(特殊座標)" color="pink" comment="モデルを移動させます。{br}移動先は自分場、相手場など特殊な位置です。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_SPPOS_GROUP" />
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+    </ModelMoveSpecialPos>
+    <ModelRotate brief="4:20 モデル回転" color="pink" comment="モデルを回転させます。{br}回転量は現在の回転量に加算されます。{br}管理はグループの番号で行います。">
+      <scale comment="回転量" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </ModelRotate>
+    <ModelRotateRelativePoke brief="4:21 モデル回転(ポケモン相対)" color="pink" comment="モデルを回転させます。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="対象ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+      <isVertical comment="縦回転許可" type="VALUE_CHECKBOX"/>
+    </ModelRotateRelativePoke>
+    <ModelScale brief="4:22 モデルスケール" color="pink" comment="モデルを拡縮させます。{br}管理はグループの番号で行います。">
+      <scale comment="拡縮量" type="VALUE_VECFX32" />
+    </ModelScale>
+    <ModelVisible brief="4:30 モデル表示切替" color="pink" comment="モデルの表示・非表示を切り替えます。" type="one_frame">
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ModelVisible>
+    <ModelFollowCamera brief="4:40 モデルカメラ追従" color="pink" comment="モデルをカメラに追従させます。{br}自動回転を入れるとビルボードのように動作します。{br}カメラからの距離はnearに気をつけてください。">
+      <len comment="カメラからの距離" type="VALUE_FX32"/>
+      <rotFlg comment="自動回転"  type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+      <rotOfs comment="自動回転差分"  type="VALUE_VECFX32"/>
+    </ModelFollowCamera>
+    <ModelFollowModel brief="4:41 モデル モデル追従" color="pink" comment="モデルをモデルに追従させます。{br}-1で無効化させます。{font color=red size=12}処理の都合上1フレーム遅れます。{/font}" type="one_frame">
+      <grpNo comment="グループ番号(-1無効化)" type="VALUE_INT"/>
+      <node comment="ノード名(16文字)" type="VALUE_STRING" length="16" />
+    </ModelFollowModel>
+    <ModelSetAutoRotate brief="4:42 モデル 移動方向自動回転" color="pink" comment="モデルを移動方向へ回転させる設定をします。{br}回転設定を上書きします。{br}" type="one_frame">
+      <isEnable comment="有効" type="VALUE_CHECKBOX" init0="1"/>
+    </ModelSetAutoRotate>
+
+    <ModelSetConstancColor brief="4:50 モデルコンスタントカラー操作" color="pink" comment="コンスタントカラーを操作します。{br}">
+      <matName comment="マテリアル名(32文字)" type="VALUE_STRING" length="32" />
+      <colNo comment="コンスタントカラー番号" type="VALUE_INT" min="0" max="5"/>
+      <col comment="RGB(0.0-1.0)" type="VALUE_VECFX32" label0="R" label1="G" label2="B" min="0" max="1"/>
+      <alpha comment="アルファ" type="VALUE_FX32" min="0" max="1" init0="1"/>
+    </ModelSetConstancColor>
+
+    <ModelSetDaeMotion brief="4:60 モデル モーション設定(dae)" color="pink" comment="モデルにdaeモーションを関連付けます。{br}管理はグループの番号で行います。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="GMP" />
+      <motion comment="モーション番号" type="VALUE_INT"/>
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ModelSetDaeMotion>
+    <ModelChangeDaeMotion brief="4:61 モデル モーション再生(dae)" color="pink" comment="モデルのdaeモーションを再生します。{br}管理はグループの番号で行います。" type="one_frame">
+      <motion comment="モーション番号" type="VALUE_INT"/>
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ModelChangeDaeMotion>
+    <ModelSetTexAnime brief="4:62 モデル モーション設定(マテリアル)" color="pink" comment="モデルにマテリアルアニメーションを関連付けます。{br}管理はグループの番号で行います。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHMATA" />
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ModelSetTexAnime>
+    <ModelSetVisibleAnime brief="4:63 モデル モーション設定(ビジビリティ)" color="pink" comment="モデルにビジビリティアニメーションを関連付けます。{br}管理はグループの番号で行います。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHMDLA" />
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ModelSetVisibleAnime>
+    <ModelSetShaderAnime brief="4:64 モデル モーション設定(シェーダー)" color="pink" comment="モデルにシェーダーアニメーションを関連付けます。{br}管理はグループの番号で行います。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHSHDR" />
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ModelSetShaderAnime>
+    <ModelSetAnimeSpeed brief="4:65 モデル モーション速度変更" color="pink" comment="モデルのアニメーション速度を変更します。{br}管理はグループの番号で行います。" type="one_frame">
+      <speed comment="速度" type="VALUE_FX32" init0="1.0" />
+    </ModelSetAnimeSpeed>
+
+    <ModelSetLightDir brief="4:70 モデル用ライト方向" color="pink" comment="モデル用のライトの方向を変更します。{br}モデル個々の設定ではありません！。" type="one_frame">
+      <dir comment="速度" type="VALUE_VECFX32" min="-1" max="1" />
+      <isFlip comment="自動反転" type="VALUE_CHECKBOX"/>
+    </ModelSetLightDir>
+    <ModelSetBallLightDir brief="4:71 モンスターボール用ライト方向" color="pink" comment="モデル用のライトの方向を変更します。{br}モデル個々の設定ではありません！。{br}モンスターボール用に固定値を設定します。0.2:-0.45:-0.55" type="one_frame">
+      <isFlip comment="自動反転" type="VALUE_CHECKBOX"/>
+    </ModelSetBallLightDir>
+
+    <ModelSpMoveReset brief="4:80 モデル特殊移動：初期化" color="pink" comment="モデルの特殊移動の値をリセットします。">
+    </ModelSpMoveReset>
+    <ModelSpMoveShake brief="4:81 モデル特殊移動：揺れ" color="pink" comment="モデルを揺らします。{br}開始幅と終了幅はゆれの大きさです。{br}振幅量はゆれる量で、1で往復一山です。{br}通常の移動と併用可！。{font color=red}ヒットバック併用不可{/font}">
+      <srate comment="開始幅" type="VALUE_FX32"/>
+      <erate comment="終了幅" type="VALUE_FX32"/>
+      <sdec comment="開始振幅" type="VALUE_FX32"/>
+      <edec comment="終了振幅" type="VALUE_FX32"/>
+      <axis comment="振動方向" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_AXIS_GROUP"/>
+    </ModelSpMoveShake>
+
+    <ModelReplaceTextureSS brief="4:90 モデルスクリーン貼り付け" color="pink" comment="モデルに画面のテクスチャを貼ります。{br}エンカウントエフェクト用。">
+    </ModelReplaceTextureSS>
+
+    <LabelSound brief="--5:サウンド関係--" color="blue" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <PlaySE brief="5: 1 効果音再生" color="blue" comment="効果音を再生します。{br}後から操作可能なSEです。グループ番号を使って管理します。" type="one_frame">
+      <file comment="CSIDファイル" type="FILE_CSID_MID" keyword="SEQ_SE" file="SOUND_MID_ID" />
+      <player comment="プレイヤー" type="FILE_CSID_MID" keyword="PLAYER" file="SOUND_MID_ID" use_default="-1" />
+      <volume comment="ボリューム" type="VALUE_INT" init0="127" />
+      <pan comment="パン" type="VALUE_SLIDER" min="-127" max="127"/>
+      <pantype comment="パン補正" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_SEPAN_GROUP"/>
+      <pitch comment="ピッチ" type="VALUE_INT"/>
+      <tempo comment="テンポ" type="VALUE_INT" init0="127" min="1"/>
+    </PlaySE>
+    <SE_CtrlVolume  brief="5:10 効果音ボリューム操作" color="blue" comment="効果音のボリュームを操作します。{br}効果音再生Exで再生したSEのみ有効です。グループ番号を使って管理します。">
+      <start_vol comment="開始ボリューム" type="VALUE_INT" init0="127" />
+      <end_vol comment="終了ボリューム" type="VALUE_INT" init0="127" />
+    </SE_CtrlVolume>
+    <SE_CtrlPan  brief="5:11 効果音パン操作" color="blue" comment="効果音のパンを操作します。{br}効果音再生Exで再生したSEのみ有効です。グループ番号を使って管理します。">
+      <start_pan comment="開始パン" type="VALUE_SLIDER" min="-127" max="127"/>
+      <end_pan comment="終了パン" type="VALUE_SLIDER" min="-127" max="127"/>
+    </SE_CtrlPan>
+    <SE_CtrlPitch  brief="5:12 効果音ピッチ操作" color="blue" comment="効果音のピッチを操作します。{br}効果音再生Exで再生したSEのみ有効です。グループ番号を使って管理します。">
+      <start_pitch comment="開始ピッチ" type="VALUE_INT"/>
+      <end_pitch comment="終了ピッチ" type="VALUE_INT"/>
+    </SE_CtrlPitch>
+    <SE_CtrlTempo  brief="5:13 効果音テンポ操作" color="blue" comment="効果音のテンポを操作します。{br}効果音再生Exで再生したSEのみ有効です。グループ番号を使って管理します。{br}127がデフォルトです。0は禁止">
+      <start_pitch comment="開始テンポ" type="VALUE_INT" init0="127" min="1"/>
+      <end_pitch comment="終了テンポ" type="VALUE_INT" init0="127" min="1"/>
+    </SE_CtrlTempo>
+    <SE_PlayVoice  brief="5:20 鳴き声再生" color="blue" comment="鳴き声を再生します。{br}現在テストで全部ルージュラ" type="one_frame" >
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+    </SE_PlayVoice>
+    <SE3D_SetParam brief="5:30 3Dサウンド設定" color="blue" comment="3Dサウンドの全体のパラメータを設定します。{br}" type="one_frame" >
+      <priReduction comment="プライオリティ減衰量" type="VALUE_INT" />
+      <panRange comment="パンの変化率" type="VALUE_FX32" min="0" max="1" init0="1"/>
+      <sonic comment="音速(*/frame)" type="VALUE_FX32" init0="11.3"/>
+      <line1  type="SPLIT_LINE" />
+      <interiaSize comment="インテリアサイズ" type="VALUE_FX32" min="0.1" />
+      <maxVolDist comment="音量が最大になる範囲" type="VALUE_FX32" min="0.1"/>
+      <unitDist comment="音量が減衰する単位距離" type="VALUE_FX32" min="0.1"/>
+    </SE3D_SetParam>
+    <SE3D_Play brief="5:31 3Dサウンド再生" color="blue" comment="3Dサウンドを再生します。{br}" type="one_frame" >
+      <file comment="CSIDファイル" type="FILE_CSID_MID" keyword="SEQ_SE" file="SOUND_MID_ID" />
+      <player comment="プレイヤー" type="FILE_CSID_MID" keyword="PLAYER" file="SOUND_MID_ID" use_default="-1" />
+      <volume comment="ボリューム" type="VALUE_INT" init0="127" />
+      <pan comment="パン" type="VALUE_SLIDER" min="-127" max="127"/>
+      <pitch comment="ピッチ" type="VALUE_INT"/>
+      <debug comment="デバッグ表示" type="VALUE_CHECKBOX"/>
+    </SE3D_Play>
+    <SE3D_Stop brief="5:32 3Dサウンド停止" color="blue" comment="3Dサウンドを再生します。{br}" type="one_frame" >
+      <fade comment="フェード" type="VALUE_INT"/>
+    </SE3D_Stop>
+    <SE3D_MoveAbsolute brief="5:40 3Dサウンド移動(絶対座標)" color="blue" comment="現在位置からサウンドの発生源を移動させます。{br}管理はグループの番号で行います。">
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="VALUE_CHECKBOX" init="1" />
+    </SE3D_MoveAbsolute>
+    <SE3D_MoveRelative brief="5:41 3Dサウンド移動(相対座標)" color="blue" comment="現在位置からサウンドの発生源を相対的に移動させます。{br}管理はグループの番号で行います。">
+      <pos comment="移動差分POS" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </SE3D_MoveRelative>
+    <SE3D_MoveRelativePoke brief="5:42 3Dサウンド移動(ポケモン相対座標)" color="blue" comment="サウンドの発生源をポケモンからの相対座標に移動させます。{br}管理はグループの番号で行います。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <pos comment="移動差分POS" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </SE3D_MoveRelativePoke>
+    <SE3D_FollowPoke brief="5:43 3Dサウンドポケモン追従" color="blue" comment="ポケモンの位置に追従します。{br}管理はグループの番号で行います。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="対象ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+    </SE3D_FollowPoke>
+    <SE3D_FollowObj brief="5:44 3Dサウンドオブジェクト追従" color="blue" comment="パーティクル・モデルの位置に追従します。{br}管理はグループの番号で行います。">
+      <type comment="対象オブジェクト" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_FOLLOW_GROUP" />
+      <trg comment="対象グループ番号" type="VALUE_INT" />
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+    </SE3D_FollowObj>
+
+    <SE3D_VoicePlay brief="5:50 3D鳴き声再生" color="blue" comment="3Dサウンドで鳴き声を再生します。{br}" type="one_frame" >
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <volume comment="ボリューム" type="VALUE_INT" init0="127" />
+      <pitch comment="ピッチ" type="VALUE_INT"/>
+    </SE3D_VoicePlay>
+
+    <LabelDisp brief="--6:表示制御--" color="lightblue" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <GaugeDisp brief="6: 1 ゲージ表示" color="lightblue" comment="ゲージの表示を制御します。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </GaugeDisp>
+    <GaugeDispAll brief="6: 2 ゲージ一斉表示" color="lightblue" comment="すべてのゲージの表示を制御します。" type="one_frame">
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </GaugeDispAll>
+    <GaugeDamage brief="6: 3 ゲージダメージ処理" color="lightblue" comment="ダメージ処理をおこないます。" >
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </GaugeDamage>
+    <HitBackFlg brief="6:10 ヒットバック処理" color="lightblue" comment="ヒットバックを実行します。{br}カメラが寄っている場合で処理が分岐するので指定してください。{br}" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_label0="POS_DEF" attr_label1="POS_ATK" />
+      <isDefault comment="カメラ位置がデフォルト" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </HitBackFlg>
+    <ObjBreakFlg brief="6:20 背景破壊フラグ" color="lightblue" comment="背景オブジェクトの破壊タイミングです。{br}風は15フレーム後に壊れる。{br}" type="one_frame">
+      <trg comment="対象側" type="COMBOBOX_TEXT" attr_label0="POS_DEF" attr_label1="POS_ATK" />
+      <breakType comment="破壊属性" type="COMBOBOX_TEXT" attr_label0="BREAK_TYPE_WIND" attr_label1="BREAK_TYPE_FIRE" />
+    </ObjBreakFlg>
+    
+    <LabelEffectSp brief="--7:特殊エフェクト--" color="lightgreen" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <EffSpBackColFlg brief="7: 1 背景カラーフェード(ON/OFF)" color="lightgreen" comment="ポケモン以外の表示物に色をかけます。{br}有効無効の切り替え+色設定です。{br}範囲はすべて1～0です。" type="one_frame">
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+      <col comment="RGB(0.0-1.0)" type="VALUE_VECFX32" label0="R" label1="G" label2="B" min="0" max="1"/>
+      <alpha comment="アルファ" type="VALUE_FX32" />
+    </EffSpBackColFlg>
+    <EffSpBackColSet brief="7: 2 背景カラーフェード(色調整)" color="lightgreen" comment="ポケモン以外の表示物に色をかけます。{br}色を設定します。{br}範囲はすべて1～0です。">
+      <col comment="RGB(0.0-1.0)" type="VALUE_VECFX32" label0="R" label1="G" label2="B" min="0" max="1"/>
+      <alpha comment="アルファ" type="VALUE_FX32" />
+    </EffSpBackColSet>
+    <EffDispBg brief="7:10 背景表示切替" color="lightgreen" comment="背景・オボン・天球諸々を消します。" type="one_frame">
+      <isDisp  comment="表示" type="VALUE_CHECKBOX" />
+    </EffDispBg>
+    <EffSpFadeIn brief="7:20 フェードイン" color="lightgreen" comment="画面のフェードインです。">
+      <screen comment="対象画面" type="COMBOBOX_TEXT" attr_label0="SEQ_DEF_FADE_UPPER" attr_label1="SEQ_DEF_FADE_LOWER" attr_label2="SEQ_DEF_FADE_BOTH" />
+      <color comment="画面色" type="COMBOBOX_TEXT" attr_label0="SEQ_DEF_FADE_WHITE" attr_label1="SEQ_DEF_FADE_BLACK" />
+    </EffSpFadeIn>
+    <EffSpFadeOut brief="7:21 フェードアウト" color="lightgreen" comment="画面のフェードインです。">
+      <screen comment="対象画面" type="COMBOBOX_TEXT" attr_label0="SEQ_DEF_FADE_UPPER" attr_label1="SEQ_DEF_FADE_LOWER" attr_label2="SEQ_DEF_FADE_BOTH" />
+      <color comment="画面色" type="COMBOBOX_TEXT" attr_label0="SEQ_DEF_FADE_WHITE" attr_label1="SEQ_DEF_FADE_BLACK" />
+    </EffSpFadeOut>
+    
+    <LabelCluster brief="--8:郡体モデル制御--" color="orange" comment="モデルをパーティクルのように制御します。{br}用法用量を正しく守り、お使いください。" mode="comment" pos="parent"/>
+    <ClusterCreate brief="8: 1 郡体EM作成" color="orange" comment="モデルをパーティクルのように制御します。{br}用法用量を正しく守り、お使いください。">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHMDL" />
+      <isBillboard comment="後描画フラグ"  type="COMBOBOX_TEXT" attr_label0="OFF" attr_label1="ON" />
+      <spawnMax comment="最大生成個数" type="VALUE_INT" init0="8" />
+      <spawnInterval comment="生成間隔" type="VALUE_INT" />
+      <spawnNum comment="生成個数" type="VALUE_INT" init0="1" />
+      <spawnRate comment="生成確立(%)" type="VALUE_SLIDER" min="1" max="100" init0="100" />
+      <spawnLife comment="寿命(フレーム数)" type="VALUE_INT" />
+      <spawnType comment="生成形状" type="COMBOBOX_TEXT" attr_label0="CLUSTER_SPAWN_POINT" attr_label1="CLUSTER_SPAWN_SPHERE" attr_label2="CLUSTER_SPAWN_CYLINDER1" attr_label3="CLUSTER_SPAWN_CYLINDER2" attr_label4="CLUSTER_SPAWN_BOX" />
+      <spawnAxis comment="生成軸" type="COMBOBOX_TEXT" attr_label0="CLUSTER_AXIS_X" attr_label1="CLUSTER_AXIS_Y" attr_label2="CLUSTER_AXIS_Z" />
+      <spawnSize comment="生成サイズ" type="VALUE_VECFX32" init0="1" init1="1" init2="1" />
+      <spawnDegS comment="生成開始角度" type="VALUE_SLIDER" min="0" max="360" />
+      <spawnDegE comment="生成終了角度" type="VALUE_SLIDER" min="0" max="360" init0="360" />
+      <spawnLen comment="生成空洞範囲(%)" type="VALUE_SLIDER" min="1" max="100" init0="100" />
+      <isMulti comment="複数作成" type="VALUE_CHECKBOX" />
+      <isLight comment="専用ライト使用" type="VALUE_CHECKBOX" />
+      <isEdge comment="法線エッジ使用" type="VALUE_CHECKBOX"/>
+      <isAutoRot comment="移動方向自動回転" type="VALUE_CHECKBOX"/>
+    </ClusterCreate>
+    <ClusterMoveAbsolute brief="8:10 郡体EM移動(絶対座標)" color="orange" comment="現在位置から郡体モデル発生源を移動させます。{br}管理はグループの番号で行います。">
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </ClusterMoveAbsolute>
+    <ClusterMoveRelative brief="8:11 郡体EM移動(相対座標)" color="orange" comment="現在位置から相対的に移動させます。{br}管理はグループの番号で行います。">
+      <pos comment="移動差分POS" type="VALUE_VECFX32" />
+    </ClusterMoveRelative>
+    <ClusterMoveRelativePoke brief="8:12 郡体EM移動(ポケモン相対座標)" color="orange" comment="ポケモンからの相対座標に移動させます。{br}管理はグループの番号で行います。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <pos comment="移動差分POS" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </ClusterMoveRelativePoke>
+    <ClusterMoveSpecialPos brief="8:13 郡体EM移動(特殊座標)" color="orange" comment="ポケモンからの相対座標に移動させます。{br}移動先は自分場、相手場など特殊な位置です。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_SPPOS_GROUP" />
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+    </ClusterMoveSpecialPos>
+    <ClusterRotate brief="8:20 郡体EM回転" color="orange" comment="郡体モデル発生源を回転させます。{br}回転量は現在の回転量に加算されます。{br}管理はグループの番号で行います。">
+      <scale comment="回転量" type="VALUE_VECFX32" />
+      <reverse comment="自動反転フラグ" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" init="ON" />
+    </ClusterRotate>
+    <ClusterScale brief="8:21 郡体EMスケール" color="orange" comment="郡体モデル発生源を拡縮させます。{br}管理はグループの番号で行います。">
+      <scale comment="拡縮量" type="VALUE_VECFX32" />
+    </ClusterScale>
+    <ClusterSpeedDiffuse brief="8:30 郡体:初速:拡散" color="orange" comment="郡体モデルの子の初期速度を設定します。{br}原点、軸、面からの拡散をします。" type="one_frame">
+      <center comment="拡散中心" type="COMBOBOX_TEXT" attr_label0="CLUSTER_ORIGIN" attr_label1="CLUSTER_AXIS_X" attr_label2="CLUSTER_AXIS_Y" attr_label3="CLUSTER_AXIS_Z" attr_label4="CLUSTER_PLANE_X" attr_label5="CLUSTER_PLANE_Y" attr_label6="CLUSTER_PLANE_Z" />
+      <offset comment="中心からのオフセット" type="VALUE_VECFX32" />
+      <spd comment="初速" type="VALUE_FX32" />
+      <acc comment="加減速" type="VALUE_FX32" init0="1"/>
+    </ClusterSpeedDiffuse>
+    <ClusterSpeedDir brief="8:31 郡体:初速:指定方向" color="orange" comment="郡体モデルの子の初期速度を設定します。{br}原点から指定方向に初速を与えます。" type="one_frame">
+      <rot comment="方向" type="VALUE_VECFX32" />
+      <rotRand comment="ランダム角度" type="VALUE_SLIDER" min="0" max="180"/>
+      <spd comment="初速" type="VALUE_FX32" />
+      <acc comment="加減速" type="VALUE_FX32" init0="1"/>
+    </ClusterSpeedDir>
+    <ClusterAccelGravity brief="8:32 郡体:加速:重力" color="orange" comment="郡体モデルの子の加速を設定します。{br}指定方向、点に向かって重力を発生させます。" type="one_frame">
+      <type comment="重力方向" type="COMBOBOX_TEXT" attr_label0="CLUSTER_ORIGIN" attr_label1="CLUSTER_AXIS_X" attr_label2="CLUSTER_AXIS_Y" attr_label3="CLUSTER_AXIS_Z" attr_label4="CLUSTER_PLANE_X" attr_label5="CLUSTER_PLANE_Y" attr_label6="CLUSTER_PLANE_Z" />
+      <pos comment="位置" type="VALUE_VECFX32" />
+      <posType comment="位置種類" type="COMBOBOX_TEXT" attr_label0="RERATIVE" attr_label1="ABSOLUTE" />
+      <power comment="強さ" type="VALUE_FX32" />
+    </ClusterAccelGravity>
+    <ClusterStartScale brief="8:33 郡体:初期:スケール" color="orange" comment="郡体モデルの子の初期スケール設定します。" type="one_frame">
+      <min comment="最小値" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+      <max comment="最大値" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+    </ClusterStartScale>
+    <ClusterStartRotate brief="8:34 郡体:初期:回転" color="orange" comment="郡体モデルの子の初期回転設定します。" type="one_frame">
+      <min comment="最小値" type="VALUE_VECFX32" min="-360" max="360" />
+      <max comment="最大値" type="VALUE_VECFX32" min="-360" max="360" />
+    </ClusterStartRotate>
+    <ClusterAnimeScale brief="8:40 郡体:アニメ:スケール" color="orange" comment="郡体モデルの子のスケールのアニメーション設定です。" type="one_frame">
+      <frame1 comment="フレーム１" type="VALUE_INT" />
+      <scale1 comment="スケール１" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+      <line1  type="SPLIT_LINE" />
+      <frame2 comment="フレーム２" type="VALUE_INT" />
+      <scale2 comment="スケール２" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+      <line2  type="SPLIT_LINE" />
+      <frame3 comment="フレーム３" type="VALUE_INT" init0="-1"/>
+      <scale3 comment="スケール３" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+      <line3  type="SPLIT_LINE" />
+      <frame4 comment="フレーム４" type="VALUE_INT" init0="-1"/>
+      <scale4 comment="スケール４" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+      <line4  type="SPLIT_LINE" />
+      <frame5 comment="フレーム５" type="VALUE_INT" init0="-1"/>
+      <scale5 comment="スケール５" type="VALUE_VECFX32" init0="1" init1="1" init2="1"/>
+    </ClusterAnimeScale>
+    <ClusterAnimeRotate brief="8:41 郡体:アニメ:回転" color="orange" comment="郡体モデルの子の回転のアニメーション設定です。" type="one_frame">
+      <frame1  comment="フレーム１" type="VALUE_INT" />
+      <rotate1 comment="スケール１" type="VALUE_VECFX32" />
+      <line1   type="SPLIT_LINE" />
+      <frame2  comment="フレーム２" type="VALUE_INT" />
+      <rotate2 comment="スケール２" type="VALUE_VECFX32" />
+      <line2   type="SPLIT_LINE" />
+      <frame3  comment="フレーム３" type="VALUE_INT" init0="-1"/>
+      <rotate3 comment="スケール３" type="VALUE_VECFX32" />
+      <line3   type="SPLIT_LINE" />
+      <frame4  comment="フレーム４" type="VALUE_INT" init0="-1"/>
+      <rotate4 comment="スケール４" type="VALUE_VECFX32" />
+      <line4   type="SPLIT_LINE" />
+      <frame5  comment="フレーム５" type="VALUE_INT" init0="-1"/>
+      <rotate5 comment="スケール５" type="VALUE_VECFX32" />
+    </ClusterAnimeRotate>
+    <ClusterSetMatAnime brief="8:50 郡体:アニメ設定(cmata)" color="orange" comment="郡体モデルの子にcmata(マテリアル)アニメを関連付けします。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHMATA" />
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ClusterSetMatAnime>
+    <ClusterSetMdlAnime brief="8:51 郡体:アニメ設定(cmdla)" color="orange" comment="郡体モデルの子にcmdla(ビジビリティ)アニメを関連付けします。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_MODEL" extension="BCHMDLA" />
+      <loop comment="ループ再生" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </ClusterSetMdlAnime>
+
+    <ClusterSetRefrect brief="8:60 郡体:反射設定" color="orange" comment="郡体モデルの子の反射の挙動を設定します。" type="one_frame">
+      <pos comment="位置" type="VALUE_FX32" />
+      <posType comment="位置種類" type="COMBOBOX_TEXT" attr_label0="RERATIVE" attr_label1="ABSOLUTE" />
+      <refDir comment="反射方向" type="COMBOBOX_TEXT" attr_label0="CLUSTER_PLANE_X" attr_label1="CLUSTER_PLANE_Y" attr_label2="CLUSTER_PLANE_Z" />
+      <refAct comment="反射処理" type="COMBOBOX_TEXT" attr_label0="REFRECT_NORMAL" attr_label1="REFRECT_STOP" attr_label2="REFRECT_DEATH" />
+      <brake comment="減衰率" type="VALUE_FX32" init0="1"/>
+    </ClusterSetRefrect>
+
+    <LabelSpecial brief="--9:特殊処理--" color="purple" comment="技固有の処理など特殊な処理です。" mode="comment" pos="parent"/>
+    <SpecialChainAttakDefine brief="9: 1 連続技定義" color="purple" comment="連続技の各フレーム区間などの指定です。{br}{font color=red size=12}必ず一番上のグループの一番上においてください。{/font}{br}" type="one_frame">
+      <start1 comment="1回目開始フレーム" type="VALUE_INT" />
+      <end1   comment="1回目終了フレーム" type="VALUE_INT" />
+      <line1  type="SPLIT_LINE" />
+      <start2 comment="2回目開始フレーム" type="VALUE_INT" />
+      <end2   comment="2回目終了フレーム" type="VALUE_INT" />
+      <line2  type="SPLIT_LINE" />
+      <start3 comment="3回目開始フレーム" type="VALUE_INT" />
+      <end3   comment="3回目終了フレーム" type="VALUE_INT" />
+      <line3  type="SPLIT_LINE" />
+      <start4 comment="4回目開始フレーム" type="VALUE_INT" />
+      <end4   comment="4回目終了フレーム" type="VALUE_INT" />
+      <line4  type="SPLIT_LINE" />
+      <start5 comment="5回目開始フレーム" type="VALUE_INT" />
+      <end5   comment="5回目終了フレーム" type="VALUE_INT" />
+      <line5  type="SPLIT_LINE" />
+      <start6 comment="6回目開始フレーム" type="VALUE_INT" />
+      <end6   comment="6回目終了フレーム" type="VALUE_INT" />
+    </SpecialChainAttakDefine>
+    <SpecialMegaEvolution brief="9:10 特殊ポケ：ポケモン読み替え" color="purple" comment="このタイミングでモデルの読み替えとかやります。{br}{font color=red size=12}処理には数フレームかかります。とりあえず20フレームくらい見積もってください。{br}戻ってきた時は非表示状態ですので、かならず後で表示を入れてください。{/font}{br}" type="one_frame">
+    </SpecialMegaEvolution>
+    <SpecialTameHide brief="9:11 特殊ポケ：ため技隠れ" color="purple" comment="ため技用の表示非表示コマンドです。{br}別のカ所の制御で表示が戻ったりもするので、必ずこれを使ってください。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </SpecialTameHide>
+    <SpecialMigawriDisp brief="9:12 特殊ポケ：身代わり表示" color="purple" comment="身代わりモデルの表示を切り替えます。{br}ポケモンが身代わり人形に変わります。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </SpecialMigawriDisp>
+
+    <SpecialChangeWeather brief="9:20 天気" color="purple" comment="天気の予定" >
+      <type comment="天気" type="COMBOBOX_TEXT" attr_label0="SEQ_DEF_WEATHER_NONE" attr_label1="SEQ_DEF_WEATHER_SHINE" attr_label2="SEQ_DEF_WEATHER_RAIN" attr_label3="SEQ_DEF_WEATHER_SNOW" attr_label4="SEQ_DEF_WEATHER_SAND" />
+    </SpecialChangeWeather>
+
+    <SpecialFieldEffectCreate brief="9:30 フィールドエフェクト作成" color="purple" comment="フィールドエフェクトを作成します。" type="one_frame">
+      <file comment="GARCファイル" type="FILE_GARC" file="GARC_PARTICLE" />
+    </SpecialFieldEffectCreate>
+    <SpecialFieldEffectDelete brief="9:31 フィールドエフェクト削除" color="purple" comment="フィールドエフェクトを削除します。" type="one_frame">
+    </SpecialFieldEffectDelete>
+
+    <SpecialObonControl brief="9:40 オボン操作" color="purple" comment="オボンの操作をします。" type="one_frame">
+      <mode comment="モード" type="COMBOBOX_TEXT" attr_label0="広がる" attr_label1="つながる" attr_label2="離れる" attr_label3="縮む" />
+    </SpecialObonControl>
+    
+    <LabelTrainer brief="--10:トレーナー関係--" color="lightyellow" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <TrainerMoveAboslute brief="10: 1 トレーナー移動(絶対座標)" color="lightyellow" comment="トレーナーの表示を切り替えます。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_TRAINER_GROUP" />
+      <pos comment="移動先POS" type="VALUE_VECFX32" />
+    </TrainerMoveAboslute>
+    <TrainerRotate brief="10:10 トレーナー回転" color="lightyellow" comment="トレーナーの表示を切り替えます。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_TRAINER_GROUP" />
+      <rot comment="回転量" type="VALUE_VECFX32" />
+    </TrainerRotate>
+    <TrainerDisp brief="10:20 トレーナー表示切替" color="lightyellow" comment="トレーナーの表示を切り替えます。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_TRAINER_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </TrainerDisp>
+    <TrainerChangeMotion brief="10:30 トレーナーモーション変更" color="lightyellow" comment="トレーナーの表示を切り替えます。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_TRAINER_GROUP" />
+      <motion comment="モーション種類" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_TR_MOTION_GROUP" />
+      <loop comment="ループ再生" type="VALUE_CHECKBOX"/>
+    </TrainerChangeMotion>
+    <TrainerDispBallGauge brief="10:40 トレーナーボールゲージ表示" color="lightyellow" comment="トレーナーの手持ちのボールを表示します。" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_TRAINER_GROUP" />
+    </TrainerDispBallGauge>
+    
+    <LabelLayout brief="--11:レイアウト関係--" color="#FF00FF" comment="{font color=red size=12}ダミーコマンド{/font}" mode="comment" pos="parent"/>
+    <LayoutCreate brief="11: 1 Lyt作成" color="#FF00FF" comment="レイアウトを作成します。{br}フレーム数が寿命になります。0の場合は永遠に存在しますが、現在削除方法がありません。{br}プライオリティは高いほうが手前に出ます。{br}管理はグループの番号で行います。">
+      <file comment="レイアウトファイル" type="FILE_GARC" file="GARC_LAYOUT" extension="LYTDAT" />
+      <anmnum comment="アニメーション個数" type="VALUE_INT" />
+      <disp comment="表示面" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_LYT_DISP_GROUP" />
+      <pri comment="プライオリティ" type="VALUE_INT" init0="16"/>
+    </LayoutCreate>
+    <LayoutAnimeStart brief="11:10 Lytアニメーション開始" color="#FF00FF" comment="レイアウトのアニメーションを再生します。{br}フレーム区間を指定すると、自動で終了します。{br}管理はグループの番号で行います。">
+      <anmnum comment="アニメーション番号(0～アニメ個数-1)" type="VALUE_INT" />
+    </LayoutAnimeStart>
+    <LayoutAnimeEnd brief="11:10 Lytアニメーション終了" color="#FF00FF" comment="レイアウトのアニメーションを再生します。{br}管理はグループの番号で行います。">
+      <anmnum comment="アニメーション番号(0～アニメ個数-1)" type="VALUE_INT" />
+    </LayoutAnimeEnd>
+    <LayoutAnimeSpeed brief="11:11 Lytアニメーション速度変更" color="#FF00FF" comment="レイアウトのアニメーションを速度を変更します。{br}一時停止、再開もこれで対応してください。{br}管理はグループの番号で行います。">
+      <anmnum comment="アニメーション番号(0～アニメ個数-1)" type="VALUE_INT" />
+      <speed comment="アニメーション速度" type="VALUE_FX32"  init0="1.0"/>
+    </LayoutAnimeSpeed>
+    <LayoutSetBlackComp brief="11:20 Lyt黒カラー補完" color="#FF00FF" comment="レイアウトエディタ上での黒カラー補完を行います。{br}管理はグループの番号で行います。">
+      <col comment="RGB(0.0-1.0)" type="VALUE_VECINT" label0="R" label1="G" label2="B" min="0" max="255"/>
+      <target comment="ペイン名(16文字)" type="VALUE_STRING" length="16" />
+    </LayoutSetBlackComp>
+    <LayoutSetWhiteComp brief="11:21 Lyt白カラー補完" color="#FF00FF" comment="レイアウトエディタ上での白カラー補完を行います。{br}管理はグループの番号で行います。">
+      <col comment="RGB(0.0-1.0)" type="VALUE_VECINT" label0="R" label1="G" label2="B" min="0" max="255"/>
+      <target comment="ペイン名(16文字)" type="VALUE_STRING" length="16" />
+    </LayoutSetWhiteComp>
+    <LayoutSetTrainerTexture brief="11:30 Lytテクスチャ変更" color="#FF00FF" comment="レイアウトのテクスチャをトレーナーのテクスチャに張り替えます。{br}管理はグループの番号で行います。">
+      <texType comment="種類" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_LYT_TEX_GROUP" />
+      <idx comment="引数" type="VALUE_INT"/>
+      <target comment="ペイン名(16文字)" type="VALUE_STRING" length="16" />
+    </LayoutSetTrainerTexture>
+   
+    
+    <LabelTest brief="--実験区域--" color="black" comment="{font color=red size=12}以下実験用です。無断使用禁止{/font}" mode="comment" pos="parent"/>
+    <PokemonShader brief="ポケモンシェーダーテスト" color="black" comment="仮。">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <visible comment="表示状態" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </PokemonShader>
+    <PokemonShaderPointLight brief="ポケモンシェーダー：点光源" color="lightgreen" comment="仮。" >
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <col comment="RGB(0.0-1.0)" type="VALUE_VECFX32" label0="R" label1="G" label2="B" min="0" max="1"/>
+      <pos comment="相対位置" type="VALUE_VECFX32" />
+      <pow comment="光の強さ" type="VALUE_FX32" />
+    </PokemonShaderPointLight>
+    <PokemonLookAt brief="ポケモン振り向き" color="red" comment="かわいがり制御用。基本的に自信の顔ノードからの相対位置で振り向く。{br}デフォルト45">
+      <moveTrg comment="移動対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <posTrg comment="座標対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="対象ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動差分" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </PokemonLookAt>
+    <MessageDisp brief="メッセージ表示(std)" color="black" comment="仮。" >
+      <MsgId comment="メッセージID" type="FILE_MESSAGE" file="MESSAGE_STD" />
+    </MessageDisp>
+    <MessageHide brief="メッセージ非表示" color="black" comment="仮。" >
+    </MessageHide>
+    <ModelDelete brief="モデル破棄" color="pink" comment="要注意！削除に2フレーム必要です！" type="one_frame" >
+    </ModelDelete>
+    <ModelResetAdjustScale brief="モデル補正スケールリセット" color="pink" comment="10末臨時対応" type="one_frame" >
+    </ModelResetAdjustScale>
+    <ModelMoveParabola brief="モデル移動(放物線)" color="pink" comment="モデルを放物線上に移動させます。自由落下移動も可能です。{br}ただし、終了タイミングは自力で調整してください。{br}Y座標のオフセットのみ操作しますので、横移動は自前でつけてください。" type="one_frame" >
+     <startSpd  comment="初期速度" type="VALUE_FX32"/>
+     <gravity   comment="重力" type="VALUE_FX32"/>
+     <endHeight comment="終了高さ" type="VALUE_FX32"/>
+     <Relative  comment="惣菜座標" type="COMBOBOX_TEXT" attr_label0="OFF" attr_label1="ON" />
+    </ModelMoveParabola >
+    <CameraAnimeScale brief="カメラアニメーションスケール" color="yellow" comment="カメラアニメーションのスケールを操作します。" type="one_frame" >
+      <scale comment="拡縮量" type="VALUE_FX32"  init0="1.0" />
+    </CameraAnimeScale>
+    <SpecialWaitSequence brief="シーケンス一時停止" color="purple" comment="キー待ちとかメッセージ待ちとかします。通常処理禁止！" type="one_frame" >
+     <waitType comment="待機種類" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_WAIT_GROUP" />
+    </SpecialWaitSequence>
+    <Sound3DTest brief="3Dサウンドのテスト" color="blue" comment="3Dサウンドテスト" type="one_frame" >
+      <file comment="CSIDファイル" type="FILE_CSID_MID" keyword="SEQ_SE" file="SOUND_MID_ID" />
+      <player comment="プレイヤー" type="FILE_CSID_MID" keyword="PLAYER" file="SOUND_MID_ID" use_default="-1" />
+      <hPan comment="水平パン" type="VALUE_FX32" min="-1" max="1"/>
+      <vPan comment="垂直パン" type="VALUE_FX32" min="0" max="2"/>
+    </Sound3DTest>
+    
+    <DebugChangePoke brief="ポケモン読み替え(デバッグ)" color="pink" comment="デバッグでポケモンを読み替えます。処理は数フレームかかります。" type="one_frame" >
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <monsNo comment="ポケモン番号" type="VALUE_INT"/>
+      <formNo comment="フォルム番号" type="VALUE_INT"/>
+    </DebugChangePoke >
+
+    <TestCommand brief="実験用コマンド" color="white" comment="実験用。" type="one_frame" >
+      <str1 comment="文字列１" type="VALUE_STRING" length="32" />
+      <str2 comment="文字列２" type="VALUE_STRING" length="64" />
+    </TestCommand >
+
+    <LabelDustBox brief="--使用禁止！--" color="black" comment="{font color=red size=12}以下古いコマンド。使用禁止{/font}" mode="comment" pos="parent"/>
+    <ParticleMoveFixed brief="パーティクル移動(固定位置+相対座標)旧" color="green" comment="パーティクルを移動させます。{br}移動先は固定位置からの相対座標で指定します。{br}移動量・スケール・回転にポケモンのサイズ補正が入ります。{br}管理はグループの番号で行います。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動先差分(ポケモン)" type="VALUE_VECFX32" />
+      <ofsEff comment="移動先差分(パーティクル)" type="VALUE_VECFX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_RETVAL_OPT"/>
+    </ParticleMoveFixed>
+    <ParticleMoveFixedRotate brief="パーティクル移動+自動回転旧" color="green" comment="パーティクルを移動させます。{br}移動先は固定位置からの相対座標で指定し、カメラ位置に併せ回転します。{br}移動量・スケール・回転にポケモンのサイズ補正が入ります。{br}管理はグループの番号で行います。">
+      <pos comment="移動先" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <node comment="追従ノード" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_NODE_GROUP"/>
+      <ofs comment="移動先差分(ポケモン)" type="VALUE_VECFX32" />
+      <ofsEff comment="移動先差分(パーティクル)" type="VALUE_VECFX32" />
+      <ofsRot comment="回転量差分" type="VALUE_FX32" />
+      <opt comment="補正オプション" type="COMBOBOX_TEXT" attr_label0="OPT_NORMAL" attr_label1="OPT_NONE"/>
+    </ParticleMoveFixedRotate>
+
+    <PokemonMotionDirect brief="ポケモンモーション再生(直値)" color="red" comment="ポケモンのモーションを再生します。{br}" type="one_frame">
+      <trg comment="対象キャラ" type="COMBOBOX_TEXT" attr_group="SEQ_DEF_POS_GROUP" />
+      <motNo comment="番号" type="VALUE_INT"/>
+      <resetWait  comment="待機リセット" type="COMBOBOX_TEXT" attr_label0="ON" attr_label1="OFF" />
+    </PokemonMotionDirect>
+    
+    <DummyLabel brief="ダミーラベル" color="white" comment="目印だったり、範囲指定だったり、終了位置補正だったり・・・" mode="comment" pos="top">
+    </DummyLabel>
+
+  </macro>
+</root>

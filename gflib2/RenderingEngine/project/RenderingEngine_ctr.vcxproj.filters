@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{9874bc3e-3664-4323-859e-92f853f90242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{b7d0819c-6baf-4c9f-8e2c-4e9234952562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SceneGraph">
+      <UniqueIdentifier>{a96eaf9e-9afe-40da-942c-f67292041075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SceneGraph">
+      <UniqueIdentifier>{ac684463-ee6f-4128-b95d-704e908eee99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Renderer">
+      <UniqueIdentifier>{1df2e96e-485a-4c9a-9f92-5e636d90af07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Renderer">
+      <UniqueIdentifier>{270aea7d-8e9e-4626-a0c8-37e6753b144f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Renderer\Util">
+      <UniqueIdentifier>{2aab42ca-f760-48d0-9e8a-796f4e0977a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Renderer\Util">
+      <UniqueIdentifier>{df883ca5-d34b-47d1-89f5-aae6af4033ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SceneGraph\Instance">
+      <UniqueIdentifier>{6e87e1d8-bde9-4ae2-ab6d-382e42582afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SceneGraph\Resource">
+      <UniqueIdentifier>{275a5dee-d9ca-4a5c-bf67-0b97c405fa78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SceneGraph\Instance">
+      <UniqueIdentifier>{4909738d-d389-4008-bb13-4c27af3a7334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SceneGraph\Resource">
+      <UniqueIdentifier>{e9252ea0-edf1-490b-8f79-6a7801931e35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_RenderingEngineEnumDefine.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_RenderingEngineEnums.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\gfl2_AABBTree.h">
+      <Filter>ヘッダー ファイル\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\gfl2_DagNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\gfl2_Node.h">
+      <Filter>ヘッダー ファイル\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\gfl2_NodeTrait.h">
+      <Filter>ヘッダー ファイル\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\gfl2_SceneGraphManager.h">
+      <Filter>ヘッダー ファイル\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\gfl2_Traverser.h">
+      <Filter>ヘッダー ファイル\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_CameraNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_CullingObjectNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_DrawableNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_DrawEnvNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_InstanceCreator.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_InstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_JointInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_LightNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_LightSetNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_LocatorInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_MaterialInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_ModelInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_MotionConfigInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_MotionInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_TransformNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_ViewerLocatorInstanceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ShaderAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ShaderAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ShaderResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ShaderResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_TexturePatternAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_TexturePatternAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_TextureResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_TextureResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_UVAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_UVAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_VisibilityAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_VisibilityAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_AnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_AnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CameraResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CameraResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CollisionMeshResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CollisionMeshResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CombinerAttribute.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_DrawEnvResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_DrawEnvResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_EnvAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_EnvCameraAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_EnvLightAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryMdlData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryShdData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryTexData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfCollisionMdlData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfEnvData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfLocData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMdlData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMdlResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMdlResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMotData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMotResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMotResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_IResourceData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_IResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_JointAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_JointAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_KeyAnimationResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_KeyAnimationResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LightSetResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LightSetResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LocatorResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LocatorResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MaterialResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MaterialResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_McnfData.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MeshResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MeshResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MotionConfigResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MotionConfigResourceNodeFactory.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ParserUtil.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ResourceManager.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ResourceNode.h">
+      <Filter>ヘッダー ファイル\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_CombinerShaderDriver.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_DrawManager.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_DrawTag.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_IShaderDriver.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_MaterialTypes.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_MeshDrawTag.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_RenderingPipeLine.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_RenderState.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_EdgeMapSceneRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_OutLinePostRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilCollisionRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilEffectLocatorRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilJointRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilMcnfRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilNodeRenderPath.h">
+      <Filter>ヘッダー ファイル\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Renderer\gfl2_CombinerCtrShaderDriver.h">
+      <Filter>ヘッダー ファイル\Renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\SceneGraph\gfl2_AABBTree.cpp">
+      <Filter>ソース ファイル\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\gfl2_DagNode.cpp">
+      <Filter>ソース ファイル\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\gfl2_Node.cpp">
+      <Filter>ソース ファイル\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\gfl2_NodeTrait.cpp">
+      <Filter>ソース ファイル\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\gfl2_SceneGraphManager.cpp">
+      <Filter>ソース ファイル\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\gfl2_Traverser.cpp">
+      <Filter>ソース ファイル\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_CameraNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_CullingObjectNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_DrawableNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_DrawEnvNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_InstanceCreator.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_InstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_JointInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_LightNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_LightSetNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_LocatorInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_MaterialInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_ModelInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_MotionConfigInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_MotionInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_TransformNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_ViewerLocatorInstanceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_EnvLightAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryMdlData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryShdData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryTexData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfCollisionMdlData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfEnvData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfLocData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMdlData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMdlResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMdlResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMotData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMotResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMotResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_JointAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_JointAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_KeyAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_KeyAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LightSetResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LightSetResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LocatorResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LocatorResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MaterialResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MaterialResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_McnfData.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MeshResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MeshResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MotionConfigResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MotionConfigResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ParserUtil.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ResourceManager.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ShaderAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ShaderAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ShaderResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ShaderResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_TexturePatternAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_TexturePatternAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_TextureResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_TextureResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_UVAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_UVAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_VisibilityAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_VisibilityAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_AnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_AnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CameraResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CameraResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CollisionMeshResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CollisionMeshResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_DrawEnvResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_DrawEnvResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_EnvAnimationResourceNodeFactory.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_EnvCameraAnimationResourceNode.cpp">
+      <Filter>ソース ファイル\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\gfl2_CombinerShaderDriver.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\gfl2_DrawManager.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\gfl2_DrawTag.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\gfl2_MeshDrawTag.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\gfl2_RenderingPipeLine.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_EdgeMapSceneRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_OutLinePostRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilCollisionRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilEffectLocatorRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilJointRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilMcnfRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilNodeRenderPath.cpp">
+      <Filter>ソース ファイル\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer\gfl2_CombinerCtrShaderDriver.cpp">
+      <Filter>ソース ファイル\Renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

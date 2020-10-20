@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\..\niji.end.common.props" />
+    <Import Project="$(SolutionDir)\project\$(SolutionName).props" Condition="exists('$(SolutionDir)\project\$(SolutionName).props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup />
+  <ItemGroup />
+  <PropertyGroup>
+    <OutDir>$(GFOutDirLib)$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(GFOutDirLibTmp)$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,1 @@
+R:\home\momiji\exec\environment\niji_dd_launcher.bat CTRViewer.sln

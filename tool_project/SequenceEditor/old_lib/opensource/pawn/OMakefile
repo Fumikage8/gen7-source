@@ -1,0 +1,111 @@
+#!/usr/bin/env omake
+#----------------------------------------------------------------------------
+# Project:  NintendoWare
+# File:     OMakefile
+#
+# Copyright (C)2009-2010 Nintendo Co., Ltd./HAL Laboratory, Inc.  All rights reserved.
+#
+# These coded instructions, statements, and computer programs contain
+# proprietary information of Nintendo of America Inc. and/or Nintendo
+# Company Ltd., and are protected by Federal copyright law.  They may
+# not be disclosed to third parties or copied or duplicated in any form,
+# in whole or in part, without the prior written consent of Nintendo.
+#
+# $Revision: 20406 $
+#----------------------------------------------------------------------------
+SUPPORTED_TARGETS   =   CTR-*.Process.MPCore.fast
+
+
+INSTALL_ROOT				=		.
+
+SOURCES[]   =   source/gfl_UnityAmx.c \
+		source/gfl_UnityWrapper.cpp
+
+
+INCLUDES           +=   $(NW_INCLUDES)
+INCLUDES           +=   $(PAWNLIB_INCLUDES)
+INCLUDES           +=   $(GFLIB_INCLUDES)/
+
+println( $(GFLIB_INCLUDES) )
+
+#----------------------------------------------------------------------------
+#		BugFix Include
+#----------------------------------------------------------------------------
+CCFLAGS += --preinclude=include/bugfix_pawn.h
+
+
+##--------------------------------------------------------------------------
+## 以下のワーニングを抑制します  この部分は許可を得て追加変更してください
+## 追加する際には、何が抑制されるのか書いておいてください
+##
+## pawnのようなopensourceは改変しない事が、権利関係で大切な事だったりしますので
+## 基本warrningは、とるのではなく、抑制する方向になります
+## for pawn 1211,1035,193,368
+##--------------------------------------------------------------------------
+
+CCFLAGS_WARNING		+= --diag_suppress 111,1301,2530,1293,261,1517,177,1211,1035,193
+
+include version
+
+## GFLの共通設定
+COMMON_SETTING_DIR = ../../tools
+include $(COMMON_SETTING_DIR)/omake_gfl_common_setting
+
+
+
+TARGET_LIBRARY      =   pawn
+
+##  HIOを使用できるreleaseモード
+if $(defined RELEASEHIO_MODE )
+    if $(equal $(RELEASEHIO_MODE), true)
+        TARGET_LIBRARY      =   pawnhio
+        export
+    export
+
+# リリースかつデバッグプリントなしはFINALとみなす by hosaka
+if $(defined BUILD )
+  if $(equal $(GFL_BUILD_TYPE), release)
+    TARGET_LIBRARY      =   pawnfinal
+    export
+  export
+
+#----------------------------------------------------------------------------
+# HIO SoundEdit Support
+#----------------------------------------------------------------------------
+if $(defined USE_HIO_SOUND_EDIT )
+    if $(equal $(USE_HIO_SOUND_EDIT), true)
+        CCFLAGS  += -DGFL_USE_HIO_SOUND_EDIT
+        export
+    export
+
+#SBTS[631] 【ガイドライン】ジャイロセンサの使用の有無について
+#USE_GYROSCOPEを追加
+#----------------------------------------------------------------------------
+# UI Gyroscope Lib Support
+#----------------------------------------------------------------------------
+if $(defined USE_GYROSCOPE )
+    if $(equal $(USE_GYROSCOPE), true)
+        CCFLAGS  += -DGFL_UI_USE_GYROSCOPE
+        export
+    export
+
+#----------------------------------------------------------------------------
+# Nintendo Ware Debug Mode Disable!
+#----------------------------------------------------------------------------
+if $(defined BUILD )
+    if $(equal $(BUILD), release)
+        CCFLAGS      += -DNW_DEV_DISABLED
+        export
+    export
+
+
+#----------------------------------------------------------------------------
+# MODULES INCLUDE
+#----------------------------------------------------------------------------
+include $(ROOT_OMAKE)/modulerules
+
+
+build: $(DEFAULT_TARGETS)
+
+
+

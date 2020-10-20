@@ -1,0 +1,293 @@
+#ifndef HLSL
+#version 430
+#extension GL_NV_shadow_samplers_cube : enable 
+#endif
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		UvMax					(3)
+#define		TextureMax		(4)
+#define		LutMax				(6)
+
+#define		UvMap					(0)
+#define		CubeMap				(1)
+#define		SphereMap			(2)
+#define		ProjMax				(3)
+
+#define		rimPow			cVsRimParam.x
+#define		rimScale		cVsRimParam.y
+#define		phongPow			cVsRimParam.z
+#define		phongScale		cVsRimParam.w
+
+#define		bPad					bool
+#define		iPad					int
+#define		fPad					float
+
+#if defined HLSL
+
+	#define				STATIC				 static
+	
+	#define ConstantBuffer( NAME, REGNAME, NO )		cbuffer NAME : register( REGNAME )
+
+	#define				vec2					float2
+	#define				vec3					float3
+	#define				vec4					float4
+	#define				mat4x4				float4x4
+	#define				mat3x3				float3x3
+	#define				inverse				transpose
+	#define				Math::Vector	vec4
+	
+	struct PsInput
+	{
+		vec4 Position											: SV_POSITION;
+		vec4 Uv[TextureMax]								: TEXCOORD0;
+		vec4 Color												: COLOR0;
+		vec3 Normal												: NORMAL0;
+		vec3 ObjNormal										: NORMAL1;
+		vec3 ObjLight											: NORAML2;
+		vec3 ObjTangentVec								: TANGENT0;
+		vec4 View													: NORMAL3;
+		vec4 Velocity0										: COLOR1;
+		vec4 Velocity1										: COLOR2;
+		vec4 Velocity2										: COLOR3;
+		vec4 DebugVec											: POSITION0;
+	};
+	
+	struct PS_OUTPUT
+	{
+			float4 Normal	: SV_Target0;
+	    float4 ID			: SV_Target1;
+	};
+	
+	#define				texture2D			tex2D
+	#define				textureCube		texCUBE
+	
+	// -------------------------------------------------------------
+	// 頂点プログラムからフラグメントプログラムに渡すデータ
+	// -------------------------------------------------------------
+	static vec4 outPos;
+	static vec4 outUv[TextureMax];
+	static vec4 outColor;
+	static vec3 outObjNormal;
+	static vec3 outObjLight;
+	static vec3 outObjTangentVec;
+	static vec4 outView;
+	static vec4 outDebugVec;
+	
+	Texture2D TextureImage[TextureMax] : register( t0 );
+	SamplerState Texture[TextureMax] : register( s0 );
+
+	TextureCube CubeTextureImage : register( t4 );
+	SamplerState CubeTexture : register( s4 );
+
+	Texture2D NoizeTextureImage : register( t5 );
+	SamplerState NoizeTexture : register( s5 );
+
+	Texture2D MaterialNoizeTextureImage : register( t6 );
+	SamplerState MaterialNoizeTexture : register( s6 );
+
+	Texture2D BrushStrokeTextureImage : register( t7 );
+	SamplerState BrushStrokeTexture : register( s7 );
+
+	Texture2D HighLightTextureImage : register( t8 );
+	SamplerState HighLightTexture : register( s8 );
+
+	Texture2D LutTextureImage[LutMax] : register( t9 );
+	SamplerState LutTexture[LutMax] : register( s9 );
+
+	Texture2D OutLineColorTextureImage : register( t15 );
+	SamplerState OutLineColorTexture : register( s15 );
+
+#else
+
+	#define				STATIC				 
+	
+	#define ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+
+	#define				float2				vec2
+	#define				float3				vec3
+	#define				float4				vec4
+	#define				float4x4			mat4x4
+	#define				float3x3			mat3x3
+	#define				transpose			inverse
+	#define				Math::Vector	vec4
+
+	in vec4 outPos;
+	in vec4 outUv[TextureMax];
+	in vec4 outColor;
+	in vec3 outNormal;
+	in vec3 outObjNormal;
+	in vec3 outObjLight;
+	in vec3 outObjTangentVec;
+	in vec4 outView;
+	in vec4 outVelocity0;
+	in vec4 outVelocity1;
+	in vec4 outVelocity2;
+	in vec4 outDebugVec;
+
+	struct PsInput
+	{
+		vec4 Position;
+		vec4 Uv[TextureMax];
+		vec4 Color;
+		vec3 Normal;
+		vec3 ObjNormal;
+		vec3 ObjLight;
+		vec3 ObjTangentVec;
+		vec4 View;
+		vec4 Velocity0;
+		vec4 Velocity1;
+		vec4 Velocity2;
+		vec4 DebugVec;
+	};
+	
+	#define				tex2D						texture2D
+	#define				texCUBE					textureCube
+	
+	uniform sampler2D Texture[TextureMax];//テクスチャユニット
+	uniform samplerCube CubeTexture[TextureMax];//テクスチャユニット
+	uniform sampler2D LutTexture[LutMax];
+	uniform sampler2D HighLightTexture;//テクスチャユニット
+	
+	#define		lerp			mix
+
+#endif
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				ピクセルシェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+STATIC const int InputSourceTypeTexture0 = 0;
+STATIC const int InputSourceTypeTexture1 = 1;
+STATIC const int InputSourceTypeTexture2 = 2;
+STATIC const int InputSourceTypeTexture3 = 3;
+STATIC const int InputSourceTypeConstnat = 4;
+STATIC const int InputSourceTypeVSColor = 5;
+STATIC const int InputSourceTypePrimary = 6;
+STATIC const int InputSourceTypeSecondary = 7;
+STATIC const int InputSourceTypeBeforeAnswer = 8;
+STATIC const int InputSourceTypeBeforeBuffer = 9;
+
+STATIC const int SourceTypeA = 0;
+STATIC const int SourceTypeB = 1;
+STATIC const int SourceTypeC = 2;
+STATIC const int SourceTypeMax = 3;
+
+STATIC const int OperandTypeRGB = 0;
+STATIC const int OperandType1_RGB = 1;
+STATIC const int OperandTypeA = 2;
+STATIC const int OperandType1_A = 3;
+STATIC const int OperandTypeR = 4;
+STATIC const int OperandType1_R = 5;
+STATIC const int OperandTypeG = 6;
+STATIC const int OperandType1_G = 7;
+STATIC const int OperandTypeB = 8;
+STATIC const int OperandType1_B = 9;
+STATIC const int OperandTypeMax = 10;
+
+STATIC const int ColorTypeRGB = 0;
+STATIC const int ColorTypeA = 1;
+STATIC const int ColorTypeMax = 2;
+
+STATIC const int MathFormulaA = 0;
+STATIC const int MathFormulaAxB = 1;
+STATIC const int MathFormulaAaddB = 2;
+STATIC const int MathFormulaAaddBsub05 = 3;
+STATIC const int MathFormulaAxCaddBx1subC = 4;
+STATIC const int MathFormulaAsubB = 5;
+STATIC const int MathFormulaRGBDot = 6;
+STATIC const int MathFormulaRGBADot = 7;
+STATIC const int MathFormulaAaddBxC = 8;
+STATIC const int MathFormulaAxBaddC = 9;
+
+STATIC const int LutDistribution0 = 0;
+STATIC const int LutDistribution1 = 1;
+STATIC const int LutReflectionR = 2;
+STATIC const int LutReflectionG = 3;
+STATIC const int LutReflectionB = 4;
+STATIC const int LutFresnel = 5;
+
+STATIC const int BumpMap = 0;
+STATIC const int TangentMap = 1;
+
+STATIC const int NH = 0;//法線とハーフベクトル （デフォルト）
+STATIC const int VH = 1;//ビューベクトルとハーフベクトル
+STATIC const int NV = 2;//法線とビューベクトル
+STATIC const int LN = 3;//ライトベクトルと法線
+STATIC const int SP = 4;//ライトベクトルの逆ベクトルとスポットライトの方向ベクトル（RR, RG, RB, FR
+STATIC const int CP = 5;//ハーフベクトルの接平面への投影と接線（RR, RG, RB, FR は不可）
+
+STATIC const int LightMax = 8;
+
+// -------------------------------------------------------------
+// グローバル変数
+// -------------------------------------------------------------
+
+STATIC const int CombinerStageMax = 6;
+
+ConstantBuffer( PixcelShaderVectorConstants, b7, 7 )
+{
+	vec4 cColorScale;
+	vec4 cColorOffSet;
+	vec4 cEdgeID;
+};
+
+//-----------------------------------------------------------------------------
+/// @brief	メイン関数
+//-----------------------------------------------------------------------------
+#if defined HLSL
+PS_OUTPUT PsMain( PsInput input ) : SV_Target
+{
+	PS_OUTPUT			output;
+	vec4					gl_FragData[2];
+	
+	//outPos = input.Position;
+	outPos = input.DebugVec;
+	
+	for( int i = 0; i < TextureMax; i ++ )
+		outUv[i] = input.Uv[i];
+	outColor = input.Color;
+	outObjNormal = input.Normal;
+	outObjLight = input.ObjLight;
+	outObjTangentVec = input.ObjTangentVec;
+	outView = input.View;
+	outDebugVec = input.DebugVec;
+	
+#else
+void main (void)
+{
+#endif
+
+	float3				worldViewNormal = outDebugVec.xyz;
+
+	worldViewNormal = normalize(worldViewNormal);
+	worldViewNormal += 1.0;
+	worldViewNormal *= 0.5;
+
+	gl_FragData[0].xyz = worldViewNormal.xyz;
+	gl_FragData[0].w = outColor.w;
+
+	gl_FragData[0] *= cColorScale;
+	gl_FragData[0] += cColorOffSet;
+	gl_FragData[1] = cEdgeID.xxxx;
+	
+#if defined HLSL
+
+	output.Normal = gl_FragData[0];
+	output.ID = gl_FragData[1];
+	
+	return output;
+#else
+
+
+#endif
+}
+
+
+

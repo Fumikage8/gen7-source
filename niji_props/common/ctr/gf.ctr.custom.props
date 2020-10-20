@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <!---Path settings is required for all types -->
+  <PropertyGroup>
+    <IncludePath>$(CTRPIA_ROOT)\include;$(CTRMW_VCT_ROOT)\include;$(CTRNEX_ROOT)\include;$(CTRMW_QRD_ROOT)\include;$(CTRMW_QRE_ROOT)\include;$(CTRMW_MOBICLIP_ROOT)\include\mw\mo;$(CTRIMAGEDB_ROOT)\include;$(CTRMW_ZORRO_ROOT)\include\mw\zorro;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <!---Link settings is required for application type-->
+  <ItemDefinitionGroup Condition="'$(ConfigurationType)'=='Application' or '$(ConfigurationType)'=='RoApplication'">
+    <Link>
+      <!--AdditionalLibraryDirectories-->
+      <AdditionalLibraryDirectories>$(CTRNEX_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(CTRPIA_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(CTRMW_QRD_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(CTRMW_QRE_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(CTRMW_MOBICLIP_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(CTRIMAGEDB_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(CTRMW_ZORRO_ROOT)\libraries\CTR-TS.Process.MPCore\$(GFNWConfigLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <!--AdditionalDependencies-->
+      <AdditionalDependencies>libDDLTypes.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemAuthenticationClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemDataStoreClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(GFNWConfig)'!='Release'">libJugemDebugClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemErrorCodeConverter.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemIndependentServerClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemLoginClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemMatchmakeClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemMatchmakeRefereeClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemRankingClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemRatingClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemSubscriberClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemSubscriptionClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libJugemUtilityClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libMatchmakingClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libMessagingClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libNATTraversalClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libNetZ.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libNetZExt.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libOnlineCore.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libosdk_zlib.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libParseTree.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libRendezVousClient.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libRendezVousCommon.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libVSocket.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib_SampleFramework.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_chat.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_clone.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_common.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_inet.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_local.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_pead.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_reckoning.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_session.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_sync.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_transport.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libpia_util.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_qrd.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_qre.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>profiler.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>liborcs.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_mo_FastAudioDecoder.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_mo_FilterDeblocker.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_mo_DspAdpcmAudioDecoder.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_mo_ImaadpcmAudioDecoder.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_mo_MobiclipVideoDecoder.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_mo_MoflexDemuxer.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libnn_aacdec.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ImageDb.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libmw_zorro.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <!---GF_CUSTOM_TAGS_END-->
+</Project>

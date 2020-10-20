@@ -1,0 +1,62 @@
+//==========================================================
+/**
+ * @brief GF-Archive file index definition.
+ * @file g3d_common.gaix
+ * @version 4.0
+ * @note This file is created by GAMEFREAK Archiver.
+ */
+//==========================================================
+
+#ifndef __GARC_G3D_COMMON_GAIX__
+#define __GARC_G3D_COMMON_GAIX__
+
+enum {
+  GARC_g3d_common_nwgfx_DefaultShader_BCSDR_LZ = 0,
+  GARC_g3d_common_nwgfx_ParticleDefaultShader_BCSDR_LZ = 1,
+  GARC_g3d_common_bloom_filter_high_luminance_board_BCRES_LZ = 2,
+  GARC_g3d_common_bloom_filter_bloom_board_BCRES_LZ = 3,
+  GARC_g3d_common_texture_check_board_BCRES_LZ = 4,
+  GARC_g3d_common_texture_check_board_no_alpha_BCRES_LZ = 5,
+  GARC_g3d_common_gfl_DefaultShader_BCSDR_LZ = 6,
+  GARC_g3d_common_small_texture_BCTEX_LZ = 7,
+  GARC_g3d_common_NormalTexture_BCTEX_LZ = 8,
+  GARC_g3d_common_NormalToUvShader_BCSDR_LZ = 9,
+  GARC_g3d_common_EdgeMapAlphaDisableNormalVColA_BCMDL_LZ = 10,
+  GARC_g3d_common_EdgeMapAlphaVColA_BCMDL_LZ = 11,
+  GARC_g3d_common_EdgeMapAlphaVColADisableNormal_BCMDL_LZ = 12,
+  GARC_g3d_common_EdgeMapDisableNormalVColA_BCMDL_LZ = 13,
+  GARC_g3d_common_EdgeMapVColA_BCMDL_LZ = 14,
+  GARC_g3d_common_EdgeMapVColADisableNormal_BCMDL_LZ = 15,
+  GARC_g3d_common_EdgeMap_BCRES_LZ = 16,
+  GARC_g3d_common_EdgeMapAlpha_BCRES_LZ = 17,
+  GARC_g3d_common_EdgeMapDisableNormal_BCRES_LZ = 18,
+  GARC_g3d_common_EdgeMapAlphaDisableNormal_BCRES_LZ = 19,
+  GARC_g3d_common_EdgeMapVColA_BCRES_LZ = 20,
+  GARC_g3d_common_EdgeMapAlphaVColA_BCRES_LZ = 21,
+  GARC_g3d_common_EdgeMapVColADisableNormal_BCRES_LZ = 22,
+  GARC_g3d_common_EdgeMapAlphaVColADisableNormal_BCRES_LZ = 23,
+  GARC_g3d_common_EdgeMapAlphaDebug_BCRES_LZ = 24,
+  GARC_g3d_common_EdgeFillter_BCRES_LZ = 25,
+  GARC_g3d_common_EdgeFillterNormal_BCRES_LZ = 26,
+  GARC_g3d_common_IDEdgeFillter_BCRES_LZ = 27,
+  GARC_g3d_common_VColorEdgeFillter_BCRES_LZ = 28,
+  GARC_g3d_common_EdgeDebugRGB_BCRES_LZ = 29,
+  GARC_g3d_common_EdgeDebugA_BCRES_LZ = 30,
+  GARC_g3d_common_EdgeDebugR_BCRES_LZ = 31,
+  GARC_g3d_common_InsideEdgeFillter_BCRES_LZ = 32,
+  GARC_g3d_common_EdgeMapDisableNormalVColA_BCRES_LZ = 33,
+  GARC_g3d_common_EdgeMapAlphaDisableNormalVColA_BCRES_LZ = 34,
+  GARC_g3d_common_nwh3d_DefaultShader_BCHRES_LZ = 35,
+  GARC_g3d_common_EdgeMapAlphaDisableNormalVColA_BCHMDL_LZ = 36,
+  GARC_g3d_common_EdgeMapAlphaVColA_BCHMDL_LZ = 37,
+  GARC_g3d_common_EdgeMapAlphaVColADisableNormal_BCHMDL_LZ = 38,
+  GARC_g3d_common_EdgeMapDisableNormalVColA_BCHMDL_LZ = 39,
+  GARC_g3d_common_EdgeMapVColA_BCHMDL_LZ = 40,
+  GARC_g3d_common_EdgeMapVColADisableNormal_BCHMDL_LZ = 41,
+  GARC_g3d_common_NormalTexture_BCHTEX_LZ = 42,
+  GARC_g3d_common_NormalToUvShader_BCHSDR_LZ = 43,
+  GARC_g3d_common_gfl_DefaultShader_BCHSDR_LZ = 44,
+  GARC_g3d_common_DATA_NUM = 45,
+};
+
+#endif  // __GARC_G3D_COMMON_GAIX__

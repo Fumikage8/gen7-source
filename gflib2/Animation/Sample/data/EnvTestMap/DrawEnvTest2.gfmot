@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfMotion version="0.96" FrameSize="74" IsLoop="false" CurrrentUnit="ntsc">
+	<Source Path="C:/Users/takebe_makoto/Desktop/fieldsample/fieldsample/t01/drawenv_anim_test.mb" TargetNode="|DrawEnv1"/>
+	<ModelAABB>-0.500000 -0.500000 -0.500000 0.500000 0.500000 0.500000</ModelAABB>
+	<EnvAnimation>
+		<DrawEnv Name="DrawEnv1">
+			<LightSets>
+				<LightSet No="0">
+					<Light Name="EnvDirLight" Type="DirectionalLight">
+						<PositionX>
+							<OneFrameKey Value="0"/>
+						</PositionX>
+						<PositionY>
+							<OneFrameKey Value="0"/>
+						</PositionY>
+						<PositionZ>
+							<OneFrameKey Value="0"/>
+						</PositionZ>
+						<DirectionX>
+							<OneFrameKey Value="0"/>
+						</DirectionX>
+						<DirectionY>
+							<OneFrameKey Value="0"/>
+						</DirectionY>
+						<DirectionZ>
+							<OneFrameKey Value="-1"/>
+						</DirectionZ>
+						<ColorR>
+							<OneFrameKey Value="0.36551460624"/>
+						</ColorR>
+						<ColorG>
+							<OneFrameKey Value="0.36551460624"/>
+						</ColorG>
+						<ColorB>
+							<OneFrameKey Value="0.36551460624"/>
+						</ColorB>
+						<ConeAngle>
+							<OneFrameKey Value="0"/>
+						</ConeAngle>
+						<Intensity>
+							<OneFrameKey Value="0"/>
+						</Intensity>
+					</Light>
+					<Light Name="EnvAmbLight" Type="AmbientLight">
+						<PositionX>
+							<OneFrameKey Value="0"/>
+						</PositionX>
+						<PositionY>
+							<OneFrameKey Value="0"/>
+						</PositionY>
+						<PositionZ>
+							<OneFrameKey Value="0"/>
+						</PositionZ>
+						<DirectionX>
+							<OneFrameKey Value="0"/>
+						</DirectionX>
+						<DirectionY>
+							<OneFrameKey Value="0"/>
+						</DirectionY>
+						<DirectionZ>
+							<OneFrameKey Value="0"/>
+						</DirectionZ>
+						<ColorR>
+							<OneFrameKey Value="0"/>
+						</ColorR>
+						<ColorG>
+							<OneFrameKey Value="0"/>
+						</ColorG>
+						<ColorB>
+							<OneFrameKey Value="0"/>
+						</ColorB>
+						<ConeAngle>
+							<OneFrameKey Value="0"/>
+						</ConeAngle>
+						<Intensity>
+							<OneFrameKey Value="0"/>
+						</Intensity>
+					</Light>
+					<Light Name="pointLight1" Type="PointLight">
+						<PositionX>
+							<HermiteKey Frame="0" Value="-340.28295898438" Slope="0.69511413574"/>
+							<HermiteKey Frame="1" Value="-339.58784484863" Slope="1.85698699951"/>
+							<HermiteKey Frame="2" Value="-336.56898498535" Slope="4.15093231201"/>
+							<HermiteKey Frame="4" Value="-323.8770904541" Slope="8.40268707275"/>
+							<HermiteKey Frame="6" Value="-303.23477172852" Slope="12.10137176514"/>
+							<HermiteKey Frame="8" Value="-275.74815368652" Slope="15.24697113037"/>
+							<HermiteKey Frame="10" Value="-242.52340698242" Slope="17.83950424194"/>
+							<HermiteKey Frame="12" Value="-204.66667175293" Slope="19.87896728516"/>
+							<HermiteKey Frame="14" Value="-163.28409194946" Slope="21.36535835266"/>
+							<HermiteKey Frame="16" Value="-119.48181533813" Slope="22.29866039753"/>
+							<HermiteKey Frame="18" Value="125.63401412964" Slope="22.67889964581"/>
+							<HermiteKey Frame="20" Value="170.95724487305" Slope="22.50606155396"/>
+							<HermiteKey Frame="22" Value="215.38172912598" Slope="21.78015899658"/>
+							<HermiteKey Frame="24" Value="257.80133056641" Slope="20.50116729736"/>
+							<HermiteKey Frame="26" Value="297.10987854004" Slope="18.66911315918"/>
+							<HermiteKey Frame="28" Value="332.20124816895" Slope="16.28398895264"/>
+							<HermiteKey Frame="30" Value="361.96929931641" Slope="13.34578704834"/>
+							<HermiteKey Frame="32" Value="385.30786132813" Slope="9.8544921875"/>
+							<HermiteKey Frame="34" Value="401.11077880859" Slope="5.81016540527"/>
+							<HermiteKey Frame="35" Value="405.84072875977" Slope="3.58058166504"/>
+							<HermiteKey Frame="36" Value="408.27194213867" Slope="1.22573852539"/>
+							<HermiteKey Frame="37" Value="408.29220581055" Slope="-1.126953125"/>
+							<HermiteKey Frame="38" Value="406.01803588867" Slope="-3.3514251709"/>
+							<HermiteKey Frame="40" Value="395.1311340332" Slope="-7.4105682373"/>
+							<HermiteKey Frame="42" Value="376.62551879883" Slope="-10.97015380859"/>
+							<HermiteKey Frame="44" Value="351.50033569336" Slope="-14.03012084961"/>
+							<HermiteKey Frame="46" Value="320.7547454834" Slope="-16.5905456543"/>
+							<HermiteKey Frame="48" Value="285.38800048828" Slope="-18.65132141113"/>
+							<HermiteKey Frame="50" Value="246.39918518066" Slope="-20.21257400513"/>
+							<HermiteKey Frame="52" Value="204.78758239746" Slope="-21.27416229248"/>
+							<HermiteKey Frame="54" Value="161.55224609375" Slope="-21.83623886108"/>
+							<HermiteKey Frame="56" Value="117.69250106812" Slope="-21.89864850044"/>
+							<HermiteKey Frame="58" Value="-125.79263114929" Slope="-21.46154665947"/>
+							<HermiteKey Frame="60" Value="-167.90381622314" Slope="-20.52478027344"/>
+							<HermiteKey Frame="62" Value="-207.64195251465" Slope="-19.08852767944"/>
+							<HermiteKey Frame="64" Value="-244.00799560547" Slope="-17.15254974365"/>
+							<HermiteKey Frame="66" Value="-276.00250244141" Slope="-14.71705627441"/>
+							<HermiteKey Frame="68" Value="-302.62643432617" Slope="-11.78197479248"/>
+							<HermiteKey Frame="70" Value="-322.88059997559" Slope="-8.34732818604"/>
+							<HermiteKey Frame="72" Value="-335.76588439941" Slope="-4.41303253174"/>
+							<HermiteKey Frame="73" Value="-339.13290405273" Slope="-2.25856018066"/>
+							<HermiteKey Frame="74" Value="-340.28300476074" Slope="-1.15010070801"/>
+						</PositionX>
+						<PositionY>
+							<OneFrameKey Value="191.44488525391"/>
+						</PositionY>
+						<PositionZ>
+							<OneFrameKey Value="-175.13117980957"/>
+						</PositionZ>
+						<DirectionX>
+							<OneFrameKey Value="0"/>
+						</DirectionX>
+						<DirectionY>
+							<OneFrameKey Value="0"/>
+						</DirectionY>
+						<DirectionZ>
+							<OneFrameKey Value="0"/>
+						</DirectionZ>
+						<ColorR>
+							<OneFrameKey Value="1"/>
+						</ColorR>
+						<ColorG>
+							<OneFrameKey Value="1"/>
+						</ColorG>
+						<ColorB>
+							<OneFrameKey Value="1"/>
+						</ColorB>
+						<ConeAngle>
+							<OneFrameKey Value="0"/>
+						</ConeAngle>
+						<Intensity>
+							<OneFrameKey Value="100"/>
+						</Intensity>
+					</Light>
+				</LightSet>
+				<LightSet No="1"/>
+			</LightSets>
+			<Cameras>
+				<Camera Name="EnvCamera1">
+					<Near>
+						<OneFrameKey Value="0.10000000149"/>
+					</Near>
+					<Far>
+						<OneFrameKey Value="10000"/>
+					</Far>
+					<Fovy>
+						<OneFrameKey Value="0.66059470177"/>
+					</Fovy>
+					<AspectRatio>
+						<OneFrameKey Value="1.5"/>
+					</AspectRatio>
+					<RotateX>
+						<OneFrameKey Value="-0.34906587005"/>
+					</RotateX>
+					<RotateY>
+						<HermiteKey Frame="0" Value="1.04363323003" Slope="-0.00011051819"/>
+						<HermiteKey Frame="1" Value="1.04352271184" Slope="-0.00029525161"/>
+						<HermiteKey Frame="23" Value="-0.0163385123" Slope="-0.00337223802"/>
+						<HermiteKey Frame="36" Value="-0.04358388484" Slope="-0.00019488297"/>
+						<HermiteKey Frame="62" Value="0.0225440599" Slope="0.003034967"/>
+						<HermiteKey Frame="73" Value="0.04345037416" Slope="0.00035909563"/>
+						<HermiteKey Frame="74" Value="0.04363323003" Slope="0.00018285587"/>
+					</RotateY>
+					<RotateZ>
+						<OneFrameKey Value="0"/>
+					</RotateZ>
+					<TranslateX>
+						<OneFrameKey Value="0"/>
+					</TranslateX>
+					<TranslateY>
+						<OneFrameKey Value="500"/>
+					</TranslateY>
+					<TranslateZ>
+						<OneFrameKey Value="500"/>
+					</TranslateZ>
+				</Camera>
+			</Cameras>
+		</DrawEnv>
+	</EnvAnimation>
+</GfMotion>
+

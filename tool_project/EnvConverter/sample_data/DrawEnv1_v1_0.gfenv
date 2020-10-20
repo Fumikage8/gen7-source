@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfEnv version="1.0">
+	<Source Path="C:/Users/takebe_makoto/Desktop/testdata/fogtest/fogtest/fogtest.mb" TargetNode="|DrawEnv1"/>
+	<DrawEnv Name="DrawEnv1" Priority="0" IsLinkEnv="false">
+		<WorldPos X="0.000000" Y="0.000000" Z="0.000000"/>
+		<Fog No="0" Enable="true">
+			<FogLength Near="10000.000000" Far="20000.000000"/>
+			<FogStrength Value="0.000000"/>
+			<FogColor R="0.000000" G="0.000000" B="0.000000"/>
+		</Fog>
+		<Fog No="1" Enable="true">
+			<FogLength Near="1.000000" Far="2.000000"/>
+			<FogStrength Value="3.000000"/>
+			<FogColor R="1.000000" G="1.000000" B="1.000000"/>
+		</Fog>
+		<Fog No="2" Enable="true">
+			<FogLength Near="10000.000000" Far="20000.000000"/>
+			<FogStrength Value="0.000000"/>
+			<FogColor R="0.000000" G="0.000000" B="0.000000"/>
+		</Fog>
+		<Fog No="3" Enable="true">
+			<FogLength Near="10000.000000" Far="20000.000000"/>
+			<FogStrength Value="0.000000"/>
+			<FogColor R="0.000000" G="0.000000" B="0.000000"/>
+		</Fog>
+		<DepthOfField>
+			<Front Near="0.000000" Far="0.000000" Scale="0.000000"/>
+			<Back Near="8000.000000" Far="10000.000000" Scale="0.000000"/>
+		</DepthOfField>
+		<GlareFilter Enable="true" ReduceNum="1" Strength="5.000000" Range="6.000000" Intensity="7.000000">
+			<Weight R="1.000000" G="0.000000" B="0.000000"/>
+		</GlareFilter>
+		<AABB>-0.500000 -0.500000 -0.500000 0.500000 0.500000 0.500000</AABB>
+		<LightSets>
+			<LightSet No="0">
+				<Lights>
+					<Light Name="EnvDirLight" Type="DirectionalLight">
+						<LocalPos X="0.000000" Y="0.000000" Z="0.000000"/>
+						<LocalDirection X="0.000000" Y="0.000000" Z="-1.000000"/>
+						<Color R="1.000000" G="1.000000" B="1.000000"/>
+						<ConeAngle Value="0.000000"/>
+						<Intensity Value="0.000000"/>
+					</Light>
+					<Light Name="EnvAmbLight" Type="AmbientLight">
+						<LocalPos X="0.000000" Y="0.000000" Z="0.000000"/>
+						<LocalDirection X="0.000000" Y="0.000000" Z="0.000000"/>
+						<Color R="1.000000" G="1.000000" B="1.000000"/>
+						<ConeAngle Value="0.000000"/>
+						<Intensity Value="0.000000"/>
+					</Light>
+				</Lights>
+			</LightSet>
+		</LightSets>
+		<Cameras>
+			<Camera Name="EnvCamera1">
+				<Param Near="0.100000" Far="10000.000000" Fovy="0.660595" AspectRatio="1.500000"/>
+				<LocalMatrix>1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</LocalMatrix>
+				<LocalScale>1 1 1</LocalScale>
+				<LocalRotation>0 0 0</LocalRotation>
+				<LocalTransform>0 0 0</LocalTransform>
+			</Camera>
+		</Cameras>
+	</DrawEnv>
+</GfEnv>
+

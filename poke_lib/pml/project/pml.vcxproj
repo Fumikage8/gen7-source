@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|CTR">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|CTR">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|Win32">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|CTR">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|Win32">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|CTR">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|Win32">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{40179925-5B04-4F2D-ADF7-A3BF900B2981}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debugCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.developCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.releaseCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.finalCLR.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="..\src\battle\pml_battle_TypeAffinity.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\src\item\btl_item.cpp" />
+    <ClCompile Include="..\src\item\item.cpp" />
+    <ClCompile Include="..\src\item\item_manager.cpp" />
+    <ClCompile Include="..\src\item\item_util.cpp" />
+    <ClCompile Include="..\src\local\pml_Random.cpp" />
+    <ClCompile Include="..\src\personal\pml_EvolutionTable.cpp" />
+    <ClCompile Include="..\src\personal\pml_EvolutionTableCache.cpp" />
+    <ClCompile Include="..\src\personal\pml_GrowTable.cpp" />
+    <ClCompile Include="..\src\personal\pml_GrowTableCache.cpp" />
+    <ClCompile Include="..\src\personal\pml_MegaEvolveTable.cpp" />
+    <ClCompile Include="..\src\personal\pml_MegaEvolveTableCache.cpp" />
+    <ClCompile Include="..\src\personal\pml_PersonalData.cpp" />
+    <ClCompile Include="..\src\personal\pml_PersonalDataCache.cpp" />
+    <ClCompile Include="..\src\personal\pml_PersonalSystem.cpp" />
+    <ClCompile Include="..\src\personal\pml_PersonalUtil.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_WazaOboeData.cpp" />
+    <ClCompile Include="..\src\personal\pml_WazaOboeDataCache.cpp" />
+    <ClCompile Include="..\src\pml_PokeParty.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_EggGenerator.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_EggWazaData.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_EvolveManager.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonCoreParam.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonParam.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamAccessor.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamCalcTool.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamEncoder.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamFactory.cpp" />
+    <ClCompile Include="..\src\pokepara\pml_PokemonParam_BoxMarkController.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParam_MultiPurposeWorkController.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\src\system\pml_Library.cpp" />
+    <ClCompile Include="..\src\waza\pml_ZenryokuWazaSystem.cpp" />
+    <ClCompile Include="..\src\waza\pml_WazaData.cpp" />
+    <ClCompile Include="..\src\waza\pml_WazaDataCache.cpp" />
+    <ClCompile Include="..\src\waza\pml_WazaDataSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\battle\pml_battle_TypeAffinity.h" />
+    <ClInclude Include="..\include\bugfix_pokelib.h" />
+    <ClInclude Include="..\include\item\btl_item.h" />
+    <ClInclude Include="..\include\item\item.h" />
+    <ClInclude Include="..\include\item\itemsort_abc_def.h" />
+    <ClInclude Include="..\include\item\itemuse_def.h" />
+    <ClInclude Include="..\include\item\item_manager.h" />
+    <ClInclude Include="..\include\item\item_util.h" />
+    <ClInclude Include="..\include\local\pml_Random.h" />
+    <ClInclude Include="..\include\personal\pml_EvolutionTable.h" />
+    <ClInclude Include="..\include\personal\pml_GrowTable.h" />
+    <ClInclude Include="..\include\personal\pml_MegaEvolveTable.h" />
+    <ClInclude Include="..\include\personal\pml_PersonalConst.h" />
+    <ClInclude Include="..\include\personal\pml_PersonalData.h" />
+    <ClInclude Include="..\include\personal\pml_PersonalSystem.h" />
+    <ClInclude Include="..\include\personal\pml_PersonalUtil.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_WazaOboeData.h" />
+    <ClInclude Include="..\include\pmlib.h" />
+    <ClInclude Include="..\include\pmlib_debug.h" />
+    <ClInclude Include="..\include\pml_Battle.h" />
+    <ClInclude Include="..\include\pml_Const.h" />
+    <ClInclude Include="..\include\pml_Item.h" />
+    <ClInclude Include="..\include\pml_Local.h" />
+    <ClInclude Include="..\include\pml_Personal.h" />
+    <ClInclude Include="..\include\pml_PokePara.h" />
+    <ClInclude Include="..\include\pml_PokeParty.h" />
+    <ClInclude Include="..\include\pml_System.h" />
+    <ClInclude Include="..\include\pml_Type.h" />
+    <ClInclude Include="..\include\pml_Waza.h" />
+    <ClInclude Include="..\include\pokepara\pml_EggGenerator.h" />
+    <ClInclude Include="..\include\pokepara\pml_EggWazaData.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_EvolveManager.h" />
+    <ClInclude Include="..\include\pokepara\pml_PokemonCoreParam.h" />
+    <ClInclude Include="..\include\pokepara\pml_PokemonParam.h" />
+    <ClInclude Include="..\include\pokepara\pml_PokemonParamFactory.h" />
+    <ClInclude Include="..\include\pokepara\pml_PokemonParamSpec.h" />
+    <ClInclude Include="..\include\pokepara\pml_PokemonParamType.h" />
+    <ClInclude Include="..\include\system\pml_Library.h" />
+    <ClInclude Include="..\include\time_zone.h" />
+    <ClInclude Include="..\include\wazasick_def.h" />
+    <ClInclude Include="..\include\waza\pml_WazaTarget.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\waza\pml_ZenryokuWazaSystem.h" />
+    <ClInclude Include="..\include\waza\pml_WazaData.h" />
+    <ClInclude Include="..\include\waza\pml_WazaDataConst.h" />
+    <ClInclude Include="..\include\waza\pml_WazaDataSystem.h" />
+    <ClInclude Include="..\src\personal\pml_EvolutionTableCache.h" />
+    <ClInclude Include="..\src\personal\pml_EvolutionTableLocal.h" />
+    <ClInclude Include="..\src\personal\pml_GrowTableCache.h" />
+    <ClInclude Include="..\src\personal\pml_MegaEvolveTableCache.h" />
+    <ClInclude Include="..\src\personal\pml_MegaEvolveTableLocal.h" />
+    <ClInclude Include="..\src\personal\pml_PersonalDataCache.h" />
+    <ClInclude Include="..\src\personal\pml_PersonalLocal.h" />
+    <ClInclude Include="..\src\personal\pml_WazaOboeDataCache.h" />
+    <ClInclude Include="..\src\personal\pml_WazaOboeLocal.h" />
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamAccessor.h" />
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamCalcTool.h" />
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamEncoder.h" />
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamLocal.h" />
+    <ClInclude Include="..\src\pokepara\pml_PokemonParam_BoxMarkController.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParam_MultiPurposeWorkController.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\src\waza\pml_WazaDataCache.h" />
+    <ClInclude Include="..\src\waza\pml_WazaDataLocal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\pokepara\rotom_waza.cdat" />
+    <None Include="..\src\pokepara\taste.cdat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

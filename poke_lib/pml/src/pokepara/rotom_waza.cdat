@@ -1,0 +1,16 @@
+﻿//-----------------------------------------------------------
+/**
+ * @biref ロトムの専用技テーブル
+ * 
+ * rotom_waza_tbl[ formno ]
+ */
+//-----------------------------------------------------------
+const u8 tbl_size = 6;
+const WazaNo rotom_waza_tbl[ tbl_size ] = {
+  WAZANO_NULL,
+  WAZANO_OOBAAHIITO,
+  WAZANO_HAIDOROPONPU,
+  WAZANO_HUBUKI,
+  WAZANO_EASURASSYU,
+  WAZANO_RIIHUSUTOOMU,
+}; 

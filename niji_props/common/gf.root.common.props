@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <GF_CTRLIB_VERSION>NW4C3.6.1-sdk11.0.0</GF_CTRLIB_VERSION>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Platform)'=='Win32'">
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="GF_CTRLIB_VERSION">
+      <Value>$(GF_CTRLIB_VERSION)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+  <PropertyGroup>
+    <GFCasetteVersionSun>32</GFCasetteVersionSun>
+    <GFCasetteVersionMoon>33</GFCasetteVersionMoon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFConfig Condition="'$(Configuration)'=='Debug'">Debug</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='DebugDL'">Debug</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='DebugCLR'">Debug</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='Develop'">Develop</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='DevelopDL'">Develop</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='DevelopCLR'">Develop</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='Release'">Release</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='ReleaseDL'">Release</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='ReleaseCLR'">Release</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='Final'">Final</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='FinalDL'">Final</GFConfig>
+    <GFConfig Condition="'$(Configuration)'=='FinalCLR'">Final</GFConfig>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFConfigCLR Condition="'$(Configuration)'=='Debug'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='DebugDL'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='DebugCLR'">CLR</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='Develop'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='DevelopDL'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='DevelopCLR'">CLR</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='Release'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='ReleaseDL'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='ReleaseCLR'">CLR</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='Final'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='FinalDL'">Normal</GFConfigCLR>
+    <GFConfigCLR Condition="'$(Configuration)'=='FinalCLR'">CLR</GFConfigCLR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFExtLibConfig Condition="'$(GFConfig)'=='Debug'">Debug</GFExtLibConfig>
+    <GFExtLibConfig Condition="'$(GFConfig)'=='Develop'">Debug</GFExtLibConfig>
+    <GFExtLibConfig Condition="'$(GFConfig)'=='Release'">Release</GFExtLibConfig>
+    <GFExtLibConfig Condition="'$(GFConfig)'=='Final'">Release</GFExtLibConfig>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFNWConfig Condition="'$(GFConfig)'=='Debug'">Develop</GFNWConfig>
+    <GFNWConfig Condition="'$(GFConfig)'=='Develop'">Release</GFNWConfig>
+    <GFNWConfig Condition="'$(GFConfig)'=='Release'">Release</GFNWConfig>
+    <GFNWConfig Condition="'$(GFConfig)'=='Final'">Release</GFNWConfig>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFWin32Config Condition="'$(GFConfig)'=='Debug'">Debug</GFWin32Config>
+    <GFWin32Config Condition="'$(GFConfig)'=='Develop'">Develop</GFWin32Config>
+    <GFWin32Config Condition="'$(GFConfig)'=='Release'">Release</GFWin32Config>
+    <GFWin32Config Condition="'$(GFConfig)'=='Final'">Release</GFWin32Config>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFNWCTRProps Condition="'$(GFNWConfig)'=='Debug'">debug</GFNWCTRProps>
+    <GFNWCTRProps Condition="'$(GFNWConfig)'=='Develop'">develop</GFNWCTRProps>
+    <GFNWCTRProps Condition="'$(GFNWConfig)'=='Release'">release</GFNWCTRProps>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFNWConfigLibDir Condition="'$(GFNWConfig)'=='Debug'">noopt</GFNWConfigLibDir>
+    <GFNWConfigLibDir Condition="'$(GFNWConfig)'=='Develop'">verbose</GFNWConfigLibDir>
+    <GFNWConfigLibDir Condition="'$(GFNWConfig)'=='Release'">release</GFNWConfigLibDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFNWLibSuffix Condition="'$(GFNWConfig)'=='Debug'">D</GFNWLibSuffix>
+    <GFNWLibSuffix Condition="'$(GFNWConfig)'=='Develop'"></GFNWLibSuffix>
+    <GFNWLibSuffix Condition="'$(GFNWConfig)'=='Release'"></GFNWLibSuffix>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFWin32Props Condition="'$(GFConfig)'=='Debug'">debug</GFWin32Props>
+    <GFWin32Props Condition="'$(GFConfig)'=='Develop'">develop</GFWin32Props>
+    <GFWin32Props Condition="'$(GFConfig)'=='Release'">release</GFWin32Props>
+    <GFWin32Props Condition="'$(GFConfig)'=='Final'">release</GFWin32Props>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFCafeLibSuffix Condition="'$(GFWin32Config)'=='Debug'">D</GFCafeLibSuffix>
+    <GFCafeLibSuffix Condition="'$(GFWin32Config)'=='Develop'"></GFCafeLibSuffix>
+    <GFCafeLibSuffix Condition="'$(GFWin32Config)'=='Release'"></GFCafeLibSuffix>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFStaticLibExt Condition="'$(Platform)'=='CTR'">a</GFStaticLibExt>
+    <GFStaticLibExt Condition="'$(Platform)'=='Win32'">lib</GFStaticLibExt>
+    <GFRoModuleExt Condition="'$(Platform)'=='CTR'">precro</GFRoModuleExt>
+    <GFRoModuleExt Condition="'$(Platform)'=='Win32'">lib</GFRoModuleExt>
+    <GFAppExt Condition="'$(Platform)'=='CTR'">cci</GFAppExt>
+    <GFAppExt Condition="'$(Platform)'=='Win32'">exe</GFAppExt>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFWin32RuntimeSuffix Condition="'$(Configuration)'=='DebugCLR'">DLL</GFWin32RuntimeSuffix>
+    <GFWin32RuntimeSuffix Condition="'$(Configuration)'=='DevelopCLR'">DLL</GFWin32RuntimeSuffix>
+    <GFWin32RuntimeSuffix Condition="'$(Configuration)'=='ReleaseCLR'">DLL</GFWin32RuntimeSuffix>
+    <GFWin32RuntimeSuffix Condition="'$(Configuration)'=='FinalCLR'">DLL</GFWin32RuntimeSuffix>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GFDevelopHIOResourceVal>0</GFDevelopHIOResourceVal>
+    <GFDevelopHIOResourceVal Condition="('$(Configuration)'=='Develop') AND ('$(GF_DEVELOP_HIO_RESOURCE_SETTING)'=='yes')">1</GFDevelopHIOResourceVal>
+  </PropertyGroup>
+</Project>

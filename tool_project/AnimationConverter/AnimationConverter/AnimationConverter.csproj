@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94E681AE-4CF1-4E0A-80E4-89BD9866EF6C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnimationConverter</RootNamespace>
+    <AssemblyName>AnimationConverter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NOUSE_MCNFUTIL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\tool\AnimationConverter\</OutputPath>
+    <DefineConstants>TRACE;NOUSE_MCNFUTIL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvMode\ConvDivideTexAnim.cs" />
+    <Compile Include="ConvMode\ConvGfmot.cs" />
+    <Compile Include="ConvMode\ConvLog.cs" />
+    <Compile Include="ConvMode\ConvMcnf.cs" />
+    <Compile Include="ConvMode\ConvMlst.cs" />
+    <Compile Include="ConvMode\McnfBinaryExporter.cs" />
+    <Compile Include="Mcnf\BlendList.cs" />
+    <Compile Include="Mcnf\EachDae.cs" />
+    <Compile Include="ExcelXml\ExcelXml.cs" />
+    <Compile Include="GfMotion\BlendShapeAnimation.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Cskla\Cskla.cs" />
+    <Compile Include="DivideTexAnim.cs" />
+    <Compile Include="GfMotion\Common.cs" />
+    <Compile Include="GfMotion\EnvAnimation.cs" />
+    <Compile Include="ConvMode\GfmotBinaryExporter.cs" />
+    <Compile Include="FunctionCurve.cs" />
+    <Compile Include="FunctionCurveCompress.cs" />
+    <Compile Include="GfMotion\Gfmot.cs" />
+    <Compile Include="GfMotion\AttributeKeyAnimation.cs" />
+    <Compile Include="KeyCompress.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Mcnf\Mcnf.cs" />
+    <Compile Include="Mot\Mot.cs" />
+    <Compile Include="OldFormatChecker.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="GfMotion\ShaderAnimation.cs" />
+    <Compile Include="GfMotion\Skelton.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="GfMotion\TexturePatternAnimation.cs" />
+    <Compile Include="GfMotion\UvAnimation.cs" />
+    <Compile Include="GfMotion\JointAnimation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GfMotion\VisibilityAnimation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

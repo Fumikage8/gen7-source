@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <ItemDefinitionGroup>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ClCompile>
+      <OptimizeLevel>0</OptimizeLevel>
+      <OptimizeRetain>calls</OptimizeRetain>
+      <PreprocessorDefinitions>NN_BUILD_DEVELOPMENT;NN_COMPILER_RVCT;NN_COMPILER_RVCT_VERSION_MAJOR=$(CTRSDK_RVCT_VER_MAJOR);NN_PROCESSOR_ARM;NN_PROCESSOR_ARM11MPCORE;NN_PROCESSOR_ARM_V6;NN_PROCESSOR_ARM_VFP_V2;NN_HARDWARE_CTR;NN_PLATFORM_CTR;NN_HARDWARE_CTR_TS;NN_SYSTEM_PROCESS;NN_SWITCH_ENABLE_HOST_IO=1;NN_BUILD_VERBOSE;NN_DEBUGGER_KMC_PARTNER;NN_SWITCH_ENABLE_MEMBER_NAME_SHORTCUT=1</PreprocessorDefinitions>
+      <GNU_Extensions>True</GNU_Extensions>
+    </ClCompile>
+    <ASM>
+      <OptimizeLevel>0</OptimizeLevel>
+      <OptimizeRetain>calls</OptimizeRetain>
+      <PreprocessorDefinitions>NN_BUILD_DEVELOPMENT;NN_COMPILER_RVCT;NN_COMPILER_RVCT_VERSION_MAJOR=$(CTRSDK_RVCT_VER_MAJOR);NN_PROCESSOR_ARM;NN_PROCESSOR_ARM11MPCORE;NN_PROCESSOR_ARM_V6;NN_PROCESSOR_ARM_VFP_V2;NN_HARDWARE_CTR;NN_PLATFORM_CTR;NN_HARDWARE_CTR_TS;NN_SYSTEM_PROCESS;NN_SWITCH_ENABLE_HOST_IO=1;NN_BUILD_VERBOSE;NN_DEBUGGER_KMC_PARTNER;NN_SWITCH_ENABLE_MEMBER_NAME_SHORTCUT=1</PreprocessorDefinitions>
+      <GNU_Extensions>True</GNU_Extensions>
+    </ASM>
+    <Link>
+      <EnableInline>False</EnableInline>
+      <EnableTailreorder>False</EnableTailreorder>
+      <Bestdebug>On</Bestdebug>
+      <AdditionalLibraryDirectories>$(CTRSDK_ROOT)\libraries\CTR-TS.Process.MPCore\verbose;$(NW4C_ROOT)\eft\lib\CTR-TS.Process.MPCore\verbose;$(NW4C_ROOT)\font2\lib\CTR-TS.Process.MPCore\verbose;$(NW4C_ROOT)\h3d\lib\CTR-TS.Process.MPCore\verbose;$(NW4C_ROOT)\lyt2\lib\CTR-TS.Process.MPCore\verbose;$(NW4C_ROOT)\snd\lib\CTR-TS.Process.MPCore\verbose;$(NW4C_ROOT)\sys\lib\CTR-TS.Process.MPCore\verbose</AdditionalLibraryDirectories>
+      <AdditionalDependencies>crt0.$(CTROptimizeOption).o;libgles2.$(CTROptimizeOption).a;libnn_ac.$(CTROptimizeOption).a;libnn_applet.$(CTROptimizeOption).a;libnn_boss.$(CTROptimizeOption).a;libnn_camera.$(CTROptimizeOption).a;libnn_cec.$(CTROptimizeOption).a;libnn_cfg.$(CTROptimizeOption).a;libnn_crypto.$(CTROptimizeOption).a;libnn_cryptoRsa.$(CTROptimizeOption).a;libnn_cx.$(CTROptimizeOption).a;libnn_dbg.$(CTROptimizeOption).a;libnn_dbm.$(CTROptimizeOption).a;libnn_dev.$(CTROptimizeOption).a;libnn_dlp.$(CTROptimizeOption).a;libnn_dsp.$(CTROptimizeOption).a;libnn_err.$(CTROptimizeOption).a;libnn_erreula.$(CTROptimizeOption).a;libnn_fnd.$(CTROptimizeOption).a;libnn_font.$(CTROptimizeOption).a;libnn_friends.$(CTROptimizeOption).a;libnn_fs.$(CTROptimizeOption).a;libnn_fshio.$(CTROptimizeOption).a;libnn_gd.$(CTROptimizeOption).a;libnn_gr.$(CTROptimizeOption).a;libnn_gxlow.$(CTROptimizeOption).a;libnn_hid.$(CTROptimizeOption).a;libnn_hidlow.$(CTROptimizeOption).a;libnn_hio.$(CTROptimizeOption).a;libnn_http.$(CTROptimizeOption).a;libnn_init.$(CTROptimizeOption).a;libnn_ir.$(CTROptimizeOption).a;libnn_jpegmp.$(CTROptimizeOption).a;libnn_math.$(CTROptimizeOption).a;libnn_mic.$(CTROptimizeOption).a;libnn_midi.$(CTROptimizeOption).a;libnn_ndm.$(CTROptimizeOption).a;libnn_news.$(CTROptimizeOption).a;libnn_ngc.$(CTROptimizeOption).a;libnn_nstd.$(CTROptimizeOption).a;libnn_nwm.$(CTROptimizeOption).a;libnn_os.$(CTROptimizeOption).a;libnn_phtsel.$(CTROptimizeOption).a;libnn_pl.$(CTROptimizeOption).a;libnn_ptm.$(CTROptimizeOption).a;libnn_rdt.$(CTROptimizeOption).a;libnn_snd.$(CTROptimizeOption).a;libnn_socket.$(CTROptimizeOption).a;libnn_srv.$(CTROptimizeOption).a;libnn_ssl.$(CTROptimizeOption).a;libnn_svc.$(CTROptimizeOption).a;libnn_svcDbg.$(CTROptimizeOption).a;libnn_swkbd.$(CTROptimizeOption).a;libnn_tpl.$(CTROptimizeOption).a;libnn_ubl.$(CTROptimizeOption).a;libnn_uds.$(CTROptimizeOption).a;libnn_ulcd.$(CTROptimizeOption).a;libnn_util.$(CTROptimizeOption).a;libnn_voicesel.$(CTROptimizeOption).a;libnn_y2r.$(CTROptimizeOption).a;librtport.$(CTROptimizeOption).a;libnw_ctrl.$(CTROptimizeOption).a;libnw_dev.$(CTROptimizeOption).a;libnw_eft.$(CTROptimizeOption).a;libnw_eftvw.$(CTROptimizeOption).a;libnw_font2.$(CTROptimizeOption).a;libnw_h3d.$(CTROptimizeOption).a;libnw_lyt2.$(CTROptimizeOption).a;libnw_snd.$(CTROptimizeOption).a;libnw_snddev.$(CTROptimizeOption).a;libnw_sys.$(CTROptimizeOption).a</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

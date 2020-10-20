@@ -1,0 +1,64 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				フラグメントシェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		TextureMax		(3)
+
+#if defined HLSL
+#else
+
+//	#version	430
+	#define		STATIC				 		
+	#define		ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+	#define		float2		vec2
+	#define		float3		vec3
+	#define		float4		vec4
+	#define		tex2D		texture2D
+	
+	in		vec4		outPos;
+	in		vec4		outUv  [TextureMax];
+	uniform sampler2D	Texture[TextureMax];	//テクスチャユニット
+
+	struct PsInput
+	{
+		vec4 Pos;
+		vec4 Uv[TextureMax];
+	};
+
+#endif
+
+STATIC vec4	gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+
+//-----------------------------------------------------------------------------
+/// @brief	メイン関数
+//-----------------------------------------------------------------------------
+#if defined HLSL
+#else
+void main (void)
+{
+	PsInput	input;	
+	input.Uv[0] = outUv[0];
+	input.Uv[1] = outUv[1];
+	input.Uv[2] = outUv[2];
+#endif
+
+	vec4 color0		 = tex2D( Texture[0], input.Uv[0].xy );
+	vec4 color1		 = tex2D( Texture[0], input.Uv[1].xy );
+	vec4 color2		 = tex2D( Texture[0], input.Uv[2].xy );
+
+	// ↓のブレンド式を変更する際は、BloomRenderPathForBlurクラスのブレンドステートも併せて確認してください
+	gl_FragColor	 = vec4( (color0.rgb * 0.3333f) + (color1.rgb * 0.3333f) + (color2.rgb * 0.3333f) , 0.5f );
+
+#if defined HLSL
+#endif
+
+}
+
+
+

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DynmaicHeader">
+      <UniqueIdentifier>{fd6851ab-779f-4164-88ca-0b7fa2fe0684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DynamicHeader">
+      <UniqueIdentifier>{3c065882-1292-44e4-a4ac-f2e27f7ffc53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DynamicHeader\internal">
+      <UniqueIdentifier>{6ea19cff-25a6-432f-a9a9-d25bb7d66840}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\gfl_assert.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl_debug_print.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DebugTick.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DynamicHeader\gfl2_DebugAddOnlyHashTable.cpp">
+      <Filter>ソース ファイル\DynmaicHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DynamicHeader\gfl2_DebugCppEnumHeaderParser.cpp">
+      <Filter>ソース ファイル\DynmaicHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DynamicHeader\gfl2_DebugDynamicHeaderManager.cpp">
+      <Filter>ソース ファイル\DynmaicHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DynamicHeader\gfl2_DebugHashTableBase.cpp">
+      <Filter>ソース ファイル\DynmaicHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DynamicHeader\gfl2_DebugRemovableHashTable.cpp">
+      <Filter>ソース ファイル\DynmaicHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DebugWinItem.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DebugWinItemTypes.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DebugWinSystem.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DynamicHeader\gfl2_DebugTextFileReadStream.cpp">
+      <Filter>ソース ファイル\DynmaicHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DebugLogWindow.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_DebugTick.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugWinItem.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugWinItemTypes.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugWinLocal.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugWinSystem.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugWinTypes.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugAddOnlyHashTable.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugCppEnumHeaderParser.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\gfl2_DebugDynamicHeader.h">
+      <Filter>ヘッダー ファイル\DynamicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugDynamicHeaderDefine.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugFixedStack.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugHashTableBase.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugHeaderHashManager.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugRemovableHashTable.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DynamicHeader\internal\gfl2_DebugTextFileReadStream.h">
+      <Filter>ヘッダー ファイル\DynamicHeader\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugLogWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Assert.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DebugPrint.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

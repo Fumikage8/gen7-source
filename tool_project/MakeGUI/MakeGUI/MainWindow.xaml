@@ -1,0 +1,86 @@
+﻿<Window x:Class="MakeGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MakeGUI" WindowStyle="ToolWindow" ResizeMode="CanResizeWithGrip" SizeToContent="Height" Width="600" Closing="Window_Closing">
+    <Grid x:Name="grid" Margin="10">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top">
+                <StackPanel x:Name="ControlPanel" >
+                    <TextBlock x:Name="TitleLabel" />
+                    <GroupBox Header="ターゲット選択" VerticalAlignment="Stretch">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150*"/>
+                                <ColumnDefinition Width="250*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0"  x:Name="targetPanel" HorizontalAlignment="Left" Margin="10" MinWidth="100">
+                                <GroupBox>
+                                    <GroupBox.Header>
+                                        <RadioButton x:Name="StaticTargetRadioButton" Tag="StaticTarget" Content="静的" GroupName="TargetType" IsChecked="True" Checked="TargetSelectionChanged" />
+                                    </GroupBox.Header>
+                                    <ComboBox x:Name="StaticTargetSelectBox" Tag="StaticTarget" VerticalAlignment="Center" IsReadOnly="True" IsSynchronizedWithCurrentItem="True" SelectionChanged="TargetSelectionChanged" IsEnabled="{Binding IsChecked, ElementName=StaticTargetRadioButton}" />
+                                </GroupBox>
+                                <GroupBox x:Name="DynamicTargetGroup">
+                                    <GroupBox.Header>
+                                        <RadioButton x:Name="DynamicTargetRadioButton" Tag="DynamicTarget" Content="動的" GroupName="TargetType" Checked="TargetSelectionChanged" />
+                                    </GroupBox.Header>
+                                    <ComboBox x:Name="DynamicTargetSelectBox" Tag="DynamicTarget" VerticalAlignment="Center" IsReadOnly="True" IsSynchronizedWithCurrentItem="True" SelectionChanged="TargetSelectionChanged" IsEnabled="{Binding IsChecked, ElementName=DynamicTargetRadioButton}" />
+                                </GroupBox>
+                                <GroupBox Header="プラットホーム">
+                                    <StackPanel x:Name="platformPanel" Orientation="Horizontal">
+                                        <RadioButton Content="Win" Margin="5" />
+                                        <RadioButton Content="3DS" Margin="5"/>
+                                        <RadioButton Content="Both" Margin="5"/>
+                                    </StackPanel>
+                                </GroupBox>
+
+                            </StackPanel>
+
+                            <GroupBox Grid.Column="1" Header="コメント" HorizontalAlignment="Stretch">
+                                <TextBox x:Name="TargetCommentLabel" AllowDrop="False" IsTabStop="False" IsReadOnly="True" MinWidth="250"/>
+                            </GroupBox>
+
+                        </Grid>
+                    </GroupBox>
+                    <Expander Header="Advance" BorderBrush="#FF289DE0">
+                        <StackPanel Margin="5">
+                            <CheckBox x:Name="useIBCheckBox" Content="IBによる分散" VerticalAlignment="Center"/>
+                            <CheckBox x:Name="verboseCheckBox" Content="ログを全て表示する" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+                <Button x:Name="AcceptButton" Content="Convert"  Width="100"  HorizontalAlignment="Right" Margin="5" Click="AcceptButton_Click">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#FFECDBA2" Offset="0"/>
+                            <GradientStop Color="#FFECC647" Offset="0.492"/>
+                            <GradientStop Color="#FFE2B211" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="AbortButton" Content="Abort"  Width="100"  HorizontalAlignment="Right" Margin="5" Click="AbortButton_Click" Visibility="Collapsed" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0AD7F" Offset="0"/>
+                            <GradientStop Color="#FFFB4A31" Offset="0.5"/>
+                            <GradientStop Color="#FFFB6904" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Label x:Name="StatusLabel" FontSize="20" />
+            </StackPanel>
+
+            <GroupBox  x:Name="OutputArea" Header="Log" Visibility="Collapsed" MaxHeight="750" DockPanel.Dock="Bottom" >
+                <ScrollViewer >
+                    <RichTextBox x:Name="OutPutBox" IsReadOnly="True" IsReadOnlyCaretVisible="True"  AllowDrop="False" FontFamily="Consolas" />
+                </ScrollViewer>
+            </GroupBox>
+
+        </DockPanel>
+
+
+
+
+    </Grid>
+</Window>

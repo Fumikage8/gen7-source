@@ -1,0 +1,15 @@
+if $(defined FINALROM)
+  if $(equal $(FINALROM), true)
+    CTR_BUILD_TYPE = release
+    GFL_BUILD_TYPE = release
+    export
+  else
+    CTR_BUILD_TYPE = debug
+    GFL_BUILD_TYPE = debug
+    export
+  export
+else
+  CTR_BUILD_TYPE = debug
+  GFL_BUILD_TYPE = debug
+  export
+

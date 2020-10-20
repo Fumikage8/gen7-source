@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles" displayName="ソースファイル" projectFiles="true">
+      <itemPath>source/amx.c</itemPath>
+      <itemPath>source/amxcore.c</itemPath>
+      <itemPath>source/amxdbg.c</itemPath>
+      <itemPath>source/amxprint.c</itemPath>
+      <itemPath>source/float.c</itemPath>
+      <itemPath>source/gfl_PawnBase.cpp</itemPath>
+      <itemPath>source/gfl_PawnDebug.cpp</itemPath>
+      <itemPath>source/gfl_UnityAmx.c</itemPath>
+      <itemPath>source/gfl_UnityWrapper.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles" displayName="ヘッダーファイル" projectFiles="true">
+      <itemPath>include/amx.h</itemPath>
+      <itemPath>include/amxcons.h</itemPath>
+      <itemPath>include/amxdbg.h</itemPath>
+      <itemPath>include/gfl_Amx.h</itemPath>
+      <itemPath>include/gfl_Pawn.h</itemPath>
+      <itemPath>include/gfl_PawnBase.h</itemPath>
+      <itemPath>include/gfl_PawnDebug.h</itemPath>
+      <itemPath>include/osdefs.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="リソースファイル" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="テストファイル"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要なファイル"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>C:\home\gflib_cpp\opensource\pawn\source</Elem>
+    <Elem>C:\home\gflib_cpp\opensource\pawn\include</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>3DS|Cygwin</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>../../xy_ctrlib/CTR_SDK/include</pElem>
+            <pElem>../../gflib/prog/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>GFL_DEBUG=1</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <developmentMode>0</developmentMode>
+          <incDir>
+            <pElem>../../xy_ctrlib/CTR_SDK/include</pElem>
+            <pElem>../../xy_ctrlib/NintendoWare/CTR/include</pElem>
+            <pElem>include</pElem>
+            <pElem>../../gflib/prog/include</pElem>
+            <pElem>../../../../Qt/4.5.3/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>GFL_DEBUG=1</Elem>
+          </preprocessorList>
+        </ccTool>
+        <archiverTool>
+          <output>../../lib/pawnd.a</output>
+        </archiverTool>
+        <requiredProjects>
+          <makeArtifact PL="../../gflib/prog"
+                        CT="3"
+                        CN="Debug"
+                        AC="true"
+                        BL="false"
+                        WD="../../gflib/prog"
+                        BC="${MAKE}  -f Makefile CONF=Debug"
+                        CC="${MAKE}  -f Makefile CONF=Debug clean"
+                        OP="../library/gflibd.a">
+          </makeArtifact>
+        </requiredProjects>
+      </compileType>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>3DS|Cygwin</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>0</developmentMode>
+          <incDir>
+            <pElem>include</pElem>
+            <pElem>../../xy_ctrlib/CTR_SDK/include</pElem>
+            <pElem>../../xy_ctrlib/NintendoWare/CTR/include</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+          <output>../../lib/mingw/libExCore.a</output>
+        </archiverTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

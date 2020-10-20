@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+	<INTEREST>
+		<NODE _Name="Head" _Type="ZY" _Low="-40" _High="40" _Low2="-20" _High2="20" _Speed="100"/>
+	</INTEREST>
+	<EXPRESSION _Type="RootAim" _Dst="LEar1" _Src0="LEar2"/>
+	<SPRING _Name="LEar2" _Damping="55" _Stiffness="45" _Mass="10" _Gravity="10"/>
+	<EXPRESSION _Type="RootAim" _Dst="REar1" _Src0="REar2"/>
+	<SPRING _Name="REar2" _Damping="55" _Stiffness="45" _Mass="10" _Gravity="10"/>
+	<MOUTH _Name="Jaw"/>
+</root>
+

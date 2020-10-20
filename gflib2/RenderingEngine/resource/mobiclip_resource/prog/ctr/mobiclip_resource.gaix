@@ -1,0 +1,18 @@
+﻿//==========================================================
+/**
+ * @brief GF-Archive file index definition.
+ * @file mobiclip_resource.gaix
+ * @version 6.0
+ * @note This file is created by GAMEFREAK Archiver.
+ */
+//==========================================================
+
+#if !defined __GARC_MOBICLIP_RESOURCE_GAIX__
+#define __GARC_MOBICLIP_RESOURCE_GAIX__
+
+enum {
+  GARC_mobiclip_resource_mobiclip_resource_pack_PACK = 0,
+  GARC_mobiclip_resource_DATA_NUM = 1,
+};
+
+#endif  // __GARC_MOBICLIP_RESOURCE_GAIX__

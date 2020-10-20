@@ -1,0 +1,15 @@
+/moc_dataEditor.cpp
+/moc_dataGroup.cpp
+/moc_dialogAddGroup.cpp
+/moc_dialogMoveFrame.cpp
+/moc_macroDialog.cpp
+/moc_mainWindow.cpp
+/moc_widgetFrameScale.cpp
+/moc_widgetNumBox.cpp
+/moc_widgetSeqBar.cpp
+/moc_widgetSeqGroup.cpp
+/moc_widgetSeqLabel.cpp
+/moc_widgetTitleName.cpp
+/qrc_SequenceEditor.cpp
+/dist
+/build

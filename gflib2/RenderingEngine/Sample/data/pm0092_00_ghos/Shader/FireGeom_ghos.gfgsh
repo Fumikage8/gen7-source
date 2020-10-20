@@ -1,0 +1,210 @@
+#if defined CTR
+
+//<ctr_code>
+
+#else
+
+#version 430
+
+layout(triangles) in;
+layout(triangle_strip, max_vertices= 4) out;
+
+const int TextureMax = 4;
+
+in VsOutPuts {
+	vec4 outPos;
+	vec4 outUv[TextureMax];
+	vec4 outColor;
+	vec3 outNormal;
+	vec3 outObjNormal;
+	vec3 outObjLight;
+	vec3 outObjTangentVec;
+	vec4 outView;
+	vec4 outVelocity0;
+	vec4 outVelocity1;
+	vec4 outVelocity2;
+	vec4 outDebugVec;
+} In[3];
+
+out gl_PerVertex {
+  vec4 gl_Position;
+};
+
+out GsOutputs
+{
+	vec4 outPos;
+	vec4 outUv[TextureMax];
+	vec4 outColor;
+	vec3 outNormal;
+	vec3 outObjNormal;
+	vec3 outObjLight;
+	vec3 outObjTangentVec;
+	vec4 outView;
+	vec4 outVelocity0;
+	vec4 outVelocity1;
+	vec4 outVelocity2;
+	vec4 outDebugVec;
+} Out;
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+mat3x3 mul( mat3x3 matA, mat3x3 matB )
+{
+	return matA * matB;
+}
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+mat4x4 mul( mat4x4 matA, mat4x4 matB )
+{
+	return matA * matB;
+}
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+vec3 mul( vec3 vec, mat3x3 mat )
+{
+	vec3		outVec = vec3(0, 0, 0);
+	
+	outVec.x = dot( vec, mat[0] );
+	outVec.y = dot( vec, mat[1] );
+	outVec.z = dot( vec, mat[2] );
+	
+	return outVec;
+}
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+vec4 mul( vec4 vec, mat4 mat )
+{
+	vec4		outVec = vec4(0, 0, 0, 1);
+	
+	outVec.x = dot( vec, mat[0] );
+	outVec.y = dot( vec, mat[1] );
+	outVec.z = dot( vec, mat[2] );
+	outVec.w = dot( vec, mat[3] );
+	
+	return outVec;
+}
+
+#define ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+
+// -------------------------------------------------------------
+// グローバル変数
+// -------------------------------------------------------------
+ConstantBuffer( GeometryShaderIntArrayConstants, b5, 5 )
+{
+	mat4x4	cGsModelViewMatrix;
+	mat4x4	cGsProjectionMatrix;
+	vec4		cGsShaderParam;
+};
+
+//#define			cGsShaderParam.y				normalScale;
+
+// -------------------------------------------------------------
+// 
+// -------------------------------------------------------------
+void outVertex( vec4 pos, vec4 tangent, vec4 binormal, vec2 uv )
+{
+	pos.xyz += tangent.xyz;
+	pos.xyz += binormal.xyz;
+	gl_Position = mul(pos, cGsProjectionMatrix);
+	Out.outUv[0] = vec4(uv.x, uv.y, 0, 0);
+	EmitVertex();
+}
+
+// -------------------------------------------------------------
+// 
+// -------------------------------------------------------------
+void main(void)
+{
+/*	for( int i = 0; i < In.length(); i++)
+	{
+		gl_Position = mul( In[i].outDebugVec, cGsModelViewMatrix );
+		gl_Position.w = 1;
+		gl_Position = mul( gl_Position, cGsProjectionMatrix );
+		//gl_Position = In[i].outDebugVec;
+		EmitVertex();
+	}
+		
+	EndPrimitive();*/
+	
+	for( int i = 0; i < In.length(); i += 3 )
+	{
+		float			fCullMode = 1.0;
+
+		{
+			vec4		pos[3];
+
+			for( int i2 = 0; i2 < 3; i2++ )
+			{
+				pos[i2] = mul(In[i2].outDebugVec, cGsModelViewMatrix);
+			}
+
+			vec4		vecA = pos[i+1] - pos[i];
+			vec4		vecB = pos[i+2] - pos[i];
+			vec4		normal;
+
+			normal.xyz = cross( vecA.xyz, vecB.xyz );
+			normal.x = 0;
+			normal.y = 0;
+
+			normal.xyz = normalize(normal.xyz);//+-1の値が手に入る
+			fCullMode = normal.z;
+		}
+
+		for( int i2 = i; i2 < (i + 3); i2 ++ )
+		{//１頂点から４頂点出力
+
+			{// 共通設定
+				Out.outPos = In[i2].outDebugVec;
+				Out.outColor = In[i2].outColor;
+				Out.outNormal = In[i2].outNormal;
+				Out.outObjNormal = In[i2].outObjNormal;
+				Out.outObjLight = In[i2].outObjLight;
+				Out.outView = In[i2].outView;
+				Out.outDebugVec = In[i2].outDebugVec;
+				Out.outObjTangentVec = In[i2].outObjTangentVec;
+				
+				Out.outUv[0] = In[i2].outUv[0];
+				Out.outUv[1] = In[i2].outUv[1];
+				Out.outUv[2] = In[i2].outUv[2];
+				Out.outUv[3] = In[i2].outUv[3];
+			}
+
+			vec4		upVec = vec4(0, 1, 0, 1);
+			vec4		view_pos;
+			vec4		view;
+			vec4		pos;
+			vec4		tangent;
+			vec4		biNormal;
+
+			pos = In[i2].outDebugVec;
+			view_pos = mul(pos, cGsModelViewMatrix);
+
+			view.xyz = normalize( -view_pos.xyz );
+			tangent.xyz = cross( view.xyz, upVec.xyz );
+			biNormal.xyz = cross( view.xyz, tangent.xyz );
+
+			float			meshScale = cGsShaderParam.x * In[i2].outColor.x;//Ｒがスケール
+			tangent *= meshScale;
+			biNormal *= meshScale;
+			tangent *= fCullMode;
+
+			float			u0 = In[i2].outColor.w;//Ａがオフセット
+			float			u1 = u0 + (1.0 / cGsShaderParam.z);
+
+			outVertex( view_pos, -tangent, -biNormal, vec2(u1,1) );
+			outVertex( view_pos,  tangent, -biNormal, vec2(u0,1) );
+			outVertex( view_pos, -tangent,  biNormal, vec2(u1,0) );
+			outVertex( view_pos,  tangent,  biNormal, vec2(u0,0) );
+			EndPrimitive();
+		}
+	}
+}
+
+#endif

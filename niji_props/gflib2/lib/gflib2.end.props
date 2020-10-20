@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\..\gflib2.end.common.props" />
+    <Import Project="$(SolutionDir)\project\$(SolutionName).props" Condition="exists('$(SolutionDir)\project\$(SolutionName).props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup />
+  <ItemGroup />
+  <PropertyGroup>
+    <TargetName>gfl2_$(ProjectName)</TargetName>
+    <OutDir>$(GFOutDirLib)$(TargetName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(GFOutDirLibTmp)$(TargetName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+</Project>

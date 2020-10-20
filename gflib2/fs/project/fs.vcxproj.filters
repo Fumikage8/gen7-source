@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ArcFileAccessor">
+      <UniqueIdentifier>{e954a3d5-7abc-42db-8683-180070cd3024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\internal">
+      <UniqueIdentifier>{29b1b7a7-19fc-45b5-ac21-6330fb4def7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ArcFileAccessor\ver.4x">
+      <UniqueIdentifier>{527356b1-8aca-4e17-8263-0a76890750eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\internal">
+      <UniqueIdentifier>{4f3472a1-3f3b-46dc-b0e2-76c8eadef4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\arcsrc">
+      <UniqueIdentifier>{89af25a6-5d1c-44ba-9596-9bd4d775035b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\CTR">
+      <UniqueIdentifier>{3b142e27-9dbf-4b7d-9344-367e184e9017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Win32">
+      <UniqueIdentifier>{d2d0f6b1-30c6-41f5-8b48-85727d7d4937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ArcFileAccessor\ver.5x">
+      <UniqueIdentifier>{979296f7-5416-4ce5-b9e1-a3ab5df377c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\CTR">
+      <UniqueIdentifier>{972247fd-a8b3-4a7f-9b8f-30a06d763448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ArcFileAccessor\ver.6x">
+      <UniqueIdentifier>{1a00492f-c262-4981-84c3-1fe635760d0b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_FsArcFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsAsyncFileManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsNameTable.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsResult.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsStr.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsSystem.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsToolDefine.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Fs.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\gfl2_FsElemBase.h">
+      <Filter>ヘッダー ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\gfl2_FsFile.h">
+      <Filter>ヘッダー ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\gfl2_FsFileBase.h">
+      <Filter>ヘッダー ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\internal\gfl2_FsFileCoreBase.h">
+      <Filter>ヘッダー ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\gfl2_FsIArcFileAccessor.h">
+      <Filter>ソース ファイル\ArcFileAccessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arcsrc\arcsrc_Accessor.h">
+      <Filter>ソース ファイル\arcsrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\arcsrc\arcsrc_ToolDefine.h">
+      <Filter>ソース ファイル\arcsrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrFileCore.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrRomDevice.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32Device.h">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32FileCore.h">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32Util.h">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\internal\gfl2_FsDebug.h">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\internal\gfl2_FsFileThread.h">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\internal\gfl2_FsList.h">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\internal\gfl2_FsOtherThread.h">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_FsDeviceBase.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_BinLinkerAccessor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrHioUtil.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrHioFileCore.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrHioDevice.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\internal\gfl2_FsUtilBase.h">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsPcUtil.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrSdmcDevice.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrSdmcPathDevice.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsDirectSdmcFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_FsDefine.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\internal\gfl2_FsCalc.h">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrRomFileCore.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32Func.h">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrBackupThread.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrBackupFile.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrBackupSystem.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrExtSaveThread.h">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrExtSaveFile.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrExtSaveSystem.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrDirectory.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationOffsetBlock_ver6.h">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationTableBlock_ver6.h">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileBlock_ver6.h">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileHeaderBlock_ver6.h">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileImageBlock_ver6.h">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_ver6.h">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\ArcFileAccessor\gfl2_FsIArcFileAccessor.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\arcsrc\arcsrc_Accessor.cpp">
+      <Filter>ソース ファイル\arcsrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrFileCore.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrRomDevice.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32Device.cpp">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32FileCore.cpp">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32Util.cpp">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsDebug.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsFile.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsFileCoreBase.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsFileThread.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsList.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsOtherThread.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_Fs.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsArcFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsAsyncFileManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsDeviceBase.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsNameTable.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsResult.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsStr.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsSystem.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_BinLinkerAccessor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrHioUtil.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrHioFileCore.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrHioDevice.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsUtilBase.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrSdmcDevice.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrSdmcPathDevice.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_FsDirectSdmcFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsCalc.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrRomFileCore.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\internal\gfl2_FsFileBase.cpp">
+      <Filter>ソース ファイル\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32Func.cpp">
+      <Filter>ソース ファイル\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrBackupFile.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrBackupSystem.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrBackupThread.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrExtSaveFile.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrExtSaveSystem.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrExtSaveThread.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrDirectory.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationTableBlock_ver6.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileBlock_ver6.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileHeaderBlock_ver6.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileImageBlock_ver6.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_ver6.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationOffsetBlock_ver6.cpp">
+      <Filter>ソース ファイル\ArcFileAccessor\ver.6x</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+	<INTEREST>
+		<NODE _Name="Head" _Type="X_M90" _Low="-5" _High="10" _Speed="100"/>
+	</INTEREST>
+	<MOUTH _Name="Jaw"/>
+	<MOUTH _Name="FeelerA"/>
+	<OUTLINE_COLOR _Name="pm0094_00_kw33_moveD01.cshdr" _CurveName="Body.Constant4.w"/>
+</root>
+

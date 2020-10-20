@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\qt">
+      <UniqueIdentifier>{ce5709a8-778c-45f8-b7cf-ebbe1f9a1ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\qt\Shader">
+      <UniqueIdentifier>{c0f914ce-f9ef-428c-a36c-ac9657d55aef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\qt\Shader\Common">
+      <UniqueIdentifier>{5be44346-701e-4b54-91c5-45fca915ec13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\qt\Shader\NativeMath">
+      <UniqueIdentifier>{70eb8afa-0c4a-4f77-9279-8c171c7173b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\qt\Shader\Win">
+      <UniqueIdentifier>{76809c7e-5a0f-4c20-b82d-13cec5449bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\qt\Shader\String">
+      <UniqueIdentifier>{2f366cb1-06f0-4722-8442-6a1e8853c8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\core">
+      <UniqueIdentifier>{8991eddc-7487-48d9-a955-2940bd7bc1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\motion">
+      <UniqueIdentifier>{894c26ab-569c-47a6-ae14-16e7eb2caec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\core\phyhsic">
+      <UniqueIdentifier>{de0ea9c4-6538-49d1-81c7-51b2fd4c92c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\core">
+      <UniqueIdentifier>{3f8c0cb1-eee5-4e14-b6a1-b869f1e2b108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\qt">
+      <UniqueIdentifier>{78efebb6-c6c6-4907-b59d-e1aa55269c0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\rtti">
+      <UniqueIdentifier>{c4c64dc4-0021-4f0b-947c-32cdfde74ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\qt\Common">
+      <UniqueIdentifier>{4464d5db-f9b9-4080-baf5-c300f8343d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\qt\NativeMath">
+      <UniqueIdentifier>{77102b7e-1c27-4327-ad04-c0c44fbc8546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\qt\String">
+      <UniqueIdentifier>{f113c79e-0922-4cbb-9e9d-ca89f657df90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\qt\Win">
+      <UniqueIdentifier>{48e2f315-29ed-4f99-bdf3-c8495cf4ff25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\motion">
+      <UniqueIdentifier>{0b472060-e9da-45bb-a803-f50f2fd4e13f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\qt\gfl_Application.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_Client.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_ClientBase.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_ClientRead.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_ClientWrite.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_CmdlModel.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_GLWidget.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_GLWindow.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_MainWindow.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_Qt.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_QtFile.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_QtModel.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_QtProperty.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_Render.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\gfl_Zip.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\CombinerAttribute.cpp">
+      <Filter>ソース\qt\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\CombinerShader.cpp">
+      <Filter>ソース\qt\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\UvAdjustShader.cpp">
+      <Filter>ソース\qt\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\Common\SecureData.cpp">
+      <Filter>ソース\qt\Shader\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\NativeMath\Matrix.cpp">
+      <Filter>ソース\qt\Shader\NativeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\NativeMath\Util.cpp">
+      <Filter>ソース\qt\Shader\NativeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\NativeMath\Vector.cpp">
+      <Filter>ソース\qt\Shader\NativeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\String\LogPrint.cpp">
+      <Filter>ソース\qt\Shader\String</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\String\Util2.cpp">
+      <Filter>ソース\qt\Shader\String</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qt\Shader\Win\WinGLSLShaderObject.cpp">
+      <Filter>ソース\qt\Shader\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl_Framework.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Camera.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Core.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_CoreFile.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Debug.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_HashList.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Math.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MathBase.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Matrix.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MatrixAos43.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MatrixAos44.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MatrixSoa34.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MatrixSoa44.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MatrixSoaNative34.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_MatrixSoaNative44.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Quaternion.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_SmartPointer.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Time.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Utility.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\gfl_Vector.cpp">
+      <Filter>ソース\core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\physic\gfl_Collision.cpp">
+      <Filter>ソース\core\phyhsic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\core\physic\gfl_Spring.cpp">
+      <Filter>ソース\core\phyhsic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\motion\gfl_Fcurve.cpp">
+      <Filter>ソース\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="source\motion\gfl_Motion.cpp">
+      <Filter>ソース\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="source\motion\gfl_MotionBase.cpp">
+      <Filter>ソース\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="include\qt\moc_gfl_MainWindow.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+    <ClCompile Include="include\qt\moc_gfl_QtProperty.cpp">
+      <Filter>ソース\qt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\gfl_Base.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Common.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_debug.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Device.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Framework.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_fs.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Grp.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Heap.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Macros.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Math.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Motion.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Pc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Physic.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Qt.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Snd.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Std.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Str.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_UI.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gflib.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gflib_3ds.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gflib_core.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gflib_graphic.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Camera.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Config.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_CoreFile.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Debug.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Dummy.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Ellipse.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_HashList.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Macro.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MathBase.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Matrix.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixAos43.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixAos44.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixAosCommon.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixCommon.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixSoa34.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixSoa44.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixSoaCommon.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixSoaNative33.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixSoaNative34.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_MatrixSoaNative44.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_OsHeader.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Quaternion.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_QuaternionNative.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Rect.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Singleton.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_SmartPointer.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Time.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Tuple.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Tuple2.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Tuple4Common.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Typedef.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Utility.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Vector.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Vector2.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Vector3.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_Vector4.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_VectorNative2.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_VectorNative3.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\gfl_VectorNative4.h">
+      <Filter>インクルード\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_Application.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_Client.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_ClientBase.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_ClientRead.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_ClientWrite.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_CmdlModel.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_Ctex.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_GLWidget.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_GLWindow.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_MainWindow.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_QtFile.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_QtGui.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_QtModel.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_QtProperty.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_Render.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_Tga.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\gfl_Zip.h">
+      <Filter>インクルード\qt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\Common\FnvHash.h">
+      <Filter>インクルード\qt\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\Common\Platform.h">
+      <Filter>インクルード\qt\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\Common\Random.h">
+      <Filter>インクルード\qt\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\Common\SecureData.h">
+      <Filter>インクルード\qt\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\Common\Type.h">
+      <Filter>インクルード\qt\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\NativeMath\Math.h">
+      <Filter>インクルード\qt\NativeMath</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\NativeMath\Matrix.h">
+      <Filter>インクルード\qt\NativeMath</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\NativeMath\Util.h">
+      <Filter>インクルード\qt\NativeMath</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\NativeMath\Vector.h">
+      <Filter>インクルード\qt\NativeMath</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\String\LogPrint.h">
+      <Filter>インクルード\qt\String</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\String\Util.h">
+      <Filter>インクルード\qt\String</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qt\Shader\Win\WinGLSLShaderObject.h">
+      <Filter>インクルード\qt\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtti\gfl_Property.h">
+      <Filter>インクルード\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtti\gfl_PropertyBase.h">
+      <Filter>インクルード\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtti\gfl_Rtti.h">
+      <Filter>インクルード\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtti\gfl_RttiBase.h">
+      <Filter>インクルード\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtti\gfl_RttiMacro.h">
+      <Filter>インクルード\rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl_Core2.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\motion\gfl_EffectorBase.h">
+      <Filter>インクルード\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="include\motion\gfl_Fcurve.h">
+      <Filter>インクルード\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="include\motion\gfl_MotionBase.h">
+      <Filter>インクルード\motion</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="source\qt\Shader\CombinerShader.frag" />
+    <CustomBuild Include="source\qt\Shader\CombinerShader.vert" />
+    <CustomBuild Include="source\qt\Shader\UvAdjustShader.geom" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CharaViewerDataManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerView.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerProcParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerFrame.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerImpl.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerListener.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerCharaModelManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerHeaderId.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerCharaModelManager_Animation.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CharaViewerRenderingPipeline.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\CharaViewerDataManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerView.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerImpl.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerListener.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerListenerPage1.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerListenerPage2.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerListenerPage3.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerListenerPage4.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerListenerPage5.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerCharaModelManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerCharaModelManager_Animation.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CharaViewerRenderingPipeline.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

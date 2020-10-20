@@ -1,0 +1,6 @@
+GFExcelSerializer.dll 更新履歴
+
+2016/04/25 setting.xmlの数値データと数値以外のデータを分けて保存するようにSettingXmlSerializer.csを修正
+2016/03/25 /docオプションを追加し, Intellisenseが機能するようにコメントを追加(ver1.1.0.0)
+2016/03/08 x86, x64設定を廃止し, 全てAnyCPUに変更(ver1.0.0.0)
+2016/03/02 リリース(ver.1.0.0.0)

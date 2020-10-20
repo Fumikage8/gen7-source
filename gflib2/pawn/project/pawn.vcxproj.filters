@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{134c4f59-22eb-404d-b313-d397b94f4fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtti">
+      <UniqueIdentifier>{b1f10bcd-02c8-4216-924f-61d0acb6ca50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\include">
+      <UniqueIdentifier>{36a84f56-240a-489d-8e7e-8ebdc75416c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="include\include">
+      <UniqueIdentifier>{bc64322c-2b9d-4eea-b2f3-7d62e47caffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtti\include">
+      <UniqueIdentifier>{a72a0ec4-7d29-4a71-bc63-77df5b8e099f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\source">
+      <UniqueIdentifier>{14e9a51f-b7e0-4caa-b6c1-294bbe303319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gf_template_gflib2.rsf" />
+    <None Include="..\include\include\args.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\console.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\core.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\datagram.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\default.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\file.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\fixed.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\float.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\gfl_func.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\process.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\rational.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\string.inc">
+      <Filter>include\include</Filter>
+    </None>
+    <None Include="..\include\include\time.inc">
+      <Filter>include\include</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\gfl2_Pawn.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_PawnBase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_PawnDebug.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UnityAmx.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\source\gfl2_HashList.cpp">
+      <Filter>core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\source\gfl2_Utility.cpp">
+      <Filter>core\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\amx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\amxcons.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\amxdbg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bugfix_pawn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Amx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Pawn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_PawnBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_PawnDebug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\osdefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pawn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\typedef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\include\gfl2_HashList.h">
+      <Filter>core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\include\gfl2_Utility.h">
+      <Filter>core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtti\include\gfl2_Property.h">
+      <Filter>rtti\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtti\include\gfl2_PropertyBase.h">
+      <Filter>rtti\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtti\include\gfl2_Rtti.h">
+      <Filter>rtti\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtti\include\gfl2_RttiBase.h">
+      <Filter>rtti\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtti\include\gfl2_RttiMacro.h">
+      <Filter>rtti\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtti\include\gfl2_RttiUnity.h">
+      <Filter>rtti\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

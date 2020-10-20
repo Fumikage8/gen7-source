@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SequenceEditor", "SequenceEditor.vcxproj", "{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SequenceConverter", "SequenceConverter.vcxproj", "{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Debug|Win32.Build.0 = Debug|Win32
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Debug|x64.ActiveCfg = Debug|x64
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Debug|x64.Build.0 = Debug|x64
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Release|Win32.ActiveCfg = Release|Win32
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Release|Win32.Build.0 = Release|Win32
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Release|x64.ActiveCfg = Release|Win32
+		{FDCFE843-A355-4C3F-B8CA-F16D6AEC64FE}.Release|x64.Build.0 = Release|Win32
+		{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}.Debug|Win32.Build.0 = Debug|Win32
+		{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}.Debug|x64.ActiveCfg = Debug|Win32
+		{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}.Release|Win32.ActiveCfg = Release|Win32
+		{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}.Release|Win32.Build.0 = Release|Win32
+		{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

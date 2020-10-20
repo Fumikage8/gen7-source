@@ -1,0 +1,20 @@
+ASSERTION FAILED 
+filename: ..\source\SceneGraph\Instance\gfl2_ModelInstanceNode.cpp
+line: 41
+exp: m_GpuReferenceCnt == 0
+
+---- Stack Trace Dump ----
+adress: module: function: file: line
+0x012261D0: SimpleModelDraw: gfl2::debug::StackTrace::CaptureImpl: r:\home\niji\git_program\gflib2\debug\source\gfl_assert.cpp: 201
+0x01226174: SimpleModelDraw: gfl2::debug::StackTrace::Capture: r:\home\niji\git_program\gflib2\debug\source\gfl_assert.cpp: 137
+0x01220C35: SimpleModelDraw: gfl2::debug::GFLassert: r:\home\niji\git_program\gflib2\debug\source\gfl_assert.cpp: 450
+0x0124CC96: SimpleModelDraw: gfl2::renderingengine::scenegraph::instance::ModelInstanceNode::~ModelInstanceNode: r:\home\niji\git_program\gflib2\renderingengine\source\scenegraph\instance\gfl2_modelinstancenode.cpp: 41
+0x01250B16: SimpleModelDraw: gfl2::renderingengine::scenegraph::instance::ModelInstanceNode::`scalar deleting destructor': ???
+0x0121DA8E: SimpleModelDraw: SimpleDraw::OnTerm: r:\home\niji\git_program\gflib2\renderingengine\sample\simplemodeldraw\main.cpp: 438
+0x013A98EB: SimpleModelDraw: WinMain: r:\home\niji\git_program\gflib2\renderingengine\sample\framework\main.cpp: 35
+0x012D3EBB: SimpleModelDraw: __tmainCRTStartup: f:\dd\vctools\crt_bld\self_x86\crt\src\crt0.c: 238
+0x012D3D8D: SimpleModelDraw: WinMainCRTStartup: f:\dd\vctools\crt_bld\self_x86\crt\src\crt0.c: 164
+0x766E336A: kernel32: BaseThreadInitThunk: ???
+0x77D09882: ntdll: RtlInitializeExceptionChain: ???
+0x77D09855: ntdll: RtlInitializeExceptionChain: ???
+--------------------------

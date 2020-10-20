@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(GF_PROPS_GFLIB2_APP_DIR)\..\gflib2.end.common.props" />
+    <Import Project="$(SolutionDir)\project\$(SolutionName).props" Condition="exists('$(SolutionDir)\project\$(SolutionName).props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Label="Configuration" Condition="'$(Platform)'=='Win32'">
+    <Link>
+      <AdditionalDependencies>texUtils$(GFExtLibSuffix).lib;WinExt.lib;libnw_eft.lib;libnw_lyt.lib;libnw_vwrlyt.lib;libnw_scfont.lib;libnw_snd.lib;libnw_snddev.lib;libnw_sndspy.lib;libnw_dev.lib;libnw_mcs.lib;libnw_sys.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="Configuration" Condition="'$(GFConfig)|$(Platform)'=='Develop|CTR'">
+    <Link>
+      <AdditionalDependencies>libnn_dev.$(CTROptimizeOption).a;libnn_fshio.$(CTROptimizeOption).a;libnn_hio.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <OutDir>$(GFOutDirExec)$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(GFOutDirExec)$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+</Project>

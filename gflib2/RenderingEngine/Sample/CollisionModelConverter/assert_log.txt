@@ -1,0 +1,14 @@
+ASSERTION FAILED 
+filename: ???
+line: 0
+exp: ???
+
+---- Stack Trace Dump ----
+adress: module: function: file: line
+0x001C4194: CollisionModelConverter: gfl2::debug::GFLassert: r:\home\niji\git_program\gflib2\debug\source\gfl_assert.cpp: 449
+0x001C1648: CollisionModelConverter: WinMain: r:\home\niji\git_program\gflib2\renderingengine\sample\collisionmodelconverter\main.cpp: 49
+0x001D6C2B: CollisionModelConverter: __tmainCRTStartup: f:\dd\vctools\crt_bld\self_x86\crt\src\crt0.c: 237
+0x7608336A: kernel32: BaseThreadInitThunk: ???
+0x777392B2: ntdll: RtlInitializeExceptionChain: ???
+0x77739285: ntdll: RtlInitializeExceptionChain: ???
+--------------------------

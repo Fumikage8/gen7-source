@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfModel version="1.91">
+	<Source Path="R:/home/niji/git_program/gflib2/RenderingEngine/resource/EdgeMapVColAShader/EdgeMapVColA.mb" TargetNode="|pCube1"/>
+	<UserData CmHeight="-107374176.000000" CmAdjustHeight="-107374176.000000" BillboardType="0"/>
+	<TextureList>
+		<Texture No="0" Type="Texture">
+			<FilePath>Textures/NormalTexture.tga</FilePath>
+		</Texture>
+		<Texture No="1" Type="Texture">
+			<FilePath>Textures/ZInvNormalTexture.tga</FilePath>
+		</Texture>
+	</TextureList>
+	<ShaderList>
+		<Shader No="0" Name="Comb2_Manual">
+			<VshFilePath>Shaders/NormalToUv.gfvsh</VshFilePath>
+			<FshFilePath>Shaders/Comb2_Manual.gffsh</FshFilePath>
+		</Shader>
+	</ShaderList>
+	<Materials>
+		<Material Name="Comb2" Type="Comb" Priority="0" MaterialHash="0">
+			<PsLightingEnable PsLightingEnable="1"/>
+			<VsLightingEnable VsLightingEnable="0"/>
+			<LightSetNo LightSetNo="0"/>
+			<FogEnable FogEnable="0"/>
+			<FogNo FogNo="0"/>
+			<CullMode CullMode="Back"/>
+			<Colors>
+				<MaterialColor>
+					<Emission R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<Ambient R="1.000000" G="1.000000" B="1.000000" A="0.000000"/>
+					<Diffuse R="1.000000" G="1.000000" B="1.000000" A="0.000000"/>
+					<Specular0 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<Specular1 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+				</MaterialColor>
+				<ConstantColor>
+					<ConstantColor0 R="0.000000" G="0.000000" B="0.000000" A="0.010000"/>
+					<ConstantColor1 R="0.500000" G="0.500000" B="0.000000" A="1.000000"/>
+					<ConstantColor2 R="1.000000" G="1.000000" B="1.000000" A="1.000000"/>
+					<ConstantColor3 R="0.000000" G="0.000000" B="0.000000" A="1.000000"/>
+					<ConstantColor4 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<ConstantColor5 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+				</ConstantColor>
+				<EtcColor>
+					<BlendColor R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<BufferColor R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<TextureBorderColor0 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<TextureBorderColor1 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+					<TextureBorderColor2 R="0.000000" G="0.000000" B="0.000000" A="0.000000"/>
+				</EtcColor>
+			</Colors>
+			<BumpMapNo BumpMapNo="-1"/>
+			<BumpMapType BumpMapType="0"/>
+			<ZRecastEnable ZRecastEnable="0"/>
+			<Textures>
+				<Texture SlotNo="0" Usage="0" UvUsage="ColorLayer0">
+					<Attribute UvSetNo="0" MappintType="UvMap" ScaleU="1.000000" ScaleV="1.000000" Rotate="0.000000" TranslateU="0.000000" TranslateV="0.000000" RepeatU="WRAP" RepeatV="WRAP" MagFilter="POINT" MinFilter="POINT_LINEAR" MipBias="0"/>
+				</Texture>
+				<Texture SlotNo="1" Usage="1" UvUsage="ColorLayer1">
+					<Attribute UvSetNo="0" MappintType="UvMap" ScaleU="1.000000" ScaleV="1.000000" Rotate="0.000000" TranslateU="0.000000" TranslateV="0.000000" RepeatU="WRAP" RepeatV="WRAP" MagFilter="POINT" MinFilter="POINT_LINEAR" MipBias="0"/>
+				</Texture>
+			</Textures>
+			<Fragments>
+				<FragmentLighting PrimaryFresnelEnable="0" SecondaryFresnelEnable="0" SpecularColorClamp="0" CookTorrance0Enable="0" CookTorrance1Enable="0"/>
+				<TextureCombiners>
+					<TextureCombiner0 ConstantColorNo="0">
+						<Color MathFormula="Replace" Scale="1" SourceA="Texture0" OperandA="Color" SourceB="Constant" OperandB="Color" SourceC="Constant" OperandC="Alpha" OutputBuffer="0"/>
+						<Alpha MathFormula="Add" Scale="1" SourceA="PrimaryColor" OperandA="Alpha" SourceB="Constant" OperandB="Alpha" SourceC="Texture0" OperandC="Alpha" OutputBuffer="0"/>
+					</TextureCombiner0>
+					<TextureCombiner1 ConstantColorNo="1">
+						<Color MathFormula="Interpolate" Scale="1" SourceA="Previous" OperandA="Color" SourceB="Constant" OperandB="Color" SourceC="Constant" OperandC="Alpha" OutputBuffer="0"/>
+						<Alpha MathFormula="Replace" Scale="1" SourceA="Previous" OperandA="Alpha" SourceB="Previous" OperandB="Alpha" SourceC="Previous" OperandC="Alpha" OutputBuffer="0"/>
+					</TextureCombiner1>
+					<TextureCombiner2 ConstantColorNo="2">
+						<Color MathFormula="Replace" Scale="1" SourceA="Previous" OperandA="Color" SourceB="Previous" OperandB="Color" SourceC="Previous" OperandC="Color" OutputBuffer="0"/>
+						<Alpha MathFormula="Interpolate" Scale="1" SourceA="Previous" OperandA="Alpha" SourceB="Constant" OperandB="Red" SourceC="Constant" OperandC="Alpha" OutputBuffer="1"/>
+					</TextureCombiner2>
+					<TextureCombiner3 ConstantColorNo="3">
+						<Color MathFormula="Replace" Scale="1" SourceA="Previous" OperandA="Color" SourceB="Previous" OperandB="Color" SourceC="Previous" OperandC="Color" OutputBuffer="0"/>
+						<Alpha MathFormula="Interpolate" Scale="1" SourceA="Texture1" OperandA="Alpha" SourceB="Texture1" OperandB="Red" SourceC="Constant" OperandC="Alpha" OutputBuffer="0"/>
+					</TextureCombiner3>
+					<TextureCombiner4 ConstantColorNo="0">
+						<Color MathFormula="Replace" Scale="1" SourceA="Previous" OperandA="Color" SourceB="Previous" OperandB="Color" SourceC="Previous" OperandC="Color" OutputBuffer="0"/>
+						<Alpha MathFormula="Modulate" Scale="1" SourceA="Previous" OperandA="Alpha" SourceB="PreviousBuffer" OperandB="Alpha" SourceC="Previous" OperandC="Alpha" OutputBuffer="0"/>
+					</TextureCombiner4>
+					<TextureCombiner5 ConstantColorNo="0">
+						<Color MathFormula="Replace" Scale="1" SourceA="Previous" OperandA="Color" SourceB="Previous" OperandB="Color" SourceC="Previous" OperandC="Color" OutputBuffer="0"/>
+						<Alpha MathFormula="Replace" Scale="1" SourceA="Previous" OperandA="Alpha" SourceB="Previous" OperandB="Alpha" SourceC="Previous" OperandC="Alpha" OutputBuffer="0"/>
+					</TextureCombiner5>
+				</TextureCombiners>
+			</Fragments>
+			<BlendTest DrawLayer="0">
+				<AlphaTest AlphaTestType="GREATER" AlphaTestRefValue="0.000000"/>
+				<DepthTest DepthTestType="LEQUAL" UpDateDepth="1" PolygonOffSet="0"/>
+				<StencilTest StencilTestRefEnable="0" StencilTestType="ALWAYS" StencilValue="0" StencilMask="255" StencilFailOp="KEEP" StencilZFailOp="KEEP" StencilZpassOp="KEEP"/>
+				<Blender BlendMode="None" LogicalOperation="CLEAR">
+					<Color BlendFunc="ADD" SrcElement="One" DstElement="Zero"/>
+					<Alpha BlendFunc="ADD" SrcElement="One" DstElement="Zero"/>
+				</Blender>
+			</BlendTest>
+			<UserData EdgeType="0" IDEdgeEnable="0" EdgeID="22" ProjectionType="0" RimPow="8.000000" RimScale="1.000000" PhongPow="8.000000" PhongScale="1.000000" IDEdgeOffsetEnable="1" EdgeMapAlphaMask="0" BakeTexture0="0" BakeTexture1="0" BakeTexture2="0" BakeConstant0="0" BakeConstant1="0" BakeConstant2="0" BakeConstant3="0" BakeConstant4="0" BakeConstant5="0" VertexShaderType="16397" ShaderParam0="1.000000" ShaderParam1="1.000000" ShaderParam2="1.000000" ShaderParam3="1.000000" CollisionAttribute="0"/>
+			<SpecialSetting IsPokemonShader="0" UseShadowTexture="0" UseObjectSpaceNormalMap="0" PokeNormalType="None" BlendType="None" UpdateShaderParam="1"/>
+			<Combiner PresetName="Comb2_Manual" ShaderListNo="0"/>
+		</Material>
+	</Materials>
+	<ModelTransform>
+		<GlobalMatrix>20.000000 0.000000 0.000000 0.000000 0.000000 20.000000 0.000000 0.000000 0.000000 0.000000 20.000000 0.000000 0.000000 0.000000 0.000000 1.000000</GlobalMatrix>
+	</ModelTransform>
+	<ModelAABB>-10.000000 -10.000000 -10.000000 10.000000 10.000000 10.000000</ModelAABB>
+	<Meshes>
+		<Mesh Name="|pCube1|pCubeShape1" IsBlendShape="FALSE" IsVisibilityAnimation="FALSE">
+			<AABB>-10.000000 -10.000000 -10.000000 10.000000 10.000000 10.000000</AABB>
+			<VertexData>
+				<Vector3 Usage="Position" Size="8">-10.000000 -10.000000 10.000000 10.000000 -10.000000 10.000000 -10.000000 10.000000 10.000000 10.000000 10.000000 10.000000 -10.000000 10.000000 -10.000000 10.000000 10.000000 -10.000000 -10.000000 -10.000000 -10.000000 10.000000 -10.000000 -10.000000</Vector3>
+				<Vector3 Usage="Normal" Size="24">0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000</Vector3>
+				<Vector3 Usage="BiNormal" Size="24">0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000</Vector3>
+				<Vector3 Usage="Tangent" Size="24">1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000</Vector3>
+				<Vector2 Usage="Uv" Size="14" Name="map1" UvSetNo="0">0.375000 0.000000 0.625000 0.000000 0.375000 0.250000 0.625000 0.250000 0.375000 0.500000 0.625000 0.500000 0.375000 0.750000 0.625000 0.750000 0.375000 1.000000 0.625000 1.000000 0.875000 0.000000 0.875000 0.250000 0.125000 0.000000 0.125000 0.250000</Vector2>
+			</VertexData>
+			<Faces>
+				<Face Material="Comb2" IndexLength="36">
+					<int Usage="PositionJointWeightIndex">0 1 3 0 3 2 2 3 5 2 5 4 4 5 7 4 7 6 6 7 1 6 1 0 1 7 5 1 5 3 6 0 2 6 2 4</int>
+					<int Usage="NormalIndex">0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 17 18 16 18 19 20 21 22 20 22 23</int>
+					<int Usage="TangentBiNormalIndex">0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 12 14 15 16 17 18 16 18 19 20 21 22 20 22 23</int>
+					<int Usage="UvIndex" Name="map1" UvUsage="ColorLayer0">0 1 3 0 3 2 2 3 5 2 5 4 4 5 7 4 7 6 6 7 9 6 9 8 1 10 11 1 11 3 12 0 2 12 2 13</int>
+				</Face>
+			</Faces>
+		</Mesh>
+	</Meshes>
+</GfModel>
+

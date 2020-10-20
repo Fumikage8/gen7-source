@@ -1,0 +1,102 @@
+#!/usr/bin/env omake
+#----------------------------------------------------------------------------
+# Project:  NintendoWare
+# File:     OMakefile
+#
+# Copyright (C)2009-2010 Nintendo Co., Ltd./HAL Laboratory, Inc.  All rights reserved.
+#
+# These coded instructions, statements, and computer programs contain
+# proprietary information of Nintendo of America Inc. and/or Nintendo
+# Company Ltd., and are protected by Federal copyright law.  They may
+# not be disclosed to third parties or copied or duplicated in any form,
+# in whole or in part, without the prior written consent of Nintendo.
+#
+# $Revision: 20406 $
+#----------------------------------------------------------------------------
+SUPPORTED_TARGETS   =   CTR-*.Process.MPCore.fast
+
+
+INSTALL_ROOT				=		.
+
+SOURCES[]   =  $(glob src/CppUTest/*.cpp)
+SOURCES += $(glob src/CppUTestExt/*.cpp)
+SOURCES += $(glob src/Platforms/arm/*.cpp)
+
+# echo $(SOURCES)
+
+INCLUDES           +=   $(NW_INCLUDES)
+#INCLUDES           +=   $(GFLIB_INCLUDES)
+INCLUDES           +=   $(glob include/**/*.h)
+
+#println( $(GFLIB_INCLUDES) )
+
+##--------------------------------------------------------------------------
+## 以下のワーニングを抑制します  この部分は許可を得て追加変更してください
+## 追加する際には、何が抑制されるのか書いておいてください
+##
+##--------------------------------------------------------------------------
+
+CCFLAGS_WARNING		+= --diag_suppress 111,1301,2530,1293,261,1517,177,193
+
+
+include version
+
+## GFLの共通設定
+COMMON_SETTING_DIR = ../../tools
+include $(COMMON_SETTING_DIR)/omake_gfl_common_setting
+
+TARGET_LIBRARY      =   cpputest
+
+##  HIOを使用できるreleaseモード
+if $(defined RELEASEHIO_MODE )
+    if $(equal $(RELEASEHIO_MODE), true)
+        TARGET_LIBRARY      =   cpputesthio
+        export
+    export
+
+# リリースかつデバッグプリントなしはFINALとみなす by hosaka
+if $(defined BUILD )
+  if $(equal $(GFL_BUILD_TYPE), release)
+    TARGET_LIBRARY      =   cpputestfinal
+    export
+  export
+
+
+#SBTS[631] 【ガイドライン】ジャイロセンサの使用の有無について
+#USE_GYROSCOPEを追加        
+#============================================================================
+# GYROSCOPEの有効化
+#============================================================================
+if $(defined USE_GYROSCOPE )
+    if $(equal $(USE_GYROSCOPE), true)
+        CCFLAGS  += -DGFL_UI_USE_GYROSCOPE
+        export
+    export
+
+#----------------------------------------------------------------------------
+# Nintendo Ware Debug Mode Disable!
+#----------------------------------------------------------------------------
+if $(defined BUILD )
+    if $(equal $(BUILD), release)
+        CCFLAGS      += -DNW_DEV_DISABLED
+        export
+    export
+        
+# 例外有効
+#ENABLE_CPP_EXCEPTION = true
+
+# gfl_CppUTest.h とあわせること
+
+# 設定ファイル有効化
+CCFLAGS += -DHAVE_CONFIG_H
+
+#----------------------------------------------------------------------------
+# MODULES INCLUDE
+#----------------------------------------------------------------------------
+include $(ROOT_OMAKE)/modulerules
+
+
+build: $(DEFAULT_TARGETS)
+
+
+

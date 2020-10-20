@@ -1,0 +1,1868 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				頂点シェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+#if defined CTR
+
+// ---------------------------------------------------------------------------
+//  Project:  NintendoWare
+//  File:     gfx_DefaultShader0.vsh
+//  
+//  Copyright (C)2009-2011 Nintendo/HAL Laboratory, Inc.  All rights reserved.
+//  
+//  These coded instructions, statements, and computer programs contain proprietary
+//  information of Nintendo and/or its licensed developers and are protected by
+//  national and international copyright laws. They may not be disclosed to third
+//  parties or copied or duplicated in any form, in whole or in part, without the
+//  prior written consent of Nintendo.
+//  
+//  The content herein is highly confidential and should be handled accordingly.
+//  
+//  $Revision: $
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+//  Project:  NintendoWare
+//  File:     ShaderConfig.h
+//
+//  Copyright (C)2009-2010 Nintendo Co., Ltd.  All rights reserved.
+//
+//  These coded instructions, statements, and computer programs contain
+//  proprietary information of Nintendo of America Inc. and/or Nintendo
+//  Company Ltd., and are protected by Federal copyright law.  They may
+//  not be disclosed to third parties or copied or duplicated in any form,
+//  in whole or in part, without the prior written consent of Nintendo.
+//
+//  $Revision: 28003 $
+// ---------------------------------------------------------------------------
+
+#ifndef NW_SHADERCONFIG_H_
+#define NW_SHADERCONFIG_H_
+
+//----------------------------------------
+
+// ユーザーレジスタのユニバーサルレジスタからの開始オフセットです。
+#define nw_user_register_start          c60
+
+// NW4Rと同じカメラスフィア環境を有効にします。
+#define NW_NORMAL_ENV_MAP
+
+// このマクロを有効にするとシェーダに設定する際に、モデルの平行移動値にオフセット値を加える機能を追加します。
+// #define NW_GFX_MODEL_TRANSLATE_OFFSET_ENABLED
+
+//フレームバッファ上での座標が x = 1 以上のピクセルで
+//この問題が発生することは無いと考えられるため、
+//epsilon の値は最大でも 2 ÷ (横幅) となります。
+
+//CTR のディスプレイに表示するバッファであれば、epsilon = 2 / 240 なので
+
+#define NW_GFX_WORKAROUND_WRAP_AROUND_X_COORDINATES
+#define NW_GFX_WORKAROUND_ONE_MINUS_EPSILON 0.9916666666666667
+
+//とすれば、この問題は必ず回避できますが、
+//その代わりに画面の下端付近でモデルが目に見える程度にひずんでしまいます。
+//逆に値を小さくしすぎると回避できない場合が出てきてしまいます。
+
+//そのため、見た目に問題ない範囲でできるだけ大きな値を設定してください。
+
+// ここ以下にユーザーで定義を追加します。
+
+// テクスチャの入力ソースを固定するサンプルコードを有効にします。
+// #define NW_FIXED_TEX_SORUCE
+
+#endif // NW_SHADERCONFIG_H_
+
+
+/*---------------------------------------------------------------------------*
+  Project:  NintendoWare
+  File:     VertexShader.h
+  
+  Copyright (C)2009-2012 Nintendo/HAL Laboratory, Inc.  All rights reserved.
+  
+  These coded instructions, statements, and computer programs contain proprietary
+  information of Nintendo and/or its licensed developers and are protected by
+  national and international copyright laws. They may not be disclosed to third
+  parties or copied or duplicated in any form, in whole or in part, without the
+  prior written consent of Nintendo.
+  
+  The content herein is highly confidential and should be handled accordingly.
+  
+  $Revision: 35492 $
+ *---------------------------------------------------------------------------*/
+
+#ifndef NW_VERTEXSHADER_H_
+#define NW_VERTEXSHADER_H_
+
+//-----------------------------------------------------------------------------
+// UNDONE: ※レジスタのマクロ名の命名規則は、統一される予定です。
+//-----------------------------------------------------------------------------
+
+//----------------------------------------
+//! @name 比較関連
+//@{
+
+#define EQ                  0
+#define NEQ                 1
+#define LESS                2
+#define LEQ                 3
+#define GT                  4
+#define GEQ                 5
+
+//@}
+
+//----------------------------------------
+//! @name コンディション関連
+//@{
+
+#define COND_MODE_OR        0
+#define COND_MODE_AND       1
+#define COND_MODE_STA0      2
+#define COND_MODE_STA1      3
+
+//@}
+
+
+//----------------------------------------
+//! @name ステータスレジスタ関連
+//@{
+
+#define STAT0_0             0
+#define STAT0_1             1
+#define STAT1_0             0
+#define STAT1_1             1
+
+//@}
+
+//----------------------------------------
+//! @name 頂点ライト関連
+//@{
+
+#define VERTEX_LIGHT_AMBIENT                0
+#define VERTEX_LIGHT_DIFFUSE                1
+#define VERTEX_LIGHT_POSITION               2
+#define VERTEX_LIGHT_SPOT_DIRECTION         3
+#define VERTEX_LIGHT_DISTANCE_ATTENUATION   4
+#define VERTEX_LIGHT_SPOT_FACTOR            5
+
+// 頂点ライトのユニフォームです。
+// ユニバーサルレジスタの割り当てが変更された場合は必ず修正してください。
+// vertexLight = UserRegister + offset + UnivReg(25) - VertexLightUnit(6)
+#define VERTEX_LIGHT_UNIFORM(offset) nw_user_register_start[offset + 19]
+
+//@}
+
+#define _XYZW xyzw
+#define _XYWZ xywz
+#define _XYZ  xyz
+#define _XY   xy
+#define _X    x
+#define _Y    y
+#define _Z    z
+#define _W    w
+
+//----------------------------------------
+//! @name コンスタントレジスタ割当
+//@{
+
+//! @brief World Matrix です。
+//!
+//! (Smooth or Rigid)Skinning 有りで ModelCoordinate = true の場合は model_to_world となります。
+//! ModelCoordinate = false の場合は単位マトリクスになります。
+//! Skinning 無しの場合は単位マトリクスになります。
+//!
+#define nw_local_to_world_matrix        c0
+
+//! @brief Normal Matrix です。
+//!
+//! (Smooth or Rigid)Skinning 有りで ModelCoordinate = true の場合は model_to_view となります。
+//! ModelCoordinate = false の場合は world_to_view になります。
+//! Skinning 無しの場合は model_to_view になります。
+//! ※この Matrix には ViewMatrix がかかって「います」。
+//!
+#define nw_normal_matrix                c3
+
+#define nw_position_offset              c6
+#define nw_attribute_scale0             c7 // 頂点、法線、タンジェント、カラーのスケール値
+#define nw_attribute_scale1             c8 // テクスチャ０～２のスケール値、ウェイトのスケール値
+
+#define nw_texture_coordinate           c10
+#define nw_inverse_view_matrix          c11 // キューブマッピングのときにのみビューマトリクスの逆行列が格納されています。
+#define nw_texture_matrix0              c11
+#define nw_texture_matrix1              c14
+#define nw_texture_matrix2              c17
+#define nw_texture_translate            c19
+
+#define nw_material_ambient             c20
+#define nw_vertex_color_scale           c20._W // アンビエントカラーのレジスタと共有している
+#define nw_material_diffuse             c21
+#define nw_hemi_sphere_ground           c22
+#define nw_hemi_sphere_sky              c23
+#define nw_hemi_sphere_direction        c24
+#define nw_matrix_pallet                c25
+
+
+// sincos マクロを使いたい場合に c93-c95 が使用される可能性があるので、c86-c92 を使っています。
+
+//! @brief Projection Matrix です。
+#define nw_projection_matrix            c86
+
+//! @brief 頂点位置用の View Matrix です。
+//!
+//! 法線等にはこの View Matrix は使用していません。
+//!
+#define nw_world_to_view_matrix         c90
+
+
+
+#define nw_is_smooth_skin               b1
+#define nw_is_rigid_skin                b2
+#define nw_is_hemi_sphere_lighting      b5
+#define nw_is_hemi_sphere_occlusion     b6
+#define nw_is_vertex_alpha_enable       b7
+#define nw_is_bone_weight_enable        b8
+#define nw_uv_mapping_position0         b9
+#define nw_uv_mapping_position1         b10
+#define nw_uv_mapping_position2         b11
+#define nw_is_vertex_lighting           b12
+#define nw_is_texture1_enabled          b13
+#define nw_is_texture2_enabled          b14
+#define nw_is_quaternion_enabled        b15
+
+// 定数
+#define CONSTANT                        c93
+
+def     CONSTANT[0], 0.0, 1.0, 2.0, 3.0
+def     CONSTANT[1], 0.125, 0.00390625, 0.5, 0.25
+#ifdef NW_GFX_WORKAROUND_WRAP_AROUND_X_COORDINATES
+def     CONSTANT[2], 3.0, 4.0, NW_GFX_WORKAROUND_ONE_MINUS_EPSILON, 6.0
+#else
+def     CONSTANT[2], 3.0, 4.0, 5.0, 6.0
+#endif
+
+#define CONST_0                         CONSTANT[0].x
+#define CONST_1                         CONSTANT[0].y
+#define CONST_2                         CONSTANT[0].z
+#define CONST_3                         CONSTANT[0].w
+#define CONST_4                         CONSTANT[2].y
+#define CONST_6                         CONSTANT[2].w
+#define CONST_HALF                      CONSTANT[1].z
+#define CONST_QUARTER                   CONSTANT[1].w
+#define CONST_1__4                      CONSTANT[1].w
+#define CONST_1__8                      CONSTANT[1].x
+#define CONST_1__256                    CONSTANT[1].y
+
+#ifdef NW_GFX_WORKAROUND_WRAP_AROUND_X_COORDINATES
+#define CONST_ONE_MINUS_EPSILON         CONSTANT[2].z
+#else
+#define CONST_5                         CONSTANT[2].z
+#endif
+
+#define CONST_0_0_0_0                   CONSTANT[0].xx
+#define CONST_0_1_1_1                   CONSTANT[0].xy
+#define CONST_0_0_0_1                   CONSTANT[0].xxxy
+#define CONST_0_0_1_1                   CONSTANT[0].xxyy
+#define CONST_0_2_2_2                   CONSTANT[0].xz
+#define CONST_0_3_3_3                   CONSTANT[0].xw
+#define CONST_1_0_0_0                   CONSTANT[0].yx
+#define CONST_1_1_1_1                   CONSTANT[0].yy
+#define CONST_1_2_2_2                   CONSTANT[0].yz
+#define CONST_1_3_3_3                   CONSTANT[0].yw
+#define CONST_3_4_4_4                   CONSTANT[2].xy
+
+//@}
+
+//----------------------------------------
+//! @name 整数レジスタ割当
+//@{
+
+#define nw_vertex_light_count           i0
+
+//@}
+
+//----------------------------------------
+//! @name 標準入力レジスタ割当
+//@{
+
+#define nw_position                     v0
+#define nw_normal                       v1
+#define nw_tangent                      v2
+#define nw_color                        v3
+#define nw_texcoord0                    v4
+#define nw_texcoord1                    v5
+#define nw_texcoord2                    v6
+#define nw_boneIndex                    v7
+#define nw_boneWeight                   v8
+#define nw_userAttribute0               v9
+#define nw_userAttribute1               v10
+#define nw_userAttribute2               v11
+
+//@}
+
+//----------------------------------------
+//! @name 標準出力レジスタ割当
+//@{
+
+#define o_Position                      o0
+#define o_Quaternion                    o1
+#define o_View                          o2
+#define o_Color                         o3
+#define o_TexCoord0                     o4
+#define o_TexCoord1                     o5
+#define o_TexCoord2                     o6
+
+//@}
+
+//----------------------------------------
+//! @name テンポラリレジスタ割当
+//@{
+
+// ルーチン内などで計算用に使うレジスタ
+#define TEMP0               r0
+#define TEMP1               r1
+#define TEMP2               r2
+#define TEMP3               r3
+#define TEMP4               r4
+#define TEMP5               r5
+
+#define TEMP6               r6
+#define TEMP7               r7
+#define TEMP8               r8
+#define TEMP9               r9
+
+// クォータニオン計算ルーチン内では書き換え禁止
+#define TEMP_QUAT           r0
+
+#define TRAN_TEX0           r3
+#define TRAN_TEX1           r4
+#define TRAN_TEX2           r5
+
+// ルーチンの引数などに使うレジスタ
+#define TEMP_COLO           r9
+#define TEMP_STUS           r8
+
+#define TEMP_TEX            r6
+#define TEMP_TEX0           r7
+#define TEMP_TEX1           r8
+#define TEMP_TEX2           r9
+#define MODL_POSI           r7
+//#define MODL_TANG           r8
+//#define MODL_NORM           r9
+
+// 色々参照される可能性のあるレジスタ
+// ライティングやテクスチャ座標でも使うので上書きしないように
+#define WRLD_POSI           r10
+#define WRLD_TANG           r11
+#define WRLD_NORM           r12
+
+// ルーチンの引数としても使われ、色々参照される可能性のあるレジスタ
+// ライティングやテクスチャ座標でも使うので上書きしないように
+#define TEMP_TANG           r13
+#define TEMP_NORM           r14 
+#define TEMP_POSI           r15
+#define TEMP_VIEW           r15 // 注意！ TEMP_POSI と同じレジスタです。
+
+//@}
+
+#endif // NW_VERTEXSHADER_H_
+
+
+//#define IS_PROCEDURAL_TEXTURE_ENABLED
+
+//----------------------------------------
+//! @name 入力レジスタ
+//@{
+
+#pragma bind_symbol(aPosition.xyz, v0, v0)
+#pragma bind_symbol(aNormal.xyz, v1, v1)
+#pragma bind_symbol(aTangent.xyz, v2, v2)
+#pragma bind_symbol(aColor, v3, v3)
+#pragma bind_symbol(aTexCoord0.xy, v4, v4)
+#pragma bind_symbol(aTexCoord1.xy, v5, v5)
+#pragma bind_symbol(aTexCoord2.xy, v6, v6)
+#pragma bind_symbol(aBoneIndex, v7, v7)
+#pragma bind_symbol(aBoneWeight, v8, v8)
+#pragma bind_symbol(aUserAttribute0.xyz, v9, v9)
+#pragma bind_symbol(aUserAttribute1.xyz, v10, v10)
+#pragma bind_symbol(aUserAttribute2.xyz, v11, v11)
+
+//@}
+
+//----------------------------------------
+//! @name コンスタントレジスタ
+//@{
+
+#pragma bind_symbol(WrldMtx, c0, c2)
+#pragma bind_symbol(NormMtx, c3, c5)
+#pragma bind_symbol(PosOffs.xyz, c6, c6)
+#pragma bind_symbol(IrScale, c7, c8)
+#pragma bind_symbol(TexcMap.xyz, c10, c10)
+#pragma bind_symbol(TexMtx0, c11, c13)
+#pragma bind_symbol(TexMtx1, c14, c16)
+#pragma bind_symbol(TexMtx2, c17, c18)
+#pragma bind_symbol(TexTran, c19, c19)
+#pragma bind_symbol(MatAmbi, c20, c20)
+#pragma bind_symbol(MatDiff, c21, c21)
+
+////////////////////////////////////////////////////////////////
+// 半球ライトのレジスタをユーザーレジスタに変えて利用します。 //
+////////////////////////////////////////////////////////////////
+#pragma bind_symbol(LightPowScale, c22, c22)
+#pragma bind_symbol(DirLightVec, c23, c23)
+#pragma bind_symbol(NormalScale, c24, c24)
+#pragma bind_symbol(ModelCenterPosition, c85, c85)
+
+//def     c22, 8, 1, 8, 1
+//def     c23, 0, 0.75, 0.75, 0.0
+//def     c24, 1, 1.0, 1.0, 164.0
+//def     c85, 30, 0.0, 0.0, 900.0
+
+#pragma bind_symbol(UnivReg, c25, c84)
+#pragma bind_symbol(ProjMtx, c86, c89)
+#pragma bind_symbol(ViewMtx, c90, c92)
+
+#pragma bind_symbol(IsSmoSk, b1, b1)
+#pragma bind_symbol(IsRgdSk, b2, b2)
+//#pragma bind_symbol(IsHemiL, b5, b5)
+//#pragma bind_symbol(IsHemiO, b6, b6)
+#pragma bind_symbol(IsVertA, b7, b7)
+#pragma bind_symbol(IsBoneW, b8, b8)
+#pragma bind_symbol(UvMap0, b9, b9)
+#pragma bind_symbol(UvMap1, b10, b10)
+#pragma bind_symbol(UvMap2, b11, b11)
+#pragma bind_symbol(IsVertL, b12, b12)
+#pragma bind_symbol(IsTex1,  b13, b13)
+#pragma bind_symbol(IsTex2,  b14, b14)
+#pragma bind_symbol(IsQuate, b15, b15)
+
+#pragma bind_symbol(PhongEnable, b3, b3)
+#pragma bind_symbol(RimEnable, b4, b4)
+#pragma bind_symbol(InverseLightEnable, b5, b5)
+#pragma bind_symbol(LightingEnable, b6, b6)
+
+#define lighting_enable						b6
+
+//@}
+
+
+
+//----------------------------------------
+//! @name 整数レジスタ
+//@{
+
+#pragma bind_symbol(LightCt, i0, i0)
+
+//@}
+
+//----------------------------------------
+//! @name 出力レジスタ
+//@{
+
+#pragma output_map(position, o0)
+#pragma output_map(quaternion, o1)
+#pragma output_map(view, o2)
+#pragma output_map(color, o3)
+#pragma output_map(texture0, o4.xy)
+#pragma output_map(texture0w, o4.z)
+#pragma output_map(texture1, o5.xy)
+#pragma output_map(texture2, o6.xy)
+
+//@}
+
+
+#define LightPowScale                   c22
+#define DirLightVec                     c23
+#define DirLightColor                   c24
+#define PointLightPos                   c85
+
+#define   rHalf           TEMP0
+#define   rView           TEMP1
+#define   rLightingCol    TEMP2
+#define   rNormal         TEMP_NORM
+#define   rHeight         TEMP4
+#define   rStatusColor    TEMP5
+#define   rLightVec       TEMP6
+#define   rPointLightVec  TEMP7
+#define   rTemp           TEMP8
+#define   rRimColor       TEMP9.x
+#define   rPLColor        TEMP9.y
+#define   rPhongColor     TEMP9.z
+
+#define   cRimPow         c22.x
+#define   cRimScale       c22.y
+#define   cPhongPow       c22.z
+#define   cPhongScale     c22.w
+
+#define   cModelFoot      c23.w
+#define   cModelHead      c24.w
+
+#define CONST_0_0_1_0                 CONSTANT[0].xxyx
+#define CONST_0_0_1                   CONSTANT[0].xxy
+
+//------------------------------------------
+// カラー
+//------------------------------------------
+
+#define enable_phong_lighting			b3
+#define enable_rim_lighting				b4
+#define enable_inverse_lighting		b5
+
+//ifb nw_is_smooth_skin
+
+l_calc_color_rim:
+  
+  mov     rView.xyz,        CONST_0_0_1_0
+  m3x3    rTemp.xyz,	      WRLD_NORM.xyz,  nw_local_to_world_matrix
+  m3x3    rNormal.xyz,	    rTemp.xyz,      nw_world_to_view_matrix
+  
+	mov			rNormal.w,			CONST_0
+	mov			rTemp,					rNormal
+	nrm     rNormal,				rTemp
+	
+  mov     rHalf,          DirLightVec
+  m3x3    rTemp.xyz,	    rHalf.xyz,        nw_local_to_world_matrix
+  m3x3    rLightVec.xyz,	rTemp.xyz,        nw_world_to_view_matrix
+  add     rTemp.xyz,      rLightVec.xyz,        rView.xyz
+  mov     rTemp.w,        CONST_0
+  nrm     rHalf,          rTemp
+
+  ifb enable_inverse_lighting
+	  dp3		  rTemp.x,					rNormal.xyz,  	-rLightVec
+		dp3		  rTemp.y,					rView.xyz,    	-rLightVec
+	  max     rTemp,   					rTemp,					CONST_0
+	  
+	  // 0.0～1.0 -> 0.5～1.0
+	  mul     rTemp.y,          rTemp.y,        CONST_HALF
+	  add     rTemp.y,          rTemp.y,        CONST_HALF
+	  
+	  mul     rLightingCol.y,   rTemp.x,				rTemp.y
+  endif
+  
+  ifb enable_phong_lighting
+	  dp3		  rPhongColor,		rNormal.xyz,    rHalf
+	  max     rPhongColor,    rPhongColor,    CONST_0
+	  min			rPhongColor,		rPhongColor,    CONST_1
+	  pow		  rPhongColor,	  rPhongColor,    cPhongPow
+	  mul     rLightingCol.z, rPhongColor,    cPhongScale
+	endif
+  
+  ifb enable_rim_lighting
+	  dp3		rRimColor,		    rNormal,      rView
+	  max		rRimColor,		    rRimColor,    CONST_0
+	  min		rRimColor,		    rRimColor,    CONST_1
+	  sub		rRimColor,		    CONST_1,      rRimColor
+	  pow		rRimColor,		    rRimColor,    cRimPow
+	  mul   rLightingCol.w,   rRimColor,    cRimScale
+	endif
+  
+  //出力は一度に行った方がよい。不具合の原因。
+  mov     o_Color,            rLightingCol
+  ret
+
+//-----------------------------------------------------------------------------
+// @brief        内部用：変換結果にウェイトを掛け各頂点属性に加算します。
+//-----------------------------------------------------------------------------
+l_internal_blend_vertex_pn:
+    mova    a0.x,               TEMP1.x
+    
+    dp4     TEMP3.x,    TEMP_POSI,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp4     TEMP3.y,    TEMP_POSI,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp4     TEMP3.z,    TEMP_POSI,  nw_matrix_pallet[2 + a0.x]._XYZW
+
+    dp3     TEMP4.x,    TEMP_NORM,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp3     TEMP4.y,    TEMP_NORM,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp3     TEMP4.z,    TEMP_NORM,  nw_matrix_pallet[2 + a0.x]._XYZW
+    
+    mad     MODL_POSI,  TEMP1.w,    TEMP3,  MODL_POSI
+    mad     WRLD_NORM,  TEMP1.w,    TEMP4,  WRLD_NORM
+    ret
+
+//------------------------------------------
+// 頂点座標
+//------------------------------------------
+l_transform_matrix:
+    mul     TEMP_POSI.xyz,  nw_position,    nw_attribute_scale0._X
+    mul     TEMP_NORM.xyz,  nw_normal,      nw_attribute_scale0._Y
+    mul     TEMP_TANG.xyz,  nw_tangent,     nw_attribute_scale0._Z
+    add     TEMP_POSI.xyz,  TEMP_POSI,      nw_position_offset._XYZW
+    mov     TEMP_POSI.w,    CONST_1
+    
+    // レイテンシーの関係で ifc との間に他の事をします。
+    mov     MODL_POSI,  CONST_0
+    mov     WRLD_NORM,  CONST_0
+    mul     TEMP2,              nw_boneIndex,       CONST_3
+
+    // bone0
+    cmp     NEQ, NEQ,   nw_boneWeight.zw, CONST_0
+    mov     TEMP1.xy,           TEMP2.x
+    mul     TEMP1.w,            nw_boneWeight.x,    nw_attribute_scale1._W
+    call    l_internal_blend_vertex_pn
+    // bone1
+    mov     TEMP1.xy,           TEMP2.y
+    mul     TEMP1.w,            nw_boneWeight.y,    nw_attribute_scale1._W
+    call    l_internal_blend_vertex_pn
+    // bone2
+    mov     TEMP1.xy,           TEMP2.z
+    mul     TEMP1.w,            nw_boneWeight.z,    nw_attribute_scale1._W
+    callc 1, 0, COND_MODE_STA0, l_internal_blend_vertex_pn
+    // bone3
+    ifb nw_is_bone_weight_enable
+        mov     TEMP1.xy,           TEMP2.w
+        mul     TEMP1.w,            nw_boneWeight.w,    nw_attribute_scale1._W
+        callc 0, 1, COND_MODE_STA1, l_internal_blend_vertex_pn
+        nop
+    endif
+
+    mov     MODL_POSI.w,        CONST_1
+    mov     WRLD_POSI,          MODL_POSI
+//    dp4     WRLD_POSI.x,        MODL_POSI,      nw_local_to_world_matrix[0]._XYZW
+//    dp4     WRLD_POSI.y,        MODL_POSI,      nw_local_to_world_matrix[1]._XYZW
+//    dp4     WRLD_POSI.z,        MODL_POSI,      nw_local_to_world_matrix[2]._XYZW
+//    mov     WRLD_POSI.w,        CONST_1
+    dp4     TEMP_VIEW.x,        WRLD_POSI,      nw_world_to_view_matrix[0]._XYZW
+    dp4     TEMP_VIEW.y,        WRLD_POSI,      nw_world_to_view_matrix[1]._XYZW
+    dp4     TEMP_VIEW.z,        WRLD_POSI,      nw_world_to_view_matrix[2]._XYZW
+    mov     TEMP_VIEW.w,        CONST_1
+    dp3     TEMP_NORM.x,        WRLD_NORM,      nw_normal_matrix[0]._XYZW
+    dp3     TEMP_NORM.y,        WRLD_NORM,      nw_normal_matrix[1]._XYZW
+    dp3     TEMP_NORM.z,        WRLD_NORM,      nw_normal_matrix[2]._XYZW
+    call    l_internal_calc_quaternion_from_normal
+    mov     o_View,             -TEMP_VIEW
+        
+    // 意図しない線が描画される問題を回避するために
+    // 以下に相当する処理を行います。
+    // if ( -w < x && x < -w * (1 - epsilon) )
+    //     x = -w ;
+    
+    m4x4    TEMP0,              TEMP_VIEW,      nw_projection_matrix._XYZW
+    mov     TEMP1.x,            -TEMP0.w
+    mul     TEMP1.y,            -TEMP0.w,       CONST_ONE_MINUS_EPSILON
+    cmp     GT, LESS,   TEMP0.xx,   TEMP1.xy
+    ifc 1, 1, COND_MODE_AND
+        mov     TEMP0.x,            -TEMP0.w
+    endif
+    mov     o_Position,         TEMP0
+
+    ret
+
+#define TEMP_TANG2           r6
+#define TEMP_NORM2           r5
+#define WRLD_TANG2           r8
+#define WRLD_NORM2           r9
+
+//-----------------------------------------------------------------------------
+// @brief        内部用：変換結果にウェイトを掛け各頂点属性に加算します。
+//-----------------------------------------------------------------------------
+l_internal_blend_vertex_pnt:
+    mova    a0.x,               TEMP1.x
+    
+    dp4     TEMP3.x,    TEMP_POSI,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp4     TEMP3.y,    TEMP_POSI,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp4     TEMP3.z,    TEMP_POSI,  nw_matrix_pallet[2 + a0.x]._XYZW
+    mad     MODL_POSI,  TEMP1.w,    TEMP3,  MODL_POSI
+
+    dp3     TEMP3.x,    TEMP_NORM,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp3     TEMP3.y,    TEMP_NORM,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp3     TEMP3.z,    TEMP_NORM,  nw_matrix_pallet[2 + a0.x]._XYZW
+    mad     WRLD_NORM,  TEMP1.w,    TEMP3,  WRLD_NORM
+
+    dp3     TEMP3.x,    TEMP_TANG,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp3     TEMP3.y,    TEMP_TANG,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp3     TEMP3.z,    TEMP_TANG,  nw_matrix_pallet[2 + a0.x]._XYZW
+    mad     WRLD_TANG,  TEMP1.w,    TEMP3,  WRLD_TANG
+    
+    dp3     TEMP3.x,    TEMP_NORM2,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp3     TEMP3.y,    TEMP_NORM2,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp3     TEMP3.z,    TEMP_NORM2,  nw_matrix_pallet[2 + a0.x]._XYZW
+    mad     WRLD_NORM2,  TEMP1.w,    TEMP3,  WRLD_NORM2
+
+    dp3     TEMP3.x,    TEMP_TANG2,  nw_matrix_pallet[0 + a0.x]._XYZW
+    dp3     TEMP3.y,    TEMP_TANG2,  nw_matrix_pallet[1 + a0.x]._XYZW
+    dp3     TEMP3.z,    TEMP_TANG2,  nw_matrix_pallet[2 + a0.x]._XYZW
+    mad     WRLD_TANG2,  TEMP1.w,    TEMP3,  WRLD_TANG2
+    
+    ret
+
+//-----------------------------------------------------------------------------
+// @brief InverseTangentSpaceMatrixをライトベクトルに掛けることで「Skinning付きObjectSpaceNormalMap」を可能にする
+//-----------------------------------------------------------------------------
+
+#define CONST_0_1_0_1                   CONSTANT[0].xyxy
+#define CONST_1_0_0_1                   CONSTANT[0].yxxy
+
+calc_light_vector_from_inverse_tangentspace_matrix:
+
+  crs     TEMP0.xyz,      WRLD_NORM2,        WRLD_TANG2
+  
+//  WRLD_TANG2
+//  TEMP0 (BiNormal)
+//  WRLD_NORM2
+//  は、スキニングによる回転結果の行列です。
+
+  mov     TEMP1,      DirLightVec
+  nrm     TEMP2.xyz,  TEMP1.xyz
+
+  //逆行列を掛けるのだが、
+  //転置して内積をとるので、結局そのまま掛ける
+  dp3     TEMP1.x,    TEMP2,  WRLD_TANG2._XYZ
+  dp3     TEMP1.y,    TEMP2,  TEMP0._XYZ
+  dp3     TEMP1.z,    TEMP2,  WRLD_NORM2._XYZ
+  
+  //一応正規化
+  nrm     TEMP2.xyz,  TEMP1.xyz
+  mov     TEMP2.w,    CONST_1
+  
+  //ライトベクトルをビューに渡す。
+  //コンバイナでは、法線マップとビューベクトルとの計算を行う。
+  mov     o_View,     TEMP2
+
+  ret
+  
+//------------------------------------------
+// 頂点座標
+//------------------------------------------
+l_transform_matrix_inv:
+    mul     TEMP_POSI.xyz,  nw_position,    nw_attribute_scale0._X
+    mul     TEMP_NORM.xyz,  nw_normal,      nw_attribute_scale0._Y
+    mul     TEMP_TANG.xyz,  nw_tangent,     nw_attribute_scale0._Z
+    add     TEMP_POSI.xyz,  TEMP_POSI,      nw_position_offset._XYZW
+    mov     TEMP_POSI.w,    CONST_1
+    
+    //スキニングによる回転を得るための、単位マトリックスを作成
+    mov     TEMP_NORM2,      CONST_0_0_1_1
+    mov     TEMP_TANG2,      CONST_1_0_0_1
+    
+    // レイテンシーの関係で ifc との間に他の事をします。
+    mov     MODL_POSI,  CONST_0
+    mov     WRLD_NORM,  CONST_0
+    mov     WRLD_TANG,  CONST_0
+    mov     WRLD_NORM2,  CONST_0
+    mov     WRLD_TANG2,  CONST_0
+    mul     TEMP2,              nw_boneIndex,       CONST_3
+
+    // 法線とタンジェントがある場合
+    // bone0
+    cmp     NEQ, NEQ,   nw_boneWeight.zw, CONST_0
+    mov     TEMP1.xy,           TEMP2.x
+    mul     TEMP1.w,            nw_boneWeight.x,    nw_attribute_scale1._W
+    call    l_internal_blend_vertex_pnt
+    // bone1
+    mov     TEMP1.xy,           TEMP2.y
+    mul     TEMP1.w,            nw_boneWeight.y,    nw_attribute_scale1._W
+    call    l_internal_blend_vertex_pnt
+    // bone2
+    mov     TEMP1.xy,           TEMP2.z
+    mul     TEMP1.w,            nw_boneWeight.z,    nw_attribute_scale1._W
+    callc 1, 0, COND_MODE_STA0, l_internal_blend_vertex_pnt
+    // bone3
+    ifb nw_is_bone_weight_enable
+        mov     TEMP1.xy,           TEMP2.w
+        mul     TEMP1.w,            nw_boneWeight.w,    nw_attribute_scale1._W
+        callc 0, 1, COND_MODE_STA1, l_internal_blend_vertex_pnt
+        nop
+    endif
+
+    mov     MODL_POSI.w,        CONST_1
+    mov     WRLD_POSI,          MODL_POSI
+//    dp4     WRLD_POSI.x,        MODL_POSI,      nw_local_to_world_matrix[0]._XYZW
+//    dp4     WRLD_POSI.y,        MODL_POSI,      nw_local_to_world_matrix[1]._XYZW
+//    dp4     WRLD_POSI.z,        MODL_POSI,      nw_local_to_world_matrix[2]._XYZW
+//    mov     WRLD_POSI.w,        CONST_1
+    dp3     TEMP_TANG.x,        WRLD_TANG,      nw_normal_matrix[0]._XYZW
+    dp3     TEMP_TANG.y,        WRLD_TANG,      nw_normal_matrix[1]._XYZW
+    dp3     TEMP_TANG.z,        WRLD_TANG,      nw_normal_matrix[2]._XYZW
+    dp3     TEMP_NORM.x,        WRLD_NORM,      nw_normal_matrix[0]._XYZW
+    dp3     TEMP_NORM.y,        WRLD_NORM,      nw_normal_matrix[1]._XYZW
+    dp3     TEMP_NORM.z,        WRLD_NORM,      nw_normal_matrix[2]._XYZW
+    dp4     TEMP_VIEW.x,        WRLD_POSI,      nw_world_to_view_matrix[0]._XYZW
+    dp4     TEMP_VIEW.y,        WRLD_POSI,      nw_world_to_view_matrix[1]._XYZW
+    dp4     TEMP_VIEW.z,        WRLD_POSI,      nw_world_to_view_matrix[2]._XYZW
+    mov     TEMP_VIEW.w,        CONST_1
+
+    call    calc_light_vector_from_inverse_tangentspace_matrix
+    
+    //オブジェクトスペース法線マップなので、単位クォータニオン（とでも言うのかな？）を渡す。
+    //ライトベクトルをスキニングとは逆回転させることで、ライティングを行います。
+    mov     o_Quaternion,       CONST_0_0_0_1
+    
+    // 意図しない線が描画される問題を回避するために
+    // 以下に相当する処理を行います。
+    // if ( -w < x && x < -w * (1 - epsilon) )
+    //     x = -w ;
+    m4x4    TEMP0,              TEMP_VIEW,      nw_projection_matrix._XYZW
+    mov     TEMP1.x,            -TEMP0.w
+    mul     TEMP1.y,            -TEMP0.w,       CONST_ONE_MINUS_EPSILON
+    cmp     GT, LESS,   TEMP0.xx,   TEMP1.xy
+    ifc 1, 1, COND_MODE_AND
+        mov     TEMP0.x,            -TEMP0.w
+    endif
+    mov     o_Position,         TEMP0
+    
+    ret
+
+//------------------------------------------
+// テクスチャ座標計算
+//------------------------------------------
+// テクスチャ座標0
+l_calc_texcoord0:
+    mov     TEMP0.xy,   nw_texture_coordinate._X
+    ifb nw_uv_mapping_position0  // UVマッピング
+#ifdef NW_FIXED_TEX_SORUCE // テクスチャソースを固定で取得します。
+        mul     TEMP_TEX.xy,       nw_texcoord0.xy,   nw_attribute_scale1._X
+        mov     TEMP_TEX.zw,        CONST_0_0_1_1
+#else
+        call    l_get_texcoord_source
+#endif
+        dp4     TRAN_TEX0.x,        TEMP_TEX,          nw_texture_matrix0[0]._XYWZ
+        dp4     TRAN_TEX0.y,        TEMP_TEX,          nw_texture_matrix0[1]._XYWZ
+        mov     TRAN_TEX0.zw,       CONST_0
+        mov     o_TexCoord0,        TRAN_TEX0
+    else
+        cmp     EQ, EQ,     TEMP0.xy,       CONST_3_4_4_4
+        mov     TEMP_TEX.zw,        CONST_0_0_1_1
+        ifc 0, 0, COND_MODE_AND // 投影マッピング, シャドウマッピング
+            mov     TEMP_TEX,           WRLD_POSI
+            dp4     TRAN_TEX0.x,        TEMP_TEX,          nw_texture_matrix0[0]._XYZW
+            dp4     TRAN_TEX0.y,        TEMP_TEX,          nw_texture_matrix0[1]._XYZW
+            dp4     TRAN_TEX0.z,        TEMP_TEX,          nw_texture_matrix0[2]._XYZW
+            mul     TEMP0.xy   ,        nw_texture_translate.xy, TRAN_TEX0.z
+            add     TRAN_TEX0.xy,       TRAN_TEX0.xy,      TEMP0.xy
+        else
+            ifc 1, 0, COND_MODE_AND // キューブマッピング
+                call    l_gen_texcoord_reflection
+                dp3     TRAN_TEX0.x,        TEMP_TEX,          nw_inverse_view_matrix[0]._XYZW
+                dp3     TRAN_TEX0.y,        TEMP_TEX,          nw_inverse_view_matrix[1]._XYZW
+                dp3     TRAN_TEX0.z,        TEMP_TEX,          nw_inverse_view_matrix[2]._XYZW
+            else // スフィアマッピング
+                call    l_gen_texcoord_sphere_reflection
+                dp4     TRAN_TEX0.x,        TEMP_TEX,          nw_texture_matrix0[0]._XYZW
+                dp4     TRAN_TEX0.y,        TEMP_TEX,          nw_texture_matrix0[1]._XYZW
+                //mov     TRAN_TEX0.zw,       TEMP_TEX.zw
+            endif
+            nop
+        endif
+        // 出力レジスタには全てのコンポーネントに書き込みを行う必要があります。
+        mov     o_TexCoord0,        TRAN_TEX0
+    endif
+    nop
+    ret
+
+//------------------------------------------
+// テクスチャ座標計算
+//------------------------------------------
+// テクスチャ座標1
+l_calc_texcoord1:
+    mov     TEMP0.xy,   nw_texture_coordinate._Y
+    ifb nw_uv_mapping_position1 // UVマッピング
+#ifdef NW_FIXED_TEX_SORUCE // テクスチャソースを固定で取得します。
+        mul     TEMP_TEX.xy,       nw_texcoord1.xy,   nw_attribute_scale1._Y
+        mov     TEMP_TEX.zw,        CONST_0_0_1_1
+#else
+        call    l_get_texcoord_source
+#endif
+        dp4     TRAN_TEX1.x,        TEMP_TEX,          nw_texture_matrix1[0]._XYWZ
+        dp4     TRAN_TEX1.y,        TEMP_TEX,          nw_texture_matrix1[1]._XYWZ
+        mov     o_TexCoord1,        TRAN_TEX1
+    else
+        ifb nw_is_texture1_enabled
+            cmp     EQ, EQ,     TEMP0.xy,       CONST_3_4_4_4
+            mov     TEMP_TEX.zw,        CONST_0_0_1_1
+            ifc 0, 0, COND_MODE_AND // 投影マッピング
+                mov     TEMP_TEX,           WRLD_POSI
+                dp4     TRAN_TEX1.x,        TEMP_TEX,          nw_texture_matrix1[0]._XYZW
+                dp4     TRAN_TEX1.y,        TEMP_TEX,          nw_texture_matrix1[1]._XYZW
+                dp4     TRAN_TEX1.z,        TEMP_TEX,          nw_texture_matrix1[2]._XYZW
+                rcp     TEMP_TEX.w,         TRAN_TEX1.z
+                mul     TRAN_TEX1.xy,       TRAN_TEX1.xy,      TEMP_TEX.w
+                add     TRAN_TEX1.xy,       TRAN_TEX1.xy,      nw_texture_translate.zw
+            else
+                call    l_gen_texcoord_sphere_reflection
+                dp4     TRAN_TEX1.x,        TEMP_TEX,          nw_texture_matrix1[0]._XYZW
+                dp4     TRAN_TEX1.y,        TEMP_TEX,          nw_texture_matrix1[1]._XYZW
+            endif
+            // 出力レジスタには全てのコンポーネントに書き込みを行う必要があります。
+            mov     o_TexCoord1,        TRAN_TEX1
+        else
+            mov     o_TexCoord1,        CONST_0
+        endif
+        nop
+    endif
+    nop
+    ret
+
+//------------------------------------------
+// テクスチャ座標計算
+//------------------------------------------
+// テクスチャ座標2
+l_calc_texcoord2:
+    mov     TEMP0.xy,   nw_texture_coordinate._Z
+    ifb nw_uv_mapping_position2 // UVマッピング
+#ifdef NW_FIXED_TEX_SORUCE // テクスチャソースを固定で取得します。
+        mul     TEMP_TEX.xy,       nw_texcoord2.xy,   nw_attribute_scale1._Z
+#else
+        call    l_get_texcoord_source
+#endif
+        dp4     TRAN_TEX2.x,        TEMP_TEX,          nw_texture_matrix2[0]._XYWZ
+        dp4     TRAN_TEX2.y,        TEMP_TEX,          nw_texture_matrix2[1]._XYWZ
+        mov     o_TexCoord2,        TRAN_TEX2
+    else
+        ifb nw_is_texture2_enabled
+            mov     TEMP_TEX.zw,        CONST_0_0_1_1
+            mov     TRAN_TEX2.zw,       TEMP_TEX.zw
+            call    l_gen_texcoord_sphere_reflection
+            dp4     TRAN_TEX2.x,        TEMP_TEX,          nw_texture_matrix2[0]._XYZW
+            dp4     TRAN_TEX2.y,        TEMP_TEX,          nw_texture_matrix2[1]._XYZW
+            // 出力レジスタには全てのコンポーネントに書き込みを行う必要があります。
+            mov     o_TexCoord2,        TRAN_TEX2
+        else
+            mov     o_TexCoord2,        CONST_0
+        endif
+        nop
+    endif
+    nop
+    ret
+
+//-----------------------------------------------------------------------------
+// @brief        テクスチャ座標ソースの取得します。
+//-----------------------------------------------------------------------------
+l_get_texcoord_source:
+    cmp     EQ, EQ,     TEMP0.xy,      CONST_1_2_2_2
+    
+    ifc 0, 0, COND_MODE_AND
+        mul     TEMP_TEX.xy,       nw_texcoord0.xy,   nw_attribute_scale1._X
+    else
+        ifc 1, 0, COND_MODE_AND
+            mul     TEMP_TEX.xy,       nw_texcoord1.xy,   nw_attribute_scale1._Y
+        else
+            mul     TEMP_TEX.xy,       nw_texcoord2.xy,   nw_attribute_scale1._Z
+        endif
+        nop
+    endif
+    mov     TEMP_TEX.zw,        CONST_0_0_1_1
+    ret
+
+//defb    b0, true
+
+//=============================================================================
+//------------------------------------------------------------
+// Copyright(c) 2009-2010 by Digital Media Professionals Inc.
+// All rights reserved.
+//------------------------------------------------------------
+// This source code is the confidential and proprietary
+// of Digital Media Professionals Inc.
+//------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// @brief        内部用：法線からクォータニオンを求めます。
+//-----------------------------------------------------------------------------
+l_internal_calc_quaternion_from_normal:
+    // 法線正規化
+    dp3     TEMP6.x,            TEMP_NORM,      TEMP_NORM
+    dp3     TEMP7.x,            WRLD_NORM,      WRLD_NORM
+    rsq     TEMP6.x,            TEMP6.x
+    rsq     TEMP7.x,            TEMP7.x
+    mul     TEMP_NORM.xyz,      TEMP_NORM.xyz,  TEMP6.x
+    mul     WRLD_NORM.xyz,      WRLD_NORM.xyz,  TEMP7.x
+    mov     TEMP_QUAT,          CONST_1_0_0_0
+    jpb nw_is_quaternion_enabled, false, l_internal_calc_quaternion_from_normal_end
+    add     r4,                 TEMP_NORM.z,    CONST_1                 // n.z + 1.0 is in r4
+    mul     r4,                 r4,             CONST_HALF              // 0.5*(n.z + 1.0) is in r4
+    cmp     LEQ, LEQ,           r4.x,           CONST_0                 // compare 0.5*(n.z + 1.0) with 0.0
+    rsq     r4,                 r4.x                                    // 1/sqrt(0.5*(n.z + 1.0)) is in r4
+    mul     r5,                 TEMP_NORM,      CONST_HALF              // 0.5*n is in r5
+    jpc 1, 1, COND_MODE_STA0, l_internal_calc_quaternion_from_normal_end
+    rcp     TEMP_QUAT.z,     r4.x                                // sqrt(0.5*(n.z + 1.0)) is in quat.z component
+    mul     TEMP_QUAT.xy,    r5,             r4                  // 0.5*n*quat.z is in quat.xy
+l_internal_calc_quaternion_from_normal_end:
+    mov         o_Quaternion,       TEMP_QUAT
+    ret
+
+//-----------------------------------------------------------------------------
+// @brief        内部用：タンジェントからクォータニオンを求めます。
+//-----------------------------------------------------------------------------
+l_internal_calc_quaternion_from_tangent:
+    // 法線・接線正規化
+    dp3     TEMP6.x,            TEMP_NORM,      TEMP_NORM
+    dp3     TEMP7.x,            WRLD_NORM,      WRLD_NORM
+    rsq     TEMP6.x,            TEMP6.x
+    rsq     TEMP7.x,            TEMP7.x
+    mul     TEMP_NORM.xyz,      TEMP_NORM.xyz,  TEMP6.x
+    mul     WRLD_NORM.xyz,      WRLD_NORM.xyz,  TEMP7.x
+    mul     TEMP_TANG.xyz,      TEMP_TANG.xyz,  TEMP6.x
+    mul     WRLD_TANG.xyz,      WRLD_TANG.xyz,  TEMP7.x
+    mov     TEMP_QUAT,          CONST_1_0_0_0
+    jpb     nw_is_quaternion_enabled, false, l_full_quaternion_calc_end
+    mul     TEMP_TANG.xyz,      TEMP_TANG.xyz,  TEMP6.x
+    mul     WRLD_TANG.xyz,      WRLD_TANG.xyz,  TEMP7.x
+    mul     r5,                 TEMP_NORM.yzx,  TEMP_TANG.zxy
+    mad     r5,                 -TEMP_TANG.yzx, TEMP_NORM.zxy,  r5  // b*|n|^2 is in r5
+    dp3     r5.w,               r5,             r5
+    rsq     r5.w,               r5.w
+    mul     r5,                 r5,             r5.w
+    add     r6.w,               TEMP_NORM.z,    r5.y
+    mul     TEMP_TANG,          r5.yzx,         TEMP_NORM.zxy
+    mad     TEMP_TANG,          -TEMP_NORM.yzx, r5.zxy,         TEMP_TANG
+    add     r6.w,               TEMP_TANG.x,    r6
+    mov     TEMP_TANG.w,        r5.z
+    mov     r5.z,               TEMP_TANG.x
+    add     r6.w,               CONST_1,        r6
+    mov     TEMP_NORM.w,        r5.x
+    mov     r5.x,               TEMP_NORM.z
+    cmp     GT,                 GT,             r6.w,           CONST_1__256
+    mov     r6.x,               CONST_1 
+    mov     r6.y,               -CONST_1
+    jpc     0, 0,               COND_MODE_STA0, l_full_quaternion_calc_fallback
+    add     r7.xz,              TEMP_TANG.wwyy, -TEMP_NORM.yyww
+    add     r7.y,               TEMP_NORM.x,    -TEMP_TANG.z
+    mov     r7.w,               r6
+    dp4     r6,                 r7,             r7
+    rsq     r6,                 r6.x
+    mul     TEMP_QUAT,       r7,             r6
+    jpb     b0, true, l_full_quaternion_calc_end
+l_full_quaternion_calc_fallback:
+    cmp     GT, GT,             r5.zy,          r5.yx
+    ifc 1, 1, COND_MODE_STA0
+        ifc 1, 1, COND_MODE_STA1
+            mul         r8,             TEMP_TANG.yyzw,     r6.xxxy
+            add         r8.x,           CONST_1,            -r5.y
+            add         r9,             r5.z,               -r5.x
+            add         r8.yzw,         r8,                 TEMP_NORM.wwxy
+            add         r8.x,           r9,                 r8
+        else
+            cmp         GT, GT,         r5.z,               r5.x
+            mul         r8,             TEMP_TANG.yyzw,     r6.xxxy
+            add         r8.x,           CONST_1,            -r5.y
+            ifc 1, 1, COND_MODE_STA0
+                add         r9,             r5.z,               -r5.x
+                add         r8.yzw,         r8,                 TEMP_NORM.wwxy
+                add         r8.x,           r9,                 r8
+            else
+                mul         r8,             TEMP_TANG.zwwy,     r6.xxxy
+                add         r8.z,           CONST_1,            -r5.z
+                add         r9,             r5.x,               -r5.y
+                add         r8.xyw,         r8,                 TEMP_NORM.xyyw
+                add         r8.z,           r9,                 r8
+            endif
+            nop
+        endif
+        mov         r8.w,           -r8 
+    else
+        ifc 1, 1, COND_MODE_STA1
+            mul     r8,             TEMP_TANG.yywz,     r6.xxxy
+            add     r8.y,           CONST_1,            -r5.z
+            add     r9,             r5.y,               -r5.x
+            add     r8.xzw,         r8,                 TEMP_NORM.wwyx
+            add     r8.y,           r9,                 r8
+        else
+            mul     r8,             TEMP_TANG.zwwy,     r6.xxxy
+            add     r8.z,           CONST_1,            -r5.z
+            add     r9,             r5.x,               -r5.y
+            add     r8.xyw,         r8,                 TEMP_NORM.xyyw
+            add     r8.z,           r9,                 r8
+            mov     r8.w,           -r8 
+        endif
+        nop
+    endif
+    dp4         r6,         r8,     r8
+    rsq         r6,         r6.x
+    mul         TEMP_QUAT,       r8,                 r6
+l_full_quaternion_calc_end:
+    mov         o_Quaternion,       TEMP_QUAT
+    ret
+
+//-----------------------------------------------------------------------------
+// @brief        視点座標系での反射ベクトルを求めて TEMP_TEX に格納します。
+//-----------------------------------------------------------------------------
+l_gen_texcoord_reflection:
+    mov     TEMP2,             -TEMP_POSI
+    dp3     TEMP2.w,            TEMP2,          TEMP2
+    rsq     TEMP2.w,            TEMP2.w
+    mul     TEMP2,              TEMP2,          TEMP2.w
+    dp3     TEMP1,              TEMP2,          TEMP_NORM
+    add     TEMP1,              TEMP1,          TEMP1
+    mad     TEMP_TEX,           TEMP1,          TEMP_NORM,          -TEMP2
+    ret
+
+//-----------------------------------------------------------------------------
+// @brief        法線か、反射ベクトルの xy を利用してテクスチャ座標を TEMP_TEX に格納します。
+//-----------------------------------------------------------------------------
+l_gen_texcoord_sphere_reflection:
+#ifdef NW_NORMAL_ENV_MAP
+    mov     TEMP1.xy,           CONST_HALF
+    mov     TEMP1.zw,           CONST_0
+    mad     TEMP_TEX,           TEMP_NORM,      TEMP1, TEMP1
+    mov     TEMP_TEX.zw,        CONST_0_0_1_1
+#else
+    call    l_gen_texcoord_reflection    
+    mov     TEMP1,              TEMP_TEX
+    add     TEMP1.z,            TEMP1.z,        CONST_1
+    dp3     TEMP1,              TEMP1,          TEMP1
+    rsq     TEMP2,              TEMP1.x
+    mul     TEMP2,              TEMP2,          CONST_HALF
+    mul     TEMP_TEX.xy,        TEMP_TEX.xy,    TEMP2
+    add     TEMP_TEX.xy,        TEMP_TEX.xy,    CONST_HALF
+#endif
+    ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// @brief        メイン関数です。
+//-----------------------------------------------------------------------------
+main:
+    // TODO: ここに頂点変形処理を追加する予定です。
+
+    //------------------------------------------
+    // 頂点座標
+    //------------------------------------------
+    call l_transform_matrix_inv
+
+    //------------------------------------------
+    // カラー
+    //------------------------------------------
+    ifb lighting_enable
+	    call l_calc_color_rim
+	    nop
+    else
+			mov     o_Color,            CONST_1
+		endif
+
+    //------------------------------------------
+    // テクスチャ座標計算
+    //------------------------------------------
+    // テクスチャ座標0
+    call l_calc_texcoord0
+
+    // テクスチャ座標1
+    call l_calc_texcoord1
+
+    // テクスチャ座標2
+    call l_calc_texcoord2
+    
+    end
+endmain:
+
+
+#else
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		UvMax					(3)
+#define		TextureMax		(4)
+
+#define		UvMap					(0)
+#define		CubeMap				(1)
+#define		SphereMap			(2)
+#define		ProjMax				(3)
+
+#define		rimPow			cVsRimParam.x
+#define		rimScale		cVsRimParam.y
+#define		phongPow		cVsRimParam.z
+#define		phongScale	cVsRimParam.w
+
+#if defined HLSL
+
+	#define				vec2				float2
+	#define				vec3				float3
+	#define				vec4				float4
+	#define				mat4x4			float4x4
+	#define				mat3x3			float3x3
+	#define				inverse			transpose
+
+	#define ConstantBuffer( NAME, REGNAME, NO )		cbuffer NAME : register( REGNAME )
+	
+	struct VsInput
+	{
+		vec4 Position0		: POSITION0;
+		vec4 Normal				: NORMAL0;
+		vec4 Tangent0			: TANGENT0;
+		vec4 Uv0					: TEXCOORD0;
+		vec4 Uv1					: TEXCOORD1;
+		vec4 Uv2					: TEXCOORD2;	
+		vec4 Color				: COLOR0;
+		vec4 JointIndex		: BLENDINDICES0;
+		vec4 JointWeight	: BLENDWEIGHT0;
+		
+		vec4 Tangent1			: TANGENT1;
+		vec4 Tangent2			: TANGENT2;
+		vec4 OrigNormal		: NORMAL1;
+		vec4 OrigTangent	: TANGENT3;
+		vec4 Position1		: POSITION1;
+		vec4 Position2		: POSITION2;
+		vec4 Position3		: POSITION3;
+	};
+
+	struct PsInput
+	{
+		vec4 Position											: SV_POSITION;
+		vec4 Uv[TextureMax]								: TEXCOORD0;
+		vec4 Color												: COLOR0;
+		vec3 Normal												: NORMAL0;
+		vec3 ObjNormal										: NORMAL1;
+		vec3 ObjLight											: NORAML2;
+		vec3 ObjTangentVec								: TANGENT0;
+		vec4 View													: NORMAL3;
+		vec4 Velocity0										: COLOR1;
+		vec4 Velocity1										: COLOR2;
+		vec4 Velocity2										: COLOR3;
+		vec4 DebugVec											: POSITION0;
+	};
+
+#else
+
+	#version 430
+
+	#define				float2			vec2
+	#define				float3			vec3
+	#define				float4			vec4
+	#define				float4x4		mat4x4
+	#define				float3x3		mat3x3
+	#define				transpose		inverse
+
+	#define ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+
+	layout (location = 0) in vec4 inPosition0;
+	layout (location = 1) in vec4 inNormal;
+	layout (location = 2) in vec4 inTangent0;
+	layout (location = 3) in vec4 inUv0;
+	layout (location = 4) in vec4 inUv1;
+	layout (location = 5) in vec4 inUv2;
+	layout (location = 6) in vec4 inColor;
+	layout (location = 7) in vec4 inJointIndex;
+	layout (location = 8) in vec4 inJointWeight;
+	layout (location = 9) in vec4 inTangent1;
+	layout (location = 10) in vec4 inTangent2;
+	layout (location = 11) in vec4 inOrigNormal;
+	layout (location = 12) in vec4 inOrigTangent;
+	layout (location = 13) in vec4 inPosition1;
+	layout (location = 14) in vec4 inPosition2;
+	layout (location = 15) in vec4 inPosition3;
+
+  out gl_PerVertex {
+    vec4 gl_Position;
+  };
+  
+  out VsOutPuts
+	{
+		vec4 outPos;
+		vec4 outUv[TextureMax];
+		vec4 outColor;
+		vec3 outNormal;
+		vec3 outObjNormal;
+		vec3 outObjLight;
+		vec3 outObjTangentVec;
+		vec4 outView;
+		vec4 outVelocity0;
+		vec4 outVelocity1;
+		vec4 outVelocity2;
+		vec4 outDebugVec;
+	} Out;
+
+	struct VsInput
+	{
+		vec4 Position0;
+		vec4 Normal;
+		vec4 Tangent0;
+		vec4 Uv0;
+		vec4 Uv1;
+		vec4 Uv2;
+		vec4 Color;
+		vec4 JointIndex;
+		vec4 JointWeight;
+		vec4 Tangent1;
+		vec4 Tangent2;
+		vec4 OrigNormal;
+		vec4 OrigTangent;
+		vec4 Position1;
+		vec4 Position2;
+		vec4 Position3;
+	};
+
+	struct PsInput
+	{
+		vec4 Position;
+		vec4 Uv[TextureMax];
+		vec4 Color;
+		vec3 Normal;
+		vec3 ObjNormal;
+		vec3 ObjLight;
+		vec3 ObjTangentVec;
+		vec4 View;
+		vec4 Velocity0;
+		vec4 Velocity1;
+		vec4 Velocity2;
+		vec4 DebugVec;
+	};
+	
+	//-----------------------------------------------------------------------------
+	/// @brief	
+	//-----------------------------------------------------------------------------
+	mat3x3 mul( mat3x3 matA, mat3x3 matB )
+	{
+		return matA * matB;
+	}
+
+	//-----------------------------------------------------------------------------
+	/// @brief	
+	//-----------------------------------------------------------------------------
+	mat4x4 mul( mat4x4 matA, mat4x4 matB )
+	{
+		return matA * matB;
+	}
+
+	//-----------------------------------------------------------------------------
+	/// @brief	
+	//-----------------------------------------------------------------------------
+	vec3 mul( vec3 vec, mat3x3 mat )
+	{
+		vec3		outVec = vec3(0, 0, 0);
+		
+		outVec.x = dot( vec, mat[0] );
+		outVec.y = dot( vec, mat[1] );
+		outVec.z = dot( vec, mat[2] );
+		
+		return outVec;
+	}
+
+	//-----------------------------------------------------------------------------
+	/// @brief	
+	//-----------------------------------------------------------------------------
+	vec4 mul( vec4 vec, mat4 mat )
+	{
+		vec4		outVec = vec4(0, 0, 0, 1);
+		
+		outVec.x = dot( vec, mat[0] );
+		outVec.y = dot( vec, mat[1] );
+		outVec.z = dot( vec, mat[2] );
+		outVec.w = dot( vec, mat[3] );
+		
+		return outVec;
+	}
+
+#endif
+
+
+ConstantBuffer( VertexShaderVectorConstants, b0, 0 )
+{
+	mat4x4	cVsModelMatrix;
+	mat4x4	cVsViewMatrix;
+	mat4x4	cVsModelViewMatrix;
+	mat4x4	cVsProjectionMatrix;
+
+	mat4x4	cVsNoramlRotate;
+	vec4		cVsWorldLightVec;
+	vec4		cVsWorldLightColor;
+	vec4		cVsAmbientLightColor;
+	//vec4		cVsMaterialColor;
+	//vec4		cVsVertexFhongEnable;
+	vec4		cVsCameraPosition;
+	vec4		cVsObjSpaceCameraPosition;
+	vec4		cVsRimParam;
+	vec4		cVsShaderParam;
+	vec4		cVsBlendMeshWeight;
+};
+
+ConstantBuffer( VertexShaderJotinConstants, b1, 1 )
+{
+	mat4x4	cVsJointMatrix[255];
+	bool		cVsSkiningEnable;
+	bool		cVsPadding[3];
+};
+
+ConstantBuffer( VertexShaderFloatConstants, b2, 2 )
+{
+	float		cVsSceneContrast;
+	float		cVsZoneContrast;
+};
+
+ConstantBuffer( VertexShaderBoolConstants, b3, 3 )
+{
+	bool		cVsHalfVecLightEnable;
+	bool		cVsVertexColorEnable;
+	bool		cVsSceneContrastEnable;
+	bool		cVsLightingEnable;
+	bool		cIsPokemonShader;
+	bool		cIsMegaGangarShader;
+	bool		cUseObjectSpaceNormalMap;
+	bool		cRotateSphereMapEnable;
+	bool		cVsFog;
+	bool		cVsNormalToUv;
+};
+
+ConstantBuffer( VertexShaderIntArrayConstants, b4, 4 )
+{
+	int			cMappingType[TextureMax];
+	int     cUvSetNo[TextureMax];
+};
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+vec3 GetReflectVec( vec3 Pos, vec3 Normal )
+{
+	vec3				EyeVec;
+	vec3				ReflectVec;
+	
+	EyeVec = normalize( cVsCameraPosition.xyz - Pos.xyz );
+	ReflectVec = -EyeVec + 2.0f * dot( EyeVec, Normal ) * Normal;//反射ベクトルの計算
+
+	return ReflectVec;
+}
+
+// ------------------------------------------------------------
+// バインドポーズへの変換マトリックス取得（スキニングの逆行列）
+// ------------------------------------------------------------
+mat3x3 GetBindPoseMatrix( const in vec4 objNormal, const in vec4 objTangent, const in vec4 objOrigNormal, const in vec4 objOrigTangent )
+{
+	vec4		objBiNormal = vec4(0, 0, 0, 0);
+	vec4		objOrigBiNormal = vec4(0, 0, 0, 0);
+	mat3x3	tangentSpaceMatrix;
+	mat3x3	tangentSpaceInvMatrix;
+	mat3x3	origTangentSpaceMatrix;
+	mat3x3	origTangentSpaceInvMatrix;
+	mat3x3	toOrigTangentSpaceMatrix;
+	
+	objBiNormal.xyz = cross( objNormal.xyz, objTangent.xyz ).xyz;
+	objOrigBiNormal.xyz = cross( objOrigNormal.xyz, objOrigTangent.xyz );
+
+	tangentSpaceMatrix[0] = objTangent.xyz;
+	tangentSpaceMatrix[1] = objBiNormal.xyz;
+	tangentSpaceMatrix[2] = objNormal.xyz;
+
+	origTangentSpaceMatrix[0] = objOrigTangent.xyz;
+	origTangentSpaceMatrix[1] = objOrigBiNormal.xyz;
+	origTangentSpaceMatrix[2] = objOrigNormal.xyz;
+
+	tangentSpaceInvMatrix = inverse( tangentSpaceMatrix );
+	origTangentSpaceInvMatrix = inverse( origTangentSpaceMatrix );
+
+	//HLSLは行 x 列
+#if defined HLSL
+	origTangentSpaceInvMatrix = origTangentSpaceMatrix;//行に戻す
+	tangentSpaceMatrix = tangentSpaceInvMatrix;//列に戻す
+#endif
+
+	tangentSpaceMatrix = mul( tangentSpaceMatrix, origTangentSpaceInvMatrix );
+
+	return tangentSpaceMatrix;
+}
+
+VsInput VsJointAnimation( VsInput In )
+{
+	float4x4		mat;
+	
+	mat = cVsJointMatrix[int(In.JointIndex.x)] * In.JointWeight.x;
+
+	if ( In.JointIndex.y != -1.0f )
+	{
+		mat += cVsJointMatrix[int(In.JointIndex.y)] * In.JointWeight.y;
+
+		if ( In.JointIndex.z != -1.0f )
+		{
+			mat += cVsJointMatrix[int(In.JointIndex.z)] * In.JointWeight.z;
+
+			if ( In.JointIndex.w != -1.0f )
+				mat += cVsJointMatrix[int(In.JointIndex.w)] * In.JointWeight.w;
+		}
+	}
+	
+	In.Position0 = mul( In.Position0, mat );
+	In.Position0.w = 1.0f;
+
+// 2014.12.01 追加. 何故か両対応できなかったのでマクロで対処.
+#if defined HLSL
+  float3x3		mat33 = mat;
+#else
+	float3x3		mat33;
+	for( int i = 0; i < 3; i++ )
+  {
+		mat33[i] = mat[i].xyz;
+  }
+#endif
+
+	In.Normal.xyz = mul( In.Normal.xyz, mat33 );
+	In.Normal.xyz = normalize( In.Normal.xyz );
+	In.Normal.w = 1.0f;
+	In.Tangent0.xyz = mul( In.Tangent0.xyz, mat33 );
+	In.Tangent0.xyz = normalize( In.Tangent0.xyz );
+	In.Tangent0.w = 1.0f;
+	
+	return In;
+}
+
+// ------------------------------------------------------------
+// 頂点シェーダプログラム
+// ------------------------------------------------------------
+#if defined HLSL
+PsInput VsMain( VsInput input )
+{
+	PsInput			outPut = (PsInput)0;
+	
+#else
+
+void main( void )
+{
+	PsInput			outPut;
+	VsInput			input;
+	
+	input.Position0 = inPosition0;
+	input.Normal = inNormal;
+	input.Tangent0 = inTangent0;
+	input.Uv0 = inUv0;
+	input.Uv1 = inUv1;
+	input.Uv2 = inUv2;
+	input.Color = inColor;
+	input.JointIndex = inJointIndex;
+	input.JointWeight = inJointWeight;
+	input.Tangent1 = inTangent1;
+	input.Tangent2 = inTangent2;
+	input.OrigNormal = inOrigNormal;
+	input.OrigTangent = inOrigTangent;
+	input.Position1 = inPosition1;
+	input.Position2 = inPosition2;
+	input.Position3 = inPosition3;
+
+#endif
+
+	VsInput			origInput = input;
+
+	outPut.DebugVec = vec4( 1.0f, 0.0f, 0.0f, 1.0f );
+
+	vec4		pos = vec4(0, 0, 0, 1);
+	vec4		world_pos = vec4(0, 0, 0, 1);
+	vec4		view = vec4(0, 0, 1, 1);
+	vec4		objNormal = vec4(0, 0, 0, 0);
+	vec4		objTangent[TextureMax];
+	vec4		worldViewNormal = vec4(0, 0, 0, 0);
+	vec4		objLight = vec4(0, 0, 0, 0);
+	vec4		objView = vec4(0, 0, 0, 0);
+	vec4		worldViewLight = vec4(0, 0, 0, 0);
+	vec4		halfVec = vec4(0, 0, 0, 0);
+	vec4		reflectVec = vec4(0, 0, 0, 0);
+	vec4		lightVec = cVsWorldLightVec;
+	vec4		objSpaceLightVec;
+	vec4		objColor = vec4(1, 1, 1, 1);
+	mat4x4	modelInvMatrix = inverse( cVsModelMatrix );
+	mat4x4	modelViewInvMatrix = inverse( cVsModelViewMatrix );
+	
+	//IsBattleChar2.0 input.Position0 = lerp( input.Position0, input.Position1, cVsBlendMeshWeight.y );
+	//IsBattleChar2.0 input.Position0 = lerp( input.Position0, input.Position2, cVsBlendMeshWeight.z );
+	
+	if ( cVsSkiningEnable )
+	{
+		input = VsJointAnimation( input );
+	}
+
+	if ( cVsVertexColorEnable )
+	{
+		objColor = input.Color;
+	}
+
+	{
+		vec4		velocity3;
+
+		world_pos = mul( input.Position0, cVsModelMatrix );
+		outPut.Velocity0 = world_pos;
+
+		outPut.Velocity1 = mul( input.Position1, cVsModelMatrix );
+		outPut.Velocity2 = mul( input.Position2, cVsModelMatrix );
+		velocity3 = mul( input.Position3, cVsModelMatrix );
+
+		outPut.Velocity0.w = velocity3.x;
+		outPut.Velocity1.w = velocity3.y;
+		outPut.Velocity2.w = velocity3.z;
+	}
+
+	//-----------------
+
+	view = world_pos;
+	view = mul( view, cVsViewMatrix );
+
+	//view = mul( world_pos, cVsModelViewMatrix );
+	objView = normalize(world_pos);
+	pos = mul( view, cVsProjectionMatrix );
+	outPut.Position = pos;
+	view = vec4(0, 0, -1, 0);
+
+	objNormal.xyz = normalize(input.Normal.xyz).xyz;
+	objNormal.w = 0.0;
+	outPut.Normal.xyz = objNormal.xyz;
+	objNormal = mul( objNormal, cVsModelMatrix );
+	objNormal.w = 0.0;
+
+	{
+		objTangent[0].xyz = normalize(input.Tangent0.xyz).xyz;
+		objTangent[1].xyz = normalize(input.Tangent1.xyz).xyz;
+		objTangent[2].xyz = normalize(input.Tangent2.xyz).xyz;
+
+		for( int i = 0; i < UvMax; i++ )
+		{
+			objTangent[i].w = 0.0;
+			objTangent[i] = mul( objTangent[i], cVsModelMatrix );
+		}
+	}
+	
+	if ( cVsHalfVecLightEnable )
+	{
+		vec4		_objView = input.Position0 - cVsCameraPosition;
+		_objView.w = 0.0f;
+		_objView.xyz = normalize( _objView.xyz );
+		
+		//lightVec.xyz = -lightVec.xyz;
+		//lightVec.xyz += -_objView.xyz;
+		//lightVec.xyz = -normalize( lightVec.xyz ).xyz;
+		
+		lightVec.xyz = _objView.xyz;
+	}
+
+	if ( cUseObjectSpaceNormalMap )
+	{
+		mat3x3	toOrigTangentSpaceMatrix;
+		toOrigTangentSpaceMatrix = GetBindPoseMatrix( input.Normal, input.Tangent0, origInput.Normal, origInput.Tangent0 );
+		objSpaceLightVec.xyz = mul( lightVec.xyz, toOrigTangentSpaceMatrix );
+	}
+
+	objLight = lightVec;
+	objLight.w = 0.0;//平行移動をしない
+	objLight = normalize( mul( objLight, modelInvMatrix) );
+
+	worldViewNormal = normalize( mul(objNormal, cVsViewMatrix));
+	worldViewLight = normalize( mul(objLight, cVsViewMatrix) );	
+
+	view = normalize( view );
+
+	halfVec = -view - worldViewLight;
+	halfVec.xyz = normalize( halfVec.xyz );
+
+	for( int i = 0; i < UvMax; i++)
+	{
+		vec2		uv;
+		vec4		uvValue = vec4(0, 0, 0, 0);
+
+		if ( cMappingType[i] == UvMap )
+		{
+      if ( cUvSetNo[i] == 0 )
+			  uvValue.xy = input.Uv0.xy;
+      else if ( cUvSetNo[i] == 1 )
+			  uvValue.xy = input.Uv1.xy;
+      else if ( cUvSetNo[i] == 2 )
+			  uvValue.xy = input.Uv2.xy;
+		}
+		else if ( cMappingType[i] == CubeMap )
+		{
+			//uvValue = reflectVec;
+			uvValue = worldViewNormal;
+		}
+		else if ( cMappingType[i] == SphereMap )
+		{
+			uv.xy = worldViewNormal.xy;
+			uv *= 0.5;
+			uv += 0.5;
+			uvValue.xy = uv.xy;
+		}
+		else if ( cMappingType[i] == ProjMax )
+		{
+			pos.xyz /= pos.w;
+			uv.xy = pos.xy;
+			uv *= 0.5;
+			uv += 0.5;
+			uvValue.xy = uv.xy;
+		}
+
+		if ( i == 0 )
+			outPut.Uv[0] = uvValue;
+		else if ( i == 1 )
+			outPut.Uv[1] = uvValue;
+		else if ( i == 2 )
+			outPut.Uv[2] = uvValue;
+	}
+
+	outPut.Uv[3].xy = vec2(0,2);
+	
+	if ( cVsNormalToUv )
+	{
+		vec2			normalUv;
+		normalUv.x = worldViewNormal.x;
+		normalUv.y = worldViewNormal.y;
+		normalUv += 1.0;
+		normalUv *= 0.5;
+		outPut.Uv[0].xy = vec2( normalUv.x, normalUv.y );
+	}
+
+	{//outColor出力
+		outPut.Color = objColor;
+	}
+
+	{//outObjNormal出力
+		outPut.ObjNormal.xyz = objNormal.xyz;
+	}
+
+	{//outObjTangentVec出力
+		outPut.ObjTangentVec.xyz = objTangent[0].xyz;
+	}
+
+	{//outObjLight出力
+		outPut.ObjLight = objLight.xyz;
+	}
+
+	{//outView出力
+		outPut.View.xyz = cVsObjSpaceCameraPosition.xyz - world_pos.xyz;
+		outPut.View.xyz = normalize( outPut.View.xyz );
+		outPut.View.w = 0.0;
+
+		if ( cUseObjectSpaceNormalMap )
+		{
+			outPut.View.xyz = -objSpaceLightVec.xyz;//上書き
+
+			outPut.ObjNormal.xyz = vec3(0, 0, 1);
+			outPut.ObjTangentVec.xyz = vec3(1, 0, 0);
+		}
+	}
+
+	if ( cVsLightingEnable )
+	{
+		float		lightPow = dot( objNormal, -objLight );
+		vec4		lightCol;
+
+		lightPow = max( lightPow, 0.0 );
+		lightPow = min( lightPow, 1.0 );
+
+		lightCol = cVsWorldLightColor * lightPow + cVsAmbientLightColor;
+
+		outPut.Color.xyz = objColor.xyz * lightCol.xyz;
+		outPut.Color.w = objColor.w;
+		//クランプ
+		outPut.Color = max( outPut.Color, 0.0 );
+		outPut.Color = min( outPut.Color, 1.0 );
+	}
+
+	//==================================
+	if ( cIsPokemonShader )
+	{
+		if ( cIsMegaGangarShader )
+		{
+			outPut.Color.x = world_pos.y / cVsShaderParam.w;
+		}
+
+		//逆光
+		float		backlight = dot( objNormal, objLight );
+		float		scale = dot( view, worldViewLight ) * -1.0;//ライトと視野ベクトルが平行のときは０、直行するときは1.0
+
+		backlight = max( backlight, 0.0 );
+
+		scale = min( scale, 1.0 );
+		scale = max( scale, 0.0 );
+		scale = (scale * 0.5) + 0.5;//ライトと視野ベクトルが平行のときは0.5、直行するときは1.0に調整
+
+		outPut.Color.y = backlight * scale;
+		
+		//フォン計算
+		worldViewNormal.xyz = normalize( worldViewNormal.xyz );
+		float		phong = dot(worldViewNormal.xyz, halfVec.xyz);
+		phong = max( phong, 0.0 );
+		phong = min( phong, 1.0 );
+		phong = pow( phong, phongPow ) * phongScale;
+		outPut.Color.z = phong;
+
+		//リム計算
+		worldViewNormal.xyz = normalize( worldViewNormal.xyz );
+		float	rim = dot( worldViewNormal.xyz, -view.xyz );
+		rim = max( rim, 0.0 );
+		rim = min( rim, 1.0 );
+		rim = 1.0 - rim;
+		rim = pow( rim, rimPow ) * rimScale;
+		outPut.Color.w = rim;
+
+		//クランプ
+		outPut.Color = max( outPut.Color, 0.0 );
+		outPut.Color = min( outPut.Color, 1.0 );
+	}
+
+	if ( cVsSceneContrastEnable )
+	{
+		outPut.Color.xyz = objColor.xyz;
+		outPut.Color.w = cVsSceneContrast * cVsZoneContrast;
+	}
+
+	//outPut.DebugVec.xyz = objSpaceLightVec.xyz;
+	//outPut.DebugVec += 1.0f;
+	//outPut.DebugVec *= 0.5f;
+
+	/*outPut.DebugVec.xyz = worldViewNormal.xyz;
+	outPut.DebugVec.w = worldViewNormal.w;
+	outPut.DebugVec += 1.0;
+	outPut.DebugVec *= 0.5;*/
+	
+	outPut.DebugVec = world_pos;
+
+#if defined HLSL
+	return outPut;
+}
+
+#else
+
+	Out.outPos = outPut.Position;
+	for( int i = 0; i < UvMax; i++)
+		Out.outUv[i] = outPut.Uv[i];
+	Out.outColor = outPut.Color;
+	Out.outNormal = outPut.Normal;
+	Out.outObjNormal = outPut.ObjNormal;
+	Out.outObjLight = outPut.ObjLight;
+	Out.outObjTangentVec = outPut.ObjTangentVec;
+	Out.outView = outPut.View;
+	Out.outVelocity0 = outPut.Velocity0;
+	Out.outVelocity1 = outPut.Velocity1;
+	Out.outVelocity2 = outPut.Velocity2;
+	Out.outDebugVec = world_pos;
+
+	gl_Position = Out.outPos;
+}
+
+
+
+#endif
+#endif

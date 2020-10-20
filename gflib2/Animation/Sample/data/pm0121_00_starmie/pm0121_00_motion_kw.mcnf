@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+	<INTEREST>
+		<NODE _Name="Origin" _Type="Y_90" _Low="-30" _High="30" _Low2="-20" _High2="20" _Speed="100"/>
+	</INTEREST>
+</root>
+

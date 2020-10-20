@@ -1,0 +1,7 @@
+﻿テクスチャが貼られていないところの処理をどうするか
+（RepeatUとRepeatVに
+　WRAP, MIRROR, CLAMP, BORDER のどれを指定すればよいか）
+
+    ・BORDER(別途指定している色(黒))
+
+以上。

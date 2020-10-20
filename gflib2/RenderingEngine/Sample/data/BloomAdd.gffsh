@@ -1,0 +1,58 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				フラグメントシェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		TextureMax		(2)
+
+#if defined HLSL
+#else
+
+	#version	430
+	#define		STATIC				 		
+	#define		float2		vec2
+	#define		float3		vec3
+	#define		float4		vec4
+	#define		tex2D		texture2D
+	
+	in		vec4		outPos;
+	in		vec4		outUv  [TextureMax];
+	uniform sampler2D	Texture[TextureMax];	//テクスチャユニット
+
+	struct PsInput
+	{
+		vec4 Pos;
+		vec4 Uv[TextureMax];
+	};
+
+#endif
+
+STATIC vec4	gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+
+//-----------------------------------------------------------------------------
+/// @brief	メイン関数
+//-----------------------------------------------------------------------------
+#if defined HLSL
+#else
+void main (void)
+{
+	PsInput	input;	
+	input.Uv[0] = outUv[0];
+	input.Uv[1] = outUv[1];
+#endif
+
+	vec4 color0		 = tex2D( Texture[0], input.Uv[0].xy );
+	vec4 color1		 = tex2D( Texture[1], input.Uv[1].xy );
+	gl_FragColor	 = color0 + color1;
+
+#if defined HLSL
+#endif
+}
+
+
+

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4DD74F0B-3053-4FBD-AECE-EFC70705D1A9}</ProjectGuid>
+    <RootNamespace>SequenceConverter</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\INTELLIGENT SYSTEMS\IS-CTR Software Package\X86\include;../../old_lib/gflib/prog/include;../../old_lib/opensource/GL/vc;$(QT_DIR_4)/include;C:\Program Files (x86)\KMC\CTRHOSTIO\SDK;$(QT_DIR_4)/include/QtCore;$(QT_DIR_4)/include/QtGui;$(QT_DIR_4)/include/Qt;$(QT_DIR_4)/src/3rdparty/zlib;../../old_lib/opensource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../old_lib/gflib/prog/libraries/$(Platform);../../old_lib/opensource/GL/vc/GL;../../old_lib/opensource/pawn/libraries/$(Platform);../../old_lib/opensource/pawncompiler/libraries/$(Platform);../../../libraries/opensource/QScintilla/lib/Win32;$(QT_DIR_4)/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\INTELLIGENT SYSTEMS\IS-CTR Software Package\X86\include;../../old_lib/gflib/prog/include;../../old_lib/opensource/GL/vc;$(QT_DIR_4)/include;C:\Program Files (x86)\KMC\CTRHOSTIO\SDK;$(QT_DIR_4)/include/QtCore;$(QT_DIR_4)/include/QtGui;$(QT_DIR_4)/include/Qt;$(QT_DIR_4)/src/3rdparty/zlib;../../old_lib/opensource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../old_lib/gflib/prog/build/Release/Win32;../../old_lib/opensource/GL/vc/GL;../../old_lib/opensource/pawn/libraries/$(Platform);../../old_lib/opensource/pawncompiler/libraries/$(Platform);../../../libraries/opensource/QScintilla/lib/Win32;$(QT_DIR_4)/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\converter\converterDef.cpp" />
+    <ClCompile Include="..\..\converter\converterMain.cpp" />
+    <ClCompile Include="..\..\converter\convertSeqFile.cpp" />
+    <ClCompile Include="..\..\localDef.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\gfl_Framework.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerAttribute.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\Common\SecureData.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\Matrix.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\NativeUtil.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\Vector.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\String\LogPrint.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\String\Util2.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\UvAdjustShader.cpp" />
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\Win\WinGLSLShaderObject.cpp" />
+    <ClCompile Include="C:\home\gflib_cpp\gflib\prog\include\qt\moc_gfl_MainWindow.cpp" />
+    <ClCompile Include="C:\home\gflib_cpp\gflib\prog\include\qt\moc_gfl_QtProperty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\converter\convertSeqFile.h" />
+    <ClInclude Include="..\..\converter\converterDef.h" />
+    <ClInclude Include="..\..\localDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.frag">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.vert">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\UvAdjustShader.geom">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

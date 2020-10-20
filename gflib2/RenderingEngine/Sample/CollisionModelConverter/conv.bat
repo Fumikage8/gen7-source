@@ -1,0 +1,1 @@
+CollisionModelConverter.exe map.gfmdl map.gfbcol

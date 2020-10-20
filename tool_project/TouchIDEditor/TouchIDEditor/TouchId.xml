@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+  <ID Name="COL_BG" Text="無反応" Color="#000000"/>
+  <ID Name="COL_BODY" Text="体" Color="#ffffff"/>
+  <ID Name="COL_EAR_L" Text="右耳" Color="#000078"/>
+  <ID Name="COL_EAR_R" Text="左耳" Color="#ff0078"/>
+  <ID Name="COL_EYE_L_U" Text="右目顎上" Color="#007878"/>
+  <ID Name="COL_EYE_L_D" Text="右目顎下" Color="#003232"/>
+  <ID Name="COL_EYE_R_U" Text="左目顎上" Color="#ff7878"/>
+  <ID Name="COL_EYE_R_D" Text="左目顎下" Color="#ff3232"/>
+  <ID Name="COL_FACE" Text="顎上" Color="#ababab"/>
+  <ID Name="COL_CHIN" Text="顎下" Color="#1f1f1f"/>
+  <ID Name="COL_HAND_L" Text="手（左OR右）" Color="#8c3200"/>
+  <ID Name="COL_HURTS_U" Text="痛い顎上" Color="#aa0000" Id="pm0211 pm0318 pm0319 pm0597 pm0598 pm0624 pm0625 pm0101"/>
+  <ID Name="COL_HURTS_D" Text="痛い顎下" Color="#780000" Id="pm0211 pm0318 pm0319 pm0597 pm0598 pm0624 pm0625 pm0101"/>
+  <ID Name="COL_GHOST_U" Text="ゴースト顎上" Color="#b4b4ff" Id="pm0092 pm0093 pm0094 pm0200 pm0353 pm0354 pm0355 pm0356 pm0425 pm0426 pm0429 pm0442 pm0477 pm0479 pm0487 pm0562 pm0563 pm0607 pm0608 pm0609 pm0702 pm0703 pm0735 pm0736 pm0101"/>
+  <ID Name="COL_GHOST_D" Text="ゴースト顎下" Color="#7878ff" Id="pm0092 pm0093 pm0094 pm0200 pm0353 pm0354 pm0355 pm0356 pm0425 pm0426 pm0429 pm0442 pm0477 pm0479 pm0487 pm0562 pm0563 pm0607 pm0608 pm0609 pm0702 pm0703 pm0735 pm0736 pm0101"/>
+  <ID Name="COL_BURN_U" Text="やけど顎上" Color="#ff3232" Id="pm0004 pm0005 pm0006 pm0077 pm0078 pm0126 pm0146 pm0155 pm0156 pm0157 pm0218 pm0219 pm0324 pm0390 pm0391 pm0392 pm0467 pm0485 pm0500 pm0555 pm0631 pm0636 pm0637 pm0704 pm0705 pm0718 pm0719 pm0101"/>
+  <ID Name="COL_BURN_D" Text="やけど顎下" Color="#ff0000" Id="pm0004 pm0005 pm0006 pm0077 pm0078 pm0126 pm0146 pm0155 pm0156 pm0157 pm0218 pm0219 pm0324 pm0390 pm0391 pm0392 pm0467 pm0485 pm0500 pm0555 pm0631 pm0636 pm0637 pm0704 pm0705 pm0718 pm0719 pm0101"/>
+  <ID Name="COL_THUNDER_U" Text="ビリビリ顎上" Color="#ffff64" Id="pm0025 pm0026 pm0125 pm0145 pm0172 pm0179 pm0180 pm0181 pm0239 pm0403 pm0404 pm0406 pm0741 pm0466 pm0479 pm0522 pm0523 pm0587 pm0602 pm0603 pm0604 pm0101"/>
+  <ID Name="COL_THUNDER_D" Text="びりビリ顎下" Color="#ffff00" Id="pm0025 pm0026 pm0125 pm0145 pm0172 pm0179 pm0180 pm0181 pm0239 pm0403 pm0404 pm0406 pm0741 pm0466 pm0479 pm0522 pm0523 pm0587 pm0602 pm0603 pm0604 pm0101"/>
+  <ID Name="COL_GEL_U" Text="ジェル顎上" Color="#32c8ff" Id="pm0132 pm0577 pm0578 pm0579 pm0592 pm0593 pm0613 pm0765 pm0770 pm0101"/>
+  <ID Name="COL_GEL_D" Text="ジェル顎下" Color="#0078ff" Id="pm0132 pm0577 pm0578 pm0579 pm0592 pm0593 pm0613 pm0765 pm0770 pm0101"/>
+  <ID Name="COL_SLUDGE_U" Text="ヘドロ顎上" Color="#6a2f9b" Id="pm0568 pm0569 pm0044 pm0088 pm0089 pm0101"/>
+  <ID Name="COL_SLUDGE_D" Text="ヘドロ顎下" Color="#3c009b" Id="pm0568 pm0569 pm0044 pm0088 pm0089 pm0101"/>
+  <ID Name="COL_COLD_U" Text="冷たい顎上" Color="#bbffff" Id="pm0144 pm0362 pm0378 pm0459 pm0460 pm0478 pm0582 pm0583 pm0584 pm0614 pm0615 pm0646 pm0739 pm0740 pm0749 pm0751 pm0101"/>
+  <ID Name="COL_COLD_D" Text="冷たい顎下" Color="#78ffff" Id="pm0144 pm0362 pm0378 pm0459 pm0460 pm0478 pm0582 pm0583 pm0584 pm0614 pm0615 pm0646 pm0739 pm0740 pm0749 pm0751 pm0101"/>
+  <ID Name="COL_HATE_U" Text="嫌がる顎上" Color="#8e84be" Comment="※嫌なところ"/>
+  <ID Name="COL_HATE_D" Text="嫌がる顎下" Color="#604fb5" Comment="※嫌なところ"/>
+  <ID Name="COL_LIKE_U" Text="好き顎上" Color="#F8CDE0" Comment="※好きなところ"/>
+  <ID Name="COL_LIKE_D" Text="好き顎下" Color="#EF93BB" Comment="※好きなところ"/>
+  <ID Name="COL_GHOST_HATE_U" Text="ゴースト嫌がる顎上" Color="#958ec9" Id="pm0999"/>
+  <ID Name="COL_GHOST_HATE_D" Text="ゴースト嫌がる顎下" Color="#4540b9" Id="pm0999"/>
+  <ID Name="COL_GHOST_LIKE_U" Text="ゴースト好き顎上" Color="#ebc8e8" Id="pm0999"/>
+  <ID Name="COL_GHOST_LIKE_D" Text="ゴースト好き顎下" Color="#b686d8" Id="pm0999"/>
+  <ID Name="COL_GEL_HATE_U" Text="ジェル嫌がる顎上" Color="#8b87c0" Id="pm0999"/>
+  <ID Name="COL_GEL_HATE_D" Text="ジェル嫌がる顎下" Color="#3561d6" Id="pm0999"/>
+  <ID Name="COL_GEL_LIKE_U" Text="ジェル好き顎上" Color="#c3cce7" Id="pm0999"/>
+  <ID Name="COL_GEL_LIKE_D" Text="ジェル好き顎下" Color="#a08ad0" Id="pm0999"/>
+  <ID Name="COL_SLUDGE_HATE_U" Text="ヘドロ嫌がる顎上" Color="#8064af" Id="pm0999"/>
+  <ID Name="COL_SLUDGE_HATE_D" Text="ヘドロ嫌がる顎下" Color="#4d415d" Id="pm0999"/>
+  <ID Name="COL_SLUDGE_LIKE_U" Text="ヘドロ好き顎上" Color="#b583bd" Id="pm0999"/>
+  <ID Name="COL_SLUDGE_LIKE_D" Text="ヘドロ好き顎下" Color="#ae5daf" Id="pm0999"/>
+</root>

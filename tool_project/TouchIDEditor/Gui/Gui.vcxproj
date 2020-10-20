@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BrushShader.h" />
+    <ClInclude Include="include\BucketJob.h" />
+    <ClInclude Include="include\FillTextureShader.h" />
+    <ClInclude Include="include\GLUtil.h" />
+    <ClInclude Include="include\GLWidget.h" />
+    <ClInclude Include="include\IdWidget.h" />
+    <ClInclude Include="include\MainWindow.h" />
+    <ClInclude Include="include\MotionWidget.h" />
+    <ClInclude Include="include\MultiSamplingTextureShader.h" />
+    <ClInclude Include="include\MultiTextureShader.h" />
+    <ClInclude Include="include\PaintAction.h" />
+    <ClInclude Include="include\ResourceConv.h" />
+    <ClInclude Include="include\TextureWidget.h" />
+    <ClInclude Include="include\TextureWidgetDef.h" />
+    <ClInclude Include="include\ToolWidget.h" />
+    <ClInclude Include="include\UvPaintView.h" />
+    <ClInclude Include="include\UvPaintWindow.h" />
+    <ClInclude Include="include\UvPaintWindowInfo.h" />
+    <ClInclude Include="include\_Viewer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\moc_DisplayWidget.cpp" />
+    <ClCompile Include="include\moc_IdWidget.cpp" />
+    <ClCompile Include="include\moc_MainWindow.cpp" />
+    <ClCompile Include="include\moc_MotionWidget.cpp" />
+    <ClCompile Include="include\moc_TextureWidget.cpp" />
+    <ClCompile Include="include\moc_ToolWidget.cpp" />
+    <ClCompile Include="include\moc_UvPaintWindow.cpp" />
+    <ClCompile Include="source\BrushShader.cpp" />
+    <ClCompile Include="source\BucketJob.cpp" />
+    <ClCompile Include="source\DisplayWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\FillTextureShader.cpp" />
+    <ClCompile Include="source\GLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\GLWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\IdWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\MotionWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\MultiSamplingTextureShader.cpp" />
+    <ClCompile Include="source\MultiTextureShader.cpp" />
+    <ClCompile Include="source\PaintAction.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\PaintUtil.cpp" />
+    <ClCompile Include="source\ResourceConv.cpp" />
+    <ClCompile Include="source\TextureWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\ToolWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\UvPaintView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\UvPaintWindow.cpp" />
+    <ClCompile Include="source\UvPaintWindowInfo.cpp" />
+    <ClCompile Include="source\_Viewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="source\Brush.tga">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\BrushShader.frag">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\BrushShader.vert">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\FillTextureShader.frag">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\FillTextureShader.vert">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiSamplingTextureShader.frag">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiSamplingTextureShader.vert">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiTextureShader.frag">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiTextureShader.vert">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7AF37F50-0C3B-43D2-B5B0-849A3BF0323F}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectName>Gui</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_DEBUG;_WINDOWS;NOT_USE_HIO_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_WINDOWS;NOT_USE_HIO_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_DEBUG;_WINDOWS;NOT_USE_HIO_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_WINDOWS;NOT_USE_HIO_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_WINDOWS;NOT_USE_HIO_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <PreBuildEvent>
+      <Command>rm -f $(OutDir)$(TargetName)$(TargetExt)
+../tools/run_qtc.bat ./</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/include;$(NIJI_TOOL_PROJECT_DIR)TouchIDEditor/gfl_Framework/include;$(QT4_DIR)/include;$(QT4_DIR)/include/Qt;$(QT4_DIR)/src/3rdparty/zlib;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

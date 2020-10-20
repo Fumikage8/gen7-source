@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Source Path="C:/next/next_3d/chara/pokemon_acc/pm0051_00_dugtrio/scenes/pm0051_00_acc.mb" TargetNode="|pm0051_00"/>
+<GfLocator version="0.1">
+	<Locators>
+		<Locator Name="Origin" ParentName="pm0051_00">
+			<LocalMatrix>1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>0.000000 -0.000000 0.000000</LocalRotation>
+			<LocalTransform>0.000000 0.000000 0.000000</LocalTransform>
+		</Locator>
+		<Locator Name="AccNoseA1" ParentName="FeelerA">
+			<LocalMatrix>0.000000 1.000000 -0.000017 0.000000 0.258819 0.000016 0.965926 0.000000 0.965926 -0.000004 -0.258819 0.000000 6.257503 -0.024781 -1.510430 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-1.308997 3.141576 -1.570796</LocalRotation>
+			<LocalTransform>6.257503 -0.024781 -1.510430</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadA1" ParentName="HeadA">
+			<LocalMatrix>0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 21.887232 0.024756 -0.064421 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-1.570796 -0.000000 -1.570796</LocalRotation>
+			<LocalTransform>21.887232 0.024756 -0.064421</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadA2" ParentName="HeadA">
+			<LocalMatrix>0.000000 -0.707107 0.707107 0.000000 0.707107 -0.500000 -0.500000 0.000000 0.707107 0.500000 0.500000 0.000000 16.769825 9.631160 9.541971 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.785398 -0.785398 -1.570796</LocalRotation>
+			<LocalTransform>16.769825 9.631160 9.541971</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadA3" ParentName="HeadA">
+			<LocalMatrix>0.000000 -0.707107 -0.707107 0.000000 0.707107 0.500000 -0.500000 0.000000 0.707107 -0.500000 0.500000 0.000000 16.769823 -9.581647 9.541970 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.785398 0.785398 -1.570796</LocalRotation>
+			<LocalTransform>16.769823 -9.581647 9.541970</LocalTransform>
+		</Locator>
+		<Locator Name="AccEyeA1" ParentName="HeadA">
+			<LocalMatrix>0.000000 -1.000000 0.000000 0.000000 0.963630 0.000000 -0.267238 0.000000 0.267238 0.000000 0.963630 0.000000 7.951056 0.024762 18.478294 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.270526 -0.000000 -1.570796</LocalRotation>
+			<LocalTransform>7.951056 0.024762 18.478294</LocalTransform>
+		</Locator>
+		<Locator Name="AccNoseB1" ParentName="FeelerB">
+			<LocalMatrix>0.000000 1.000000 0.000000 0.000000 0.258819 -0.000000 0.965926 0.000000 0.965926 -0.000000 -0.258819 0.000000 5.019388 0.008595 -1.386548 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-1.308997 -3.141593 -1.570796</LocalRotation>
+			<LocalTransform>5.019388 0.008595 -1.386548</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadB1" ParentName="HeadB">
+			<LocalMatrix>0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 21.850420 -0.008612 -0.012932 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-1.570796 -0.000000 -1.570796</LocalRotation>
+			<LocalTransform>21.850420 -0.008612 -0.012932</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadB2" ParentName="HeadB">
+			<LocalMatrix>0.000000 -0.707107 0.707107 0.000000 0.707107 -0.500000 -0.500000 0.000000 0.707107 0.500000 0.500000 0.000000 16.698277 9.663003 9.658670 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.785398 -0.785398 -1.570796</LocalRotation>
+			<LocalTransform>16.698277 9.663003 9.658670</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadB3" ParentName="HeadB">
+			<LocalMatrix>0.000000 -0.707107 -0.707107 0.000000 0.707107 0.500000 -0.500000 0.000000 0.707107 -0.500000 0.500000 0.000000 16.698277 -9.680226 9.658670 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.785398 0.785398 -1.570796</LocalRotation>
+			<LocalTransform>16.698277 -9.680226 9.658670</LocalTransform>
+		</Locator>
+		<Locator Name="AccEyeB1" ParentName="HeadB">
+			<LocalMatrix>0.000000 -1.000000 0.000000 0.000000 0.963630 0.000000 -0.267238 0.000000 0.267238 0.000000 0.963630 0.000000 7.765376 -0.008604 18.644773 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.270526 -0.000000 -1.570796</LocalRotation>
+			<LocalTransform>7.765376 -0.008604 18.644773</LocalTransform>
+		</Locator>
+		<Locator Name="AccNoseC1" ParentName="FeelerC">
+			<LocalMatrix>0.000000 1.000000 0.000000 0.000000 0.258819 -0.000000 0.965926 0.000000 0.965926 0.000000 -0.258819 0.000000 5.785749 0.000000 -0.493933 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-1.308997 -3.141593 -1.570796</LocalRotation>
+			<LocalTransform>5.785749 0.000000 -0.493933</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadC1" ParentName="HeadC">
+			<LocalMatrix>0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 21.935375 0.000000 -0.106969 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-1.570796 -0.000000 -1.570796</LocalRotation>
+			<LocalTransform>21.935375 0.000000 -0.106969</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadC2" ParentName="HeadC">
+			<LocalMatrix>0.000000 -0.707107 0.707107 0.000000 0.707107 -0.500000 -0.500000 0.000000 0.707107 0.500000 0.500000 0.000000 16.585361 9.709044 9.600874 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.785398 -0.785398 -1.570796</LocalRotation>
+			<LocalTransform>16.585361 9.709044 9.600874</LocalTransform>
+		</Locator>
+		<Locator Name="AccHeadC3" ParentName="HeadC">
+			<LocalMatrix>0.000000 -0.707107 -0.707107 0.000000 0.707107 0.500000 -0.500000 0.000000 0.707107 -0.500000 0.500000 0.000000 16.585361 -9.709044 9.600874 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.785398 0.785398 -1.570796</LocalRotation>
+			<LocalTransform>16.585361 -9.709044 9.600874</LocalTransform>
+		</Locator>
+		<Locator Name="AccEyeC1" ParentName="HeadC">
+			<LocalMatrix>0.000000 -1.000000 0.000000 0.000000 0.953717 0.000000 -0.300706 0.000000 0.300706 0.000000 0.953717 0.000000 7.880997 0.000006 18.738838 1.000000</LocalMatrix>
+			<LocalScale>1.000000 1.000000 1.000000</LocalScale>
+			<LocalRotation>-0.305433 -0.000000 -1.570796</LocalRotation>
+			<LocalTransform>7.880997 0.000006 18.738838</LocalTransform>
+		</Locator>
+	</Locators>
+</GfLocator>
+

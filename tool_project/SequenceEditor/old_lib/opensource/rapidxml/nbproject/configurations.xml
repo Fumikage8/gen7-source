@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles" displayName="ソースファイル" projectFiles="true">
+      <itemPath>C:/home/gflib_cpp/opensource/rapidxml/gfl_CmdlXml.cpp</itemPath>
+      <itemPath>C:/home/gflib_cpp/opensource/rapidxml/gfl_CsklaXml.cpp</itemPath>
+      <itemPath>C:/home/gflib_cpp/opensource/rapidxml/gfl_CtexXml.cpp</itemPath>
+      <itemPath>gfl_DaeXml.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles" displayName="ヘッダーファイル" projectFiles="true">
+      <itemPath>C:/home/gflib_cpp/opensource/rapidxml/gfl_CmdlXml.h</itemPath>
+      <itemPath>C:/home/gflib_cpp/opensource/rapidxml/gfl_CsklaXml.h</itemPath>
+      <itemPath>C:/home/gflib_cpp/opensource/rapidxml/gfl_CtexXml.h</itemPath>
+      <itemPath>gfl_DaeXml.h</itemPath>
+      <itemPath>gfl_Xml.h</itemPath>
+      <itemPath>rapidxml.hpp</itemPath>
+      <itemPath>rapidxml_iterators.hpp</itemPath>
+      <itemPath>rapidxml_print.hpp</itemPath>
+      <itemPath>rapidxml_utils.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="リソースファイル" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="テストファイル"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要なファイル"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>VisualC|Cygwin</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../gflib/prog/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>EX_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+        <archiverTool>
+          <output>../../lib/mingw/libExCored.a</output>
+        </archiverTool>
+        <requiredProjects>
+          <makeArtifact PL="../../gflib/prog"
+                        CT="3"
+                        CN="Debug"
+                        AC="true"
+                        BL="false"
+                        WD="../../gflib/prog"
+                        BC="${MAKE}  -f Makefile CONF=Debug"
+                        CC="${MAKE}  -f Makefile CONF=Debug clean"
+                        OP="../library/gflibd.a">
+          </makeArtifact>
+        </requiredProjects>
+      </compileType>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>MinGW|MinGW</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../../../2010.04/qt/include</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>EX_RELEASE</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+          <output>../../lib/mingw/libExCore.a</output>
+        </archiverTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

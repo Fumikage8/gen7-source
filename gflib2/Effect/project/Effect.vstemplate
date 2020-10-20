@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>gf_template_gflib2</Name>
+    <Description>gflib2　スタティックライブラリ用テンプレート 150122</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>gf_template_gflib2</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="gf_template_gflib2.vcxproj" File="gf_template_gflib2.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">gf_template_gflib2.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="gfl2_template.cpp">SOURCE\gfl2_template.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="gfl2_template.h">INCLUDE\gfl2_template.h</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

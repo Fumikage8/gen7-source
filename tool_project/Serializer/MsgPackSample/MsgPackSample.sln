@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPackerSample", "ObjectPackerSample\ObjectPackerSample.csproj", "{AF5AF93F-9530-480F-8697-1AE0D8822D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JapaneseNamePackSample", "JapaneseNamePackSample\JapaneseNamePackSample.csproj", "{3353F7EE-5488-48BC-BC19-5255631AEADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonDataPackSample", "PokemonDataPackSample\PokemonDataPackSample.csproj", "{B0106617-3C44-4AAD-ABFA-3600448C6EC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF5AF93F-9530-480F-8697-1AE0D8822D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5AF93F-9530-480F-8697-1AE0D8822D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5AF93F-9530-480F-8697-1AE0D8822D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5AF93F-9530-480F-8697-1AE0D8822D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3353F7EE-5488-48BC-BC19-5255631AEADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3353F7EE-5488-48BC-BC19-5255631AEADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3353F7EE-5488-48BC-BC19-5255631AEADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3353F7EE-5488-48BC-BC19-5255631AEADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0106617-3C44-4AAD-ABFA-3600448C6EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0106617-3C44-4AAD-ABFA-3600448C6EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0106617-3C44-4AAD-ABFA-3600448C6EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0106617-3C44-4AAD-ABFA-3600448C6EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

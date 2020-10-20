@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\ctr">
+      <UniqueIdentifier>{1b4cce59-6dfb-4f23-b614-eab83acce376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\win32">
+      <UniqueIdentifier>{e0bbc56a-71c2-4331-96e3-7dcedf251c77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\gfl2_RandomKeyGenerator.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_IAESCrypto.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_IRSACrypto.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_ISHA256Calculator.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_AESCrypto.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_RSACrypto.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_SHA256Calculator.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\win32\gfl2_WIN32_AESCrypto.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\win32\gfl2_WIN32_RSACrypto.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\win32\gfl2_WIN32_SHA256Calculator.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_AESCryptoExecutor.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_CryptoThreadController.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_TemporaryBuffer.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_AESCryptoThread.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_RSACryptoExecutor.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_RSACryptoThread.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_SHA256CalcExecutor.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_SHA256CalcThread.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\gfl2_IAESCryptoEventListener.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_IRSACryptoEventListener.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_ISHA256CalcEventListener.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_RandomKeyGenerator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_IAESCrypto.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_IRSACrypto.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_ISHA256Calculator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_AESCrypto.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_RSACrypto.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_SHA256Calculator.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\win32\gfl2_WIN32_AESCrypto.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="source\win32\gfl2_WIN32_RSACrypto.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="source\win32\gfl2_WIN32_SHA256Calculator.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_AESCryptoExecutor.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gfl2_CryptoThreadController.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_TemporaryBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_AESCryptoThread.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_RSACryptoExecutor.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_CryptoTypedef.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_RSACryptoThread.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_SHA256CalcExecutor.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_SHA256CalcThread.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

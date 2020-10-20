@@ -1,0 +1,69 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				フラグメントシェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		TextureMax		(2)
+
+#if defined HLSL
+#else
+
+//	#version	430
+	#define		STATIC				 		
+	#define		ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+	#define		float2		vec2
+	#define		float3		vec3
+	#define		float4		vec4
+	#define		tex2D		texture2D
+	
+	in		vec4		outPos;
+	in		vec4		outUv  [TextureMax];
+	uniform sampler2D	Texture[TextureMax];	//テクスチャユニット
+
+	struct PsInput
+	{
+		vec4 Pos;
+		vec4 Uv[TextureMax];
+	};
+
+#endif
+
+// コンスタントバッファは3dsとの兼ね合いのためbindナンバーは8をつかう
+ConstantBuffer( PixcelShaderVectorConstants, b8, 8 )
+{
+	vec4 cConstantWeight;		//xyzはカラーのウェイト、wは輝度の閾値
+	vec4 cConstantMulColor;		//輝度に対する係数
+};
+
+STATIC vec4	gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+
+//-----------------------------------------------------------------------------
+/// @brief	メイン関数
+//-----------------------------------------------------------------------------
+#if defined HLSL
+#else
+void main (void)
+{
+	PsInput	input;	
+	input.Uv[0] = outUv[0];
+	input.Uv[1] = outUv[1];
+#endif
+
+	vec4  color		  = tex2D( Texture[0], input.Uv[0].xy );
+	vec4  colorMask	  = tex2D( Texture[1], input.Uv[1].xy );
+	float luminance   = color.r * cConstantWeight.r + color.g * cConstantWeight.g + color.b * cConstantWeight.b;
+	gl_FragColor.a	  = luminance - cConstantWeight.w;
+	gl_FragColor.xyz  = color.xyz * cConstantMulColor.xyz * colorMask.a;
+
+#if defined HLSL
+#endif
+
+}
+
+
+

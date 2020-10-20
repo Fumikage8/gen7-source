@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23B7D2E0-3E2F-4FD5-9F2C-8A5D281A431B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MinusScaleChecker</RootNamespace>
+    <AssemblyName>MinusScaleChecker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\tool\MinusScaleChecker\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\Common.cs">
+      <Link>Shared\AnimationConverter\Common.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\Cskla\Cskla.cs">
+      <Link>Shared\Cskla\Cskla.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\AttributeKeyAnimation.cs">
+      <Link>Shared\GfMotion\AttributeKeyAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\BlendShapeAnimation.cs">
+      <Link>Shared\GfMotion\BlendShapeAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\Common.cs">
+      <Link>Shared\GfMotion\Common.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\EnvAnimation.cs">
+      <Link>Shared\GfMotion\EnvAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\Gfmot.cs">
+      <Link>Shared\GfMotion\Gfmot.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\JointAnimation.cs">
+      <Link>Shared\GfMotion\JointAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\ShaderAnimation.cs">
+      <Link>Shared\GfMotion\ShaderAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\Skelton.cs">
+      <Link>Shared\GfMotion\Skelton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\TexturePatternAnimation.cs">
+      <Link>Shared\GfMotion\TexturePatternAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\UvAnimation.cs">
+      <Link>Shared\GfMotion\UvAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\AnimationConverter\AnimationConverter\GfMotion\VisibilityAnimation.cs">
+      <Link>Shared\GfMotion\VisibilityAnimation.cs</Link>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

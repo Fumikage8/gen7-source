@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SEADPtclConverterArg>
+<name>EmitterSetDrawDemo</name>
+<EmitterSetList>
+    <EmitterSet>
+        <file>SampleData/Sample_Fall.eset</file>
+    </EmitterSet>
+    <EmitterSet>
+        <file>SampleData/Sample_Fire_02.eset</file>
+    </EmitterSet>
+</EmitterSetList>
+</SEADPtclConverterArg>

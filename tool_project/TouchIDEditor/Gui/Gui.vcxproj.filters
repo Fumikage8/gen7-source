@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{d6eee6dc-7507-4f0d-92e4-54b8e8dd6a3c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\_Viewer.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLUtil.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLWidget.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MainWindow.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PaintAction.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureWidget.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BrushShader.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BucketJob.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FillTextureShader.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IdWidget.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MultiSamplingTextureShader.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MultiTextureShader.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextureWidgetDef.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ToolWidget.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UvPaintView.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UvPaintWindow.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UvPaintWindowInfo.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MotionWidget.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceConv.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\_Viewer.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BrushShader.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DisplayWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FillTextureShader.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GLWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GLWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IdWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MainWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MotionWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MultiSamplingTextureShader.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MultiTextureShader.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PaintAction.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PaintUtil.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TextureWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ToolWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UvPaintView.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UvPaintWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UvPaintWindowInfo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BucketJob.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_DisplayWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_IdWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_MainWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_MotionWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_TextureWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_ToolWidget.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="include\moc_UvPaintWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResourceConv.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="source\BrushShader.frag">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\BrushShader.vert">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\Brush.tga">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\FillTextureShader.frag">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\FillTextureShader.vert">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiSamplingTextureShader.frag">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiSamplingTextureShader.vert">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiTextureShader.frag">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\MultiTextureShader.vert">
+      <Filter>Shader</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|CTR">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|CTR">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|Win32">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|CTR">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|Win32">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|CTR">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|Win32">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1433B557-F46C-401D-9121-18E2158F1810}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debugCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.developCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.releaseCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.finalCLR.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\gfx\project\gfx.vcxproj">
+      <Project>{2023437d-172c-4e17-81eb-0b0c04519ba8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_RenderingEngineEnumDefine.h" />
+    <ClInclude Include="..\include\gfl2_RenderingEngineEnums.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_CombinerCtrShaderDriver.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_CombinerShaderDriver.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_DrawManager.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_DrawTag.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_IShaderDriver.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_MaterialTypes.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_MeshDrawTag.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_RenderingPipeLine.h" />
+    <ClInclude Include="..\include\Renderer\gfl2_RenderState.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_ClearRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_ColorShaderTextureRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_DofRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_FillScreenRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_MakeBlurImagePath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_MakeReductionImagePath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_ModelRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_StretchBltFrameBufferPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilCollisionRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilEffectLocatorRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilJointRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilMcnfRenderPath.h" />
+    <ClInclude Include="..\include\Renderer\Util\gfl2_UtilNodeRenderPath.h" />
+    <ClInclude Include="..\include\SceneGraph\gfl2_AABBTree.h" />
+    <ClInclude Include="..\include\SceneGraph\gfl2_DagNode.h" />
+    <ClInclude Include="..\include\SceneGraph\gfl2_Node.h" />
+    <ClInclude Include="..\include\SceneGraph\gfl2_NodeTrait.h" />
+    <ClInclude Include="..\include\SceneGraph\gfl2_SceneGraphManager.h" />
+    <ClInclude Include="..\include\SceneGraph\gfl2_Traverser.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_CameraNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_CullingObjectNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_DrawableNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_DrawEnvNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_EffectNodeLocatorInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_InstanceCreator.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_InstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_JointInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_LightNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_LightSetNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_LocatorInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_MaterialInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_ModelInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_MotionConfigInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_MotionInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_TransformNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Instance\gfl2_ViewerLocatorInstanceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_AnimationResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_AnimationResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ArrayResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CameraResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CameraResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CollisionMeshResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CollisionMeshResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_CombinerAttribute.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_DrawEnvResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_DrawEnvResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryCollisionMdlData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryEnvData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryLocData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryMcnfData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryMdlData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryMdlDataPack.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryMdlDataPackFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryMotData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryShdData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfBinaryTexData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfCollisionMdlData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfEnvData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfLocData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMdlData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMdlResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMdlResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMotData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMotResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_GfMotResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_IResourceData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_IResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LightSetResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LightSetResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LocatorResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_LocatorResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MaterialResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MaterialResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_McnfData.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MeshResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MeshResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MotionConfigResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_MotionConfigResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ParserUtil.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ResourceManager.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ShaderResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_ShaderResourceNodeFactory.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_TextureResourceNode.h" />
+    <ClInclude Include="..\include\SceneGraph\Resource\gfl2_TextureResourceNodeFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Renderer\gfl2_CombinerCtrShaderDriver.cpp" />
+    <ClCompile Include="..\source\Renderer\gfl2_CombinerShaderDriver.cpp" />
+    <ClCompile Include="..\source\Renderer\gfl2_DrawManager.cpp" />
+    <ClCompile Include="..\source\Renderer\gfl2_DrawTag.cpp" />
+    <ClCompile Include="..\source\Renderer\gfl2_MeshDrawTag.cpp" />
+    <ClCompile Include="..\source\Renderer\gfl2_RenderingPipeLine.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_ClearRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_ColorShaderTextureRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_DofRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_FillScreenRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_MakeBlurImagePath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_MakeReductionImagePath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_ModelRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_StretchBltFrameBufferPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilCollisionRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilEffectLocatorRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilJointRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilMcnfRenderPath.cpp" />
+    <ClCompile Include="..\source\Renderer\Util\gfl2_UtilNodeRenderPath.cpp" />
+    <ClCompile Include="..\source\SceneGraph\gfl2_AABBTree.cpp" />
+    <ClCompile Include="..\source\SceneGraph\gfl2_DagNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\gfl2_Node.cpp" />
+    <ClCompile Include="..\source\SceneGraph\gfl2_NodeTrait.cpp" />
+    <ClCompile Include="..\source\SceneGraph\gfl2_SceneGraphManager.cpp" />
+    <ClCompile Include="..\source\SceneGraph\gfl2_Traverser.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_CameraNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_CullingObjectNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_DrawableNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_DrawEnvNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_EffectNodeLocatorInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_InstanceCreator.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_InstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_JointInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_LightNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_LightSetNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_LocatorInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_MaterialInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_ModelInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_MotionConfigInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_MotionInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_TransformNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Instance\gfl2_ViewerLocatorInstanceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_AnimationResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_AnimationResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ArrayResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_BlendShapeAnimationResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CameraResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CameraResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CollisionMeshResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_CollisionMeshResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_DrawEnvResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_DrawEnvResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryCollisionMdlData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryEnvData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryLocData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryMcnfData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryMdlData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryMdlDataPack.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryMdlDataPackFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryMotData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryShdData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfBinaryTexData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfCollisionMdlData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfEnvData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfLocData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMdlData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMdlResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMdlResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMotData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMotResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_GfMotResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LightSetResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LightSetResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LocatorResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_LocatorResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MaterialResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MaterialResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_McnfData.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MeshResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MeshResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MotionConfigResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_MotionConfigResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ParserUtil.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ResourceManager.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ShaderResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_ShaderResourceNodeFactory.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_TextureResourceNode.cpp" />
+    <ClCompile Include="..\source\SceneGraph\Resource\gfl2_TextureResourceNodeFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\resource\chara_Hta1D.tga">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\Default_Lta_15D.tga">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\dummy.gffsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\dummy.gfvsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\Dummy.tga">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\KujiraEdgeMap.gffsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\KujiraEdgeMap.gfvsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\KujiraOutLine.gffsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\KujiraOutLine.gfvsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\LinerTable.tga">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\tr0001_TtopsHlm.tga">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Bin2Ascii.exe "%(RootDir)%(Directory)%(Filename)%(Extension)" "%(RootDir)%(Directory)%(Filename)%(Extension).txt"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">%(RootDir)%(Directory)%(Filename)%(Extension).txt</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

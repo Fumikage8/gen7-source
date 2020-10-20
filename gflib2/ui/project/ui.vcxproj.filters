@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="公開ヘッダ">
+      <UniqueIdentifier>{119de753-50e9-49c8-8acb-f4c9f7b0a8cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\ctr">
+      <UniqueIdentifier>{df495453-5c0f-4d8d-b7fb-3a2ab289e366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ">
+      <UniqueIdentifier>{c2bc8e0a-d233-4a92-8f14-0af85976cba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\ctr">
+      <UniqueIdentifier>{aeadbb79-e84a-48c4-8fe0-fd88325a1964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\win32">
+      <UniqueIdentifier>{18b1f9e2-f7b8-4a3a-a841-e6b49669e4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\win32">
+      <UniqueIdentifier>{90140bfa-5f33-4af5-8636-7f9b3282886f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_UI.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_Accelerometer.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_Button.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_Device.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_DeviceManager.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_Gyroscope.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_System.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_TouchPanel.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_Types.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_UI_VectorDevice.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ctr\gfl2_UI_CTR_DeviceManager.h">
+      <Filter>公開ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_DeviceImplementer.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_DeviceImplementerForAccelerometer.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_DeviceImplementerForGyroscope.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_DeviceImplementerForVectorDevice.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_LogPlayer.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_LogRecorder.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_UI_RepeatTimer.h">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_Accelerometer.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_Button.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_CrossKey.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_DebugButton.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_DebugCrossKey.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_DebugStick.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_Gyroscope.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_Stick.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ctr\gfl2_UI_CTR_TouchPanel.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\win32\gfl2_UI_WIN32_DeviceManager.h">
+      <Filter>公開ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\win32\gfl2_UI_WIN32_Button.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\win32\gfl2_UI_WIN32_CrossKey.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\win32\gfl2_UI_WIN32_Stick.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\win32\gfl2_UI_WIN32_TouchPanel.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\gfl2_UI_Accelerometer.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_Button.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_Device.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_DeviceImplementerForAccelerometer.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_DeviceImplementerForGyroscope.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_DeviceImplementerForVectorDevice.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_DeviceManager.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_Gyroscope.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_LogPlayer.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_LogRecorder.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_RepeatTimer.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_System.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_TouchPanel.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_UI_VectorDevice.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_Accelerometer.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_Button.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_CrossKey.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_DebugButton.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_DebugCrossKey.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_DebugStick.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_DeviceManager.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_Gyroscope.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_Stick.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ctr\gfl2_UI_CTR_TouchPanel.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\win32\gfl2_UI_WIN32_DeviceManager.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\win32\gfl2_UI_WIN32_Button.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\win32\gfl2_UI_WIN32_CrossKey.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\win32\gfl2_UI_WIN32_Stick.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\win32\gfl2_UI_WIN32_TouchPanel.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

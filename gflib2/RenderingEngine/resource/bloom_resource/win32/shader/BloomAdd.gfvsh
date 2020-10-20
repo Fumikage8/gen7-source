@@ -1,0 +1,87 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				頂点シェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		TextureMax		(2)
+
+#if defined HLSL
+
+#else
+
+//	#version	430
+	#define		float2			vec2
+	#define		float3			vec3
+	#define		float4			vec4
+
+	layout (location = 0) in int gl_VertexID;
+
+	out gl_PerVertex 
+	{
+		vec4 gl_Position;
+	};
+	out vec4 outPos;
+	out vec4 outUv[TextureMax];
+
+	struct VsInput 
+	{
+		int  vIndex;
+	};
+
+	struct PsInput 
+	{
+		vec4 Pos;
+		vec4 Uv[TextureMax];
+	};
+	
+#endif
+
+#if defined HLSL
+
+#else
+
+void main( void )
+{
+	PsInput	outPut;
+	VsInput	input;	
+	input.vIndex = gl_VertexID;
+
+#endif
+	
+	float2  texlist[4]= 
+	{
+		{ 0.0f, 1.0f },
+		{ 1.0f, 1.0f },
+		{ 0.0f, 0.0f },
+		{ 1.0f, 0.0f },
+	};
+
+	float4  poslist[4]= 
+	{
+		{ -1.0f,  1.0f, 0.0f, 1.0f },
+		{  1.0f,  1.0f, 0.0f, 1.0f },
+		{ -1.0f, -1.0f, 0.0f, 1.0f },
+		{  1.0f, -1.0f, 0.0f, 1.0f },
+	};
+	
+	outPut.Pos		= poslist[ input.vIndex ];
+	outPut.Uv[0].xy = texlist[ input.vIndex ].xy;
+	outPut.Uv[1].xy = texlist[ input.vIndex ].xy;
+
+#if defined HLSL
+
+#else
+
+	outPos   = outPut.Pos;
+	outUv[0] = outPut.Uv[0];
+	outUv[1] = outPut.Uv[1];
+	gl_Position = outPos;
+}
+
+#endif
+

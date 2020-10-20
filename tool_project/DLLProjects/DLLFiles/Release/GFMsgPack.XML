@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GFMsgPack</name>
+    </assembly>
+    <members>
+        <member name="T:GFMsgPack.GFMsgPackFunction">
+            <summary>
+            MessagePackを利用しやすくするための関数群クラス(MsgPack.dllに依存)
+            </summary>
+        </member>
+        <member name="M:GFMsgPack.GFMsgPackFunction.ConvertObjectToMessagePack``1(System.Object)">
+            <summary>
+            object -> MessagePack(byte[]) の変換
+            </summary>
+            <typeparam name="T">変換対象のオブジェクトの型</typeparam>
+            <param name="obj">変換対象のオブジェクト</param>
+            <returns>byte[] コンバート後のMsgPack形式のバイト配列</returns>
+        </member>
+        <member name="M:GFMsgPack.GFMsgPackFunction.ConvertMessagePackToObject``1(System.Byte[])">
+            <summary>
+            MessagePack(byte[]) -> object の変換
+            </summary>
+            <typeparam name="T">変換対象のオブジェクトの型</typeparam>
+            <param name="bytes">変換後のバイナリデータ</param>
+            <returns>T MsgPackでデシリアライズ後のオブジェクト</returns>
+        </member>
+    </members>
+</doc>

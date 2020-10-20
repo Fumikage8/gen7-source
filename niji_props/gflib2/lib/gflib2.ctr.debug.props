@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.common.props" />
+    <Import Project="$(GF_PROPS_COMMON_DIR)\ctr\gf.ctr.lib.$(GFNWCTRProps).props" />
+    <Import Project="$(GF_PROPS_COMMON_DIR)\ctr\gf.ctr.custom.props" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.end.props" />
+  </ImportGroup>
+</Project>

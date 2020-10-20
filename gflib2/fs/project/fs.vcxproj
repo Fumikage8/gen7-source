@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|CTR">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|CTR">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|Win32">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|CTR">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|Win32">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|CTR">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|Win32">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D36474A4-14D8-4388-86ED-72AC09C4050B}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debugCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.developCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.releaseCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.finalCLR.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrBackupFile.h" />
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrBackupSystem.h" />
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrDirectory.h" />
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrExtSaveFile.h" />
+    <ClInclude Include="..\include\CTR\gfl2_FsCtrExtSaveSystem.h" />
+    <ClInclude Include="..\include\gfl2_BinLinkerAccessor.h" />
+    <ClInclude Include="..\include\gfl2_Fs.h" />
+    <ClInclude Include="..\include\gfl2_FsArcFile.h" />
+    <ClInclude Include="..\include\gfl2_FsAsyncFileManager.h" />
+    <ClInclude Include="..\include\gfl2_FsDefine.h" />
+    <ClInclude Include="..\include\gfl2_FsDirectSdmcFile.h" />
+    <ClInclude Include="..\include\gfl2_FsNameTable.h" />
+    <ClInclude Include="..\include\gfl2_FsPcUtil.h" />
+    <ClInclude Include="..\include\gfl2_FsResult.h" />
+    <ClInclude Include="..\include\gfl2_FsStr.h" />
+    <ClInclude Include="..\include\gfl2_FsSystem.h" />
+    <ClInclude Include="..\include\gfl2_FsToolDefine.h" />
+    <ClInclude Include="..\include\internal\gfl2_FsElemBase.h" />
+    <ClInclude Include="..\include\internal\gfl2_FsFile.h" />
+    <ClInclude Include="..\include\internal\gfl2_FsFileBase.h" />
+    <ClInclude Include="..\include\internal\gfl2_FsFileCoreBase.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\gfl2_FsIArcFileAccessor.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationOffsetBlock_ver6.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationTableBlock_ver6.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileBlock_ver6.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileHeaderBlock_ver6.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileImageBlock_ver6.h" />
+    <ClInclude Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_ver6.h" />
+    <ClInclude Include="..\source\arcsrc\arcsrc_Accessor.h" />
+    <ClInclude Include="..\source\arcsrc\arcsrc_ToolDefine.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrBackupThread.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrExtSaveThread.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrFileCore.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrHioDevice.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrHioFileCore.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrHioUtil.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrRomDevice.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrRomFileCore.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrSdmcDevice.h" />
+    <ClInclude Include="..\source\CTR\gfl2_FsCtrSdmcPathDevice.h" />
+    <ClInclude Include="..\source\gfl2_FsDeviceBase.h" />
+    <ClInclude Include="..\source\internal\gfl2_FsCalc.h" />
+    <ClInclude Include="..\source\internal\gfl2_FsDebug.h" />
+    <ClInclude Include="..\source\internal\gfl2_FsFileThread.h" />
+    <ClInclude Include="..\source\internal\gfl2_FsList.h" />
+    <ClInclude Include="..\source\internal\gfl2_FsOtherThread.h" />
+    <ClInclude Include="..\source\internal\gfl2_FsUtilBase.h" />
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32Device.h" />
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32FileCore.h" />
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32Func.h" />
+    <ClInclude Include="..\source\Win32\gfl2_FsWin32Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\ArcFileAccessor\gfl2_FsIArcFileAccessor.cpp" />
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationOffsetBlock_ver6.cpp" />
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileAllocationTableBlock_ver6.cpp" />
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileBlock_ver6.cpp" />
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileHeaderBlock_ver6.cpp" />
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_FileImageBlock_ver6.cpp" />
+    <ClCompile Include="..\source\ArcFileAccessor\ver.6.x\gfl2_FsArcFileAccessor_ver6.cpp" />
+    <ClCompile Include="..\source\arcsrc\arcsrc_Accessor.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrBackupFile.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrBackupSystem.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrBackupThread.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrDirectory.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrExtSaveFile.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrExtSaveSystem.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrExtSaveThread.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrFileCore.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrHioDevice.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrHioFileCore.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrHioUtil.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrRomDevice.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrRomFileCore.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrSdmcDevice.cpp" />
+    <ClCompile Include="..\source\CTR\gfl2_FsCtrSdmcPathDevice.cpp" />
+    <ClCompile Include="..\source\gfl2_BinLinkerAccessor.cpp" />
+    <ClCompile Include="..\source\gfl2_Fs.cpp" />
+    <ClCompile Include="..\source\gfl2_FsArcFile.cpp" />
+    <ClCompile Include="..\source\gfl2_FsAsyncFileManager.cpp" />
+    <ClCompile Include="..\source\gfl2_FsDeviceBase.cpp" />
+    <ClCompile Include="..\source\gfl2_FsDirectSdmcFile.cpp" />
+    <ClCompile Include="..\source\gfl2_FsNameTable.cpp" />
+    <ClCompile Include="..\source\gfl2_FsResult.cpp" />
+    <ClCompile Include="..\source\gfl2_FsStr.cpp" />
+    <ClCompile Include="..\source\gfl2_FsSystem.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsCalc.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsDebug.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsFile.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsFileBase.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsFileCoreBase.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsFileThread.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsList.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsOtherThread.cpp" />
+    <ClCompile Include="..\source\internal\gfl2_FsUtilBase.cpp" />
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32Device.cpp" />
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32FileCore.cpp" />
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32Func.cpp" />
+    <ClCompile Include="..\source\Win32\gfl2_FsWin32Util.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

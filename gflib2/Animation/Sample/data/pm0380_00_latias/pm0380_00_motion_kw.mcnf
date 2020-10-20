@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+	<INTEREST>
+		<NODE _Name="Neck2" _Type="Z" _Low="-10" _High="10" _Speed="100"/>
+		<NODE _Name="Neck3" _Type="Z" _Low="-15" _High="15" _Speed="100"/>
+		<NODE _Name="Head" _Type="ZY" _Low="-20" _High="20" _Low2="-20" _High2="20" _Speed="100"/>
+	</INTEREST>
+</root>
+

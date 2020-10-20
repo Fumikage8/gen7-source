@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\ctr">
+      <UniqueIdentifier>{017dfe1e-4b6b-4882-8b54-ae9ae602109d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\win32">
+      <UniqueIdentifier>{8d5c88cf-b7b5-49f0-a860-e69579d63e36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ctr\gfl2_CTR_QRDecoder.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_QREncoder.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\win32\gfl2_WIN32_QRDecoder.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\win32\gfl2_WIN32_QREncoder.cpp">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_QRDecodeExecutor.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_QRDecodeThread.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_QREncodeExecutor.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_QREncodeThread.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_IQRDecoder.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_IQREncoder.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_QRYUVImageInfo.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_QRDecodeData.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_QREncodeData.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfl2_QRRGBImageInfo.cpp">
+      <Filter>ソース/ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ctr\gfl2_CTR_TextureConverter.cpp">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\ctr\gfl2_CTR_QRDecoder.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_QREncoder.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\win32\gfl2_WIN32_QRDecoder.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="source\win32\gfl2_WIN32_QREncoder.h">
+      <Filter>ソース/ヘッダ\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_IQRDecoder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_IQREncoder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_IQREventListener.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_QRRGBImageInfo.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_QRYUVImageInfo.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_QRDecodeExecutor.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_QRDecodeThread.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_QREncodeExecutor.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_QREncodeThread.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_QRDecodeData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfl2_QREncodeData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ctr\gfl2_CTR_TextureConverter.h">
+      <Filter>ソース/ヘッダ\ctr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

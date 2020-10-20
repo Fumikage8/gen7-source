@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース/ヘッダ">
+      <UniqueIdentifier>{9a69a3c8-82db-4499-ab06-207907edfa35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ">
+      <UniqueIdentifier>{bc976988-b1ee-4d3b-9ac5-a446e673f0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\base">
+      <UniqueIdentifier>{4ac7fdc5-d741-41fc-8a5e-43192df28070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\beacon">
+      <UniqueIdentifier>{490c960f-e01f-48a2-8778-96862e0209df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\boss">
+      <UniqueIdentifier>{21b29c58-fe38-4cac-8387-80ca2184d99b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\connect">
+      <UniqueIdentifier>{5ed31c4c-9c4d-4238-840f-08a5190666dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\debug">
+      <UniqueIdentifier>{012b3263-d7a6-4878-a9ac-a1d95e28fc53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\dev">
+      <UniqueIdentifier>{67965646-2792-4aae-8292-d6bf5fec174c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\friends">
+      <UniqueIdentifier>{702792ec-2cfe-4c15-8bd7-ba3300a31785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\http">
+      <UniqueIdentifier>{0e2dbf4c-ce37-4158-96a1-3f77302e06bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\ndm">
+      <UniqueIdentifier>{e6ba24f9-9a50-4944-9912-e45b65271026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\nex">
+      <UniqueIdentifier>{ad6beada-bf04-4f4a-8b21-caa55a6fc745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\p2p">
+      <UniqueIdentifier>{9f96ff08-3b46-40b6-b3d8-49682df273c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\scan">
+      <UniqueIdentifier>{0dfab449-8571-409d-b518-b357f6548757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\socket">
+      <UniqueIdentifier>{1a1459c8-d99f-497a-92f3-016cba6e3236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\util">
+      <UniqueIdentifier>{4dce9431-85c0-4336-9923-cf3e2fde053a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\wifi">
+      <UniqueIdentifier>{7744ea8d-9921-48eb-82ea-9efba3258f99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\base">
+      <UniqueIdentifier>{65606ea9-cdec-4a6a-87c7-85b091f42022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\beacon">
+      <UniqueIdentifier>{46711450-fa74-42bc-88e7-7d22b8120f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\boss">
+      <UniqueIdentifier>{3cf9c3d3-2839-4b71-b6de-08c69cf4e3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\connect">
+      <UniqueIdentifier>{e1272d9d-106f-464e-889d-54f9c5792b71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\debug">
+      <UniqueIdentifier>{2f27dfc1-e56b-4768-8b61-d652bd0a1d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\dev">
+      <UniqueIdentifier>{8e1b83e9-584b-4b3a-a843-c4449bef62fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\friends">
+      <UniqueIdentifier>{770e0e8b-54cf-4963-843c-283156975066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\http">
+      <UniqueIdentifier>{bb942a24-0b5d-4511-8f1c-710cf76957f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\ndm">
+      <UniqueIdentifier>{acd64fec-1765-4d28-843f-d23d4aa281f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\wifi">
+      <UniqueIdentifier>{4316c8d5-4f8d-4bbc-a486-da479fcf9676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\util">
+      <UniqueIdentifier>{5d205fae-151b-4dd0-b6f8-61789f839a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\socket">
+      <UniqueIdentifier>{07c59ff2-72ff-4060-9627-7c2b1066781e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\scan">
+      <UniqueIdentifier>{e41ec1c9-5354-435a-91cf-2c02d2bcf493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\p2p">
+      <UniqueIdentifier>{00bdb6f3-8f2b-4429-8388-c58b9181680a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\nex">
+      <UniqueIdentifier>{06c97eb6-a060-4ef5-aee3-3597f0e2dc98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\proc">
+      <UniqueIdentifier>{977a4efc-0405-4b0f-a141-891ba59aa910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\cec">
+      <UniqueIdentifier>{b321cfb4-26b5-44e5-8a9c-b06aaac3d6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\cec\ctr">
+      <UniqueIdentifier>{678ed757-6861-427b-a008-0c846f5864e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\cec\win32">
+      <UniqueIdentifier>{e5bda056-b62a-43dc-b22c-097371f38a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\cec">
+      <UniqueIdentifier>{c8f57059-2f82-4ef4-a6b4-4d91aae2bf0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\ServerClient">
+      <UniqueIdentifier>{e10ca36d-03d4-4fac-baac-3af93111f160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\ServerClient">
+      <UniqueIdentifier>{cca2a1b1-a5a6-48a4-b256-9ff077a954a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\Session">
+      <UniqueIdentifier>{44690d3b-594e-4aaa-aa2d-c579368158d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ\Session">
+      <UniqueIdentifier>{5d908d85-b227-40b7-9356-f062c261de4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\Session\CTR">
+      <UniqueIdentifier>{9b4c5a75-5d3b-4486-97c3-32875929e6fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\p2p\proc">
+      <UniqueIdentifier>{ff3ced52-f52d-49f9-9fa2-0899e82fdc0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\p2p\proc\ir">
+      <UniqueIdentifier>{2fc037ba-c78a-4c2c-9c05-28ca410da96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\p2p\proc\wireless">
+      <UniqueIdentifier>{a9caa1a6-89d3-4adf-9864-2c02dddbaaa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\p2p\proc\wifi">
+      <UniqueIdentifier>{29089c63-f40d-4359-98f6-a73529549054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース/ヘッダ\p2p\thread">
+      <UniqueIdentifier>{85b0aea2-fae0-4953-b663-9c90cdbded16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gflnet2.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gflnet2_NetworkDefine.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gflnet2_P2p.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_AccessPointHistoryBase.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_AccessPointScannerBase.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_Base.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_BaseProcess.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_GlobalAccess.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_InitParam.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_NetAdapter.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_NetConfig.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_NetMain.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_NetStateListener.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_NetThread.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_ProcBase.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_ProcManager.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_TransferedIDReceiver.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\base\gflnet2_Yield.h">
+      <Filter>公開ヘッダ\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_Beacon.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconCommand.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconCommandIterator.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconListener.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconManager.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconSender.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_IrBeaconSender.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_PiaBeaconSender.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\beacon\gflnet2_WirelessBeaconSender.h">
+      <Filter>公開ヘッダ\beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\boss\gflnet2_BossEventListener.h">
+      <Filter>公開ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\boss\gflnet2_BossManager.h">
+      <Filter>公開ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\connect\gflnet2_AutoIrConnect.h">
+      <Filter>公開ヘッダ\connect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\debug\gflnet2_Debug.h">
+      <Filter>公開ヘッダ\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dev\gflnet2_NetZAdapter.h">
+      <Filter>公開ヘッダ\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\friends\gflnet2_FriendAddListener.h">
+      <Filter>公開ヘッダ\friends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\friends\gflnet2_FriendLoginListener.h">
+      <Filter>公開ヘッダ\friends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\friends\gflnet2_FriendManager.h">
+      <Filter>公開ヘッダ\friends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\http\gflnet2_HttpConnectionListener.h">
+      <Filter>公開ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\http\gflnet2_HttpConnectionSetting.h">
+      <Filter>公開ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\http\gflnet2_HttpConnector.h">
+      <Filter>公開ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\http\gflnet2_HttpResponse.h">
+      <Filter>公開ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\http\gflnet2_HttpSystem.h">
+      <Filter>公開ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ndm\gflnet2_NdmEventListener.h">
+      <Filter>公開ヘッダ\ndm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ndm\gflnet2_NdmManager.h">
+      <Filter>公開ヘッダ\ndm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexCommunityListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexDataStoreClient.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexDataStoreClientListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexDebugClient.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexDebugClientListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexDispatchThreadListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexError.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexErrorListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexGameServerListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexManager.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexMatchmakeListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexMatchMakingClient.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexMatchMakingRule.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexMessageClient.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexMessageClientListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexP2pStationManager.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexRankingClient.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexRankingClientListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexSessionEventListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexTemplate.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nex\gflnet2_NexUtilityListener.h">
+      <Filter>公開ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_NetGame.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_NetPlayer.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\scan\gflnet2_Ir.h">
+      <Filter>公開ヘッダ\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\scan\gflnet2_Manager.h">
+      <Filter>公開ヘッダ\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\scan\gflnet2_Wireless.h">
+      <Filter>公開ヘッダ\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\socket\gflnet2_SocketSystem.h">
+      <Filter>公開ヘッダ\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\gflnet2_Base64Utility.h">
+      <Filter>公開ヘッダ\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\gflnet2_UrlCoderUtility.h">
+      <Filter>公開ヘッダ\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\wifi\gflnet2_WifiConnectListener.h">
+      <Filter>公開ヘッダ\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\wifi\gflnet2_WifiDisconnectListener.h">
+      <Filter>公開ヘッダ\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\wifi\gflnet2_WifiSystem.h">
+      <Filter>公開ヘッダ\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\boss\gflnet2_BossCheckNewArrivalDataThread.h">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\boss\gflnet2_BossFilelistDownloadThread.h">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\boss\gflnet2_BossFileReadThread.h">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\boss\gflnet2_BossImmediateTaskThread.h">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\boss\gflnet2_BossTaskRegisterThread.h">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\connect\thread\gflnet2_WirelessInitThread.h">
+      <Filter>ソース/ヘッダ\connect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dev\gflnet2_IrAdapter.h">
+      <Filter>ソース/ヘッダ\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\dev\gflnet2_PiaAdapter.h">
+      <Filter>ソース/ヘッダ\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\friends\gflnet2_FriendAddThread.h">
+      <Filter>ソース/ヘッダ\friends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\friends\gflnet2_FriendLoginThread.h">
+      <Filter>ソース/ヘッダ\friends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\http\gflnet2_HttpConnection.h">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\http\gflnet2_HttpConnectionThread.h">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ndm\gflnet2_NdmSuspendThread.h">
+      <Filter>ソース/ヘッダ\ndm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\nex\gflnet2_NexDispatchThread.h">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\nex\gflnet2_NexMatchMakingNotificationListener.h">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\gflnet2_NetGameBase.h">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proc\gflnet2_IrAutoMatchThread.h">
+      <Filter>ソース/ヘッダ\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scan\proc\gflnet2_IrScanProc.h">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scan\proc\gflnet2_WirelessScanProc.h">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scan\thread\gflnet2_WirelessCycleThread.h">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\wifi\gflnet2_WifiConnectThread.h">
+      <Filter>ソース/ヘッダ\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\gflnet2_CecCommandID.h">
+      <Filter>ソース/ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecAllocator.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecController.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecControlObject.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecCoreMessageBox.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessor.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessThread.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxEventListener.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecRecvMessageBox.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecSendMessageBox.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecSystem.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_ICecControlObjectRegister.h">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecCoreMessageBox.h">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecRecvMessageBox.h">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecSendMessageBox.h">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecSystem.h">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_CecMessageBoxCreateParam.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_CecPacketInfo.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_CecResultCode.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_CecTypes.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_ICecCoreMessageBox.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_ICecMessageBoxEventListener.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_ICecRecvMessageBox.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_ICecSendMessageBox.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cec\gflnet2_ICecSystem.h">
+      <Filter>公開ヘッダ\cec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ServerClient\gflnet2_RequestHandle.h">
+      <Filter>公開ヘッダ\ServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ServerClient\gflnet2_RequestSequenceBase.h">
+      <Filter>公開ヘッダ\ServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ServerClient\gflnet2_ServerClientRequestManager.h">
+      <Filter>公開ヘッダ\ServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ServerClient\gflnet2_ServerClientRequestManagerPrivate.h">
+      <Filter>ソース/ヘッダ\ServerClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Session\gflnet2_SessionPacketManager.h">
+      <Filter>公開ヘッダ\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Session\gflnet2_SessionMessageManagerBase.h">
+      <Filter>公開ヘッダ\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Session\gflnet2_SessionMessageListener.h">
+      <Filter>公開ヘッダ\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Session\CTR\gflnet2_CTR_UDPPacketIO.h">
+      <Filter>ソース/ヘッダ\Session\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Session\CTR\gflnet2_CTR_TCPPacketIO.h">
+      <Filter>ソース/ヘッダ\Session\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Session\gflnet2_SessionPacketIOBase.h">
+      <Filter>ソース/ヘッダ\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Session\gflnet2_SessionPacketInitParam.h">
+      <Filter>公開ヘッダ\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Session\gflnet2_SessionPacketDatagram.h">
+      <Filter>ソース/ヘッダ\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pProcBaseProcess.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\ir\gflnet2_P2pConnectionIr.h">
+      <Filter>ソース/ヘッダ\p2p\proc\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\ir\gflnet2_P2pMainIr.h">
+      <Filter>ソース/ヘッダ\p2p\proc\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\ir\gflnet2_P2pDisconnectionIr.h">
+      <Filter>ソース/ヘッダ\p2p\proc\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pConnectionWifi.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pMainWifi.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pDisconnectionWifi.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wireless\gflnet2_P2pDisconnectionWireless.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wireless\gflnet2_P2pConnectionWireless.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wireless\gflnet2_P2pMainWireless.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pDefine.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pConnectionInterface.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\gflnet2_P2pStaticManager.h">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_RecvDataListener.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pConfig.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pManager.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_RecvBuffer.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\thread\gflnet2_P2pAutoScanThread.h">
+      <Filter>ソース/ヘッダ\p2p\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\thread\gflnet2_IrP2pThread.h">
+      <Filter>ソース/ヘッダ\p2p\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\thread\gflnet2_LocalAutoMatchingThread.h">
+      <Filter>ソース/ヘッダ\p2p\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pManagerEventListener.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pDisconnectionInterface.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_NetGameErrorListener.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\dev\gflnet2_IrAdapterErrorListener.h">
+      <Filter>公開ヘッダ\dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\nex\AutoMatchmakeDDF.h">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_NetGameMigrationListener.h">
+      <Filter>公開ヘッダ\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleConnectionWifi.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleDisconnectionWifi.h">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\base\gflnet2_Base.cpp">
+      <Filter>ソース/ヘッダ\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\base\gflnet2_BaseProcess.cpp">
+      <Filter>ソース/ヘッダ\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\base\gflnet2_GlobalAccess.cpp">
+      <Filter>ソース/ヘッダ\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\base\gflnet2_InitParam.cpp">
+      <Filter>ソース/ヘッダ\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\base\gflnet2_ProcManager.cpp">
+      <Filter>ソース/ヘッダ\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\base\gflnet2_Yield.cpp">
+      <Filter>ソース/ヘッダ\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\beacon\gflnet2_Beacon.cpp">
+      <Filter>ソース/ヘッダ\beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\beacon\gflnet2_BeaconCommandIterator.cpp">
+      <Filter>ソース/ヘッダ\beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\beacon\gflnet2_BeaconManager.cpp">
+      <Filter>ソース/ヘッダ\beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\beacon\gflnet2_IrBeaconSender.cpp">
+      <Filter>ソース/ヘッダ\beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\beacon\gflnet2_PiaBeaconSender.cpp">
+      <Filter>ソース/ヘッダ\beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\beacon\gflnet2_WirelessBeaconSender.cpp">
+      <Filter>ソース/ヘッダ\beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\boss\gflnet2_BossCheckNewArrivalDataThread.cpp">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\boss\gflnet2_BossFilelistDownloadThread.cpp">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\boss\gflnet2_BossFileReadThread.cpp">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\boss\gflnet2_BossImmediateTaskThread.cpp">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\boss\gflnet2_BossManager.cpp">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\boss\gflnet2_BossTaskRegisterThread.cpp">
+      <Filter>ソース/ヘッダ\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\connect\proc\gflnet2_AutoIrConnect.cpp">
+      <Filter>ソース/ヘッダ\connect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\connect\thread\gflnet2_WirelessInitThread.cpp">
+      <Filter>ソース/ヘッダ\connect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\debug\gflnet2_Debug.cpp">
+      <Filter>ソース/ヘッダ\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\dev\gflnet2_IrAdapter.cpp">
+      <Filter>ソース/ヘッダ\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\dev\gflnet2_NetZAdapter.cpp">
+      <Filter>ソース/ヘッダ\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\dev\gflnet2_PiaAdapter.cpp">
+      <Filter>ソース/ヘッダ\dev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\friends\gflnet2_FriendAddThread.cpp">
+      <Filter>ソース/ヘッダ\friends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\friends\gflnet2_FriendLoginThread.cpp">
+      <Filter>ソース/ヘッダ\friends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\friends\gflnet2_FriendManager.cpp">
+      <Filter>ソース/ヘッダ\friends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\http\gflnet2_HttpConnection.cpp">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\http\gflnet2_HttpConnectionThread.cpp">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\http\gflnet2_HttpConnector.cpp">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\http\gflnet2_HttpResponse.cpp">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\http\gflnet2_HttpSystem.cpp">
+      <Filter>ソース/ヘッダ\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ndm\gflnet2_NdmManager.cpp">
+      <Filter>ソース/ヘッダ\ndm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ndm\gflnet2_NdmSuspendThread.cpp">
+      <Filter>ソース/ヘッダ\ndm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexDataStoreClient.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexDebugClient.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexDispatchThread.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexError.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexManager.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexMatchMakingClient.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexMatchMakingNotificationListener.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexMatchMakingRule.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexMessageClient.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexP2pStationManager.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\gflnet2_NexRankingClient.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_NetGame.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_NetGameBase.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_NetPlayer.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proc\gflnet2_IrAutoMatchThread.cpp">
+      <Filter>ソース/ヘッダ\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scan\gflnet2_Ir.cpp">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scan\gflnet2_Manager.cpp">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scan\gflnet2_Wireless.cpp">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scan\proc\gflnet2_IrScanProc.cpp">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scan\proc\gflnet2_WirelessScanProc.cpp">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scan\thread\gflnet2_WirelessCycleThread.cpp">
+      <Filter>ソース/ヘッダ\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\socket\gflnet2_SocketSystem.cpp">
+      <Filter>ソース/ヘッダ\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\util\gflnet2_Base64Utility.cpp">
+      <Filter>ソース/ヘッダ\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\util\gflnet2_UrlCoderUtility.cpp">
+      <Filter>ソース/ヘッダ\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\wifi\gflnet2_WifiConnectThread.cpp">
+      <Filter>ソース/ヘッダ\wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\wifi\gflnet2_WifiSystem.cpp">
+      <Filter>ソース/ヘッダ\wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\gflnet2_ICecSystem.cpp">
+      <Filter>ソース/ヘッダ\cec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecAllocator.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecController.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecControlObject.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecCoreMessageBox.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessor.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessThread.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecRecvMessageBox.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecSendMessageBox.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecSystem.cpp">
+      <Filter>ソース/ヘッダ\cec\ctr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecCoreMessageBox.cpp">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecRecvMessageBox.cpp">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecSendMessageBox.cpp">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecSystem.cpp">
+      <Filter>ソース/ヘッダ\cec\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ServerClient\gflnet2_ServerClientRequestManager.cpp">
+      <Filter>ソース/ヘッダ\ServerClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Session\gflnet2_SessionPacketManager.cpp">
+      <Filter>ソース/ヘッダ\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Session\gflnet2_SessionMessageManagerBase.cpp">
+      <Filter>ソース/ヘッダ\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Session\CTR\gflnet2_CTR_UDPPacketIO.cpp">
+      <Filter>ソース/ヘッダ\Session\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Session\CTR\gflnet2_CTR_TCPPacketIO.cpp">
+      <Filter>ソース/ヘッダ\Session\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Session\gflnet2_SessionPacketDatagram.cpp">
+      <Filter>ソース/ヘッダ\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\ir\gflnet2_P2pConnectionIr.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\ir\gflnet2_P2pMainIr.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\ir\gflnet2_P2pDisconnectionIr.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pConnectionWifi.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pMainWifi.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pDisconnectionWifi.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wireless\gflnet2_P2pDisconnectionWireless.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wireless\gflnet2_P2pConnectionWireless.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wireless\gflnet2_P2pMainWireless.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_P2pManager.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_P2pStaticManager.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\thread\gflnet2_P2pAutoScanThread.cpp">
+      <Filter>ソース/ヘッダ\p2p\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\thread\gflnet2_IrP2pThread.cpp">
+      <Filter>ソース/ヘッダ\p2p\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\thread\gflnet2_LocalAutoMatchingThread.cpp">
+      <Filter>ソース/ヘッダ\p2p\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_P2pConnectionInterface.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_P2pDisconnectionInterface.cpp">
+      <Filter>ソース/ヘッダ\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\nex\AutoMatchmakeDDF.cpp">
+      <Filter>ソース/ヘッダ\nex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleConnectionWifi.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleDisconnectionWifi.cpp">
+      <Filter>ソース/ヘッダ\p2p\proc\wifi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+// @author hosaka_genya
+
+#define CPPUTEST_STD_CPP_LIB_DISABLED
+#define CPPUTEST_MEM_LEAK_DETECTION_DISABLED

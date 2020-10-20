@@ -1,0 +1,21 @@
+// ピクセル シェーダの入力データ定義
+struct PS_INPUT {
+    float4 Pos  : SV_POSITION; // 頂点座標(透視座標系)
+    float3 Norm : NORMAL;      // 法線ベクトル(ワールド座標系)
+    float4 Col  : COLOR;       // 頂点色
+		float4 Uv   : TEXCOORD0;     
+};
+
+Texture2D		g_Texture : register( t0 );
+SamplerState	g_Sampler : register( s0 );
+
+// ピクセル シェーダの関数
+float4 PS(PS_INPUT input) : SV_TARGET
+{
+	float4		outColor;
+	
+	outColor = g_Texture.Sample( g_Sampler, input.Uv.xy );
+	outColor *= input.Col;
+	
+	return outColor;
+}

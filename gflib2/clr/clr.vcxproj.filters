@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Animation">
+      <UniqueIdentifier>{ea1aa224-54b8-419a-9716-a6d42f9ba38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Animation">
+      <UniqueIdentifier>{a4651d0a-75fa-4083-b047-7750c202e70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gfx">
+      <UniqueIdentifier>{796fec2b-3310-44d3-983c-c4baa2b30d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\math">
+      <UniqueIdentifier>{6efc2485-2a0c-4a4a-83d0-3e2bb2c49022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\poke_3d_lib">
+      <UniqueIdentifier>{d5a714ac-70a9-4604-ab59-f9a04f1959c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\RenderingEngine">
+      <UniqueIdentifier>{eacb3b20-4e26-4786-bb56-8f76e2b4577e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\RenderingEngine\Renderer">
+      <UniqueIdentifier>{41d0992b-cd27-41b3-b0a7-d36482375e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\RenderingEngine\Renderer\Util">
+      <UniqueIdentifier>{9e42c81e-8525-4847-92b8-4755f0ad91cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\RenderingEngine\SceneGraph">
+      <UniqueIdentifier>{f6bc8255-007b-4d25-b29e-e721514acd46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\RenderingEngine\SceneGraph\Instance">
+      <UniqueIdentifier>{d85b2b4f-82c8-4bb9-aff2-8410b4b1bbdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\RenderingEngine\SceneGraph\Resource">
+      <UniqueIdentifier>{eb595d7d-5361-47bb-a970-8543da937dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gfx">
+      <UniqueIdentifier>{16dc532f-9a66-4076-a378-80096d500391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\math">
+      <UniqueIdentifier>{76fca345-733d-4415-956c-cb49500bbbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\poke_3d_lib">
+      <UniqueIdentifier>{04e04b00-68a1-40b9-9f1e-da60f806d2b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RenderingEngine">
+      <UniqueIdentifier>{d3a37384-e832-4cd2-ab27-2f390ee23e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RenderingEngine\Renderer">
+      <UniqueIdentifier>{1e75ef4e-6870-453c-992f-2ee3570726de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RenderingEngine\Renderer\Util">
+      <UniqueIdentifier>{e9ddd062-8f64-4c2a-8daa-7a363163ba60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RenderingEngine\SceneGraph">
+      <UniqueIdentifier>{a0db0a37-ee77-4e38-b20a-f5d3f670d22d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RenderingEngine\SceneGraph\Instance">
+      <UniqueIdentifier>{0f40fb46-d4e8-4cf6-a565-6010513fe909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RenderingEngine\SceneGraph\Resource">
+      <UniqueIdentifier>{47ccf8a2-8fab-40c8-a971-fbc80cfeda8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\system">
+      <UniqueIdentifier>{5494aed8-13d8-430f-9450-a3880379bc5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\system\Timer">
+      <UniqueIdentifier>{c0487bb3-8c3a-4e80-ab96-933b84543341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\system">
+      <UniqueIdentifier>{1c3334b3-4827-4f57-b2ba-6787e374e42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\system\Timer">
+      <UniqueIdentifier>{e7f0c5dc-13a5-4b04-9cd2-7151a28d5e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\util">
+      <UniqueIdentifier>{fd519ab8-ddfe-4d50-a613-ce5bf98e2e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\debug">
+      <UniqueIdentifier>{363fb5d2-7311-4a28-9250-516d9482e68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\debug">
+      <UniqueIdentifier>{5e837a3c-9813-4d1a-af31-0004e02658b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Animation\gfl2_JointAnimationResourceNode_CLR.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Animation\gfl2_JointController_CLR.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_Buffer_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_Color_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_DrawUtil_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_enums_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_GFGL_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_ImageData_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_Shader_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_StateObject_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_Surface_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_Texture_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_types_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\gfl2_MathAABB_CLR.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\gfl2_MathUtil_CLR.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\gfl2_Matrix_CLR.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\gfl2_Quaternion_CLR.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\gfl2_Vector_CLR.h">
+      <Filter>ヘッダー ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\poke_3d_lib\gfl2_PokemonModel_CLR.h">
+      <Filter>ヘッダー ファイル\poke_3d_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\gfl2_RenderingEngineEnums_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\Renderer\gfl2_DrawManager_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\Renderer\Util\gfl2_ViewerEnumDefine.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\Renderer\Util\gfl2_ViewerEnums_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\Renderer\Util\gfl2_ViewerEnumsNative_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\Renderer\Util\gfl2_ViewerRenderingPipeLine_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\Renderer\Util\gfl2_ViewerRenderingPipeLineNative_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\gfl2_SceneGraphManager_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_DrawableNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_DrawEnvNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_InstanceCreator_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_JointInstanceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_LightNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_LightSetNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_LocatorInstanceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_MaterialInstanceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_ModelInstanceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_MotionConfigInstanceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Instance\gfl2_ViewerLocatorInstanceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_GfEnvData_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_IResourceData_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_JointAnimationResourceNodeFactory_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_MaterialResourceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_McnfData_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_ResourceManager_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_ResourceNode_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\system\Timer\gfl2_PerformanceCounter_CLR.h">
+      <Filter>ヘッダー ファイル\system\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_GfBinaryMotData_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RenderingEngine\SceneGraph\Resource\gfl2_GfBinaryMdlData_CLR.h">
+      <Filter>ヘッダー ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\gfl2_String_CLR.h">
+      <Filter>ヘッダー ファイル\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Animation\gfl2_AnimationEnums_CLR.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\debug\gfl2_assert_CLR.h">
+      <Filter>ヘッダー ファイル\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\gfl2_Util_CLR.h">
+      <Filter>ヘッダー ファイル\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\gfl2_PCDebugUtil_CLR.h">
+      <Filter>ヘッダー ファイル\gfx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Animation\gfl2_JointAnimationResourceNode_CLR.cpp">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Animation\gfl2_JointController_CLR.cpp">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_Buffer_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_Color_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_DrawUtil_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_GFGL_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_ImageData_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_Shader_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_StateObject_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_Surface_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_Texture_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_types_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\math\gfl2_MathAABB_CLR.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\math\gfl2_MathUtil_CLR.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\math\gfl2_Matrix_CLR.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\math\gfl2_Quaternion_CLR.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\math\gfl2_Vector_CLR.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\poke_3d_lib\gfl2_PokemonModel_CLR.cpp">
+      <Filter>ソース ファイル\poke_3d_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\Renderer\gfl2_DrawManager_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\Renderer\Util\gfl2_ViewerRenderingPipeLine_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\Renderer\Util\gfl2_ViewerRenderingPipeLineNative_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\Renderer\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\gfl2_SceneGraphManager_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_DrawableNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_DrawEnvNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_InstanceCreator_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_JointInstanceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_LightNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_LightSetNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_LocatorInstanceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_MaterialInstanceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_ModelInstanceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_MotionConfigInstanceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Instance\gfl2_ViewerLocatorInstanceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_GfEnvData_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_JointAnimationResourceNodeFactory_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_MaterialResourceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_McnfData_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_ResourceManager_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_ResourceNode_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\system\Timer\gfl2_PerformanceCounter_CLR.cpp">
+      <Filter>ソース ファイル\system\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_GfBinaryMotData_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RenderingEngine\SceneGraph\Resource\gfl2_GfBinaryMdlData_CLR.cpp">
+      <Filter>ソース ファイル\RenderingEngine\SceneGraph\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\debug\gfl2_assert_CLR.cpp">
+      <Filter>ソース ファイル\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gfx\gfl2_PCDebugUtil_CLR.cpp">
+      <Filter>ソース ファイル\gfx</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

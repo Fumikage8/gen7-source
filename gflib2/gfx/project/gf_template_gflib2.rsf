@@ -1,0 +1,9 @@
+# See the CTR-SDK documents - ctr_makerom - RSF for details.
+BasicInfo:
+  Title      : $(TITLE)
+
+Rom:
+  HostRoot: "$(ROMFS_ROOT)"
+
+TitleInfo:
+  UniqueId: 0xff3ff

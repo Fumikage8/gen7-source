@@ -1,0 +1,2758 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfMotion version="0.94" FrameSize="60" IsLoop="false" CurrrentUnit="ntsc">
+	<Source Path="C:/home/xy_pokemon/bw/pm0501_00_mijumaru/scenes/pm0501_00_ba20_buturi01.mb" TargetNode="|Ref:pm0501_00"/>
+	<ModelAABB>-42.552460 -16.356405 -25.760489 21.447412 31.034039 45.868294</ModelAABB>
+	<UvAnimation>
+		<Material Name="Ref:REye">
+			<TextureSlot No="0">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="2" Value="1" Slope="0"/>
+					<HermiteKey Frame="3" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="4" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="5" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="52" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="53" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="54" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="55" Value="1" Slope="0"/>
+					<HermiteKey Frame="60" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="2" Value="1" Slope="0"/>
+					<HermiteKey Frame="3" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="4" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="5" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="52" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="53" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="54" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="55" Value="1" Slope="0"/>
+					<HermiteKey Frame="60" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="2" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="3" Value="1.75" Slope="-0.25"/>
+					<HermiteKey Frame="4" Value="1.25" Slope="-0.25"/>
+					<HermiteKey Frame="5" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="52" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="53" Value="1.25" Slope="0.25"/>
+					<HermiteKey Frame="54" Value="1.75" Slope="0.25"/>
+					<HermiteKey Frame="55" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="60" Value="1.75" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="Ref:LEye">
+			<TextureSlot No="0">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="2" Value="1" Slope="0"/>
+					<HermiteKey Frame="3" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="4" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="5" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="52" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="53" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="54" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="55" Value="1" Slope="0"/>
+					<HermiteKey Frame="60" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="2" Value="1" Slope="0"/>
+					<HermiteKey Frame="3" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="4" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="5" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="52" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="53" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="54" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="55" Value="1" Slope="0"/>
+					<HermiteKey Frame="60" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="2" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="3" Value="1.75" Slope="-0.25"/>
+					<HermiteKey Frame="4" Value="1.25" Slope="-0.25"/>
+					<HermiteKey Frame="5" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="52" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="53" Value="1.25" Slope="0.25"/>
+					<HermiteKey Frame="54" Value="1.75" Slope="0.25"/>
+					<HermiteKey Frame="55" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="60" Value="1.75" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="Ref:Mouth">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="0.5"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0.25"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<OneFrameKey Value="0.5"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0.25"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<OneFrameKey Value="1.25"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0.25"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+	</UvAnimation>
+	<TexturePatternAnimation/>
+	<BlendShapeAnimation/>
+	<VisibilityAnimation>
+		<Mesh Name="Ref:pm0501_00_SkinShape">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+	</VisibilityAnimation>
+	<AttributeKeyAnimation>
+		<Attribute Name="AK_EffectStart01">
+			<AttributeKey Frame="14" Value="1"/>
+		</Attribute>
+		<Attribute Name="AK_ButuriStart01">
+			<AttributeKey Frame="14" Value="1"/>
+		</Attribute>
+	</AttributeKeyAnimation>
+	<ShaderAnimation/>
+	<SkeltalAnimation>
+		<Node Name="Ref:Waist">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0.07181670334"/>
+				<HermiteKey Frame="1" Value="0.07181670334" Slope="0.13220132555"/>
+				<HermiteKey Frame="3" Value="0.54465530036" Slope="0.30695244308"/>
+				<HermiteKey Frame="5" Value="1.22438910154" Slope="0.33122956283"/>
+				<HermiteKey Frame="6" Value="1.54076666292" Slope="0.28602330991"/>
+				<HermiteKey Frame="7" Value="1.79643572135" Slope="0.21355195974"/>
+				<HermiteKey Frame="8" Value="1.96787058241" Slope="0.13532106668"/>
+				<HermiteKey Frame="9" Value="2.06707785471" Slope="0.08016487495"/>
+				<HermiteKey Frame="10" Value="2.12820033232" Slope="0.04557228337"/>
+				<HermiteKey Frame="11" Value="2.15822242146" Slope="0.01935679224"/>
+				<HermiteKey Frame="12" Value="2.16691391679" Slope="0.00440273266"/>
+				<HermiteKey Frame="13" Value="2.16702788679" Slope="-0.19537376217"/>
+				<HermiteKey Frame="14" Value="1.77616639244" Slope="-0.50819431636"/>
+				<HermiteKey Frame="15" Value="1.15063925406" Slope="-0.69622069617"/>
+				<HermiteKey Frame="16" Value="0.38372500011" Slope="-0.70181575051"/>
+				<HermiteKey Frame="17" Value="-0.25299224695" Slope="-0.40086189062"/>
+				<HermiteKey Frame="18" Value="-0.41799878112" Slope="-0.13323017969"/>
+				<HermiteKey Frame="19" Value="-0.51945260633" Slope="-0.07858652135"/>
+				<HermiteKey Frame="21" Value="-0.60127393837" Slope="-0.01872624841"/>
+				<HermiteKey Frame="22" Value="-0.61262432064" Slope="-0.01015499754"/>
+				<HermiteKey Frame="23" Value="-0.62158393345" Slope="-0.00866952163"/>
+				<HermiteKey Frame="29" Value="-0.61278091159" Slope="0.02073673681"/>
+				<HermiteKey Frame="30" Value="-0.58741291743" Slope="0.03367197403"/>
+				<HermiteKey Frame="31" Value="-0.54543696352" Slope="0.05123654002"/>
+				<HermiteKey Frame="32" Value="-0.48493983739" Slope="0.06621216313"/>
+				<HermiteKey Frame="33" Value="-0.41301263725" Slope="0.07213525211"/>
+				<HermiteKey Frame="34" Value="-0.34066933317" Slope="0.06853884411"/>
+				<HermiteKey Frame="36" Value="-0.22123582413" Slope="0.04882699081"/>
+				<HermiteKey Frame="37" Value="-0.17828096741" Slope="0.03639853612"/>
+				<HermiteKey Frame="38" Value="-0.1484387519" Slope="0.02525812568"/>
+				<HermiteKey Frame="39" Value="-0.12776471604" Slope="0.01928971923"/>
+				<HermiteKey Frame="41" Value="-0.0924475423" Slope="0.01790491392"/>
+				<HermiteKey Frame="46" Value="-0.00931026691" Slope="0.01055352602"/>
+				<HermiteKey Frame="49" Value="0.00779961463" Slope="0.00280582621"/>
+				<HermiteKey Frame="59" Value="0.00040929716" Slope="-0.00074956655"/>
+				<HermiteKey Frame="60" Value="0" Slope="-0.00040929716"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="-0.01566268943"/>
+				<HermiteKey Frame="1" Value="-0.01566268943" Slope="-0.02756106145"/>
+				<HermiteKey Frame="2" Value="-0.0551221229" Slope="-0.04167832291"/>
+				<HermiteKey Frame="3" Value="-0.09901933525" Slope="-0.03115720765"/>
+				<HermiteKey Frame="4" Value="-0.11743653821" Slope="0.00630261082"/>
+				<HermiteKey Frame="5" Value="-0.08641411361" Slope="0.05393673018"/>
+				<HermiteKey Frame="6" Value="-0.00956307785" Slope="0.08391927889"/>
+				<HermiteKey Frame="7" Value="0.08142444417" Slope="0.07823689699"/>
+				<HermiteKey Frame="8" Value="0.14691071614" Slope="0.04530652209"/>
+				<HermiteKey Frame="10" Value="0.1721692607" Slope="-0.00402689346"/>
+				<HermiteKey Frame="11" Value="0.16398370141" Slope="-0.00643598888"/>
+				<HermiteKey Frame="12" Value="0.15929728293" Slope="-0.00307096791"/>
+				<HermiteKey Frame="13" Value="0.1578417656" Slope="-0.03921498266"/>
+				<HermiteKey Frame="14" Value="0.08086731762" Slope="-0.19180371737"/>
+				<HermiteKey Frame="15" Value="-0.22576566913" Slope="-0.29439221603"/>
+				<HermiteKey Frame="16" Value="-0.50791711444" Slope="-0.14811965335"/>
+				<HermiteKey Frame="17" Value="-0.52200497583" Slope="0.00582181625"/>
+				<HermiteKey Frame="18" Value="-0.49627348195" Slope="0.02518262274"/>
+				<HermiteKey Frame="19" Value="-0.47163973035" Slope="0.02146549904"/>
+				<HermiteKey Frame="20" Value="-0.45334248387" Slope="0.01511027527"/>
+				<HermiteKey Frame="22" Value="-0.43369311337" Slope="0.00706890636"/>
+				<HermiteKey Frame="24" Value="-0.42129054191" Slope="0.00568158777"/>
+				<HermiteKey Frame="29" Value="-0.40417837399" Slope="0.0006569332"/>
+				<HermiteKey Frame="30" Value="-0.40408253796" Slope="-0.000260822"/>
+				<HermiteKey Frame="33" Value="-0.39278996099" Slope="0.01516850818"/>
+				<HermiteKey Frame="34" Value="-0.37219156771" Slope="0.02460848795"/>
+				<HermiteKey Frame="36" Value="-0.31215456273" Slope="0.03007720664"/>
+				<HermiteKey Frame="37" Value="-0.2834185718" Slope="0.0246786851"/>
+				<HermiteKey Frame="38" Value="-0.26279719253" Slope="0.01680168257"/>
+				<HermiteKey Frame="39" Value="-0.24981520666" Slope="0.01197157113"/>
+				<HermiteKey Frame="41" Value="-0.22741027543" Slope="0.01226422794"/>
+				<HermiteKey Frame="46" Value="-0.15406686278" Slope="0.01594118289"/>
+				<HermiteKey Frame="59" Value="-0.00118527055" Slope="0.00230914914"/>
+				<HermiteKey Frame="60" Value="0" Slope="0.00118527055"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="1.57079632679" Slope="0.01146450935"/>
+				<HermiteKey Frame="1" Value="1.58226083615" Slope="0.01543568318"/>
+				<HermiteKey Frame="2" Value="1.60166769315" Slope="0.01071948938"/>
+				<HermiteKey Frame="3" Value="1.60369981491" Slope="-0.01233569917"/>
+				<HermiteKey Frame="4" Value="1.5769962948" Slope="-0.03364144822"/>
+				<HermiteKey Frame="5" Value="1.53641691846" Slope="-0.03358119073"/>
+				<HermiteKey Frame="6" Value="1.50983391334" Slope="-0.01285009134"/>
+				<HermiteKey Frame="7" Value="1.51071673578" Slope="0.00907405405"/>
+				<HermiteKey Frame="8" Value="1.52798202143" Slope="0.01846283459"/>
+				<HermiteKey Frame="10" Value="1.56420514323" Slope="0.01212696652"/>
+				<HermiteKey Frame="11" Value="1.57189633801" Slope="0.00459868078"/>
+				<HermiteKey Frame="12" Value="1.57340250479" Slope="0.00094908387"/>
+				<HermiteKey Frame="13" Value="1.57379450574" Slope="-0.01144054598"/>
+				<HermiteKey Frame="14" Value="1.55052141283" Slope="-0.01234907712"/>
+				<HermiteKey Frame="15" Value="1.5490963515" Slope="0.03377161488"/>
+				<HermiteKey Frame="16" Value="1.61806464259" Slope="0.08658982463"/>
+				<HermiteKey Frame="17" Value="1.72227600076" Slope="0.0573296677"/>
+				<HermiteKey Frame="18" Value="1.73272397799" Slope="0.00552452559"/>
+				<HermiteKey Frame="19" Value="1.73332505193" Slope="-0.00215509765"/>
+				<HermiteKey Frame="20" Value="1.72841378268" Slope="-0.00642660774"/>
+				<HermiteKey Frame="21" Value="1.72047183646" Slope="-0.0090303161"/>
+				<HermiteKey Frame="23" Value="1.70136885873" Slope="-0.00712721781"/>
+				<HermiteKey Frame="29" Value="1.69197029561" Slope="-0.00193671333"/>
+				<HermiteKey Frame="31" Value="1.68257904542" Slope="-0.00853276636"/>
+				<HermiteKey Frame="32" Value="1.67200591063" Slope="-0.01179034487"/>
+				<HermiteKey Frame="34" Value="1.64833812896" Slope="-0.00752083319"/>
+				<HermiteKey Frame="35" Value="1.64395668931" Slope="-0.0013554227"/>
+				<HermiteKey Frame="37" Value="1.6515456427" Slope="0.00666755917"/>
+				<HermiteKey Frame="38" Value="1.6589624019" Slope="0.00587652359"/>
+				<HermiteKey Frame="39" Value="1.66329868988" Slope="0.00157872012"/>
+				<HermiteKey Frame="40" Value="1.66211984215" Slope="-0.00370385047"/>
+				<HermiteKey Frame="43" Value="1.63603205675" Slope="-0.01052300894"/>
+				<HermiteKey Frame="46" Value="1.60731585786" Slope="-0.00719073906"/>
+				<HermiteKey Frame="53" Value="1.5900618994" Slope="-0.00204817878"/>
+				<HermiteKey Frame="59" Value="1.57162324634" Slope="-0.00150987561"/>
+				<HermiteKey Frame="60" Value="1.57079632679" Slope="-0.00082691955"/>
+			</RotateZ>
+			<TranslateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="12" Value="0" Slope="0"/>
+				<HermiteKey Frame="13" Value="0" Slope="0.14950364464"/>
+				<HermiteKey Frame="14" Value="0.29900728928" Slope="0.28476884697"/>
+				<HermiteKey Frame="15" Value="0.56953769394" Slope="-0.07119247267"/>
+				<HermiteKey Frame="16" Value="0.15662234394" Slope="-0.39867638575"/>
+				<HermiteKey Frame="17" Value="-0.22781507757" Slope="-0.18037231108"/>
+				<HermiteKey Frame="18" Value="-0.20412227822" Slope="0.04009544192"/>
+				<HermiteKey Frame="22" Value="0" Slope="0.01184639968"/>
+				<HermiteKey Frame="27" Value="0" Slope="0"/>
+				<HermiteKey Frame="60" Value="0" Slope="0"/>
+			</TranslateX>
+			<TranslateY>
+				<HermiteKey Frame="0" Value="6.55489107369" Slope="0.05614286307"/>
+				<HermiteKey Frame="3" Value="6.72331965889" Slope="0.02728483279"/>
+				<HermiteKey Frame="5" Value="6.65416908386" Slope="-0.10469488895"/>
+				<HermiteKey Frame="8" Value="6.37740247144" Slope="0.05848057169"/>
+				<HermiteKey Frame="10" Value="6.78115236031" Slope="0.25873952088"/>
+				<HermiteKey Frame="11" Value="7.03802237649" Slope="0.19775306485"/>
+				<HermiteKey Frame="12" Value="7.17665849001" Slope="0.08498657612"/>
+				<HermiteKey Frame="13" Value="7.20799552872" Slope="0.21144731102"/>
+				<HermiteKey Frame="14" Value="7.59955311205" Slope="0.43810700232"/>
+				<HermiteKey Frame="15" Value="8.08420953336" Slope="0.22580110109"/>
+				<HermiteKey Frame="16" Value="8.05115531423" Slope="-0.06571163747"/>
+				<HermiteKey Frame="17" Value="7.95278625841" Slope="-0.00761735082"/>
+				<HermiteKey Frame="18" Value="8.03592061259" Slope="0.1017688354"/>
+				<HermiteKey Frame="21" Value="8.40175122132" Slope="0.09299089217"/>
+				<HermiteKey Frame="24" Value="8.55942469443" Slope="0.04028474972"/>
+				<HermiteKey Frame="29" Value="8.56723428915" Slope="-0.06427311662"/>
+				<HermiteKey Frame="31" Value="8.32207838132" Slope="-0.20885126315"/>
+				<HermiteKey Frame="35" Value="7.19196224592" Slope="-0.22403667688"/>
+				<HermiteKey Frame="36" Value="7.01008388967" Slope="0.11077779039"/>
+				<HermiteKey Frame="37" Value="7.41351782669" Slope="1.39854219291"/>
+				<HermiteKey Frame="38" Value="9.80716827549" Slope="1.89066250962"/>
+				<HermiteKey Frame="40" Value="11.78709516935" Slope="0.29981573787"/>
+				<HermiteKey Frame="42" Value="11.28061835468" Slope="-0.77648353897"/>
+				<HermiteKey Frame="43" Value="10.24150724373" Slope="-1.24721126718"/>
+				<HermiteKey Frame="44" Value="8.78619582031" Slope="-1.35026882495"/>
+				<HermiteKey Frame="45" Value="7.54096959383" Slope="-0.8789678852"/>
+				<HermiteKey Frame="46" Value="7.02826004991" Slope="-0.44599886171"/>
+				<HermiteKey Frame="57" Value="6.55006066019" Slope="0.02434900623"/>
+				<HermiteKey Frame="60" Value="6.55489107369" Slope="0"/>
+			</TranslateY>
+			<TranslateZ>
+				<HermiteKey Frame="0" Value="0.27548843082" Slope="-1.1943045412"/>
+				<HermiteKey Frame="1" Value="-0.91881611038" Slope="-1.24272011741"/>
+				<HermiteKey Frame="7" Value="-8.08464336647" Slope="-0.77793083906"/>
+				<HermiteKey Frame="12" Value="-9.33630578466" Slope="0.09957317854"/>
+				<HermiteKey Frame="13" Value="-9.19806011805" Slope="1.9481085694"/>
+				<HermiteKey Frame="14" Value="-5.44008864585" Slope="5.9547400351"/>
+				<HermiteKey Frame="16" Value="11.06570320538" Slope="6.36027672356"/>
+				<HermiteKey Frame="17" Value="15.43197339927" Slope="2.6240448693"/>
+				<HermiteKey Frame="18" Value="16.31379294398" Slope="0.794758707"/>
+				<HermiteKey Frame="22" Value="18.29409841246" Slope="0.26905518119"/>
+				<HermiteKey Frame="25" Value="18.90879215526" Slope="0.15445932303"/>
+				<HermiteKey Frame="32" Value="18.91145728127" Slope="-0.19729861746"/>
+				<HermiteKey Frame="35" Value="17.99102345578" Slope="-0.42232166263"/>
+				<HermiteKey Frame="36" Value="17.52874400935" Slope="-0.82548736216"/>
+				<HermiteKey Frame="37" Value="16.34004873145" Slope="-2.76426997348"/>
+				<HermiteKey Frame="38" Value="12.00020406238" Slope="-3.91327876395"/>
+				<HermiteKey Frame="44" Value="0.5222285679" Slope="-0.51999517325"/>
+				<HermiteKey Frame="46" Value="-0.05035148242" Slope="-0.12249929809"/>
+				<HermiteKey Frame="50" Value="0.13178568388" Slope="0.08467328334"/>
+				<HermiteKey Frame="55" Value="0.27178598597" Slope="0.00514153865"/>
+				<HermiteKey Frame="60" Value="0.27548843082" Slope="0"/>
+			</TranslateZ>
+		</Node>
+		<Node Name="Ref:Spine1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.31934577303" Slope="0.05071378773"/>
+				<HermiteKey Frame="1" Value="-0.2686319853" Slope="0.08048433129"/>
+				<HermiteKey Frame="2" Value="-0.15837711045" Slope="0.1096341136"/>
+				<HermiteKey Frame="3" Value="-0.0493637581" Slope="0.07918855522"/>
+				<HermiteKey Frame="4" Value="0" Slope="0.02468187905"/>
+				<HermiteKey Frame="5" Value="0" Slope="0"/>
+				<HermiteKey Frame="36" Value="0" Slope="0"/>
+				<HermiteKey Frame="38" Value="-0.0023037648" Slope="-0.00444272688"/>
+				<HermiteKey Frame="52" Value="-0.25986001284" Slope="-0.01621972871"/>
+				<HermiteKey Frame="59" Value="-0.31856150933" Slope="-0.00161116579"/>
+				<HermiteKey Frame="60" Value="-0.31934577303" Slope="-0.0007842637"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.14584568132" Slope="0.02093119267"/>
+				<HermiteKey Frame="1" Value="-0.12491448866" Slope="0.03502781561"/>
+				<HermiteKey Frame="2" Value="-0.0757900501" Slope="0.05048014923"/>
+				<HermiteKey Frame="3" Value="-0.0239541902" Slope="0.03789502505"/>
+				<HermiteKey Frame="4" Value="0" Slope="0.0119770951"/>
+				<HermiteKey Frame="5" Value="0" Slope="0"/>
+				<HermiteKey Frame="36" Value="0" Slope="0"/>
+				<HermiteKey Frame="39" Value="-0.00239003642" Slope="-0.00231949022"/>
+				<HermiteKey Frame="51" Value="-0.08166154715" Slope="-0.00861427324"/>
+				<HermiteKey Frame="54" Value="-0.10863653576" Slope="-0.009340592"/>
+				<HermiteKey Frame="59" Value="-0.14439269472" Slope="-0.00273582978"/>
+				<HermiteKey Frame="60" Value="-0.14584568132" Slope="-0.0014529866"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.09640762456" Slope="-0.02129457022"/>
+				<HermiteKey Frame="1" Value="0.07511305434" Slope="-0.03006012859"/>
+				<HermiteKey Frame="2" Value="0.03628736737" Slope="-0.03318443376"/>
+				<HermiteKey Frame="3" Value="0.00874418682" Slope="-0.01814368369"/>
+				<HermiteKey Frame="5" Value="0" Slope="0"/>
+				<HermiteKey Frame="36" Value="0" Slope="0"/>
+				<HermiteKey Frame="39" Value="0.00183359055" Slope="0.0017687952"/>
+				<HermiteKey Frame="47" Value="0.03791965165" Slope="0.00658157552"/>
+				<HermiteKey Frame="53" Value="0.07689405812" Slope="0.0053038287"/>
+				<HermiteKey Frame="59" Value="0.09599186968" Slope="0.00083306311"/>
+				<HermiteKey Frame="60" Value="0.09640762456" Slope="0.00041575488"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Spine2">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.06045619816" Slope="-0.0528053554"/>
+				<HermiteKey Frame="1" Value="0.00765084276" Slope="-0.088947651"/>
+				<HermiteKey Frame="3" Value="-0.26357916985" Slope="-0.13051001424"/>
+				<HermiteKey Frame="4" Value="-0.37845913232" Slope="-0.08908888304"/>
+				<HermiteKey Frame="5" Value="-0.44175693594" Slope="-0.04559984212"/>
+				<HermiteKey Frame="7" Value="-0.46476149249" Slope="0.02015125738"/>
+				<HermiteKey Frame="8" Value="-0.42935630179" Slope="0.04746810364"/>
+				<HermiteKey Frame="10" Value="-0.30197136939" Slope="0.06391597306"/>
+				<HermiteKey Frame="11" Value="-0.24199333909" Slope="0.04645629264"/>
+				<HermiteKey Frame="12" Value="-0.20905878412" Slope="0.02027887586"/>
+				<HermiteKey Frame="13" Value="-0.20143558737" Slope="-0.0017352587"/>
+				<HermiteKey Frame="14" Value="-0.21252930152" Slope="-0.04094484829"/>
+				<HermiteKey Frame="15" Value="-0.28332528396" Slope="-0.15490544985"/>
+				<HermiteKey Frame="16" Value="-0.52234020122" Slope="-0.22827972865"/>
+				<HermiteKey Frame="17" Value="-0.73988474125" Slope="-0.1336410302"/>
+				<HermiteKey Frame="18" Value="-0.78962226161" Slope="-0.03270129172"/>
+				<HermiteKey Frame="20" Value="-0.79933322121" Slope="0.01049489169"/>
+				<HermiteKey Frame="21" Value="-0.78429754132" Slope="0.01328790718"/>
+				<HermiteKey Frame="22" Value="-0.77275740685" Slope="0.00886755542"/>
+				<HermiteKey Frame="23" Value="-0.76656243048" Slope="0.00684359308"/>
+				<HermiteKey Frame="29" Value="-0.69711937492" Slope="0.01715142037"/>
+				<HermiteKey Frame="31" Value="-0.65709745674" Slope="0.02408609346"/>
+				<HermiteKey Frame="35" Value="-0.5352546603" Slope="0.03379891183"/>
+				<HermiteKey Frame="38" Value="-0.43123172789" Slope="0.03561129663"/>
+				<HermiteKey Frame="39" Value="-0.39525035164" Slope="0.03864727941"/>
+				<HermiteKey Frame="40" Value="-0.35393716906" Slope="0.04521325169"/>
+				<HermiteKey Frame="42" Value="-0.25123040689" Slope="0.05410422943"/>
+				<HermiteKey Frame="43" Value="-0.1966153894" Slope="0.05603380436"/>
+				<HermiteKey Frame="44" Value="-0.13916279816" Slope="0.05870354725"/>
+				<HermiteKey Frame="46" Value="-0.02256764828" Slope="0.05246612448"/>
+				<HermiteKey Frame="47" Value="0.02572395406" Slope="0.04155025938"/>
+				<HermiteKey Frame="48" Value="0.06053287047" Slope="0.02776883417"/>
+				<HermiteKey Frame="49" Value="0.0812616224" Slope="0.01604304903"/>
+				<HermiteKey Frame="53" Value="0.09545771166" Slope="-0.00144323894"/>
+				<HermiteKey Frame="55" Value="0.09259003098" Slope="-0.00314059782"/>
+				<HermiteKey Frame="59" Value="0.06688187215" Slope="-0.00689513265"/>
+				<HermiteKey Frame="60" Value="0.06045619816" Slope="-0.00642567399"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.05022406579" Slope="-0.03916599127"/>
+				<HermiteKey Frame="1" Value="-0.08939005706" Slope="-0.03348182914"/>
+				<HermiteKey Frame="2" Value="-0.11718772407" Slope="-0.01993970603"/>
+				<HermiteKey Frame="3" Value="-0.12926946911" Slope="-0.00316118397"/>
+				<HermiteKey Frame="5" Value="-0.10529728457" Slope="0.02129809578"/>
+				<HermiteKey Frame="7" Value="-0.05530498105" Slope="0.02408894707"/>
+				<HermiteKey Frame="8" Value="-0.03273600632" Slope="0.01976663918"/>
+				<HermiteKey Frame="12" Value="0.00876860398" Slope="0.00274018438"/>
+				<HermiteKey Frame="13" Value="0.00999197506" Slope="0.00029439341"/>
+				<HermiteKey Frame="14" Value="0.0093573908" Slope="-0.0019209181"/>
+				<HermiteKey Frame="15" Value="0.00615013886" Slope="-0.03412150104"/>
+				<HermiteKey Frame="16" Value="-0.05888561127" Slope="-0.05984101323"/>
+				<HermiteKey Frame="17" Value="-0.11353188761" Slope="-0.03203372073"/>
+				<HermiteKey Frame="18" Value="-0.12295305274" Slope="-0.00724318621"/>
+				<HermiteKey Frame="20" Value="-0.13062243089" Slope="-0.00173071212"/>
+				<HermiteKey Frame="23" Value="-0.13069864942" Slope="0.00047107309"/>
+				<HermiteKey Frame="29" Value="-0.11698975137" Slope="0.00638893481"/>
+				<HermiteKey Frame="31" Value="-0.09718775183" Slope="0.01638228868"/>
+				<HermiteKey Frame="32" Value="-0.07676160508" Slope="0.02510282629"/>
+				<HermiteKey Frame="33" Value="-0.04698209926" Slope="0.03422772177"/>
+				<HermiteKey Frame="35" Value="0.03560454221" Slope="0.04462189923"/>
+				<HermiteKey Frame="37" Value="0.1234834932" Slope="0.03887692111"/>
+				<HermiteKey Frame="38" Value="0.15869147915" Slope="0.02912667415"/>
+				<HermiteKey Frame="39" Value="0.1817368415" Slope="0.01751199667"/>
+				<HermiteKey Frame="40" Value="0.19371547249" Slope="0.00830284541"/>
+				<HermiteKey Frame="42" Value="0.19457410467" Slope="-0.00840555804"/>
+				<HermiteKey Frame="43" Value="0.18153141625" Slope="-0.02247981459"/>
+				<HermiteKey Frame="44" Value="0.1496144755" Slope="-0.04184913829"/>
+				<HermiteKey Frame="46" Value="0.03920358566" Slope="-0.05530678746"/>
+				<HermiteKey Frame="47" Value="-0.01278043525" Slope="-0.04201917699"/>
+				<HermiteKey Frame="48" Value="-0.04483476832" Slope="-0.02092840014"/>
+				<HermiteKey Frame="49" Value="-0.05463723553" Slope="-0.00347807468"/>
+				<HermiteKey Frame="51" Value="-0.04120868972" Slope="0.0120175431"/>
+				<HermiteKey Frame="53" Value="-0.01629027492" Slope="0.00803647326"/>
+				<HermiteKey Frame="54" Value="-0.01168288495" Slope="0.00116902153"/>
+				<HermiteKey Frame="55" Value="-0.01395223185" Slope="-0.00376101001"/>
+				<HermiteKey Frame="59" Value="-0.0429589757" Slope="-0.00776108648"/>
+				<HermiteKey Frame="60" Value="-0.05022406579" Slope="-0.00726509009"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.04536655269" Slope="0.04142819978"/>
+				<HermiteKey Frame="1" Value="-0.00393835291" Slope="0.04848812641"/>
+				<HermiteKey Frame="2" Value="0.05160970014" Slope="0.05680057986"/>
+				<HermiteKey Frame="3" Value="0.10966280681" Slope="0.04965254028"/>
+				<HermiteKey Frame="4" Value="0.1509147807" Slope="0.02890371706"/>
+				<HermiteKey Frame="6" Value="0.16769659269" Slope="-0.00440037647"/>
+				<HermiteKey Frame="7" Value="0.158669488" Slope="-0.00990055471"/>
+				<HermiteKey Frame="8" Value="0.14789548326" Slope="-0.00917623435"/>
+				<HermiteKey Frame="10" Value="0.1361123466" Slope="-0.00298033296"/>
+				<HermiteKey Frame="12" Value="0.13380037876" Slope="-0.00034821937"/>
+				<HermiteKey Frame="13" Value="0.13365991466" Slope="-0.05842014069"/>
+				<HermiteKey Frame="14" Value="0.01696009738" Slope="-0.12651687544"/>
+				<HermiteKey Frame="15" Value="-0.11937383623" Slope="-0.06839495044"/>
+				<HermiteKey Frame="16" Value="-0.11982980349" Slope="0.02622908725"/>
+				<HermiteKey Frame="17" Value="-0.06691566172" Slope="0.03623621177"/>
+				<HermiteKey Frame="18" Value="-0.04735737995" Slope="0.01389810047"/>
+				<HermiteKey Frame="20" Value="-0.03832037924" Slope="-0.00058280034"/>
+				<HermiteKey Frame="21" Value="-0.04028506148" Slope="-0.00093146477"/>
+				<HermiteKey Frame="22" Value="-0.04018330878" Slope="0.00135583285"/>
+				<HermiteKey Frame="23" Value="-0.03757339578" Slope="0.00248491252"/>
+				<HermiteKey Frame="29" Value="-0.02749261836" Slope="0.00104700556"/>
+				<HermiteKey Frame="30" Value="-0.02647762214" Slope="0.00210357553"/>
+				<HermiteKey Frame="31" Value="-0.0232854673" Slope="0.00456390509"/>
+				<HermiteKey Frame="33" Value="-0.01084533635" Slope="0.00636893333"/>
+				<HermiteKey Frame="35" Value="0.00220318147" Slope="0.00715178332"/>
+				<HermiteKey Frame="37" Value="0.01733984612" Slope="0.00715979438"/>
+				<HermiteKey Frame="39" Value="0.0279073435" Slope="0.00175888173"/>
+				<HermiteKey Frame="42" Value="0.01954259126" Slope="-0.00476518519"/>
+				<HermiteKey Frame="43" Value="0.01469464256" Slope="-0.00464166824"/>
+				<HermiteKey Frame="45" Value="0.00247126405" Slope="-0.01066810689"/>
+				<HermiteKey Frame="46" Value="-0.01107695899" Slope="-0.01550835869"/>
+				<HermiteKey Frame="47" Value="-0.02854545333" Slope="-0.01679484088"/>
+				<HermiteKey Frame="48" Value="-0.04466664075" Slope="-0.0137620346"/>
+				<HermiteKey Frame="53" Value="-0.07086197333" Slope="-0.0003982056"/>
+				<HermiteKey Frame="55" Value="-0.06978540189" Slope="0.00224135183"/>
+				<HermiteKey Frame="59" Value="-0.05043676907" Slope="0.00538855571"/>
+				<HermiteKey Frame="60" Value="-0.04536655269" Slope="0.00507021638"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Neck">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.02048021704" Slope="-0.00284425836"/>
+				<HermiteKey Frame="1" Value="0.01763595868" Slope="-0.00839040858"/>
+				<HermiteKey Frame="3" Value="-0.02944391392" Slope="-0.0468405356"/>
+				<HermiteKey Frame="4" Value="-0.08998167132" Slope="-0.07849787608"/>
+				<HermiteKey Frame="5" Value="-0.18643966608" Slope="-0.10848797333"/>
+				<HermiteKey Frame="7" Value="-0.42905842645" Slope="-0.11113249622"/>
+				<HermiteKey Frame="8" Value="-0.52922261042" Slope="-0.08357535303"/>
+				<HermiteKey Frame="9" Value="-0.59620913251" Slope="-0.0546109945"/>
+				<HermiteKey Frame="11" Value="-0.66128153456" Slope="-0.01595972701"/>
+				<HermiteKey Frame="12" Value="-0.67036405345" Slope="-0.00513321404"/>
+				<HermiteKey Frame="13" Value="-0.67154796264" Slope="0.0881151115"/>
+				<HermiteKey Frame="14" Value="-0.49413383046" Slope="0.2671940958"/>
+				<HermiteKey Frame="15" Value="-0.13715977105" Slope="0.36440428383"/>
+				<HermiteKey Frame="16" Value="0.2346747372" Slope="0.30244410927"/>
+				<HermiteKey Frame="17" Value="0.4677284475" Slope="0.13639872895"/>
+				<HermiteKey Frame="18" Value="0.50747219511" Slope="0.01350830736"/>
+				<HermiteKey Frame="20" Value="0.45385039214" Slope="-0.04295531051"/>
+				<HermiteKey Frame="21" Value="0.40883444119" Slope="-0.0350927244"/>
+				<HermiteKey Frame="22" Value="0.38366494333" Slope="-0.01456067981"/>
+				<HermiteKey Frame="23" Value="0.37971308157" Slope="-0.00132842245"/>
+				<HermiteKey Frame="27" Value="0.39516490032" Slope="0.00271797506"/>
+				<HermiteKey Frame="29" Value="0.3921228787" Slope="-0.00781335037"/>
+				<HermiteKey Frame="30" Value="0.3806554372" Slope="-0.01933186893"/>
+				<HermiteKey Frame="31" Value="0.35345914083" Slope="-0.03631211614"/>
+				<HermiteKey Frame="33" Value="0.25119113698" Slope="-0.05931624509"/>
+				<HermiteKey Frame="35" Value="0.12859465501" Slope="-0.05756211937"/>
+				<HermiteKey Frame="36" Value="0.07427447599" Slope="-0.04813611096"/>
+				<HermiteKey Frame="37" Value="0.0323224331" Slope="-0.0351802963"/>
+				<HermiteKey Frame="39" Value="-0.01254643895" Slope="-0.01123168243"/>
+				<HermiteKey Frame="40" Value="-0.01854948146" Slope="0.00415051513"/>
+				<HermiteKey Frame="41" Value="-0.00424540869" Slope="0.02413713561"/>
+				<HermiteKey Frame="43" Value="0.0659569" Slope="0.02797223484"/>
+				<HermiteKey Frame="44" Value="0.08566925944" Slope="0.00658482184"/>
+				<HermiteKey Frame="46" Value="0.05835314622" Slope="-0.02190787892"/>
+				<HermiteKey Frame="47" Value="0.03531078584" Slope="-0.01886949631"/>
+				<HermiteKey Frame="48" Value="0.02061415361" Slope="-0.01006710276"/>
+				<HermiteKey Frame="49" Value="0.01517658032" Slope="-0.00410245749"/>
+				<HermiteKey Frame="53" Value="0.0126304242" Slope="0.00057608083"/>
+				<HermiteKey Frame="56" Value="0.01440650615" Slope="0.00120501022"/>
+				<HermiteKey Frame="60" Value="0.02048021704" Slope="0.00141490352"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.00421140967" Slope="0.00122487207"/>
+				<HermiteKey Frame="2" Value="0.01126470406" Slope="0.00973894595"/>
+				<HermiteKey Frame="3" Value="0.02491417365" Slope="0.01909111822"/>
+				<HermiteKey Frame="4" Value="0.04944694049" Slope="0.03052038064"/>
+				<HermiteKey Frame="5" Value="0.08595493493" Slope="0.03945050611"/>
+				<HermiteKey Frame="6" Value="0.12834795272" Slope="0.04150375508"/>
+				<HermiteKey Frame="7" Value="0.16896244509" Slope="0.03752963165"/>
+				<HermiteKey Frame="8" Value="0.20340721601" Slope="0.03034192945"/>
+				<HermiteKey Frame="9" Value="0.229646304" Slope="0.02220152184"/>
+				<HermiteKey Frame="11" Value="0.25965423852" Slope="0.00892438334"/>
+				<HermiteKey Frame="12" Value="0.26565902636" Slope="0.00289800578"/>
+				<HermiteKey Frame="14" Value="0.2645147885" Slope="0.00212807996"/>
+				<HermiteKey Frame="15" Value="0.26970640999" Slope="0.03118206987"/>
+				<HermiteKey Frame="16" Value="0.32687892824" Slope="0.04168498134"/>
+				<HermiteKey Frame="17" Value="0.35307637267" Slope="0.00794308942"/>
+				<HermiteKey Frame="18" Value="0.34276510708" Slope="-0.00842401489"/>
+				<HermiteKey Frame="20" Value="0.33151235853" Slope="-0.00466712387"/>
+				<HermiteKey Frame="23" Value="0.3187166691" Slope="-0.003164631"/>
+				<HermiteKey Frame="29" Value="0.29646785757" Slope="-0.00784668616"/>
+				<HermiteKey Frame="31" Value="0.27159126086" Slope="-0.02047867243"/>
+				<HermiteKey Frame="33" Value="0.21311726804" Slope="-0.03625319382"/>
+				<HermiteKey Frame="35" Value="0.13162740893" Slope="-0.04200078994"/>
+				<HermiteKey Frame="36" Value="0.08988054694" Slope="-0.03905208235"/>
+				<HermiteKey Frame="37" Value="0.05352324423" Slope="-0.03392457554"/>
+				<HermiteKey Frame="39" Value="-0.00918791933" Slope="-0.03344542157"/>
+				<HermiteKey Frame="40" Value="-0.04485944727" Slope="-0.04447689728"/>
+				<HermiteKey Frame="41" Value="-0.09814171389" Slope="-0.05921669151"/>
+				<HermiteKey Frame="43" Value="-0.21664381051" Slope="-0.03589959884"/>
+				<HermiteKey Frame="44" Value="-0.23509202797" Slope="0.00944629787"/>
+				<HermiteKey Frame="45" Value="-0.19775121477" Slope="0.05666625932"/>
+				<HermiteKey Frame="47" Value="-0.04187964664" Slope="0.06421358661"/>
+				<HermiteKey Frame="48" Value="0.00666766389" Slope="0.03045466027"/>
+				<HermiteKey Frame="49" Value="0.0190296739" Slope="0.0053542949"/>
+				<HermiteKey Frame="51" Value="0.00693759651" Slope="-0.01221526273"/>
+				<HermiteKey Frame="53" Value="-0.01936749983" Slope="-0.00885827899"/>
+				<HermiteKey Frame="54" Value="-0.02477082976" Slope="-0.00203469612"/>
+				<HermiteKey Frame="55" Value="-0.02343689206" Slope="0.00259279132"/>
+				<HermiteKey Frame="59" Value="-0.00131772359" Slope="0.00594887622"/>
+				<HermiteKey Frame="60" Value="0.00421140967" Slope="0.00552913326"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.01621157802" Slope="0.00106941559"/>
+				<HermiteKey Frame="2" Value="-0.00820126725" Slope="0.01240982331"/>
+				<HermiteKey Frame="3" Value="0.00967748418" Slope="0.02509485886"/>
+				<HermiteKey Frame="4" Value="0.04198845047" Slope="0.04267328276"/>
+				<HermiteKey Frame="5" Value="0.0950240497" Slope="0.05792587217"/>
+				<HermiteKey Frame="6" Value="0.15784019481" Slope="0.05768735548"/>
+				<HermiteKey Frame="7" Value="0.21039876065" Slope="0.0406731878"/>
+				<HermiteKey Frame="8" Value="0.2391865704" Slope="0.01784787656"/>
+				<HermiteKey Frame="9" Value="0.24609451376" Slope="0.00226339533"/>
+				<HermiteKey Frame="11" Value="0.23724600862" Slope="-0.00660023309"/>
+				<HermiteKey Frame="12" Value="0.23051289488" Slope="-0.00537155621"/>
+				<HermiteKey Frame="13" Value="0.2265028962" Slope="-0.0322215967"/>
+				<HermiteKey Frame="14" Value="0.16606970148" Slope="-0.06113885752"/>
+				<HermiteKey Frame="15" Value="0.10422518117" Slope="0.00467744749"/>
+				<HermiteKey Frame="16" Value="0.17542459646" Slope="0.08523841619"/>
+				<HermiteKey Frame="17" Value="0.27470201355" Slope="0.06288699675"/>
+				<HermiteKey Frame="18" Value="0.30119858996" Slope="0.02083455379"/>
+				<HermiteKey Frame="20" Value="0.32345345779" Slope="0.0042667977"/>
+				<HermiteKey Frame="23" Value="0.31870155455" Slope="-0.00331593359"/>
+				<HermiteKey Frame="29" Value="0.28119322465" Slope="-0.01413968894"/>
+				<HermiteKey Frame="30" Value="0.26505826658" Slope="-0.02155187538"/>
+				<HermiteKey Frame="31" Value="0.23808947388" Slope="-0.03352186699"/>
+				<HermiteKey Frame="33" Value="0.1512185378" Slope="-0.04734505793"/>
+				<HermiteKey Frame="34" Value="0.10332441674" Slope="-0.04634730555"/>
+				<HermiteKey Frame="35" Value="0.05852392669" Slope="-0.04202151573"/>
+				<HermiteKey Frame="37" Value="-0.01772392327" Slope="-0.0372545503"/>
+				<HermiteKey Frame="39" Value="-0.09029865802" Slope="-0.03206483123"/>
+				<HermiteKey Frame="40" Value="-0.11935737777" Slope="-0.02648335554"/>
+				<HermiteKey Frame="41" Value="-0.1432653691" Slope="-0.02313337058"/>
+				<HermiteKey Frame="42" Value="-0.16562411893" Slope="-0.01958554381"/>
+				<HermiteKey Frame="43" Value="-0.18243645673" Slope="-0.00856373723"/>
+				<HermiteKey Frame="44" Value="-0.18275159338" Slope="0.01578134564"/>
+				<HermiteKey Frame="45" Value="-0.15087376546" Slope="0.0426556113"/>
+				<HermiteKey Frame="46" Value="-0.09744037078" Slope="0.05227014146"/>
+				<HermiteKey Frame="47" Value="-0.04633348255" Slope="0.04089566491"/>
+				<HermiteKey Frame="48" Value="-0.01564904095" Slope="0.02088757689"/>
+				<HermiteKey Frame="49" Value="-0.00455832877" Slope="0.00746282717"/>
+				<HermiteKey Frame="52" Value="-0.00531986828" Slope="-0.00372934973"/>
+				<HermiteKey Frame="53" Value="-0.00919549406" Slope="-0.00285979179"/>
+				<HermiteKey Frame="54" Value="-0.01103945186" Slope="-0.00107454686"/>
+				<HermiteKey Frame="55" Value="-0.01134458778" Slope="-0.00051532591"/>
+				<HermiteKey Frame="60" Value="-0.01621157802" Slope="-0.00094212873"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Head">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.2243388101" Slope="-0.05292117545"/>
+				<HermiteKey Frame="1" Value="0.17141763466" Slope="-0.09116365192"/>
+				<HermiteKey Frame="2" Value="0.04201150627" Slope="-0.14903634391"/>
+				<HermiteKey Frame="3" Value="-0.12665505316" Slope="-0.16486485707"/>
+				<HermiteKey Frame="4" Value="-0.28771820787" Slope="-0.15053571264"/>
+				<HermiteKey Frame="5" Value="-0.42772647843" Slope="-0.13667223077"/>
+				<HermiteKey Frame="7" Value="-0.67941700647" Slope="-0.10637211068"/>
+				<HermiteKey Frame="8" Value="-0.77380689078" Slope="-0.08803397986"/>
+				<HermiteKey Frame="9" Value="-0.8554849662" Slope="-0.07985911072"/>
+				<HermiteKey Frame="11" Value="-0.99454100257" Slope="-0.045615489"/>
+				<HermiteKey Frame="12" Value="-1.02475609022" Slope="-0.01898840559"/>
+				<HermiteKey Frame="13" Value="-1.03251781375" Slope="0.07451108155"/>
+				<HermiteKey Frame="14" Value="-0.87573392711" Slope="0.21670058607"/>
+				<HermiteKey Frame="15" Value="-0.5991166416" Slope="0.38259801483"/>
+				<HermiteKey Frame="16" Value="-0.11053789745" Slope="0.4797309895"/>
+				<HermiteKey Frame="17" Value="0.3603453374" Slope="0.30196813181"/>
+				<HermiteKey Frame="18" Value="0.49339836617" Slope="0.11828536164"/>
+				<HermiteKey Frame="21" Value="0.72093029104" Slope="0.0357384875"/>
+				<HermiteKey Frame="23" Value="0.75106230102" Slope="0.00459249359"/>
+				<HermiteKey Frame="29" Value="0.70214082681" Slope="-0.01712635744"/>
+				<HermiteKey Frame="31" Value="0.66593634512" Slope="-0.01772187251"/>
+				<HermiteKey Frame="32" Value="0.64867933233" Slope="-0.01664116464"/>
+				<HermiteKey Frame="33" Value="0.63265401585" Slope="-0.01361610762"/>
+				<HermiteKey Frame="34" Value="0.62144711709" Slope="-0.00831894607"/>
+				<HermiteKey Frame="35" Value="0.6160161237" Slope="-0.00489882505"/>
+				<HermiteKey Frame="36" Value="0.61164946699" Slope="-0.00739849433"/>
+				<HermiteKey Frame="38" Value="0.58529942842" Slope="-0.01861159773"/>
+				<HermiteKey Frame="39" Value="0.56399593957" Slope="-0.02847117212"/>
+				<HermiteKey Frame="40" Value="0.52835708419" Slope="-0.04909604205"/>
+				<HermiteKey Frame="41" Value="0.46580385548" Slope="-0.07386302335"/>
+				<HermiteKey Frame="42" Value="0.38063103749" Slope="-0.08614793344"/>
+				<HermiteKey Frame="43" Value="0.2935079886" Slope="-0.08186141353"/>
+				<HermiteKey Frame="44" Value="0.21690821044" Slope="-0.06875067472"/>
+				<HermiteKey Frame="46" Value="0.11421907609" Slope="-0.03006260696"/>
+				<HermiteKey Frame="48" Value="0.09247286702" Slope="-0.00046232899"/>
+				<HermiteKey Frame="49" Value="0.09495676726" Slope="0.0055093674"/>
+				<HermiteKey Frame="52" Value="0.13028722296" Slope="0.01441197776"/>
+				<HermiteKey Frame="53" Value="0.14472985743" Slope="0.01362179739"/>
+				<HermiteKey Frame="55" Value="0.16957388629" Slope="0.01256741781"/>
+				<HermiteKey Frame="59" Value="0.21804164471" Slope="0.00808895531"/>
+				<HermiteKey Frame="60" Value="0.2243388101" Slope="0.00629716539"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.13168313729" Slope="0.01615677469"/>
+				<HermiteKey Frame="1" Value="0.14783991198" Slope="0.00236308854"/>
+				<HermiteKey Frame="2" Value="0.13640931438" Slope="-0.0119550865"/>
+				<HermiteKey Frame="3" Value="0.12392973899" Slope="-0.0063877218"/>
+				<HermiteKey Frame="4" Value="0.12363387077" Slope="-0.00603508675"/>
+				<HermiteKey Frame="5" Value="0.11185956548" Slope="-0.02542562493"/>
+				<HermiteKey Frame="6" Value="0.07278262091" Slope="-0.04315525543"/>
+				<HermiteKey Frame="7" Value="0.02554905462" Slope="-0.04292143367"/>
+				<HermiteKey Frame="8" Value="-0.01306024643" Slope="-0.03036200947"/>
+				<HermiteKey Frame="9" Value="-0.03517496432" Slope="-0.01531204405"/>
+				<HermiteKey Frame="11" Value="-0.04630414356" Slope="-0.00290435005"/>
+				<HermiteKey Frame="12" Value="-0.04949303464" Slope="-0.00127280754"/>
+				<HermiteKey Frame="13" Value="-0.04884975863" Slope="-0.0613275887"/>
+				<HermiteKey Frame="14" Value="-0.17214821203" Slope="-0.02997200692"/>
+				<HermiteKey Frame="15" Value="-0.10879377247" Slope="0.12297424103"/>
+				<HermiteKey Frame="16" Value="0.07380027004" Slope="0.10231135783"/>
+				<HermiteKey Frame="17" Value="0.09582894319" Slope="0.0039362847"/>
+				<HermiteKey Frame="18" Value="0.08167283943" Slope="-0.0169105213"/>
+				<HermiteKey Frame="19" Value="0.06200790059" Slope="-0.01787499897"/>
+				<HermiteKey Frame="20" Value="0.04592284148" Slope="-0.01328029754"/>
+				<HermiteKey Frame="22" Value="0.02843233854" Slope="-0.00615422293"/>
+				<HermiteKey Frame="25" Value="0.01899183516" Slope="-0.00017034413"/>
+				<HermiteKey Frame="29" Value="0.0302587907" Slope="0.00504550252"/>
+				<HermiteKey Frame="30" Value="0.03569360636" Slope="0.00712277594"/>
+				<HermiteKey Frame="31" Value="0.04450434258" Slope="0.00908753672"/>
+				<HermiteKey Frame="33" Value="0.05538285764" Slope="-0.00653560355"/>
+				<HermiteKey Frame="34" Value="0.04079747269" Slope="-0.01841544018"/>
+				<HermiteKey Frame="35" Value="0.01855197728" Slope="-0.01739608063"/>
+				<HermiteKey Frame="36" Value="0.00600531144" Slope="-0.00293779056"/>
+				<HermiteKey Frame="37" Value="0.01267639617" Slope="0.0123771682"/>
+				<HermiteKey Frame="38" Value="0.03075964783" Slope="0.01666527636"/>
+				<HermiteKey Frame="39" Value="0.0460069489" Slope="0.00861474447"/>
+				<HermiteKey Frame="40" Value="0.04798913678" Slope="0.0045774314"/>
+				<HermiteKey Frame="41" Value="0.05516181169" Slope="0.01066493911"/>
+				<HermiteKey Frame="42" Value="0.06931901501" Slope="0.01001476906"/>
+				<HermiteKey Frame="43" Value="0.07519134981" Slope="-0.00281863693"/>
+				<HermiteKey Frame="44" Value="0.06368174115" Slope="-0.02796733919"/>
+				<HermiteKey Frame="45" Value="0.01925667142" Slope="-0.05420137445"/>
+				<HermiteKey Frame="46" Value="-0.04472100776" Slope="-0.05849105342"/>
+				<HermiteKey Frame="47" Value="-0.09772543541" Slope="-0.03605903467"/>
+				<HermiteKey Frame="48" Value="-0.1168390771" Slope="-0.00457030173"/>
+				<HermiteKey Frame="49" Value="-0.10686603886" Slope="0.01602317846"/>
+				<HermiteKey Frame="51" Value="-0.05462166719" Slope="0.03228066737"/>
+				<HermiteKey Frame="54" Value="0.04711031114" Slope="0.02890650086"/>
+				<HermiteKey Frame="55" Value="0.07273099407" Slope="0.02257068515"/>
+				<HermiteKey Frame="56" Value="0.09225168145" Slope="0.01768412104"/>
+				<HermiteKey Frame="59" Value="0.12802613146" Slope="0.00579676204"/>
+				<HermiteKey Frame="60" Value="0.13168313729" Slope="0.00365700583"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.02568604551" Slope="-0.02007605115"/>
+				<HermiteKey Frame="1" Value="-0.04576209665" Slope="-0.01222561253"/>
+				<HermiteKey Frame="2" Value="-0.05013727057" Slope="-0.00431356379"/>
+				<HermiteKey Frame="3" Value="-0.05438922424" Slope="-0.00031055516"/>
+				<HermiteKey Frame="4" Value="-0.05075838089" Slope="0.00758470351"/>
+				<HermiteKey Frame="5" Value="-0.03921981722" Slope="0.0110567568"/>
+				<HermiteKey Frame="6" Value="-0.02864486728" Slope="0.0098290573"/>
+				<HermiteKey Frame="8" Value="-0.01771208994" Slope="-0.00473691958"/>
+				<HermiteKey Frame="9" Value="-0.02903554178" Slope="-0.01539735575"/>
+				<HermiteKey Frame="10" Value="-0.04850680144" Slope="-0.01801112593"/>
+				<HermiteKey Frame="11" Value="-0.06505779364" Slope="-0.01159355027"/>
+				<HermiteKey Frame="12" Value="-0.07169390198" Slope="-0.00322857114"/>
+				<HermiteKey Frame="13" Value="-0.07151493591" Slope="0.01540859567"/>
+				<HermiteKey Frame="14" Value="-0.04087671064" Slope="0.01751044333"/>
+				<HermiteKey Frame="15" Value="-0.03649404926" Slope="0.00580148316"/>
+				<HermiteKey Frame="16" Value="-0.02927374432" Slope="0.03141116179"/>
+				<HermiteKey Frame="17" Value="0.02632827431" Slope="0.0329606651"/>
+				<HermiteKey Frame="18" Value="0.03664758588" Slope="0.00512382417"/>
+				<HermiteKey Frame="19" Value="0.03657592266" Slope="-0.00235766057"/>
+				<HermiteKey Frame="21" Value="0.02673676862" Slope="-0.00376976283"/>
+				<HermiteKey Frame="22" Value="0.02439273908" Slope="-0.00178452935"/>
+				<HermiteKey Frame="23" Value="0.02316770993" Slope="-0.00226773248"/>
+				<HermiteKey Frame="29" Value="-0.00400128948" Slope="-0.00287929585"/>
+				<HermiteKey Frame="30" Value="-0.00605084708" Slope="-0.00086906925"/>
+				<HermiteKey Frame="31" Value="-0.00573942798" Slope="0.00082440627"/>
+				<HermiteKey Frame="32" Value="-0.00440203453" Slope="0.00030421089"/>
+				<HermiteKey Frame="33" Value="-0.0051310062" Slope="-0.00536933964"/>
+				<HermiteKey Frame="34" Value="-0.01514071381" Slope="-0.01368742177"/>
+				<HermiteKey Frame="35" Value="-0.03250584975" Slope="-0.01517753153"/>
+				<HermiteKey Frame="36" Value="-0.04549577686" Slope="-0.00417292516"/>
+				<HermiteKey Frame="37" Value="-0.04085170007" Slope="0.01214097279"/>
+				<HermiteKey Frame="38" Value="-0.02121383129" Slope="0.0211794483"/>
+				<HermiteKey Frame="39" Value="0.00150719653" Slope="0.01944423323"/>
+				<HermiteKey Frame="41" Value="0.0312273088" Slope="0.01440690758"/>
+				<HermiteKey Frame="42" Value="0.04648845033" Slope="0.01492646592"/>
+				<HermiteKey Frame="43" Value="0.06108024063" Slope="0.01133786826"/>
+				<HermiteKey Frame="44" Value="0.06916418685" Slope="-0.00118887465"/>
+				<HermiteKey Frame="45" Value="0.05870249133" Slope="-0.01852045664"/>
+				<HermiteKey Frame="47" Value="0.00302633111" Slope="-0.0235254937"/>
+				<HermiteKey Frame="48" Value="-0.01492771383" Slope="-0.01169781624"/>
+				<HermiteKey Frame="49" Value="-0.02036930137" Slope="-0.00373093798"/>
+				<HermiteKey Frame="52" Value="-0.01906232901" Slope="0.00304052064"/>
+				<HermiteKey Frame="54" Value="-0.01321636613" Slope="0.00137097358"/>
+				<HermiteKey Frame="59" Value="-0.02216295879" Slope="-0.00343152675"/>
+				<HermiteKey Frame="60" Value="-0.02568604551" Slope="-0.00352308672"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LShoulder">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0.00526035255"/>
+				<HermiteKey Frame="1" Value="0.00526035255" Slope="0.00963364151"/>
+				<HermiteKey Frame="5" Value="0.0875720523" Slope="0.0236950088"/>
+				<HermiteKey Frame="8" Value="0.13970927821" Slope="0.00576533739"/>
+				<HermiteKey Frame="9" Value="0.1402849227" Slope="-0.00631256793"/>
+				<HermiteKey Frame="10" Value="0.12708414236" Slope="-0.01948069316"/>
+				<HermiteKey Frame="13" Value="0.02814652342" Slope="-0.03918347074"/>
+				<HermiteKey Frame="16" Value="-0.07715433907" Slope="-0.02419816977"/>
+				<HermiteKey Frame="17" Value="-0.09608791514" Slope="-0.01525516377"/>
+				<HermiteKey Frame="18" Value="-0.10766466662" Slope="-0.01072875708"/>
+				<HermiteKey Frame="29" Value="-0.14277198198" Slope="0.00240838856"/>
+				<HermiteKey Frame="32" Value="-0.13048865141" Slope="0.00626297439"/>
+				<HermiteKey Frame="42" Value="-0.04519587694" Slope="0.00622356486"/>
+				<HermiteKey Frame="45" Value="-0.0307030119" Slope="0.00418966287"/>
+				<HermiteKey Frame="59" Value="-0.00013077752" Slope="0.00026216591"/>
+				<HermiteKey Frame="60" Value="0" Slope="0.00013077752"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.01206814893" Slope="0.0063896853"/>
+				<HermiteKey Frame="1" Value="0.01845783422" Slope="0.01179435913"/>
+				<HermiteKey Frame="4" Value="0.09055689693" Slope="0.03077518999"/>
+				<HermiteKey Frame="7" Value="0.17929547494" Slope="0.02312206957"/>
+				<HermiteKey Frame="8" Value="0.19902301874" Slope="0.01497091072"/>
+				<HermiteKey Frame="9" Value="0.20923729639" Slope="0.00548876379"/>
+				<HermiteKey Frame="10" Value="0.21000054633" Slope="-0.00267204672"/>
+				<HermiteKey Frame="14" Value="0.1548602371" Slope="-0.02135937429"/>
+				<HermiteKey Frame="16" Value="0.10931515468" Slope="-0.02275324659"/>
+				<HermiteKey Frame="17" Value="0.08692552998" Slope="-0.02025320207"/>
+				<HermiteKey Frame="18" Value="0.06880875055" Slope="-0.01518585675"/>
+				<HermiteKey Frame="21" Value="0.0433165064" Slope="-0.00469245732"/>
+				<HermiteKey Frame="24" Value="0.03345354608" Slope="-0.00206290064"/>
+				<HermiteKey Frame="29" Value="0.02098004443" Slope="-0.0050288259"/>
+				<HermiteKey Frame="31" Value="0.00647660269" Slope="-0.01003495379"/>
+				<HermiteKey Frame="42" Value="-0.14144959836" Slope="-0.00391374377"/>
+				<HermiteKey Frame="46" Value="-0.12983692801" Slope="0.00804160453"/>
+				<HermiteKey Frame="59" Value="0.01053746027" Slope="0.00293732804"/>
+				<HermiteKey Frame="60" Value="0.01206814893" Slope="0.00153068866"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-1.40534078922" Slope="0.00078710859"/>
+				<HermiteKey Frame="2" Value="-1.40194565259" Slope="0.00378947633"/>
+				<HermiteKey Frame="4" Value="-1.3892196018" Slope="0.00914282875"/>
+				<HermiteKey Frame="6" Value="-1.36597912909" Slope="0.01320441936"/>
+				<HermiteKey Frame="9" Value="-1.3285737038" Slope="0.00889802014"/>
+				<HermiteKey Frame="14" Value="-1.30617172218" Slope="0.0056172113"/>
+				<HermiteKey Frame="16" Value="-1.29064216646" Slope="0.0098025632"/>
+				<HermiteKey Frame="18" Value="-1.26905378752" Slope="0.0102531025"/>
+				<HermiteKey Frame="29" Value="-1.22887520858" Slope="-0.00260471192"/>
+				<HermiteKey Frame="32" Value="-1.24323296769" Slope="-0.00740272676"/>
+				<HermiteKey Frame="38" Value="-1.3088591278" Slope="-0.01251778937"/>
+				<HermiteKey Frame="42" Value="-1.35284655622" Slope="-0.0080320314"/>
+				<HermiteKey Frame="45" Value="-1.37072422554" Slope="-0.00510121343"/>
+				<HermiteKey Frame="55" Value="-1.40222502744" Slope="-0.00132033285"/>
+				<HermiteKey Frame="60" Value="-1.40534078922" Slope="-0.0001153139"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LArm">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.0060596959" Slope="0.00849837465"/>
+				<HermiteKey Frame="4" Value="0.04158934603" Slope="0.00896546839"/>
+				<HermiteKey Frame="8" Value="0.07383184304" Slope="0.00656322339"/>
+				<HermiteKey Frame="11" Value="0.09085070566" Slope="0.00543482439"/>
+				<HermiteKey Frame="16" Value="0.11621660542" Slope="0.00419932327"/>
+				<HermiteKey Frame="18" Value="0.12291489984" Slope="0.00231761399"/>
+				<HermiteKey Frame="20" Value="0.12623542365" Slope="0.00139706625"/>
+				<HermiteKey Frame="21" Value="0.1275381374" Slope="0.00098520346"/>
+				<HermiteKey Frame="23" Value="0.1249221332" Slope="-0.00623910702"/>
+				<HermiteKey Frame="29" Value="0.02937666638" Slope="-0.0169905621"/>
+				<HermiteKey Frame="35" Value="-0.03543753165" Slope="-0.00588351364"/>
+				<HermiteKey Frame="45" Value="-0.05008700509" Slope="0.00070518283"/>
+				<HermiteKey Frame="48" Value="-0.04528487128" Slope="0.00323705344"/>
+				<HermiteKey Frame="59" Value="0.00530251971" Slope="0.00144108346"/>
+				<HermiteKey Frame="60" Value="0.0060596959" Slope="0.00075717619"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.02006158237" Slope="-0.00193780416"/>
+				<HermiteKey Frame="1" Value="-0.02199938653" Slope="-0.00277882597"/>
+				<HermiteKey Frame="8" Value="-0.03493903071" Slope="0.00623745768"/>
+				<HermiteKey Frame="9" Value="-0.0265948559" Slope="0.01220842976"/>
+				<HermiteKey Frame="10" Value="-0.01052217118" Slope="0.02033997984"/>
+				<HermiteKey Frame="13" Value="0.07599297954" Slope="0.0314298979"/>
+				<HermiteKey Frame="16" Value="0.1523743821" Slope="0.01362562839"/>
+				<HermiteKey Frame="17" Value="0.1606353047" Slope="-0.00662323653"/>
+				<HermiteKey Frame="18" Value="0.13912790903" Slope="-0.03808995215"/>
+				<HermiteKey Frame="20" Value="0.01686284763" Slope="-0.06394168176"/>
+				<HermiteKey Frame="21" Value="-0.04342796313" Slope="-0.04653658651"/>
+				<HermiteKey Frame="22" Value="-0.07621032539" Slope="-0.02008346007"/>
+				<HermiteKey Frame="23" Value="-0.08359488327" Slope="-0.00315901977"/>
+				<HermiteKey Frame="27" Value="-0.04892339408" Slope="0.01436300382"/>
+				<HermiteKey Frame="29" Value="-0.02176537278" Slope="0.01069220116"/>
+				<HermiteKey Frame="30" Value="-0.01304307239" Slope="0.00619755945"/>
+				<HermiteKey Frame="40" Value="-0.10223747804" Slope="-0.01401413868"/>
+				<HermiteKey Frame="45" Value="-0.14929110089" Slope="-0.00218387813"/>
+				<HermiteKey Frame="54" Value="-0.06839135506" Slope="0.01295461911"/>
+				<HermiteKey Frame="59" Value="-0.02183007214" Slope="0.00336669649"/>
+				<HermiteKey Frame="60" Value="-0.02006158237" Slope="0.00176848977"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.52603553449" Slope="0.04274246761"/>
+				<HermiteKey Frame="1" Value="-0.48329306688" Slope="0.04496356489"/>
+				<HermiteKey Frame="5" Value="-0.29048998271" Slope="0.04475864578"/>
+				<HermiteKey Frame="8" Value="-0.18488780657" Slope="0.02172613778"/>
+				<HermiteKey Frame="9" Value="-0.16859910245" Slope="0.01149586419"/>
+				<HermiteKey Frame="10" Value="-0.16189607819" Slope="0.0036136344"/>
+				<HermiteKey Frame="14" Value="-0.18735680169" Slope="-0.01372024269"/>
+				<HermiteKey Frame="16" Value="-0.21947188967" Slope="-0.01773496248"/>
+				<HermiteKey Frame="17" Value="-0.23788738221" Slope="-0.01978171882"/>
+				<HermiteKey Frame="18" Value="-0.25903532732" Slope="-0.02224527724"/>
+				<HermiteKey Frame="20" Value="-0.30425131045" Slope="-0.01924852946"/>
+				<HermiteKey Frame="21" Value="-0.32087499561" Slope="-0.01205125414"/>
+				<HermiteKey Frame="22" Value="-0.32835381873" Slope="-0.0040940101"/>
+				<HermiteKey Frame="23" Value="-0.32906301581" Slope="0.00004343252"/>
+				<HermiteKey Frame="27" Value="-0.32250724498" Slope="0.00165945033"/>
+				<HermiteKey Frame="29" Value="-0.32031457039" Slope="0.00053512668"/>
+				<HermiteKey Frame="31" Value="-0.32264894827" Slope="-0.00505661154"/>
+				<HermiteKey Frame="36" Value="-0.39418585788" Slope="-0.02050577739"/>
+				<HermiteKey Frame="44" Value="-0.55529042925" Slope="-0.01312919566"/>
+				<HermiteKey Frame="46" Value="-0.57414504663" Slope="-0.00564510166"/>
+				<HermiteKey Frame="48" Value="-0.57946763762" Slope="-0.00038339648"/>
+				<HermiteKey Frame="55" Value="-0.54735439969" Slope="0.00665883252"/>
+				<HermiteKey Frame="59" Value="-0.52717218016" Slope="0.00213457258"/>
+				<HermiteKey Frame="60" Value="-0.52603553449" Slope="0.00113664568"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LForeArm">
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.00804989484" Slope="-0.00388433497"/>
+				<HermiteKey Frame="16" Value="-0.07019921946" Slope="-0.00315730062"/>
+				<HermiteKey Frame="18" Value="-0.07516010842" Slope="-0.00106712921"/>
+				<HermiteKey Frame="22" Value="-0.07326298788" Slope="0.00009236282"/>
+				<HermiteKey Frame="29" Value="-0.07665995711" Slope="0.00086453139"/>
+				<HermiteKey Frame="31" Value="-0.07130300058" Slope="0.00572234121"/>
+				<HermiteKey Frame="35" Value="-0.03802007789" Slope="0.00599997946"/>
+				<HermiteKey Frame="37" Value="-0.03147785082" Slope="0.00205525609"/>
+				<HermiteKey Frame="60" Value="-0.00804989484" Slope="0.00101860906"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RShoulder">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="-0.02648341663"/>
+				<HermiteKey Frame="1" Value="-0.02648341663" Slope="-0.0452056246"/>
+				<HermiteKey Frame="3" Value="-0.17087818829" Slope="-0.07779965711"/>
+				<HermiteKey Frame="4" Value="-0.24601056343" Slope="-0.0567706911"/>
+				<HermiteKey Frame="5" Value="-0.28441957049" Slope="-0.00714426095"/>
+				<HermiteKey Frame="6" Value="-0.26029908532" Slope="0.04669922502"/>
+				<HermiteKey Frame="7" Value="-0.19102112046" Slope="0.07801237784"/>
+				<HermiteKey Frame="9" Value="-0.03020489493" Slope="0.05263641625"/>
+				<HermiteKey Frame="10" Value="0.00099850287" Slope="0.0156016989"/>
+				<HermiteKey Frame="11" Value="0.00099850287" Slope="0"/>
+				<HermiteKey Frame="14" Value="0.00034581954" Slope="-0.0008709542"/>
+				<HermiteKey Frame="15" Value="-0.00074340554" Slope="-0.00082625632"/>
+				<HermiteKey Frame="18" Value="-0.0023276409" Slope="-0.00032809572"/>
+				<HermiteKey Frame="21" Value="-0.0014929721" Slope="0.00114245762"/>
+				<HermiteKey Frame="23" Value="0.00366541832" Slope="0.00504619193"/>
+				<HermiteKey Frame="29" Value="0.04218026215" Slope="0.00031692561"/>
+				<HermiteKey Frame="31" Value="0.03378308169" Slope="-0.00853348195"/>
+				<HermiteKey Frame="36" Value="-0.04734598295" Slope="-0.02176791224"/>
+				<HermiteKey Frame="41" Value="-0.168157028" Slope="-0.02503460136"/>
+				<HermiteKey Frame="43" Value="-0.21783145471" Slope="-0.02452587279"/>
+				<HermiteKey Frame="44" Value="-0.24218729753" Slope="-0.02556786926"/>
+				<HermiteKey Frame="45" Value="-0.26896719324" Slope="-0.02111613648"/>
+				<HermiteKey Frame="46" Value="-0.28441957049" Slope="-0.00772618863"/>
+				<HermiteKey Frame="47" Value="-0.28441957049" Slope="0"/>
+				<HermiteKey Frame="48" Value="-0.28441957049" Slope="0.00363499723"/>
+				<HermiteKey Frame="49" Value="-0.27714957602" Slope="0.01326449359"/>
+				<HermiteKey Frame="50" Value="-0.25789058331" Slope="0.02329063347"/>
+				<HermiteKey Frame="51" Value="-0.23056830908" Slope="0.03021317652"/>
+				<HermiteKey Frame="52" Value="-0.19746423028" Slope="0.03574940454"/>
+				<HermiteKey Frame="53" Value="-0.15906950001" Slope="0.03920231157"/>
+				<HermiteKey Frame="54" Value="-0.11905960715" Slope="0.03800875071"/>
+				<HermiteKey Frame="55" Value="-0.0830519986" Slope="0.03255052145"/>
+				<HermiteKey Frame="57" Value="-0.0308005758" Slope="0.02003647581"/>
+				<HermiteKey Frame="59" Value="-0.00352039891" Slope="0.00694280632"/>
+				<HermiteKey Frame="60" Value="0" Slope="0.00352039891"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.01206858526" Slope="-0.0427100743"/>
+				<HermiteKey Frame="1" Value="-0.03064148904" Slope="-0.07354197003"/>
+				<HermiteKey Frame="3" Value="-0.26407768824" Slope="-0.12342997268"/>
+				<HermiteKey Frame="4" Value="-0.38187530017" Slope="-0.09729141566"/>
+				<HermiteKey Frame="5" Value="-0.45866051956" Slope="-0.059522543"/>
+				<HermiteKey Frame="6" Value="-0.50092038618" Slope="-0.03637928514"/>
+				<HermiteKey Frame="7" Value="-0.53141908983" Slope="-0.02397161731"/>
+				<HermiteKey Frame="8" Value="-0.5488636208" Slope="-0.0117889137"/>
+				<HermiteKey Frame="10" Value="-0.55553837072" Slope="-0.00027072675"/>
+				<HermiteKey Frame="12" Value="-0.55553837072" Slope="0"/>
+				<HermiteKey Frame="13" Value="-0.55553837072" Slope="0.00195760492"/>
+				<HermiteKey Frame="14" Value="-0.55162316088" Slope="0.011259119"/>
+				<HermiteKey Frame="15" Value="-0.53302013271" Slope="0.19085761801"/>
+				<HermiteKey Frame="16" Value="-0.16990792485" Slope="0.35741619495"/>
+				<HermiteKey Frame="17" Value="0.18181225718" Slope="0.17887672682"/>
+				<HermiteKey Frame="18" Value="0.18784552879" Slope="0.00545701625"/>
+				<HermiteKey Frame="29" Value="0.18161397032" Slope="-0.00622346887"/>
+				<HermiteKey Frame="31" Value="0.16201891446" Slope="-0.01796716108"/>
+				<HermiteKey Frame="35" Value="0.0295336413" Slope="-0.04207261897"/>
+				<HermiteKey Frame="37" Value="-0.05620433176" Slope="-0.041539002"/>
+				<HermiteKey Frame="38" Value="-0.09654651786" Slope="-0.03926287449"/>
+				<HermiteKey Frame="40" Value="-0.17314722104" Slope="-0.03909273107"/>
+				<HermiteKey Frame="43" Value="-0.30096859047" Slope="-0.04816844318"/>
+				<HermiteKey Frame="44" Value="-0.35148772163" Slope="-0.05876523591"/>
+				<HermiteKey Frame="45" Value="-0.4184990623" Slope="-0.05358639897"/>
+				<HermiteKey Frame="46" Value="-0.45866051956" Slope="-0.02008072863"/>
+				<HermiteKey Frame="47" Value="-0.45866051956" Slope="0"/>
+				<HermiteKey Frame="48" Value="-0.45866051956" Slope="0.01193086133"/>
+				<HermiteKey Frame="49" Value="-0.4347987969" Slope="0.04286863746"/>
+				<HermiteKey Frame="51" Value="-0.28739362899" Slope="0.09008797932"/>
+				<HermiteKey Frame="52" Value="-0.19274728599" Slope="0.09042329198"/>
+				<HermiteKey Frame="53" Value="-0.10654704503" Slope="0.07659400112"/>
+				<HermiteKey Frame="54" Value="-0.03955928376" Slope="0.05488506355"/>
+				<HermiteKey Frame="55" Value="0.00322308208" Slope="0.03114906569"/>
+				<HermiteKey Frame="56" Value="0.02273884763" Slope="0.01202762238"/>
+				<HermiteKey Frame="58" Value="0.02292228173" Slope="-0.00573659182"/>
+				<HermiteKey Frame="59" Value="0.0158051432" Slope="-0.00542684824"/>
+				<HermiteKey Frame="60" Value="0.01206858526" Slope="-0.00373655794"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="1.40546915819" Slope="0.00310111847"/>
+				<HermiteKey Frame="1" Value="1.40857027666" Slope="0.01030197172"/>
+				<HermiteKey Frame="2" Value="1.42607310162" Slope="0.02955788392"/>
+				<HermiteKey Frame="3" Value="1.4676860445" Slope="0.0501318775"/>
+				<HermiteKey Frame="4" Value="1.52633685663" Slope="0.05240881659"/>
+				<HermiteKey Frame="5" Value="1.57250367768" Slope="0.02736704192"/>
+				<HermiteKey Frame="6" Value="1.58107094048" Slope="-0.00609477701"/>
+				<HermiteKey Frame="7" Value="1.56031412365" Slope="-0.02847039544"/>
+				<HermiteKey Frame="9" Value="1.49008669968" Slope="-0.02441952116"/>
+				<HermiteKey Frame="10" Value="1.47529110727" Slope="-0.0073977962"/>
+				<HermiteKey Frame="11" Value="1.47529110727" Slope="0"/>
+				<HermiteKey Frame="12" Value="1.47529110727" Slope="0"/>
+				<HermiteKey Frame="13" Value="1.47529110727" Slope="-0.01521496884"/>
+				<HermiteKey Frame="14" Value="1.44486116959" Slope="-0.03471822911"/>
+				<HermiteKey Frame="15" Value="1.40585464906" Slope="-0.02177647308"/>
+				<HermiteKey Frame="16" Value="1.40130822344" Slope="-0.00034987743"/>
+				<HermiteKey Frame="17" Value="1.4051548942" Slope="0.0018769358"/>
+				<HermiteKey Frame="18" Value="1.40506209505" Slope="-0.00006897541"/>
+				<HermiteKey Frame="22" Value="1.40546915819" Slope="0.00066559004"/>
+				<HermiteKey Frame="25" Value="1.41127883567" Slope="0.00264905201"/>
+				<HermiteKey Frame="29" Value="1.41687226686" Slope="-0.00128190943"/>
+				<HermiteKey Frame="30" Value="1.41464494748" Slope="-0.00408874793"/>
+				<HermiteKey Frame="31" Value="1.40869477099" Slope="-0.00797257676"/>
+				<HermiteKey Frame="35" Value="1.36399095473" Slope="-0.00870394825"/>
+				<HermiteKey Frame="37" Value="1.35500823376" Slope="0.00108796844"/>
+				<HermiteKey Frame="43" Value="1.46275081188" Slope="0.03189614515"/>
+				<HermiteKey Frame="44" Value="1.49659665561" Slope="0.04011919411"/>
+				<HermiteKey Frame="45" Value="1.5429892001" Slope="0.03795351103"/>
+				<HermiteKey Frame="46" Value="1.57250367768" Slope="0.01475723879"/>
+				<HermiteKey Frame="47" Value="1.57250367768" Slope="0"/>
+				<HermiteKey Frame="48" Value="1.57250367768" Slope="-0.0062559669"/>
+				<HermiteKey Frame="49" Value="1.55999174389" Slope="-0.02175143633"/>
+				<HermiteKey Frame="51" Value="1.49003383365" Slope="-0.03817221824"/>
+				<HermiteKey Frame="52" Value="1.45265636854" Slope="-0.03245441489"/>
+				<HermiteKey Frame="53" Value="1.42512500386" Slope="-0.02151587797"/>
+				<HermiteKey Frame="56" Value="1.40204379245" Slope="-0.00024015731"/>
+				<HermiteKey Frame="58" Value="1.40410628294" Slope="0.00112745652"/>
+				<HermiteKey Frame="60" Value="1.40546915819" Slope="0.00037870154"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RArm">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.00663572436" Slope="0.02485692685"/>
+				<HermiteKey Frame="2" Value="0.05135910577" Slope="0.0413450872"/>
+				<HermiteKey Frame="3" Value="0.10091137688" Slope="0.0629535287"/>
+				<HermiteKey Frame="4" Value="0.17726616317" Slope="0.08412614404"/>
+				<HermiteKey Frame="5" Value="0.26916366495" Slope="0.0423162233"/>
+				<HermiteKey Frame="6" Value="0.26189860977" Slope="-0.0475064398"/>
+				<HermiteKey Frame="7" Value="0.17415078536" Slope="-0.07183481986"/>
+				<HermiteKey Frame="8" Value="0.11822897005" Slope="-0.02989259444"/>
+				<HermiteKey Frame="9" Value="0.11436559648" Slope="0.04453484221"/>
+				<HermiteKey Frame="10" Value="0.20729865447" Slope="0.10234065318"/>
+				<HermiteKey Frame="11" Value="0.31904690285" Slope="0.07803196916"/>
+				<HermiteKey Frame="12" Value="0.36336259279" Slope="0.02796809841"/>
+				<HermiteKey Frame="13" Value="0.37498309967" Slope="-0.03177808236"/>
+				<HermiteKey Frame="14" Value="0.29980642808" Slope="-0.1008287879"/>
+				<HermiteKey Frame="15" Value="0.17332552388" Slope="-0.1016638145"/>
+				<HermiteKey Frame="16" Value="0.09647879908" Slope="-0.04496491752"/>
+				<HermiteKey Frame="17" Value="0.08339568884" Slope="-0.00625139413"/>
+				<HermiteKey Frame="18" Value="0.08397601081" Slope="0.00048609165"/>
+				<HermiteKey Frame="26" Value="0.08214945394" Slope="-0.00060467805"/>
+				<HermiteKey Frame="35" Value="0.08336469179" Slope="0.00151674348"/>
+				<HermiteKey Frame="38" Value="0.09132293939" Slope="0.00451415448"/>
+				<HermiteKey Frame="41" Value="0.11900546703" Slope="0.01710530877"/>
+				<HermiteKey Frame="42" Value="0.13961077182" Slope="0.0251429165"/>
+				<HermiteKey Frame="43" Value="0.16929130003" Slope="0.03428236803"/>
+				<HermiteKey Frame="44" Value="0.20817550789" Slope="0.03986110355"/>
+				<HermiteKey Frame="45" Value="0.24901350712" Slope="0.03049407853"/>
+				<HermiteKey Frame="46" Value="0.26916366495" Slope="0.01007507891"/>
+				<HermiteKey Frame="47" Value="0.26916366495" Slope="0"/>
+				<HermiteKey Frame="48" Value="0.26916366495" Slope="-0.00597454128"/>
+				<HermiteKey Frame="49" Value="0.25721458239" Slope="-0.02229166809"/>
+				<HermiteKey Frame="50" Value="0.22458032877" Slope="-0.03852220912"/>
+				<HermiteKey Frame="51" Value="0.18017016415" Slope="-0.04512228513"/>
+				<HermiteKey Frame="52" Value="0.1343357585" Slope="-0.04296605301"/>
+				<HermiteKey Frame="53" Value="0.09423805812" Slope="-0.03542737384"/>
+				<HermiteKey Frame="56" Value="0.02408823148" Slope="-0.014837969"/>
+				<HermiteKey Frame="58" Value="0.00174038997" Slope="-0.00783543751"/>
+				<HermiteKey Frame="59" Value="-0.00441322209" Slope="-0.00418805717"/>
+				<HermiteKey Frame="60" Value="-0.00663572436" Slope="-0.00222250227"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.01277896917" Slope="-0.25719430166"/>
+				<HermiteKey Frame="1" Value="-0.26997327083" Slope="-0.26868431027"/>
+				<HermiteKey Frame="3" Value="-0.81716594831" Slope="-0.24233366084"/>
+				<HermiteKey Frame="4" Value="-1.03481491139" Slope="-0.17567355895"/>
+				<HermiteKey Frame="5" Value="-1.16851306621" Slope="-0.06613621513"/>
+				<HermiteKey Frame="6" Value="-1.16708734166" Slope="0.05918077263"/>
+				<HermiteKey Frame="7" Value="-1.05015152096" Slope="0.13546291832"/>
+				<HermiteKey Frame="8" Value="-0.89616150502" Slope="0.12939467031"/>
+				<HermiteKey Frame="9" Value="-0.79136218034" Slope="0.07107824581"/>
+				<HermiteKey Frame="10" Value="-0.75400501341" Slope="0.02653224222"/>
+				<HermiteKey Frame="11" Value="-0.73829769591" Slope="0.00593868349"/>
+				<HermiteKey Frame="12" Value="-0.74212764642" Slope="-0.00456668889"/>
+				<HermiteKey Frame="13" Value="-0.7474310737" Slope="0.02796239119"/>
+				<HermiteKey Frame="14" Value="-0.68620286405" Slope="0.14689588957"/>
+				<HermiteKey Frame="15" Value="-0.45363929457" Slope="0.42263007338"/>
+				<HermiteKey Frame="16" Value="0.15905728271" Slope="0.53132954571"/>
+				<HermiteKey Frame="17" Value="0.60901979686" Slope="0.22988942837"/>
+				<HermiteKey Frame="18" Value="0.61883613944" Slope="0.00814687406"/>
+				<HermiteKey Frame="29" Value="0.49726866869" Slope="-0.03111371405"/>
+				<HermiteKey Frame="31" Value="0.42452528278" Slope="-0.04460785806"/>
+				<HermiteKey Frame="37" Value="-0.02651767744" Slope="-0.10713737647"/>
+				<HermiteKey Frame="38" Value="-0.13919426645" Slope="-0.12359540371"/>
+				<HermiteKey Frame="39" Value="-0.27370848487" Slope="-0.14648271777"/>
+				<HermiteKey Frame="41" Value="-0.60175064015" Slope="-0.16874862481"/>
+				<HermiteKey Frame="43" Value="-0.92304777855" Slope="-0.1397703211"/>
+				<HermiteKey Frame="44" Value="-1.0491975938" Slope="-0.10645447277"/>
+				<HermiteKey Frame="45" Value="-1.13595672409" Slope="-0.05965773621"/>
+				<HermiteKey Frame="46" Value="-1.16851306621" Slope="-0.01627817106"/>
+				<HermiteKey Frame="47" Value="-1.16851306621" Slope="0"/>
+				<HermiteKey Frame="48" Value="-1.16851306621" Slope="0.00504103448"/>
+				<HermiteKey Frame="49" Value="-1.15843099726" Slope="0.02164910767"/>
+				<HermiteKey Frame="51" Value="-1.06411708712" Slope="0.07740021233"/>
+				<HermiteKey Frame="52" Value="-0.9704144262" Slope="0.11242491253"/>
+				<HermiteKey Frame="53" Value="-0.83926726207" Slope="0.1442946334"/>
+				<HermiteKey Frame="54" Value="-0.68182515941" Slope="0.1607169512"/>
+				<HermiteKey Frame="55" Value="-0.51783335967" Slope="0.15968819305"/>
+				<HermiteKey Frame="57" Value="-0.22430308322" Slope="0.12453871054"/>
+				<HermiteKey Frame="59" Value="-0.03957076803" Slope="0.05029619153"/>
+				<HermiteKey Frame="60" Value="-0.01277896917" Slope="0.02679179886"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.58217546359" Slope="0.0198208491"/>
+				<HermiteKey Frame="1" Value="0.6019963127" Slope="0.01586444949"/>
+				<HermiteKey Frame="3" Value="0.59639562094" Slope="-0.04281167864"/>
+				<HermiteKey Frame="4" Value="0.52828100529" Slope="-0.09245524793"/>
+				<HermiteKey Frame="5" Value="0.41148512509" Slope="-0.09551902507"/>
+				<HermiteKey Frame="6" Value="0.33724295514" Slope="-0.05768142136"/>
+				<HermiteKey Frame="7" Value="0.29612228238" Slope="-0.06023914029"/>
+				<HermiteKey Frame="8" Value="0.21676467456" Slope="-0.08516400408"/>
+				<HermiteKey Frame="9" Value="0.12579427422" Slope="-0.10439487081"/>
+				<HermiteKey Frame="10" Value="0.00797493295" Slope="-0.11348675339"/>
+				<HermiteKey Frame="11" Value="-0.10117923256" Slope="-0.07806143032"/>
+				<HermiteKey Frame="12" Value="-0.14814792769" Slope="-0.027216612"/>
+				<HermiteKey Frame="13" Value="-0.15561245655" Slope="0.06600609211"/>
+				<HermiteKey Frame="14" Value="-0.01613574347" Slope="0.17305261547"/>
+				<HermiteKey Frame="15" Value="0.19049277439" Slope="0.16141535343"/>
+				<HermiteKey Frame="16" Value="0.30669496339" Slope="0.07485886459"/>
+				<HermiteKey Frame="17" Value="0.34021050356" Slope="0.01726144593"/>
+				<HermiteKey Frame="18" Value="0.34121785524" Slope="0.00083991352"/>
+				<HermiteKey Frame="22" Value="0.34178463347" Slope="-0.00040673153"/>
+				<HermiteKey Frame="28" Value="0.34681587665" Slope="0.00280967466"/>
+				<HermiteKey Frame="29" Value="0.35003644545" Slope="0.00366693676"/>
+				<HermiteKey Frame="31" Value="0.36138410501" Slope="0.00958330622"/>
+				<HermiteKey Frame="36" Value="0.44940746454" Slope="0.02130600212"/>
+				<HermiteKey Frame="38" Value="0.49064374791" Slope="0.01819588648"/>
+				<HermiteKey Frame="41" Value="0.52083956713" Slope="-0.00155575159"/>
+				<HermiteKey Frame="42" Value="0.51451232971" Slope="-0.01226724736"/>
+				<HermiteKey Frame="43" Value="0.49630507241" Slope="-0.02435620061"/>
+				<HermiteKey Frame="44" Value="0.46579992849" Slope="-0.03315973735"/>
+				<HermiteKey Frame="45" Value="0.42998559771" Slope="-0.0271574017"/>
+				<HermiteKey Frame="46" Value="0.41148512509" Slope="-0.00925023631"/>
+				<HermiteKey Frame="47" Value="0.41148512509" Slope="0"/>
+				<HermiteKey Frame="48" Value="0.41148512509" Slope="0.00479232506"/>
+				<HermiteKey Frame="49" Value="0.42106977521" Slope="0.01759665386"/>
+				<HermiteKey Frame="50" Value="0.44667843282" Slope="0.02911845365"/>
+				<HermiteKey Frame="51" Value="0.47930668251" Slope="0.03080193716"/>
+				<HermiteKey Frame="52" Value="0.50828230713" Slope="0.02381050597"/>
+				<HermiteKey Frame="53" Value="0.52692769444" Slope="0.01403437577"/>
+				<HermiteKey Frame="54" Value="0.53635105868" Slope="0.00852394372"/>
+				<HermiteKey Frame="55" Value="0.54397558188" Slope="0.00886272958"/>
+				<HermiteKey Frame="56" Value="0.55407651785" Slope="0.01006427533"/>
+				<HermiteKey Frame="59" Value="0.57953834091" Slope="0.00458802554"/>
+				<HermiteKey Frame="60" Value="0.58217546359" Slope="0.00263712269"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RForeArm">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="-0.04655868238"/>
+				<HermiteKey Frame="1" Value="-0.04655868238" Slope="-0.04993309323"/>
+				<HermiteKey Frame="3" Value="-0.15059140609" Slope="-0.04455257476"/>
+				<HermiteKey Frame="4" Value="-0.18897133597" Slope="-0.02702654564"/>
+				<HermiteKey Frame="5" Value="-0.20464449737" Slope="-0.00206078006"/>
+				<HermiteKey Frame="7" Value="-0.16089284548" Slope="0.03946500107"/>
+				<HermiteKey Frame="9" Value="-0.05874266881" Slope="0.05708144697"/>
+				<HermiteKey Frame="10" Value="0" Slope="0.05232622761"/>
+				<HermiteKey Frame="11" Value="0.04590978642" Slope="0.03515372366"/>
+				<HermiteKey Frame="12" Value="0.07030744732" Slope="0.01587570686"/>
+				<HermiteKey Frame="13" Value="0.07766120014" Slope="0.00447921299"/>
+				<HermiteKey Frame="14" Value="0.07926587331" Slope="0.00303505776"/>
+				<HermiteKey Frame="16" Value="0.09338457467" Slope="0.0137060008"/>
+				<HermiteKey Frame="17" Value="0.11114331726" Slope="0.01394211767"/>
+				<HermiteKey Frame="18" Value="0.12126881001" Slope="0.00815692716"/>
+				<HermiteKey Frame="22" Value="0.12878386615" Slope="-0.00229491598"/>
+				<HermiteKey Frame="30" Value="0.06735976075" Slope="-0.01381401923"/>
+				<HermiteKey Frame="37" Value="-0.05422444771" Slope="-0.01932731362"/>
+				<HermiteKey Frame="41" Value="-0.1325670942" Slope="-0.0196628619"/>
+				<HermiteKey Frame="43" Value="-0.17091649827" Slope="-0.01788179703"/>
+				<HermiteKey Frame="45" Value="-0.20014407863" Slope="-0.00836820799"/>
+				<HermiteKey Frame="47" Value="-0.20464449737" Slope="0"/>
+				<HermiteKey Frame="48" Value="-0.20464449737" Slope="0.00038082212"/>
+				<HermiteKey Frame="52" Value="-0.17122083133" Slope="0.02400531962"/>
+				<HermiteKey Frame="53" Value="-0.14179648255" Slope="0.03233234657"/>
+				<HermiteKey Frame="54" Value="-0.1065561382" Slope="0.03400312408"/>
+				<HermiteKey Frame="55" Value="-0.07379023439" Slope="0.02942918334"/>
+				<HermiteKey Frame="57" Value="-0.02712428408" Slope="0.01774849751"/>
+				<HermiteKey Frame="59" Value="-0.00308928514" Slope="0.00610038825"/>
+				<HermiteKey Frame="60" Value="0" Slope="0.00308928514"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="-0.04448343354"/>
+				<HermiteKey Frame="1" Value="-0.04448343354" Slope="-0.04609460806"/>
+				<HermiteKey Frame="3" Value="-0.13741935387" Slope="-0.04141561595"/>
+				<HermiteKey Frame="4" Value="-0.17502044802" Slope="-0.03157836433"/>
+				<HermiteKey Frame="5" Value="-0.20057608253" Slope="-0.01661132824"/>
+				<HermiteKey Frame="6" Value="-0.20824310449" Slope="-0.00029304078"/>
+				<HermiteKey Frame="8" Value="-0.18856725734" Slope="0.01057975832"/>
+				<HermiteKey Frame="9" Value="-0.18000264745" Slope="0.00158020365"/>
+				<HermiteKey Frame="10" Value="-0.18540685004" Slope="-0.02491655602"/>
+				<HermiteKey Frame="11" Value="-0.22983575949" Slope="-0.05521184155"/>
+				<HermiteKey Frame="12" Value="-0.29583053314" Slope="-0.0499630169"/>
+				<HermiteKey Frame="13" Value="-0.32976179329" Slope="0.00588456083"/>
+				<HermiteKey Frame="14" Value="-0.28406141147" Slope="0.0916119921"/>
+				<HermiteKey Frame="15" Value="-0.14653780909" Slope="0.22572516004"/>
+				<HermiteKey Frame="16" Value="0.1673889086" Slope="0.2751400301"/>
+				<HermiteKey Frame="17" Value="0.40374225111" Slope="0.12987062159"/>
+				<HermiteKey Frame="18" Value="0.42713015178" Slope="0.01828837148"/>
+				<HermiteKey Frame="22" Value="0.43331994452" Slope="-0.01090655377"/>
+				<HermiteKey Frame="28" Value="0.30573192561" Slope="-0.02893090057"/>
+				<HermiteKey Frame="31" Value="0.21379892383" Slope="-0.03030062624"/>
+				<HermiteKey Frame="37" Value="0.02749680715" Slope="-0.03647772171"/>
+				<HermiteKey Frame="38" Value="-0.01059041356" Slope="-0.04228853365"/>
+				<HermiteKey Frame="39" Value="-0.05708026015" Slope="-0.05054485731"/>
+				<HermiteKey Frame="41" Value="-0.1669187169" Slope="-0.0518591426"/>
+				<HermiteKey Frame="43" Value="-0.24982457908" Slope="-0.0238124171"/>
+				<HermiteKey Frame="44" Value="-0.26302324758" Slope="0.00900105565"/>
+				<HermiteKey Frame="45" Value="-0.23182246778" Slope="0.03122358253"/>
+				<HermiteKey Frame="46" Value="-0.20057608253" Slope="0.01562319263"/>
+				<HermiteKey Frame="47" Value="-0.20057608253" Slope="0"/>
+				<HermiteKey Frame="50" Value="-0.19883742043" Slope="0.00266136531"/>
+				<HermiteKey Frame="53" Value="-0.17465909505" Slope="0.0166436081"/>
+				<HermiteKey Frame="54" Value="-0.15434787824" Slope="0.02423378322"/>
+				<HermiteKey Frame="55" Value="-0.12619152862" Slope="0.03094871935"/>
+				<HermiteKey Frame="57" Value="-0.05855141563" Slope="0.03176326451"/>
+				<HermiteKey Frame="59" Value="-0.00795486166" Slope="0.01446195526"/>
+				<HermiteKey Frame="60" Value="0" Slope="0.00795486166"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.05869130377" Slope="0.13697148493"/>
+				<HermiteKey Frame="1" Value="0.07828018116" Slope="0.15002502057"/>
+				<HermiteKey Frame="2" Value="0.24135873737" Slope="0.16002554774"/>
+				<HermiteKey Frame="3" Value="0.39833127665" Slope="0.13641930639"/>
+				<HermiteKey Frame="4" Value="0.51419735014" Slope="0.07683412352"/>
+				<HermiteKey Frame="5" Value="0.55199952368" Slope="-0.02199079951"/>
+				<HermiteKey Frame="6" Value="0.47021575112" Slope="-0.130111861"/>
+				<HermiteKey Frame="8" Value="0.07634187085" Slope="-0.20470593296"/>
+				<HermiteKey Frame="9" Value="-0.11763606425" Slope="-0.15524400009"/>
+				<HermiteKey Frame="10" Value="-0.23414612933" Slope="-0.08090559269"/>
+				<HermiteKey Frame="11" Value="-0.27944724962" Slope="-0.03438817862"/>
+				<HermiteKey Frame="12" Value="-0.30292248657" Slope="-0.01517135306"/>
+				<HermiteKey Frame="13" Value="-0.30978995575" Slope="-0.00258631615"/>
+				<HermiteKey Frame="14" Value="-0.30809511887" Slope="0.00792748618"/>
+				<HermiteKey Frame="15" Value="-0.2939349834" Slope="0.03215318852"/>
+				<HermiteKey Frame="16" Value="-0.24378874184" Slope="0.04816621789"/>
+				<HermiteKey Frame="17" Value="-0.19760254763" Slope="0.0273275364"/>
+				<HermiteKey Frame="18" Value="-0.18913366904" Slope="0.00697198822"/>
+				<HermiteKey Frame="23" Value="-0.18221041914" Slope="-0.00173912461"/>
+				<HermiteKey Frame="29" Value="-0.1886722738" Slope="0.00234155118"/>
+				<HermiteKey Frame="31" Value="-0.17751825853" Slope="0.01098448272"/>
+				<HermiteKey Frame="37" Value="-0.00221037223" Slope="0.04676061697"/>
+				<HermiteKey Frame="38" Value="0.04741855374" Slope="0.05481786838"/>
+				<HermiteKey Frame="39" Value="0.10742536453" Slope="0.0660670041"/>
+				<HermiteKey Frame="41" Value="0.25901155593" Slope="0.0804165427"/>
+				<HermiteKey Frame="43" Value="0.41759794881" Slope="0.07179023542"/>
+				<HermiteKey Frame="44" Value="0.4839661182" Slope="0.05758964322"/>
+				<HermiteKey Frame="45" Value="0.53277723524" Slope="0.03401670274"/>
+				<HermiteKey Frame="46" Value="0.55199952368" Slope="0.00961114422"/>
+				<HermiteKey Frame="47" Value="0.55199952368" Slope="0"/>
+				<HermiteKey Frame="48" Value="0.55199952368" Slope="-0.00363418566"/>
+				<HermiteKey Frame="49" Value="0.54473115237" Slope="-0.01624418077"/>
+				<HermiteKey Frame="51" Value="0.47126656151" Slope="-0.06221356146"/>
+				<HermiteKey Frame="52" Value="0.39508403921" Slope="-0.09135641481"/>
+				<HermiteKey Frame="53" Value="0.28855373189" Slope="-0.11123966816"/>
+				<HermiteKey Frame="54" Value="0.1726047029" Slope="-0.10564639405"/>
+				<HermiteKey Frame="55" Value="0.07726094378" Slope="-0.07885553767"/>
+				<HermiteKey Frame="56" Value="0.01489362755" Slope="-0.05106630933"/>
+				<HermiteKey Frame="58" Value="-0.0469823436" Slope="-0.01584917786"/>
+				<HermiteKey Frame="59" Value="-0.05657003059" Slope="-0.00585448008"/>
+				<HermiteKey Frame="60" Value="-0.05869130377" Slope="-0.00212127317"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Feeler1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.00012857841" Slope="0.00000411898"/>
+				<HermiteKey Frame="4" Value="0.00014503686" Slope="-0.00000925897"/>
+				<HermiteKey Frame="5" Value="0.00012857841" Slope="-0.0027951448"/>
+				<HermiteKey Frame="6" Value="-0.00544525273" Slope="-0.19722810469"/>
+				<HermiteKey Frame="7" Value="-0.39432763097" Slope="-0.25586262417"/>
+				<HermiteKey Frame="8" Value="-0.51717050107" Slope="-0.67172931108"/>
+				<HermiteKey Frame="9" Value="-1.73778625313" Slope="-0.10973622409"/>
+				<HermiteKey Frame="10" Value="-0.73664294925" Slope="0.40647817689"/>
+				<HermiteKey Frame="11" Value="-0.92482989935" Slope="-0.10021914439"/>
+				<HermiteKey Frame="12" Value="-0.93708123803" Slope="0.01130222864"/>
+				<HermiteKey Frame="13" Value="-0.90222544207" Slope="-0.05895795517"/>
+				<HermiteKey Frame="14" Value="-1.05499714837" Slope="-0.18836352506"/>
+				<HermiteKey Frame="15" Value="-1.27895249219" Slope="-0.13545216709"/>
+				<HermiteKey Frame="16" Value="-1.32590148255" Slope="-0.16670502751"/>
+				<HermiteKey Frame="17" Value="-1.61236254721" Slope="-0.14634097086"/>
+				<HermiteKey Frame="18" Value="-1.61858342426" Slope="-0.00484495546"/>
+				<HermiteKey Frame="21" Value="-1.62865390423" Slope="-0.00504575559"/>
+				<HermiteKey Frame="23" Value="-1.64812053876" Slope="-0.01805729861"/>
+				<HermiteKey Frame="25" Value="-1.70417170043" Slope="-0.03888188657"/>
+				<HermiteKey Frame="26" Value="-1.74884263469" Slope="-0.05209535546"/>
+				<HermiteKey Frame="27" Value="-1.80836241134" Slope="-0.07040399021"/>
+				<HermiteKey Frame="28" Value="-1.88965061511" Slope="-0.09997380346"/>
+				<HermiteKey Frame="29" Value="-2.00831001826" Slope="-0.15761532659"/>
+				<HermiteKey Frame="30" Value="-2.20488126828" Slope="-0.33582248402"/>
+				<HermiteKey Frame="31" Value="-2.6799549863" Slope="-0.69376844748"/>
+				<HermiteKey Frame="32" Value="-3.59241816324" Slope="-0.71741998013"/>
+				<HermiteKey Frame="33" Value="-4.11479494657" Slope="-0.36199070291"/>
+				<HermiteKey Frame="34" Value="-4.31639956907" Slope="-0.14766468965"/>
+				<HermiteKey Frame="35" Value="-4.41012432586" Slope="-0.0712748397"/>
+				<HermiteKey Frame="36" Value="-4.45894924846" Slope="-0.03642911429"/>
+				<HermiteKey Frame="37" Value="-4.48298255444" Slope="-0.019800804"/>
+				<HermiteKey Frame="38" Value="-4.49855085646" Slope="-0.00795512346"/>
+				<HermiteKey Frame="39" Value="-4.49889280136" Slope="-0.00530282514"/>
+				<HermiteKey Frame="40" Value="-4.50915650674" Slope="-0.09642028692"/>
+				<HermiteKey Frame="41" Value="-4.69173337521" Slope="-0.45197082089"/>
+				<HermiteKey Frame="42" Value="-5.41309814852" Slope="-0.6808729514"/>
+				<HermiteKey Frame="43" Value="-6.05347927801" Slope="-0.38209630249"/>
+				<HermiteKey Frame="44" Value="-6.17729075349" Slope="-0.25642654005"/>
+				<HermiteKey Frame="45" Value="-6.56633235811" Slope="-0.13091073311"/>
+				<HermiteKey Frame="46" Value="-6.4391122197" Slope="0.13964089621"/>
+				<HermiteKey Frame="47" Value="-6.2870505657" Slope="0.07802774546"/>
+				<HermiteKey Frame="48" Value="-6.28305672877" Slope="0.00199691846"/>
+				<HermiteKey Frame="49" Value="-6.28305672877" Slope="0"/>
+				<HermiteKey Frame="60" Value="-6.28305672877" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.0038497949" Slope="0.00012318534"/>
+				<HermiteKey Frame="4" Value="0.00434257117" Slope="-0.00027718447"/>
+				<HermiteKey Frame="5" Value="0.0038497949" Slope="-0.01162977458"/>
+				<HermiteKey Frame="6" Value="-0.01891697799" Slope="0.03726675888"/>
+				<HermiteKey Frame="7" Value="0.07838331267" Slope="-0.35678291968"/>
+				<HermiteKey Frame="8" Value="-0.73248281735" Slope="-0.78974874562"/>
+				<HermiteKey Frame="9" Value="-1.50111417858" Slope="-0.67940618543"/>
+				<HermiteKey Frame="10" Value="-2.0912951882" Slope="-0.43734458651"/>
+				<HermiteKey Frame="11" Value="-2.3758033516" Slope="-0.16559841895"/>
+				<HermiteKey Frame="12" Value="-2.42249202611" Slope="-0.00692222016"/>
+				<HermiteKey Frame="13" Value="-2.38964779192" Slope="-0.02944962987"/>
+				<HermiteKey Frame="14" Value="-2.48139128585" Slope="-0.23172630886"/>
+				<HermiteKey Frame="15" Value="-2.85310040965" Slope="-0.82012458683"/>
+				<HermiteKey Frame="16" Value="-4.12164045951" Slope="-1.15120830121"/>
+				<HermiteKey Frame="17" Value="-5.15551701208" Slope="-0.53688572285"/>
+				<HermiteKey Frame="18" Value="-5.1954119052" Slope="-0.03244772156"/>
+				<HermiteKey Frame="22" Value="-5.2209402253" Slope="0.01518508008"/>
+				<HermiteKey Frame="27" Value="-5.04808576579" Slope="0.05100685469"/>
+				<HermiteKey Frame="29" Value="-4.93630756757" Slope="0.05905346831"/>
+				<HermiteKey Frame="30" Value="-4.8762486238" Slope="0.05660928305"/>
+				<HermiteKey Frame="31" Value="-4.82308900147" Slope="0.02355612423"/>
+				<HermiteKey Frame="32" Value="-4.82913637534" Slope="-0.04581495395"/>
+				<HermiteKey Frame="33" Value="-4.91471890937" Slope="-0.10340308746"/>
+				<HermiteKey Frame="34" Value="-5.03594255026" Slope="-0.13089849835"/>
+				<HermiteKey Frame="35" Value="-5.17651590607" Slope="-0.14769251892"/>
+				<HermiteKey Frame="36" Value="-5.3313275881" Slope="-0.1604649082"/>
+				<HermiteKey Frame="37" Value="-5.49744572247" Slope="-0.17971450232"/>
+				<HermiteKey Frame="38" Value="-5.69075659274" Slope="-0.24648262263"/>
+				<HermiteKey Frame="39" Value="-5.99041096773" Slope="-0.3848684613"/>
+				<HermiteKey Frame="40" Value="-6.46049351533" Slope="-0.51111054337"/>
+				<HermiteKey Frame="41" Value="-7.01263205448" Slope="-0.42330675498"/>
+				<HermiteKey Frame="42" Value="-7.3071070253" Slope="-0.04671407777"/>
+				<HermiteKey Frame="43" Value="-7.10606021002" Slope="0.22540552044"/>
+				<HermiteKey Frame="44" Value="-6.85629598442" Slope="0.31564975909"/>
+				<HermiteKey Frame="45" Value="-6.47476069185" Slope="0.27716510945"/>
+				<HermiteKey Frame="46" Value="-6.30196576552" Slope="0.09570539133"/>
+				<HermiteKey Frame="47" Value="-6.28334990918" Slope="0.01131512662"/>
+				<HermiteKey Frame="48" Value="-6.27933551228" Slope="0.00200719845"/>
+				<HermiteKey Frame="49" Value="-6.27933551228" Slope="0"/>
+				<HermiteKey Frame="60" Value="-6.27933551228" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.00032944835" Slope="0.00001055924"/>
+				<HermiteKey Frame="4" Value="0.00037168532" Slope="-0.00002376266"/>
+				<HermiteKey Frame="5" Value="0.00032944835" Slope="-0.00615136932"/>
+				<HermiteKey Frame="6" Value="-0.01193105331" Slope="-0.46658882604"/>
+				<HermiteKey Frame="7" Value="-0.93284820373" Slope="-0.84622711153"/>
+				<HermiteKey Frame="8" Value="-1.70438527637" Slope="0.0559759816"/>
+				<HermiteKey Frame="9" Value="-0.82089624052" Slope="-0.16627539726"/>
+				<HermiteKey Frame="10" Value="-2.03693607089" Slope="-0.53834302914"/>
+				<HermiteKey Frame="11" Value="-1.8975822988" Slope="0.07482417617"/>
+				<HermiteKey Frame="12" Value="-1.88728771855" Slope="-0.00956827893"/>
+				<HermiteKey Frame="13" Value="-1.91671885666" Slope="0.05508788827"/>
+				<HermiteKey Frame="14" Value="-1.77711194202" Slope="0.15597076392"/>
+				<HermiteKey Frame="15" Value="-1.60477732883" Slope="0.14181425873"/>
+				<HermiteKey Frame="16" Value="-1.49348342456" Slope="-0.06780282131"/>
+				<HermiteKey Frame="17" Value="-1.74038297144" Slope="-0.12769364624"/>
+				<HermiteKey Frame="18" Value="-1.74887071703" Slope="-0.00654784703"/>
+				<HermiteKey Frame="20" Value="-1.75641666551" Slope="-0.00296136123"/>
+				<HermiteKey Frame="21" Value="-1.75940138797" Slope="-0.00385805031"/>
+				<HermiteKey Frame="23" Value="-1.77412374635" Slope="-0.01376288108"/>
+				<HermiteKey Frame="25" Value="-1.81743634322" Slope="-0.03078934461"/>
+				<HermiteKey Frame="26" Value="-1.85323721751" Slope="-0.0425763559"/>
+				<HermiteKey Frame="27" Value="-1.90258905501" Slope="-0.05965320708"/>
+				<HermiteKey Frame="28" Value="-1.97254363167" Slope="-0.08804183385"/>
+				<HermiteKey Frame="29" Value="-2.07867272271" Slope="-0.14437109627"/>
+				<HermiteKey Frame="30" Value="-2.26128582421" Slope="-0.32193722918"/>
+				<HermiteKey Frame="31" Value="-2.72254718106" Slope="-0.68059450157"/>
+				<HermiteKey Frame="32" Value="-3.62247482736" Slope="-0.70489536652"/>
+				<HermiteKey Frame="33" Value="-4.1323379141" Slope="-0.34882731625"/>
+				<HermiteKey Frame="34" Value="-4.32012945986" Slope="-0.13260914791"/>
+				<HermiteKey Frame="35" Value="-4.39755620992" Slope="-0.05329584528"/>
+				<HermiteKey Frame="37" Value="-4.42732302721" Slope="0.00437757374"/>
+				<HermiteKey Frame="38" Value="-4.41796600293" Slope="0.03114420495"/>
+				<HermiteKey Frame="39" Value="-4.3650346173" Slope="0.10917162753"/>
+				<HermiteKey Frame="40" Value="-4.19962274787" Slope="0.27981401311"/>
+				<HermiteKey Frame="41" Value="-3.80540659108" Slope="0.66755508565"/>
+				<HermiteKey Frame="42" Value="-2.86451257658" Slope="0.8949734594"/>
+				<HermiteKey Frame="43" Value="-2.01545967227" Slope="0.55757944602"/>
+				<HermiteKey Frame="44" Value="-1.74935368454" Slope="0.54195890629"/>
+				<HermiteKey Frame="45" Value="-0.93154185969" Slope="0.74364284529"/>
+				<HermiteKey Frame="46" Value="-0.26206799397" Slope="0.46332784414"/>
+				<HermiteKey Frame="47" Value="-0.00488617141" Slope="0.13119872116"/>
+				<HermiteKey Frame="48" Value="0.00032944835" Slope="0.00260780988"/>
+				<HermiteKey Frame="49" Value="0.00032944835" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.00032944835" Slope="0"/>
+			</RotateZ>
+			<TranslateX>
+				<HermiteKey Frame="0" Value="-7.769274271" Slope="0.00149144412"/>
+				<HermiteKey Frame="4" Value="-7.76330849504" Slope="-0.0033557491"/>
+				<HermiteKey Frame="5" Value="-7.769274271" Slope="-0.13771145721"/>
+				<HermiteKey Frame="6" Value="-8.03873140945" Slope="1.77808716919"/>
+				<HermiteKey Frame="7" Value="-4.21309993263" Slope="4.39817188352"/>
+				<HermiteKey Frame="8" Value="0.75761235759" Slope="3.52342892424"/>
+				<HermiteKey Frame="9" Value="2.83375791585" Slope="1.93355051074"/>
+				<HermiteKey Frame="10" Value="4.62471337907" Slope="1.48288117536"/>
+				<HermiteKey Frame="11" Value="5.79952026657" Slope="0.80978319583"/>
+				<HermiteKey Frame="12" Value="6.24427977072" Slope="0.25403066453"/>
+				<HermiteKey Frame="13" Value="6.30758159564" Slope="-0.27630389983"/>
+				<HermiteKey Frame="14" Value="5.69167197105" Slope="-0.92282667294"/>
+				<HermiteKey Frame="15" Value="4.46192824976" Slope="-0.97428795199"/>
+				<HermiteKey Frame="16" Value="3.74309606707" Slope="-0.63110409391"/>
+				<HermiteKey Frame="17" Value="3.19972006194" Slope="-0.28258143171"/>
+				<HermiteKey Frame="18" Value="3.17793320365" Slope="-0.0194924164"/>
+				<HermiteKey Frame="22" Value="3.11777834855" Slope="-0.02669974151"/>
+				<HermiteKey Frame="29" Value="2.57118833038" Slope="-0.04792964794"/>
+				<HermiteKey Frame="33" Value="2.48396612764" Slope="-0.06935389501"/>
+				<HermiteKey Frame="36" Value="1.86647952693" Slope="-0.38112322669"/>
+				<HermiteKey Frame="39" Value="0.27922070075" Slope="-0.59045489332"/>
+				<HermiteKey Frame="42" Value="-1.23712813335" Slope="-0.35265617545"/>
+				<HermiteKey Frame="43" Value="-1.52764641569" Slope="-0.22938537601"/>
+				<HermiteKey Frame="44" Value="-1.69589888537" Slope="-1.82935339382"/>
+				<HermiteKey Frame="45" Value="-5.18635320332" Slope="-3.00713124291"/>
+				<HermiteKey Frame="46" Value="-7.71016137119" Slope="-1.42432430031"/>
+				<HermiteKey Frame="47" Value="-8.03500180394" Slope="-0.02955644991"/>
+				<HermiteKey Frame="48" Value="-7.769274271" Slope="0.13286376647"/>
+				<HermiteKey Frame="49" Value="-7.769274271" Slope="0"/>
+				<HermiteKey Frame="60" Value="-7.769274271" Slope="0"/>
+			</TranslateX>
+			<TranslateY>
+				<HermiteKey Frame="0" Value="-0.0031988968" Slope="-0.0001023647"/>
+				<HermiteKey Frame="4" Value="-0.00360835556" Slope="0.00023032056"/>
+				<HermiteKey Frame="5" Value="-0.0031988968" Slope="0.12561218316"/>
+				<HermiteKey Frame="6" Value="0.24761601076" Slope="2.12022877759"/>
+				<HermiteKey Frame="7" Value="4.23725865837" Slope="3.71194658124"/>
+				<HermiteKey Frame="8" Value="7.67150917325" Slope="2.01572842002"/>
+				<HermiteKey Frame="9" Value="8.26871549841" Slope="-0.02461579377"/>
+				<HermiteKey Frame="10" Value="7.62227758571" Slope="-0.67238506379"/>
+				<HermiteKey Frame="12" Value="6.39594308263" Slope="-0.36064723305"/>
+				<HermiteKey Frame="13" Value="6.20265090474" Slope="0.40171093322"/>
+				<HermiteKey Frame="14" Value="7.19936494907" Slope="2.14156550159"/>
+				<HermiteKey Frame="15" Value="10.48578190791" Slope="5.66356901816"/>
+				<HermiteKey Frame="16" Value="18.52650298539" Slope="2.68292604859"/>
+				<HermiteKey Frame="17" Value="15.85163400509" Slope="-1.43446203925"/>
+				<HermiteKey Frame="18" Value="15.65757890689" Slope="-0.16327140945"/>
+				<HermiteKey Frame="25" Value="15.92041881221" Slope="0.20485633995"/>
+				<HermiteKey Frame="29" Value="16.93191686061" Slope="0.27417766442"/>
+				<HermiteKey Frame="31" Value="17.50741328193" Slope="0.31601600091"/>
+				<HermiteKey Frame="36" Value="18.16948177166" Slope="-0.33500373224"/>
+				<HermiteKey Frame="39" Value="15.86709385212" Slope="-1.22131565422"/>
+				<HermiteKey Frame="42" Value="11.08702530229" Slope="-1.81053247996"/>
+				<HermiteKey Frame="43" Value="9.24488064876" Slope="-1.81789955904"/>
+				<HermiteKey Frame="44" Value="7.45122618421" Slope="-2.38267082249"/>
+				<HermiteKey Frame="45" Value="4.47953900377" Slope="-2.96055629271"/>
+				<HermiteKey Frame="46" Value="1.53011359878" Slope="-2.27217566564"/>
+				<HermiteKey Frame="47" Value="-0.0648123275" Slope="-0.76665624779"/>
+				<HermiteKey Frame="48" Value="-0.0031988968" Slope="0.03080671535"/>
+				<HermiteKey Frame="50" Value="-0.0031988968" Slope="0"/>
+				<HermiteKey Frame="60" Value="-0.0031988968" Slope="0"/>
+			</TranslateY>
+			<TranslateZ>
+				<HermiteKey Frame="0" Value="12.06962512" Slope="0.00093932573"/>
+				<HermiteKey Frame="4" Value="12.07338242262" Slope="-0.0021134828"/>
+				<HermiteKey Frame="5" Value="12.06962512" Slope="-0.11196642734"/>
+				<HermiteKey Frame="6" Value="11.84944956794" Slope="0.72559460159"/>
+				<HermiteKey Frame="7" Value="13.52081432319" Slope="0.71600901607"/>
+				<HermiteKey Frame="8" Value="13.28146760008" Slope="0.06836859763"/>
+				<HermiteKey Frame="9" Value="13.65755151844" Slope="0.21527493299"/>
+				<HermiteKey Frame="10" Value="13.71201746606" Slope="-0.07650987195"/>
+				<HermiteKey Frame="12" Value="13.24747766159" Slope="-0.18293714246"/>
+				<HermiteKey Frame="13" Value="13.13865748964" Slope="0.08290677578"/>
+				<HermiteKey Frame="14" Value="13.41329121315" Slope="0.00166788193"/>
+				<HermiteKey Frame="15" Value="13.14199325349" Slope="-5.30167769371"/>
+				<HermiteKey Frame="16" Value="2.80993582574" Slope="-10.70415540127"/>
+				<HermiteKey Frame="17" Value="-8.26631754904" Slope="-5.65824007439"/>
+				<HermiteKey Frame="18" Value="-8.50654432305" Slope="-0.19998680105"/>
+				<HermiteKey Frame="24" Value="-8.46017342741" Slope="0.20088657955"/>
+				<HermiteKey Frame="29" Value="-6.67367947047" Slope="0.50738761175"/>
+				<HermiteKey Frame="31" Value="-5.44192386271" Slope="0.82512443651"/>
+				<HermiteKey Frame="34" Value="-1.89138127165" Slope="1.4870394717"/>
+				<HermiteKey Frame="36" Value="1.36046854897" Slope="1.70077652369"/>
+				<HermiteKey Frame="37" Value="3.08098358155" Slope="1.64057889981"/>
+				<HermiteKey Frame="39" Value="6.05213486288" Slope="1.36842960664"/>
+				<HermiteKey Frame="41" Value="8.52808058816" Slope="1.03173285289"/>
+				<HermiteKey Frame="43" Value="10.08213632848" Slope="0.49836028314"/>
+				<HermiteKey Frame="44" Value="10.43867183392" Slope="0.93329731219"/>
+				<HermiteKey Frame="45" Value="11.94873095287" Slope="0.94983083051"/>
+				<HermiteKey Frame="46" Value="12.33833349494" Slope="0.06759659831"/>
+				<HermiteKey Frame="47" Value="12.08392414948" Slope="-0.13435418747"/>
+				<HermiteKey Frame="48" Value="12.06962512" Slope="-0.00714951474"/>
+				<HermiteKey Frame="57" Value="12.06962512" Slope="0"/>
+				<HermiteKey Frame="60" Value="12.06962512" Slope="0"/>
+			</TranslateZ>
+		</Node>
+		<Node Name="Ref:Feeler2">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.1745329252" Slope="0"/>
+				<HermiteKey Frame="3" Value="0.1745329252" Slope="0"/>
+				<HermiteKey Frame="4" Value="0.1745329252" Slope="-0.0436332313"/>
+				<HermiteKey Frame="6" Value="0" Slope="-0.0436332313"/>
+				<HermiteKey Frame="7" Value="0" Slope="0"/>
+				<HermiteKey Frame="44" Value="0" Slope="0"/>
+				<HermiteKey Frame="45" Value="0" Slope="0.02262458965"/>
+				<HermiteKey Frame="46" Value="0.04524917929" Slope="0.06464187295"/>
+				<HermiteKey Frame="47" Value="0.12928374591" Slope="0.06464187295"/>
+				<HermiteKey Frame="48" Value="0.1745329252" Slope="0.02262458965"/>
+				<HermiteKey Frame="49" Value="0.1745329252" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.1745329252" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:LFeeler1">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.22291929892" Slope="0"/>
+				<HermiteKey Frame="3" Value="0.22291929892" Slope="0"/>
+				<HermiteKey Frame="4" Value="0.22291929892" Slope="-0.0436332313"/>
+				<HermiteKey Frame="6" Value="0.04838637372" Slope="-0.0436332313"/>
+				<HermiteKey Frame="7" Value="0.04838637372" Slope="0"/>
+				<HermiteKey Frame="44" Value="0.04838637372" Slope="0"/>
+				<HermiteKey Frame="45" Value="0.04838637372" Slope="0.02262458965"/>
+				<HermiteKey Frame="46" Value="0.09363555301" Slope="0.06464187295"/>
+				<HermiteKey Frame="47" Value="0.17767011962" Slope="0.06464187295"/>
+				<HermiteKey Frame="48" Value="0.22291929892" Slope="0.02262458965"/>
+				<HermiteKey Frame="49" Value="0.22291929892" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.22291929892" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:LFeeler2">
+			<RotateX>
+				<OneFrameKey Value="-0.0029183825"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.09132688384" Slope="0"/>
+				<HermiteKey Frame="3" Value="0.09132688384" Slope="0"/>
+				<HermiteKey Frame="4" Value="0.09132688384" Slope="-0.03490643669"/>
+				<HermiteKey Frame="6" Value="-0.04829888036" Slope="-0.03490644541"/>
+				<HermiteKey Frame="7" Value="-0.04829888036" Slope="0"/>
+				<HermiteKey Frame="44" Value="-0.04829888036" Slope="0"/>
+				<HermiteKey Frame="45" Value="-0.04829888036" Slope="0.0180996054"/>
+				<HermiteKey Frame="46" Value="-0.01209966957" Slope="0.05171328543"/>
+				<HermiteKey Frame="47" Value="0.0551276905" Slope="0.05171327671"/>
+				<HermiteKey Frame="48" Value="0.09132688384" Slope="0.01809959667"/>
+				<HermiteKey Frame="49" Value="0.09132688384" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.09132688384" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.05978616626" Slope="0"/>
+				<HermiteKey Frame="5" Value="0.05998977637" Slope="0.0002033134"/>
+				<HermiteKey Frame="15" Value="0.06019279307" Slope="0"/>
+				<HermiteKey Frame="44" Value="0.06019279307" Slope="0"/>
+				<HermiteKey Frame="51" Value="0.05978616626" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.05978616626" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RFeeler1">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.22291648894" Slope="0"/>
+				<HermiteKey Frame="3" Value="0.22291648894" Slope="0"/>
+				<HermiteKey Frame="4" Value="0.22291648894" Slope="-0.0436332313"/>
+				<HermiteKey Frame="6" Value="0.04838356374" Slope="-0.0436332313"/>
+				<HermiteKey Frame="7" Value="0.04838356374" Slope="0"/>
+				<HermiteKey Frame="44" Value="0.04838356374" Slope="0"/>
+				<HermiteKey Frame="45" Value="0.04838356374" Slope="0.02262458965"/>
+				<HermiteKey Frame="46" Value="0.09363274303" Slope="0.06464186423"/>
+				<HermiteKey Frame="47" Value="0.17766729219" Slope="0.06464187295"/>
+				<HermiteKey Frame="48" Value="0.22291648894" Slope="0.02262459837"/>
+				<HermiteKey Frame="49" Value="0.22291648894" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.22291648894" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:RFeeler2">
+			<RotateX>
+				<OneFrameKey Value="0.00291810324"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.09132965891" Slope="0"/>
+				<HermiteKey Frame="3" Value="0.09132965891" Slope="0"/>
+				<HermiteKey Frame="4" Value="0.09132965891" Slope="-0.03490643669"/>
+				<HermiteKey Frame="6" Value="-0.04829608784" Slope="-0.03490643669"/>
+				<HermiteKey Frame="7" Value="-0.04829608784" Slope="0"/>
+				<HermiteKey Frame="44" Value="-0.04829608784" Slope="0"/>
+				<HermiteKey Frame="45" Value="-0.04829608784" Slope="0.01809959667"/>
+				<HermiteKey Frame="46" Value="-0.0120968945" Slope="0.05171327671"/>
+				<HermiteKey Frame="47" Value="0.05513046557" Slope="0.05171327671"/>
+				<HermiteKey Frame="48" Value="0.09132965891" Slope="0.01809959667"/>
+				<HermiteKey Frame="49" Value="0.09132965891" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.09132965891" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.05978361808" Slope="0"/>
+				<HermiteKey Frame="5" Value="-0.05998722819" Slope="-0.00020330468"/>
+				<HermiteKey Frame="15" Value="-0.06019022744" Slope="0"/>
+				<HermiteKey Frame="44" Value="-0.06019022744" Slope="0"/>
+				<HermiteKey Frame="51" Value="-0.05978361808" Slope="0"/>
+				<HermiteKey Frame="60" Value="-0.05978361808" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Tail1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="-0.13746595416"/>
+				<HermiteKey Frame="1" Value="-0.13746595416" Slope="-0.2010344758"/>
+				<HermiteKey Frame="2" Value="-0.4020689516" Slope="-0.23334456069"/>
+				<HermiteKey Frame="3" Value="-0.60415507554" Slope="-0.15874816744"/>
+				<HermiteKey Frame="4" Value="-0.71956528649" Slope="-0.09017089991"/>
+				<HermiteKey Frame="6" Value="-0.82553246333" Slope="-0.04245491589"/>
+				<HermiteKey Frame="7" Value="-0.86940670715" Slope="-0.05743656039"/>
+				<HermiteKey Frame="8" Value="-0.94040558411" Slope="-0.10843975861"/>
+				<HermiteKey Frame="9" Value="-1.08628622438" Slope="-0.22964291806"/>
+				<HermiteKey Frame="10" Value="-1.39969142023" Slope="-0.63425471839"/>
+				<HermiteKey Frame="11" Value="-2.35479566116" Slope="-1.20289926388"/>
+				<HermiteKey Frame="12" Value="-3.805489948" Slope="-0.94194956345"/>
+				<HermiteKey Frame="13" Value="-4.23869478806" Slope="-0.28897841413"/>
+				<HermiteKey Frame="14" Value="-4.38344677626" Slope="-0.08182888059"/>
+				<HermiteKey Frame="15" Value="-4.40235254924" Slope="0.02988666032"/>
+				<HermiteKey Frame="16" Value="-4.32367345562" Slope="0.12927686058"/>
+				<HermiteKey Frame="17" Value="-4.14379882808" Slope="0.19835410386"/>
+				<HermiteKey Frame="18" Value="-3.92696524791" Slope="0.23176913052"/>
+				<HermiteKey Frame="19" Value="-3.68026056704" Slope="0.69532266318"/>
+				<HermiteKey Frame="20" Value="-2.53631992155" Slope="1.25156835476"/>
+				<HermiteKey Frame="21" Value="-1.17712385752" Slope="0.74444710173"/>
+				<HermiteKey Frame="22" Value="-1.04742571809" Slope="0.08885969513"/>
+				<HermiteKey Frame="23" Value="-0.99940446725" Slope="0.03058603993"/>
+				<HermiteKey Frame="24" Value="-0.98625363823" Slope="0.00428456515"/>
+				<HermiteKey Frame="25" Value="-0.99083533696" Slope="-0.00948987874"/>
+				<HermiteKey Frame="27" Value="-1.02484850541" Slope="-0.02061972121"/>
+				<HermiteKey Frame="29" Value="-1.06988768668" Slope="-0.02476709475"/>
+				<HermiteKey Frame="30" Value="-1.09600702763" Slope="-0.0254207991"/>
+				<HermiteKey Frame="31" Value="-1.12072928487" Slope="-0.01951937838"/>
+				<HermiteKey Frame="33" Value="-1.13145557231" Slope="0.01664366046"/>
+				<HermiteKey Frame="34" Value="-1.10175846348" Slope="0.05392412018"/>
+				<HermiteKey Frame="35" Value="-1.02360733196" Slope="0.10067700534"/>
+				<HermiteKey Frame="36" Value="-0.9004044528" Slope="0.12992740588"/>
+				<HermiteKey Frame="37" Value="-0.7637525202" Slope="0.13144614776"/>
+				<HermiteKey Frame="38" Value="-0.63751215727" Slope="0.11543794423"/>
+				<HermiteKey Frame="39" Value="-0.53287663174" Slope="0.09196494131"/>
+				<HermiteKey Frame="41" Value="-0.39439733942" Slope="0.05190213006"/>
+				<HermiteKey Frame="42" Value="-0.34977801455" Slope="0.03780103907"/>
+				<HermiteKey Frame="43" Value="-0.31879526128" Slope="0.0150065678"/>
+				<HermiteKey Frame="44" Value="-0.31976487894" Slope="-0.04443369165"/>
+				<HermiteKey Frame="45" Value="-0.40766264459" Slope="-0.22190457322"/>
+				<HermiteKey Frame="46" Value="-0.76357402538" Slope="-0.7838117551"/>
+				<HermiteKey Frame="47" Value="-1.97528615479" Slope="-0.96852282963"/>
+				<HermiteKey Frame="48" Value="-2.70061968464" Slope="-0.46748153577"/>
+				<HermiteKey Frame="49" Value="-2.91024922633" Slope="-0.14922096484"/>
+				<HermiteKey Frame="50" Value="-2.99906161432" Slope="-0.0562631319"/>
+				<HermiteKey Frame="51" Value="-3.02277549013" Slope="-0.08794490699"/>
+				<HermiteKey Frame="52" Value="-3.17495142829" Slope="-0.05940858173"/>
+				<HermiteKey Frame="53" Value="-3.14159265359" Slope="0.01667938735"/>
+				<HermiteKey Frame="54" Value="-3.14159265359" Slope="0"/>
+				<HermiteKey Frame="60" Value="-3.14159265359" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="1.38993866" Slope="-0.01018099422"/>
+				<HermiteKey Frame="1" Value="1.37975766578" Slope="-0.02526600584"/>
+				<HermiteKey Frame="2" Value="1.33940664831" Slope="-0.05516352211"/>
+				<HermiteKey Frame="3" Value="1.26943062156" Slope="-0.07130800095"/>
+				<HermiteKey Frame="4" Value="1.19679064641" Slope="-0.0674857648"/>
+				<HermiteKey Frame="5" Value="1.13445909197" Slope="-0.05686971235"/>
+				<HermiteKey Frame="6" Value="1.0830512217" Slope="-0.03873787945"/>
+				<HermiteKey Frame="7" Value="1.05698333306" Slope="-0.00734540142"/>
+				<HermiteKey Frame="8" Value="1.06836041887" Slope="0.05020345346"/>
+				<HermiteKey Frame="9" Value="1.15739023997" Slope="0.12340353094"/>
+				<HermiteKey Frame="10" Value="1.31516748075" Slope="0.14811722734"/>
+				<HermiteKey Frame="11" Value="1.45362469466" Slope="0.03682293038"/>
+				<HermiteKey Frame="12" Value="1.38881334151" Slope="-0.10635873273"/>
+				<HermiteKey Frame="13" Value="1.24090722919" Slope="-0.13980644069"/>
+				<HermiteKey Frame="14" Value="1.10920046014" Slope="-0.11591062302"/>
+				<HermiteKey Frame="15" Value="1.00908598314" Slope="-0.08076541657"/>
+				<HermiteKey Frame="16" Value="0.947669627" Slope="-0.04825508133"/>
+				<HermiteKey Frame="17" Value="0.91257582049" Slope="-0.0031746841"/>
+				<HermiteKey Frame="18" Value="0.94132025881" Slope="0.12870804905"/>
+				<HermiteKey Frame="19" Value="1.1699919186" Slope="0.25954781707"/>
+				<HermiteKey Frame="20" Value="1.46041589295" Slope="0.08138493864"/>
+				<HermiteKey Frame="21" Value="1.33276179588" Slope="-0.10142043706"/>
+				<HermiteKey Frame="22" Value="1.25757501883" Slope="-0.06778185118"/>
+				<HermiteKey Frame="23" Value="1.19719809352" Slope="-0.05271040949"/>
+				<HermiteKey Frame="27" Value="1.08981271449" Slope="-0.00745059241"/>
+				<HermiteKey Frame="30" Value="1.09481919145" Slope="0.00880011589"/>
+				<HermiteKey Frame="33" Value="1.12699571502" Slope="0.00792107209"/>
+				<HermiteKey Frame="35" Value="1.12935913517" Slope="-0.00985259307"/>
+				<HermiteKey Frame="36" Value="1.11305706183" Slope="-0.02267166118"/>
+				<HermiteKey Frame="37" Value="1.08401581282" Slope="-0.0328184993"/>
+				<HermiteKey Frame="38" Value="1.04742006322" Slope="-0.03556445199"/>
+				<HermiteKey Frame="39" Value="1.01288690883" Slope="-0.02646393003"/>
+				<HermiteKey Frame="40" Value="0.99449220316" Slope="-0.0065916548"/>
+				<HermiteKey Frame="42" Value="1.0295021117" Slope="0.04241589905"/>
+				<HermiteKey Frame="43" Value="1.08453539734" Slope="0.0770295044"/>
+				<HermiteKey Frame="44" Value="1.18356112049" Slope="0.12358343075"/>
+				<HermiteKey Frame="45" Value="1.33170225885" Slope="0.14157124781"/>
+				<HermiteKey Frame="46" Value="1.46670361612" Slope="0.09086299278"/>
+				<HermiteKey Frame="47" Value="1.5134282444" Slope="0.00920721394"/>
+				<HermiteKey Frame="48" Value="1.485118044" Slope="-0.02224591429"/>
+				<HermiteKey Frame="49" Value="1.46893641583" Slope="-0.00325537939"/>
+				<HermiteKey Frame="50" Value="1.47860728521" Slope="0.02647907076"/>
+				<HermiteKey Frame="51" Value="1.52189455735" Slope="0.06775095012"/>
+				<HermiteKey Frame="52" Value="1.61410918546" Slope="0.09256182646"/>
+				<HermiteKey Frame="53" Value="1.70701821026" Slope="0.06561915261"/>
+				<HermiteKey Frame="54" Value="1.74534749069" Slope="0.02231789166"/>
+				<HermiteKey Frame="55" Value="1.75165399359" Slope="0.00315325145"/>
+				<HermiteKey Frame="56" Value="1.75165399359" Slope="0"/>
+				<HermiteKey Frame="60" Value="1.75165399359" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="-0.16029615232"/>
+				<HermiteKey Frame="1" Value="-0.16029615232" Slope="-0.23932233956"/>
+				<HermiteKey Frame="2" Value="-0.47864467912" Slope="-0.29178341131"/>
+				<HermiteKey Frame="3" Value="-0.74386297494" Slope="-0.21672399094"/>
+				<HermiteKey Frame="5" Value="-1.01387488736" Slope="-0.08383358322"/>
+				<HermiteKey Frame="6" Value="-1.07975982744" Slope="-0.0596275071"/>
+				<HermiteKey Frame="8" Value="-1.19506943761" Slope="-0.07653465992"/>
+				<HermiteKey Frame="9" Value="-1.28619922141" Slope="-0.14904959968"/>
+				<HermiteKey Frame="10" Value="-1.49316863698" Slope="-0.51682262204"/>
+				<HermiteKey Frame="11" Value="-2.3198444655" Slope="-1.08353928557"/>
+				<HermiteKey Frame="12" Value="-3.66024720812" Slope="-0.85470517054"/>
+				<HermiteKey Frame="13" Value="-4.02925480658" Slope="-0.24549308203"/>
+				<HermiteKey Frame="14" Value="-4.15123337218" Slope="-0.07924987737"/>
+				<HermiteKey Frame="15" Value="-4.18775456131" Slope="-0.00647524134"/>
+				<HermiteKey Frame="16" Value="-4.16418385486" Slope="0.06273471677"/>
+				<HermiteKey Frame="17" Value="-4.06228512777" Slope="0.11297049373"/>
+				<HermiteKey Frame="18" Value="-3.93824286741" Slope="0.13084137372"/>
+				<HermiteKey Frame="19" Value="-3.80060238033" Slope="0.61145114523"/>
+				<HermiteKey Frame="20" Value="-2.71534057695" Slope="1.22032285963"/>
+				<HermiteKey Frame="21" Value="-1.35995666107" Slope="0.74113711099"/>
+				<HermiteKey Frame="22" Value="-1.23306635498" Slope="0.08582249935"/>
+				<HermiteKey Frame="23" Value="-1.18831166237" Slope="0.0265097711"/>
+				<HermiteKey Frame="24" Value="-1.18004681278" Slope="-0.00167106549"/>
+				<HermiteKey Frame="25" Value="-1.19165379336" Slope="-0.0175963048"/>
+				<HermiteKey Frame="27" Value="-1.24586762946" Slope="-0.03228423657"/>
+				<HermiteKey Frame="29" Value="-1.31656458191" Slope="-0.0385308834"/>
+				<HermiteKey Frame="30" Value="-1.35686966232" Slope="-0.03940832151"/>
+				<HermiteKey Frame="31" Value="-1.39538122493" Slope="-0.03220600218"/>
+				<HermiteKey Frame="33" Value="-1.4261360731" Slope="0.01015629781"/>
+				<HermiteKey Frame="34" Value="-1.40096907106" Slope="0.05292912542"/>
+				<HermiteKey Frame="35" Value="-1.32027782226" Slope="0.10727153121"/>
+				<HermiteKey Frame="36" Value="-1.18642600865" Slope="0.14344118485"/>
+				<HermiteKey Frame="37" Value="-1.03339545257" Slope="0.14971186487"/>
+				<HermiteKey Frame="38" Value="-0.88700227891" Slope="0.13682698912"/>
+				<HermiteKey Frame="39" Value="-0.75974147433" Slope="0.11571524214"/>
+				<HermiteKey Frame="41" Value="-0.5699783872" Slope="0.07845864108"/>
+				<HermiteKey Frame="42" Value="-0.49865451248" Slope="0.06410014021"/>
+				<HermiteKey Frame="43" Value="-0.44177810678" Slope="0.03929572159"/>
+				<HermiteKey Frame="44" Value="-0.4200630693" Slope="-0.02394802919"/>
+				<HermiteKey Frame="45" Value="-0.48967416516" Slope="-0.20443292856"/>
+				<HermiteKey Frame="46" Value="-0.82892892642" Slope="-0.76713976795"/>
+				<HermiteKey Frame="47" Value="-2.02395370105" Slope="-0.95258232742"/>
+				<HermiteKey Frame="48" Value="-2.73409358126" Slope="-0.45356412324"/>
+				<HermiteKey Frame="49" Value="-2.93108194752" Slope="-0.13808114781"/>
+				<HermiteKey Frame="50" Value="-3.01025587689" Slope="-0.04816780614"/>
+				<HermiteKey Frame="51" Value="-3.02741755979" Slope="-0.08286878266"/>
+				<HermiteKey Frame="52" Value="-3.17599344221" Slope="-0.0570875469"/>
+				<HermiteKey Frame="53" Value="-3.14159265359" Slope="0.01720039431"/>
+				<HermiteKey Frame="54" Value="-3.14159265359" Slope="0"/>
+				<HermiteKey Frame="60" Value="-3.14159265359" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Tail2">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0.04861995113"/>
+				<HermiteKey Frame="1" Value="0.04861995113" Slope="0.08152617068"/>
+				<HermiteKey Frame="2" Value="0.16305234137" Slope="0.12352336525"/>
+				<HermiteKey Frame="3" Value="0.29566668163" Slope="0.11443564527"/>
+				<HermiteKey Frame="4" Value="0.39192363191" Slope="0.07224635104"/>
+				<HermiteKey Frame="5" Value="0.44015938372" Slope="0.03719765257"/>
+				<HermiteKey Frame="7" Value="0.46662180404" Slope="-0.01409808902"/>
+				<HermiteKey Frame="8" Value="0.43812275901" Slope="-0.08087352226"/>
+				<HermiteKey Frame="9" Value="0.30487475951" Slope="-0.18389424299"/>
+				<HermiteKey Frame="10" Value="0.07033427303" Slope="-0.22754311244"/>
+				<HermiteKey Frame="11" Value="-0.15021146537" Slope="-0.15850259962"/>
+				<HermiteKey Frame="12" Value="-0.2466709262" Slope="-0.01325489428"/>
+				<HermiteKey Frame="13" Value="-0.17672125392" Slope="0.12017327556"/>
+				<HermiteKey Frame="15" Value="0.21051156128" Slope="0.21321106203"/>
+				<HermiteKey Frame="16" Value="0.42009774899" Slope="0.16147150067"/>
+				<HermiteKey Frame="17" Value="0.53345456262" Slope="0.05368650232"/>
+				<HermiteKey Frame="18" Value="0.52747075364" Slope="-0.05277206324"/>
+				<HermiteKey Frame="19" Value="0.42791043613" Slope="-0.11731737585"/>
+				<HermiteKey Frame="20" Value="0.29283600193" Slope="-0.10679746487"/>
+				<HermiteKey Frame="21" Value="0.21431550638" Slope="-0.04171625764"/>
+				<HermiteKey Frame="22" Value="0.20940348664" Slope="0.00656852046"/>
+				<HermiteKey Frame="24" Value="0.25964353965" Slope="0.03471100344"/>
+				<HermiteKey Frame="26" Value="0.33002760693" Slope="0.02665955526"/>
+				<HermiteKey Frame="27" Value="0.35019366471" Slope="0.01423691251"/>
+				<HermiteKey Frame="28" Value="0.35850143195" Slope="0.00627438885"/>
+				<HermiteKey Frame="31" Value="0.36386130317" Slope="-0.00045562693"/>
+				<HermiteKey Frame="33" Value="0.36434587639" Slope="0.00287141569"/>
+				<HermiteKey Frame="34" Value="0.36901368966" Slope="0.00981654329"/>
+				<HermiteKey Frame="35" Value="0.38397896297" Slope="0.02064866749"/>
+				<HermiteKey Frame="37" Value="0.44166422405" Slope="0.03066347146"/>
+				<HermiteKey Frame="39" Value="0.49344772408" Slope="0.01399038475"/>
+				<HermiteKey Frame="40" Value="0.49961873707" Slope="-0.00769969453"/>
+				<HermiteKey Frame="41" Value="0.47804833502" Slope="-0.03676120681"/>
+				<HermiteKey Frame="42" Value="0.42609632345" Slope="-0.06336041731"/>
+				<HermiteKey Frame="44" Value="0.26345226696" Slope="-0.08897691145"/>
+				<HermiteKey Frame="46" Value="0.09165512791" Slope="-0.07263918975"/>
+				<HermiteKey Frame="47" Value="0.02809529801" Slope="-0.0509613016"/>
+				<HermiteKey Frame="48" Value="-0.01026747528" Slope="-0.02777564968"/>
+				<HermiteKey Frame="49" Value="-0.02745600136" Slope="-0.01012475971"/>
+				<HermiteKey Frame="51" Value="-0.02448101783" Slope="0.00819007969"/>
+				<HermiteKey Frame="53" Value="-0.00434850528" Slope="0.00706841766"/>
+				<HermiteKey Frame="54" Value="0" Slope="0.00217425264"/>
+				<HermiteKey Frame="55" Value="0" Slope="0"/>
+				<HermiteKey Frame="60" Value="0" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.13304079401" Slope="-0.0300017386"/>
+				<HermiteKey Frame="1" Value="-0.16304253262" Slope="-0.04793754485"/>
+				<HermiteKey Frame="2" Value="-0.22891588371" Slope="-0.06527836835"/>
+				<HermiteKey Frame="3" Value="-0.29359926932" Slope="-0.04965535026"/>
+				<HermiteKey Frame="4" Value="-0.32822658422" Slope="-0.02077160849"/>
+				<HermiteKey Frame="5" Value="-0.33514248629" Slope="-0.00070725105"/>
+				<HermiteKey Frame="6" Value="-0.32964108632" Slope="0.0112157563"/>
+				<HermiteKey Frame="7" Value="-0.31271097369" Slope="0.02292835548"/>
+				<HermiteKey Frame="8" Value="-0.28378437536" Slope="0.02968233462"/>
+				<HermiteKey Frame="10" Value="-0.21530559676" Slope="0.04473550272"/>
+				<HermiteKey Frame="11" Value="-0.16387529901" Slope="0.05116410013"/>
+				<HermiteKey Frame="12" Value="-0.1129773965" Slope="0.0475066056"/>
+				<HermiteKey Frame="13" Value="-0.06886208781" Slope="0.04264889178"/>
+				<HermiteKey Frame="14" Value="-0.02767961294" Slope="0.0388229468"/>
+				<HermiteKey Frame="16" Value="0.03532862311" Slope="0.01864737698"/>
+				<HermiteKey Frame="17" Value="0.04607855975" Slope="-0.00115301686"/>
+				<HermiteKey Frame="18" Value="0.03302258938" Slope="-0.02974501812"/>
+				<HermiteKey Frame="19" Value="-0.01341147649" Slope="-0.05971117819"/>
+				<HermiteKey Frame="20" Value="-0.086399767" Slope="-0.07463397891"/>
+				<HermiteKey Frame="21" Value="-0.16267943432" Slope="-0.06708857149"/>
+				<HermiteKey Frame="22" Value="-0.22057690998" Slope="-0.04830195214"/>
+				<HermiteKey Frame="24" Value="-0.28206840255" Slope="-0.01669357688"/>
+				<HermiteKey Frame="26" Value="-0.29529400147" Slope="-0.00088226394"/>
+				<HermiteKey Frame="27" Value="-0.29443502023" Slope="0.00103212663"/>
+				<HermiteKey Frame="32" Value="-0.28407383822" Slope="0.00307852518"/>
+				<HermiteKey Frame="33" Value="-0.28085208259" Slope="0.00333634522"/>
+				<HermiteKey Frame="34" Value="-0.27740114778" Slope="-0.0004316461"/>
+				<HermiteKey Frame="35" Value="-0.2817153748" Slope="-0.0110775524"/>
+				<HermiteKey Frame="37" Value="-0.32762231633" Slope="-0.03174463312"/>
+				<HermiteKey Frame="39" Value="-0.40379417466" Slope="-0.04286405597"/>
+				<HermiteKey Frame="41" Value="-0.48950458897" Slope="-0.0342690948"/>
+				<HermiteKey Frame="44" Value="-0.52510440133" Slope="0.01486992597"/>
+				<HermiteKey Frame="46" Value="-0.44796772499" Slope="0.06986300796"/>
+				<HermiteKey Frame="47" Value="-0.36051484377" Slope="0.10852026193"/>
+				<HermiteKey Frame="48" Value="-0.23092720114" Slope="0.12600342576"/>
+				<HermiteKey Frame="49" Value="-0.10850799226" Slope="0.09637480364"/>
+				<HermiteKey Frame="51" Value="-0.00609130381" Slope="0.0198607037"/>
+				<HermiteKey Frame="52" Value="0.00154381354" Slope="-0.00116693586"/>
+				<HermiteKey Frame="53" Value="-0.00842517554" Slope="-0.01744607558"/>
+				<HermiteKey Frame="55" Value="-0.06574847278" Slope="-0.03240007407"/>
+				<HermiteKey Frame="57" Value="-0.12307157805" Slope="-0.01744615412"/>
+				<HermiteKey Frame="58" Value="-0.13304079401" Slope="-0.00498460798"/>
+				<HermiteKey Frame="59" Value="-0.13304079401" Slope="0"/>
+				<HermiteKey Frame="60" Value="-0.13304079401" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="-0.03286453236"/>
+				<HermiteKey Frame="1" Value="-0.03286453236" Slope="-0.06012608659"/>
+				<HermiteKey Frame="2" Value="-0.12025217317" Slope="-0.10179028978"/>
+				<HermiteKey Frame="3" Value="-0.23644511193" Slope="-0.10426626622"/>
+				<HermiteKey Frame="4" Value="-0.32878470561" Slope="-0.06953766113"/>
+				<HermiteKey Frame="5" Value="-0.37552043419" Slope="-0.03528276458"/>
+				<HermiteKey Frame="6" Value="-0.39935023477" Slope="-0.01156432473"/>
+				<HermiteKey Frame="7" Value="-0.39864908365" Slope="0.01264575692"/>
+				<HermiteKey Frame="8" Value="-0.37405872094" Slope="0.06741568983"/>
+				<HermiteKey Frame="9" Value="-0.263817704" Slope="0.15402001814"/>
+				<HermiteKey Frame="10" Value="-0.06601868466" Slope="0.20045232123"/>
+				<HermiteKey Frame="11" Value="0.13708693846" Slope="0.17650698858"/>
+				<HermiteKey Frame="12" Value="0.28699529249" Slope="0.11622962558"/>
+				<HermiteKey Frame="13" Value="0.36954618961" Slope="0.06431069673"/>
+				<HermiteKey Frame="14" Value="0.41561668595" Slope="0.03770527286"/>
+				<HermiteKey Frame="15" Value="0.44495673532" Slope="0.02512438983"/>
+				<HermiteKey Frame="16" Value="0.4658654656" Slope="-0.01214005649"/>
+				<HermiteKey Frame="17" Value="0.42067662234" Slope="-0.0923081254"/>
+				<HermiteKey Frame="18" Value="0.28124921481" Slope="-0.15338737992"/>
+				<HermiteKey Frame="19" Value="0.1139018625" Slope="-0.15214292526"/>
+				<HermiteKey Frame="20" Value="-0.0230366357" Slope="-0.11196666761"/>
+				<HermiteKey Frame="21" Value="-0.11003147271" Slope="-0.07266127689"/>
+				<HermiteKey Frame="22" Value="-0.16835918949" Slope="-0.05340136788"/>
+				<HermiteKey Frame="23" Value="-0.21683420848" Slope="-0.04442660562"/>
+				<HermiteKey Frame="26" Value="-0.3114766943" Slope="-0.01736171509"/>
+				<HermiteKey Frame="28" Value="-0.32897833244" Slope="-0.00321122256"/>
+				<HermiteKey Frame="31" Value="-0.32277908002" Slope="0.00617769761"/>
+				<HermiteKey Frame="33" Value="-0.30783262135" Slope="0.00752993508"/>
+				<HermiteKey Frame="34" Value="-0.30058081322" Slope="0.00453812658"/>
+				<HermiteKey Frame="35" Value="-0.29875636819" Slope="-0.00228855426"/>
+				<HermiteKey Frame="37" Value="-0.31799661607" Slope="-0.01482827369"/>
+				<HermiteKey Frame="38" Value="-0.33481446911" Slope="-0.0169051806"/>
+				<HermiteKey Frame="39" Value="-0.35180697726" Slope="-0.01432604647"/>
+				<HermiteKey Frame="40" Value="-0.36346656206" Slope="-0.00257344435"/>
+				<HermiteKey Frame="41" Value="-0.35695386595" Slope="0.01889274409"/>
+				<HermiteKey Frame="42" Value="-0.32568107387" Slope="0.04099428474"/>
+				<HermiteKey Frame="44" Value="-0.21323418765" Slope="0.0624343107"/>
+				<HermiteKey Frame="46" Value="-0.09409424299" Slope="0.04856657024"/>
+				<HermiteKey Frame="47" Value="-0.05296353459" Slope="0.03186643965"/>
+				<HermiteKey Frame="48" Value="-0.0303613637" Slope="0.01623478218"/>
+				<HermiteKey Frame="49" Value="-0.02049397024" Slope="0.00801291132"/>
+				<HermiteKey Frame="50" Value="-0.01433554106" Slope="0.00582667699"/>
+				<HermiteKey Frame="53" Value="-0.00102236152" Slope="0.0020687824"/>
+				<HermiteKey Frame="55" Value="0" Slope="0"/>
+				<HermiteKey Frame="60" Value="0" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LFoot">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-1.57079632679" Slope="0.40613979246"/>
+				<HermiteKey Frame="1" Value="-1.16465653434" Slope="0.84548326965"/>
+				<HermiteKey Frame="2" Value="0.12017021251" Slope="1.3640249712"/>
+				<HermiteKey Frame="3" Value="1.56339340805" Slope="1.12719884517"/>
+				<HermiteKey Frame="4" Value="2.37456790284" Slope="0.46492523928"/>
+				<HermiteKey Frame="5" Value="2.49324388662" Slope="-0.01177825846"/>
+				<HermiteKey Frame="6" Value="2.35101138591" Slope="-0.15076048486"/>
+				<HermiteKey Frame="7" Value="2.19172291689" Slope="-0.18418658564"/>
+				<HermiteKey Frame="8" Value="1.98263821464" Slope="-0.15281787026"/>
+				<HermiteKey Frame="9" Value="1.88608717637" Slope="-0.08114266076"/>
+				<HermiteKey Frame="10" Value="1.82035289312" Slope="-0.05971992229"/>
+				<HermiteKey Frame="11" Value="1.7666473318" Slope="-0.05178017518"/>
+				<HermiteKey Frame="12" Value="1.71679254277" Slope="-0.05687387496"/>
+				<HermiteKey Frame="13" Value="1.65289958187" Slope="-0.30260996791"/>
+				<HermiteKey Frame="14" Value="1.11157260694" Slope="-0.33045411304"/>
+				<HermiteKey Frame="15" Value="0.99199135579" Slope="-0.61418383342"/>
+				<HermiteKey Frame="16" Value="-0.1167950599" Slope="-0.25004922041"/>
+				<HermiteKey Frame="17" Value="0.49189291497" Slope="0.38770401919"/>
+				<HermiteKey Frame="18" Value="0.65861297849" Slope="0.14569481506"/>
+				<HermiteKey Frame="19" Value="0.78328254509" Slope="0.1152913453"/>
+				<HermiteKey Frame="20" Value="0.88919566909" Slope="0.09973265132"/>
+				<HermiteKey Frame="21" Value="0.98274784772" Slope="0.0818005888"/>
+				<HermiteKey Frame="22" Value="1.05279684669" Slope="0.05728343393"/>
+				<HermiteKey Frame="23" Value="1.09731471557" Slope="0.03779657976"/>
+				<HermiteKey Frame="28" Value="1.12839440443" Slope="-0.02233047549"/>
+				<HermiteKey Frame="29" Value="1.10075517841" Slope="-0.03512579839"/>
+				<HermiteKey Frame="30" Value="1.05814280764" Slope="-0.05771279365"/>
+				<HermiteKey Frame="31" Value="0.98532959111" Slope="-0.08574340103"/>
+				<HermiteKey Frame="32" Value="0.88665600559" Slope="-0.1070696926"/>
+				<HermiteKey Frame="33" Value="0.7711902059" Slope="-0.11704762649"/>
+				<HermiteKey Frame="34" Value="0.6525607526" Slope="-0.11598403157"/>
+				<HermiteKey Frame="35" Value="0.53922214276" Slope="-0.10919862777"/>
+				<HermiteKey Frame="36" Value="0.43416349706" Slope="-0.09394052312"/>
+				<HermiteKey Frame="37" Value="0.35134109652" Slope="-0.69887998453"/>
+				<HermiteKey Frame="38" Value="-0.96359647201" Slope="-0.36702808966"/>
+				<HermiteKey Frame="39" Value="-0.38271508279" Slope="0.24673849662"/>
+				<HermiteKey Frame="40" Value="-0.47011947876" Slope="-0.09645444301"/>
+				<HermiteKey Frame="41" Value="-0.57562396882" Slope="-0.0698368891"/>
+				<HermiteKey Frame="42" Value="-0.60979325697" Slope="-0.07268671507"/>
+				<HermiteKey Frame="43" Value="-0.72099739895" Slope="-0.19255356317"/>
+				<HermiteKey Frame="44" Value="-0.99490038332" Slope="-0.3433472791"/>
+				<HermiteKey Frame="45" Value="-1.40769195716" Slope="-0.41508908164"/>
+				<HermiteKey Frame="46" Value="-1.8250785466" Slope="-0.33504284544"/>
+				<HermiteKey Frame="47" Value="-2.07777764805" Slope="-0.10694162907"/>
+				<HermiteKey Frame="48" Value="-2.03896180474" Slope="0.04437392285"/>
+				<HermiteKey Frame="49" Value="-1.98902980234" Slope="0.05164655277"/>
+				<HermiteKey Frame="54" Value="-1.7233520486" Slope="0.04653001535"/>
+				<HermiteKey Frame="57" Value="-1.61172178448" Slope="0.02628906549"/>
+				<HermiteKey Frame="59" Value="-1.5755515287" Slope="0.00929649626"/>
+				<HermiteKey Frame="60" Value="-1.57079632679" Slope="0.00475520191"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-1.3185472934" Slope="-0.05586034481"/>
+				<HermiteKey Frame="1" Value="-1.37440763821" Slope="-0.06764948541"/>
+				<HermiteKey Frame="2" Value="-1.45384626421" Slope="-0.02258120949"/>
+				<HermiteKey Frame="3" Value="-1.41957005719" Slope="0.06222461812"/>
+				<HermiteKey Frame="4" Value="-1.32939702797" Slope="0.09134496545"/>
+				<HermiteKey Frame="5" Value="-1.23688012629" Slope="0.03441663621"/>
+				<HermiteKey Frame="6" Value="-1.26056375555" Slope="-0.05366063654"/>
+				<HermiteKey Frame="7" Value="-1.34420139938" Slope="-0.0339883935"/>
+				<HermiteKey Frame="8" Value="-1.32854054255" Slope="0.05403453843"/>
+				<HermiteKey Frame="9" Value="-1.23613232252" Slope="0.0709009989"/>
+				<HermiteKey Frame="10" Value="-1.18673854476" Slope="0.03110984814"/>
+				<HermiteKey Frame="11" Value="-1.17391262623" Slope="0.00264299572"/>
+				<HermiteKey Frame="12" Value="-1.18145255332" Slope="-0.00808455708"/>
+				<HermiteKey Frame="13" Value="-1.19008174039" Slope="0.03447491276"/>
+				<HermiteKey Frame="14" Value="-1.1125027278" Slope="0.01346621002"/>
+				<HermiteKey Frame="15" Value="-1.16314932036" Slope="-0.64299217696"/>
+				<HermiteKey Frame="16" Value="-2.39848708173" Slope="-0.51580710222"/>
+				<HermiteKey Frame="17" Value="-2.19476352479" Slope="0.09563078723"/>
+				<HermiteKey Frame="18" Value="-2.20722550727" Slope="0.01207724209"/>
+				<HermiteKey Frame="19" Value="-2.17060904061" Slope="0.04685957714"/>
+				<HermiteKey Frame="20" Value="-2.11350635298" Slope="0.05412848078"/>
+				<HermiteKey Frame="21" Value="-2.06235207906" Slope="0.03602318561"/>
+				<HermiteKey Frame="22" Value="-2.04145998177" Slope="0.00830486999"/>
+				<HermiteKey Frame="23" Value="-2.04574233907" Slope="-0.00595495869"/>
+				<HermiteKey Frame="26" Value="-2.07151868791" Slope="-0.00821918305"/>
+				<HermiteKey Frame="28" Value="-2.0834917164" Slope="-0.0025216168"/>
+				<HermiteKey Frame="29" Value="-2.08398960647" Slope="0.00143864"/>
+				<HermiteKey Frame="31" Value="-2.07041679174" Slope="0.01545578937"/>
+				<HermiteKey Frame="33" Value="-2.0216274215" Slope="0.03006002387"/>
+				<HermiteKey Frame="34" Value="-1.98958280992" Slope="0.03292652646"/>
+				<HermiteKey Frame="35" Value="-1.95577436859" Slope="0.03484134463"/>
+				<HermiteKey Frame="36" Value="-1.91990012065" Slope="0.04116341588"/>
+				<HermiteKey Frame="37" Value="-1.87344753684" Slope="0.22726864196"/>
+				<HermiteKey Frame="38" Value="-1.46536283673" Slope="0.28364789061"/>
+				<HermiteKey Frame="39" Value="-1.30615175561" Slope="0.08729502491"/>
+				<HermiteKey Frame="40" Value="-1.29077278691" Slope="0.01775103696"/>
+				<HermiteKey Frame="41" Value="-1.27064968168" Slope="0.03582803162"/>
+				<HermiteKey Frame="42" Value="-1.21911672367" Slope="0.02678794168"/>
+				<HermiteKey Frame="43" Value="-1.21707379833" Slope="-0.02426818366"/>
+				<HermiteKey Frame="44" Value="-1.26765309098" Slope="-0.04472319814"/>
+				<HermiteKey Frame="45" Value="-1.30652019461" Slope="-0.02083071406"/>
+				<HermiteKey Frame="46" Value="-1.30931451911" Slope="0.00927611954"/>
+				<HermiteKey Frame="47" Value="-1.28796795553" Slope="0.00565735387"/>
+				<HermiteKey Frame="48" Value="-1.29799981137" Slope="-0.00959876111"/>
+				<HermiteKey Frame="50" Value="-1.31435030014" Slope="-0.00620091049"/>
+				<HermiteKey Frame="55" Value="-1.32429253332" Slope="0.00097424279"/>
+				<HermiteKey Frame="59" Value="-1.31895489759" Slope="0.00073576973"/>
+				<HermiteKey Frame="60" Value="-1.3185472934" Slope="0.00040760419"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="1.57079632679" Slope="-0.42848784341"/>
+				<HermiteKey Frame="1" Value="1.14230848339" Slope="-0.86688314431"/>
+				<HermiteKey Frame="2" Value="-0.16296996183" Slope="-1.37332266301"/>
+				<HermiteKey Frame="3" Value="-1.60433684263" Slope="-1.11399518503"/>
+				<HermiteKey Frame="4" Value="-2.39096033188" Slope="-0.43162248093"/>
+				<HermiteKey Frame="5" Value="-2.46758180448" Slope="0.05159056261"/>
+				<HermiteKey Frame="6" Value="-2.28777920667" Slope="0.18611438034"/>
+				<HermiteKey Frame="7" Value="-2.09535304381" Slope="0.21752572538"/>
+				<HermiteKey Frame="8" Value="-1.8527277559" Slope="0.18318679996"/>
+				<HermiteKey Frame="9" Value="-1.72897944389" Slope="0.09719286564"/>
+				<HermiteKey Frame="10" Value="-1.65834202462" Slope="0.060314076"/>
+				<HermiteKey Frame="12" Value="-1.55943315126" Slope="0.05805478219"/>
+				<HermiteKey Frame="13" Value="-1.49224172752" Slope="0.45972219462"/>
+				<HermiteKey Frame="14" Value="-0.63998876203" Slope="0.53522180448"/>
+				<HermiteKey Frame="15" Value="-0.42179811856" Slope="0.30230708347"/>
+				<HermiteKey Frame="16" Value="-0.03537459508" Slope="-0.09412279658"/>
+				<HermiteKey Frame="17" Value="-0.61004371172" Slope="-0.34781461513"/>
+				<HermiteKey Frame="18" Value="-0.73100382534" Slope="-0.10892978598"/>
+				<HermiteKey Frame="19" Value="-0.82790328368" Slope="-0.09331306853"/>
+				<HermiteKey Frame="20" Value="-0.9176299624" Slope="-0.08638422484"/>
+				<HermiteKey Frame="21" Value="-1.00067173337" Slope="-0.07274001742"/>
+				<HermiteKey Frame="22" Value="-1.06310999724" Slope="-0.05110745547"/>
+				<HermiteKey Frame="23" Value="-1.1028866443" Slope="-0.03460788067"/>
+				<HermiteKey Frame="26" Value="-1.15795988053" Slope="-0.00172499617"/>
+				<HermiteKey Frame="28" Value="-1.13931442341" Slope="0.02056649739"/>
+				<HermiteKey Frame="29" Value="-1.11303175455" Slope="0.03468697026"/>
+				<HermiteKey Frame="30" Value="-1.06994048289" Slope="0.05977491761"/>
+				<HermiteKey Frame="31" Value="-0.99348191933" Slope="0.08960325776"/>
+				<HermiteKey Frame="32" Value="-0.89073396738" Slope="0.11000196792"/>
+				<HermiteKey Frame="33" Value="-0.77347798349" Slope="0.1160434164"/>
+				<HermiteKey Frame="34" Value="-0.65864713458" Slope="0.10892132113"/>
+				<HermiteKey Frame="35" Value="-0.55563534122" Slope="0.09669684307"/>
+				<HermiteKey Frame="36" Value="-0.46525344845" Slope="0.07833943509"/>
+				<HermiteKey Frame="37" Value="-0.39895647104" Slope="0.67565495799"/>
+				<HermiteKey Frame="38" Value="0.88605646753" Slope="0.34059865606"/>
+				<HermiteKey Frame="39" Value="0.28224084108" Slope="-0.26523101927"/>
+				<HermiteKey Frame="40" Value="0.355594429" Slope="0.08407732718"/>
+				<HermiteKey Frame="41" Value="0.45039549543" Slope="0.05944376757"/>
+				<HermiteKey Frame="42" Value="0.47448196413" Slope="0.06769378186"/>
+				<HermiteKey Frame="43" Value="0.58578305916" Slope="0.20070850066"/>
+				<HermiteKey Frame="44" Value="0.87589896545" Slope="0.36422249906"/>
+				<HermiteKey Frame="45" Value="1.31422805728" Slope="0.44100572878"/>
+				<HermiteKey Frame="46" Value="1.757910423" Slope="0.35768929534"/>
+				<HermiteKey Frame="47" Value="2.02960664796" Slope="0.11936055427"/>
+				<HermiteKey Frame="48" Value="1.99663153154" Slope="-0.03934227825"/>
+				<HermiteKey Frame="49" Value="1.95092209147" Slope="-0.04787059402"/>
+				<HermiteKey Frame="53" Value="1.74682061839" Slope="-0.0473633228"/>
+				<HermiteKey Frame="55" Value="1.66258244167" Slope="-0.03590460794"/>
+				<HermiteKey Frame="59" Value="1.57457416177" Slope="-0.00749247159"/>
+				<HermiteKey Frame="60" Value="1.57079632679" Slope="-0.00377783498"/>
+			</RotateZ>
+			<TranslateX>
+				<HermiteKey Frame="0" Value="5.83562771236" Slope="-0.42307118892"/>
+				<HermiteKey Frame="1" Value="5.41255652344" Slope="-0.39226299457"/>
+				<HermiteKey Frame="2" Value="5.05110172321" Slope="-0.1340292713"/>
+				<HermiteKey Frame="3" Value="5.14449798083" Slope="0.31227353471"/>
+				<HermiteKey Frame="5" Value="6.03711586303" Slope="-0.00119909298"/>
+				<HermiteKey Frame="6" Value="5.67325060667" Slope="-0.61319680712"/>
+				<HermiteKey Frame="7" Value="4.81072224878" Slope="-0.76501297027"/>
+				<HermiteKey Frame="8" Value="4.14322466613" Slope="-0.33308804845"/>
+				<HermiteKey Frame="10" Value="4.45284182295" Slope="0.30572750376"/>
+				<HermiteKey Frame="11" Value="4.7560011594" Slope="0.19383244157"/>
+				<HermiteKey Frame="12" Value="4.84050670609" Slope="-0.01063869028"/>
+				<HermiteKey Frame="13" Value="4.73472377884" Slope="-0.86443929666"/>
+				<HermiteKey Frame="14" Value="3.11162811276" Slope="-0.18137198245"/>
+				<HermiteKey Frame="15" Value="4.37197981394" Slope="-1.03657496271"/>
+				<HermiteKey Frame="16" Value="1.03847818734" Slope="-0.73363397077"/>
+				<HermiteKey Frame="17" Value="2.9047118724" Slope="1.27236386594"/>
+				<HermiteKey Frame="18" Value="3.58320591923" Slope="0.53231608723"/>
+				<HermiteKey Frame="20" Value="4.12782884672" Slope="0.10164350852"/>
+				<HermiteKey Frame="22" Value="4.22246636106" Slope="0.07776198263"/>
+				<HermiteKey Frame="28" Value="4.9350320749" Slope="0.06582238119"/>
+				<HermiteKey Frame="31" Value="4.92931178241" Slope="-0.09621155424"/>
+				<HermiteKey Frame="34" Value="4.51335326599" Slope="-0.08233444384"/>
+				<HermiteKey Frame="35" Value="4.46609832969" Slope="-0.01483951223"/>
+				<HermiteKey Frame="36" Value="4.48367424153" Slope="0.15999087805"/>
+				<HermiteKey Frame="37" Value="4.7860800858" Slope="0.0350037958"/>
+				<HermiteKey Frame="38" Value="4.55368183313" Slope="-0.06415690524"/>
+				<HermiteKey Frame="39" Value="4.65776627531" Slope="0.30719814242"/>
+				<HermiteKey Frame="40" Value="5.16807811797" Slope="0.35399958918"/>
+				<HermiteKey Frame="41" Value="5.36576545367" Slope="0.05801502589"/>
+				<HermiteKey Frame="42" Value="5.28410816974" Slope="-0.04026993358"/>
+				<HermiteKey Frame="43" Value="5.2852255865" Slope="-0.01010858016"/>
+				<HermiteKey Frame="45" Value="5.29366787333" Slope="0.1305842091"/>
+				<HermiteKey Frame="47" Value="5.66541408364" Slope="-0.0358716188"/>
+				<HermiteKey Frame="48" Value="5.45331619001" Slope="-0.16328189202"/>
+				<HermiteKey Frame="56" Value="5.80028267914" Slope="0.059612427"/>
+				<HermiteKey Frame="60" Value="5.83562771236" Slope="-0.0019263159"/>
+			</TranslateX>
+			<TranslateY>
+				<HermiteKey Frame="0" Value="0.90403933961" Slope="-0.23967350321"/>
+				<HermiteKey Frame="1" Value="0.66436583639" Slope="-0.70708040307"/>
+				<HermiteKey Frame="2" Value="-0.51012146653" Slope="-1.43437566535"/>
+				<HermiteKey Frame="3" Value="-2.2043854943" Slope="-0.97491032487"/>
+				<HermiteKey Frame="4" Value="-2.45994211628" Slope="0.7018132452"/>
+				<HermiteKey Frame="5" Value="-0.80075900391" Slope="2.00895081129"/>
+				<HermiteKey Frame="6" Value="1.5579595063" Slope="2.01787910487"/>
+				<HermiteKey Frame="7" Value="3.23499920583" Slope="0.86129600501"/>
+				<HermiteKey Frame="8" Value="3.28055151631" Slope="-0.41083536773"/>
+				<HermiteKey Frame="9" Value="2.41332847037" Slope="-0.704054815"/>
+				<HermiteKey Frame="12" Value="1.48575804954" Slope="-0.0261383311"/>
+				<HermiteKey Frame="13" Value="1.52658219212" Slope="1.27494554601"/>
+				<HermiteKey Frame="14" Value="4.03564914157" Slope="1.83104597077"/>
+				<HermiteKey Frame="15" Value="5.18867413366" Slope="-3.58893176091"/>
+				<HermiteKey Frame="16" Value="-3.14221438024" Slope="-1.94837380401"/>
+				<HermiteKey Frame="17" Value="1.29192652565" Slope="2.91589556414"/>
+				<HermiteKey Frame="18" Value="2.68957674803" Slope="1.04380209056"/>
+				<HermiteKey Frame="19" Value="3.37953070678" Slope="0.5048948096"/>
+				<HermiteKey Frame="20" Value="3.69936636724" Slope="0.21996697625"/>
+				<HermiteKey Frame="23" Value="3.74076696259" Slope="-0.07546861987"/>
+				<HermiteKey Frame="29" Value="3.14888488307" Slope="-0.11527503825"/>
+				<HermiteKey Frame="32" Value="2.66870505799" Slope="-0.22807336713"/>
+				<HermiteKey Frame="35" Value="1.85731848493" Slope="-0.27101855644"/>
+				<HermiteKey Frame="37" Value="1.31530331849" Slope="-0.28956453019"/>
+				<HermiteKey Frame="38" Value="1.01696943916" Slope="-0.20050403211"/>
+				<HermiteKey Frame="39" Value="0.91429525428" Slope="-0.07533501154"/>
+				<HermiteKey Frame="41" Value="0.92811783721" Slope="0.10643719619"/>
+				<HermiteKey Frame="42" Value="1.07917380846" Slope="0.11829439101"/>
+				<HermiteKey Frame="43" Value="1.16470661924" Slope="0.02113028851"/>
+				<HermiteKey Frame="47" Value="0.79843661409" Slope="-0.03621058647"/>
+				<HermiteKey Frame="49" Value="0.80293681417" Slope="0.00156433779"/>
+				<HermiteKey Frame="57" Value="0.87508963795" Slope="0.01585986312"/>
+				<HermiteKey Frame="60" Value="0.90403933961" Slope="0.00386479291"/>
+			</TranslateY>
+			<TranslateZ>
+				<HermiteKey Frame="0" Value="2.49729741377" Slope="1.49247510255"/>
+				<HermiteKey Frame="1" Value="3.98977251633" Slope="1.82475736999"/>
+				<HermiteKey Frame="2" Value="6.14681215375" Slope="1.3511733321"/>
+				<HermiteKey Frame="3" Value="6.69211918053" Slope="-0.42987064415"/>
+				<HermiteKey Frame="4" Value="5.28707086544" Slope="-1.23773825554"/>
+				<HermiteKey Frame="5" Value="4.21664266945" Slope="-0.66126065107"/>
+				<HermiteKey Frame="6" Value="3.96454956331" Slope="0.25748343404"/>
+				<HermiteKey Frame="8" Value="5.79185487801" Slope="0.82354737062"/>
+				<HermiteKey Frame="10" Value="6.6882839807" Slope="0.23532324672"/>
+				<HermiteKey Frame="12" Value="6.95335998641" Slope="0.11230608617"/>
+				<HermiteKey Frame="13" Value="7.07396294455" Slope="-0.02818029418"/>
+				<HermiteKey Frame="14" Value="6.89699939806" Slope="-2.07881169051"/>
+				<HermiteKey Frame="15" Value="2.91633956352" Slope="2.04188251293"/>
+				<HermiteKey Frame="16" Value="10.98076442392" Slope="2.95697676817"/>
+				<HermiteKey Frame="17" Value="8.83029309986" Slope="-2.06331354529"/>
+				<HermiteKey Frame="18" Value="6.85413733335" Slope="-1.73341532821"/>
+				<HermiteKey Frame="19" Value="5.36346244344" Slope="-1.23264157074"/>
+				<HermiteKey Frame="22" Value="3.4735776815" Slope="-0.31155907661"/>
+				<HermiteKey Frame="26" Value="2.66266019701" Slope="-0.08586647484"/>
+				<HermiteKey Frame="30" Value="2.93331260066" Slope="0.25359845643"/>
+				<HermiteKey Frame="32" Value="3.69374838396" Slope="0.49377078168"/>
+				<HermiteKey Frame="34" Value="4.82364509677" Slope="0.60436680294"/>
+				<HermiteKey Frame="35" Value="5.44377550615" Slope="0.6425577193"/>
+				<HermiteKey Frame="36" Value="6.10876053537" Slope="0.55308309153"/>
+				<HermiteKey Frame="37" Value="6.54994168921" Slope="-0.01138756304"/>
+				<HermiteKey Frame="38" Value="6.08598540929" Slope="-0.3881617917"/>
+				<HermiteKey Frame="39" Value="5.77361810581" Slope="-0.49884680654"/>
+				<HermiteKey Frame="40" Value="5.0882917962" Slope="-0.57047130984"/>
+				<HermiteKey Frame="41" Value="4.63267548613" Slope="-0.269248086"/>
+				<HermiteKey Frame="42" Value="4.5497956242" Slope="-0.11346152238"/>
+				<HermiteKey Frame="43" Value="4.40575244137" Slope="-0.25124518018"/>
+				<HermiteKey Frame="44" Value="4.04730526384" Slope="-0.33564687786"/>
+				<HermiteKey Frame="45" Value="3.73445868566" Slope="-0.25152266145"/>
+				<HermiteKey Frame="46" Value="3.54425994094" Slope="-0.18792826565"/>
+				<HermiteKey Frame="47" Value="3.35860215436" Slope="-0.14397361209"/>
+				<HermiteKey Frame="48" Value="3.25631271675" Slope="-0.12073848156"/>
+				<HermiteKey Frame="51" Value="2.86799180362" Slope="-0.08856097164"/>
+				<HermiteKey Frame="55" Value="2.62983833544" Slope="-0.04649152351"/>
+				<HermiteKey Frame="60" Value="2.49729741377" Slope="-0.00649184753"/>
+			</TranslateZ>
+		</Node>
+		<Node Name="Ref:LToe">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.03069597822" Slope="-0.06434816022"/>
+				<HermiteKey Frame="1" Value="-0.033652182" Slope="-0.05147852119"/>
+				<HermiteKey Frame="2" Value="-0.07226106417" Slope="-0.00595816137"/>
+				<HermiteKey Frame="3" Value="-0.04556850473" Slope="0.03813224148"/>
+				<HermiteKey Frame="4" Value="0.00400341878" Slope="0.03813224148"/>
+				<HermiteKey Frame="5" Value="0.03069597822" Slope="0.01334627972"/>
+				<HermiteKey Frame="6" Value="0.03069597822" Slope="0"/>
+				<HermiteKey Frame="16" Value="0.03069597822" Slope="0"/>
+				<HermiteKey Frame="17" Value="0.03069597822" Slope="-0.00984488744"/>
+				<HermiteKey Frame="18" Value="0.01100620334" Slope="-0.03359236084"/>
+				<HermiteKey Frame="20" Value="-0.09442761833" Slope="-0.0544800599"/>
+				<HermiteKey Frame="21" Value="-0.14544886326" Slope="-0.0388817993"/>
+				<HermiteKey Frame="22" Value="-0.17219121694" Slope="-0.01681555794"/>
+				<HermiteKey Frame="23" Value="-0.17907997914" Slope="-0.0050419246"/>
+				<HermiteKey Frame="28" Value="-0.16292962727" Slope="0.01041968545"/>
+				<HermiteKey Frame="29" Value="-0.15126445741" Slope="0.01402148652"/>
+				<HermiteKey Frame="30" Value="-0.13488665423" Slope="0.02129560869"/>
+				<HermiteKey Frame="31" Value="-0.10867324003" Slope="0.02850102597"/>
+				<HermiteKey Frame="34" Value="-0.01562837625" Slope="0.0275493852"/>
+				<HermiteKey Frame="36" Value="0.02578992751" Slope="0.01068985369"/>
+				<HermiteKey Frame="37" Value="0.03069597822" Slope="0.00245302536"/>
+				<HermiteKey Frame="38" Value="0.03069597822" Slope="0.00511573457"/>
+				<HermiteKey Frame="39" Value="0.04092744736" Slope="0.02654297599"/>
+				<HermiteKey Frame="40" Value="0.0837819302" Slope="0.01822862013"/>
+				<HermiteKey Frame="41" Value="0.07738468763" Slope="-0.04289452942"/>
+				<HermiteKey Frame="42" Value="-0.00200712864" Slope="-0.08902227255"/>
+				<HermiteKey Frame="43" Value="-0.10065985748" Slope="-0.08627082207"/>
+				<HermiteKey Frame="44" Value="-0.17454877279" Slope="-0.03604635485"/>
+				<HermiteKey Frame="45" Value="-0.17275256719" Slope="0.0565242157"/>
+				<HermiteKey Frame="46" Value="-0.06150034139" Slope="0.10065086903"/>
+				<HermiteKey Frame="47" Value="0.02854917088" Slope="0.0460981598"/>
+				<HermiteKey Frame="48" Value="0.03069597822" Slope="0.00107340367"/>
+				<HermiteKey Frame="49" Value="0.03069597822" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.03069597822" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:RFoot">
+			<RotateX>
+				<HermiteKey Frame="0" Value="1.57079632679" Slope="0.06833258982"/>
+				<HermiteKey Frame="1" Value="1.63912891662" Slope="0.07808008789"/>
+				<HermiteKey Frame="2" Value="1.72695650257" Slope="0.03487435754"/>
+				<HermiteKey Frame="3" Value="1.70887763169" Slope="-0.03468441335"/>
+				<HermiteKey Frame="4" Value="1.65758767587" Slope="-0.03688358057"/>
+				<HermiteKey Frame="5" Value="1.63511047055" Slope="-0.01277371573"/>
+				<HermiteKey Frame="6" Value="1.63204024441" Slope="0.00779959717"/>
+				<HermiteKey Frame="7" Value="1.6507096649" Slope="0.02277854514"/>
+				<HermiteKey Frame="8" Value="1.67759733469" Slope="0.01972863463"/>
+				<HermiteKey Frame="9" Value="1.69016693416" Slope="0.00574797137"/>
+				<HermiteKey Frame="10" Value="1.68909327742" Slope="-0.00103550385"/>
+				<HermiteKey Frame="11" Value="1.68809592647" Slope="0.00337641798"/>
+				<HermiteKey Frame="12" Value="1.69584611337" Slope="0.01193755466"/>
+				<HermiteKey Frame="13" Value="1.7119710358" Slope="-0.02557759075"/>
+				<HermiteKey Frame="14" Value="1.64469093188" Slope="-0.15757012256"/>
+				<HermiteKey Frame="15" Value="1.39683079068" Slope="-0.49193399129"/>
+				<HermiteKey Frame="16" Value="0.6608229493" Slope="-0.6898074402"/>
+				<HermiteKey Frame="17" Value="0.01721591029" Slope="-0.38003232847"/>
+				<HermiteKey Frame="18" Value="-0.09924170765" Slope="-0.08543755826"/>
+				<HermiteKey Frame="20" Value="-0.16819446531" Slope="-0.00513689669"/>
+				<HermiteKey Frame="21" Value="-0.1639329996" Slope="0.00560488927"/>
+				<HermiteKey Frame="22" Value="-0.15698468677" Slope="0.0042126314"/>
+				<HermiteKey Frame="25" Value="-0.1660321769" Slope="-0.00853376992"/>
+				<HermiteKey Frame="27" Value="-0.18660416336" Slope="-0.00978964777"/>
+				<HermiteKey Frame="28" Value="-0.19547746964" Slope="-0.0020025297"/>
+				<HermiteKey Frame="29" Value="-0.19060922275" Slope="0.0214000841"/>
+				<HermiteKey Frame="30" Value="-0.15267730144" Slope="0.09984075701"/>
+				<HermiteKey Frame="31" Value="0.00907229127" Slope="0.40117453145"/>
+				<HermiteKey Frame="32" Value="0.64967176145" Slope="0.88933875991"/>
+				<HermiteKey Frame="33" Value="1.78774981108" Slope="0.76230439434"/>
+				<HermiteKey Frame="34" Value="2.17428055013" Slope="0.20415526413"/>
+				<HermiteKey Frame="35" Value="2.19606033934" Slope="-0.03051989195"/>
+				<HermiteKey Frame="36" Value="2.11324076623" Slope="-0.07613787677"/>
+				<HermiteKey Frame="37" Value="2.0437845858" Slope="-0.08555814305"/>
+				<HermiteKey Frame="38" Value="1.94212448012" Slope="-0.09013765139"/>
+				<HermiteKey Frame="39" Value="1.86350928301" Slope="-0.12422914149"/>
+				<HermiteKey Frame="40" Value="1.69366619714" Slope="-0.13691996281"/>
+				<HermiteKey Frame="41" Value="1.58966935739" Slope="-0.06413231535"/>
+				<HermiteKey Frame="42" Value="1.56540156644" Slope="-0.03211972183"/>
+				<HermiteKey Frame="44" Value="1.51290279558" Slope="0.02225477183"/>
+				<HermiteKey Frame="45" Value="1.5699394574" Slope="0.08626911165"/>
+				<HermiteKey Frame="46" Value="1.68544101888" Slope="0.09532326022"/>
+				<HermiteKey Frame="47" Value="1.76058597784" Slope="0.02726624043"/>
+				<HermiteKey Frame="48" Value="1.73997349975" Slope="-0.02142013793"/>
+				<HermiteKey Frame="49" Value="1.71774570198" Slope="-0.02182446963"/>
+				<HermiteKey Frame="56" Value="1.5951762377" Slope="-0.01138807266"/>
+				<HermiteKey Frame="59" Value="1.57246041097" Slope="-0.00323607605"/>
+				<HermiteKey Frame="60" Value="1.57079632679" Slope="-0.00166408418"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.77875484685" Slope="-0.14458541398"/>
+				<HermiteKey Frame="1" Value="-0.92334026083" Slope="-0.09276602125"/>
+				<HermiteKey Frame="2" Value="-0.96428688936" Slope="0.02238197143"/>
+				<HermiteKey Frame="3" Value="-0.87857631797" Slope="0.16705237421"/>
+				<HermiteKey Frame="4" Value="-0.63018214093" Slope="0.29511297592"/>
+				<HermiteKey Frame="5" Value="-0.28835036612" Slope="0.32843864173"/>
+				<HermiteKey Frame="6" Value="0.02669514252" Slope="0.28494027202"/>
+				<HermiteKey Frame="7" Value="0.28153017791" Slope="0.21119023256"/>
+				<HermiteKey Frame="8" Value="0.44907560764" Slope="0.13160681405"/>
+				<HermiteKey Frame="9" Value="0.54474380601" Slope="0.07770448431"/>
+				<HermiteKey Frame="10" Value="0.60448457625" Slope="0.04467922457"/>
+				<HermiteKey Frame="11" Value="0.63410225515" Slope="0.01851918255"/>
+				<HermiteKey Frame="12" Value="0.64152294135" Slope="0.00229860735"/>
+				<HermiteKey Frame="13" Value="0.63869946986" Slope="-0.18663236788"/>
+				<HermiteKey Frame="14" Value="0.26825820559" Slope="-0.44772094416"/>
+				<HermiteKey Frame="15" Value="-0.25674241846" Slope="-0.38246248129"/>
+				<HermiteKey Frame="16" Value="-0.49666675699" Slope="0.040551294"/>
+				<HermiteKey Frame="17" Value="-0.17563983046" Slope="0.20713152174"/>
+				<HermiteKey Frame="18" Value="-0.0824037135" Slope="0.05121716687"/>
+				<HermiteKey Frame="20" Value="-0.10955955314" Slope="-0.03981040173"/>
+				<HermiteKey Frame="21" Value="-0.1528263002" Slope="-0.04307261409"/>
+				<HermiteKey Frame="22" Value="-0.19570478132" Slope="-0.05067518977"/>
+				<HermiteKey Frame="23" Value="-0.25417667974" Slope="-0.06520804031"/>
+				<HermiteKey Frame="25" Value="-0.40381016188" Slope="-0.07669444482"/>
+				<HermiteKey Frame="27" Value="-0.54556472162" Slope="-0.05747780252"/>
+				<HermiteKey Frame="29" Value="-0.69320079659" Slope="-0.15742677867"/>
+				<HermiteKey Frame="30" Value="-0.90931891394" Slope="-0.23819256176"/>
+				<HermiteKey Frame="31" Value="-1.16958592011" Slope="-0.21949214422"/>
+				<HermiteKey Frame="32" Value="-1.34830320237" Slope="-0.05988443702"/>
+				<HermiteKey Frame="33" Value="-1.28935479415" Slope="0.13550103631"/>
+				<HermiteKey Frame="34" Value="-1.07730112976" Slope="0.16891279048"/>
+				<HermiteKey Frame="35" Value="-0.9515292132" Slope="0.08163774086"/>
+				<HermiteKey Frame="36" Value="-0.91402564805" Slope="0.03343578735"/>
+				<HermiteKey Frame="37" Value="-0.8846576385" Slope="0.03639768963"/>
+				<HermiteKey Frame="38" Value="-0.84123026878" Slope="0.027507794"/>
+				<HermiteKey Frame="39" Value="-0.8296420505" Slope="-0.00332811599"/>
+				<HermiteKey Frame="40" Value="-0.84788650077" Slope="-0.00769893531"/>
+				<HermiteKey Frame="41" Value="-0.84503992112" Slope="0.00555991214"/>
+				<HermiteKey Frame="42" Value="-0.83676667649" Slope="0.00893510839"/>
+				<HermiteKey Frame="44" Value="-0.81691048447" Slope="0.01005432695"/>
+				<HermiteKey Frame="45" Value="-0.80706105045" Slope="0.0145209823"/>
+				<HermiteKey Frame="46" Value="-0.78786851987" Slope="0.02025034845"/>
+				<HermiteKey Frame="47" Value="-0.76656035354" Slope="0.01194121986"/>
+				<HermiteKey Frame="48" Value="-0.76398608016" Slope="0.00182316221"/>
+				<HermiteKey Frame="56" Value="-0.77354250831" Slope="-0.00215369266"/>
+				<HermiteKey Frame="59" Value="-0.77834385672" Slope="-0.00076180131"/>
+				<HermiteKey Frame="60" Value="-0.77875484685" Slope="-0.00041099013"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-1.57079632679" Slope="-0.08700399999"/>
+				<HermiteKey Frame="1" Value="-1.65780032678" Slope="-0.10140585484"/>
+				<HermiteKey Frame="2" Value="-1.77360803647" Slope="-0.05799332915"/>
+				<HermiteKey Frame="4" Value="-1.71653315193" Slope="0.05751408791"/>
+				<HermiteKey Frame="5" Value="-1.65875880925" Slope="0.06982368569"/>
+				<HermiteKey Frame="6" Value="-1.57688578056" Slope="0.08807313633"/>
+				<HermiteKey Frame="7" Value="-1.48261253659" Slope="0.08587382948"/>
+				<HermiteKey Frame="8" Value="-1.40513812159" Slope="0.05727773543"/>
+				<HermiteKey Frame="9" Value="-1.36805706574" Slope="0.02306271092"/>
+				<HermiteKey Frame="10" Value="-1.35901269974" Slope="0.0054318486"/>
+				<HermiteKey Frame="11" Value="-1.35719336853" Slope="0.0071778149"/>
+				<HermiteKey Frame="12" Value="-1.34465706994" Slope="0.02000607217"/>
+				<HermiteKey Frame="13" Value="-1.31718122419" Slope="0.04722170678"/>
+				<HermiteKey Frame="14" Value="-1.25021365638" Slope="0.09267727126"/>
+				<HermiteKey Frame="15" Value="-1.13182668167" Slope="0.35816870238"/>
+				<HermiteKey Frame="16" Value="-0.53387625162" Slope="0.42545170355"/>
+				<HermiteKey Frame="17" Value="-0.28092327457" Slope="0.11492917203"/>
+				<HermiteKey Frame="18" Value="-0.30401790757" Slope="-0.01956021909"/>
+				<HermiteKey Frame="19" Value="-0.32004371275" Slope="-0.00944570446"/>
+				<HermiteKey Frame="20" Value="-0.32290931648" Slope="-0.00201686758"/>
+				<HermiteKey Frame="21" Value="-0.3240774479" Slope="-0.00040776127"/>
+				<HermiteKey Frame="22" Value="-0.32372483903" Slope="0.00456692451"/>
+				<HermiteKey Frame="25" Value="-0.27539052848" Slope="0.02621138089"/>
+				<HermiteKey Frame="27" Value="-0.21299467611" Slope="0.03375949357"/>
+				<HermiteKey Frame="28" Value="-0.17869794402" Slope="0.04212159291"/>
+				<HermiteKey Frame="29" Value="-0.1287514903" Slope="0.059903784"/>
+				<HermiteKey Frame="30" Value="-0.05889037602" Slope="0.0211041548"/>
+				<HermiteKey Frame="31" Value="-0.0865431807" Slope="-0.27383240325"/>
+				<HermiteKey Frame="32" Value="-0.60655518252" Slope="-0.7893719814"/>
+				<HermiteKey Frame="33" Value="-1.6652871435" Slope="-0.71358868572"/>
+				<HermiteKey Frame="34" Value="-2.03373255396" Slope="-0.2060620887"/>
+				<HermiteKey Frame="35" Value="-2.0774113209" Slope="0.00575775394"/>
+				<HermiteKey Frame="36" Value="-2.02221704608" Slope="0.04916794088"/>
+				<HermiteKey Frame="37" Value="-1.97907543913" Slope="-0.01224631214"/>
+				<HermiteKey Frame="38" Value="-2.04670967036" Slope="-0.0283426548"/>
+				<HermiteKey Frame="39" Value="-2.03576074872" Slope="0.12413809639"/>
+				<HermiteKey Frame="40" Value="-1.79843347757" Slope="0.20503340909"/>
+				<HermiteKey Frame="41" Value="-1.62569393054" Slope="0.1254559247"/>
+				<HermiteKey Frame="42" Value="-1.54752162818" Slope="0.08967069728"/>
+				<HermiteKey Frame="44" Value="-1.39020457836" Slope="-0.00097964458"/>
+				<HermiteKey Frame="45" Value="-1.44831182515" Slope="-0.11188665299"/>
+				<HermiteKey Frame="46" Value="-1.61397788434" Slope="-0.14191552273"/>
+				<HermiteKey Frame="47" Value="-1.73214287062" Slope="-0.05088368681"/>
+				<HermiteKey Frame="48" Value="-1.71574525795" Slope="0.01710255115"/>
+				<HermiteKey Frame="49" Value="-1.69793776831" Slope="0.01707292419"/>
+				<HermiteKey Frame="53" Value="-1.63768081694" Slope="0.01406675163"/>
+				<HermiteKey Frame="59" Value="-1.57279209334" Slope="0.00378288771"/>
+				<HermiteKey Frame="60" Value="-1.57079632679" Slope="0.00199576655"/>
+			</RotateZ>
+			<TranslateX>
+				<HermiteKey Frame="0" Value="5.79270937102" Slope="0.04686831811"/>
+				<HermiteKey Frame="2" Value="5.90924520636" Slope="0.06388144565"/>
+				<HermiteKey Frame="4" Value="5.97892521978" Slope="0.00334875681"/>
+				<HermiteKey Frame="6" Value="6.01335689761" Slope="0.07148809361"/>
+				<HermiteKey Frame="9" Value="6.45232082801" Slope="0.20172378681"/>
+				<HermiteKey Frame="12" Value="6.87100027387" Slope="-0.03669785146"/>
+				<HermiteKey Frame="13" Value="6.75985695254" Slope="-0.54359022558"/>
+				<HermiteKey Frame="15" Value="5.11462628977" Slope="0.09674850889"/>
+				<HermiteKey Frame="16" Value="5.9773168405" Slope="0.77467535498"/>
+				<HermiteKey Frame="17" Value="6.66397699973" Slope="0.36063553375"/>
+				<HermiteKey Frame="18" Value="6.69858790799" Slope="-0.01959071748"/>
+				<HermiteKey Frame="20" Value="6.50044251201" Slope="-0.10550656164"/>
+				<HermiteKey Frame="22" Value="6.34185170353" Slope="-0.11351329344"/>
+				<HermiteKey Frame="26" Value="5.43727859134" Slope="-0.23755357744"/>
+				<HermiteKey Frame="27" Value="5.21570158079" Slope="-0.19996848455"/>
+				<HermiteKey Frame="28" Value="5.03734162223" Slope="-0.26014305563"/>
+				<HermiteKey Frame="29" Value="4.69541546953" Slope="-0.39179834001"/>
+				<HermiteKey Frame="30" Value="4.25374494222" Slope="-0.27975321174"/>
+				<HermiteKey Frame="32" Value="4.45687250537" Slope="0.63061710847"/>
+				<HermiteKey Frame="33" Value="5.397143263" Slope="1.0351195058"/>
+				<HermiteKey Frame="34" Value="6.52711151697" Slope="0.74164699397"/>
+				<HermiteKey Frame="35" Value="6.88043725094" Slope="-0.00313481415"/>
+				<HermiteKey Frame="36" Value="6.52084188868" Slope="-0.19324642701"/>
+				<HermiteKey Frame="37" Value="6.49394439692" Slope="-0.609131722"/>
+				<HermiteKey Frame="38" Value="5.30257844468" Slope="-0.82924067776"/>
+				<HermiteKey Frame="39" Value="4.8354630414" Slope="-0.26461786555"/>
+				<HermiteKey Frame="41" Value="5.07209583538" Slope="0.44210230821"/>
+				<HermiteKey Frame="42" Value="5.65754732998" Slope="0.38751582683"/>
+				<HermiteKey Frame="43" Value="5.84712748903" Slope="-0.01934897715"/>
+				<HermiteKey Frame="44" Value="5.61884937568" Slope="-0.19863991468"/>
+				<HermiteKey Frame="45" Value="5.44984765966" Slope="0.05625481255"/>
+				<HermiteKey Frame="46" Value="5.73135900079" Slope="0.23811606744"/>
+				<HermiteKey Frame="47" Value="5.92607979454" Slope="-0.02394903268"/>
+				<HermiteKey Frame="48" Value="5.68346093543" Slope="-0.2027305063"/>
+				<HermiteKey Frame="55" Value="5.64741697445" Slope="0.08317571155"/>
+				<HermiteKey Frame="58" Value="5.78522680714" Slope="0.00813600976"/>
+				<HermiteKey Frame="60" Value="5.79270937102" Slope="0.00222404206"/>
+			</TranslateX>
+			<TranslateY>
+				<HermiteKey Frame="0" Value="-1.06675723693" Slope="0.76682508536"/>
+				<HermiteKey Frame="1" Value="-0.29993215157" Slope="0.86459018347"/>
+				<HermiteKey Frame="3" Value="1.57117276924" Slope="0.73816963433"/>
+				<HermiteKey Frame="4" Value="2.13876239866" Slope="0.47562482413"/>
+				<HermiteKey Frame="5" Value="2.5224224175" Slope="0.44212488891"/>
+				<HermiteKey Frame="6" Value="3.02301217648" Slope="0.54676396379"/>
+				<HermiteKey Frame="7" Value="3.61595034509" Slope="0.5371906964"/>
+				<HermiteKey Frame="8" Value="4.09739356928" Slope="0.38832346573"/>
+				<HermiteKey Frame="9" Value="4.39259727656" Slope="0.25300611085"/>
+				<HermiteKey Frame="12" Value="4.78941394943" Slope="0.05440516121"/>
+				<HermiteKey Frame="13" Value="4.83433243554" Slope="0.29900227399"/>
+				<HermiteKey Frame="14" Value="5.38741849741" Slope="1.17015726312"/>
+				<HermiteKey Frame="15" Value="7.17464696179" Slope="-0.79560799376"/>
+				<HermiteKey Frame="16" Value="3.79620250989" Slope="-4.03241354267"/>
+				<HermiteKey Frame="17" Value="-0.89018012356" Slope="-2.79404529462"/>
+				<HermiteKey Frame="18" Value="-1.79188807934" Slope="-0.70475286186"/>
+				<HermiteKey Frame="19" Value="-2.29968584729" Slope="-0.40171463724"/>
+				<HermiteKey Frame="23" Value="-2.66092472569" Slope="0.07972602998"/>
+				<HermiteKey Frame="27" Value="-2.29640368324" Slope="0.03510870131"/>
+				<HermiteKey Frame="28" Value="-2.28629929327" Slope="-0.11499274605"/>
+				<HermiteKey Frame="29" Value="-2.52638917534" Slope="-0.41336701125"/>
+				<HermiteKey Frame="31" Value="-3.58191226898" Slope="-0.1481566329"/>
+				<HermiteKey Frame="32" Value="-3.40934658156" Slope="0.5213828117"/>
+				<HermiteKey Frame="33" Value="-2.53914664557" Slope="0.93463994141"/>
+				<HermiteKey Frame="34" Value="-1.54006669874" Slope="0.73461348262"/>
+				<HermiteKey Frame="35" Value="-1.06991968034" Slope="0.27847284941"/>
+				<HermiteKey Frame="36" Value="-0.98312099993" Slope="0.12668572743"/>
+				<HermiteKey Frame="37" Value="-0.81654822547" Slope="-0.48041845222"/>
+				<HermiteKey Frame="38" Value="-1.94395790438" Slope="-0.95434264312"/>
+				<HermiteKey Frame="39" Value="-2.7252335117" Slope="-0.48549353072"/>
+				<HermiteKey Frame="40" Value="-2.91494496582" Slope="-0.10563853751"/>
+				<HermiteKey Frame="41" Value="-2.93651058672" Slope="0.10020329928"/>
+				<HermiteKey Frame="42" Value="-2.71453836726" Slope="0.23792562181"/>
+				<HermiteKey Frame="44" Value="-2.1621087086" Slope="0.33950681359"/>
+				<HermiteKey Frame="47" Value="-1.17541808772" Slope="0.13216577334"/>
+				<HermiteKey Frame="48" Value="-1.14341358999" Slope="0.02510642775"/>
+				<HermiteKey Frame="56" Value="-1.08786897134" Slope="0.00717074245"/>
+				<HermiteKey Frame="60" Value="-1.06675723693" Slope="0.00184697908"/>
+			</TranslateY>
+			<TranslateZ>
+				<HermiteKey Frame="0" Value="-2.33326548432" Slope="-0.46357053295"/>
+				<HermiteKey Frame="1" Value="-2.79683601727" Slope="-0.54317639326"/>
+				<HermiteKey Frame="2" Value="-3.41961827084" Slope="-0.41425499941"/>
+				<HermiteKey Frame="3" Value="-3.6253460161" Slope="-0.09440698563"/>
+				<HermiteKey Frame="4" Value="-3.60843224211" Slope="-0.10567709649"/>
+				<HermiteKey Frame="5" Value="-3.83670020908" Slope="-0.34246771187"/>
+				<HermiteKey Frame="7" Value="-4.78523922395" Slope="-0.43429306609"/>
+				<HermiteKey Frame="11" Value="-5.65452797825" Slope="-0.03781580252"/>
+				<HermiteKey Frame="12" Value="-5.6561983939" Slope="0.01117158937"/>
+				<HermiteKey Frame="13" Value="-5.63218479952" Slope="0.4925062123"/>
+				<HermiteKey Frame="14" Value="-4.67118596929" Slope="-0.20504603879"/>
+				<HermiteKey Frame="15" Value="-6.04227687709" Slope="-1.74634860123"/>
+				<HermiteKey Frame="16" Value="-8.16388317175" Slope="0.08702639874"/>
+				<HermiteKey Frame="17" Value="-5.86822407961" Slope="2.00985125454"/>
+				<HermiteKey Frame="18" Value="-4.14418066267" Slope="1.30208095008"/>
+				<HermiteKey Frame="20" Value="-2.94408995815" Slope="0.18576927943"/>
+				<HermiteKey Frame="22" Value="-2.97610279361" Slope="-0.10897877661"/>
+				<HermiteKey Frame="23" Value="-3.11048117382" Slope="-0.12020161316"/>
+				<HermiteKey Frame="27" Value="-3.52181272187" Slope="-0.12696796396"/>
+				<HermiteKey Frame="29" Value="-3.72074174068" Slope="0.06195983566"/>
+				<HermiteKey Frame="31" Value="-3.16461431634" Slope="0.42619132175"/>
+				<HermiteKey Frame="32" Value="-2.68708224895" Slope="0.64985107247"/>
+				<HermiteKey Frame="33" Value="-1.86491217139" Slope="0.98057888813"/>
+				<HermiteKey Frame="34" Value="-0.72592447269" Slope="0.83082720024"/>
+				<HermiteKey Frame="35" Value="-0.20325777091" Slope="0.21248208772"/>
+				<HermiteKey Frame="36" Value="-0.30096029724" Slope="0.38238705586"/>
+				<HermiteKey Frame="37" Value="0.56151634081" Slope="1.77770168619"/>
+				<HermiteKey Frame="38" Value="3.25444307513" Slope="1.27756237177"/>
+				<HermiteKey Frame="39" Value="3.11664108435" Slope="-0.71829702151"/>
+				<HermiteKey Frame="40" Value="1.81784903212" Slope="-1.31569093276"/>
+				<HermiteKey Frame="41" Value="0.48525921884" Slope="-1.03305718936"/>
+				<HermiteKey Frame="43" Value="-0.59510550221" Slope="-0.27495348506"/>
+				<HermiteKey Frame="44" Value="-0.79817231672" Slope="-0.20463540995"/>
+				<HermiteKey Frame="46" Value="-1.24314575955" Slope="-0.2343499244"/>
+				<HermiteKey Frame="47" Value="-1.47307617091" Slope="-0.19513325208"/>
+				<HermiteKey Frame="48" Value="-1.63341226372" Slope="-0.17067817451"/>
+				<HermiteKey Frame="51" Value="-2.10056154792" Slope="-0.09364779363"/>
+				<HermiteKey Frame="55" Value="-2.28531196802" Slope="-0.02303574425"/>
+				<HermiteKey Frame="60" Value="-2.33326548432" Slope="-0.00154448572"/>
+			</TranslateZ>
+		</Node>
+		<Node Name="Ref:RToe">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="12" Value="0" Slope="0"/>
+				<HermiteKey Frame="13" Value="0" Slope="0.00385366954"/>
+				<HermiteKey Frame="14" Value="0.00770733907" Slope="0.00680427954"/>
+				<HermiteKey Frame="15" Value="0.01360855907" Slope="0.00197017129"/>
+				<HermiteKey Frame="16" Value="0.01164768166" Slope="-0.00062584889"/>
+				<HermiteKey Frame="18" Value="0.01224100634" Slope="-0.00175789562"/>
+				<HermiteKey Frame="19" Value="0.00884107005" Slope="-0.00450451154"/>
+				<HermiteKey Frame="20" Value="0.00323198326" Slope="-0.00442053502"/>
+				<HermiteKey Frame="21" Value="0" Slope="-0.00161599163"/>
+				<HermiteKey Frame="22" Value="0" Slope="0"/>
+				<HermiteKey Frame="60" Value="0" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.0305869475" Slope="-0.07303019586"/>
+				<HermiteKey Frame="1" Value="-0.04244324836" Slope="-0.05842415495"/>
+				<HermiteKey Frame="2" Value="-0.08626136239" Slope="0.0073030161"/>
+				<HermiteKey Frame="3" Value="-0.02783721617" Slope="0.05842415495"/>
+				<HermiteKey Frame="4" Value="0.0305869475" Slope="0.02921208184"/>
+				<HermiteKey Frame="5" Value="0.0305869475" Slope="0"/>
+				<HermiteKey Frame="12" Value="0.0305869475" Slope="0"/>
+				<HermiteKey Frame="13" Value="0.0305869475" Slope="-0.05883970911"/>
+				<HermiteKey Frame="14" Value="-0.08709247073" Slope="-0.16832227578"/>
+				<HermiteKey Frame="15" Value="-0.30605760405" Slope="-0.16848336967"/>
+				<HermiteKey Frame="16" Value="-0.42405921006" Slope="-0.04076338641"/>
+				<HermiteKey Frame="17" Value="-0.38758437687" Slope="0.06380183726"/>
+				<HermiteKey Frame="19" Value="-0.17815622873" Slope="0.11818433325"/>
+				<HermiteKey Frame="20" Value="-0.06008686904" Slope="0.10437158811"/>
+				<HermiteKey Frame="21" Value="0.0305869475" Slope="0.08032755709"/>
+				<HermiteKey Frame="22" Value="0.10056824515" Slope="0.07055653199"/>
+				<HermiteKey Frame="25" Value="0.30004124468" Slope="0.05446230118"/>
+				<HermiteKey Frame="27" Value="0.38086217145" Slope="0.02201504213"/>
+				<HermiteKey Frame="28" Value="0.39259362891" Slope="-0.00851883863"/>
+				<HermiteKey Frame="29" Value="0.36382449418" Slope="-0.05552477909"/>
+				<HermiteKey Frame="30" Value="0.28154407073" Slope="-0.09599576176"/>
+				<HermiteKey Frame="31" Value="0.17183297066" Slope="-0.09941969633"/>
+				<HermiteKey Frame="32" Value="0.08270467808" Slope="-0.06715779125"/>
+				<HermiteKey Frame="33" Value="0.03751738816" Slope="-0.029493394"/>
+				<HermiteKey Frame="35" Value="0.02638234461" Slope="0.00343452872"/>
+				<HermiteKey Frame="36" Value="0.0305869475" Slope="0.00210230144"/>
+				<HermiteKey Frame="37" Value="0.0305869475" Slope="0"/>
+				<HermiteKey Frame="38" Value="0.0305869475" Slope="0"/>
+				<HermiteKey Frame="39" Value="0.0305869475" Slope="0.01973339065"/>
+				<HermiteKey Frame="40" Value="0.07005372881" Slope="0.03946668532"/>
+				<HermiteKey Frame="41" Value="0.10952031813" Slope="-0.01138450346"/>
+				<HermiteKey Frame="42" Value="0.04728472189" Slope="-0.09593913455"/>
+				<HermiteKey Frame="43" Value="-0.08235795097" Slope="-0.12054828573"/>
+				<HermiteKey Frame="44" Value="-0.19381184957" Slope="-0.05803593263"/>
+				<HermiteKey Frame="45" Value="-0.19842981624" Slope="0.06030788881"/>
+				<HermiteKey Frame="46" Value="-0.07319607196" Slope="0.11330007298"/>
+				<HermiteKey Frame="47" Value="0.02817032971" Slope="0.05189150973"/>
+				<HermiteKey Frame="48" Value="0.0305869475" Slope="0.00120830889"/>
+				<HermiteKey Frame="49" Value="0.0305869475" Slope="0"/>
+				<HermiteKey Frame="60" Value="0.0305869475" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="12" Value="0" Slope="0"/>
+				<HermiteKey Frame="13" Value="0" Slope="0.00647257971"/>
+				<HermiteKey Frame="14" Value="0.01294515942" Slope="0.01931572464"/>
+				<HermiteKey Frame="15" Value="0.03863144928" Slope="0.02080254445"/>
+				<HermiteKey Frame="16" Value="0.05455024832" Slope="0.00474486083"/>
+				<HermiteKey Frame="17" Value="0.04812117094" Slope="-0.01042686748"/>
+				<HermiteKey Frame="18" Value="0.03369651336" Slope="-0.0151654713"/>
+				<HermiteKey Frame="20" Value="0.00518270285" Slope="-0.00889511417"/>
+				<HermiteKey Frame="21" Value="0" Slope="-0.00259135143"/>
+				<HermiteKey Frame="22" Value="0" Slope="0"/>
+				<HermiteKey Frame="60" Value="0" Slope="0"/>
+			</RotateZ>
+		</Node>
+	</SkeltalAnimation>
+	<Skelton>
+		<Node Name="Ref:pm0501_00" NeededRendering="FALSE" IsJoint="FALSE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Origin" ParentName="Ref:pm0501_00" NeededRendering="FALSE" IsJoint="FALSE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Waist" ParentName="Ref:Origin" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 1.570796</LocalRotation>
+			<LocalTransform>0 6.554891 0.275488</LocalTransform>
+		</Node>
+		<Node Name="Ref:Spine1" ParentName="Ref:Waist" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Spine2" ParentName="Ref:Spine1" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>8.357915 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Neck" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>6.464509 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Head" ParentName="Ref:Neck" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.005082 0</LocalRotation>
+			<LocalTransform>1.271844 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndHead" ParentName="Ref:Head" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>27.108683 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Nose" ParentName="Ref:Head" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -1.565715 3.141593</LocalRotation>
+			<LocalTransform>12.269473 0 15.526174</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndNose" ParentName="Ref:Nose" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.031178 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:LShoulder" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.012068 -1.405341</LocalRotation>
+			<LocalTransform>3.421665 -1.90007 0.21184</LocalTransform>
+		</Node>
+		<Node Name="Ref:LArm" ParentName="Ref:LShoulder" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.003708 -0.011484 -0.312339</LocalRotation>
+			<LocalTransform>6.184838 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:LForeArm" ParentName="Ref:LArm" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0.146862</LocalRotation>
+			<LocalTransform>6.300989 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndLForeArm" ParentName="Ref:LForeArm" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.668246 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:RShoulder" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.012069 1.405469</LocalRotation>
+			<LocalTransform>3.422494 1.900215 0.21184</LocalTransform>
+		</Node>
+		<Node Name="Ref:RArm" ParentName="Ref:RShoulder" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.003707 -0.011485 0.312213</LocalRotation>
+			<LocalTransform>6.184558 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:RForeArm" ParentName="Ref:RArm" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 -0.146865</LocalRotation>
+			<LocalTransform>6.300985 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndRForeArm" ParentName="Ref:RForeArm" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.668209 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Feeler1" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>-7.815882 0 12.040271</LocalTransform>
+		</Node>
+		<Node Name="Ref:Feeler2" ParentName="Ref:Feeler1" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.397829 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndFeeler2" ParentName="Ref:Feeler2" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.495452 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:LFeeler1" ParentName="Ref:Feeler1" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.222919 -1.630919</LocalRotation>
+			<LocalTransform>4.397829 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:LFeeler2" ParentName="Ref:LFeeler1" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.00291 -0.048299 0.060193</LocalRotation>
+			<LocalTransform>2.372952 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndLFeeler2" ParentName="Ref:LFeeler2" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.719825 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:RFeeler1" ParentName="Ref:Feeler1" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.222916 1.630916</LocalRotation>
+			<LocalTransform>4.39782 0 -0.000007</LocalTransform>
+		</Node>
+		<Node Name="Ref:RFeeler2" ParentName="Ref:RFeeler1" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.002909 -0.048296 -0.06019</LocalRotation>
+			<LocalTransform>2.372949 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndRFeeler2" ParentName="Ref:RFeeler2" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.719819 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:Tail1" ParentName="Ref:Spine1" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.570796 0</LocalRotation>
+			<LocalTransform>-0.17945 0 -10.122827</LocalTransform>
+		</Node>
+		<Node Name="Ref:Tail2" ParentName="Ref:Tail1" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>10.85611 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndTail2" ParentName="Ref:Tail2" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>11.554266 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:LThigh" ParentName="Ref:Waist" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 3.141593</LocalRotation>
+			<LocalTransform>2.399572 -5 -0.006702</LocalTransform>
+		</Node>
+		<Node Name="Ref:LFoot" ParentName="Ref:LThigh" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -1.570796 0</LocalRotation>
+			<LocalTransform>6.446143 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndLFoot" ParentName="Ref:LFoot" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.494339 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:LToe" ParentName="Ref:LFoot" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.030696 0</LocalRotation>
+			<LocalTransform>5.391894 0 -2.594427</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndLToe" ParentName="Ref:LToe" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.033417 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:RThigh" ParentName="Ref:Waist" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 3.141593</LocalRotation>
+			<LocalTransform>2.399669 4.972802 -0.006702</LocalTransform>
+		</Node>
+		<Node Name="Ref:RFoot" ParentName="Ref:RThigh" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -1.570796 0</LocalRotation>
+			<LocalTransform>6.446246 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndRFoot" ParentName="Ref:RFoot" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.494339 0 0</LocalTransform>
+		</Node>
+		<Node Name="Ref:RToe" ParentName="Ref:RFoot" NeededRendering="TRUE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.030587 0</LocalRotation>
+			<LocalTransform>5.391892 0 -2.594422</LocalTransform>
+		</Node>
+		<Node Name="Ref:EndRToe" ParentName="Ref:RToe" NeededRendering="FALSE" IsJoint="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.033408 0 0</LocalTransform>
+		</Node>
+	</Skelton>
+</GfMotion>
+

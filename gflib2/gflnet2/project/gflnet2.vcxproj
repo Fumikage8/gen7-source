@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|CTR">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|CTR">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopCLR|Win32">
+      <Configuration>DevelopCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|CTR">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalCLR|Win32">
+      <Configuration>FinalCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|CTR">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseCLR|Win32">
+      <Configuration>ReleaseCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A12EDA25-0C42-44BE-A331-5255062F88DE}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(GFLIB2_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.debugCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.developCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.releaseCLR.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalCLR|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(GF_PROPS_GFLIB2_DIR)\gflib2.win32.finalCLR.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClInclude Include="..\include\base\gflnet2_AccessPointHistoryBase.h" />
+    <ClInclude Include="..\include\base\gflnet2_AccessPointScannerBase.h" />
+    <ClInclude Include="..\include\base\gflnet2_Base.h" />
+    <ClInclude Include="..\include\base\gflnet2_BaseProcess.h" />
+    <ClInclude Include="..\include\base\gflnet2_GlobalAccess.h" />
+    <ClInclude Include="..\include\base\gflnet2_InitParam.h" />
+    <ClInclude Include="..\include\base\gflnet2_NetAdapter.h" />
+    <ClInclude Include="..\include\base\gflnet2_NetConfig.h" />
+    <ClInclude Include="..\include\base\gflnet2_NetMain.h" />
+    <ClInclude Include="..\include\base\gflnet2_NetStateListener.h" />
+    <ClInclude Include="..\include\base\gflnet2_NetThread.h" />
+    <ClInclude Include="..\include\base\gflnet2_ProcBase.h" />
+    <ClInclude Include="..\include\base\gflnet2_ProcManager.h" />
+    <ClInclude Include="..\include\base\gflnet2_TransferedIDReceiver.h" />
+    <ClInclude Include="..\include\base\gflnet2_Yield.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_Beacon.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconCommand.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconCommandIterator.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconListener.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconManager.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_BeaconSender.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_IrBeaconSender.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_PiaBeaconSender.h" />
+    <ClInclude Include="..\include\beacon\gflnet2_WirelessBeaconSender.h" />
+    <ClInclude Include="..\include\boss\gflnet2_BossEventListener.h" />
+    <ClInclude Include="..\include\boss\gflnet2_BossManager.h" />
+    <ClInclude Include="..\include\cec\gflnet2_CecMessageBoxCreateParam.h" />
+    <ClInclude Include="..\include\cec\gflnet2_CecPacketInfo.h" />
+    <ClInclude Include="..\include\cec\gflnet2_CecResultCode.h" />
+    <ClInclude Include="..\include\cec\gflnet2_CecTypes.h" />
+    <ClInclude Include="..\include\cec\gflnet2_ICecCoreMessageBox.h" />
+    <ClInclude Include="..\include\cec\gflnet2_ICecMessageBoxEventListener.h" />
+    <ClInclude Include="..\include\cec\gflnet2_ICecRecvMessageBox.h" />
+    <ClInclude Include="..\include\cec\gflnet2_ICecSendMessageBox.h" />
+    <ClInclude Include="..\include\cec\gflnet2_ICecSystem.h" />
+    <ClInclude Include="..\include\connect\gflnet2_AutoIrConnect.h" />
+    <ClInclude Include="..\include\debug\gflnet2_Debug.h" />
+    <ClInclude Include="..\include\dev\gflnet2_IrAdapterErrorListener.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\dev\gflnet2_NetZAdapter.h" />
+    <ClInclude Include="..\include\friends\gflnet2_FriendAddListener.h" />
+    <ClInclude Include="..\include\friends\gflnet2_FriendLoginListener.h" />
+    <ClInclude Include="..\include\friends\gflnet2_FriendManager.h" />
+    <ClInclude Include="..\include\gflnet2.h" />
+    <ClInclude Include="..\include\gflnet2_NetworkDefine.h" />
+    <ClInclude Include="..\include\gflnet2_P2p.h" />
+    <ClInclude Include="..\include\http\gflnet2_HttpConnectionListener.h" />
+    <ClInclude Include="..\include\http\gflnet2_HttpConnectionSetting.h" />
+    <ClInclude Include="..\include\http\gflnet2_HttpConnector.h" />
+    <ClInclude Include="..\include\http\gflnet2_HttpResponse.h" />
+    <ClInclude Include="..\include\http\gflnet2_HttpSystem.h" />
+    <ClInclude Include="..\include\ndm\gflnet2_NdmEventListener.h" />
+    <ClInclude Include="..\include\ndm\gflnet2_NdmManager.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexCommunityListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexDataStoreClient.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexDataStoreClientListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexDebugClient.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexDebugClientListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexDispatchThreadListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexError.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexErrorListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexGameServerListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexManager.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexMatchmakeListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexMatchMakingClient.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexMatchMakingRule.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexMessageClient.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexMessageClientListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexP2pStationManager.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexRankingClient.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexRankingClientListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexSessionEventListener.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexTemplate.h" />
+    <ClInclude Include="..\include\nex\gflnet2_NexUtilityListener.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_NetGame.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_NetGameErrorListener.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_NetGameMigrationListener.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_NetPlayer.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_P2pConfig.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_P2pConnectionInterface.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_P2pDefine.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pDisconnectionInterface.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\include\p2p\gflnet2_P2pManager.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_P2pManagerEventListener.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_P2pProcBaseProcess.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_RecvBuffer.h" />
+    <ClInclude Include="..\include\p2p\gflnet2_RecvDataListener.h" />
+    <ClInclude Include="..\include\scan\gflnet2_Ir.h" />
+    <ClInclude Include="..\include\scan\gflnet2_Manager.h" />
+    <ClInclude Include="..\include\scan\gflnet2_Wireless.h" />
+    <ClInclude Include="..\include\ServerClient\gflnet2_RequestHandle.h" />
+    <ClInclude Include="..\include\ServerClient\gflnet2_RequestSequenceBase.h" />
+    <ClInclude Include="..\include\ServerClient\gflnet2_ServerClientRequestManager.h" />
+    <ClInclude Include="..\include\Session\gflnet2_SessionMessageListener.h" />
+    <ClInclude Include="..\include\Session\gflnet2_SessionMessageManagerBase.h" />
+    <ClInclude Include="..\include\Session\gflnet2_SessionPacketInitParam.h" />
+    <ClInclude Include="..\include\Session\gflnet2_SessionPacketManager.h" />
+    <ClInclude Include="..\include\socket\gflnet2_SocketSystem.h" />
+    <ClInclude Include="..\include\util\gflnet2_Base64Utility.h" />
+    <ClInclude Include="..\include\util\gflnet2_UrlCoderUtility.h" />
+    <ClInclude Include="..\include\wifi\gflnet2_WifiConnectListener.h" />
+    <ClInclude Include="..\include\wifi\gflnet2_WifiDisconnectListener.h" />
+    <ClInclude Include="..\include\wifi\gflnet2_WifiSystem.h" />
+    <ClInclude Include="..\source\boss\gflnet2_BossCheckNewArrivalDataThread.h" />
+    <ClInclude Include="..\source\boss\gflnet2_BossFilelistDownloadThread.h" />
+    <ClInclude Include="..\source\boss\gflnet2_BossFileReadThread.h" />
+    <ClInclude Include="..\source\boss\gflnet2_BossImmediateTaskThread.h" />
+    <ClInclude Include="..\source\boss\gflnet2_BossTaskRegisterThread.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecAllocator.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecController.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecControlObject.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecCoreMessageBox.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessor.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessThread.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxEventListener.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecRecvMessageBox.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecSendMessageBox.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_CecSystem.h" />
+    <ClInclude Include="..\source\cec\ctr\gflnet2_CTR_ICecControlObjectRegister.h" />
+    <ClInclude Include="..\source\cec\gflnet2_CecCommandID.h" />
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecCoreMessageBox.h" />
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecRecvMessageBox.h" />
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecSendMessageBox.h" />
+    <ClInclude Include="..\source\cec\win32\gflnet2_WIN32_CecSystem.h" />
+    <ClInclude Include="..\source\connect\thread\gflnet2_WirelessInitThread.h" />
+    <ClInclude Include="..\source\dev\gflnet2_IrAdapter.h" />
+    <ClInclude Include="..\source\dev\gflnet2_PiaAdapter.h" />
+    <ClInclude Include="..\source\friends\gflnet2_FriendAddThread.h" />
+    <ClInclude Include="..\source\friends\gflnet2_FriendLoginThread.h" />
+    <ClInclude Include="..\source\http\gflnet2_HttpConnection.h" />
+    <ClInclude Include="..\source\http\gflnet2_HttpConnectionThread.h" />
+    <ClInclude Include="..\source\ndm\gflnet2_NdmSuspendThread.h" />
+    <ClInclude Include="..\source\nex\AutoMatchmakeDDF.h" />
+    <ClInclude Include="..\source\nex\gflnet2_NexDispatchThread.h" />
+    <ClInclude Include="..\source\nex\gflnet2_NexMatchMakingNotificationListener.h" />
+    <ClInclude Include="..\source\p2p\gflnet2_NetGameBase.h" />
+    <ClInclude Include="..\source\p2p\gflnet2_P2pStaticManager.h" />
+    <ClInclude Include="..\source\p2p\proc\ir\gflnet2_P2pConnectionIr.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\ir\gflnet2_P2pDisconnectionIr.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\ir\gflnet2_P2pMainIr.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pConnectionWifi.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pDisconnectionWifi.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pMainWifi.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleConnectionWifi.h" />
+    <ClInclude Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleDisconnectionWifi.h" />
+    <ClInclude Include="..\source\p2p\proc\wireless\gflnet2_P2pConnectionWireless.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wireless\gflnet2_P2pDisconnectionWireless.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\proc\wireless\gflnet2_P2pMainWireless.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\source\p2p\thread\gflnet2_IrP2pThread.h" />
+    <ClInclude Include="..\source\p2p\thread\gflnet2_LocalAutoMatchingThread.h" />
+    <ClInclude Include="..\source\p2p\thread\gflnet2_P2pAutoScanThread.h" />
+    <ClInclude Include="..\source\proc\gflnet2_IrAutoMatchThread.h" />
+    <ClInclude Include="..\source\scan\proc\gflnet2_IrScanProc.h" />
+    <ClInclude Include="..\source\scan\proc\gflnet2_WirelessScanProc.h" />
+    <ClInclude Include="..\source\scan\thread\gflnet2_WirelessCycleThread.h" />
+    <ClInclude Include="..\source\ServerClient\gflnet2_ServerClientRequestManagerPrivate.h" />
+    <ClInclude Include="..\source\Session\CTR\gflnet2_CTR_TCPPacketIO.h" />
+    <ClInclude Include="..\source\Session\CTR\gflnet2_CTR_UDPPacketIO.h" />
+    <ClInclude Include="..\source\Session\gflnet2_SessionPacketDatagram.h" />
+    <ClInclude Include="..\source\Session\gflnet2_SessionPacketIOBase.h" />
+    <ClInclude Include="..\source\wifi\gflnet2_WifiConnectThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\base\gflnet2_Base.cpp" />
+    <ClCompile Include="..\source\base\gflnet2_BaseProcess.cpp" />
+    <ClCompile Include="..\source\base\gflnet2_GlobalAccess.cpp" />
+    <ClCompile Include="..\source\base\gflnet2_InitParam.cpp" />
+    <ClCompile Include="..\source\base\gflnet2_ProcManager.cpp" />
+    <ClCompile Include="..\source\base\gflnet2_Yield.cpp" />
+    <ClCompile Include="..\source\beacon\gflnet2_Beacon.cpp" />
+    <ClCompile Include="..\source\beacon\gflnet2_BeaconCommandIterator.cpp" />
+    <ClCompile Include="..\source\beacon\gflnet2_BeaconManager.cpp" />
+    <ClCompile Include="..\source\beacon\gflnet2_IrBeaconSender.cpp" />
+    <ClCompile Include="..\source\beacon\gflnet2_PiaBeaconSender.cpp" />
+    <ClCompile Include="..\source\beacon\gflnet2_WirelessBeaconSender.cpp" />
+    <ClCompile Include="..\source\boss\gflnet2_BossCheckNewArrivalDataThread.cpp" />
+    <ClCompile Include="..\source\boss\gflnet2_BossFilelistDownloadThread.cpp" />
+    <ClCompile Include="..\source\boss\gflnet2_BossFileReadThread.cpp" />
+    <ClCompile Include="..\source\boss\gflnet2_BossImmediateTaskThread.cpp" />
+    <ClCompile Include="..\source\boss\gflnet2_BossManager.cpp" />
+    <ClCompile Include="..\source\boss\gflnet2_BossTaskRegisterThread.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecAllocator.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecController.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecControlObject.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecCoreMessageBox.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessor.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecMessageBoxAccessThread.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecRecvMessageBox.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecSendMessageBox.cpp" />
+    <ClCompile Include="..\source\cec\ctr\gflnet2_CTR_CecSystem.cpp" />
+    <ClCompile Include="..\source\cec\gflnet2_ICecSystem.cpp" />
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecCoreMessageBox.cpp" />
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecRecvMessageBox.cpp" />
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecSendMessageBox.cpp" />
+    <ClCompile Include="..\source\cec\win32\gflnet2_WIN32_CecSystem.cpp" />
+    <ClCompile Include="..\source\connect\proc\gflnet2_AutoIrConnect.cpp" />
+    <ClCompile Include="..\source\connect\thread\gflnet2_WirelessInitThread.cpp" />
+    <ClCompile Include="..\source\debug\gflnet2_Debug.cpp" />
+    <ClCompile Include="..\source\dev\gflnet2_IrAdapter.cpp" />
+    <ClCompile Include="..\source\dev\gflnet2_NetZAdapter.cpp" />
+    <ClCompile Include="..\source\dev\gflnet2_PiaAdapter.cpp" />
+    <ClCompile Include="..\source\friends\gflnet2_FriendAddThread.cpp" />
+    <ClCompile Include="..\source\friends\gflnet2_FriendLoginThread.cpp" />
+    <ClCompile Include="..\source\friends\gflnet2_FriendManager.cpp" />
+    <ClCompile Include="..\source\http\gflnet2_HttpConnection.cpp" />
+    <ClCompile Include="..\source\http\gflnet2_HttpConnectionThread.cpp" />
+    <ClCompile Include="..\source\http\gflnet2_HttpConnector.cpp" />
+    <ClCompile Include="..\source\http\gflnet2_HttpResponse.cpp" />
+    <ClCompile Include="..\source\http\gflnet2_HttpSystem.cpp" />
+    <ClCompile Include="..\source\ndm\gflnet2_NdmManager.cpp" />
+    <ClCompile Include="..\source\ndm\gflnet2_NdmSuspendThread.cpp" />
+    <ClCompile Include="..\source\nex\AutoMatchmakeDDF.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexDataStoreClient.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexDebugClient.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexDispatchThread.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexError.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexManager.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexMatchMakingClient.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexMatchMakingNotificationListener.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexMatchMakingRule.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexMessageClient.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexP2pStationManager.cpp" />
+    <ClCompile Include="..\source\nex\gflnet2_NexRankingClient.cpp" />
+    <ClCompile Include="..\source\p2p\gflnet2_NetGame.cpp" />
+    <ClCompile Include="..\source\p2p\gflnet2_NetGameBase.cpp" />
+    <ClCompile Include="..\source\p2p\gflnet2_NetPlayer.cpp" />
+    <ClCompile Include="..\source\p2p\gflnet2_P2pConnectionInterface.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_P2pDisconnectionInterface.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\gflnet2_P2pManager.cpp" />
+    <ClCompile Include="..\source\p2p\gflnet2_P2pStaticManager.cpp" />
+    <ClCompile Include="..\source\p2p\proc\ir\gflnet2_P2pConnectionIr.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\ir\gflnet2_P2pDisconnectionIr.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\ir\gflnet2_P2pMainIr.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pConnectionWifi.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pDisconnectionWifi.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pMainWifi.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleConnectionWifi.cpp" />
+    <ClCompile Include="..\source\p2p\proc\wifi\gflnet2_P2pSimpleDisconnectionWifi.cpp" />
+    <ClCompile Include="..\source\p2p\proc\wireless\gflnet2_P2pConnectionWireless.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wireless\gflnet2_P2pDisconnectionWireless.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\proc\wireless\gflnet2_P2pMainWireless.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\source\p2p\thread\gflnet2_IrP2pThread.cpp" />
+    <ClCompile Include="..\source\p2p\thread\gflnet2_LocalAutoMatchingThread.cpp" />
+    <ClCompile Include="..\source\p2p\thread\gflnet2_P2pAutoScanThread.cpp" />
+    <ClCompile Include="..\source\proc\gflnet2_IrAutoMatchThread.cpp" />
+    <ClCompile Include="..\source\scan\gflnet2_Ir.cpp" />
+    <ClCompile Include="..\source\scan\gflnet2_Manager.cpp" />
+    <ClCompile Include="..\source\scan\gflnet2_Wireless.cpp" />
+    <ClCompile Include="..\source\scan\proc\gflnet2_IrScanProc.cpp" />
+    <ClCompile Include="..\source\scan\proc\gflnet2_WirelessScanProc.cpp" />
+    <ClCompile Include="..\source\scan\thread\gflnet2_WirelessCycleThread.cpp" />
+    <ClCompile Include="..\source\ServerClient\gflnet2_ServerClientRequestManager.cpp" />
+    <ClCompile Include="..\source\Session\CTR\gflnet2_CTR_TCPPacketIO.cpp" />
+    <ClCompile Include="..\source\Session\CTR\gflnet2_CTR_UDPPacketIO.cpp" />
+    <ClCompile Include="..\source\Session\gflnet2_SessionMessageManagerBase.cpp" />
+    <ClCompile Include="..\source\Session\gflnet2_SessionPacketDatagram.cpp" />
+    <ClCompile Include="..\source\Session\gflnet2_SessionPacketManager.cpp" />
+    <ClCompile Include="..\source\socket\gflnet2_SocketSystem.cpp" />
+    <ClCompile Include="..\source\util\gflnet2_Base64Utility.cpp" />
+    <ClCompile Include="..\source\util\gflnet2_UrlCoderUtility.cpp" />
+    <ClCompile Include="..\source\wifi\gflnet2_WifiConnectThread.cpp" />
+    <ClCompile Include="..\source\wifi\gflnet2_WifiSystem.cpp" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FinalCLR|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevelopCLR|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseCLR|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|CTR'">
+    <IncludePath>$(CTRPIA_ROOT)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SFMT">
+      <UniqueIdentifier>{db5cf936-20ce-4b00-a50f-0eb51d08cad5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\MatrixStandard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\VectorStandard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\Vector4Standard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\Vector3Standard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\Vector2Standard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\Matrix34Standard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\Matrix44Standard.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_EulerRotation.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_math.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_math_control.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_math_crc.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_math_random.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathAABB.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathCommon.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Matrix.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Quaternion.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_QuaternionNative.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_SRT.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_tinymt32.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Tuple4Common.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Vector.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathExtendedVectorTemplate.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathType.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Mtx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Vec.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Vector4.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Vector3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Vector2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Matrix34.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Matrix44.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Transporter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_TransporterTypes.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathTriangular.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Rect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_PathController.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Easing.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_SpringSimulation.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Float.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathUtil.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_tinymt64.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-alti.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-common.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params607.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params1279.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params2281.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params4253.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params11213.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params19937.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params44497.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params86243.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params132049.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-params216091.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-sse2.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFMT\SFMT-sse2-msc.h">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_MathArithmetic.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_math_convert.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\gfl2_math_crc.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_math_random.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_tinymt32.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_SpringSimulation.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_MathUtil.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_tinymt64.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\SFMT\SFMT.c">
+      <Filter>ヘッダー ファイル\SFMT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

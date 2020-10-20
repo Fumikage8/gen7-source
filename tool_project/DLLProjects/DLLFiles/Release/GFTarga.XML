@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GFTarga</name>
+    </assembly>
+    <members>
+        <member name="T:GFTarga.ITargaDecoder">
+            <summary>
+            Targaデコーダインタフェース
+            </summary>
+        </member>
+        <member name="M:GFTarga.ITargaDecoder.Decode(GFTarga.TargaHeader,System.Byte[])">
+            <summary>
+            Targaデコーダインタフェース
+            </summary>
+            <param name="targaHeader">tgaヘッダ情報</param>
+            <param name="rowData">tgaに含まれるデコード対象のデータ</param>
+            <returns>PixelDataArray デコード済みのPixelDataArrayオブジェクト</returns>
+        </member>
+        <member name="T:GFTarga.PixelDataArray">
+            <summary>
+            ピクセルデータを扱う配列
+            </summary>
+        </member>
+        <member name="F:GFTarga.PixelDataArray.m_Width">
+            <summary>
+            画像の横幅
+            </summary>
+        </member>
+        <member name="F:GFTarga.PixelDataArray.m_Height">
+            <summary>
+            画像の縦幅
+            </summary>
+        </member>
+        <member name="F:GFTarga.PixelDataArray.m_BytePerPixel">
+            <summary>
+            画像の1ピクセルあたりのバイト数
+            </summary>
+        </member>
+        <member name="F:GFTarga.PixelDataArray.m_RowPixelDataArray">
+            <summary>
+            画像の生データ配列
+            </summary>
+        </member>
+        <member name="M:GFTarga.PixelDataArray.#ctor(System.Byte[],System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="sourceDataArray">画像の元データ</param>
+            <param name="width">画像の横幅</param>
+            <param name="height">画像の縦幅</param>
+            <param name="bytePerPixel">1ピクセルあたりのバイト数</param>
+        </member>
+        <member name="M:GFTarga.PixelDataArray.InverseVertically">
+            <summary>
+            画像データを上下反転させる
+            </summary>
+            <returns>bool 成功/失敗</returns>
+        </member>
+        <member name="M:GFTarga.PixelDataArray.IsFilledSameColor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            同一色で塗られているかを判定する
+            </summary>
+            <param key="xOrigin">x座標の基準点</param>
+            <param key="yOrigin">y座標の基準点</param>
+            <param key="width">横幅</param>
+            <param key="height">縦幅</param>
+        </member>
+        <member name="P:GFTarga.PixelDataArray.RowPixelDataArray">
+            <summary>
+            生データ配列のgetter
+            </summary>
+        </member>
+        <member name="T:GFTarga.RunLengthTargaDecoder">
+            <summary>
+            RunLength圧縮Targaデコーダ
+            </summary>
+        </member>
+        <member name="M:GFTarga.RunLengthTargaDecoder.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:GFTarga.RunLengthTargaDecoder.Decode(GFTarga.TargaHeader,System.Byte[])">
+            <summary>
+            Targaファイルのデコード
+            </summary>
+            <param name="targaHeader">tgaヘッダ情報</param>
+            <param name="rowData">tgaに含まれるデコード対象のデータ</param>
+            <returns>PixelDataArray デコード済みのPixelDataArrayオブジェクト</returns>
+        </member>
+        <member name="T:GFTarga.TargaData">
+            <summary>
+            Targaファイルを読み取ったデータ
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaData.m_TargaHeader">
+            <summary>
+            読み取ったTargaのヘッダ
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaData.m_TargaIdentifier">
+            <summary>
+            読み取ったTargaの識別情報
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaData.m_PixelDataArray">
+            <summary>
+            読み取ったピクセルデータ
+            </summary>
+        </member>
+        <member name="M:GFTarga.TargaData.#ctor(GFTarga.TargaHeader,System.Byte[],GFTarga.PixelDataArray)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="targaHeader">Targaのヘッダ情報</param>
+            <param name="targaIdentifier">Targaの識別情報</param>
+            <param name="pixelDataArray">格納されているピクセル情報</param>
+        </member>
+        <member name="P:GFTarga.TargaData.TargaHeader">
+            <summary>
+            TargaHeaderのプロパティ
+            </summary>
+        </member>
+        <member name="P:GFTarga.TargaData.PixelDataArray">
+            <summary>
+            PixelDataArrayのプロパティ
+            </summary>
+        </member>
+        <member name="T:GFTarga.TargaFileReader">
+            <summary>
+            Targaファイル読み取りクラス
+            </summary>
+            <remarks>NW4CTarga, 通常のTargaどちらにも対応</remarks>
+        </member>
+        <member name="F:GFTarga.TargaFileReader.m_TargaDecoderDictionary">
+            <summary>
+            Targaのフォーマットに合わせたデコーダの連想配列
+            </summary>
+        </member>
+        <member name="M:GFTarga.TargaFileReader.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:GFTarga.TargaFileReader.CreateTargaDataFromFile(System.String)">
+            <summary>
+            tgaファイルからTargaDataを生成
+            </summary>
+            <param name="filePath">tgaファイルのパス</param>
+            <returns>TargaData ファイルから読み取ったTargaの画素データ</returns>
+        </member>
+        <member name="T:GFTarga.ColorFormat">
+            <summary>
+            カラーフォーマット
+            </summary>
+        </member>
+        <member name="F:GFTarga.ColorFormat.X8R8G8B8">
+            <summary>
+            X8R8G8B8 各色に 8 ビットを使用する 32 ビットの RGB ピクセル形式。
+            </summary>
+        </member>
+        <member name="F:GFTarga.ColorFormat.A8R8G8B8">
+            <summary>
+            A8R8G8B8 アルファ付きの、チャネルごとに 8 ビットを使用する 32 ビットの ARGB ピクセル形式。 
+            </summary>
+        </member>
+        <member name="T:GFTarga.ImageType">
+            <summary>
+            画素データの格納タイプ
+            </summary>
+        </member>
+        <member name="F:GFTarga.ImageType.UncompressedTrueColor">
+            <summary>
+            無圧縮RGB
+            </summary>
+        </member>
+        <member name="F:GFTarga.ImageType.RunLengthTrueColor">
+            <summary>
+            run-length圧縮RGB
+            </summary>
+        </member>
+        <member name="F:GFTarga.ImageType.Unknown">
+            <summary>
+            不定(存在しないフォーマット)
+            </summary>
+        </member>
+        <member name="T:GFTarga.TargaHeader">
+            <summary>
+            tgaのデータを読み取る構造体
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.s_TagBppColorFormatDictionary">
+            <summary>
+            tgaのbppとフォーマットを関連付ける連想配列
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.idLength">
+            <summary>
+            0: 識別子文字列長
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.colorMapType">
+            <summary>
+            1: カラーマップタイプ
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.imageType">
+            <summary>
+            2: 0x02 = 無圧縮RGB / 0x0A = 圧縮RGB
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.colorMapOrigin">
+            <summary>
+             3: カラーマップタイプオリジン
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.colorMapLength">
+            <summary>
+            5: カラーマップタイプ長
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.colorMapEntrySize">
+            <summary>
+            7: パレットのビット幅
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.xOrigin">
+            <summary>
+            8: x原点
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.yOrigin">
+            <summary>
+            10: y原点
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.width">
+            <summary>
+            12: 画像の横幅
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.height">
+            <summary>
+            14: 画像の縦幅
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.bpp">
+            <summary>
+            16: ビット深度
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.attribute">
+            <summary>
+            17: アトリビュート(画像の格納方向など)
+            </summary>
+        </member>
+        <member name="P:GFTarga.TargaHeader.TurnOverU">
+            <summary>
+            UVのU方向が反転しているかの判定取得
+            </summary>
+        </member>
+        <member name="P:GFTarga.TargaHeader.TurnOverV">
+            <summary>
+            UVのV方向が反転しているかの判定取得
+            </summary>
+        </member>
+        <member name="P:GFTarga.TargaHeader.ImageType">
+            <summary>
+            画像のピクセル格納タイプ
+            </summary>
+        </member>
+        <member name="P:GFTarga.TargaHeader.ColorFormat">
+            <summary>
+            画像フォーマット
+            </summary>
+        </member>
+        <member name="T:GFTarga.TargaHeader.AttributeMask">
+            <summary>
+            アトリビュートの情報を識別するマスク
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.AttributeMask.NumberOfAttributeBits">
+            <summary>
+            アトリビュートのデータの格納部分のマスク
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.AttributeMask.TurnOverU">
+            <summary>
+            U方向の向き(右から左 or 左から右)
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.AttributeMask.TurnOverV">
+            <summary>
+            U方向の向き(上から下 or 下から上)
+            </summary>
+        </member>
+        <member name="F:GFTarga.TargaHeader.AttributeMask.InterreavingFlags">
+            <summary>
+            インタリーブフラグ
+            </summary>
+        </member>
+        <member name="T:GFTarga.NW4CIdField">
+            <summary>
+            NW4Cの識別子
+            </summary>
+        </member>
+        <member name="F:GFTarga.NW4CIdField.identifier">
+            <summary>
+            " NW4C_Tga Ver1.0" （残りの 1 バイトは 0x00）
+            </summary>
+        </member>
+        <member name="F:GFTarga.NW4CIdField.offset">
+            <summary>
+            実データまでのオフセット
+            </summary>
+        </member>
+        <member name="T:GFTarga.UmcompressedTargaDecoder">
+            <summary>
+            無圧縮Targaデコーダ
+            </summary>
+        </member>
+        <member name="M:GFTarga.UmcompressedTargaDecoder.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:GFTarga.UmcompressedTargaDecoder.Decode(GFTarga.TargaHeader,System.Byte[])">
+            <summary>
+            Targaファイルのデコード
+            </summary>
+            <param name="targaHeader">tgaヘッダ情報</param>
+            <param name="rowData">tgaに含まれるデコード対象のデータ</param>
+            <returns>PixelDataArray デコード済みのPixelDataArrayオブジェクト</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\system\pml_Library.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pml_PokeParty.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\local\pml_Random.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\item\btl_item.cpp">
+      <Filter>ソース\道具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\item\item.cpp">
+      <Filter>ソース\道具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\item\item_manager.cpp">
+      <Filter>ソース\道具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\item\item_util.cpp">
+      <Filter>ソース\道具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_EvolutionTable.cpp">
+      <Filter>ソース\進化</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_EvolutionTableCache.cpp">
+      <Filter>ソース\進化</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_EvolveManager.cpp">
+      <Filter>ソース\進化</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_MegaEvolveTable.cpp">
+      <Filter>ソース\メガ進化</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_MegaEvolveTableCache.cpp">
+      <Filter>ソース\メガ進化</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_PersonalData.cpp">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_PersonalDataCache.cpp">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_GrowTable.cpp">
+      <Filter>ソース\成長曲線</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_GrowTableCache.cpp">
+      <Filter>ソース\成長曲線</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonCoreParam.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParam.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParam_BoxMarkController.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParam_MultiPurposeWorkController.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamAccessor.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamCalcTool.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamEncoder.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_PokemonParamFactory.cpp">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\waza\pml_WazaData.cpp">
+      <Filter>ソース\技</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\waza\pml_WazaDataCache.cpp">
+      <Filter>ソース\技</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\waza\pml_WazaDataSystem.cpp">
+      <Filter>ソース\技</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_WazaOboeData.cpp">
+      <Filter>ソース\技覚え</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_WazaOboeDataCache.cpp">
+      <Filter>ソース\技覚え</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\waza\pml_ZenryokuWazaSystem.cpp">
+      <Filter>ソース\技</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_PersonalUtil.cpp">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\personal\pml_PersonalSystem.cpp">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\battle\pml_battle_TypeAffinity.cpp">
+      <Filter>ソース\バトル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_EggGenerator.cpp">
+      <Filter>ソース\タマゴ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pokepara\pml_EggWazaData.cpp">
+      <Filter>ソース\タマゴ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\bugfix_pokelib.h" />
+    <ClInclude Include="..\include\pml_Const.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\system\pml_Library.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_Local.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\local\pml_Random.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\wazasick_def.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_PokeParty.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_System.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_Type.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pmlib.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pmlib_debug.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\time_zone.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_EvolutionTable.h">
+      <Filter>ソース\進化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_EvolutionTableCache.h">
+      <Filter>ソース\進化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_EvolutionTableLocal.h">
+      <Filter>ソース\進化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_MegaEvolveTableLocal.h">
+      <Filter>ソース\メガ進化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_MegaEvolveTable.h">
+      <Filter>ソース\メガ進化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_MegaEvolveTableCache.h">
+      <Filter>ソース\メガ進化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_PersonalData.h">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_PersonalDataCache.h">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_PersonalLocal.h">
+      <Filter>ソース\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_GrowTable.h">
+      <Filter>ソース\成長曲線</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_GrowTableCache.h">
+      <Filter>ソース\成長曲線</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParam_BoxMarkController.h">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParam_MultiPurposeWorkController.h">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamAccessor.h">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamCalcTool.h">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamEncoder.h">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\pokepara\pml_PokemonParamLocal.h">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\waza\pml_WazaData.h">
+      <Filter>ソース\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\waza\pml_WazaDataCache.h">
+      <Filter>ソース\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\waza\pml_WazaDataLocal.h">
+      <Filter>ソース\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_WazaOboeData.h">
+      <Filter>ソース\技覚え</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_WazaOboeDataCache.h">
+      <Filter>ソース\技覚え</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\item\btl_item.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\item\item.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\item\item_manager.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\item\item_util.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\item\itemsort_abc_def.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\item\itemuse_def.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_Waza.h">
+      <Filter>ヘッダ\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\waza\pml_WazaDataConst.h">
+      <Filter>ヘッダ\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\waza\pml_WazaDataSystem.h">
+      <Filter>ヘッダ\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\personal\pml_WazaOboeLocal.h">
+      <Filter>ヘッダ\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_Personal.h">
+      <Filter>ヘッダ\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_PersonalConst.h">
+      <Filter>ヘッダ\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_PersonalSystem.h">
+      <Filter>ヘッダ\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_Item.h">
+      <Filter>ヘッダ\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_PokemonCoreParam.h">
+      <Filter>ヘッダ\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_PokemonParam.h">
+      <Filter>ヘッダ\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_PokemonParamFactory.h">
+      <Filter>ヘッダ\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_PokemonParamSpec.h">
+      <Filter>ヘッダ\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_PokemonParamType.h">
+      <Filter>ヘッダ\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_PokePara.h">
+      <Filter>ヘッダ\ポケモンパラメータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_EvolveManager.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\waza\pml_ZenryokuWazaSystem.h">
+      <Filter>ヘッダ\技</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\personal\pml_PersonalUtil.h">
+      <Filter>ヘッダ\パーソナルデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\battle\pml_battle_TypeAffinity.h">
+      <Filter>ヘッダ\バトル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pml_Battle.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_EggGenerator.h">
+      <Filter>ヘッダ\タマゴ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pokepara\pml_EggWazaData.h">
+      <Filter>ヘッダ\タマゴ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\waza\pml_WazaTarget.h">
+      <Filter>ヘッダ\技</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{98bec474-7904-41d8-8711-adc8e9a95c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{e001bc7a-3ca4-4c2f-a4ef-0b6e1bc1f6dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\道具">
+      <UniqueIdentifier>{06ad723b-f5cd-4600-b377-c70777d8e7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\進化">
+      <UniqueIdentifier>{1bba8ef2-5fb7-4bdc-b545-a140b5c700b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\メガ進化">
+      <UniqueIdentifier>{c5ec9b4d-6a7b-4c4d-bd48-78bf4b3ea0f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\パーソナルデータ">
+      <UniqueIdentifier>{8ef97a45-400c-42f0-80a3-1f8d3142b39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\成長曲線">
+      <UniqueIdentifier>{f207ca0d-00d7-4544-a3ce-8fdc1fd4e621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ポケモンパラメータ">
+      <UniqueIdentifier>{50715de6-7fc1-4388-ae1f-7ad55cd449d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\技">
+      <UniqueIdentifier>{40096421-e356-4e92-96fd-8c274322db22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\技覚え">
+      <UniqueIdentifier>{552b9712-f82f-466e-8853-992d37c2cd1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\道具">
+      <UniqueIdentifier>{c311ec86-040c-4570-8dda-0ba9191c84a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\技">
+      <UniqueIdentifier>{3fefb6da-80e0-43e9-b79d-c58ecd2a4a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\パーソナルデータ">
+      <UniqueIdentifier>{1d13ce80-8785-4135-a693-3ac358237b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\ポケモンパラメータ">
+      <UniqueIdentifier>{96847bda-33be-4773-940e-e3aeaa1fa712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\バトル">
+      <UniqueIdentifier>{340c0db0-e378-44fe-8957-f656f2690bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\バトル">
+      <UniqueIdentifier>{8208c690-0a12-41d8-930a-f7d64a2834e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\タマゴ">
+      <UniqueIdentifier>{8276f847-a1d6-47ca-8d79-bff1a61cf43c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\タマゴ">
+      <UniqueIdentifier>{fe860dcb-333d-4ce6-beda-0df6950ad332}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\pokepara\rotom_waza.cdat">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </None>
+    <None Include="..\src\pokepara\taste.cdat">
+      <Filter>ソース\ポケモンパラメータ</Filter>
+    </None>
+  </ItemGroup>
+</Project>

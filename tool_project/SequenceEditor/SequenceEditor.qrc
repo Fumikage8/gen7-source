@@ -1,0 +1,50 @@
+<RCC>
+    <qresource>
+	<file alias="new.png">./Icon/New.png</file>
+	<file alias="open.png">./Icon/Open.png</file>
+	<file alias="save.png">./Icon/Save.png</file>
+	<file alias="saveas.png">./Icon/SaveAs.png</file>
+	<file alias="exit.png">./Icon/Exit.png</file>
+	<file alias="convert.png">./Icon/convert.png</file>
+
+	<file alias="undo.png">./Icon/undo.png</file>
+	<file alias="redo.png">./Icon/redo.png</file>
+	<file alias="copy.png">./Icon/Copy.png</file>
+	<file alias="cut.png">./Icon/Cut.png</file>
+	<file alias="paste.png">./Icon/Paste.png</file>
+
+	<file alias="grp_open.png">./Icon/grp_open.png</file>
+	<file alias="grp_close.png">./Icon/grp_close.png</file>
+	<file alias="grp_add.png">./Icon/grp_add.png</file>
+	<file alias="grp_del.png">./Icon/grp_del.png</file>
+	<file alias="grp_edit.png">./Icon/grp_edit.png</file>
+	<file alias="grp_up.png">./Icon/grp_up.png</file>
+	<file alias="grp_down.png">./Icon/grp_down.png</file>
+	<file alias="grp_open_all.png">./Icon/grp_open_all.png</file>
+	<file alias="grp_close_all.png">./Icon/grp_close_all.png</file>
+	<file alias="grp_open_close.png">./Icon/grp_open_close.png</file>
+  
+	<file alias="com_edit.png">./Icon/com_edit.png</file>
+	<file alias="com_del.png">./Icon/com_del.png</file>
+	<file alias="com_down.png">./Icon/com_down.png</file>
+	<file alias="com_up.png">./Icon/com_up.png</file>
+
+	<file alias="frame_add.png">./Icon/frame_add.png</file>
+	<file alias="frame_del.png">./Icon/frame_del.png</file>
+
+	<file alias="size_s.png">./Icon/size_s.png</file>
+	<file alias="size_m.png">./Icon/size_m.png</file>
+	<file alias="size_l.png">./Icon/size_l.png</file>
+
+	<file alias="lock_on.png">./Icon/lock_on.png</file>
+	<file alias="lock_off.png">./Icon/lock_off.png</file>
+	<file alias="lock_on_all.png">./Icon/lock_on_all.png</file>
+	<file alias="lock_off_all.png">./Icon/lock_off_all.png</file>
+
+
+	<file alias="lock_1.png">./Icon/lock_1.png</file>
+	<file alias="lock_2.png">./Icon/lock_2.png</file>
+	<file alias="lock_3.png">./Icon/lock_3.png</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リンク設定">
+      <UniqueIdentifier>{1c40b0d6-18be-42ce-9a76-98578fe964ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ロム設定">
+      <UniqueIdentifier>{21342333-4be9-4606-8d17-e3acd34a6b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{6d27e7f2-25c2-4f97-921a-269df1205168}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectName).rsf">
+      <Filter>ロム設定</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapSize.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="MainHeap.hpp">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_TouchIdEditor.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TouchIdEditor.rc" />
+  </ItemGroup>
+</Project>

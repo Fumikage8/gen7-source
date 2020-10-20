@@ -1,0 +1,22 @@
+﻿#define ITEMUSE_FLD_RECOVER           ( 1 )   // フィールド：回復
+#define ITEMUSE_FLD_WAZA              ( 2 )   // フィールド：技マシン
+#define ITEMUSE_FLD_CYCLE             ( 3 )   // フィールド：自転車
+#define ITEMUSE_FLD_MITSU             ( 4 )   // フィールド：甘い蜜
+#define ITEMUSE_FLD_BAG_MSG           ( 5 )   // フィールド：バッグでメッセージを表示するだけ
+#define ITEMUSE_FLD_EVOLUTION         ( 6 )   // フィールド：進化
+#define ITEMUSE_FLD_ANANUKE           ( 7 )   // フィールド：穴抜けの紐
+#define ITEMUSE_FLD_APPLICATION       ( 8 )   // フィールド：アプリケーション全般
+#define ITEMUSE_FLD_FLY               ( 9 )   // フィールド：おおぞらをとぶ
+#define ITEMUSE_FLD_VIDRO             ( 10 )  // フィールド：ビードロ
+#define ITEMUSE_FLD_MAIL              ( 11 )  // フィールド：メール
+#define ITEMUSE_FLD_KINOMI            ( 12 )  // フィールド：きのみ
+#define ITEMUSE_FLD_FISHING_ROD_GREAT ( 13 )  // フィールド：凄い釣り竿
+#define ITEMUSE_FLD_BATTLE_REC        ( 14 )  // フィールド：バトルレコーダー
+#define ITEMUSE_FLD_FORM_CHANGE       ( 15 )  // フィールド：フォルムチェンジ用アイテム
+#define ITEMUSE_FLD_DOWSING_MACHINE   ( 16 )  // フィールド：ダウジングマシン
+#define ITEMUSE_FLD_UNION             ( 17 )  // フィールド：合体アイテム
+#define ITEMUSE_FLD_ROTOPON           ( 18 )  // フィールド：ロトポン
+
+#define ITEMUSE_BTL_BALL      ( 1 )   // バトル：ボール
+#define ITEMUSE_BTL_RECOVER   ( 2 )   // バトル：回復
+#define ITEMUSE_BTL_ESCAPE    ( 3 )   // バトル：逃げる

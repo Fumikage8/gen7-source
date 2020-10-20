@@ -1,0 +1,157 @@
+#if defined HLSL
+
+    #define             vec2                float2
+    #define             vec3                float3
+    #define             vec4                float4
+    #define             mat4x4          float4x4
+    #define             mat3x3          float3x3
+    #define             inverse         transpose
+
+    #define ConstantBuffer( NAME, REGNAME, NO )     cbuffer NAME : register( REGNAME )
+
+
+	// 頂点シェーダの入力データ定義
+	struct VS_INPUT {
+	    float4 Pos : POSITION0;   // 頂点座標(モデル座標系)
+		float4 Uv  : TEXCOORD0;
+	    float4 Col : COLOR0;      // 頂点色
+	};
+
+	// ピクセル シェーダの入力データ定義
+	struct PS_INPUT {
+	    float4 Pos  : SV_POSITION; // 頂点座標(スクリーン座標座標)
+	    float4 Col  : COLOR;       // 頂点色
+		float4 Uv   : TEXCOORD0;
+	};
+
+#else
+
+    #version 430
+
+    #define             float2          vec2
+    #define             float3          vec3
+    #define             float4          vec4
+    #define             float4x4        mat4x4
+    #define             float3x3        mat3x3
+    #define             transpose       inverse
+
+    #define ConstantBuffer( NAME, REGNAME, NO )     layout(std140,column_major,binding=NO) uniform NAME
+
+    layout (location = 0) in vec4 inPosition;
+    layout (location = 1) in vec4 inUv;
+    layout (location = 2) in vec4 inColor;
+
+    out vec4 outPos;
+    out vec4 outCol;
+    out vec4 outUv;
+
+    out gl_PerVertex {
+        vec4 gl_Position;
+    };
+
+    struct VsInput
+    {
+        vec4 Pos;
+        vec4 Uv;
+        vec4 Col;
+    };
+
+    struct PsInput
+    {
+        vec4 Pos;
+        vec4 Col;
+        vec4 Uv;
+    };
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    mat3x3 mul( mat3x3 matA, mat3x3 matB )
+    {
+        return matA * matB;
+    }
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    mat4x4 mul( mat4x4 matA, mat4x4 matB )
+    {
+        return matA * matB;
+    }
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    vec3 mul( vec3 vec, mat3x3 mat )
+    {
+        vec3        outVec = vec3(0, 0, 0);
+        
+        outVec.x = dot( vec, mat[0] );
+        outVec.y = dot( vec, mat[1] );
+        outVec.z = dot( vec, mat[2] );
+        
+        return outVec;
+    }
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    vec4 mul( vec4 vec, mat4 mat )
+    {
+        vec4        outVec = vec4(0, 0, 0, 1);
+        
+        outVec.x = dot( vec, mat[0] );
+        outVec.y = dot( vec, mat[1] );
+        outVec.z = dot( vec, mat[2] );
+        outVec.w = dot( vec, mat[3] );
+        
+        return outVec;
+    }
+#endif
+
+// 定数バッファのデータ定義① 逆ビューポート行列
+ConstantBuffer( cbNeverChanges, b0, 0)
+{ // 常にスロット「0」を使う
+    mat4x4 InvViewPort;
+};
+
+// 頂点シェーダのエントリポイント
+#if defined HLSL
+PS_INPUT VS(VS_INPUT input)
+{
+    PS_INPUT outPut = (PS_INPUT)0;
+
+#else
+
+void main(void)
+{
+    PsInput outPut;
+    VsInput input;
+
+    input.Pos = inPosition;
+    input.Col = inColor;
+    input.Uv = inUv;
+
+#endif
+
+    // 頂点座標　モデル座標系→ビュー座標系
+    outPut.Pos = mul(input.Pos, InvViewPort);
+        
+    // 頂点色
+    outPut.Col = input.Col;
+
+	outPut.Uv = input.Uv;
+    // 出力
+
+#if defined HLSL
+    return outPut;
+#else
+    outPos = outPut.Pos;
+    outCol = outPut.Col;
+    outUv = outPut.Uv;
+
+    gl_Position = outPos;
+#endif
+}
+
+

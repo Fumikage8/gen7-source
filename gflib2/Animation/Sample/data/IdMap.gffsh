@@ -1,0 +1,58 @@
+#define				vec2					float2
+#define				vec3					float3
+#define				vec4					float4
+#define				mat4x4				float4x4
+#define				mat3x3				float3x3
+#define				inverse				transpose
+#define				Math::Vector	vec4
+
+// -------------------------------------------------------------
+// íËêî
+// -------------------------------------------------------------
+
+static const int		UvMax = 3;
+static const int		TextureMax = 4;
+
+#define		UvMap					(0)
+#define		CubeMap				(1)
+#define		SphereMap			(2)
+#define		ProjMax				(3)
+
+#define		rimPow			cVsRimParam.x
+#define		rimScale		cVsRimParam.y
+#define		phongPow			cVsRimParam.z
+#define		phongScale		cVsRimParam.w
+
+#define		bPad					bool
+#define		iPad					int
+#define		fPad					float
+
+struct PsInput
+{
+	vec4 Position											: SV_POSITION;
+	vec4 Uv[TextureMax]								: TEXCOORD0;
+	vec4 Color												: COLOR0;
+	vec3 Normal												: NORMAL0;
+	vec3 ObjNormal										: NORMAL1;
+	vec3 ObjLight											: NORAML2;
+	vec3 ObjTangentVec								: TANGENT0;
+	vec4 View													: NORMAL3;
+	vec4 Velocity0										: COLOR1;
+	vec4 Velocity1										: COLOR2;
+	vec4 Velocity2										: COLOR3;
+	vec4 DebugVec											: NORMAL4;
+};
+
+Texture2D TextureImage[TextureMax] : register( t0 );
+SamplerState Texture[TextureMax] : register( s0 );
+
+//-----------------------------------------------------------------------------
+/// @brief	ÉÅÉCÉìä÷êî
+//-----------------------------------------------------------------------------
+float4 PsMain( PsInput input ) : SV_Target
+{
+  return TextureImage[0].Sample( Texture[0], input.Uv[0].xy );
+}
+
+
+

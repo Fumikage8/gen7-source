@@ -1,0 +1,399 @@
+#ifndef HLSL
+#version 430
+#extension GL_NV_shadow_samplers_cube : enable 
+#endif
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		UvMax					(3)
+#define		TextureMax		(4)
+#define		LutMax				(6)
+
+#define		UvMap					(0)
+#define		CubeMap				(1)
+#define		SphereMap			(2)
+#define		ProjMax				(3)
+
+#define		rimPow			cVsRimParam.x
+#define		rimScale		cVsRimParam.y
+#define		phongPow			cVsRimParam.z
+#define		phongScale		cVsRimParam.w
+
+#define		bPad					bool
+#define		iPad					int
+#define		fPad					float
+
+#if defined HLSL
+
+	#define				STATIC				 static
+	
+	#define ConstantBuffer( NAME, REGNAME, NO )		cbuffer NAME : register( REGNAME )
+
+	#define				vec2					float2
+	#define				vec3					float3
+	#define				vec4					float4
+	#define				mat4x4				float4x4
+	#define				mat3x3				float3x3
+	#define				inverse				transpose
+	#define				Math::Vector	vec4
+	
+	struct PsInput
+	{
+    float4 Pos  : SV_POSITION; // 頂点座標(透視座標系)
+    float4 Col  : COLOR;       // 頂点色
+		float4 Uv0  : TEXCOORD0;     
+	};
+	
+	#define				texture2D			tex2D
+	#define				textureCube		texCUBE
+	
+	// -------------------------------------------------------------
+	// 頂点プログラムからフラグメントプログラムに渡すデータ
+	// -------------------------------------------------------------
+	static vec4 outPos;
+	static vec4 outUv[TextureMax];
+	static vec4 outColor;
+	static vec3 outObjNormal;
+	static vec3 outObjLight;
+	static vec3 outObjTangentVec;
+	static vec4 outView;
+	static vec4 outDebugVec;
+	
+	Texture2D TextureImage[TextureMax] : register( t0 );
+	SamplerState Texture[TextureMax] : register( s0 );
+
+	TextureCube CubeTextureImage : register( t4 );
+	SamplerState CubeTexture : register( s4 );
+
+	Texture2D NoizeTextureImage : register( t5 );
+	SamplerState NoizeTexture : register( s5 );
+
+	Texture2D MaterialNoizeTextureImage : register( t6 );
+	SamplerState MaterialNoizeTexture : register( s6 );
+
+	Texture2D BrushStrokeTextureImage : register( t7 );
+	SamplerState BrushStrokeTexture : register( s7 );
+
+	Texture2D HighLightTextureImage : register( t8 );
+	SamplerState HighLightTexture : register( s8 );
+
+	Texture2D LutTextureImage[LutMax] : register( t9 );
+	SamplerState LutTexture[LutMax] : register( s9 );
+
+	Texture2D OutLineColorTextureImage : register( t15 );
+	SamplerState OutLineColorTexture : register( s15 );
+
+#else
+
+	#define				STATIC				 
+	
+	#define ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+
+	#define				float2				vec2
+	#define				float3				vec3
+	#define				float4				vec4
+	#define				float4x4			mat4x4
+	#define				float3x3			mat3x3
+	#define				transpose			inverse
+	#define				Math::Vector	vec4
+
+	in vec4 outPos;
+	in vec4 outUv[TextureMax];
+	in vec4 outColor;
+	in vec3 outNormal;
+	in vec3 outObjNormal;
+	in vec3 outObjLight;
+	in vec3 outObjTangentVec;
+	in vec4 outView;
+	in vec4 outVelocity0;
+	in vec4 outVelocity1;
+	in vec4 outVelocity2;
+	in vec4 outDebugVec;
+
+	struct PsInput
+	{
+    float4 Pos;
+    float4 Col;
+		float4 Uv0;
+	};
+	
+	#define				tex2D						texture2D
+	#define				texCUBE					textureCube
+	
+	uniform sampler2D Texture[TextureMax];//テクスチャユニット
+	uniform samplerCube CubeTexture[TextureMax];//テクスチャユニット
+	uniform sampler2D LutTexture[LutMax];
+	uniform sampler2D HighLightTexture;//テクスチャユニット
+	
+	#define		lerp			mix
+
+#endif
+
+ConstantBuffer( PixcelShaderVectorConstants, b7, 7 )
+{
+	vec4 cFsUvOffSet1;
+	vec4 cFsUvOffSet2;
+};
+
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+vec3 saturate( vec3 value )
+{
+	for( int i = 0; i < 3; i++)
+	{
+		value[i] = max( 0.0, value[i] );
+		value[i] = min( 1.0, value[i] );
+	}
+
+	return value;
+}
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+vec4 saturate( vec4 value )
+{
+	for( int i = 0; i < 4; i++)
+	{
+		value[i] = max( 0.0, value[i] );
+		value[i] = min( 1.0, value[i] );
+	}
+
+	return value;
+}
+
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+float saturate( float value )
+{
+	value = max( 0.0, value );
+	value = min( 1.0, value );
+
+	return value;
+}
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+vec3 saturate( vec3 value, float minValue, float maxValue )
+{
+	for( int i = 0; i < 3; i++)
+	{
+		value[i] = max( minValue, value[i] );
+		value[i] = min( maxValue, value[i] );
+	}
+
+	return value;
+}
+
+//-----------------------------------------------------------------------------
+/// @brief	
+//-----------------------------------------------------------------------------
+float saturate( float value, float minValue, float maxValue )
+{
+	value = max( minValue, value );
+	value = min( maxValue, value );
+
+	return value;
+}
+
+
+// ------------------------------------------------------------
+// 
+// ------------------------------------------------------------
+vec4 GetNormalEdgeColor( vec4	normal[3] )
+{
+	vec4			constantColor = vec4(0.1, 0.1, 0.1, 0.6);
+	vec4			edgeColorRGB = vec4(0.0, 0.0, 0.0, 0.0);
+	vec4			edgeColorA = vec4(0.0, 0.0, 0.0, 0.0);
+
+	//コンバイナ０
+	edgeColorRGB.x = dot( normal[0].xyz, normal[1].xyz );
+	edgeColorA.x = normal[0].w + ( 1.0 - normal[1].w );
+
+	edgeColorRGB.xyzw = saturate( edgeColorRGB );
+	edgeColorA.xyzw = saturate( edgeColorA );
+
+	//コンバイナ１
+	edgeColorRGB *= dot( normal[0].xyz, normal[2].xyz );
+	edgeColorA *= normal[1].w + ( 1.0 - normal[0].w );
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ２
+	edgeColorRGB *= edgeColorRGB;
+	edgeColorRGB += constantColor;//飽和
+	edgeColorA *= normal[0].w + ( 1.0 - normal[2].w );
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ３
+	edgeColorRGB *= edgeColorRGB;
+	edgeColorA *= normal[2].w + ( 1.0 - normal[0].w );
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ４
+	edgeColorRGB *= edgeColorRGB;
+	edgeColorA -= constantColor.w;
+
+	edgeColorA *= 4.0f;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ５
+	edgeColorRGB *= edgeColorA;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+
+	return edgeColorRGB;
+}
+
+// ------------------------------------------------------------
+// 
+// ------------------------------------------------------------
+vec4 GetIDEdgeColor( vec4	idColor[3] )
+{
+	vec4			constantColor = vec4(0.1, 0.1, 0.1, 0.6);
+	vec4			edgeColorRGB = vec4(0.0, 0.0, 0.0, 0.0);
+	vec4			edgeColorA = vec4(0.0, 0.0, 0.0, 0.0);
+
+	//コンバイナ０
+	edgeColorRGB.x = ( 1.0 - idColor[0].x ) - ( 1.0 - idColor[1].x );
+	edgeColorA.x = ( 1.0 - idColor[0].x ) - ( 1.0 - idColor[2].x );
+	
+	edgeColorRGB.xyzw = edgeColorRGB.xxxx;
+	edgeColorA.xyzw = edgeColorA.xxxx;
+
+	edgeColorRGB *= 4.0f;
+	edgeColorA *= 4.0f;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+
+	//コンバイナ１
+	edgeColorRGB = edgeColorRGB + edgeColorA;
+	edgeColorA = edgeColorA;
+
+	edgeColorRGB *= 4.0f;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ２
+	edgeColorRGB = edgeColorRGB + edgeColorRGB;
+	edgeColorA = edgeColorA;
+
+	edgeColorRGB *= 4.0f;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ３
+	edgeColorRGB = (edgeColorRGB + edgeColorRGB) * (1.0 - idColor[0].x);
+	edgeColorA = edgeColorA;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+	//コンバイナ４
+	edgeColorRGB = (1.0 - edgeColorRGB);
+	edgeColorA = edgeColorA;
+
+	edgeColorRGB = saturate( edgeColorRGB );
+	edgeColorA = saturate( edgeColorA );
+
+	edgeColorRGB.w = edgeColorA.x;
+
+	return edgeColorRGB;
+}
+
+#if defined HLSL
+float4 PsMain( PsInput input ) : SV_Target
+{
+#else
+void main (void)
+{
+	PsInput				input;
+	
+	input.Pos = outPos;
+	input.Col = outColor;
+	input.Uv0 = outUv[0];
+	
+#endif
+
+	vec4	temp;
+	vec4	edgeColor;
+	vec4	normal[3];
+
+#if defined HLSL
+	normal[0] = TextureImage[0].Sample( Texture[0], input.Uv0.xy );
+	normal[1] = TextureImage[0].Sample( Texture[0], input.Uv0.xy + cFsUvOffSet1.xy );
+	normal[2] = TextureImage[0].Sample( Texture[0], input.Uv0.xy + cFsUvOffSet2.xy );
+#else
+	normal[0] = texture2D( Texture[0], input.Uv0.xy );
+	normal[1] = texture2D( Texture[0], input.Uv0.xy + cFsUvOffSet1.xy );
+	normal[2] = texture2D( Texture[0], input.Uv0.xy + cFsUvOffSet2.xy );
+#endif
+
+	for( int i = 0; i < 3; ++i )
+	{
+		normal[i].xyz -= 0.5;
+		normal[i].xyz *= 2.0;
+		normal[i].xyz = normalize( normal[i].xyz );
+	}
+	
+	edgeColor = GetNormalEdgeColor( normal );
+	
+	vec4	idEdgeColor[2];
+	vec4	idColor0[3];
+	vec4	idColor1[3];
+	
+#if defined HLSL
+	idColor0[0] = TextureImage[1].Sample( Texture[1], input.Uv0.xy );
+	idColor0[1] = TextureImage[1].Sample( Texture[1], input.Uv0.xy + cFsUvOffSet1.xy );
+	idColor0[2] = TextureImage[1].Sample( Texture[1], input.Uv0.xy + cFsUvOffSet2.xy );
+	idColor1[0] = TextureImage[1].Sample( Texture[1], input.Uv0.xy );
+	idColor1[1] = TextureImage[1].Sample( Texture[1], input.Uv0.xy + cFsUvOffSet1.xy );
+	idColor1[2] = TextureImage[1].Sample( Texture[1], input.Uv0.xy + cFsUvOffSet2.xy );
+#else
+	idColor0[0] = texture2D( Texture[1], input.Uv0.xy );
+	idColor0[1] = texture2D( Texture[1], input.Uv0.xy + cFsUvOffSet1.xy );
+	idColor0[2] = texture2D( Texture[1], input.Uv0.xy + cFsUvOffSet2.xy );
+	idColor1[0] = texture2D( Texture[1], input.Uv0.xy );
+	idColor1[1] = texture2D( Texture[1], input.Uv0.xy + cFsUvOffSet1.xy );
+	idColor1[2] = texture2D( Texture[1], input.Uv0.xy + cFsUvOffSet2.xy );
+#endif	
+	
+
+	
+	idEdgeColor[0] = GetIDEdgeColor( idColor0 );
+	idEdgeColor[1] = GetIDEdgeColor( idColor1 );
+	idEdgeColor[0] = min( idEdgeColor[0], idEdgeColor[1] );
+	
+	edgeColor.xyz *= idEdgeColor[0].xyz;
+	
+	edgeColor = saturate( edgeColor );
+	edgeColor.y = edgeColor.x;
+	edgeColor.z = edgeColor.x;
+	edgeColor.w = 1.0f - edgeColor.x;
+	
+	
+	
+	
+#if defined HLSL
+//	edgeColor = TextureImage[0].Sample( Texture[0], input.Uv0.xy );
+//	edgeColor = TextureImage[1].Sample( Texture[1], input.Uv0.xy );
+
+	return edgeColor;
+#else
+//	edgeColor = texture2D( Texture[0], input.Uv0.xy );
+//	edgeColor = texture2D( Texture[1], input.Uv0.xy );
+
+	gl_FragColor = edgeColor;
+#endif
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <!--PreprocessorDefinitions-->
+    <ClCompile>
+      <PreprocessorDefinitions Condition="'$(GF_NIJI_BUILD_VERSION)'==''">PM_VERSION=$(GFCasetteVersionSun);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GF_NIJI_BUILD_VERSION)'=='VERSION_MOON'">PM_VERSION=$(GFCasetteVersionMoon);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GF_NIJI_BUILD_VERSION)'=='VERSION_SUN'">PM_VERSION=$(GFCasetteVersionSun);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile>
+      <!-- Only For Jenkins Build Option -->
+      <PreprocessorDefinitions Condition="'$(SKIP_LANG_SELECT)'=='1'">SKIP_LANG_SELECT=$(SKIP_LANG_SELECT);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(Platform)'=='CTR'">
+      <PreprocessorDefinitions>GF_PLATFORM_CTR;GFL_PLATFORM_3DS;GFL_PLATFORM_NINTENDO;GF_DEVELOP_HIO_RESOURCE=$(GFDevelopHIOResourceVal);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Debug'">GFL_HIO_ENABLE=1;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Develop'">GFL_HIO_ENABLE=1;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;NN_SWITCH_ENABLE_HOST_IO=1;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Release'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFX_CTR_PROFILING_ENABLED;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Final'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=1;GFL2_UI_USE_GYROSCOPE;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(Platform)'=='Win32'">
+      <PreprocessorDefinitions>GF_PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Debug'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=0;GFL_ENABLE_DYNAMIC_HEADER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Develop'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=0;GFL_ENABLE_DYNAMIC_HEADER=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Release'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=0;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(GFConfig)'=='Final'">GFL_HIO_ENABLE=0;GFL_SOUND_HIO_ENABLE=0;GFL_RO_ENABLE=0;GFL_ENABLE_DYNAMIC_HEADER=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(GFConfig)'=='Debug'">
+      <PreprocessorDefinitions>GF_CONFIG_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG_ONLY_FOR_$(USERNAME);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GFL_DEBUG=1;GFL_DEBUG_PRINT=1;GFL_ENABLE_ASSERT=1;GFL_SCRIPT_HIO_ENABLE=1;GFL2_USE_IMAGE_DB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PM_DEBUG=1;PM_DEBUG_PRINT=1;PM_ENABLE_OPTIMIZE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PML_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(GFConfig)'=='Develop'">
+      <PreprocessorDefinitions>GF_CONFIG_DEVELOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG_ONLY_FOR_$(USERNAME);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GFL_DEBUG=1;GFL_DEBUG_PRINT=1;GFL_ENABLE_ASSERT=1;GFL_SCRIPT_HIO_ENABLE=1;GFL2_USE_IMAGE_DB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PM_DEBUG=1;PM_DEBUG_PRINT=1;PM_ENABLE_OPTIMIZE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PML_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(GFConfig)'=='Release'">
+      <PreprocessorDefinitions>GF_CONFIG_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG_ONLY_FOR_$(USERNAME);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GFL_DEBUG=1;GFL_DEBUG_PRINT=0;GFL_ENABLE_ASSERT=1;GFL_SCRIPT_HIO_ENABLE=0;GFL2_USE_IMAGE_DB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PM_DEBUG=1;PM_DEBUG_PRINT=0;PM_ENABLE_OPTIMIZE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PML_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(GFConfig)'=='Final'">
+      <PreprocessorDefinitions>GF_CONFIG_FINAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GFL_DEBUG=0;GFL_DEBUG_PRINT=0;GFL_ENABLE_ASSERT=0;GFL_SCRIPT_HIO_ENABLE=0;GFL2_USE_IMAGE_DB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PM_DEBUG=0;PM_DEBUG_PRINT=0;PM_ENABLE_OPTIMIZE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PML_DEBUG=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(Platform)'=='CTR'">
+      <GFSetMessageToSilent>1,228,381,1301,826,1299,2530</GFSetMessageToSilent>
+      <DisableDiagWarningMessage>177,193,550</DisableDiagWarningMessage>
+      <DisableDiagErrorMessage Condition="'$(GFConfig)'=='Final'">68,88,174,188,223,warning</DisableDiagErrorMessage>
+      <SetMessageToSilent>1,228,381,1301,826,1299,2530,$(CTR_DIAG_MESSAGE),186,340,401,1256,1297,1568,1764,1786,1788,2523,2819,96,1794,1801,2442,optimizations</SetMessageToSilent>
+    </ClCompile>
+    <ClCompile Label="Configuration" Condition="'$(Platform)'=='Win32'">
+      <DisableSpecificWarnings>4100;4201;4244;4819</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="Configuration" Condition="'$(Platform)'=='Win32'">
+    <Link Label="Configuration" Condition="'$(ConfigurationType)'=='Application'">
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Link Label="Configuration" Condition="'$(ConfigurationType)'=='RoApplication'">
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Lib Label="Configuration" Condition="'$(ConfigurationType)'=='StaticLibrary'">
+      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+  <PropertyGroup Label="Configuration" Condition="'$(Platform)'=='Win32'">
+    <LibraryPath>$(SolutionDir)$(GFConfig);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(GFLIB2_DIR)\pawn\;$(GFLIB2_DIR)\rtti\;$(IncludePath)</IncludePath>
+    <IncludePath>$(NIJI_ARC_DIR);$(NIJI_CONV_HEADER_DIR);$(NIJI_REFERENCE_FILES_DIR);$(IncludePath)</IncludePath>
+    <IncludePath>$(NIJI_PROJECT_PROG_DIR);$(NIJI_PROJECT_DIR);$(GFLIB2_DIR);$(PMLIB_DIR);$(POKE3DLIB_DIR);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+</Project>

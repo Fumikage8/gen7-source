@@ -1,0 +1,162 @@
+#ifndef HLSL
+#version 430
+#extension GL_NV_shadow_samplers_cube : enable 
+#endif
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+#define TEXTURE_MAX (5)
+
+#if defined HLSL
+
+    #define             STATIC               static
+    
+    #define ConstantBuffer( NAME, REGNAME, NO )     cbuffer NAME : register( REGNAME )
+
+    #define             vec2                float2
+    #define             vec3                float3
+    #define             vec4                float4
+    #define             mat4x4          float4x4
+    #define             mat3x3          float3x3
+    #define             inverse         transpose
+
+	// ピクセル シェーダの入力データ定義
+	struct PS_INPUT {
+	    float4 Pos  : SV_POSITION; // 頂点座標(スクリーン座標座標)
+	    float4 Col  : COLOR;       // 頂点色
+		float4 Uv   : TEXCOORD0;
+	};
+
+    // -------------------------------------------------------------
+    // 頂点プログラムからフラグメントプログラムに渡すデータ
+    // -------------------------------------------------------------
+    static vec4 outPos;
+    static vec4 outCol;
+    static vec4 outUv;
+
+    #define             texture2D           tex2D
+    #define             textureCube     texCUBE
+
+    Texture2D       g_Texture[TEXTURE_MAX] : register( t0 );
+    SamplerState    g_Sampler[TEXTURE_MAX] : register( s0 );
+
+#else
+
+    #define             STATIC               
+    
+    #define ConstantBuffer( NAME, REGNAME, NO )     layout(std140,column_major,binding=NO) uniform NAME
+
+    #define             float2              vec2
+    #define             float3              vec3
+    #define             float4              vec4
+    #define             float4x4            mat4x4
+    #define             float3x3            mat3x3
+    #define             transpose           inverse
+    #define             Math::Vector    vec4
+
+    in vec4 outPos;
+    in vec4 outCol;
+    in vec4 outUv;
+
+    struct PsInput
+    {
+        vec4 Pos;
+        vec4 Col;
+        vec4 Uv;
+    };
+
+    //uniform sampler2D g_Texture[TEXTURE_MAX];
+    layout(binding = 1) uniform sampler2D g_Texture[TEXTURE_MAX];
+
+    #define     lerp            mix
+
+#endif
+
+// 定数バッファのデータ定義① 逆ビューポート行列
+ConstantBuffer( cbNeverChanges, b0, 0)
+{ // 常にスロット「0」を使う
+    mat4x4 InvViewPort;
+};
+
+
+STATIC vec4                 gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+
+// ピクセル シェーダのエントリポイント
+#if defined HLSL
+float4 PS(PS_INPUT input) : SV_TARGET
+{
+	outPos = input.Pos;
+	outCol = input.Col;
+	outUv = input.Uv;
+
+#else
+void main(void)
+{
+#endif
+	float4 color;
+	// UV座標のvの要素は, テクスチャが5枚だったら,
+	// 0.0f - 5.0fの範囲で受け取るので, このようにして端数を弾き,
+	// テクスチャのインデックス番号と0.0f - 1.0f範囲内のv座標を受け取る
+#if defined HLSL
+	int index = (int)floor(input.Uv.y);
+	input.Uv.y -= (float)index;
+#else
+	int index = int(floor(outUv.y));
+	vec2 uv;
+	uv.x = outUv.x;
+	uv.y = outUv.y - float(index);
+#endif
+
+	// color = index * g_Texture[index].Sample( g_Sampler[index], input.Uv.xy) * input.Col;
+	// ↑本当はこう書きたかったが, 動的配列アクセスをサポートしていないので,
+	// if文のオンパレードになっている.
+	// TODO : ボリュームテクスチャに対応したら切り替える
+	if(index == 0)
+	{
+#if defined HLSL
+		color = g_Texture[0].Sample( g_Sampler[0], input.Uv.xy);
+#else
+		color = texture2D( g_Texture[0], uv.xy);
+#endif
+	}
+	else if(index == 1)
+	{
+#if defined HLSL
+		color = g_Texture[1].Sample( g_Sampler[1], input.Uv.xy);
+#else
+		color = texture2D( g_Texture[1], uv.xy);
+#endif
+	}
+	else if(index == 2)
+	{
+#if defined HLSL
+		color = g_Texture[2].Sample( g_Sampler[2], input.Uv.xy);
+#else
+		color = texture2D( g_Texture[2], uv.xy);
+#endif
+	}
+	else if(index == 3)
+	{
+#if defined HLSL
+		color = g_Texture[3].Sample( g_Sampler[3], input.Uv.xy);
+#else
+		color = texture2D( g_Texture[3], uv.xy);
+#endif
+	}
+	else if(index == 4)
+	{
+#if defined HLSL
+		color = g_Texture[4].Sample( g_Sampler[4], input.Uv.xy);
+#else
+		color = texture2D( g_Texture[4], uv.xy);
+#endif
+	}
+
+	color *= outCol;
+	gl_FragColor = color;
+
+#if defined HLSL
+	return gl_FragColor;
+#endif
+}

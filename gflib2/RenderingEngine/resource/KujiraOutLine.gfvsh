@@ -1,0 +1,147 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■
+■				頂点シェーダー
+■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+
+#define		UvMax					(3)
+#define		TextureMax		(4)
+
+#define		UvMap					(0)
+#define		CubeMap				(1)
+#define		SphereMap			(2)
+#define		ProjMax				(3)
+
+#define		rimPow			cVsRimParam.x
+#define		rimScale		cVsRimParam.y
+#define		phongPow		cVsRimParam.z
+#define		phongScale	cVsRimParam.w
+
+#if defined HLSL
+
+	#define				vec2				float2
+	#define				vec3				float3
+	#define				vec4				float4
+	#define				mat4x4			float4x4
+	#define				mat3x3			float3x3
+	#define				inverse			transpose
+
+	#define ConstantBuffer( NAME, REGNAME, NO )		cbuffer NAME : register( REGNAME )
+	
+	// 頂点シェーダの入力データ定義
+	struct VsInput {
+		uint    vIndex    : SV_VertexID;
+	};
+
+	// ピクセル シェーダの入力データ定義
+	struct PsInput {
+	    float4 Pos  : SV_POSITION; // 頂点座標(透視座標系)
+	    float4 Col  : COLOR;       // 頂点色
+			float4 Uv0  : TEXCOORD0;     
+	};
+
+#else
+
+	#version 430
+
+	#define				float2			vec2
+	#define				float3			vec3
+	#define				float4			vec4
+	#define				float4x4		mat4x4
+	#define				float3x3		mat3x3
+	#define				transpose		inverse
+
+	#define ConstantBuffer( NAME, REGNAME, NO )		layout(std140,column_major,binding=NO) uniform NAME
+
+	layout (location = 0) in int gl_VertexID;
+
+  out gl_PerVertex {
+    vec4 gl_Position;
+  };
+
+	out vec4 outPos;
+	out vec4 outUv[TextureMax];
+	out vec4 outColor;
+	out vec3 outNormal;
+	out vec3 outObjNormal;
+	out vec3 outObjLight;
+	out vec3 outObjTangentVec;
+	out vec4 outView;
+	out vec4 outVelocity0;
+	out vec4 outVelocity1;
+	out vec4 outVelocity2;
+	out vec4 outDebugVec;
+
+	struct VsInput {
+		int    vIndex;
+	};
+
+	struct PsInput {
+		vec4 Pos;
+		vec4 Col;
+		vec4 Uv0;
+	};
+	
+#endif
+
+
+
+#if defined HLSL
+PsInput VsMain( VsInput input )
+{
+	PsInput			outPut = (PsInput)0;
+	
+	float2  texlist[4]= {
+		{    0.0f,  0.0f    },
+		{    1.0f,  0.0f    },
+		{    0.0f,  1.0f    },
+		{    1.0f,  1.0f    },
+	};
+	
+#else
+
+void main( void )
+{
+	PsInput			outPut;
+	VsInput			input;
+	
+	input.vIndex = gl_VertexID;
+	
+	float2  texlist[4]= {
+		{    0.0f,  1.0f    },
+		{    1.0f,  1.0f    },
+		{    0.0f,  0.0f    },
+		{    1.0f,  0.0f    },
+	};
+
+#endif
+	
+	float4  poslist[4]= {
+		{ -1.0f,  1.0f, 0.0f, 1.0f },
+		{  1.0f,  1.0f, 0.0f, 1.0f },
+		{ -1.0f, -1.0f, 0.0f, 1.0f },
+		{  1.0f, -1.0f, 0.0f, 1.0f },
+	};
+	
+	outPut.Pos = poslist[ input.vIndex ];
+	
+	outPut.Uv0.xy = texlist[ input.vIndex ].xy;
+	
+#if defined HLSL
+	return outPut;
+}
+
+#else
+
+	outPos = outPut.Pos;
+	outUv[0] = outPut.Uv0;
+	outColor = outPut.Col;
+	
+	gl_Position = outPos;
+}
+
+#endif
+

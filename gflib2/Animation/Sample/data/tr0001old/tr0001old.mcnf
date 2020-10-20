@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+	<INTEREST>
+		<NODE _Name="Spine2" _Type="X" _Low="-30" _High="30"/>
+		<NODE _Name="Neck" _Type="X" _Low="-30" _High="30"/>
+		<NODE _Name="Head" _Type="XY" _Low="-30" _High="30" _Low2="-20" _High2="55"/>
+	</INTEREST>
+	<IK _Chain="RThigh" _Joint="RLeg" _Effector="RFoot" _Type="reverse" _Tip="RToe" _Land="true" />
+	<IK _Chain="LThigh" _Joint="LLeg" _Effector="LFoot" _Type="reverse" _Tip="LToe" _Land="true" />
+	<COLLISION_BALL _Dst="Head" _Radius="25" _OffsetX="20" />
+	<COLLISION_BALL _Dst="Spine2" _Radius="30" _OffsetX="20" />
+	<COLLISION_BALL _Dst="Waist" _Radius="25" _OffsetX="10" />
+</root>
+

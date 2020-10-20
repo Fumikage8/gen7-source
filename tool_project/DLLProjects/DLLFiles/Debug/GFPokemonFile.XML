@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GFPokemonFile</name>
+    </assembly>
+    <members>
+        <member name="T:GFPokemonFile.GfmotFaceData">
+            <summary>
+            表情のgfmotから抽出したデータ
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceData.m_AnimationType">
+            <summary>
+            表情を制御しているアニメーションの種類
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceData.m_FrameSize">
+            <summary>
+            フレーム数
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.GfmotFaceData.#ctor(GFPokemonFile.GfmotFaceData.AnimationType,System.UInt32)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="animationType">表情を制御しているアニメーションの種類(Skeltal, Uv, Visibility)</param>
+            <param name="frameSize">フレーム数</param>
+        </member>
+        <member name="P:GFPokemonFile.GfmotFaceData.HasJoint">
+            <summary>
+            ジョイント制御になっているか
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.GfmotFaceData.HasUv">
+            <summary>
+            テクスチャ制御になっているか
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.GfmotFaceData.FrameSize">
+            <summary>
+            フレーム数
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.GfmotFaceData.AnimationType">
+            <summary>
+            表情のモーションの種類(Skeltal, Uv, Visibility), 名称はgfmotのタグ名(SkeltalAnimation, UvAnimation, VisibilityAnimation)に関連.
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceData.AnimationType.None">
+            <summary>
+            表情がない
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceData.AnimationType.Skeltal">
+            <summary>
+            ジョイントによる表情制御
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceData.AnimationType.Uv">
+            <summary>
+            テクスチャによる表情制御
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceData.AnimationType.Visibility">
+            <summary>
+            ビジビリティによる表情制御
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.GfmotFaceDataReader">
+            <summary>
+            Gfmotの表情データ読み取りクラス
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.GfmotFaceDataReader.m_FacePatternRegexDictionary">
+            <summary>
+            eye01, eye02,...表情データに関連する正規表現
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.GfmotFaceDataReader.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.GfmotFaceDataReader.CreateFaceDataFromGfmot(System.String)">
+            <summary>
+            表情のgfmot(eye01.gfmot, mouth01.gfmotなど)からGfmotFaceDataを作成
+            </summary>
+            <param name="gfmotFilePath">ファイルパス</param>
+            <returns>GfmotFaceData GfmotFaceDataオブジェクト. 生成できなかった場合はnull.</returns>
+        </member>
+        <member name="T:GFPokemonFile.GfmotFaceDataReader.FacePattern">
+            <summary>
+            表情のパーツの種類
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.GfmotFaceDataReader.SkeltalFaceData">
+            <summary>
+            スケルタルの表情のデータ
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.PokemonDirectoryData">
+            <summary>
+            ポケモンのディレクトリから抽出したデータ
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.PokemonDirectoryData.#ctor(System.UInt16,System.UInt16,System.String,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="developmentNo">開発番号</param>
+            <param name="formNo">フォルム番号</param>
+            <param name="developmentName">開発名</param>
+            <param name="seriesName">シリーズ名</param>
+        </member>
+        <member name="F:GFPokemonFile.PokemonDirectoryData.m_PokemonUniqueNo">
+            <summary>
+            ポケモンを一意に識別するユニーク番号
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonDirectoryData.m_DevelopmentName">
+            <summary>
+            開発名
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonDirectoryData.m_SeriesName">
+            <summary>
+            シリーズ名
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonDirectoryData.UniqueNo">
+            <summary>
+            ユニーク番号(上位16bit : 開発番号, 下位16bit : フォルム番号)
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonDirectoryData.DevelopmentNo">
+            <summary>
+            開発番号
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonDirectoryData.FormNo">
+            <summary>
+            フォルム番号
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonDirectoryData.DevelopmentName">
+            <summary>
+            開発名
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonDirectoryData.SeriesName">
+            <summary>
+            シリーズ名
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.PokemonDirectoryNameSplitter">
+            <summary>
+            ポケモンのディレクトリ名から必要な情報を抽出するクラス
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.PokemonDirectoryNameSplitter.#ctor">
+            <summary>
+            コンストラクタ. 正規表現を初期化
+            </summary>
+            <remarks>msgpackでシリアライズしたシリーズ名のファイルを受け取って, rg, gsなどのシリーズ名が取れるようにする</remarks>
+        </member>
+        <member name="M:GFPokemonFile.PokemonDirectoryNameSplitter.SplitToPokemonDirectoryData(System.String)">
+            <summary>
+            受け取ったディレクトリ名を分解してPokemonDirectoryDataオブジェクトを作成
+            <para>ディレクトリ名から開発番号, フォルム番号, 開発名, シリーズ名を抽出</para>
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonDirectoryNameSplitter.m_PokemonDirectoryRegex">
+            <summary>
+            ポケモンのディレクトリ用の正規表現
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonDirectoryNameSplitter.m_SeriesNames">
+            <summary>
+            シリーズのディレクトリ名(あくまで従来のシリーズが存在しているかのチェック用. 今後の追加されたシリーズ名はmsgpackのシリアライズデータを使う)
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.PokemonRegularExpression">
+            <summary>
+            ポケモンのファイル・ディレクトリ用正規表現クラス
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonRegularExpression.UniqueNoRegex">
+            <summary>
+            ポケモンのユニーク番号用正規表現("pm0025_00", "pm0006_51"など)
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonRegularExpression.DirectoryRegex">
+            <summary>
+            ポケモンのディレクトリ用正規表現("pm0025_00_pikachu", "pm0474_00_porygon-z"など)
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonRegularExpression.SettingXmlRegex">
+            <summary>
+             setting.xmlのディレクトリ用正規表現("pm0025_00_setting.xml"など)
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonRegularExpression.RareSettingXmlRegex">
+            <summary>
+             rare_setting.xmlのディレクトリ用正規表現("pm0025_00_rare_setting.xml"など)
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.PokemonUniqueNo">
+            <summary>
+            ポケモンを一意に識別する番号
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.PokemonUniqueNo.#ctor(System.UInt16,System.UInt16)">
+            <summary>
+            コンストラクタ(開発番号, フォルム番号指定)
+            </summary>
+            <param name="developmentNo">開発番号</param>
+            <param name="formNo">フォルム番号</param>
+        </member>
+        <member name="M:GFPokemonFile.PokemonUniqueNo.#ctor(System.UInt32)">
+            <summary>
+            コンストラクタ(ユニーク番号指定. 開発番号上位16bit, フォルム番号下位16bit)
+            </summary>
+            <param name="uniqueNo">ユニーク番号(上位16bit : 開発番号, 下位16bit : フォルム番号)</param>
+        </member>
+        <member name="M:GFPokemonFile.PokemonUniqueNo.#ctor(System.String)">
+            <summary>
+            コンストラクタ(ユニーク番号文字列指定. "pm0025_00"などのフォーマットの文字列を含む文字列)
+            </summary>
+            <param name="uniqueNoString">"pm0025_00"などのフォーマットの文字列を含む文字列</param>
+        </member>
+        <member name="F:GFPokemonFile.PokemonUniqueNo.UniqueNoShift">
+            <summary>
+            UniqueNoを操作する際のシフト数
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonUniqueNo.FormNoMask">
+            <summary>
+            FormNoのマスク(下位16bit)
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonUniqueNo.DevelopmentNoMask">
+            <summary>
+            DevelopmentNoのマスク(上位16bit)
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonUniqueNo.m_DevelopmentNo">
+            <summary>
+            開発番号
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.PokemonUniqueNo.m_FormNo">
+            <summary>
+            フォルム番号
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonUniqueNo.UniqueNo">
+            <summary>
+            ユニーク番号(上位16bit : 開発番号, 下位16bit : フォルム番号)
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonUniqueNo.DevelopmentNo">
+            <summary>
+            開発番号
+            </summary>
+        </member>
+        <member name="P:GFPokemonFile.PokemonUniqueNo.FormNo">
+            <summary>
+            フォルム番号
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.SeriesDirectoryCollector">
+            <summary>
+            全シリーズのディレクトリを収集するクラス
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.SeriesDirectoryCollector.m_PokemonDirectoryRegex">
+            <summary>
+            ポケモンのディレクトリを見分ける正規表現
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.SeriesDirectoryCollector.m_AllPokemonDirectories">
+            <summary>
+            シリーズ全部のポケモンのディレクトリ
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.SeriesDirectoryCollector.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="rootDirectory">ルートディレクトリ</param>
+        </member>
+        <member name="M:GFPokemonFile.SeriesDirectoryCollector.CollectFilePathsWithFileName(System.String,System.String)">
+            <summary>
+            指定したファイル名に該当したファイルパスを収集する
+            </summary>
+            <param name="fileName">ファイル名</param>
+            <param name="searchDirectory">検索対象のディレクトリ(pmNNNN_FF_name以下のディレクトリ名)</param>
+            <returns>string[] 一致したファイルパス群</returns>
+        </member>
+        <member name="M:GFPokemonFile.SeriesDirectoryCollector.CollectFilePathsWithRegex(System.Text.RegularExpressions.Regex,System.String)">
+            <summary>
+            指定した正規表現に該当したファイルパスを収集する
+            </summary>
+            <param name="regex">正規表現</param>
+            <param name="searchDirectory">検索対象のディレクトリ(pmNNNN_FF_name以下のディレクトリ名)</param>
+            <returns>string[] 正規表現に一致したファイルパス群</returns>
+        </member>
+        <member name="P:GFPokemonFile.SeriesDirectoryCollector.AllPokemonDirectories">
+            <summary>
+            シリーズ全部のポケモンのディレクトリのプロパティ
+            </summary>
+        </member>
+        <member name="T:GFPokemonFile.SeriesDirectoryCollector.DevelopmentNoComparer">
+            <summary>
+            開発番号順に並べるための並び替えクラス
+            </summary>
+        </member>
+        <member name="F:GFPokemonFile.SeriesDirectoryCollector.DevelopmentNoComparer.m_PokemonDirectoryRegex">
+            <summary>
+            ポケモンのディレクトリを見分ける正規表現
+            </summary>
+        </member>
+        <member name="M:GFPokemonFile.SeriesDirectoryCollector.DevelopmentNoComparer.#ctor(System.Text.RegularExpressions.Regex)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="pokemonDirectoryRegex">ポケモンのディレクトリを見分ける正規表現</param>
+        </member>
+        <member name="M:GFPokemonFile.SeriesDirectoryCollector.DevelopmentNoComparer.Compare(System.Object,System.Object)">
+            <summary>
+            比較関数. 開発IDとフォルムIDを比較して小さい番号を返す
+            </summary>
+            <remarks>
+            "pmNNNN_FF"が入っているかどうかを判定し, あれば番号に分解して比較
+            </remarks>
+            <param name="x">左辺値(文字列)</param>
+            <param name="y">右辺値(文字列)</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<root>
+	<INTEREST>
+		<NODE _Name="Head" _Type="YZ" _Low="-20" _High="20" _Low2="-20" _High2="20" _Speed="100"/>
+	</INTEREST>
+	<MOUTH _Name="Jaw"/>
+</root>
+

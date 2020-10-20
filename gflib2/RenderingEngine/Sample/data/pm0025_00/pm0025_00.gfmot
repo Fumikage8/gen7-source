@@ -1,0 +1,1090 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfMotion version="1.0" FrameSize="165" IsLoop="false" CurrrentUnit="">
+	<Source Path="C:/home/xy_pokemon/rg/pm0025_00_pikachu/scenes/pm0025_00.mb" TargetNode="|pm0025_00_pikachu"/>
+	<ModelAABB>-17.045349 -0.014680 -30.285814 26.162224 51.323486 16.362196</ModelAABB>
+	<UvAnimation>
+		<Material Name="BodyB">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="100" Value="0" Slope="0"/>
+					<HermiteKey Frame="101" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="102" Value="0.25" Slope="0.125"/>
+					<HermiteKey Frame="103" Value="0.25" Slope="0"/>
+					<HermiteKey Frame="105" Value="0.25" Slope="0"/>
+					<HermiteKey Frame="106" Value="0.25" Slope="0.125"/>
+					<HermiteKey Frame="107" Value="0.5" Slope="0.125"/>
+					<HermiteKey Frame="108" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="110" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="111" Value="0.5" Slope="0.125"/>
+					<HermiteKey Frame="112" Value="0.75" Slope="0.125"/>
+					<HermiteKey Frame="113" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="115" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="116" Value="0.75" Slope="-0.375"/>
+					<HermiteKey Frame="117" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="118" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="100" Value="0" Slope="0"/>
+					<HermiteKey Frame="101" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="102" Value="0.25" Slope="0.125"/>
+					<HermiteKey Frame="103" Value="0.25" Slope="0"/>
+					<HermiteKey Frame="105" Value="0.25" Slope="0"/>
+					<HermiteKey Frame="106" Value="0.25" Slope="0.125"/>
+					<HermiteKey Frame="107" Value="0.5" Slope="0.125"/>
+					<HermiteKey Frame="108" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="110" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="111" Value="0.5" Slope="0.125"/>
+					<HermiteKey Frame="112" Value="0.75" Slope="0.125"/>
+					<HermiteKey Frame="113" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="115" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="116" Value="0.75" Slope="-0.375"/>
+					<HermiteKey Frame="117" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="118" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="100" Value="0" Slope="0"/>
+					<HermiteKey Frame="101" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="102" Value="0.25" Slope="0.125"/>
+					<HermiteKey Frame="103" Value="0.25" Slope="0"/>
+					<HermiteKey Frame="105" Value="0.25" Slope="0"/>
+					<HermiteKey Frame="106" Value="0.25" Slope="0.125"/>
+					<HermiteKey Frame="107" Value="0.5" Slope="0.125"/>
+					<HermiteKey Frame="108" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="110" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="111" Value="0.5" Slope="0.125"/>
+					<HermiteKey Frame="112" Value="0.75" Slope="0.125"/>
+					<HermiteKey Frame="113" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="115" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="116" Value="0.75" Slope="-0.375"/>
+					<HermiteKey Frame="117" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="118" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="LEye">
+			<TextureSlot No="0">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="9" Value="1" Slope="0"/>
+					<HermiteKey Frame="10" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="11" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="13" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="14" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="15" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="16" Value="1" Slope="0"/>
+					<HermiteKey Frame="165" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="4" Value="0" Slope="0"/>
+					<HermiteKey Frame="5" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="6" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="7" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="8" Value="0.25" Slope="-0.25"/>
+					<HermiteKey Frame="9" Value="0" Slope="0.25"/>
+					<HermiteKey Frame="10" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="11" Value="0" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="13" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="14" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="15" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="16" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="9" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="10" Value="1.75" Slope="-0.25"/>
+					<HermiteKey Frame="11" Value="1.25" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="13" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="14" Value="1.25" Slope="0.25"/>
+					<HermiteKey Frame="15" Value="1.75" Slope="0.25"/>
+					<HermiteKey Frame="16" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="165" Value="1.75" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="4" Value="0" Slope="0"/>
+					<HermiteKey Frame="5" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="6" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="7" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="8" Value="0.25" Slope="-0.25"/>
+					<HermiteKey Frame="9" Value="0" Slope="0.25"/>
+					<HermiteKey Frame="10" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="11" Value="0" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="13" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="14" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="15" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="16" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="REye">
+			<TextureSlot No="0">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="9" Value="1" Slope="0"/>
+					<HermiteKey Frame="10" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="11" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="13" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="14" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="15" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="16" Value="1" Slope="0"/>
+					<HermiteKey Frame="165" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="4" Value="0" Slope="0"/>
+					<HermiteKey Frame="5" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="6" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="7" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="8" Value="0.25" Slope="-0.25"/>
+					<HermiteKey Frame="9" Value="0" Slope="0.25"/>
+					<HermiteKey Frame="10" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="11" Value="0" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="13" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="14" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="15" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="16" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="9" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="10" Value="1.75" Slope="-0.25"/>
+					<HermiteKey Frame="11" Value="1.25" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="13" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="14" Value="1.25" Slope="0.25"/>
+					<HermiteKey Frame="15" Value="1.75" Slope="0.25"/>
+					<HermiteKey Frame="16" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="165" Value="1.75" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="4" Value="0" Slope="0"/>
+					<HermiteKey Frame="5" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="6" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="7" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="8" Value="0.25" Slope="-0.25"/>
+					<HermiteKey Frame="9" Value="0" Slope="0.25"/>
+					<HermiteKey Frame="10" Value="0.75" Slope="0"/>
+					<HermiteKey Frame="11" Value="0" Slope="-0.25"/>
+					<HermiteKey Frame="12" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="13" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="14" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="15" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="16" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="Mouth">
+			<TextureSlot No="0">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1" Slope="0"/>
+					<HermiteKey Frame="22" Value="1" Slope="0"/>
+					<HermiteKey Frame="23" Value="1" Slope="-0.25"/>
+					<HermiteKey Frame="24" Value="0.5" Slope="-0.25"/>
+					<HermiteKey Frame="25" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="26" Value="0.5" Slope="0"/>
+					<HermiteKey Frame="27" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="28" Value="1" Slope="0.25"/>
+					<HermiteKey Frame="29" Value="1" Slope="0"/>
+					<HermiteKey Frame="165" Value="1" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="19" Value="0" Slope="0"/>
+					<HermiteKey Frame="20" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="21" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="22" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="23" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="24" Value="0" Slope="-0.25"/>
+					<HermiteKey Frame="25" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="26" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="27" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="28" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="29" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<HermiteKey Frame="0" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="22" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="23" Value="1.75" Slope="-0.25"/>
+					<HermiteKey Frame="24" Value="1.25" Slope="-0.25"/>
+					<HermiteKey Frame="25" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="26" Value="1.25" Slope="0"/>
+					<HermiteKey Frame="27" Value="1.25" Slope="0.25"/>
+					<HermiteKey Frame="28" Value="1.75" Slope="0.25"/>
+					<HermiteKey Frame="29" Value="1.75" Slope="0"/>
+					<HermiteKey Frame="165" Value="1.75" Slope="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0" Slope="0"/>
+					<HermiteKey Frame="19" Value="0" Slope="0"/>
+					<HermiteKey Frame="20" Value="0" Slope="0.125"/>
+					<HermiteKey Frame="21" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="22" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="23" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="24" Value="0" Slope="-0.25"/>
+					<HermiteKey Frame="25" Value="0.25" Slope="0.25"/>
+					<HermiteKey Frame="26" Value="0.5" Slope="0.25"/>
+					<HermiteKey Frame="27" Value="0.75" Slope="-0.25"/>
+					<HermiteKey Frame="28" Value="0" Slope="-0.375"/>
+					<HermiteKey Frame="29" Value="0" Slope="0"/>
+					<HermiteKey Frame="165" Value="0" Slope="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+	</UvAnimation>
+	<TexturePatternAnimation/>
+	<BlendShapeAnimation/>
+	<VisibilityAnimation>
+		<Mesh Name="pm0025_00_BodySkinShape">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+		<Mesh Name="pm0025_00_SippoSkinShape">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+	</VisibilityAnimation>
+	<AttributeKeyAnimation/>
+	<ShaderAnimation/>
+	<SkeltalAnimation>
+		<Node Name="Waist">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00178271399"/>
+				<HermiteKey Frame="156" Value="0.00356542798" Slope="0.00178271399"/>
+				<HermiteKey Frame="157" Value="0.00356542798" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.00356542798" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.08630264367" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.08630264367" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.08630264367" Slope="0.09029182263"/>
+				<HermiteKey Frame="156" Value="0.09428100159" Slope="0.09029182263"/>
+				<HermiteKey Frame="157" Value="0.09428100159" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.09428100159" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="1.57079632679" Slope="0"/>
+				<HermiteKey Frame="154" Value="1.57079632679" Slope="0"/>
+				<HermiteKey Frame="155" Value="1.57079632679" Slope="0.00032137957"/>
+				<HermiteKey Frame="156" Value="1.57143908593" Slope="0.00032137957"/>
+				<HermiteKey Frame="159" Value="1.57143908593" Slope="0"/>
+				<HermiteKey Frame="165" Value="1.57143908593" Slope="0"/>
+			</RotateZ>
+			<TranslateY>
+				<HermiteKey Frame="0" Value="14.28526393588" Slope="0"/>
+				<HermiteKey Frame="154" Value="14.28526393588" Slope="0"/>
+				<HermiteKey Frame="155" Value="14.28526393588" Slope="-1.68649164794"/>
+				<HermiteKey Frame="156" Value="10.91228064" Slope="-1.68649164794"/>
+				<HermiteKey Frame="157" Value="10.91228064" Slope="0"/>
+				<HermiteKey Frame="165" Value="10.91228064" Slope="0"/>
+			</TranslateY>
+			<TranslateZ>
+				<HermiteKey Frame="0" Value="0.26272211765" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.26272211765" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.26272211765" Slope="-0.65090866083"/>
+				<HermiteKey Frame="156" Value="-1.039095204" Slope="-0.65090866083"/>
+				<HermiteKey Frame="157" Value="-1.039095204" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.039095204" Slope="0"/>
+			</TranslateZ>
+		</Node>
+		<Node Name="Spine1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.00042260061"/>
+				<HermiteKey Frame="156" Value="-0.00084520122" Slope="-0.00042260061"/>
+				<HermiteKey Frame="158" Value="-0.00084520122" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.00084520122" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.0294458626"/>
+				<HermiteKey Frame="156" Value="-0.0588917252" Slope="-0.0294458626"/>
+				<HermiteKey Frame="157" Value="-0.0588917252" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.0588917252" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00097306197"/>
+				<HermiteKey Frame="156" Value="0.00194612394" Slope="0.00097306197"/>
+				<HermiteKey Frame="157" Value="0.00194612394" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.00194612394" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Spine2">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.00188875509"/>
+				<HermiteKey Frame="156" Value="-0.00377751017" Slope="-0.00188875509"/>
+				<HermiteKey Frame="157" Value="-0.00377751017" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.00377751017" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.15288192154" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.15288192154" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.15288192154" Slope="-0.08031200194"/>
+				<HermiteKey Frame="156" Value="-0.31350592543" Slope="-0.08031200194"/>
+				<HermiteKey Frame="157" Value="-0.31350592543" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.31350592543" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00030564282"/>
+				<HermiteKey Frame="156" Value="0.00061128564" Slope="0.00030564282"/>
+				<HermiteKey Frame="160" Value="0.00061128564" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.00061128564" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Head">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.00062961588"/>
+				<HermiteKey Frame="156" Value="-0.00125923175" Slope="-0.00062961588"/>
+				<HermiteKey Frame="158" Value="-0.00125923175" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.00125923175" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.47932524045" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.47932524045" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.47932524045" Slope="-0.20586034398"/>
+				<HermiteKey Frame="156" Value="0.06760455248" Slope="-0.20586034398"/>
+				<HermiteKey Frame="157" Value="0.06760455248" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.06760455248" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.00106802623"/>
+				<HermiteKey Frame="156" Value="-0.00213605246" Slope="-0.00106802623"/>
+				<HermiteKey Frame="157" Value="-0.00213605246" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.00213605246" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="LEar1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.36298527114" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.36298527114" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.36298527114" Slope="0.02112381185"/>
+				<HermiteKey Frame="156" Value="0.40523289484" Slope="0.02112381185"/>
+				<HermiteKey Frame="157" Value="0.40523289484" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.40523289484" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.17253177884" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.17253177884" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.17253177884" Slope="0.18096424644"/>
+				<HermiteKey Frame="156" Value="0.53446027171" Slope="0.18096424644"/>
+				<HermiteKey Frame="157" Value="0.53446027171" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.53446027171" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.73070346991" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.73070346991" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.73070346991" Slope="0.06885914077"/>
+				<HermiteKey Frame="156" Value="-0.59298518837" Slope="0.06885914077"/>
+				<HermiteKey Frame="157" Value="-0.59298518837" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.59298518837" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="LEar2">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00268812701"/>
+				<HermiteKey Frame="156" Value="0.00537625403" Slope="0.00268812701"/>
+				<HermiteKey Frame="157" Value="0.00537625403" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.00537625403" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="LEar3">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00540646495"/>
+				<HermiteKey Frame="156" Value="0.01081292989" Slope="0.00540646495"/>
+				<HermiteKey Frame="157" Value="0.01081292989" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.01081292989" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="REar1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.36298527114" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.36298527114" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.36298527114" Slope="-0.01843349885"/>
+				<HermiteKey Frame="156" Value="-0.39985226885" Slope="-0.01843349885"/>
+				<HermiteKey Frame="157" Value="-0.39985226885" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.39985226885" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.17253177884" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.17253177884" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.17253177884" Slope="0.18184281283"/>
+				<HermiteKey Frame="156" Value="0.5362174045" Slope="0.18184281283"/>
+				<HermiteKey Frame="157" Value="0.5362174045" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.5362174045" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.73070346991" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.73070346991" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.73070346991" Slope="-0.0665090974"/>
+				<HermiteKey Frame="156" Value="0.5976852751" Slope="-0.0665090974"/>
+				<HermiteKey Frame="157" Value="0.5976852751" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.5976852751" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="REar2">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00268812701"/>
+				<HermiteKey Frame="156" Value="0.00537625403" Slope="0.00268812701"/>
+				<HermiteKey Frame="157" Value="0.00537625403" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.00537625403" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="REar3">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.00540646495"/>
+				<HermiteKey Frame="156" Value="0.01081292989" Slope="0.00540646495"/>
+				<HermiteKey Frame="157" Value="0.01081292989" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.01081292989" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="LShoulder">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.32138212162" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.32138212162" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.32138212162" Slope="0.18794661163"/>
+				<HermiteKey Frame="156" Value="0.05451110163" Slope="0.18794661163"/>
+				<HermiteKey Frame="157" Value="0.05451110163" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.05451110163" Slope="0"/>
+			</RotateX>
+		</Node>
+		<Node Name="LArm">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.38288547189" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.38288547189" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.38288547189" Slope="0.42360128926"/>
+				<HermiteKey Frame="156" Value="1.23008805042" Slope="0.42360128926"/>
+				<HermiteKey Frame="157" Value="1.23008805042" Slope="0"/>
+				<HermiteKey Frame="165" Value="1.23008805042" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.09663706327" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.09663706327" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.09663706327" Slope="-0.53429932538"/>
+				<HermiteKey Frame="156" Value="-1.16523571404" Slope="-0.53429932538"/>
+				<HermiteKey Frame="157" Value="-1.16523571404" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.16523571404" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.16771796976" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.16771796976" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.16771796976" Slope="-0.58186063653"/>
+				<HermiteKey Frame="156" Value="-0.9960033033" Slope="-0.58186063653"/>
+				<HermiteKey Frame="157" Value="-0.9960033033" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.9960033033" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="LForeArm">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.0956542476"/>
+				<HermiteKey Frame="156" Value="-0.1913084952" Slope="-0.0956542476"/>
+				<HermiteKey Frame="157" Value="-0.1913084952" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.1913084952" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="LHand">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.23009031757" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.23009031757" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.23009031757" Slope="0.00141382282"/>
+				<HermiteKey Frame="156" Value="0.23291796321" Slope="0.00141382282"/>
+				<HermiteKey Frame="157" Value="0.23291796321" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.23291796321" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.07729007511"/>
+				<HermiteKey Frame="156" Value="-0.15458015022" Slope="-0.07729007511"/>
+				<HermiteKey Frame="157" Value="-0.15458015022" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.15458015022" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.018253969"/>
+				<HermiteKey Frame="156" Value="-0.036507938" Slope="-0.018253969"/>
+				<HermiteKey Frame="157" Value="-0.036507938" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.036507938" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="RShoulder">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.32138212162" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.32138212162" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.32138212162" Slope="-0.19341381921"/>
+				<HermiteKey Frame="156" Value="-0.06544551679" Slope="-0.19341381921"/>
+				<HermiteKey Frame="157" Value="-0.06544551679" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.06544551679" Slope="0"/>
+			</RotateX>
+		</Node>
+		<Node Name="RArm">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.38288547189" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.38288547189" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.38288547189" Slope="-0.42360128926"/>
+				<HermiteKey Frame="156" Value="-1.23008805042" Slope="-0.42360128926"/>
+				<HermiteKey Frame="157" Value="-1.23008805042" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.23008805042" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.09663706327" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.09663706327" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.09663706327" Slope="-0.53429932538"/>
+				<HermiteKey Frame="156" Value="-1.16523571404" Slope="-0.53429932538"/>
+				<HermiteKey Frame="157" Value="-1.16523571404" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.16523571404" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.16771796976" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.16771796976" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.16771796976" Slope="0.58186063653"/>
+				<HermiteKey Frame="156" Value="0.9960033033" Slope="0.58186063653"/>
+				<HermiteKey Frame="157" Value="0.9960033033" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.9960033033" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="RForeArm">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.0956542476"/>
+				<HermiteKey Frame="156" Value="-0.1913084952" Slope="-0.0956542476"/>
+				<HermiteKey Frame="157" Value="-0.1913084952" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.1913084952" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="RHand">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.23009031757" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.23009031757" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.23009031757" Slope="-0.00141382282"/>
+				<HermiteKey Frame="156" Value="-0.23291796321" Slope="-0.00141382282"/>
+				<HermiteKey Frame="157" Value="-0.23291796321" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.23291796321" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.07729007511"/>
+				<HermiteKey Frame="156" Value="-0.15458015022" Slope="-0.07729007511"/>
+				<HermiteKey Frame="157" Value="-0.15458015022" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.15458015022" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.018253969"/>
+				<HermiteKey Frame="156" Value="0.036507938" Slope="0.018253969"/>
+				<HermiteKey Frame="157" Value="0.036507938" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.036507938" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="LThigh">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.34349677521" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.34349677521" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.34349677521" Slope="-0.12333828791"/>
+				<HermiteKey Frame="156" Value="-0.59017335102" Slope="-0.12333828791"/>
+				<HermiteKey Frame="157" Value="-0.59017335102" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.59017335102" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.84737492151" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.84737492151" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.84737492151" Slope="-0.16954129793"/>
+				<HermiteKey Frame="156" Value="-1.18645751738" Slope="-0.16954129793"/>
+				<HermiteKey Frame="157" Value="-1.18645751738" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.18645751738" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.26193497931" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.26193497931" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.26193497931" Slope="0.16222384767"/>
+				<HermiteKey Frame="156" Value="0.58638267464" Slope="0.16222384767"/>
+				<HermiteKey Frame="157" Value="0.58638267464" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.58638267464" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="LLeg">
+			<RotateY>
+				<HermiteKey Frame="0" Value="1.50415574806" Slope="0"/>
+				<HermiteKey Frame="154" Value="1.50415574806" Slope="0"/>
+				<HermiteKey Frame="155" Value="1.50415574806" Slope="0.34140935835"/>
+				<HermiteKey Frame="156" Value="2.18697446477" Slope="0.34140935835"/>
+				<HermiteKey Frame="157" Value="2.18697446477" Slope="0"/>
+				<HermiteKey Frame="165" Value="2.18697446477" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="LFoot">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.06981162667"/>
+				<HermiteKey Frame="156" Value="0.13962325334" Slope="0.06981162667"/>
+				<HermiteKey Frame="157" Value="0.13962325334" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.13962325334" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="4.08534454002" Slope="0"/>
+				<HermiteKey Frame="154" Value="4.08534454002" Slope="0"/>
+				<HermiteKey Frame="155" Value="4.08534454002" Slope="-0.06978813025"/>
+				<HermiteKey Frame="156" Value="3.94576827953" Slope="-0.06978813025"/>
+				<HermiteKey Frame="157" Value="3.94576827953" Slope="0"/>
+				<HermiteKey Frame="165" Value="3.94576827953" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.0910929969"/>
+				<HermiteKey Frame="156" Value="-0.18218599379" Slope="-0.0910929969"/>
+				<HermiteKey Frame="157" Value="-0.18218599379" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.18218599379" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="RThigh">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.34349677521" Slope="0"/>
+				<HermiteKey Frame="154" Value="0.34349677521" Slope="0"/>
+				<HermiteKey Frame="155" Value="0.34349677521" Slope="0.21613818927"/>
+				<HermiteKey Frame="156" Value="0.77577315374" Slope="0.21613818927"/>
+				<HermiteKey Frame="157" Value="0.77577315374" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.77577315374" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.84737492151" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.84737492151" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.84737492151" Slope="-0.18926655188"/>
+				<HermiteKey Frame="156" Value="-1.22590802527" Slope="-0.18926655188"/>
+				<HermiteKey Frame="157" Value="-1.22590802527" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.22590802527" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.26193497931" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.26193497931" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.26193497931" Slope="-0.2167742066"/>
+				<HermiteKey Frame="156" Value="-0.69548339251" Slope="-0.2167742066"/>
+				<HermiteKey Frame="157" Value="-0.69548339251" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.69548339251" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="RLeg">
+			<RotateY>
+				<HermiteKey Frame="0" Value="1.50415574806" Slope="0"/>
+				<HermiteKey Frame="154" Value="1.50415574806" Slope="0"/>
+				<HermiteKey Frame="155" Value="1.50415574806" Slope="0.32738416319"/>
+				<HermiteKey Frame="156" Value="2.15892407443" Slope="0.32738416319"/>
+				<HermiteKey Frame="157" Value="2.15892407443" Slope="0"/>
+				<HermiteKey Frame="165" Value="2.15892407443" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="RFoot">
+			<RotateX>
+				<HermiteKey Frame="0" Value="3.14159256889" Slope="0"/>
+				<HermiteKey Frame="154" Value="3.14159256889" Slope="0"/>
+				<HermiteKey Frame="155" Value="3.14159256889" Slope="-0.15846875683"/>
+				<HermiteKey Frame="156" Value="2.82465505524" Slope="-0.15846875683"/>
+				<HermiteKey Frame="157" Value="2.82465505524" Slope="0"/>
+				<HermiteKey Frame="165" Value="2.82465505524" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.94375188643" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.94375188643" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.94375188643" Slope="0.04352366096"/>
+				<HermiteKey Frame="156" Value="-0.85670456451" Slope="0.04352366096"/>
+				<HermiteKey Frame="157" Value="-0.85670456451" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.85670456451" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-3.14159261797" Slope="0"/>
+				<HermiteKey Frame="154" Value="-3.14159261797" Slope="0"/>
+				<HermiteKey Frame="155" Value="-3.14159261797" Slope="0.14676248575"/>
+				<HermiteKey Frame="156" Value="-2.84806764648" Slope="0.14676248575"/>
+				<HermiteKey Frame="157" Value="-2.84806764648" Slope="0"/>
+				<HermiteKey Frame="165" Value="-2.84806764648" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Tail1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.84913230208"/>
+				<HermiteKey Frame="156" Value="-1.69826460416" Slope="-0.84913230208"/>
+				<HermiteKey Frame="157" Value="-1.69826460416" Slope="0"/>
+				<HermiteKey Frame="165" Value="-1.69826460416" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="1.21711345458" Slope="0"/>
+				<HermiteKey Frame="154" Value="1.21711345458" Slope="0"/>
+				<HermiteKey Frame="155" Value="1.21711345458" Slope="-0.14051522088"/>
+				<HermiteKey Frame="156" Value="0.93608301281" Slope="-0.14051522088"/>
+				<HermiteKey Frame="157" Value="0.93608301281" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.93608301281" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="3.14159265359" Slope="0"/>
+				<HermiteKey Frame="154" Value="3.14159265359" Slope="0"/>
+				<HermiteKey Frame="155" Value="3.14159265359" Slope="-0.76774729623"/>
+				<HermiteKey Frame="156" Value="1.60609806113" Slope="-0.76774729623"/>
+				<HermiteKey Frame="157" Value="1.60609806113" Slope="0"/>
+				<HermiteKey Frame="165" Value="1.60609806113" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Tail2">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="0.05146546597"/>
+				<HermiteKey Frame="156" Value="0.10293093194" Slope="0.05146546597"/>
+				<HermiteKey Frame="157" Value="0.10293093194" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.10293093194" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.79668748904" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.79668748904" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.79668748904" Slope="0.03816409578"/>
+				<HermiteKey Frame="156" Value="-0.72035929748" Slope="0.03816409578"/>
+				<HermiteKey Frame="157" Value="-0.72035929748" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.72035929748" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.26764461409"/>
+				<HermiteKey Frame="156" Value="-0.53528922818" Slope="-0.26764461409"/>
+				<HermiteKey Frame="157" Value="-0.53528922818" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.53528922818" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Tail3">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.05552967499"/>
+				<HermiteKey Frame="156" Value="-0.11105934998" Slope="-0.05552967499"/>
+				<HermiteKey Frame="157" Value="-0.11105934998" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.11105934998" Slope="0"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.24375332572" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.24375332572" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.24375332572" Slope="-0.00155521783"/>
+				<HermiteKey Frame="156" Value="-0.24686376138" Slope="-0.00155521783"/>
+				<HermiteKey Frame="157" Value="-0.24686376138" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.24686376138" Slope="0"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0"/>
+				<HermiteKey Frame="154" Value="0" Slope="0"/>
+				<HermiteKey Frame="155" Value="0" Slope="-0.07607754794"/>
+				<HermiteKey Frame="156" Value="-0.15215509587" Slope="-0.07607754794"/>
+				<HermiteKey Frame="157" Value="-0.15215509587" Slope="0"/>
+				<HermiteKey Frame="165" Value="-0.15215509587" Slope="0"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Feeler">
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.00000138123" Slope="0"/>
+				<HermiteKey Frame="154" Value="-0.00000138123" Slope="0"/>
+				<HermiteKey Frame="155" Value="-0.00000138123" Slope="0.16167115159"/>
+				<HermiteKey Frame="156" Value="0.32334092194" Slope="0.16167115159"/>
+				<HermiteKey Frame="157" Value="0.32334092194" Slope="0"/>
+				<HermiteKey Frame="165" Value="0.32334092194" Slope="0"/>
+			</RotateY>
+			<TranslateX>
+				<HermiteKey Frame="0" Value="4.05613468482" Slope="0"/>
+				<HermiteKey Frame="154" Value="4.05613468482" Slope="0"/>
+				<HermiteKey Frame="155" Value="4.05613468482" Slope="-0.89007351541"/>
+				<HermiteKey Frame="156" Value="2.275987654" Slope="-0.89007351541"/>
+				<HermiteKey Frame="157" Value="2.275987654" Slope="0"/>
+				<HermiteKey Frame="165" Value="2.275987654" Slope="0"/>
+			</TranslateX>
+		</Node>
+	</SkeltalAnimation>
+	<Skelton>
+		<Node Name="pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="Origin" ParentName="pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="Waist" ParentName="Origin" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.086303 1.570796</LocalRotation>
+			<LocalTransform>0 14.285264 0.262722</LocalTransform>
+		</Node>
+		<Node Name="Spine1" ParentName="Waist" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="Spine2" ParentName="Spine1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.152882 0</LocalRotation>
+			<LocalTransform>5.551376 0 0</LocalTransform>
+		</Node>
+		<Node Name="Head" ParentName="Spine2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.479325 0</LocalRotation>
+			<LocalTransform>8.832681 0 0</LocalTransform>
+		</Node>
+		<Node Name="EndHead" ParentName="Head" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>15.410909 0 0</LocalTransform>
+		</Node>
+		<Node Name="LEar1" ParentName="Head" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.362985 0.172532 -0.730703</LocalRotation>
+			<LocalTransform>11.946592 -6.241565 0.547564</LocalTransform>
+		</Node>
+		<Node Name="LEar2" ParentName="LEar1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.333 0 0</LocalTransform>
+		</Node>
+		<Node Name="LEar3" ParentName="LEar2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.102 0 0</LocalTransform>
+		</Node>
+		<Node Name="EndLEar3" ParentName="LEar3" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.56 0 0</LocalTransform>
+		</Node>
+		<Node Name="REar1" ParentName="Head" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.362985 0.172532 0.730703</LocalRotation>
+			<LocalTransform>11.946575 6.24156 0.547559</LocalTransform>
+		</Node>
+		<Node Name="REar2" ParentName="REar1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.332988 0.000018 -0.000005</LocalTransform>
+		</Node>
+		<Node Name="REar3" ParentName="REar2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.102025 -0.000054 0.000001</LocalTransform>
+		</Node>
+		<Node Name="EndREar3" ParentName="REar3" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.559982 0.000057 -0.000008</LocalTransform>
+		</Node>
+		<Node Name="LShoulder" ParentName="Spine2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.321382 -0.75012 -1.119372</LocalRotation>
+			<LocalTransform>3.223436 -3.536047 1.346002</LocalTransform>
+		</Node>
+		<Node Name="LArm" ParentName="LShoulder" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.382885 -0.096637 0.167718</LocalRotation>
+			<LocalTransform>5.118752 0 0</LocalTransform>
+		</Node>
+		<Node Name="LForeArm" ParentName="LArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.422382 0 0</LocalTransform>
+		</Node>
+		<Node Name="LHand" ParentName="LForeArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.23009 0 0</LocalRotation>
+			<LocalTransform>4.472324 0 0</LocalTransform>
+		</Node>
+		<Node Name="EndLHand" ParentName="LHand" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.394053 0 0</LocalTransform>
+		</Node>
+		<Node Name="RShoulder" ParentName="Spine2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.321382 -0.75012 1.119372</LocalRotation>
+			<LocalTransform>3.22347 3.53605 1.345999</LocalTransform>
+		</Node>
+		<Node Name="RArm" ParentName="RShoulder" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.382885 -0.096637 -0.167718</LocalRotation>
+			<LocalTransform>5.118738 0.000077 0.000015</LocalTransform>
+		</Node>
+		<Node Name="RForeArm" ParentName="RArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.422361 -0.000044 -0.000067</LocalTransform>
+		</Node>
+		<Node Name="RHand" ParentName="RForeArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.23009 0 0</LocalRotation>
+			<LocalTransform>4.472402 0.000019 0.000064</LocalTransform>
+		</Node>
+		<Node Name="EndRHand" ParentName="RHand" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.394014 -0.000072 -0.000018</LocalTransform>
+		</Node>
+		<Node Name="Hips" ParentName="Waist" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.086308 -3.141593</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+		</Node>
+		<Node Name="EndHips" ParentName="Hips" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.000001 0</LocalRotation>
+			<LocalTransform>13.276792 0 -0.000018</LocalTransform>
+		</Node>
+		<Node Name="LThigh" ParentName="Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.343497 -0.847375 0.261935</LocalRotation>
+			<LocalTransform>3.200377 6.393034 -1.978632</LocalTransform>
+		</Node>
+		<Node Name="LLeg" ParentName="LThigh" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.504156 0</LocalRotation>
+			<LocalTransform>6.265954 0 0</LocalTransform>
+		</Node>
+		<Node Name="LFoot" ParentName="LLeg" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 4.085344 0</LocalRotation>
+			<LocalTransform>6.611589 0 0</LocalTransform>
+		</Node>
+		<Node Name="EndLFoot" ParentName="LFoot" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>8.173446 0 0</LocalTransform>
+		</Node>
+		<Node Name="LToe" ParentName="LFoot" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.976096 -0.000001 -1.064399</LocalTransform>
+		</Node>
+		<Node Name="EndLToe" ParentName="LToe" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.27242 0 0</LocalTransform>
+		</Node>
+		<Node Name="RThigh" ParentName="Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.343497 -0.847375 -0.261935</LocalRotation>
+			<LocalTransform>3.200367 -6.39303 -1.978636</LocalTransform>
+		</Node>
+		<Node Name="RLeg" ParentName="RThigh" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.504156 0</LocalRotation>
+			<LocalTransform>6.26597 -0.000002 -0.000004</LocalTransform>
+		</Node>
+		<Node Name="RFoot" ParentName="RLeg" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>3.141593 -0.943752 -3.141593</LocalRotation>
+			<LocalTransform>6.611589 -0.000005 -0.000005</LocalTransform>
+		</Node>
+		<Node Name="EndRFoot" ParentName="RFoot" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>8.17345 0.000007 0.000005</LocalTransform>
+		</Node>
+		<Node Name="RToe" ParentName="RFoot" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.976 0.000008 -1.064399</LocalTransform>
+		</Node>
+		<Node Name="EndRToe" ParentName="RToe" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.272417 -0.000008 0</LocalTransform>
+		</Node>
+		<Node Name="Tail1" ParentName="Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.217113 3.141593</LocalRotation>
+			<LocalTransform>3.916742 0 -9.021112</LocalTransform>
+		</Node>
+		<Node Name="Tail2" ParentName="Tail1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.796687 0</LocalRotation>
+			<LocalTransform>5.504735 0 0</LocalTransform>
+		</Node>
+		<Node Name="Tail3" ParentName="Tail2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.243753 0</LocalRotation>
+			<LocalTransform>12.843967 0 0</LocalTransform>
+		</Node>
+		<Node Name="EndTail3" ParentName="Tail3" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>16.865444 0 0</LocalTransform>
+		</Node>
+		<Node Name="Feeler" ParentName="Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.000001 0</LocalRotation>
+			<LocalTransform>4.056135 0 -0.028655</LocalTransform>
+		</Node>
+		<Node Name="EndFeeler" ParentName="Feeler" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>7.687204 0 0</LocalTransform>
+		</Node>
+	</Skelton>
+</GfMotion>
+

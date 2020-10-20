@@ -1,0 +1,1898 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfMotion version="1.2" FrameSize="34" IsLoop="true" CurrrentUnit="ntsc">
+	<Source Path="R:/home/niji/pokemon/data/RG/pm0025_00_pikachu/scenes/pm0025_00_ba10_waitA01.mb" TargetNode="|Ref:pm0025_00_pikachu"/>
+	<ModelAABB>-26.969519 -5.379475 -14.229213 6.952881 29.507982 25.528111</ModelAABB>
+	<UvAnimation>
+		<Material Name="Ref:BodyB">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="Ref:LEye">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<OneFrameKey Value="1.75"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="Ref:REye">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<OneFrameKey Value="1.75"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="Ref:Mouth">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="1"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="2">
+				<TranslateU>
+					<OneFrameKey Value="1.75"/>
+				</TranslateU>
+				<TranslateV>
+					<OneFrameKey Value="0"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+	</UvAnimation>
+	<TexturePatternAnimation/>
+	<BlendShapeAnimation/>
+	<VisibilityAnimation>
+		<Mesh Name="Ref:pm0025_00_BodySkin">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+		<Mesh Name="Ref:pm0025_00_SippoSkin">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+		<Mesh Name="Ref:pm0025_01_SippoSkin">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+	</VisibilityAnimation>
+	<AttributeKeyAnimation/>
+	<ShaderAnimation/>
+	<SkeltalAnimation>
+		<Node Name="Ref:Waist">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.00356542841" Slope="0.00068567005"/>
+				<HermiteKey Frame="11" Value="0.00830026232" Slope="-0.00032808699"/>
+				<HermiteKey Frame="24" Value="0.0012531464" Slope="-0.00023633503"/>
+				<HermiteKey Frame="34" Value="0.00356542841" Slope="0.0006122266"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.09428101068" Slope="0.00230528324"/>
+				<HermiteKey Frame="8" Value="0.10900769748" Slope="0.00064545766"/>
+				<HermiteKey Frame="17" Value="0.10087455043" Slope="-0.00229347608"/>
+				<HermiteKey Frame="24" Value="0.08668888079" Slope="-0.00094630007"/>
+				<HermiteKey Frame="34" Value="0.09428101068" Slope="0.002126195"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="1.5714390792" Slope="-0.0010503566"/>
+				<HermiteKey Frame="11" Value="1.56608746338" Slope="0.00048802024"/>
+				<HermiteKey Frame="26" Value="1.57661494036" Slope="-0.00004839798"/>
+				<HermiteKey Frame="34" Value="1.5714390792" Slope="-0.00105288732"/>
+			</RotateZ>
+			<TranslateX>
+				<HermiteKey Frame="0" Value="0" Slope="-0.00638950746"/>
+				<HermiteKey Frame="15" Value="-0.03415820016" Slope="0.00719381416"/>
+				<HermiteKey Frame="33" Value="0.00586666089" Slope="-0.00561903202"/>
+				<HermiteKey Frame="34" Value="0" Slope="-0.00586666089"/>
+			</TranslateX>
+			<TranslateY>
+				<HermiteKey Frame="0" Value="10.91228063683" Slope="0.05333787396"/>
+				<HermiteKey Frame="9" Value="11.28068788804" Slope="0.00067867279"/>
+				<HermiteKey Frame="19" Value="10.9088317541" Slope="-0.05698122043"/>
+				<HermiteKey Frame="27" Value="10.67868073258" Slope="0.00945184249"/>
+				<HermiteKey Frame="34" Value="10.91228063683" Slope="0.04893207029"/>
+			</TranslateY>
+			<TranslateZ>
+				<HermiteKey Frame="0" Value="-1.03909520386" Slope="0.02347353576"/>
+				<HermiteKey Frame="12" Value="-0.90736491984" Slope="-0.01011137872"/>
+				<HermiteKey Frame="25" Value="-1.1274031181" Slope="-0.00259977284"/>
+				<HermiteKey Frame="34" Value="-1.03909520386" Slope="0.02173830341"/>
+			</TranslateZ>
+		</Node>
+		<Node Name="Ref:Spine1">
+			<ScaleX>
+				<OneFrameKey Value="0.8"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.00084519314" Slope="0.0002727077"/>
+				<HermiteKey Frame="13" Value="0.0046228885" Slope="0.00004933173"/>
+				<HermiteKey Frame="24" Value="0.00023008676" Slope="-0.00053489978"/>
+				<HermiteKey Frame="34" Value="-0.00084519314" Slope="0.0001870993"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.05889171993" Slope="0.00155123119"/>
+				<HermiteKey Frame="5" Value="-0.04913803467" Slope="0.00206052699"/>
+				<HermiteKey Frame="15" Value="-0.04186683592" Slope="-0.00074968"/>
+				<HermiteKey Frame="20" Value="-0.05063025627" Slope="-0.00242545788"/>
+				<HermiteKey Frame="25" Value="-0.06090221705" Slope="-0.00122149486"/>
+				<HermiteKey Frame="34" Value="-0.05889171993" Slope="0.00125874891"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.00194612938" Slope="-0.00036435493"/>
+				<HermiteKey Frame="18" Value="-0.00631449651" Slope="0.00060911118"/>
+				<HermiteKey Frame="27" Value="0.00115306922" Slope="0.00051336242"/>
+				<HermiteKey Frame="34" Value="0.00194612938" Slope="-0.00021139428"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Spine2">
+			<ScaleX>
+				<OneFrameKey Value="0.8"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.00377750337" Slope="-0.00096197312"/>
+				<HermiteKey Frame="10" Value="-0.01243849034" Slope="0.00007600036"/>
+				<HermiteKey Frame="25" Value="-0.00032157691" Slope="0.00029539698"/>
+				<HermiteKey Frame="34" Value="-0.00377750337" Slope="-0.00084548985"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.31350591881" Slope="-0.00000619592"/>
+				<HermiteKey Frame="4" Value="-0.31116541483" Slope="0.00122417394"/>
+				<HermiteKey Frame="18" Value="-0.29668712328" Slope="-0.00066184631"/>
+				<HermiteKey Frame="27" Value="-0.30863451288" Slope="-0.00115333102"/>
+				<HermiteKey Frame="34" Value="-0.31350591881" Slope="-0.00031105258"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.00061128412" Slope="0.0021187599"/>
+				<HermiteKey Frame="10" Value="0.01535528459" Slope="-0.00053704654"/>
+				<HermiteKey Frame="17" Value="0.00443416604" Slope="-0.00198237987"/>
+				<HermiteKey Frame="26" Value="-0.00818634468" Slope="-0.00007363544"/>
+				<HermiteKey Frame="34" Value="0.00061128412" Slope="0.00193501164"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Head">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.0012592376" Slope="0.00041074579"/>
+				<HermiteKey Frame="17" Value="-0.00206331079" Slope="-0.00036120462"/>
+				<HermiteKey Frame="34" Value="-0.0012592376" Slope="0.00044062582"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.06760456063" Slope="-0.00378123837"/>
+				<HermiteKey Frame="8" Value="0.05280902059" Slope="0.00143562058"/>
+				<HermiteKey Frame="16" Value="0.08496210439" Slope="0.00400635094"/>
+				<HermiteKey Frame="24" Value="0.0980829312" Slope="-0.00103289458"/>
+				<HermiteKey Frame="34" Value="0.06760456063" Slope="-0.00391007858"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.00213605611" Slope="0.00133702693"/>
+				<HermiteKey Frame="6" Value="0.00860464775" Slope="0.00185088677"/>
+				<HermiteKey Frame="17" Value="0.01271845861" Slope="-0.00140957154"/>
+				<HermiteKey Frame="25" Value="-0.00124766607" Slope="-0.00125607856"/>
+				<HermiteKey Frame="33" Value="-0.00314700317" Slope="0.00086347547"/>
+				<HermiteKey Frame="34" Value="-0.00213605611" Slope="0.00101094706"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LEar1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.40523288447" Slope="-0.0079677771"/>
+				<HermiteKey Frame="8" Value="0.36172446166" Slope="-0.00007370525"/>
+				<HermiteKey Frame="15" Value="0.39948005236" Slope="0.00899717229"/>
+				<HermiteKey Frame="18" Value="0.42557471435" Slope="0.00735939023"/>
+				<HermiteKey Frame="26" Value="0.44903356266" Slope="-0.00180329164"/>
+				<HermiteKey Frame="33" Value="0.41298129114" Slope="-0.00754341775"/>
+				<HermiteKey Frame="34" Value="0.40523288447" Slope="-0.00774840667"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.53446027369" Slope="-0.0100873224"/>
+				<HermiteKey Frame="2" Value="0.51369856995" Slope="-0.01079864879"/>
+				<HermiteKey Frame="8" Value="0.45685110182" Slope="-0.00571101402"/>
+				<HermiteKey Frame="12" Value="0.4532132946" Slope="0.00369014091"/>
+				<HermiteKey Frame="15" Value="0.47314392492" Slope="0.00931250093"/>
+				<HermiteKey Frame="18" Value="0.505279154" Slope="0.0109055153"/>
+				<HermiteKey Frame="25" Value="0.56368294968" Slope="0.00383737689"/>
+				<HermiteKey Frame="33" Value="0.54353919721" Slope="-0.00839846327"/>
+				<HermiteKey Frame="34" Value="0.53446027369" Slope="-0.00907892352"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.59298517777" Slope="-0.00983491288"/>
+				<HermiteKey Frame="8" Value="-0.65146006071" Slope="-0.00164259917"/>
+				<HermiteKey Frame="15" Value="-0.61738671331" Slope="0.00979085204"/>
+				<HermiteKey Frame="18" Value="-0.58666876139" Slope="0.00959304515"/>
+				<HermiteKey Frame="24" Value="-0.54816810709" Slope="0.00219594708"/>
+				<HermiteKey Frame="33" Value="-0.58365859203" Slope="-0.00891520291"/>
+				<HermiteKey Frame="34" Value="-0.59298517777" Slope="-0.00932658574"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LEar2">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.00537625987" Slope="-0.0031272635"/>
+				<HermiteKey Frame="3" Value="-0.00526469842" Slope="-0.0039312756"/>
+				<HermiteKey Frame="8" Value="-0.02158281134" Slope="-0.00180758515"/>
+				<HermiteKey Frame="15" Value="-0.02305714332" Slope="0.00126371437"/>
+				<HermiteKey Frame="18" Value="-0.01643409005" Slope="0.00326871371"/>
+				<HermiteKey Frame="24" Value="0.00537625987" Slope="0.00262907672"/>
+				<HermiteKey Frame="33" Value="0.00789145385" Slope="-0.00221467447"/>
+				<HermiteKey Frame="34" Value="0.00537625987" Slope="-0.00251519399"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="-0.00078620101"/>
+				<HermiteKey Frame="6" Value="-0.00705069385" Slope="-0.00113654096"/>
+				<HermiteKey Frame="15" Value="-0.00930232566" Slope="0.00041344232"/>
+				<HermiteKey Frame="21" Value="-0.00324713271" Slope="0.00129864714"/>
+				<HermiteKey Frame="31" Value="0.00134603283" Slope="-0.00027904324"/>
+				<HermiteKey Frame="34" Value="0" Slope="-0.00055648078"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LEar3">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.01081292558" Slope="-0.00116221475"/>
+				<HermiteKey Frame="2" Value="0.00776935062" Slope="-0.0021837036"/>
+				<HermiteKey Frame="8" Value="-0.01221065506" Slope="-0.00356861364"/>
+				<HermiteKey Frame="13" Value="-0.02204738308" Slope="-0.00058636954"/>
+				<HermiteKey Frame="16" Value="-0.02241161585" Slope="0.00036900624"/>
+				<HermiteKey Frame="21" Value="-0.01246138906" Slope="0.00326446383"/>
+				<HermiteKey Frame="26" Value="0.00449134303" Slope="0.00259863818"/>
+				<HermiteKey Frame="33" Value="0.01141206221" Slope="-0.00042387939"/>
+				<HermiteKey Frame="34" Value="0.01081292558" Slope="-0.00059913663"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="-0.00003649483"/>
+				<HermiteKey Frame="7" Value="-0.00420376513" Slope="-0.00084727009"/>
+				<HermiteKey Frame="20" Value="-0.00784555169" Slope="0.00048354347"/>
+				<HermiteKey Frame="34" Value="0" Slope="0.00019181168"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:REar1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.39985226128" Slope="0.00837417702"/>
+				<HermiteKey Frame="7" Value="-0.35735270859" Slope="0.00145714921"/>
+				<HermiteKey Frame="12" Value="-0.37257817559" Slope="-0.00653808192"/>
+				<HermiteKey Frame="18" Value="-0.41943565834" Slope="-0.00709875149"/>
+				<HermiteKey Frame="24" Value="-0.44506901236" Slope="-0.00074649477"/>
+				<HermiteKey Frame="33" Value="-0.40799680533" Slope="0.00786591096"/>
+				<HermiteKey Frame="34" Value="-0.39985226128" Slope="0.00814454405"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.53621740137" Slope="-0.01008023636"/>
+				<HermiteKey Frame="2" Value="0.51542527654" Slope="-0.01085793762"/>
+				<HermiteKey Frame="7" Value="0.46457367761" Slope="-0.00786258611"/>
+				<HermiteKey Frame="10" Value="0.45040106303" Slope="-0.00095146624"/>
+				<HermiteKey Frame="15" Value="0.47355378059" Slope="0.00946604627"/>
+				<HermiteKey Frame="18" Value="0.50616276184" Slope="0.01102311558"/>
+				<HermiteKey Frame="25" Value="0.56470140166" Slope="0.0038469762"/>
+				<HermiteKey Frame="33" Value="0.54523939225" Slope="-0.00832740219"/>
+				<HermiteKey Frame="34" Value="0.53621740137" Slope="-0.00902199088"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.59768526218" Slope="0.00989716878"/>
+				<HermiteKey Frame="7" Value="0.6512954238" Slope="0.00292441261"/>
+				<HermiteKey Frame="15" Value="0.61848447305" Slope="-0.00940518664"/>
+				<HermiteKey Frame="18" Value="0.58892266214" Slope="-0.00931667227"/>
+				<HermiteKey Frame="24" Value="0.55072744045" Slope="-0.00224368184"/>
+				<HermiteKey Frame="33" Value="0.58816838319" Slope="0.00913983551"/>
+				<HermiteKey Frame="34" Value="0.59768526218" Slope="0.00951687899"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:REar2">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.00537625987" Slope="-0.0031272635"/>
+				<HermiteKey Frame="3" Value="-0.00526469842" Slope="-0.0039312756"/>
+				<HermiteKey Frame="8" Value="-0.02158281134" Slope="-0.00180758515"/>
+				<HermiteKey Frame="15" Value="-0.02305714332" Slope="0.00126371437"/>
+				<HermiteKey Frame="18" Value="-0.01643409005" Slope="0.00326871371"/>
+				<HermiteKey Frame="24" Value="0.00537625987" Slope="0.00262907672"/>
+				<HermiteKey Frame="33" Value="0.00789145385" Slope="-0.00221467447"/>
+				<HermiteKey Frame="34" Value="0.00537625987" Slope="-0.00251519399"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0.00080150755"/>
+				<HermiteKey Frame="6" Value="0.00696276416" Slope="0.00110997704"/>
+				<HermiteKey Frame="15" Value="0.00916917449" Slope="-0.00040751693"/>
+				<HermiteKey Frame="20" Value="0.00428649374" Slope="-0.00135556232"/>
+				<HermiteKey Frame="24" Value="0" Slope="-0.00056603646"/>
+				<HermiteKey Frame="34" Value="0" Slope="0.00055599209"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:REar3">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.01081292558" Slope="-0.00116221475"/>
+				<HermiteKey Frame="2" Value="0.00776935062" Slope="-0.0021837036"/>
+				<HermiteKey Frame="8" Value="-0.01221065506" Slope="-0.00356861364"/>
+				<HermiteKey Frame="13" Value="-0.02204738308" Slope="-0.00058636954"/>
+				<HermiteKey Frame="16" Value="-0.02241161585" Slope="0.00036900624"/>
+				<HermiteKey Frame="21" Value="-0.01246138906" Slope="0.00326446383"/>
+				<HermiteKey Frame="26" Value="0.00449134303" Slope="0.00259863818"/>
+				<HermiteKey Frame="33" Value="0.01141206221" Slope="-0.00042387939"/>
+				<HermiteKey Frame="34" Value="0.01081292558" Slope="-0.00059913663"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0" Slope="0.00013707816"/>
+				<HermiteKey Frame="12" Value="0.00774400844" Slope="0.00044753733"/>
+				<HermiteKey Frame="24" Value="0.00541305141" Slope="-0.00074176493"/>
+				<HermiteKey Frame="34" Value="0" Slope="-0.00008360127"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LShoulder">
+			<ScaleX>
+				<OneFrameKey Value="0.9"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.05451110058" Slope="0.00401998196"/>
+				<HermiteKey Frame="7" Value="0.07934013707" Slope="0.00197884558"/>
+				<HermiteKey Frame="10" Value="0.08069514089" Slope="-0.00123293549"/>
+				<HermiteKey Frame="16" Value="0.06191295467" Slope="-0.00385352991"/>
+				<HermiteKey Frame="26" Value="0.03555956507" Slope="0.00014263703"/>
+				<HermiteKey Frame="34" Value="0.05451110058" Slope="0.0037898952"/>
+			</RotateX>
+		</Node>
+		<Node Name="Ref:LArm">
+			<ScaleX>
+				<OneFrameKey Value="0.95"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="1.23008800297" Slope="0.01464100859"/>
+				<HermiteKey Frame="2" Value="1.2600408549" Slope="0.01531709678"/>
+				<HermiteKey Frame="7" Value="1.32267080829" Slope="0.00648026789"/>
+				<HermiteKey Frame="14" Value="1.29828716237" Slope="-0.01018938925"/>
+				<HermiteKey Frame="19" Value="1.24097807211" Slope="-0.01123440514"/>
+				<HermiteKey Frame="26" Value="1.18730844712" Slope="-0.00246761631"/>
+				<HermiteKey Frame="33" Value="1.21717806429" Slope="0.01172476412"/>
+				<HermiteKey Frame="34" Value="1.23008800297" Slope="0.01290993868"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-1.16523577421" Slope="-0.002170474"/>
+				<HermiteKey Frame="8" Value="-1.17758898776" Slope="-0.0003010693"/>
+				<HermiteKey Frame="20" Value="-1.16522271915" Slope="0.00161247479"/>
+				<HermiteKey Frame="29" Value="-1.15834990926" Slope="-0.00054707345"/>
+				<HermiteKey Frame="34" Value="-1.16523577421" Slope="-0.00201121271"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.99600334414" Slope="-0.01592590253"/>
+				<HermiteKey Frame="1" Value="-1.01192924667" Slope="-0.0162831627"/>
+				<HermiteKey Frame="7" Value="-1.09649039657" Slope="-0.00701759368"/>
+				<HermiteKey Frame="13" Value="-1.08052087826" Slope="0.00966138352"/>
+				<HermiteKey Frame="19" Value="-1.00785055183" Slope="0.01221754911"/>
+				<HermiteKey Frame="25" Value="-0.95303815506" Slope="0.00460011195"/>
+				<HermiteKey Frame="33" Value="-0.98194750954" Slope="-0.01276996327"/>
+				<HermiteKey Frame="34" Value="-0.99600334414" Slope="-0.0140558346"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LForeArm">
+			<ScaleX>
+				<OneFrameKey Value="0.95"/>
+			</ScaleX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.19130848892" Slope="-0.00195906227"/>
+				<HermiteKey Frame="5" Value="-0.20365540183" Slope="-0.00284350787"/>
+				<HermiteKey Frame="11" Value="-0.21741550784" Slope="-0.00103521587"/>
+				<HermiteKey Frame="19" Value="-0.21072524194" Slope="0.00282676144"/>
+				<HermiteKey Frame="24" Value="-0.19409223671" Slope="0.00314862633"/>
+				<HermiteKey Frame="31" Value="-0.18724808513" Slope="-0.00085175558"/>
+				<HermiteKey Frame="34" Value="-0.19130848892" Slope="-0.00164181377"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:LHand">
+			<ScaleX>
+				<OneFrameKey Value="0.95"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.23291797604" Slope="-0.00003167773"/>
+				<HermiteKey Frame="12" Value="0.23535585194" Slope="0.00032904692"/>
+				<HermiteKey Frame="21" Value="0.23599537549" Slope="-0.00026482753"/>
+				<HermiteKey Frame="34" Value="0.23291797604" Slope="-0.00007838274"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.15458016411" Slope="0.0008592954"/>
+				<HermiteKey Frame="1" Value="-0.15372086871" Slope="0.00017301449"/>
+				<HermiteKey Frame="7" Value="-0.17445138342" Slope="-0.00655144241"/>
+				<HermiteKey Frame="11" Value="-0.20329300167" Slope="-0.00691391239"/>
+				<HermiteKey Frame="15" Value="-0.22625502454" Slope="-0.00409166263"/>
+				<HermiteKey Frame="18" Value="-0.23166770943" Slope="0.00095198984"/>
+				<HermiteKey Frame="25" Value="-0.1981677376" Slope="0.00641848323"/>
+				<HermiteKey Frame="33" Value="-0.15668574677" Slope="0.00259203211"/>
+				<HermiteKey Frame="34" Value="-0.15458016411" Slope="0.00210558266"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.03650794208" Slope="0.00020628046"/>
+				<HermiteKey Frame="6" Value="-0.0398176274" Slope="-0.00136073722"/>
+				<HermiteKey Frame="14" Value="-0.05281134188" Slope="-0.00124076329"/>
+				<HermiteKey Frame="19" Value="-0.0548361507" Slope="0.00062868505"/>
+				<HermiteKey Frame="28" Value="-0.04247590347" Slope="0.00143144051"/>
+				<HermiteKey Frame="34" Value="-0.03650794208" Slope="0.0005056917"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RShoulder">
+			<ScaleX>
+				<OneFrameKey Value="0.9"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.06544551853" Slope="-0.00421357388"/>
+				<HermiteKey Frame="9" Value="-0.0887305844" Slope="0.00034519995"/>
+				<HermiteKey Frame="16" Value="-0.07072063657" Slope="0.00411400285"/>
+				<HermiteKey Frame="24" Value="-0.04481916507" Slope="0.00143690339"/>
+				<HermiteKey Frame="33" Value="-0.06127634583" Slope="-0.00404670295"/>
+				<HermiteKey Frame="34" Value="-0.06544551853" Slope="-0.0041691727"/>
+			</RotateX>
+		</Node>
+		<Node Name="Ref:RArm">
+			<ScaleX>
+				<OneFrameKey Value="0.95"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="-1.23008800297" Slope="-0.01464100859"/>
+				<HermiteKey Frame="2" Value="-1.2600408549" Slope="-0.01531709678"/>
+				<HermiteKey Frame="7" Value="-1.32267080829" Slope="-0.00648026789"/>
+				<HermiteKey Frame="14" Value="-1.29828716237" Slope="0.01018938925"/>
+				<HermiteKey Frame="19" Value="-1.24097807211" Slope="0.01123440514"/>
+				<HermiteKey Frame="26" Value="-1.18730844712" Slope="0.00246761631"/>
+				<HermiteKey Frame="33" Value="-1.21717806429" Slope="-0.01172476412"/>
+				<HermiteKey Frame="34" Value="-1.23008800297" Slope="-0.01290993868"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-1.16523577421" Slope="-0.002170474"/>
+				<HermiteKey Frame="8" Value="-1.17758898776" Slope="-0.0003010693"/>
+				<HermiteKey Frame="20" Value="-1.16522271915" Slope="0.00161247479"/>
+				<HermiteKey Frame="29" Value="-1.15834990926" Slope="-0.00054707345"/>
+				<HermiteKey Frame="34" Value="-1.16523577421" Slope="-0.00201121271"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.99600334414" Slope="0.01592590253"/>
+				<HermiteKey Frame="1" Value="1.01192924667" Slope="0.0162831627"/>
+				<HermiteKey Frame="7" Value="1.09649039657" Slope="0.00701759368"/>
+				<HermiteKey Frame="13" Value="1.08052087826" Slope="-0.00966138352"/>
+				<HermiteKey Frame="19" Value="1.00785055183" Slope="-0.01221754911"/>
+				<HermiteKey Frame="25" Value="0.95303815506" Slope="-0.00460011195"/>
+				<HermiteKey Frame="33" Value="0.98194750954" Slope="0.01276996327"/>
+				<HermiteKey Frame="34" Value="0.99600334414" Slope="0.0140558346"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RForeArm">
+			<ScaleX>
+				<OneFrameKey Value="0.95"/>
+			</ScaleX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.19130848892" Slope="-0.00195906227"/>
+				<HermiteKey Frame="5" Value="-0.20365540183" Slope="-0.00284350787"/>
+				<HermiteKey Frame="11" Value="-0.21741550784" Slope="-0.00103521587"/>
+				<HermiteKey Frame="19" Value="-0.21072524194" Slope="0.00282676144"/>
+				<HermiteKey Frame="24" Value="-0.19409223671" Slope="0.00314862633"/>
+				<HermiteKey Frame="31" Value="-0.18724808513" Slope="-0.00085175558"/>
+				<HermiteKey Frame="34" Value="-0.19130848892" Slope="-0.00164181377"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:RHand">
+			<ScaleX>
+				<OneFrameKey Value="0.95"/>
+			</ScaleX>
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.23291797604" Slope="0.00003167773"/>
+				<HermiteKey Frame="12" Value="-0.23535585194" Slope="-0.00032904692"/>
+				<HermiteKey Frame="21" Value="-0.23599537549" Slope="0.00026482753"/>
+				<HermiteKey Frame="34" Value="-0.23291797604" Slope="0.00007838274"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.15458016411" Slope="0.0008592954"/>
+				<HermiteKey Frame="1" Value="-0.15372086871" Slope="0.00017301449"/>
+				<HermiteKey Frame="7" Value="-0.17445138342" Slope="-0.00655144241"/>
+				<HermiteKey Frame="11" Value="-0.20329300167" Slope="-0.00691391239"/>
+				<HermiteKey Frame="15" Value="-0.22625502454" Slope="-0.00409166263"/>
+				<HermiteKey Frame="18" Value="-0.23166770943" Slope="0.00095198984"/>
+				<HermiteKey Frame="25" Value="-0.1981677376" Slope="0.00641848323"/>
+				<HermiteKey Frame="33" Value="-0.15668574677" Slope="0.00259203211"/>
+				<HermiteKey Frame="34" Value="-0.15458016411" Slope="0.00210558266"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.03650794208" Slope="-0.00020628046"/>
+				<HermiteKey Frame="6" Value="0.0398176274" Slope="0.00136073722"/>
+				<HermiteKey Frame="14" Value="0.05281134188" Slope="0.00124076329"/>
+				<HermiteKey Frame="19" Value="0.0548361507" Slope="-0.00062868505"/>
+				<HermiteKey Frame="28" Value="0.04247590347" Slope="-0.00143144051"/>
+				<HermiteKey Frame="34" Value="0.03650794208" Slope="-0.0005056917"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LThigh">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.59017334762" Slope="0.01572943082"/>
+				<HermiteKey Frame="1" Value="-0.57444391681" Slope="0.01399021894"/>
+				<HermiteKey Frame="5" Value="-0.54151108971" Slope="0.00354691047"/>
+				<HermiteKey Frame="11" Value="-0.55116661765" Slope="-0.00601424752"/>
+				<HermiteKey Frame="15" Value="-0.58561507122" Slope="-0.01112691904"/>
+				<HermiteKey Frame="16" Value="-0.59735682612" Slope="-0.01069795202"/>
+				<HermiteKey Frame="17" Value="-0.60701097525" Slope="-0.00768850697"/>
+				<HermiteKey Frame="20" Value="-0.62227028418" Slope="-0.00717802434"/>
+				<HermiteKey Frame="21" Value="-0.63132131734" Slope="-0.01089253005"/>
+				<HermiteKey Frame="23" Value="-0.65684417456" Slope="-0.01144683789"/>
+				<HermiteKey Frame="24" Value="-0.66694902006" Slope="-0.00800499625"/>
+				<HermiteKey Frame="30" Value="-0.6508326323" Slope="0.01157552974"/>
+				<HermiteKey Frame="33" Value="-0.60739301037" Slope="0.01666219586"/>
+				<HermiteKey Frame="34" Value="-0.59017334762" Slope="0.01721966275"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-1.18645758165" Slope="0.00848989235"/>
+				<HermiteKey Frame="1" Value="-1.17796768931" Slope="0.0075109808"/>
+				<HermiteKey Frame="10" Value="-1.1688832331" Slope="-0.00288207092"/>
+				<HermiteKey Frame="15" Value="-1.18922645924" Slope="-0.00525728077"/>
+				<HermiteKey Frame="17" Value="-1.19879320229" Slope="-0.00293313925"/>
+				<HermiteKey Frame="20" Value="-1.20343495779" Slope="-0.0028409946"/>
+				<HermiteKey Frame="21" Value="-1.20733130063" Slope="-0.00483989401"/>
+				<HermiteKey Frame="23" Value="-1.21881045329" Slope="-0.00502419205"/>
+				<HermiteKey Frame="27" Value="-1.22594014074" Slope="0.0012768567"/>
+				<HermiteKey Frame="33" Value="-1.1954529388" Slope="0.00848762342"/>
+				<HermiteKey Frame="34" Value="-1.18645758165" Slope="0.00899535715"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="0.58638266702" Slope="-0.01232944217"/>
+				<HermiteKey Frame="1" Value="0.57405322485" Slope="-0.01041526104"/>
+				<HermiteKey Frame="5" Value="0.55659211326" Slope="0.00010500773"/>
+				<HermiteKey Frame="9" Value="0.56689259272" Slope="0.00403301957"/>
+				<HermiteKey Frame="15" Value="0.60053489615" Slope="0.00757146519"/>
+				<HermiteKey Frame="16" Value="0.60850361573" Slope="0.00665464373"/>
+				<HermiteKey Frame="17" Value="0.61384418362" Slope="0.00317062621"/>
+				<HermiteKey Frame="20" Value="0.61538462867" Slope="0.00325378242"/>
+				<HermiteKey Frame="21" Value="0.62088304413" Slope="0.00775049234"/>
+				<HermiteKey Frame="23" Value="0.64158872281" Slope="0.00965755252"/>
+				<HermiteKey Frame="24" Value="0.65020071839" Slope="0.00680235095"/>
+				<HermiteKey Frame="30" Value="0.63666228665" Slope="-0.00971034873"/>
+				<HermiteKey Frame="34" Value="0.58638266702" Slope="-0.01413526453"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LLeg">
+			<RotateY>
+				<HermiteKey Frame="0" Value="2.1869744345" Slope="-0.00448848069"/>
+				<HermiteKey Frame="1" Value="2.18248595381" Slope="-0.00348015162"/>
+				<HermiteKey Frame="8" Value="2.18915209926" Slope="0.00280064258"/>
+				<HermiteKey Frame="15" Value="2.20873418733" Slope="0.002404767"/>
+				<HermiteKey Frame="17" Value="2.21125873628" Slope="-0.00109309971"/>
+				<HermiteKey Frame="20" Value="2.20282916251" Slope="-0.00129988632"/>
+				<HermiteKey Frame="21" Value="2.20283356074" Slope="0.00135049214"/>
+				<HermiteKey Frame="23" Value="2.20898493878" Slope="0.00323860678"/>
+				<HermiteKey Frame="25" Value="2.21374759324" Slope="0.00111193181"/>
+				<HermiteKey Frame="34" Value="2.1869744345" Slope="-0.00539050175"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:LFoot">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.13962325093" Slope="-0.00409801563"/>
+				<HermiteKey Frame="8" Value="0.11884470476" Slope="-0.00068737175"/>
+				<HermiteKey Frame="15" Value="0.13076416908" Slope="0.00363273703"/>
+				<HermiteKey Frame="18" Value="0.14109965985" Slope="0.00274453898"/>
+				<HermiteKey Frame="21" Value="0.14892445958" Slope="0.00285594334"/>
+				<HermiteKey Frame="24" Value="0.15657039796" Slope="0.00161099999"/>
+				<HermiteKey Frame="33" Value="0.14378813012" Slope="-0.00394243698"/>
+				<HermiteKey Frame="34" Value="0.13962325093" Slope="-0.00416487919"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="3.94576823845" Slope="-0.00068656017"/>
+				<HermiteKey Frame="1" Value="3.94508167828" Slope="0.00117924916"/>
+				<HermiteKey Frame="7" Value="3.98855165148" Slope="0.00762343237"/>
+				<HermiteKey Frame="13" Value="4.00701454716" Slope="-0.00063036929"/>
+				<HermiteKey Frame="15" Value="4.00371568289" Slope="-0.00257940465"/>
+				<HermiteKey Frame="16" Value="4.00069406417" Slope="-0.00474109092"/>
+				<HermiteKey Frame="17" Value="3.99423350105" Slope="-0.00850906479"/>
+				<HermiteKey Frame="20" Value="3.96174133469" Slope="-0.00806525374"/>
+				<HermiteKey Frame="21" Value="3.95578997138" Slope="-0.00373547584"/>
+				<HermiteKey Frame="23" Value="3.95465999286" Slope="0.00060413699"/>
+				<HermiteKey Frame="25" Value="3.95591301709" Slope="0.00031877566"/>
+				<HermiteKey Frame="33" Value="3.94843566005" Slope="-0.00245130621"/>
+				<HermiteKey Frame="34" Value="3.94576823845" Slope="-0.0026674216"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.18218600198" Slope="0.00128435289"/>
+				<HermiteKey Frame="2" Value="-0.18031261792" Slope="0.00032751103"/>
+				<HermiteKey Frame="8" Value="-0.18315884851" Slope="-0.00060169353"/>
+				<HermiteKey Frame="15" Value="-0.18868611426" Slope="-0.00087638218"/>
+				<HermiteKey Frame="17" Value="-0.1897120537" Slope="0.00030895818"/>
+				<HermiteKey Frame="21" Value="-0.1865588197" Slope="-0.00017744763"/>
+				<HermiteKey Frame="24" Value="-0.18870543506" Slope="-0.00058622992"/>
+				<HermiteKey Frame="34" Value="-0.18218600198" Slope="0.00162549495"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:LToe">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="-0.00151635951"/>
+				<HermiteKey Frame="1" Value="-0.00151635951" Slope="-0.0028204608"/>
+				<HermiteKey Frame="8" Value="-0.04949942254" Slope="-0.00561016889"/>
+				<HermiteKey Frame="15" Value="-0.05465603272" Slope="0.00352084397"/>
+				<HermiteKey Frame="16" Value="-0.05060761935" Slope="0.00548434811"/>
+				<HermiteKey Frame="17" Value="-0.04368733651" Slope="0.00855677336"/>
+				<HermiteKey Frame="20" Value="-0.01206556584" Slope="0.00850167332"/>
+				<HermiteKey Frame="21" Value="-0.0052187439" Slope="0.00509116033"/>
+				<HermiteKey Frame="23" Value="-0.00036177185" Slope="0.00094162258"/>
+				<HermiteKey Frame="26" Value="0" Slope="0"/>
+				<HermiteKey Frame="34" Value="0" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:RThigh">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.77577316126" Slope="-0.0237217647"/>
+				<HermiteKey Frame="1" Value="0.75205139656" Slope="-0.02078014315"/>
+				<HermiteKey Frame="4" Value="0.71227967133" Slope="-0.00722665794"/>
+				<HermiteKey Frame="8" Value="0.70614522298" Slope="0.00302421926"/>
+				<HermiteKey Frame="15" Value="0.77390602548" Slope="0.01639461943"/>
+				<HermiteKey Frame="16" Value="0.79128788168" Slope="0.01593945501"/>
+				<HermiteKey Frame="17" Value="0.80578493551" Slope="0.01167169739"/>
+				<HermiteKey Frame="19" Value="0.82140736019" Slope="0.0076846847"/>
+				<HermiteKey Frame="20" Value="0.83000064584" Slope="0.0115885499"/>
+				<HermiteKey Frame="21" Value="0.84458445999" Slope="0.01757307447"/>
+				<HermiteKey Frame="23" Value="0.88602065338" Slope="0.0188209238"/>
+				<HermiteKey Frame="24" Value="0.90278864237" Slope="0.01332169675"/>
+				<HermiteKey Frame="28" Value="0.90494813825" Slope="-0.01098616696"/>
+				<HermiteKey Frame="34" Value="0.77577316126" Slope="-0.02680466193"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-1.22590804413" Slope="0.01062734472"/>
+				<HermiteKey Frame="1" Value="-1.21528069941" Slope="0.00984324683"/>
+				<HermiteKey Frame="8" Value="-1.18508058669" Slope="-0.00094349009"/>
+				<HermiteKey Frame="15" Value="-1.21880047001" Slope="-0.00756950169"/>
+				<HermiteKey Frame="17" Value="-1.23314412685" Slope="-0.00552619238"/>
+				<HermiteKey Frame="20" Value="-1.24554858327" Slope="-0.00490646959"/>
+				<HermiteKey Frame="21" Value="-1.25121153092" Slope="-0.00627467683"/>
+				<HermiteKey Frame="23" Value="-1.26446289091" Slope="-0.0055670069"/>
+				<HermiteKey Frame="31" Value="-1.25421744168" Slope="0.00738741149"/>
+				<HermiteKey Frame="33" Value="-1.23667454396" Slope="0.01010988951"/>
+				<HermiteKey Frame="34" Value="-1.22590804413" Slope="0.01076649982"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.69548339055" Slope="0.02568852388"/>
+				<HermiteKey Frame="1" Value="-0.66979486667" Slope="0.02265917335"/>
+				<HermiteKey Frame="5" Value="-0.61856896444" Slope="0.00510588219"/>
+				<HermiteKey Frame="8" Value="-0.6157436778" Slope="-0.00269827902"/>
+				<HermiteKey Frame="15" Value="-0.69126220703" Slope="-0.01826199083"/>
+				<HermiteKey Frame="16" Value="-0.71051346794" Slope="-0.01767813456"/>
+				<HermiteKey Frame="17" Value="-0.72661847616" Slope="-0.0131124056"/>
+				<HermiteKey Frame="19" Value="-0.74463468972" Slope="-0.00880297823"/>
+				<HermiteKey Frame="20" Value="-0.7543442356" Slope="-0.01276160314"/>
+				<HermiteKey Frame="21" Value="-0.77015789601" Slope="-0.01884412795"/>
+				<HermiteKey Frame="23" Value="-0.81412921504" Slope="-0.0199480487"/>
+				<HermiteKey Frame="24" Value="-0.8319285889" Slope="-0.01416428936"/>
+				<HermiteKey Frame="28" Value="-0.83406317893" Slope="0.01177913113"/>
+				<HermiteKey Frame="33" Value="-0.724324747" Slope="0.02824661805"/>
+				<HermiteKey Frame="34" Value="-0.69548339055" Slope="0.02884135645"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RLeg">
+			<RotateY>
+				<HermiteKey Frame="0" Value="2.15892416599" Slope="-0.00574325025"/>
+				<HermiteKey Frame="1" Value="2.15318091574" Slope="-0.00473470301"/>
+				<HermiteKey Frame="8" Value="2.15360063252" Slope="0.00263439997"/>
+				<HermiteKey Frame="15" Value="2.17813566829" Slope="0.00356104763"/>
+				<HermiteKey Frame="17" Value="2.18302843705" Slope="0.00015013322"/>
+				<HermiteKey Frame="20" Value="2.17831610043" Slope="-0.0002319019"/>
+				<HermiteKey Frame="21" Value="2.1792878823" Slope="0.00219937666"/>
+				<HermiteKey Frame="23" Value="2.18671610832" Slope="0.00370977586"/>
+				<HermiteKey Frame="25" Value="2.19208144243" Slope="0.00120109196"/>
+				<HermiteKey Frame="33" Value="2.16556715092" Slope="-0.00641568198"/>
+				<HermiteKey Frame="34" Value="2.15892416599" Slope="-0.00664298493"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:RFoot">
+			<RotateX>
+				<HermiteKey Frame="0" Value="2.82465517313" Slope="0.00212841157"/>
+				<HermiteKey Frame="1" Value="2.8267835847" Slope="0.0013840461"/>
+				<HermiteKey Frame="9" Value="2.81293966798" Slope="-0.00204597094"/>
+				<HermiteKey Frame="15" Value="2.80625673246" Slope="-0.00041279655"/>
+				<HermiteKey Frame="17" Value="2.80699521617" Slope="0.0019700753"/>
+				<HermiteKey Frame="20" Value="2.81588379408" Slope="0.00178711243"/>
+				<HermiteKey Frame="24" Value="2.81351704035" Slope="-0.00083210317"/>
+				<HermiteKey Frame="33" Value="2.82184102169" Slope="0.00263027227"/>
+				<HermiteKey Frame="34" Value="2.82465517313" Slope="0.00281415143"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.85670456737" Slope="0.00340838368"/>
+				<HermiteKey Frame="1" Value="-0.85329618369" Slope="0.00162522442"/>
+				<HermiteKey Frame="7" Value="-0.88054005773" Slope="-0.00573761284"/>
+				<HermiteKey Frame="10" Value="-0.8932803504" Slope="-0.00326047576"/>
+				<HermiteKey Frame="15" Value="-0.90229029851" Slope="-0.00025177247"/>
+				<HermiteKey Frame="16" Value="-0.90221673288" Slope="0.00172033614"/>
+				<HermiteKey Frame="17" Value="-0.89884962623" Slope="0.0054068904"/>
+				<HermiteKey Frame="20" Value="-0.87522785144" Slope="0.00542076576"/>
+				<HermiteKey Frame="21" Value="-0.87179264205" Slope="0.00136040561"/>
+				<HermiteKey Frame="23" Value="-0.87479228708" Slope="-0.00229018614"/>
+				<HermiteKey Frame="25" Value="-0.878472052" Slope="-0.00099009038"/>
+				<HermiteKey Frame="33" Value="-0.86189693935" Slope="0.00487964388"/>
+				<HermiteKey Frame="34" Value="-0.85670456737" Slope="0.00519237198"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-2.84806756077" Slope="-0.00107032316"/>
+				<HermiteKey Frame="1" Value="-2.84913788393" Slope="-0.00022783528"/>
+				<HermiteKey Frame="8" Value="-2.82997244087" Slope="0.00268526759"/>
+				<HermiteKey Frame="15" Value="-2.8226210617" Slope="-0.00042424591"/>
+				<HermiteKey Frame="17" Value="-2.82563468681" Slope="-0.00344519268"/>
+				<HermiteKey Frame="20" Value="-2.83949670259" Slope="-0.00324612915"/>
+				<HermiteKey Frame="22" Value="-2.84180540668" Slope="0.00032757212"/>
+				<HermiteKey Frame="25" Value="-2.83973879722" Slope="0.00034008613"/>
+				<HermiteKey Frame="33" Value="-2.84610933625" Slope="-0.00184490901"/>
+				<HermiteKey Frame="34" Value="-2.84806756077" Slope="-0.00195822451"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:RToe">
+			<RotateY>
+				<HermiteKey Frame="0" Value="0" Slope="-0.00151635951"/>
+				<HermiteKey Frame="1" Value="-0.00151635951" Slope="-0.0028204608"/>
+				<HermiteKey Frame="8" Value="-0.04949942254" Slope="-0.00561016889"/>
+				<HermiteKey Frame="15" Value="-0.05465603272" Slope="0.00352084397"/>
+				<HermiteKey Frame="16" Value="-0.05060761935" Slope="0.00548434811"/>
+				<HermiteKey Frame="17" Value="-0.04368733651" Slope="0.00855677336"/>
+				<HermiteKey Frame="20" Value="-0.01206556584" Slope="0.00850167332"/>
+				<HermiteKey Frame="21" Value="-0.0052187439" Slope="0.00509116033"/>
+				<HermiteKey Frame="23" Value="-0.00036177185" Slope="0.00094162258"/>
+				<HermiteKey Frame="26" Value="0" Slope="0"/>
+				<HermiteKey Frame="34" Value="0" Slope="0"/>
+			</RotateY>
+		</Node>
+		<Node Name="Ref:Tail1">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-1.69826466848" Slope="-0.00307436257"/>
+				<HermiteKey Frame="1" Value="-1.70133903105" Slope="-0.00202400597"/>
+				<HermiteKey Frame="9" Value="-1.66213130896" Slope="0.01030257385"/>
+				<HermiteKey Frame="15" Value="-1.60505722728" Slope="0.00492684631"/>
+				<HermiteKey Frame="18" Value="-1.59993198066" Slope="-0.00057870755"/>
+				<HermiteKey Frame="23" Value="-1.6194269768" Slope="-0.00726597148"/>
+				<HermiteKey Frame="26" Value="-1.64432753687" Slope="-0.00827090589"/>
+				<HermiteKey Frame="33" Value="-1.69354861431" Slope="-0.00510261842"/>
+				<HermiteKey Frame="34" Value="-1.69826466848" Slope="-0.00471605417"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="0.93608301442" Slope="0.00003349287"/>
+				<HermiteKey Frame="7" Value="0.92791070218" Slope="-0.00336557076"/>
+				<HermiteKey Frame="11" Value="0.91105595287" Slope="-0.00421757941"/>
+				<HermiteKey Frame="16" Value="0.89546768429" Slope="-0.00137489184"/>
+				<HermiteKey Frame="24" Value="0.90353133232" Slope="0.00309219984"/>
+				<HermiteKey Frame="33" Value="0.93542148227" Slope="0.00122338854"/>
+				<HermiteKey Frame="34" Value="0.93608301442" Slope="0.00066153215"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="1.60609812419" Slope="-0.00370458351"/>
+				<HermiteKey Frame="1" Value="1.60239354068" Slope="-0.00247434455"/>
+				<HermiteKey Frame="7" Value="1.62491521699" Slope="0.00864835079"/>
+				<HermiteKey Frame="9" Value="1.64484898889" Slope="0.01134738903"/>
+				<HermiteKey Frame="15" Value="1.70987232973" Slope="0.00568498243"/>
+				<HermiteKey Frame="18" Value="1.71559212276" Slope="-0.00075773469"/>
+				<HermiteKey Frame="23" Value="1.69257936316" Slope="-0.00847078099"/>
+				<HermiteKey Frame="25" Value="1.6735252372" Slope="-0.00956481445"/>
+				<HermiteKey Frame="33" Value="1.6115787722" Slope="-0.00576667257"/>
+				<HermiteKey Frame="34" Value="1.60609812419" Slope="-0.00548064801"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Tail2">
+			<RotateX>
+				<HermiteKey Frame="0" Value="0.10293093226" Slope="-0.00396090256"/>
+				<HermiteKey Frame="8" Value="0.08766638734" Slope="0.00152274741"/>
+				<HermiteKey Frame="16" Value="0.12057102737" Slope="0.00464546433"/>
+				<HermiteKey Frame="26" Value="0.13370251815" Slope="-0.00227802119"/>
+				<HermiteKey Frame="34" Value="0.10293093226" Slope="-0.00427630101"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.72035930658" Slope="0.00370172117"/>
+				<HermiteKey Frame="3" Value="-0.71133324909" Slope="0.00194766527"/>
+				<HermiteKey Frame="8" Value="-0.71102053844" Slope="-0.00205739412"/>
+				<HermiteKey Frame="14" Value="-0.73946190034" Slope="-0.00574626967"/>
+				<HermiteKey Frame="18" Value="-0.7575143993" Slope="-0.00266409675"/>
+				<HermiteKey Frame="24" Value="-0.76025339685" Slope="0.00129450198"/>
+				<HermiteKey Frame="29" Value="-0.74396757252" Slope="0.00467177517"/>
+				<HermiteKey Frame="33" Value="-0.72463340848" Slope="0.00447391592"/>
+				<HermiteKey Frame="34" Value="-0.72035930658" Slope="0.0042741019"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.53528921782" Slope="0.00599363518"/>
+				<HermiteKey Frame="6" Value="-0.51091730052" Slope="0.00084531532"/>
+				<HermiteKey Frame="9" Value="-0.5153688675" Slope="-0.00382385058"/>
+				<HermiteKey Frame="15" Value="-0.55458498462" Slope="-0.00752937657"/>
+				<HermiteKey Frame="18" Value="-0.57433945885" Slope="-0.00513593676"/>
+				<HermiteKey Frame="24" Value="-0.58661736145" Slope="0.001075149"/>
+				<HermiteKey Frame="33" Value="-0.54176845596" Slope="0.00655234126"/>
+				<HermiteKey Frame="34" Value="-0.53528921782" Slope="0.00647923814"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Tail3">
+			<RotateX>
+				<HermiteKey Frame="0" Value="-0.11105934947" Slope="-0.00091106187"/>
+				<HermiteKey Frame="11" Value="-0.11588258431" Slope="0.00053476016"/>
+				<HermiteKey Frame="22" Value="-0.10739497834" Slope="0.00049686906"/>
+				<HermiteKey Frame="34" Value="-0.11105934947" Slope="-0.00090762357"/>
+			</RotateX>
+			<RotateY>
+				<HermiteKey Frame="0" Value="-0.24686376763" Slope="0.00545881394"/>
+				<HermiteKey Frame="8" Value="-0.21698619175" Slope="0.00000431969"/>
+				<HermiteKey Frame="16" Value="-0.25107379849" Slope="-0.00691596315"/>
+				<HermiteKey Frame="25" Value="-0.29053016019" Slope="0.00080080942"/>
+				<HermiteKey Frame="33" Value="-0.25237979347" Slope="0.00574968179"/>
+				<HermiteKey Frame="34" Value="-0.24686376763" Slope="0.00551602583"/>
+			</RotateY>
+			<RotateZ>
+				<HermiteKey Frame="0" Value="-0.15215509893" Slope="0.00382340553"/>
+				<HermiteKey Frame="8" Value="-0.12959139509" Slope="0.00072703435"/>
+				<HermiteKey Frame="17" Value="-0.1524133553" Slope="-0.00363723998"/>
+				<HermiteKey Frame="25" Value="-0.17168285489" Slope="-0.00022698007"/>
+				<HermiteKey Frame="33" Value="-0.15598093046" Slope="0.00366894389"/>
+				<HermiteKey Frame="34" Value="-0.15215509893" Slope="0.00382583153"/>
+			</RotateZ>
+		</Node>
+		<Node Name="Ref:Feeler">
+			<RotateY>
+				<OneFrameKey Value="0.32334091895"/>
+			</RotateY>
+			<TranslateX>
+				<OneFrameKey Value="2.27598765437"/>
+			</TranslateX>
+		</Node>
+	</SkeltalAnimation>
+	<Skelton>
+		<Node Name="GfAnimationRangeNode" ParentName="Ref:pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Origin" ParentName="Ref:pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Waist" ParentName="Ref:Origin" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.086303 1.570796</LocalRotation>
+			<LocalTransform>0 14.285264 0.262722</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Spine1" ParentName="Ref:Waist" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Spine2" ParentName="Ref:Spine1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.152882 0</LocalRotation>
+			<LocalTransform>5.551376 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Head" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0.479325 0</LocalRotation>
+			<LocalTransform>8.832681 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndHead" ParentName="Ref:Head" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>15.410909 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar1" ParentName="Ref:Head" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.362985 0.172532 -0.730703</LocalRotation>
+			<LocalTransform>11.946592 -6.241565 0.547564</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar2" ParentName="Ref:LEar1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.333 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar3" ParentName="Ref:LEar2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.102 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndLEar3" ParentName="Ref:LEar3" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.56 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar3_pointConstraint1" ParentName="Ref:LEar3" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar3_orientConstraint1" ParentName="Ref:LEar3" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar2_pointConstraint1" ParentName="Ref:LEar2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar2_orientConstraint1" ParentName="Ref:LEar2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar1_pointConstraint1" ParentName="Ref:LEar1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LEar1_orientConstraint1" ParentName="Ref:LEar1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar1" ParentName="Ref:Head" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.362985 0.172532 0.730703</LocalRotation>
+			<LocalTransform>11.946575 6.24156 0.547559</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar2" ParentName="Ref:REar1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.332988 0.000018 -0.000005</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar3" ParentName="Ref:REar2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.102025 -0.000054 0.000001</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndREar3" ParentName="Ref:REar3" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.559982 0.000057 -0.000008</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar3_pointConstraint1" ParentName="Ref:REar3" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar3_orientConstraint1" ParentName="Ref:REar3" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar2_pointConstraint1" ParentName="Ref:REar2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar2_orientConstraint1" ParentName="Ref:REar2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar1_pointConstraint1" ParentName="Ref:REar1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:REar1_orientConstraint1" ParentName="Ref:REar1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Head_pointConstraint1" ParentName="Ref:Head" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Head_orientConstraint1" ParentName="Ref:Head" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LShoulder" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.321382 -0.75012 -1.119372</LocalRotation>
+			<LocalTransform>3.223436 -3.536047 1.346002</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LArm" ParentName="Ref:LShoulder" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.382885 -0.096637 0.167718</LocalRotation>
+			<LocalTransform>5.118752 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LForeArm" ParentName="Ref:LArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.422382 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LHand" ParentName="Ref:LForeArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.23009 0 0</LocalRotation>
+			<LocalTransform>4.472324 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndLHand" ParentName="Ref:LHand" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.394053 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LHand_pointConstraint1" ParentName="Ref:LHand" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LHand_orientConstraint1" ParentName="Ref:LHand" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LForeArm_pointConstraint1" ParentName="Ref:LForeArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LForeArm_orientConstraint1" ParentName="Ref:LForeArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LArm_pointConstraint1" ParentName="Ref:LArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LArm_orientConstraint1" ParentName="Ref:LArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LShoulder_pointConstraint1" ParentName="Ref:LShoulder" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LShoulder_orientConstraint1" ParentName="Ref:LShoulder" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RShoulder" ParentName="Ref:Spine2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.321382 -0.75012 1.119372</LocalRotation>
+			<LocalTransform>3.22347 3.53605 1.345999</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RArm" ParentName="Ref:RShoulder" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.382885 -0.096637 -0.167718</LocalRotation>
+			<LocalTransform>5.118738 0.000077 0.000015</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RForeArm" ParentName="Ref:RArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>5.422361 -0.000044 -0.000067</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RHand" ParentName="Ref:RForeArm" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.23009 0 0</LocalRotation>
+			<LocalTransform>4.472402 0.000019 0.000064</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndRHand" ParentName="Ref:RHand" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.394014 -0.000072 -0.000018</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RHand_pointConstraint1" ParentName="Ref:RHand" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RHand_orientConstraint1" ParentName="Ref:RHand" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RForeArm_pointConstraint1" ParentName="Ref:RForeArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RForeArm_orientConstraint1" ParentName="Ref:RForeArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RArm_pointConstraint1" ParentName="Ref:RArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RArm_orientConstraint1" ParentName="Ref:RArm" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RShoulder_pointConstraint1" ParentName="Ref:RShoulder" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RShoulder_orientConstraint1" ParentName="Ref:RShoulder" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Spine2_pointConstraint1" ParentName="Ref:Spine2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Spine2_orientConstraint1" ParentName="Ref:Spine2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Spine1_pointConstraint1" ParentName="Ref:Spine1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Spine1_orientConstraint1" ParentName="Ref:Spine1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Hips" ParentName="Ref:Waist" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.086308 -3.141593</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndHips" ParentName="Ref:Hips" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.000001 0</LocalRotation>
+			<LocalTransform>13.276792 0 -0.000018</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LThigh" ParentName="Ref:Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>-0.343497 -0.847375 0.261935</LocalRotation>
+			<LocalTransform>3.200377 6.393034 -1.978632</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LLeg" ParentName="Ref:LThigh" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.504156 0</LocalRotation>
+			<LocalTransform>6.265954 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LFoot" ParentName="Ref:LLeg" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 4.085344 0</LocalRotation>
+			<LocalTransform>6.611589 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndLFoot" ParentName="Ref:LFoot" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>8.173446 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LToe" ParentName="Ref:LFoot" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.976096 -0.000001 -1.064399</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndLToe" ParentName="Ref:LToe" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.27242 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LToe_pointConstraint1" ParentName="Ref:LToe" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LToe_orientConstraint1" ParentName="Ref:LToe" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LFoot_pointConstraint1" ParentName="Ref:LFoot" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LFoot_orientConstraint1" ParentName="Ref:LFoot" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LLeg_pointConstraint1" ParentName="Ref:LLeg" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LLeg_orientConstraint1" ParentName="Ref:LLeg" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LThigh_pointConstraint1" ParentName="Ref:LThigh" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:LThigh_orientConstraint1" ParentName="Ref:LThigh" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RThigh" ParentName="Ref:Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0.343497 -0.847375 -0.261935</LocalRotation>
+			<LocalTransform>3.200367 -6.39303 -1.978636</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RLeg" ParentName="Ref:RThigh" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.504156 0</LocalRotation>
+			<LocalTransform>6.26597 -0.000002 -0.000004</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RFoot" ParentName="Ref:RLeg" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>3.141593 -0.943752 -3.141593</LocalRotation>
+			<LocalTransform>6.611589 -0.000005 -0.000005</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndRFoot" ParentName="Ref:RFoot" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>8.17345 0.000007 0.000005</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RToe" ParentName="Ref:RFoot" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>4.976 0.000008 -1.064399</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndRToe" ParentName="Ref:RToe" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>3.272417 -0.000008 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RToe_pointConstraint1" ParentName="Ref:RToe" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RToe_orientConstraint1" ParentName="Ref:RToe" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RFoot_pointConstraint1" ParentName="Ref:RFoot" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RFoot_orientConstraint1" ParentName="Ref:RFoot" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RLeg_pointConstraint1" ParentName="Ref:RLeg" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RLeg_orientConstraint1" ParentName="Ref:RLeg" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RThigh_pointConstraint1" ParentName="Ref:RThigh" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:RThigh_orientConstraint1" ParentName="Ref:RThigh" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail1" ParentName="Ref:Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 1.217113 3.141593</LocalRotation>
+			<LocalTransform>3.916742 0 -9.021112</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail2" ParentName="Ref:Tail1" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.796687 0</LocalRotation>
+			<LocalTransform>5.504735 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail3" ParentName="Ref:Tail2" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.243753 0</LocalRotation>
+			<LocalTransform>12.843967 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndTail3" ParentName="Ref:Tail3" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>16.865444 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail3_pointConstraint1" ParentName="Ref:Tail3" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail3_orientConstraint1" ParentName="Ref:Tail3" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail2_pointConstraint1" ParentName="Ref:Tail2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail2_orientConstraint1" ParentName="Ref:Tail2" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail1_pointConstraint1" ParentName="Ref:Tail1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Tail1_orientConstraint1" ParentName="Ref:Tail1" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Feeler" ParentName="Ref:Hips" NeededRendering="TRUE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 -0.000001 0</LocalRotation>
+			<LocalTransform>4.056135 0 -0.028655</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:EndFeeler" ParentName="Ref:Feeler" NeededRendering="FALSE" IsJoint="TRUE" SegmentScaleCompensate="TRUE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>7.687204 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Feeler_pointConstraint1" ParentName="Ref:Feeler" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Feeler_orientConstraint1" ParentName="Ref:Feeler" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Hips_pointConstraint1" ParentName="Ref:Hips" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Hips_orientConstraint1" ParentName="Ref:Hips" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Waist_pointConstraint1" ParentName="Ref:Waist" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Waist_orientConstraint1" ParentName="Ref:Waist" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Origin_pointConstraint1" ParentName="Ref:Origin" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:Origin_orientConstraint1" ParentName="Ref:Origin" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:pm0025_00_BodySkin" ParentName="Ref:pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:VriVis00" ParentName="Ref:pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:pm0025_00_SippoSkin" ParentName="Ref:VriVis00" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:VriVis01" ParentName="Ref:pm0025_00_pikachu" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+		<Node Name="Ref:pm0025_01_SippoSkin" ParentName="Ref:VriVis01" NeededRendering="FALSE" IsJoint="FALSE" SegmentScaleCompensate="FALSE" BillboardType="NONE">
+			<LocalScale>1 1 1</LocalScale>
+			<LocalRotation>0 0 0</LocalRotation>
+			<LocalTransform>0 0 0</LocalTransform>
+			<LocalScalePivot>0 0 0</LocalScalePivot>
+			<LocalRotatePivot>0 0 0</LocalRotatePivot>
+			<GlobalScalePivot>0 0 0</GlobalScalePivot>
+			<GlobalRotatePivot>0 0 0</GlobalRotatePivot>
+		</Node>
+	</Skelton>
+</GfMotion>
+

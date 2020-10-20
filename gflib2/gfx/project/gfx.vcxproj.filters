@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WinOpenGL">
+      <UniqueIdentifier>{32a8ec4f-508f-460e-a58d-ae32917bee54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\CTR">
+      <UniqueIdentifier>{2e5edfff-f5dc-4290-a33d-813a5452c359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\WinOpenGL">
+      <UniqueIdentifier>{e63ee8b3-f66b-4c1e-a714-0bba927fef89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\CTR">
+      <UniqueIdentifier>{871cda9f-07d7-469f-9716-9a6c1ca0d0cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\1StBuild">
+      <UniqueIdentifier>{dd82f78d-ede0-4bf7-a3d9-8334b68691f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\ColorDef.inl">
+      <Filter>ヘッダー ファイル</Filter>
+    </None>
+    <None Include="..\include\CTR\gfl2_CTRCommandBufferManager.inl">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gfl2_Buffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Color.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_CommonGL.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DisplayList.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_DrawUtil.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_enums.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_GFGL.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_GFGLUtil.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_GLMemory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_ImageData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_OcclusionQuery.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_QueryObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Shader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_StateObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Surface.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_Texture.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_TimerQuery.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_types.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLConstantBuffer.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLDisplayList.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLGeometryShader.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLGL.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLIndexBuffer.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLOcclusionQuery.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLPixelShader.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLQueryObject.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLStateObject.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLSurface.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLTexture.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLTimerQuery.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLTypes.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLVertexBuffer.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\gfl2_WinOpenGLVertexShader.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\stdafx.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\WinOpenGL\targetver.h">
+      <Filter>ヘッダー ファイル\WinOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRCommandList.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRConstantBuffer.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRDisplayList.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRGeometryShader.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRGL.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRGPUProfiler.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRIndexBuffer.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTROcclusionQuery.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRPixelShader.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRStateObject.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRSurface.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRTexture.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRTimerQuery.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRTypes.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRVertexBuffer.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRVertexShader.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\gfl2_DDSInformation.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRCommandBufferManager.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_PCDebugUtil.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gfl2_ColorU8.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CTR\gfl2_CTRCommandBufferUtil.h">
+      <Filter>ヘッダー ファイル\CTR</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\gfl2_CommonGL.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DDSInformation.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_DrawUtil.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_GFGL.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_GFGLUtil.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_GLMemory.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_ImageData.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_Surface.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_Texture.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLConstantBuffer.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLDisplayList.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLGeometryShader.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLGL.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLIndexBuffer.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLOcclusionQuery.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLPixelShader.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLQueryObject.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLStateObject.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLSurface.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLTexture.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLTimerQuery.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLVertexBuffer.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLVertexShader.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRCommandList.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRConstantBuffer.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRDisplayList.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRGeometryShader.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRGL.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRGPUProfiler.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRIndexBuffer.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTROcclusionQuery.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRPixelShader.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRStateObject.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRSurface.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRTexture.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRTimerQuery.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRVertexBuffer.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRVertexShader.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\gfl2_ImageData_nw4ctga.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTR\gfl2_CTRPCDebugUtil.cpp">
+      <Filter>ソース ファイル\CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\WinOpenGL\gfl2_WinOpenGLPCDebugUtil.cpp">
+      <Filter>ソース ファイル\WinOpenGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Sample\data\dummy.tga">
+      <Filter>ソース ファイル\1StBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\DrawUtil.gfvsh">
+      <Filter>ソース ファイル\1StBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\DrawUtil.gffsh">
+      <Filter>ソース ファイル\1StBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\dummy.ctpk">
+      <Filter>ソース ファイル\1StBuild</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\resource\DrawUtil.shbin">
+      <Filter>ソース ファイル\1StBuild</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

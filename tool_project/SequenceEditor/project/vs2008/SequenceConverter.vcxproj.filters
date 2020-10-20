@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="old_lib">
+      <UniqueIdentifier>{00bcd0ae-840d-493f-87df-97787fb0a4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old_lib\Shader">
+      <UniqueIdentifier>{4064bfe3-0ac8-443e-b25c-323032a14900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old_lib\Shader\Common">
+      <UniqueIdentifier>{9526888a-d232-40d8-b889-a0ba55145452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old_lib\Shader\NatibeMath">
+      <UniqueIdentifier>{28dcb4dd-88a4-4e37-8ffb-5d0a6dcc3fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old_lib\Shader\String">
+      <UniqueIdentifier>{c178996e-262a-4013-b7a5-fc18259f1ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="old_lib\Shader\Win">
+      <UniqueIdentifier>{afdfe821-a317-4f0f-ab98-e3ddfb79b8c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\converter\converterDef.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\converter\converterMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\converter\convertSeqFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\localDef.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\gfl_Framework.cpp">
+      <Filter>old_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\home\gflib_cpp\gflib\prog\include\qt\moc_gfl_MainWindow.cpp">
+      <Filter>old_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\home\gflib_cpp\gflib\prog\include\qt\moc_gfl_QtProperty.cpp">
+      <Filter>old_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerAttribute.cpp">
+      <Filter>old_lib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.cpp">
+      <Filter>old_lib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\UvAdjustShader.cpp">
+      <Filter>old_lib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\Common\SecureData.cpp">
+      <Filter>old_lib\Shader\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\Matrix.cpp">
+      <Filter>old_lib\Shader\NatibeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\NativeUtil.cpp">
+      <Filter>old_lib\Shader\NatibeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\Vector.cpp">
+      <Filter>old_lib\Shader\NatibeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\String\LogPrint.cpp">
+      <Filter>old_lib\Shader\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\String\Util2.cpp">
+      <Filter>old_lib\Shader\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\Win\WinGLSLShaderObject.cpp">
+      <Filter>old_lib\Shader\Win</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\converter\convertSeqFile.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\converter\converterDef.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\localDef.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.frag">
+      <Filter>old_lib\Shader</Filter>
+    </None>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.vert">
+      <Filter>old_lib\Shader</Filter>
+    </None>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\UvAdjustShader.geom">
+      <Filter>old_lib\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

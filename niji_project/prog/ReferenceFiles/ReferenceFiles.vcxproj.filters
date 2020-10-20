@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\args.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\console.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\core.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\datagram.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\default.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\file.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\fixed.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\float.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\funcset_gfl2.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\process.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\rational.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\string.inc" />
+    <None Include="..\..\..\..\exec\reference_files\gflib2_reference_files\pawn\time.inc" />
+    <None Include="..\..\..\..\exec\reference_files\niji_reference_files\script\funcset_pawn_object.inc" />
+    <None Include="..\..\..\..\exec\reference_files\niji_reference_files\script\init_script_define.inc" />
+    <None Include="..\..\..\..\exec\reference_files\niji_reference_files\script\sp_script_define.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\battle\battle_ResultData.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\font\LayoutDefaultFontDefine.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\poketool\PokeToolRibbonDefine.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\savedata\PokeDiaryDefine.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\savedata\RecordDefine.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\BattlePawnTypes.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\FieldPawnTypes.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\JoinFestaPawnDefine.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\ScriptFuncSetID.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\ScriptPokeParamDefine.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\SystemPawnTypes.h" />
+    <ClInclude Include="..\..\..\..\exec\reference_files\niji_reference_files\script\WeatherReplaceGroupDefine.h" />
+  </ItemGroup>
+</Project>

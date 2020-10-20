@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Widget">
+      <UniqueIdentifier>{0b890986-d6cb-4dfc-aa96-b18c5d31a983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Data">
+      <UniqueIdentifier>{a58f4c03-86ed-4020-a656-c7659b41d02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Dialog">
+      <UniqueIdentifier>{2d37b4ef-2f2b-4976-a37a-c77f241a5094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\converter">
+      <UniqueIdentifier>{948f9c76-dd16-46c6-9160-539b4ab31871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{b70d37df-27db-49dc-be3f-04f992e3cb97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\old_lib">
+      <UniqueIdentifier>{187c884d-7ae8-4e24-a95b-b000f7208a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\old_lib\Shader">
+      <UniqueIdentifier>{eb207e31-9457-43c5-b07c-35907a9537ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\old_lib\Shader\Common">
+      <UniqueIdentifier>{6985ae9d-1ce0-40c5-9303-beebeb2dad26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\old_lib\Shader\NatibeMath">
+      <UniqueIdentifier>{bf69a911-efc5-4d7e-85ee-c3cd80cbe19b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\old_lib\Shader\String">
+      <UniqueIdentifier>{4e4a8f00-89e5-4a18-a8e2-d9eb5fe731b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\old_lib\Shader\Win">
+      <UniqueIdentifier>{484fd5f0-0ef4-4ae1-b6ff-e1bbfcc725d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\localDef.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mainWindow.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\util.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\widgetFrameScale.cpp">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\widgetNumBox.cpp">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\widgetSeqBar.cpp">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\widgetSeqGroup.cpp">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\widgetSeqLabel.cpp">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\widgetTitleName.cpp">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataAction.cpp">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataCommand.cpp">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataEditor.cpp">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataGroup.cpp">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataMacro.cpp">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dialogAddGroup.cpp">
+      <Filter>ソース ファイル\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dialogMoveFrame.cpp">
+      <Filter>ソース ファイル\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\macroDialog.cpp">
+      <Filter>ソース ファイル\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\converter\converterDef.cpp">
+      <Filter>ソース ファイル\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\converter\convertSeqFile.cpp">
+      <Filter>ソース ファイル\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_dataEditor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_dataGroup.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_dialogAddGroup.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_dialogMoveFrame.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_macroDialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_mainWindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_widgetFrameScale.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_widgetNumBox.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_widgetSeqBar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_widgetSeqGroup.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_widgetSeqLabel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\moc_widgetTitleName.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\qrc_SequenceEditor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\gfl_Framework.cpp">
+      <Filter>ソース ファイル\old_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\home\gflib_cpp\gflib\prog\include\qt\moc_gfl_MainWindow.cpp">
+      <Filter>ソース ファイル\old_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\home\gflib_cpp\gflib\prog\include\qt\moc_gfl_QtProperty.cpp">
+      <Filter>ソース ファイル\old_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\Common\SecureData.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\Matrix.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\NatibeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\Vector.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\NatibeMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\String\LogPrint.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\String\Util2.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\Win\WinGLSLShaderObject.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.cpp">
+      <Filter>ソース ファイル\old_lib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\UvAdjustShader.cpp">
+      <Filter>ソース ファイル\old_lib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerAttribute.cpp">
+      <Filter>ソース ファイル\old_lib\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\old_lib\gflib\prog\src\qt\Shader\NativeMath\NativeUtil.cpp">
+      <Filter>ソース ファイル\old_lib\Shader\NatibeMath</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\widgetFrameScale.h">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\widgetNumBox.h">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\widgetSeqBar.h">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\widgetSeqGroup.h">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\widgetSeqLabel.h">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\widgetTitleName.h">
+      <Filter>ソース ファイル\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataAction.h">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataCommand.h">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataEditor.h">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataGroup.h">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataMacro.h">
+      <Filter>ソース ファイル\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dialogAddGroup.h">
+      <Filter>ソース ファイル\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dialogMoveFrame.h">
+      <Filter>ソース ファイル\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\macroDialog.h">
+      <Filter>ソース ファイル\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\converter\converterDef.h">
+      <Filter>ソース ファイル\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\converter\convertSeqFile.h">
+      <Filter>ソース ファイル\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\localDef.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mainWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\save_xml_define.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\util.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.frag">
+      <Filter>ソース ファイル\old_lib\Shader</Filter>
+    </None>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\CombinerShader.vert">
+      <Filter>ソース ファイル\old_lib\Shader</Filter>
+    </None>
+    <None Include="..\..\old_lib\gflib\prog\src\qt\Shader\UvAdjustShader.geom">
+      <Filter>ソース ファイル\old_lib\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

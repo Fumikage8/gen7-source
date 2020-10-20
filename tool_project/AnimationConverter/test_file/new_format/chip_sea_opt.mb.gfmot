@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<GfMotion version="0.94" FrameSize="300" IsLoop="false" CurrrentUnit="ntsc">
+	<Source Path="C:/home/xy_field/graphics/outsourcing/field/common/chip_sea_opt.mb" TargetNode="none"/>
+	<ModelAABB>0.000000 -2.500000 -18.000000 32.668365 1.612926 0.000000</ModelAABB>
+	<UvAnimation>
+		<Material Name="bm_w_wave_1">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0.30000001192" Slope="0.0004298389"/>
+					<HermiteKey Frame="54" Value="0.69993054867" Slope="-0.00009292364"/>
+					<HermiteKey Frame="109" Value="0.57968777418" Slope="-0.00597608089"/>
+					<HermiteKey Frame="160" Value="0.33800885081" Slope="0.00704339147"/>
+					<HermiteKey Frame="204" Value="0.69993054867" Slope="-0.00009292364"/>
+					<HermiteKey Frame="259" Value="0.57968777418" Slope="-0.00597608089"/>
+					<HermiteKey Frame="300" Value="0.30000001192" Slope="-0.00034871697"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<OneFrameKey Value="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0.30000001192" Slope="0.0004298389"/>
+					<HermiteKey Frame="54" Value="0.69993054867" Slope="-0.00009292364"/>
+					<HermiteKey Frame="109" Value="0.57968777418" Slope="-0.00597608089"/>
+					<HermiteKey Frame="160" Value="0.33800885081" Slope="0.00704339147"/>
+					<HermiteKey Frame="204" Value="0.69993054867" Slope="-0.00009292364"/>
+					<HermiteKey Frame="259" Value="0.57968777418" Slope="-0.00597608089"/>
+					<HermiteKey Frame="300" Value="0.30000001192" Slope="-0.00034871697"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+		<Material Name="bm_w_wave_2">
+			<TextureSlot No="0">
+				<TranslateU>
+					<OneFrameKey Value="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0.68324738741" Slope="-0.0015809536"/>
+					<HermiteKey Frame="59" Value="0.41606712341" Slope="-0.00751629472"/>
+					<HermiteKey Frame="75" Value="0.30000001192" Slope="-0.00314626098"/>
+					<HermiteKey Frame="96" Value="0.44080001116" Slope="0.01096588373"/>
+					<HermiteKey Frame="130" Value="0.6998064518" Slope="-0.00015559793"/>
+					<HermiteKey Frame="207" Value="0.43107691407" Slope="-0.00748591125"/>
+					<HermiteKey Frame="225" Value="0.30000001192" Slope="-0.00314626098"/>
+					<HermiteKey Frame="246" Value="0.44080001116" Slope="0.01096588373"/>
+					<HermiteKey Frame="280" Value="0.6998064518" Slope="-0.00015559793"/>
+					<HermiteKey Frame="300" Value="0.68324738741" Slope="-0.00150513649"/>
+				</TranslateV>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<TranslateU>
+					<OneFrameKey Value="0"/>
+				</TranslateU>
+				<TranslateV>
+					<HermiteKey Frame="0" Value="0.68324738741" Slope="-0.0015809536"/>
+					<HermiteKey Frame="59" Value="0.41606712341" Slope="-0.00751629472"/>
+					<HermiteKey Frame="75" Value="0.30000001192" Slope="-0.00314626098"/>
+					<HermiteKey Frame="96" Value="0.44080001116" Slope="0.01096588373"/>
+					<HermiteKey Frame="130" Value="0.6998064518" Slope="-0.00015559793"/>
+					<HermiteKey Frame="207" Value="0.43107691407" Slope="-0.00748591125"/>
+					<HermiteKey Frame="225" Value="0.30000001192" Slope="-0.00314626098"/>
+					<HermiteKey Frame="246" Value="0.44080001116" Slope="0.01096588373"/>
+					<HermiteKey Frame="280" Value="0.6998064518" Slope="-0.00015559793"/>
+					<HermiteKey Frame="300" Value="0.68324738741" Slope="-0.00150513649"/>
+				</TranslateV>
+			</TextureSlot>
+		</Material>
+	</UvAnimation>
+	<TexturePatternAnimation>
+		<Material Name="bm_w_wave_1">
+			<TextureSlot No="0">
+				<Attribute Frame="0" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="38" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="124" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="188" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="274" TextureName="bm_w_wave.2.tga"/>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<Attribute Frame="0" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="38" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="124" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="188" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="274" TextureName="bm_w_wave.2.tga"/>
+			</TextureSlot>
+		</Material>
+		<Material Name="bm_w_wave_2">
+			<TextureSlot No="0">
+				<Attribute Frame="0" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="49" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="113" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="199" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="263" TextureName="bm_w_wave.1.tga"/>
+			</TextureSlot>
+			<TextureSlot No="1">
+				<Attribute Frame="0" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="49" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="113" TextureName="bm_w_wave.1.tga"/>
+				<Attribute Frame="199" TextureName="bm_w_wave.2.tga"/>
+				<Attribute Frame="263" TextureName="bm_w_wave.1.tga"/>
+			</TextureSlot>
+		</Material>
+	</TexturePatternAnimation>
+	<BlendShapeAnimation/>
+	<VisibilityAnimation>
+		<Mesh Name="wave3_0Shape1">
+			<BoolKey Frame="0" Value="true"/>
+		</Mesh>
+	</VisibilityAnimation>
+	<AttributeKeyAnimation/>
+	<ShaderAnimation>
+		<Material Name="bm_w_wave_1">
+			<ConstantColor No="4">
+				<ColorR>
+					<OneFrameKey Value="0"/>
+				</ColorR>
+				<ColorG>
+					<OneFrameKey Value="0"/>
+				</ColorG>
+				<ColorB>
+					<OneFrameKey Value="0"/>
+				</ColorB>
+				<ColorA>
+					<HermiteKey Frame="0" Value="0" Slope="0.00209540757"/>
+					<HermiteKey Frame="12" Value="0.24166400731" Slope="0.03477807343"/>
+					<HermiteKey Frame="37" Value="0.99947142601" Slope="0.00233599544"/>
+					<HermiteKey Frame="49" Value="1" Slope="0"/>
+					<HermiteKey Frame="75" Value="1" Slope="-0.00086730719"/>
+					<HermiteKey Frame="105" Value="0.18256950378" Slope="-0.02882196754"/>
+					<HermiteKey Frame="116" Value="0.00010975054" Slope="-0.00134958909"/>
+					<HermiteKey Frame="136" Value="0" Slope="0"/>
+					<HermiteKey Frame="150" Value="0" Slope="0.00104770379"/>
+					<HermiteKey Frame="174" Value="0.70451200008" Slope="0.03682607412"/>
+					<HermiteKey Frame="187" Value="0.99947142601" Slope="0.00233599544"/>
+					<HermiteKey Frame="199" Value="1" Slope="0"/>
+					<HermiteKey Frame="225" Value="1" Slope="-0.00086730719"/>
+					<HermiteKey Frame="255" Value="0.18256950378" Slope="-0.02882196754"/>
+					<HermiteKey Frame="266" Value="0.00010975054" Slope="-0.00134958909"/>
+					<HermiteKey Frame="286" Value="0" Slope="0"/>
+					<HermiteKey Frame="300" Value="0" Slope="0"/>
+				</ColorA>
+			</ConstantColor>
+		</Material>
+		<Material Name="bm_w_wave_2">
+			<ConstantColor No="4">
+				<ColorR>
+					<OneFrameKey Value="0"/>
+				</ColorR>
+				<ColorG>
+					<OneFrameKey Value="0"/>
+				</ColorG>
+				<ColorB>
+					<OneFrameKey Value="0"/>
+				</ColorB>
+				<ColorA>
+					<HermiteKey Frame="0" Value="1" Slope="-0.00173461437"/>
+					<HermiteKey Frame="15" Value="0.6994740963" Slope="-0.0336304009"/>
+					<HermiteKey Frame="41" Value="0.00010974427" Slope="-0.00134957384"/>
+					<HermiteKey Frame="61" Value="0" Slope="0"/>
+					<HermiteKey Frame="75" Value="0" Slope="0.00104770169"/>
+					<HermiteKey Frame="99" Value="0.70451194048" Slope="0.03682604432"/>
+					<HermiteKey Frame="112" Value="0.99947142601" Slope="0.00233599544"/>
+					<HermiteKey Frame="124" Value="1" Slope="0"/>
+					<HermiteKey Frame="150" Value="1" Slope="-0.00086730719"/>
+					<HermiteKey Frame="180" Value="0.18256950378" Slope="-0.02882196754"/>
+					<HermiteKey Frame="191" Value="0.00010974427" Slope="-0.00134957384"/>
+					<HermiteKey Frame="211" Value="0" Slope="0"/>
+					<HermiteKey Frame="225" Value="0" Slope="0.00104770169"/>
+					<HermiteKey Frame="249" Value="0.70451194048" Slope="0.03682604432"/>
+					<HermiteKey Frame="262" Value="0.99947142601" Slope="0.00233599544"/>
+					<HermiteKey Frame="274" Value="1" Slope="0"/>
+					<HermiteKey Frame="300" Value="1" Slope="0"/>
+				</ColorA>
+			</ConstantColor>
+		</Material>
+	</ShaderAnimation>
+	<SkeltalAnimation/>
+</GfMotion>
+

@@ -1,0 +1,139 @@
+#ifndef HLSL
+#extension GL_NV_shadow_samplers_cube : enable 
+#endif
+
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+#define VERTEX_NUM (16)
+
+#if defined HLSL
+
+    #define             STATIC               static
+    
+    #define ConstantBuffer( NAME, REGNAME, NO )     cbuffer NAME : register( REGNAME )
+
+    #define             vec2                    float2
+    #define             vec3                    float3
+    #define             vec4                    float4
+    #define             mat4x4              float4x4
+    #define             mat3x3              float3x3
+    #define             inverse             transpose
+
+    // ピクセル シェーダの入力データ定義
+    struct PS_INPUT {
+        float4 Pos  : SV_POSITION; // 頂点座標(透視座標系)
+        float4 Uv   : TEXCOORD0;     
+        float4 Col  : COLOR;       // 頂点色
+    };
+
+    // -------------------------------------------------------------
+    // 頂点プログラムからフラグメントプログラムに渡すデータ
+    // -------------------------------------------------------------
+    static vec4 outPos;
+    static vec4 outCol;
+    static vec4 outUv;
+
+    #define             texture2D           tex2D
+    #define             textureCube     texCUBE
+
+    Texture2D       g_Texture : register( t0 );
+    SamplerState    g_Sampler : register( s0 );
+
+#else
+
+    #define             STATIC               
+    
+    #define ConstantBuffer( NAME, REGNAME, NO )     layout(std140,column_major,binding=NO) uniform NAME
+
+    #define             float2              vec2
+    #define             float3              vec3
+    #define             float4              vec4
+    #define             float4x4            mat4x4
+    #define             float3x3            mat3x3
+    #define             transpose           inverse
+
+    in vec4 outPos;
+    in vec4 outCol;
+    in vec4 outUv;
+
+    struct PsInput
+    {
+        vec4 Pos;
+        vec4 Uv;
+        vec4 Col;
+    };
+
+    #define             tex2D                       texture2D
+    #define             texCUBE                 textureCube
+
+    // 定数バッファの0～4まで使っているので, テクスチャは5番を使用
+    layout(binding = 0) uniform sampler2D g_Texture;
+
+    #define     lerp            mix
+
+#endif
+
+// 定数バッファのデータ定義0　変更しないデータ
+ConstantBuffer( cbNeverChanges, b1, 1)
+{ // 常にスロット「0」を使う
+    mat4x4 Projection;   // 透視変換行列
+};
+
+// 定数バッファのデータ定義1　変更頻度の低いデータ
+ConstantBuffer( cbChangesEveryFrame, b2, 2)
+{ // 常にスロット「1」を使う
+    mat4x4 View;   // ビュー変換行列
+};
+
+// 定数バッファのデータ定義2　変更頻度の高いデータ
+ConstantBuffer( cbChangesEveryObject, b3, 3)
+{ // 常にスロット「2」を使う
+    mat4x4 World;   // ビュー変換行列
+};
+
+// 定数バッファのデータ定義2　マテリアルカラーデータ
+ConstantBuffer( cbMaterialColor, b4, 4)
+{ // 常にスロット「3」を使う
+    float4 MaterialColor;
+};
+
+// 定数バッファのデータ定義2　頂点座標データ
+ConstantBuffer( cbVertices, b5, 5)
+{ // 常にスロット「4」を使う
+    float4 Position[VERTEX_NUM];
+    float4 Color[VERTEX_NUM];
+};
+
+STATIC vec4                 gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+
+// ピクセル シェーダのエントリポイント
+#if defined HLSL
+float4 PS(PS_INPUT input) : SV_TARGET
+{
+    outPos = input.Pos;
+    outUv = input.Uv;
+    outCol = input.Col;
+
+#else
+void main (void)
+{
+#endif
+
+    vec4 finalColor;
+    vec4 inputColor;
+
+#if defined HLSL
+    finalColor = g_Texture.Sample( g_Sampler, input.Uv.xy );
+    inputColor = input.Col;
+#else
+    finalColor = texture2D( g_Texture, outUv.xy );
+    inputColor = outCol;
+#endif
+
+    gl_FragColor = finalColor * inputColor * MaterialColor;
+
+#if defined HLSL
+    return gl_FragColor;
+#endif
+}

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{c084f900-7f1e-4fd5-b003-80d83a07eddd}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c++;cc;CC;c;s</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{08d16919-ca9b-4ff4-9581-eb4e99c58afd}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="CTR Property">
+      <UniqueIdentifier>{214e0973-1213-4871-b29e-fe48a23668ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リンク設定">
+      <UniqueIdentifier>{1c40b0d6-18be-42ce-9a76-98578fe964ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ロム設定">
+      <UniqueIdentifier>{21342333-4be9-4606-8d17-e3acd34a6b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldStatic">
+      <UniqueIdentifier>{610b3348-d929-4524-9b82-7dd7da5a1a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldStatic">
+      <UniqueIdentifier>{cf6dd49c-4fe9-4460-b29c-7f5eae733749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldStatic\Collision">
+      <UniqueIdentifier>{8f8757de-cd17-43bf-8813-1b5254f884a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldStatic\MoveModel">
+      <UniqueIdentifier>{1c36e068-8526-4288-9ec0-31b7a1cc24a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldStatic\MoveModel">
+      <UniqueIdentifier>{f7bfb01b-f15f-41b2-bac6-9413d0a543df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldStatic\Collision">
+      <UniqueIdentifier>{d1494e8e-c7c0-4e38-a35c-0ed398fd2ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldStatic\MoveCode">
+      <UniqueIdentifier>{ceb44130-6404-45eb-9390-c617161d683d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldStatic\FieldResident">
+      <UniqueIdentifier>{baf8108c-badf-4ad7-bcb5-d16b0eb3ee69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldStatic\FieldResident">
+      <UniqueIdentifier>{864ec5a3-7a92-4d74-90ec-50734f3b32a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldRo">
+      <UniqueIdentifier>{b37532e3-618a-466c-bfa2-a167f77f37c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo">
+      <UniqueIdentifier>{5b947d63-4b7d-43b6-8268-c55538c5d9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo\Terrain">
+      <UniqueIdentifier>{1c074722-3094-40d4-81aa-74612dac3326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldRo\Terrain">
+      <UniqueIdentifier>{fcff557c-0dc5-46a5-8ccd-2ef5cabf551b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo\Camera">
+      <UniqueIdentifier>{15eb3b8d-667e-469f-ad36-0853462fe907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo\Camera\Target">
+      <UniqueIdentifier>{30975629-ab63-434e-a546-90fc8a8c2aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo\Camera\Area">
+      <UniqueIdentifier>{16e921e8-2465-440f-8e0b-304dd91e4a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo\Camera\Controller">
+      <UniqueIdentifier>{97e47958-2bef-4bfd-b848-9a89aaab3d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldRo\Camera">
+      <UniqueIdentifier>{8b4e9666-26a0-40b9-8e1c-0d06698a1ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldRo\Camera\Target">
+      <UniqueIdentifier>{c0d37ed3-eb62-49a1-8e82-2864c34e97cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldRo\Camera\Area">
+      <UniqueIdentifier>{5c73d94d-b4b7-4b77-b3ef-7925d25b253f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldRo\Camera\Controller">
+      <UniqueIdentifier>{6edb3c69-7b3f-4128-a801-1e3777f28aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\FieldRo\Terrain\Block">
+      <UniqueIdentifier>{97384d3f-0d71-4add-9877-833373f8da33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\FieldStatic\MoveCode">
+      <UniqueIdentifier>{e1664744-aab0-401b-9cc6-884f2af5f9c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectName).rsf">
+      <Filter>ロム設定</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ViewerProc.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\BaseActor.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\BaseCollisionScene.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\BaseShape.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\BaseSolver.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\DynamicActor.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\RaycastCustomCallback.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\StaticActor.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\FieldResident\FieldResident.cpp">
+      <Filter>ソース ファイル\FieldStatic\FieldResident</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\CollisionSceneDefault.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\CollisionSceneNone.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Fieldmap.cpp">
+      <Filter>ソース ファイル\FieldRo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Terrain\FieldTerrainBlock.cpp">
+      <Filter>ソース ファイル\FieldRo\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Terrain\FieldTerrainFactory.cpp">
+      <Filter>ソース ファイル\FieldRo\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Terrain\FieldTerrainManager.cpp">
+      <Filter>ソース ファイル\FieldRo\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Area\FieldCameraAreaDataManager.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Area</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Controller\FieldCameraControllerTypeArea.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Controller\FieldCameraControllerTypeDebugAdjustPosition.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Controller\FieldCameraControllerTypeDebugOrthoView.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Controller\FieldCameraControllerTypeEventScript.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Controller\FieldCameraControllerTypeTest.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\Target\FielcCameraTargetTypeMoveModel.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\MoveModel\FieldMoveModel.cpp">
+      <Filter>ソース ファイル\FieldStatic\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\MoveModel\FieldMoveModelManager.cpp">
+      <Filter>ソース ファイル\FieldStatic\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\MyRenderingPipeLine.cpp">
+      <Filter>ソース ファイル\FieldRo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\FieldEnvManager.cpp">
+      <Filter>ソース ファイル\FieldRo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\FieldCameraManager.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldRo\Camera\FieldCameraUnit.cpp">
+      <Filter>ソース ファイル\FieldRo\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\Collision\CollisionSolverDefault.cpp">
+      <Filter>ソース ファイル\FieldStatic\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\MoveCode\FieldMoveCodeManager.cpp">
+      <Filter>ソース ファイル\FieldStatic\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStaic\MoveCode\FieldMoveCodePlayer.cpp">
+      <Filter>ソース ファイル\FieldStatic\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ReadViewerData.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ViewerProc.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SimpleCollisionCallbackable.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\systemCollision.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\chara_define.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\BaseActor.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\BaseCollisionScene.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\BaseShape.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\BaseSolver.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\DynamicActor.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\RaycastCustomCallback.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\StaticActor.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveCode\FieldMoveCode_define.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldSystem.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\FieldResident\FieldResident.h">
+      <Filter>ヘッダー ファイル\FieldStatic\FieldResident</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\CollisionSceneDefault.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\CollisionSceneNone.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Collision\CollisionSolverDefault.h">
+      <Filter>ヘッダー ファイル\FieldStatic\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Fieldmap.h">
+      <Filter>ヘッダー ファイル\FieldRo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\FieldRootNode.h">
+      <Filter>ヘッダー ファイル\FieldRo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\FieldManagerNode.h">
+      <Filter>ヘッダー ファイル\FieldStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\FieldNode.h">
+      <Filter>ヘッダー ファイル\FieldStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\FieldGLAllocatorFromHeap.h">
+      <Filter>ヘッダー ファイル\FieldRo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\MyRenderingPipeLine.h">
+      <Filter>ヘッダー ファイル\FieldRo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Terrain\FieldTerrainBlock.h">
+      <Filter>ヘッダー ファイル\FieldRo\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Terrain\FieldTerrainFactory.h">
+      <Filter>ヘッダー ファイル\FieldRo\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Terrain\FieldTerrainLayoutData.h">
+      <Filter>ヘッダー ファイル\FieldRo\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Terrain\FieldTerrainManager.h">
+      <Filter>ヘッダー ファイル\FieldRo\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Terrain\FieldTerrainTypes.h">
+      <Filter>ヘッダー ファイル\FieldRo\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\FieldEnvManager.h">
+      <Filter>ヘッダー ファイル\FieldRo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\FieldCameraManager.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\FieldCameraUnit.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Target\FieldCameraTargetTypeMoveModel.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Target\FieldCameraTargetBase.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Controller\FieldCameraControllerBase.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Controller\FieldCameraControllerTypeArea.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Controller\FieldCameraControllerTypeDebugAdjustPosition.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Controller\FieldCameraControllerTypeDebugOrthoView.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Controller\FieldCameraControllerTypeEventScript.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Controller\FieldCameraControllerTypeTest.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Area\FieldCameraAreaDataManager.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Area</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveModel\FieldMoveModel.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveModel\FieldMoveModel_define.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveModel\FieldMoveModelManager.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\Field3DObjectNode.h">
+      <Filter>ヘッダー ファイル\FieldStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Terrain\Block\FieldTerrainBlockTypes.h">
+      <Filter>ヘッダー ファイル\FieldRo\Terrain\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveCode\FieldMoveCodeBase.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveCode\FieldMoveCodeManager.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStatic\MoveCode\FieldMoveCodePlayer.h">
+      <Filter>ヘッダー ファイル\FieldStatic\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ReadViewerData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Area\FieldCameraAreaTypes.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Area</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldRo\Camera\Area\FieldCameraAreaUtility.h">
+      <Filter>ヘッダー ファイル\FieldRo\Camera\Area</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

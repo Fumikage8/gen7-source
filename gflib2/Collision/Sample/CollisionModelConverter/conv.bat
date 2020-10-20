@@ -1,0 +1,1 @@
+CollisionModelConverter.exe R:\home\niji\git_program\niji_project\prog\Test\FieldTest\tool\CollisionModelConverter\map.gfmdl

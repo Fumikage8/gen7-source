@@ -1,0 +1,183 @@
+// -------------------------------------------------------------
+// 定数
+// -------------------------------------------------------------
+#define VERTEX_NUM (16)
+
+#if defined HLSL
+
+    #define             vec2                float2
+    #define             vec3                float3
+    #define             vec4                float4
+    #define             mat4x4          float4x4
+    #define             mat3x3          float3x3
+    #define             inverse         transpose
+
+    #define ConstantBuffer( NAME, REGNAME, NO )     cbuffer NAME : register( REGNAME )
+
+    // 頂点シェーダの入力データ定義
+    struct VS_INPUT {
+        uint   vIndex : SV_VertexID;
+    };
+
+    // ピクセル シェーダの入力データ定義
+    struct PS_INPUT {
+        float4 Pos  : SV_POSITION; // 頂点座標(透視座標系)
+        float4 Uv   : TEXCOORD0;   // テクスチャ座標
+        float4 Col  : COLOR;       // 頂点色
+    };
+#else
+
+
+    #define             float2          vec2
+    #define             float3          vec3
+    #define             float4          vec4
+    #define             float4x4        mat4x4
+    #define             float3x3        mat3x3
+    #define             transpose       inverse
+
+    #define ConstantBuffer( NAME, REGNAME, NO )     layout(std140,column_major,binding=NO) uniform NAME
+
+    layout (location = 0) in uint gl_VertexID;
+
+    out vec4 outPos;
+    out vec4 outCol;
+    out vec4 outUv;
+
+    out gl_PerVertex {
+        vec4 gl_Position;
+    };
+
+    struct VsInput
+    {
+        uint vIndex;
+    };
+
+    struct PsInput
+    {
+        vec4 Pos;
+        vec4 Uv;
+        vec4 Col;
+    };
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    mat3x3 mul( mat3x3 matA, mat3x3 matB )
+    {
+        return matA * matB;
+    }
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    mat4x4 mul( mat4x4 matA, mat4x4 matB )
+    {
+        return matA * matB;
+    }
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    vec3 mul( vec3 vec, mat3x3 mat )
+    {
+        vec3        outVec = vec3(0, 0, 0);
+        
+        outVec.x = dot( vec, mat[0] );
+        outVec.y = dot( vec, mat[1] );
+        outVec.z = dot( vec, mat[2] );
+        
+        return outVec;
+    }
+
+    //-----------------------------------------------------------------------------
+    /// @brief  
+    //-----------------------------------------------------------------------------
+    vec4 mul( vec4 vec, mat4 mat )
+    {
+        vec4        outVec = vec4(0, 0, 0, 1);
+        
+        outVec.x = dot( vec, mat[0] );
+        outVec.y = dot( vec, mat[1] );
+        outVec.z = dot( vec, mat[2] );
+        outVec.w = dot( vec, mat[3] );
+        
+        return outVec;
+    }
+
+#endif
+
+// 定数バッファのデータ定義0　変更しないデータ
+ConstantBuffer( cbNeverChanges, b1, 1)
+{ // 常にスロット「0」を使う
+    mat4x4 Projection;   // 透視変換行列
+};
+
+// 定数バッファのデータ定義1　変更頻度の低いデータ
+ConstantBuffer( cbChangesEveryFrame, b2, 2)
+{ // 常にスロット「1」を使う
+    mat4x4 View;   // ビュー変換行列
+};
+
+// 定数バッファのデータ定義2　変更頻度の高いデータ
+ConstantBuffer( cbChangesEveryObject, b3, 3)
+{ // 常にスロット「2」を使う
+    mat4x4 World;   // ビュー変換行列
+};
+
+// 定数バッファのデータ定義2　マテリアルカラーデータ
+ConstantBuffer( cbMaterialColor, b4, 4)
+{ // 常にスロット「3」を使う
+    float4 MaterialColor;
+};
+
+// 定数バッファのデータ定義2　頂点座標データ
+ConstantBuffer( cbVertices, b5, 5)
+{ // 常にスロット「4」を使う
+    float4 Position[VERTEX_NUM];
+    float4 Color[VERTEX_NUM];
+};
+
+// 頂点シェーダのエントリポイント
+#if defined HLSL
+PS_INPUT VS(VS_INPUT input)
+{
+    PS_INPUT outPut = (PS_INPUT)0;
+
+#else
+void main( void )
+{
+    PsInput outPut;
+    VsInput input;
+
+    input.vIndex = gl_VertexID;
+
+#endif
+    outPut.Uv.x = Position[input.vIndex].w;
+    outPut.Uv.y = Color[input.vIndex].w;
+
+    // 頂点座標　モデル座標系→ビュー座標系
+    outPut.Pos = Position[input.vIndex];
+    outPut.Pos.w = 1.0;
+    outPut.Pos = mul(outPut.Pos, World);
+    outPut.Pos = mul(outPut.Pos, View);
+    // 頂点座標　ビュー座標系→射影座標系
+	outPut.Pos = mul(outPut.Pos, Projection);
+        
+    // 頂点色
+    outPut.Col.xyz = Color[input.vIndex].xyz;
+    outPut.Col.w = 1.0;
+
+    // 出力
+#if defined HLSL
+    return outPut;
+}
+
+#else
+
+    outPos = outPut.Pos;
+    outCol = outPut.Col;
+    outUv = outPut.Uv;
+
+    gl_Position = outPos;
+}
+#endif

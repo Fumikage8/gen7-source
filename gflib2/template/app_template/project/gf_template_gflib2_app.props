@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GFOutDirRoot>$(SolutionDir)\modules\</GFOutDirRoot>
+    <GFOutDirRootTmp>$(SolutionDir)\modules\</GFOutDirRootTmp>
+    <GFOutDirExec>$(SolutionDir)\modules\</GFOutDirExec>
+    <GFOutDirExecTmp>$(SolutionDir)\modules\</GFOutDirExecTmp>
+    <GFOutDirRo>$(SolutionDir)\modules\</GFOutDirRo>
+    <GFOutDirRoTmp>$(SolutionDir)\modules\</GFOutDirRoTmp>
+    <GFOutDirLib>$(SolutionDir)\modules\</GFOutDirLib>
+    <GFOutDirLibTmp>$(SolutionDir)\modules\</GFOutDirLibTmp>
+    <OutDir>$(GFOutDirRoot)\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(GFOutDirRoot)\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+</Project>

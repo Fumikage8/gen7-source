@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GFExcelSerializer</name>
+    </assembly>
+    <members>
+        <member name="T:GFExcelSerializer.ExcelXml">
+            <summary>
+            Excelファイルの表形式にシリアライズ/Excelファイルを表形式でデシリアライズするクラス
+            </summary>
+        </member>
+        <member name="M:GFExcelSerializer.ExcelXml.Deserialize``1(System.String)">
+            <summary>
+            @brief 受け取ったファイルを表形式でデシリアライズ
+            </summary>
+            <param name="filePath">デシリアライズ対象のファイルパス</param>
+            <return>Type : class, IExcelXmlSerializer, new() IExcelXmlSerializerインタフェースを実装した, デフォルトコンストラクタを持つオブジェクト</return>
+        </member>
+        <member name="M:GFExcelSerializer.ExcelXml.Serialize``1(System.String,``0)">
+            <summary>
+            ファイル名と表形式を指定してExcelの表形式にシリアライズ
+            </summary>
+            <param name="filePath">出力ファイルパス</param>
+            <param name="obj">class, IExcelXmlSerializer, new() IExcelXmlSerializerインタフェースを実装した, デフォルトコンストラクタを持つオブジェクト</param>
+            <returns>bool 成功/失敗</returns>
+        </member>
+        <member name="T:GFExcelSerializer.IExcelXmlSerializer">
+            <summary>
+            Excelシリアライズ用インタフェース
+            どのようにシリアライズしたいかを実装先のクラスで記述し, Serialize/Deserializeメソッドに渡す
+            </summary>
+        </member>
+        <member name="M:GFExcelSerializer.IExcelXmlSerializer.DeserializeExcel(System.String[0:,0:])">
+            <summary>
+            Excelファイルのデシリアライズ処理. どのようにデシリアライズされるかを記述.
+            </summary>
+            <param name="cells">Excelシートのセル</param>
+        </member>
+        <member name="P:GFExcelSerializer.IExcelXmlSerializer.XmlDocument">
+            <summary>
+            XmlDocumentのプロパティ
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.IExcelXmlSerializer.Cell2d">
+            <summary>
+            各種cell
+            </summary>
+        </member>
+        <member name="T:GFExcelSerializer.RareColorConstantOffsetInfo">
+            <summary>
+            レアカラーのコンスタントカラーのオフセット情報
+            </summary>
+        </member>
+        <member name="M:GFExcelSerializer.RareColorConstantOffsetInfo.#ctor(System.String,System.UInt32,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="materialName">マテリアル名</param>
+            <param name="constantColorIndex">オフセットを加算するコンスタントカラーのインデックス</param>
+            <param name="red">オフセットの赤成分</param>
+            <param name="green">オフセットの緑成分</param>
+            <param name="blue">オフセットの青成分</param>
+            <param name="alpha">オフセットのアルファ成分</param>
+        </member>
+        <member name="F:GFExcelSerializer.RareColorConstantOffsetInfo.m_MaterialName">
+            <summary>
+            マテリアル名
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareColorConstantOffsetInfo.m_ConstantColorIndex">
+            <summary>
+            オフセットを加算するコンスタントカラーのインデックス
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareColorConstantOffsetInfo.m_Red">
+            <summary>
+            オフセットの赤成分
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareColorConstantOffsetInfo.m_Green">
+            <summary>
+            オフセットの緑成分
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareColorConstantOffsetInfo.m_Blue">
+            <summary>
+            オフセットの青成分
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareColorConstantOffsetInfo.m_Alpha">
+            <summary>
+            オフセットのアルファ成分
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareColorConstantOffsetInfo.MaterialName">
+            <summary>
+            マテリアル名
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareColorConstantOffsetInfo.ConstantColorIndex">
+            <summary>
+            オフセットを加算するコンスタントカラーのインデックス
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareColorConstantOffsetInfo.Red">
+            <summary>
+            オフセットの赤成分
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareColorConstantOffsetInfo.Green">
+            <summary>
+            オフセットの緑成分
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareColorConstantOffsetInfo.Blue">
+            <summary>
+            オフセットの青成分
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareColorConstantOffsetInfo.Alpha">
+            <summary>
+            オフセットのアルファ成分
+            </summary>
+        </member>
+        <member name="T:GFExcelSerializer.RareSettingXmlSerializer">
+            <summary>
+            pmNNNN_FF_rare_setting.xmlファイルを読み取るクラス
+            </summary>
+        </member>
+        <member name="M:GFExcelSerializer.RareSettingXmlSerializer.DeserializeExcel(System.String[0:,0:])">
+            <summary>
+            rare_setting.xmlのデシリアライズ処理. どのようにデシリアライズされるかを記述.
+            </summary>
+            <param name="cells">Excelシートのセル</param>
+        </member>
+        <member name="M:GFExcelSerializer.RareSettingXmlSerializer.IsRowAvailable(System.String[0:,0:],System.UInt32)">
+            <summary>
+            読み取りの必要がある行かどうかの確認
+            </summary>
+            <param name="cells">読み取り対象のセルの配列</param>
+            <param name="row">行番号</param>
+            <returns>bool 読み取りの必要あり/なし</returns>
+        </member>
+        <member name="M:GFExcelSerializer.RareSettingXmlSerializer.IsOneByteString(System.String)">
+            <summary>
+            1バイト文字で構成された文字列であるか判定
+            </summary>
+            <param name="str">判定する文字列</param>
+            <returns>bool 1バイト文字のみ/1バイト文字以外のものが含まれている</returns>
+        </member>
+        <member name="F:GFExcelSerializer.RareSettingXmlSerializer.cells">
+            <summary>
+            Excelのセルに格納されているデータ
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareSettingXmlSerializer.StartLineIndex">
+            <summary>
+            読み取り開始する行数
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareSettingXmlSerializer.LineValueNum">
+            <summary>
+            行から読み取る要素数
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.RareSettingXmlSerializer.m_RareColorConstantOffsetInfos">
+            <summary>
+            レアカラーのコンスタントカラーのオフセット情報
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareSettingXmlSerializer.XmlDocument">
+            <summary>
+            XmlDocumentのプロパティ
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareSettingXmlSerializer.Cell2d">
+            <summary>
+            Excelのセルに格納されているデータのgetter
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.RareSettingXmlSerializer.RareColorConstantOffsetInfos">
+            <summary>
+            レアカラーのオフセット情報を格納した配列へのアクセサ
+            </summary>
+        </member>
+        <member name="T:GFExcelSerializer.SettingXmlSerializer">
+            <summary>
+            pmNNNN_FF_setting.xmlファイルを読み取るクラス
+            </summary>
+        </member>
+        <member name="M:GFExcelSerializer.SettingXmlSerializer.DeserializeExcel(System.String[0:,0:])">
+            <summary>
+            デシリアライズ
+            </summary>
+            <param name="cells">Excelファイルのセル</param>
+        </member>
+        <member name="M:GFExcelSerializer.SettingXmlSerializer.ConvertToDecimal(System.String,System.String,System.Decimal@)">
+            <summary>
+            文字列を数値に変換
+            </summary>
+            <param name="key">連想配列のキーとなる文字列</param>
+            <param name="strValue">文字列型で格納された数値</param>
+            <param name="value">変換後の数値(out)</param>
+            <returns>bool 成功/失敗</returns>
+        </member>
+        <member name="F:GFExcelSerializer.SettingXmlSerializer.m_Cells">
+            <summary>
+            Excelのセルに格納されているデータ
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.SettingXmlSerializer.m_PokemonName">
+            <summary>
+            ポケモン名
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.SettingXmlSerializer.m_FormNo">
+            <summary>
+            フォルム番号
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.SettingXmlSerializer.m_NumericValueDictionary">
+            <summary>
+            setting.xmlの項目名と設定された数値の連想配列
+            </summary>
+        </member>
+        <member name="F:GFExcelSerializer.SettingXmlSerializer.m_NonNumericValueDictionary">
+            <summary>
+            setting.xmlの項目名と設定された数値以外の連想配列
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.SettingXmlSerializer.XmlDocument">
+            <summary>
+            XmlDocumentのプロパティ
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.SettingXmlSerializer.Cell2d">
+            <summary>
+            Excelのセルに格納されているデータのgetter
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.SettingXmlSerializer.NonNumericValueDictionary">
+            <summary>
+            展開後の数値以外のデータのgetter
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.SettingXmlSerializer.NumericValueDictionary">
+            <summary>
+            展開後の数値データのgetter
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.SettingXmlSerializer.PokemonName">
+            <summary>
+            ポケモン名のgetter
+            </summary>
+        </member>
+        <member name="P:GFExcelSerializer.SettingXmlSerializer.FormNo">
+            <summary>
+            フォルムNoのgetter
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\..\niji.end.common.props" />
+    <Import Project="$(ProjectDir)$(ProjectName).props" Condition="exists('$(ProjectDir)$(ProjectName).props')" />
+    <Import Project="$(ProjectDir)$(ProjectName).link.props" Condition="exists('$(ProjectDir)$(ProjectName).link.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!-- Select CTR MEDIA TYPE (CARD1/CARD2) -->
+  <ItemDefinitionGroup Condition="'$(CTR_MEDIA_TYPE)'=='Card2'">
+    <MakeRom>
+      <Define>TITLE=$(TargetName);ROMFS_ROOT=$(GFRomfilesDir);GF_ROMFS_REJECT=$(GFROMFSReject);MEDIA_TYPE=Card2</Define>
+    </MakeRom>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="!('$(CTR_MEDIA_TYPE)'=='Card2')">
+    <MakeRom>
+      <Define>TITLE=$(TargetName);ROMFS_ROOT=$(GFRomfilesDir);GF_ROMFS_REJECT=$(GFROMFSReject);MEDIA_TYPE=Card1</Define>
+    </MakeRom>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="Configuration" Condition="'$(Platform)'=='Win32'">
+    <Link>
+      <AdditionalDependencies>texUtils$(GFExtLibSuffix).lib;WinExt.lib;libnw_eft.lib;libnw_lyt.lib;libnw_vwrlyt.lib;libnw_scfont.lib;libnw_snd.lib;libnw_snddev.lib;libnw_sndspy.lib;libnw_dev.lib;libnw_mcs.lib;libnw_sys.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="Configuration" Condition="'$(GFConfig)|$(Platform)'=='Develop|CTR'">
+    <Link>
+      <AdditionalDependencies>libnn_dev.$(CTROptimizeOption).a;libnn_fshio.$(CTROptimizeOption).a;libnn_hio.$(CTROptimizeOption).a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

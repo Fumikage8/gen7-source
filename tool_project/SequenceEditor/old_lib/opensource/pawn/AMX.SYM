@@ -1,0 +1,147 @@
+///////////////////////////////////////////////////////////////
+///////		このマクロはPawnBinary Amxファイル用です
+///////　原作:ShinKimura
+///////　　　 Ver 1.00
+///////
+
+#include "typedef.h"
+#maxloop -1
+
+struct AMXFILEHEADER {
+	DWORD FileSize;
+	WORD MagicCode;
+	BYTE FileVersion;
+	BYTE AmxVersion;
+	WORD Flags;
+	WORD DefSize;
+	DWORD CodeOffset;
+	DWORD DataOffset;
+	DWORD HeapOffset;
+	DWORD StackTopValue;
+	DWORD StartingAddr;
+	DWORD PublicFunc;
+	DWORD NativeFunc;
+	DWORD Lib;
+	DWORD PublicVal;
+	DWORD PublicTags;
+	DWORD SymbolName;
+	DWORD Overlay;
+};
+
+$AMXFILEHEADER Amx;
+
+struct TABLE{
+	DWORD Address;
+	DWORD NameOffset;
+};
+long PublicFuncCnt = (Amx.NativeFunc-Amx.PublicFunc)/8;
+$TABLE PublicFunc[PublicFuncCnt];
+long NativeFuncCnt = (Amx.Lib-Amx.NativeFunc)/8;
+$TABLE NativeFunc[NativeFuncCnt];
+long LibCnt = (Amx.PublicVal-Amx.Lib)/8;
+$TABLE Lib[LibCnt];
+long PublicValCnt = (Amx.PublicTags-Amx.PublicVal)/8;
+$TABLE PublicVal[PublicValCnt];
+long PublicTagCnt = (Amx.SymbolName-Amx.PublicTags)/8;
+$TABLE PublicTag[PublicTagCnt];
+long SymbolNameCnt = (Amx.Overlay-Amx.SymbolName)/8;
+$TABLE SymbolName[SymbolNameCnt];
+
+$WORD Terminater;
+
+string s;
+long ofs;
+//$BYTE name[PublicFunc[1].NameOffset-PublicFunc[0].NameOffset];
+if( PublicFuncCnt ){
+	--PublicFuncCnt;
+	for(int i = 0; i < PublicFuncCnt; ++i){
+		s = "PublicFuncName" + tostr(i);
+		$BYTE s[PublicFunc[i+1].NameOffset-PublicFunc[i].NameOffset];
+	}
+	s = "PublicFuncName" + tostr(PublicFuncCnt);
+	ofs = PublicFunc[PublicFuncCnt].NameOffset;
+	if( NativeFuncCnt ){
+		$BYTE s[NativeFunc[0].NameOffset-ofs];
+	}else if(LibCnt){
+		$BYTE s[Lib[0].NameOffset-ofs];
+	}else if(PublicValCnt){
+		$BYTE s[PublicVal[0].NameOffset-ofs];
+	}else if(PublicTagCnt){
+		$BYTE s[PublicTag[0].NameOffset-ofs];
+	}else if( SymbolNameCnt ){
+		$BYTE s[SymbolName[0].NameOffset-ofs];
+	}else{
+		$BYTE s[Amx.CodeOffset-ofs];
+	}
+}
+if( NativeFuncCnt ){
+	--NativeFuncCnt;
+	for(int i = 0; i < NativeFuncCnt; ++i){
+		s = "NativeFuncName" + tostr(i);
+		$BYTE s[NativeFunc[i+1].NameOffset-NativeFunc[i].NameOffset];
+	}
+	s = "NativeFuncName" + tostr(NativeFuncCnt);
+	ofs = NativeFunc[NativeFuncCnt].NameOffset;
+	if(LibCnt){
+		$BYTE s[Lib[0].NameOffset-ofs];
+	}else if(PublicValCnt){
+		$BYTE s[PublicVal[0].NameOffset-ofs];
+	}else if(PublicTagCnt){
+		$BYTE s[PublicTag[0].NameOffset-ofs];
+	}else if( SymbolNameCnt ){
+		$BYTE s[SymbolName[0].NameOffset-ofs];
+	}else{
+		$BYTE s[Amx.CodeOffset-ofs];
+	}
+}
+
+if(LibCnt){
+	--LibCnt;
+	for(int i = 0; i < LibCnt; ++i){
+		s = "LibName" + tostr(i);
+		$BYTE s[Lib[i+1].NameOffset-Lib[i].NameOffset];
+	}
+	s = "LibName" + tostr(LibCnt);
+	ofs = Lib[LibCnt].NameOffset;
+	if(PublicValCnt){
+		$BYTE s[PublicVal[0].NameOffset-ofs];
+	}else{ // なぜかこうしないとエラー…
+		if(PublicTagCnt){
+			$BYTE s[PublicTag[0].NameOffset-ofs];
+		}else if( SymbolNameCnt ){
+			$BYTE s[SymbolName[0].NameOffset-ofs];
+		}else{
+			$BYTE s[Amx.CodeOffset-ofs];
+		}
+	}
+}
+if(PublicValCnt){
+	--PublicValCnt;
+	for(int i = 0; i < PublicValCnt; ++i){
+		s = "PublicValName" + tostr(i);
+		$BYTE s[PublicVal[i+1].NameOffset-PublicVal[i].NameOffset];
+	}
+	s = "PublicValName" + tostr(PublicValCnt);
+	ofs = PublicVal[PublicValCnt].NameOffset;
+	if(PublicTagCnt){
+		$BYTE s[PublicTag[0].NameOffset-ofs];
+	}else if( SymbolNameCnt ){
+		$BYTE s[SymbolName[0].NameOffset-ofs];
+	}else{
+		$BYTE s[Amx.CodeOffset-ofs];
+	}
+}
+if(PublicTagCnt){
+	--PublicTagCnt;
+	for(int i = 0; i < PublicTagCnt; ++i){
+		s = "PublicTagName" + tostr(i);
+		$BYTE s[PublicTag[i+1].NameOffset-PublicTag[i].NameOffset];
+	}
+	s = "PublicTagName" + tostr(PublicTagCnt);
+	ofs = PublicTag[PublicTagCnt].NameOffset;
+	if( SymbolNameCnt ){
+		$BYTE s[SymbolName[0].NameOffset-ofs];
+	}else{
+		$BYTE s[Amx.CodeOffset-ofs];
+	}
+}
