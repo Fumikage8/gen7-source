@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{0fccfe1a-5eef-4eec-b3e0-61b681d50b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\System">
+      <UniqueIdentifier>{2e9f0910-a6b7-4a8f-b2af-1325e0dca295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{559b09c0-d261-4cdb-a828-eed8fa0c6a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\RequestSequence">
+      <UniqueIdentifier>{3212a7ee-cbd9-46a7-922b-3e9337b49339}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConnectionAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConnectionProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnectionFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnectionFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnectionResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\ConnectionFrameBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionApplicationSystem.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionBuilder.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionFrameFactory.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionFrameSwitcher.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionViewList.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionViewObjects.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionViewSystemAccessor.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\ConnectionWork.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\ConnectionLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\ConnectionLowerViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\ConnectionUpperView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\ConnectionChangeInternetModeFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\ConnectionChangeLocalModeFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\ConnectionInternetConnectionFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\ConnectionInternetDisconnectionFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConnectionDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\ConnectionRequestFacade.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\ConnectionRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\ConnectionResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\DisconnectionRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\DisconnectionResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\ConnectionFatalErrorFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ConnectionProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\ConnectionFrameBase.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionApplicationSystem.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionBuilder.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionFrameFactory.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionFrameSwitcher.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionViewList.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionViewObjects.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionViewSystemAccessor.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\ConnectionWork.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\ConnectionLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\ConnectionUpperView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\ConnectionChangeInternetModeFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\ConnectionChangeLocalModeFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\ConnectionInternetConnectionFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\ConnectionInternetDisconnectionFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\ConnectionRequestFacade.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\ConnectionRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\DisconnectionRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\ConnectionFatalErrorFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

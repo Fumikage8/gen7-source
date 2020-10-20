@@ -1,0 +1,263 @@
+﻿
+//==============================================================================
+/**
+ * @file   pokedex_memo.txt
+ * @date   2017/01/13 Fri. 19:38:54
+ * @author muto_yu
+ * @brief  図鑑メモ
+ * @par Copyright
+ * (C)1995-2015 GAME FREAK inc. All Rights Reserved.
+ */
+//==============================================================================
+
+表示内容データ:
+  ZukanContents.h
+    class ZukanContents
+      次の容姿:   void ZukanContents::IncreaseCurrDispDrawFigureDataIndex(bool isRing) 
+      前の容姿:   void ZukanContents::DecreaseCurrDispDrawFigureDataIndex(bool isRing)
+      データ本体: PokeData
+        PokeData*  m_pokeDataList;  // GFL_NEW_ARRAY(heap) PokeData[m_pokeDataNumMax]だけ確保しておく。
+                                    // 実際にデータが入っているのは[0]<= <=[m_pokeDataNum-1]まで。
+                                    // 必ず番号順に並べておく。見ていないポケモンも入れておく。
+                                    // つまり、例えば全国図鑑番号順のときは、m_pokeDataList[i]には全国図鑑番号(i+1)番のポケモンが入っている。
+                                    // 図鑑登録のときは1個だけ、アローラ図鑑のときはアローラ図鑑番号順になっている。
+    データ総数：  m_pokeDataNumMax = m_pokeExtendData->GetLocalAreaMonsMax(PokeTool::ExtendData::LOCAL_AREA_A);
+      const PokeTool::ExtendData*    m_pokeExtendData;
+        PokeToolExtendData.h
+         *	@file		poke_tool_ExtendData.h
+         *	@brief  パーソナル外にあるポケモンごとのデータ
+         *  niji地方図鑑番号について
+         *    ・アローラ全域エリアの図鑑、島１エリアの図鑑、島２エリアの図鑑、島３エリアの図鑑、島４エリアの図鑑がある。
+         *    ・同じポケモンが複数のエリアに出る。例：ピカチュウのアローラ図鑑番号が20で島１図間番号が5。
+      ・図鑑ではZukanTool経由で取得
+        ・↑ZukanImplでnew
+          ・ZukanTool
+              ←PokeTool::PersonalSort
+                  ←PokeTool::PokemonSort
+                      ←PokeTool::ExtendData
+      リソース：
+        openReq.arcId       = NIJI_ARCID_NUM(ARCID_ZUKAN_DATA);
+        GARC_zukan_data_zkn_extend_data_PACK
+
+        生成環境：
+          app_resource\resource\zukan_data
+          原本：
+            PERSONAL_CSV_FILE = $(getenv NIJI_RESOURCE_DIR)/poke_lib_resource/personal/data/personal_momiji.csv
+          コマンド：
+            $(RUBY_2_1) $(ZUKAN_DATA_MAKER_SCR) \
+              $(PERSONAL_CSV_FILE) \
+              $(ARC_FILE_NAME) \
+              $(ARC_INDEX_DIR) $(ARC_WIN32_DIR) $(ARC_CTR_DIR) $(CONV_HEADER_DIR) \
+              $(LOCAL_CONV_DIR) \
+              $(COMPRESS_SCR) $(BINLINKER_SCR) $(GARC_EXE) $(RUBY_2_1) $(RUBY_1_8)
+
+            ※ZUKAN_DATA_MAKER_SCR = zukan_data_maker.rb
+              ∴$(RUBY_2_1) zukan_data_maker.rb $(getenv NIJI_RESOURCE_DIR)/poke_lib_resource/personal/data/personal_momiji.csv ...
+
+          zukan_data_maker.rb:
+            # zkn_sort_data.pack, zkn_extend_data.packから成るzukan_data.garcを作成する
+            #
+            #
+            # 使い方
+            # ruby zukan_data_maker.rb
+            #   personalCsvFile
+            #   arcFileName
+            #   arcIndexDir arcWin32Dir arcCtrDir convHeaderDir
+            #   localConvDir
+            #   compressScr binLinkerScr garcExe ruby_2_1 ruby_1_8
+
+            ############################
+            #
+            # zkn_sort_data
+            #
+            ############################
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_zenkoku.dat", "ascend" , 0,  69)
+                                                                                                                     use form no = ^^^
+                                                                                                                                       ^^^^^ = column#
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_chihoua.dat", "ascend" , 0,  70) <- 全域
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_chihoub.dat", "ascend" , 0,  71)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_chihouc.dat", "ascend" , 0,  72)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_chihoud.dat", "ascend" , 0,  73)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_chihoue.dat", "ascend" , 0,  74)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_high.dat"   , "descend", 1, 151)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_short.dat"  , "ascend" , 1, 151)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_heavy.dat"  , "descend", 1, 152)
+              CallSystem(ruby_2_1, "zukan_sort_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_sort_light.dat"  , "ascend" , 1, 152)
+
+              CallSystem(ruby_2_1, "zkn_evolution_make.rb"   , personalCsvFile, localConvDir+"/"+"zukan_evolution"                        )
+
+              zukan_sort_data_maker.rb:
+                #-------------------------------------------------------------------------------
+                # 着目項目に関してソートし、その順番のままmonsNoをファイルにバイナリ出力する
+                # formNoもある場合はformNoも出力する
+                #
+                #
+                # ■使い方
+                # ruby zukan_sort_data_maker.rb personalCsvFile outFile order useForm column
+                #   [in]  personalCsvFile
+                #   [out] outFile          出力ファイル
+                #   [in]  order            ascend(昇順 1,2,3,...)かdescend(降順 9,8,7,...)
+                #   [in]  useForm          formNoも使う場合は1、使わない場合は0
+                #   [in]  column           着目項目の入っている列(アルファベットの方)。0始まり(A=0,B=1,C=2,...)。
+                #
+                #
+                # ■出力データ
+                # リトルエンディアン。
+                # 着目項目が値なしのときは最後尾に並べておく。
+                #
+                # useFormが0のとき、中身は以下の通り。
+                #                      u16 (ソート後0番目に来るmonsNo             )
+                #                      u16 (ソート後1番目に来るmonsNo             )
+                #                      u16 (ソート後2番目に来るmonsNo             )
+                #                      ...
+                #                      u16 (ソート後(MONSNO_END-1)番目に来るmonsNo)
+                # (偶数個でなかったら) u16 (0                                     )
+                # u16の中は
+                # |15 14 13 12 11 10 09 08 07 06 05 04 03 02 01 00|
+                # |                    MONSNO                     |
+                # となっている。
+                #
+                # useFormが1のとき、中身は以下の通り。
+                #                      u16 (ソート後0番目に来る(monsNo,formNo)                       )
+                #                      u16 (ソート後1番目に来る(monsNo,formNo)                       )
+                #                      u16 (ソート後2番目に来る(monsNo,formNo)                       )
+                #                      ...
+                #                      u16 (ソート後(MONSNO_END-1)番目に来る(monsNo,formNo)          )
+                #                      u16 (ソート後((MONSNO_END-1)+1)番目に来る(monsNo,formNo)      )
+                #                      ...
+                #                      u16 (ソート後(フォルムも数えた総数-1)番目に来る(monsNo,formNo))
+                # (偶数個でなかったら) u16 (0                                                        )
+                # u16の中は
+                # |15 14 13 12 11 10|09 08 07 06 05 04 03 02 01 00|
+                # |     FORMNO      |           MONSNO            |
+                # |  0<=      <64   |        0<=      <1024       |
+                # となっている。
+                #
+                
+              zkn_evolution_make.rb:
+                #[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+                #
+                #
+                # @file   zkn_evolution_make.rb
+                # @brief  進化情報をおさめたテーブルをファイルにバイナリ出力する
+                # @author Toru=Nagihashi
+                # @data   2012.10.10
+                #
+                # @author kawada_koji
+                # @data   2015.09.28
+                #
+                #
+                # ○吐き出されるバイナリデータ・フォーマット
+                #
+                #   struct
+                #   {
+                #     u16 evolution[ 9 ]; //進化前～最終進化まで  0だと進化しない
+                #     u16 evolution_num;  //進化前～最終進化まで何進化か
+                #   }
+                #   上記を全ポケモン分もっている。0~MONSNO_END
+                #
+                
+                PERSONAL    = ARGV[0] #パーソナルのエクセル
+                OUTPUTNAME  = ARGV[1] #生成名
+
+
+            ############################
+            #
+            # zkn_extend_data
+            #
+            ############################
+              CallSystem(ruby_2_1, "zukan_next_form_pos_data_maker.rb", personalCsvFile, localConvDir+"/"+"zkn_next_form_pos.dat"     )
+              CallSystem(ruby_2_1, "zukan_style_data_maker.rb"        , personalCsvFile, localConvDir+"/"+"zkn_style.dat"             )
+              CallSystem(ruby_2_1, "zukan_no_maker.rb"                , personalCsvFile, localConvDir+"/"+"zkn_chihoua_no.dat"    , 70, "ZKN_CHIHOUA_NO", localConvDir+"/"+"zkn_chihoua_no.cdat")
+              CallSystem(ruby_2_1, "zukan_no_maker.rb"                , personalCsvFile, localConvDir+"/"+"zkn_chihoub_no.dat"    , 71)
+              CallSystem(ruby_2_1, "zukan_no_maker.rb"                , personalCsvFile, localConvDir+"/"+"zkn_chihouc_no.dat"    , 72)
+              CallSystem(ruby_2_1, "zukan_no_maker.rb"                , personalCsvFile, localConvDir+"/"+"zkn_chihoud_no.dat"    , 73)
+              CallSystem(ruby_2_1, "zukan_no_maker.rb"                , personalCsvFile, localConvDir+"/"+"zkn_chihoue_no.dat"    , 74)
+
+              zukan_next_form_pos_data_maker.rb:
+                #-------------------------------------------------------------------------------
+                # monsNoの次のフォルムが記載されている位置をファイルにバイナリ出力する
+                #
+                #
+                # ■使い方
+                # ruby zukan_next_form_pos_data_maker.rb personalCsvFile outFile
+                #   [in]  personalCsvFile
+                #   [out] outFile          出力ファイル
+                #
+                #
+                # ■出力データ
+                # zukan_next_form_pos_maker_moduleがつくるテーブル。
+                # リトルエンディアン。
+                # 偶数個でなかったら、最後にu16(0)を追加しておく。                                                                    )
+                
+                # 自作モジュール
+                require File.expand_path(File.dirname(__FILE__))+"/zukan_next_form_pos_maker_module.rb"  # $0でなく__FILE__でもいい  # .rbは付けてもいい
+                include ZukanNextFormPosMaker
+
+              zukan_style_data_maker.rb:
+                #-------------------------------------------------------------------------------
+                # ポケモンの形をファイルにバイナリ出力する
+                # 並び順はnextFormPosTableと同じ
+                #
+                #
+                # ■使い方
+                # ruby zukan_style_data_maker.rb personalCsvFile outFile
+                #   [in]  personalCsvFile
+                #   [out] outFile          出力ファイル
+                #
+                #
+                # ■出力データ
+                # u8に形の値を入れて、nextFormPosTableと同じ順に並べておく。フォルム違いの分も形情報がある。
+                # 4の倍数個でなかったら、最後にu8(0)を4の倍数個になるまで追加しておく。                                                                    )
+
+                # 自作モジュール
+                require File.expand_path(File.dirname(__FILE__))+"/zukan_next_form_pos_maker_module.rb"  # $0でなく__FILE__でもいい  # .rbは付けてもいい
+                include ZukanNextFormPosMaker
+
+              zukan_no_maker.rb:
+                #-------------------------------------------------------------------------------
+                # 番号をファイルにバイナリ出力する
+                #
+                #
+                # ■使い方
+                # ruby zukan_no_maker.rb personalCsvFile outFile column [cdatVarName cdatOutFile]
+                #   [in]  personalCsvFile  パーソナルファイル
+                #   [out] outFile          出力ファイル
+                #   [in]  column           番号の入っている列(アルファベットの方)。0始まり(A=0,B=1,C=2,...)。
+                #   [in]  cdatVarName      cdatに書く変数名(なしでもいい)
+                #   [out] cdatOutFile      cdat出力ファイル(cdatVarNameがないならなし、あるならあり)
+                #
+                #
+                # ■出力データ
+                # リトルエンディアン。
+                # 番号なしのときは0を入れておく。
+                # monsNoが0<= <=MONSNO_ENDのデータで構成される。
+                # 中身は以下の通り。
+                #                      u16 (0                      )
+                #                      u16 (monsNo=1の番号         )(番号は1始まり)
+                #                      u16 (monsNo=2の番号         )
+                #                      ...
+                #                      u16 (monsNo=MONSNO_ENDの番号)
+                # (偶数個でなかったら) u16 (0                      )
+                
+                # 自作モジュール
+                require File.expand_path(File.dirname($0))+"/zukan_personal_reader_module"  # $0でなく__FILE__でもいい  # .rbは付けてもいい
+                include ZukanPersonalReader
+
+                →結果のcdatがPokeToolExtendData.cppでincludeされている
+                  →#include <niji_conv_header/app/zukan_data/zkn_chihoua_no.cdat>  // static u32 GetLocalNumberStatic( u32 zenkoku_num, LocalArea local_area ); 用
+                    →u32 ExtendData::GetLocalNumberStatic( u32 zenkoku_num, LocalArea local_area ) で参照している
+
+            ############################
+            #
+            # BinLinker
+            #
+            ############################
+
+
+
+
+
+Form変更：
+  ZukanViewInfo
+

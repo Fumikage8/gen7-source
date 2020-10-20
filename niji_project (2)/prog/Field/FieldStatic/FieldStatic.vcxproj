@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Debug\DebugEvent\EventDebugItemMake\source\EventDebugItemMake.cpp" />
+    <ClCompile Include="..\..\Debug\DebugEvent\EventDebugPokeMake\source\EventDebugPokeMake.cpp" />
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugEncount.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugFade.cpp" />
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugGimmickEncount.cpp" />
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugSignal.cpp" />
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugSodateya.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\BattleFes\BattleFes.cpp" />
+    <ClCompile Include="source\BattleFes\BattleFesDebug.cpp" />
+    <ClCompile Include="source\BattleFes\BattleFesManager.cpp" />
+    <ClCompile Include="source\BattleFes\BattleFesPokeLotterySystem.cpp" />
+    <ClCompile Include="source\BattleFes\BattleFesTool.cpp" />
+    <ClCompile Include="source\BattleInst\BattleInst.cpp" />
+    <ClCompile Include="source\BattleInst\BattleInstManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\BattleInst\BattleInstTool.cpp" />
+    <ClCompile Include="source\Debug\DebugCsvParser.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugStartSettingAccessor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugSymbolNameLoader.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugZoneNameLoader.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugAllPokeFinder.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugAppReturn.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugCharaViewer.cpp" />
+    <ClCompile Include="source\Debug\EventDebugKisekae.cpp" />
+    <ClCompile Include="source\Debug\EventDebugKisekaeCurrentPosition.cpp" />
+    <ClCompile Include="source\Debug\EventDebugRidePokemon.cpp" />
+    <ClCompile Include="source\Debug\EventDebugStrInput.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FieldDebugFlagWorkSearchProc.cpp" />
+    <ClCompile Include="source\Debug\FieldDebugHeapLog.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Berry\FieldBerryManager.cpp" />
+    <ClCompile Include="source\Debug\FieldDebugTypes.cpp" />
+    <ClCompile Include="source\Encount\FieldEncountEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Encount\FieldEncountUtil.cpp" />
+    <ClCompile Include="source\EventList\EventListDataManager.cpp" />
+    <ClCompile Include="source\Event\BattleReturnBGM.cpp" />
+    <ClCompile Include="source\Event\EventAddPokemon.cpp" />
+    <ClCompile Include="source\Event\EventBattleDll.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventBerryPoint.cpp" />
+    <ClCompile Include="source\Event\EventFieldQuickMatch.cpp" />
+    <ClCompile Include="source\Event\EventFieldRotopon.cpp" />
+    <ClCompile Include="source\Event\EventFishingAction.cpp" />
+    <ClCompile Include="source\Event\EventGameClear.cpp" />
+    <ClCompile Include="source\Event\EventGimmickEncount.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventRizaadonRide.cpp" />
+    <ClCompile Include="source\Event\EventSymbolEncount.cpp" />
+    <ClCompile Include="source\Event\FieldDebugEventMapCapture.cpp" />
+    <ClCompile Include="source\Event\FieldEventPokeFinderForPlacement.cpp" />
+    <ClCompile Include="source\Event\FieldEventPokemonRideTool.cpp" />
+    <ClCompile Include="source\FieldLocation.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Item\FieldItemUse.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountCommon.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideKairiky.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideLaplace.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideMuurando.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideRoba2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeUtility.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldFacialAnime.cpp" />
+    <ClCompile Include="source\MoveModel\FieldMoveModelAreaCharaAccessor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\Item\FieldItemManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldMoveModelShadowManager.cpp" />
+    <ClCompile Include="source\MoveModel\FieldSubobject.cpp" />
+    <ClCompile Include="source\PokemonSearch\FieldPokemonSearchDataAccessor.cpp" />
+    <ClCompile Include="source\RotomPower\RotomPowerManager.cpp" />
+    <ClCompile Include="source\RotomPower\RotomPowerTime.cpp" />
+    <ClCompile Include="source\ScriptToolPokeDex.cpp" />
+    <ClCompile Include="source\Event\EventFieldReport.cpp" />
+    <ClCompile Include="source\Event\EventGameOver.cpp" />
+    <ClCompile Include="source\FieldWarpData.cpp" />
+    <ClCompile Include="source\Event\EventAppCall.cpp" />
+    <ClCompile Include="source\Event\EventXMenu.cpp" />
+    <ClCompile Include="source\FootSound\FieldFootSoundAccessor.cpp" />
+    <ClCompile Include="source\Launcher\FieldApplicationLauncher.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountChase.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountEscape.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountPatrol.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideKentaros.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideSamehader.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeTraffic.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeTrainerEye.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeTrainerPath.cpp" />
+    <ClCompile Include="source\MoveModel\FieldMoveModelPlayer.cpp" />
+    <ClCompile Include="source\Script\ScriptFuncSetAppCall.cpp" />
+    <ClCompile Include="source\Script\ScriptFuncSetFieldInit.cpp" />
+    <ClCompile Include="source\Script\ScriptFuncSetInitPostman.cpp" />
+    <ClCompile Include="source\Script\ScriptFuncSetListener.cpp" />
+    <ClCompile Include="source\Sodateya\FieldSodateya.cpp" />
+    <ClCompile Include="source\Subscreen\FieldSubscreen.cpp" />
+    <ClCompile Include="source\Time\EvTime.cpp" />
+    <ClCompile Include="source\ActionCommand\FieldActionCommandManager.cpp" />
+    <ClCompile Include="source\Encount\FieldEncountPokeSet.cpp" />
+    <ClCompile Include="source\Encount\FieldEncountWork.cpp" />
+    <ClCompile Include="source\Event\EventBattleCall.cpp" />
+    <ClCompile Include="source\Event\EventBattleReturn.cpp" />
+    <ClCompile Include="source\Event\EventFieldmapControl.cpp" />
+    <ClCompile Include="source\Event\EventGameStart.cpp" />
+    <ClCompile Include="source\Event\EventMapJump.cpp" />
+    <ClCompile Include="source\Event\EventProcessCall.cpp" />
+    <ClCompile Include="source\FieldArea.cpp" />
+    <ClCompile Include="source\FieldAttribute.cpp" />
+    <ClCompile Include="source\FieldResident\FieldResident.cpp" />
+    <ClCompile Include="source\FieldWorld.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeManager.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodeNpc.cpp" />
+    <ClCompile Include="source\MoveCode\FieldMoveCodePlayer.cpp" />
+    <ClCompile Include="source\MoveModel\FieldMoveModel.cpp" />
+    <ClCompile Include="source\MoveModel\FieldMoveModelManager.cpp" />
+    <ClCompile Include="source\Script\ScriptFuncSetInit.cpp" />
+    <ClCompile Include="source\Script\ScriptFuncSetInitItem.cpp" />
+    <ClCompile Include="source\Sound\FieldSound.cpp" />
+    <ClCompile Include="source\Zone\ZoneCollision.cpp" />
+    <ClCompile Include="source\Zone\ZoneDataAccessor.cpp" />
+    <ClCompile Include="source\Zone\ZoneDataLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Debug\DebugEvent\EventDebugItemMake\include\EventDebugItemMake.h" />
+    <ClInclude Include="..\..\Debug\DebugEvent\EventDebugPokeMake\include\EventDebugPokeMake.h" />
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugEncount.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugFade.h" />
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugGimmickEncount.h" />
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugSignal.h" />
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugSodateya.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Script\ScriptPlayerModelController.h" />
+    <ClInclude Include="include\ActionCommand\FieldActionCommandManager.h" />
+    <ClInclude Include="include\BattleFes\BattleFes.h" />
+    <ClInclude Include="include\BattleFes\BattleFesDebug.h" />
+    <ClInclude Include="include\BattleFes\BattleFesDefine.h" />
+    <ClInclude Include="include\BattleFes\BattleFesManager.h" />
+    <ClInclude Include="include\BattleFes\BattleFesPokeLotterySystem.h" />
+    <ClInclude Include="include\BattleFes\BattleFesTool.h" />
+    <ClInclude Include="include\BattleInst\BattleInst.h" />
+    <ClInclude Include="include\BattleInst\BattleInstData.h" />
+    <ClInclude Include="include\BattleInst\BattleInstDefine.h" />
+    <ClInclude Include="include\BattleInst\BattleInstManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\BattleInst\BattleInstTool.h" />
+    <ClInclude Include="include\Berry\FieldBerryManager.h" />
+    <ClInclude Include="include\Debug\DebugCsvParser.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugStartSettingAccessor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugSymbolNameLoader.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugZoneNameLoader.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugAllPokeFinder.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugAppReturn.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugCharaViewer.h" />
+    <ClInclude Include="include\Debug\EventDebugKisekae.h" />
+    <ClInclude Include="include\Debug\EventDebugKisekaeCurrentPosition.h" />
+    <ClInclude Include="include\Debug\EventDebugRidePokemon.h" />
+    <ClInclude Include="include\Debug\EventDebugStrInput.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugFlagWorkSearchProc.h" />
+    <ClInclude Include="include\Debug\FieldDebugHeapLog.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugSwitch.h" />
+    <ClInclude Include="include\Debug\FieldDebugSwitchGroup.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugTypes.h" />
+    <ClInclude Include="include\Encount\FieldEncountEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Encount\FieldEncountPokeSet.h" />
+    <ClInclude Include="include\Encount\FieldEncountUtil.h" />
+    <ClInclude Include="include\Encount\FieldEncountWork.h" />
+    <ClInclude Include="include\EventList\EventListDataManager.h" />
+    <ClInclude Include="include\Event\EventAddPokemon.h" />
+    <ClInclude Include="include\Event\EventAppCall.h" />
+    <ClInclude Include="include\Event\EventBattleCall.h" />
+    <ClInclude Include="include\Event\EventBattleCallDefine.h" />
+    <ClInclude Include="include\Event\EventBattleDll.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventBattleReturn.h" />
+    <ClInclude Include="include\Event\EventBerryPoint.h" />
+    <ClInclude Include="include\Event\EventFieldQuickMatch.h" />
+    <ClInclude Include="include\Event\EventFieldReport.h" />
+    <ClInclude Include="include\Event\EventFieldRotopon.h" />
+    <ClInclude Include="include\Event\EventFishingAction.h" />
+    <ClInclude Include="include\Event\EventGameClear.h" />
+    <ClInclude Include="include\Event\EventGameStart.h" />
+    <ClInclude Include="include\Event\EventGimmickEncount.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventMapJump.h" />
+    <ClInclude Include="include\Event\EventProcessCall.h" />
+    <ClInclude Include="include\Event\EventRizaadonRide.h" />
+    <ClInclude Include="include\Event\EventSymbolEncount.h" />
+    <ClInclude Include="include\Event\EventXMenu.h" />
+    <ClInclude Include="include\Event\EventXMenuListener.h" />
+    <ClInclude Include="include\Event\FieldDebugEventMapCapture.h" />
+    <ClInclude Include="include\Event\FieldEventPokeFinderForPlacement.h" />
+    <ClInclude Include="include\Event\FieldEventPokemonRideTool.h" />
+    <ClInclude Include="include\Field3DObjectNode.h" />
+    <ClInclude Include="include\FieldArea.h" />
+    <ClInclude Include="include\FieldAttribute.h" />
+    <ClInclude Include="include\FieldLocation.h" />
+    <ClInclude Include="include\FieldManagerNode.h" />
+    <ClInclude Include="include\FieldNode.h" />
+    <ClInclude Include="include\FieldResident\FieldResident.h" />
+    <ClInclude Include="include\FieldTransformNode.h" />
+    <ClInclude Include="include\FieldWorld.h" />
+    <ClInclude Include="include\FieldWorldDefine.h" />
+    <ClInclude Include="include\FootSound\FieldFootSoundAccessor.h" />
+    <ClInclude Include="include\Item\FieldItemManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Item\FieldItemUse.h" />
+    <ClInclude Include="include\Launcher\FieldApplicationLauncher.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeBase.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountChase.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountCommon.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountEscape.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountPatrol.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncount_define.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeManager.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeNpc.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodePlayer.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideKairiky.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideKentaros.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideLaplace.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideMuurando.h" />
+    <ClInclude Include="include\MoveCode\FIeldMoveCodeRideRoba2.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideSamehader.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeTraffic.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeTrainerEye.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeTrainerPath.h" />
+    <ClInclude Include="include\MoveCode\FieldMoveCodeUtility.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCode_define.h" />
+    <ClInclude Include="include\MoveModel\FieldFacialAnime.h" />
+    <ClInclude Include="include\MoveModel\FieldMoveModel.h" />
+    <ClInclude Include="include\MoveModel\FieldMoveModelAreaCharaAccessor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModelManager.h" />
+    <ClInclude Include="include\MoveModel\FieldMoveModelPlayer.h" />
+    <ClInclude Include="include\MoveModel\FieldMoveModelShadowManager.h" />
+    <ClInclude Include="include\MoveModel\FieldSubobject.h" />
+    <ClInclude Include="include\MoveModel\FieldMoveModel_define.h" />
+    <ClInclude Include="include\PokemonSearch\FieldPokemonSearchDataAccessor.h" />
+    <ClInclude Include="include\RotomPower\RotomPowerManager.h" />
+    <ClInclude Include="include\RotomPower\RotomPowerTime.h" />
+    <ClInclude Include="include\Script\ScriptFuncSetAppCall.h" />
+    <ClInclude Include="include\Script\ScriptFuncSetFieldInit.h" />
+    <ClInclude Include="include\Script\ScriptFuncSetInit.h" />
+    <ClInclude Include="include\Script\ScriptFuncSetListener.h" />
+    <ClInclude Include="include\Sodateya\FieldSodateya.h" />
+    <ClInclude Include="include\Sodateya\FieldSodateyaWalkCheckData.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\Sound\FieldSound.h" />
+    <ClInclude Include="include\Subscreen\FieldSubscreen.h" />
+    <ClInclude Include="include\Subscreen\SubscreenRequestDef.h" />
+    <ClInclude Include="include\Zone\ZoneDataAccessor.h" />
+    <ClInclude Include="include\Zone\ZoneDataLoader.h" />
+    <ClInclude Include="include\Zone\ZoneCollision.h" />
+    <ClInclude Include="include\Time\EvTime.h" />
+    <ClInclude Include="include\FieldWarpData.h" />
+    <ClInclude Include="include\Event\EventGameOver.h" />
+    <ClInclude Include="include\ScriptToolPokeDex.h" />
+    <ClInclude Include="include\Zone\ZoneDataLoaderTypes.h" />
+    <ClInclude Include="source\Event\BattleReturnBGM.h" />
+    <ClInclude Include="source\Event\EventFieldmapControl.h" />
+    <ClInclude Include="source\Zone\ZoneDataFormat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\BattleFes\BattleFesNoLotteryList.cdat" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D499367-3299-4EE2-969E-50A29BB713E0}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectName>FieldStatic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Lib />
+    <Lib />
+    <ClCompile>
+      <RemoveUnneededSymbol>Off</RemoveUnneededSymbol>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,93 @@
+﻿//============================================================================================
+/**
+ * @file  BoxSearchInitial.cdat
+ * @brief  ボックス検索画面 50音リストデータ
+ * @author  Hiroyuki Nakamura
+ * @date  12.09.27
+ */
+//============================================================================================
+#include <niji_conv_header/app/data/sort_string/initial_index_jpn.h>
+
+
+static const u32 InitialSort_EISUJI[] = {
+  INITIAL_INDEX_JPN_EISUJI,
+};
+static const u32 InitialSort_A[] = {
+  INITIAL_INDEX_JPN_AA,
+  INITIAL_INDEX_JPN_II,
+  INITIAL_INDEX_JPN_UU,
+  INITIAL_INDEX_JPN_EE,
+  INITIAL_INDEX_JPN_OO,
+};
+static const u32 InitialSort_KA[] = {
+  INITIAL_INDEX_JPN_KA,
+  INITIAL_INDEX_JPN_KI,
+  INITIAL_INDEX_JPN_KU,
+  INITIAL_INDEX_JPN_KE,
+  INITIAL_INDEX_JPN_KO,
+};
+static const u32 InitialSort_SA[] = {
+  INITIAL_INDEX_JPN_SA,
+  INITIAL_INDEX_JPN_SI,
+  INITIAL_INDEX_JPN_SU,
+  INITIAL_INDEX_JPN_SE,
+  INITIAL_INDEX_JPN_SO,
+};
+static const u32 InitialSort_TA[] = {
+  INITIAL_INDEX_JPN_TA,
+  INITIAL_INDEX_JPN_TI,
+  INITIAL_INDEX_JPN_TU,
+  INITIAL_INDEX_JPN_TE,
+  INITIAL_INDEX_JPN_TO,
+};
+static const u32 InitialSort_NA[] = {
+  INITIAL_INDEX_JPN_NA,
+  INITIAL_INDEX_JPN_NI,
+  INITIAL_INDEX_JPN_NU,
+  INITIAL_INDEX_JPN_NE,
+  INITIAL_INDEX_JPN_NO,
+};
+static const u32 InitialSort_HA[] = {
+  INITIAL_INDEX_JPN_HA,
+  INITIAL_INDEX_JPN_HI,
+  INITIAL_INDEX_JPN_HU,
+  INITIAL_INDEX_JPN_HE,
+  INITIAL_INDEX_JPN_HO,
+};
+static const u32 InitialSort_MA[] = {
+  INITIAL_INDEX_JPN_MA,
+  INITIAL_INDEX_JPN_MI,
+  INITIAL_INDEX_JPN_MU,
+  INITIAL_INDEX_JPN_ME,
+  INITIAL_INDEX_JPN_MO,
+};
+static const u32 InitialSort_YA[] = {
+  INITIAL_INDEX_JPN_YA,
+  INITIAL_INDEX_JPN_YU,
+  INITIAL_INDEX_JPN_YO,
+};
+static const u32 InitialSort_RA[] = {
+  INITIAL_INDEX_JPN_RA,
+  INITIAL_INDEX_JPN_RI,
+  INITIAL_INDEX_JPN_RU,
+  INITIAL_INDEX_JPN_RE,
+  INITIAL_INDEX_JPN_RO,
+};
+static const u32 InitialSort_WA[] = {
+  INITIAL_INDEX_JPN_WA,
+};
+
+//! 母音リストテーブル
+static const u32 * const InitialSortTable[] = {
+  InitialSort_EISUJI,//!< 英数字
+  InitialSort_A,     //!< あ
+  InitialSort_KA,    //!< か
+  InitialSort_SA,    //!< さ
+  InitialSort_TA,    //!< た
+  InitialSort_NA,    //!< な
+  InitialSort_HA,    //!< は
+  InitialSort_MA,    //!< ま
+  InitialSort_YA,    //!< や
+  InitialSort_RA,    //!< ら
+  InitialSort_WA,    //!< わ
+};

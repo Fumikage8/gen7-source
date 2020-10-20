@@ -1,0 +1,62 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "niji_template_lib", "niji_template_lib.vcxproj", "{E494A94B-0661-4D14-ABE2-B729E5079A72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|CTR = Debug|CTR
+		Debug|Win32 = Debug|Win32
+		DebugDL|CTR = DebugDL|CTR
+		DebugDL|Win32 = DebugDL|Win32
+		Develop|CTR = Develop|CTR
+		Develop|Win32 = Develop|Win32
+		DevelopDL|CTR = DevelopDL|CTR
+		DevelopDL|Win32 = DevelopDL|Win32
+		Final|CTR = Final|CTR
+		Final|Win32 = Final|Win32
+		FinalDL|CTR = FinalDL|CTR
+		FinalDL|Win32 = FinalDL|Win32
+		Release|CTR = Release|CTR
+		Release|Win32 = Release|Win32
+		ReleaseDL|CTR = ReleaseDL|CTR
+		ReleaseDL|Win32 = ReleaseDL|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Debug|CTR.ActiveCfg = Debug|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Debug|CTR.Build.0 = Debug|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Debug|Win32.Build.0 = Debug|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DebugDL|CTR.ActiveCfg = DebugDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DebugDL|CTR.Build.0 = DebugDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DebugDL|Win32.ActiveCfg = DebugDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DebugDL|Win32.Build.0 = DebugDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Develop|CTR.ActiveCfg = Develop|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Develop|CTR.Build.0 = Develop|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Develop|Win32.ActiveCfg = Develop|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Develop|Win32.Build.0 = Develop|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DevelopDL|CTR.ActiveCfg = DevelopDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DevelopDL|CTR.Build.0 = DevelopDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DevelopDL|Win32.ActiveCfg = DevelopDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.DevelopDL|Win32.Build.0 = DevelopDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Final|CTR.ActiveCfg = Final|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Final|CTR.Build.0 = Final|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Final|Win32.ActiveCfg = Final|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Final|Win32.Build.0 = Final|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.FinalDL|CTR.ActiveCfg = FinalDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.FinalDL|CTR.Build.0 = FinalDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.FinalDL|Win32.ActiveCfg = FinalDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.FinalDL|Win32.Build.0 = FinalDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Release|CTR.ActiveCfg = Release|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Release|CTR.Build.0 = Release|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Release|Win32.ActiveCfg = Release|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.Release|Win32.Build.0 = Release|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.ReleaseDL|CTR.ActiveCfg = ReleaseDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.ReleaseDL|CTR.Build.0 = ReleaseDL|CTR
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.ReleaseDL|Win32.ActiveCfg = ReleaseDL|Win32
+		{E494A94B-0661-4D14-ABE2-B729E5079A72}.ReleaseDL|Win32.Build.0 = ReleaseDL|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\upper">
+      <UniqueIdentifier>{63e6dcd9-e98d-4399-897a-69c8ab3c1388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\lower">
+      <UniqueIdentifier>{b034dd1c-1b00-4700-9ab5-e833c4a2da91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\parts">
+      <UniqueIdentifier>{716dc6ac-4984-4ae7-9554-c2c069844b73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ResortProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortDrawListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResortAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortIslandDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortDrawerBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortDebugWin.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortConst.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerBeansSelectDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerSelectDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerUIDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upper\ResortUpperBGDraw.h">
+      <Filter>ソース\upper</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upper\ResortUpperDraw.h">
+      <Filter>ソース\upper</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upper\ResortUpperHomeMenuDraw.h">
+      <Filter>ソース\upper</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerFarmDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerFarmListDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerAdventureResultDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerGimDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerCourseSelectDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ResortPartsInformationWindow.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ResortPartsNumCounter.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ResortPartsPaneList.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortUtility.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortFlow.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortFlowListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerKinomiGetEffectDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lower\ResortLowerBaseDraw.h">
+      <Filter>ソース\lower</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upper\ResortUpperBaseDraw.h">
+      <Filter>ソース\upper</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ResortTalkMessage.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ResortCharaModel.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortDebugInfo.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortDrawControl.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResortHeapDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortInitLogic.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortSequenceListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortTouchToFlowListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ResortChangeIslandListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ResortProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortInitLogic.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortIslandDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortDrawerBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortDebugWin.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerBeansSelectDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerSelectDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerUIDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upper\ResortUpperBGDraw.cpp">
+      <Filter>ソース\upper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upper\ResortUpperDraw.cpp">
+      <Filter>ソース\upper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upper\ResortUpperHomeMenuDraw.cpp">
+      <Filter>ソース\upper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerFarmDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerFarmListDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerAdventureResultDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerGimDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerCourseSelectDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ResortPartsInformationWindow.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ResortPartsNumCounter.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ResortPartsPaneList.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortUtility.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortFlow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerKinomiGetEffectDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lower\ResortLowerBaseDraw.cpp">
+      <Filter>ソース\lower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upper\ResortUpperBaseDraw.cpp">
+      <Filter>ソース\upper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ResortTalkMessage.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ResortCharaModel.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortDebugInfo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ResortDrawControl.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

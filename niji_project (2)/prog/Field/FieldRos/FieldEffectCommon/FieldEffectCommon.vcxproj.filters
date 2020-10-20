@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectSnow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectSharkWait.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectSharkRun.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectSharkJet.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectRain.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectSandStorm.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectLaplaceWait.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectLaplaceFlow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectSnow.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectSharkWait.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectSharkRun.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectSharkJet.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectSandStorm.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectRain.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectLaplaceWait.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectLaplaceFlow.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

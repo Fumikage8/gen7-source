@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{dbfbf3d8-9140-415b-b8f9-caf8f751a960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{9b72bba3-9b40-498e-95bb-c7e752fafa07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\System">
+      <UniqueIdentifier>{37413e96-f8f8-49f9-8c9e-d6317df1c72e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\StaffrollProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StaffrollTextBox.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\StaffrollEventFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollApplicationSystem.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollBuilder.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollFrameFactory.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollFrameSwitcher.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollViewList.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollViewObjects.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\StaffrollWork.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\StaffrollTextScrollView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\StaffrollImgView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\StaffrollProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StaffrollTextBox.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StaffrollFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StaffrollResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\StaffrollEventFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollApplicationSystem.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollBuilder.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollFrameFactory.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollFrameSwitcher.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollViewList.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollViewObjects.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\StaffrollWork.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StaffrollFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\StaffrollTextScrollView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\StaffrollImgView.h" />
+  </ItemGroup>
+</Project>

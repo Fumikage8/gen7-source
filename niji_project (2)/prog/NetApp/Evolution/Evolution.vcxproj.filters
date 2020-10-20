@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\System">
+      <UniqueIdentifier>{771f9bb9-dd93-4ab2-8807-d899195c98f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frames">
+      <UniqueIdentifier>{5e9af66b-4783-4578-ae7c-ea09e96f8286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Views">
+      <UniqueIdentifier>{caa6da6e-ed1a-4b57-a7a6-c7ddb8f7d53b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{616e0d4a-377b-416b-9996-d7057a8d2484}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\EvolutionFrameDef.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EvolutionResource.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frames\EvolutionFrame_EvolutionDemo.h">
+      <Filter>ソース\Frames</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\EvolutionApplicationSystem.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\EvolutionBuilder.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\EvolutionFrameFactory.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\EvolutionFrameSwitcher.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\EvolutionWork.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Views\EvolutionViewContainer.h">
+      <Filter>ソース\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Views\UpperView_Demo.h">
+      <Filter>ソース\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Views\LowerView_Selection.h">
+      <Filter>ソース\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EvolutionProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EvolutionProcParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\EvolutionDebug_Demo.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frames\EvolutionFrame_CheckZukan.h">
+      <Filter>ソース\Frames</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frames\EvolutionFrame_CheckWaza.h">
+      <Filter>ソース\Frames</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frames\EvolutionFrame_WaitForDemoEnd.h">
+      <Filter>ソース\Frames</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\EvolutionFrameDef.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EvolutionProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frames\EvolutionFrame_EvolutionDemo.cpp">
+      <Filter>ソース\Frames</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\EvolutionApplicationSystem.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\EvolutionBuilder.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\EvolutionFrameFactory.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\EvolutionFrameSwitcher.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\EvolutionWork.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Views\EvolutionViewContainer.cpp">
+      <Filter>ソース\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Views\UpperView_Demo.cpp">
+      <Filter>ソース\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Views\LowerView_Selection.cpp">
+      <Filter>ソース\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EvolutionDebug_Demo.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frames\EvolutionFrame_CheckZukan.cpp">
+      <Filter>ソース\Frames</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frames\EvolutionFrame_CheckWaza.cpp">
+      <Filter>ソース\Frames</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frames\EvolutionFrame_WaitForDemoEnd.cpp">
+      <Filter>ソース\Frames</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

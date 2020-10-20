@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1270E9E-40CF-40D9-A4FD-88124B78EC17}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClInclude Include="include\battle_proc.h" />
+    <ClInclude Include="source\btlv\app\BattleUIActSelectLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIBGFrontLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIBGLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIDataManager.h" />
+    <ClInclude Include="source\btlv\app\BattleUIIntroEventLowerDraw.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIItemConfirmLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIPokeEntryConfirmLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIPokeListLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIPokeStatusLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIRecPlayLowerView.h" />
+    <ClInclude Include="source\btlv\app\BattleUISkillSelectLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUISkillStatusLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUITargetSelectLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIViewDrawOrder.h" />
+    <ClInclude Include="source\btlv\app\BattleUIWatchLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\BattleUIYesNoLowerDraw.h" />
+    <ClInclude Include="source\btlv\app\parts\BattleUIKoukaIconPartsLayout.h" />
+    <ClInclude Include="source\btlv\app\Parts\BattleUISkillButtonPartsLayout.h" />
+    <ClInclude Include="source\btlv\app\Parts\BattleUIZenryokuSkillButtonPartsLayout.h" />
+    <ClInclude Include="source\btlv\BtlvUIActSelectFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIBGFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIIntroEventFrame.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIItemConfirmFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUiMsgWin.h" />
+    <ClInclude Include="source\btlv\BtlvUIPokeEntryConfirmFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIPokeListFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIPokeStatusFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIRotom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUISkillSelectFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUISkillStatusFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUITargetSelectFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIWatchFrame.h" />
+    <ClInclude Include="source\btlv\BtlvUIYesNoFrame.h" />
+    <ClInclude Include="source\btlv\btlv_camera.h" />
+    <ClInclude Include="source\btlv\btlv_convention_win.h" />
+    <ClInclude Include="source\btlv\btlv_core.h" />
+    <ClInclude Include="source\btlv\btlv_effect_def.h" />
+    <ClInclude Include="source\btlv\btlv_gauge_ball.h" />
+    <ClInclude Include="source\btlv\btlv_gauge_levelup.h" />
+    <ClInclude Include="source\btlv\btlv_gauge_shotdown.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_status.h" />
+    <ClInclude Include="source\btlv\btlv_gauge_timer.h" />
+    <ClInclude Include="source\btlv\btlv_gauge_tokusei.h" />
+    <ClInclude Include="source\btlv\btlv_loader.h" />
+    <ClInclude Include="source\btlv\btlv_local_def.h" />
+    <ClInclude Include="source\btlv\btlv_object.h" />
+    <ClInclude Include="source\btlv\btlv_object_chara.h" />
+    <ClInclude Include="source\btlv\btlv_object_poke.h" />
+    <ClInclude Include="source\btlv\btlv_seq_com.h" />
+    <ClInclude Include="source\btlv\btlv_seq_com_define.h" />
+    <ClInclude Include="source\btlv\btlv_seq_sys.h" />
+    <ClInclude Include="source\btlv\btlv_task.h" />
+    <ClInclude Include="source\btlv\btlv_trainer_data.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_types.h" />
+    <ClInclude Include="source\btlv\btlv_ui.h" />
+    <ClInclude Include="source\btlv\render\btlv_RenderPipeLine.h" />
+    <ClInclude Include="source\btlv\render\btlv_RenderSystem.h" />
+    <ClInclude Include="source\btl_action.h" />
+    <ClInclude Include="source\btl_ActionPriority.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ActionRecorder.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ACTION_ORDER_WORK.h" />
+    <ClInclude Include="source\btl_adapter.h" />
+    <ClInclude Include="source\btl_AdapterCommandData.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_AdapterCommandGenerator.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_AffCounter.h" />
+    <ClInclude Include="source\btl_BattleResultJudge.h" />
+    <ClInclude Include="source\btl_BossBattle.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_Capture.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_BattleRoyalShowdown.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_Capture.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_DamageProcParamStack.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_DiarySave.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_FormChange.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_Heap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_InsertWazaInfoStorage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_IntrudeSystem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_Oteire.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokeID.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokeIDRec.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_RecordSave.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ReinforceSystem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendData_ActionSelect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendData_ClientLimitTime.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_server_TimeLimit.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_SimpleEffectFailManager.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_UltraBeast.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ZenryokuWaza.h" />
+    <ClInclude Include="source\btl_ZenryokuWazaStatus.h" />
+    <ClInclude Include="source\btl_BattleResult.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_BattleRule.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_calc.h" />
+    <ClInclude Include="source\btl_client.h" />
+    <ClInclude Include="source\btl_ClientCommunicationObserver.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_TrainerMessage.h" />
+    <ClInclude Include="source\btl_ClientPublicInformation.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_WinWild.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_common.h" />
+    <ClInclude Include="source\btl_const.h" />
+    <ClInclude Include="source\btl_DeadRec.h" />
+    <ClInclude Include="source\btl_DebugPrint.h" />
+    <ClInclude Include="source\btl_DebugTimer.h" />
+    <ClInclude Include="source\btl_DmgAffRec.h" />
+    <ClInclude Include="source\btl_EscapeInfo.h" />
+    <ClInclude Include="source\btl_Event.h" />
+    <ClInclude Include="source\btl_EventFactor.h" />
+    <ClInclude Include="source\btl_Exp.h" />
+    <ClInclude Include="source\btl_ExpCalculator.h" />
+    <ClInclude Include="source\btl_field.h" />
+    <ClInclude Include="source\btl_FieldEff.h" />
+    <ClInclude Include="source\btl_fieldEff_def.h" />
+    <ClInclude Include="source\btl_fx32.h" />
+    <ClInclude Include="source\btl_HeManager.h" />
+    <ClInclude Include="source\btl_Kawaigari.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_main.h" />
+    <ClInclude Include="source\btl_mainmodule.h" />
+    <ClInclude Include="source\btl_net.h" />
+    <ClInclude Include="source\btl_party.h" />
+    <ClInclude Include="source\btl_PartyAllDeadRecorder.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokecon.h" />
+    <ClInclude Include="source\btl_PokemonBattleInRegister.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokemonPosition.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokeparam.h" />
+    <ClInclude Include="source\btl_pokeparam_contflag.h" />
+    <ClInclude Include="source\btl_pokeselect.h" />
+    <ClInclude Include="source\btl_pokeset.h" />
+    <ClInclude Include="source\btl_PosEff.h" />
+    <ClInclude Include="source\btl_PosEffect.h" />
+    <ClInclude Include="source\btl_PosEffectManager.h" />
+    <ClInclude Include="source\btl_PosEffectStatus.h" />
+    <ClInclude Include="source\btl_PosPoke.h" />
+    <ClInclude Include="source\btl_rec.h" />
+    <ClInclude Include="source\btl_RoyalRankingCalculator.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_RoyalRankingContainer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendData.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendDataContainer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendDataContainerFactory.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_server.h" />
+    <ClInclude Include="source\btl_ServerClientFactory.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ServerCommandCalculator.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_ServerFlow.h" />
+    <ClInclude Include="source\btl_ServerFlowSub.h" />
+    <ClInclude Include="source\btl_server_cmd.h" />
+    <ClInclude Include="source\btl_server_const.h" />
+    <ClInclude Include="source\btl_server_flow_def.h" />
+    <ClInclude Include="source\btl_sick.h" />
+    <ClInclude Include="source\btl_sickcont.h" />
+    <ClInclude Include="source\btl_SideEff.h" />
+    <ClInclude Include="source\btl_SideEffect.h" />
+    <ClInclude Include="source\btl_SideEffectManager.h" />
+    <ClInclude Include="source\btl_SideEffectStatus.h" />
+    <ClInclude Include="source\btl_sound.h" />
+    <ClInclude Include="source\btl_str.h" />
+    <ClInclude Include="source\btl_SVCL_ACTION.h" />
+    <ClInclude Include="source\btl_tables.h" />
+    <ClInclude Include="source\btl_TrainerMessage.h" />
+    <ClInclude Include="source\btl_ui.h" />
+    <ClInclude Include="source\btl_WazaRec.h" />
+    <ClInclude Include="source\btl_WazaTargetSelector.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="source\btl_TrainerMessageManager.h" />
+    <ClInclude Include="source\handler\hand_common.h" />
+    <ClInclude Include="source\handler\hand_default_power_up.h" />
+    <ClInclude Include="source\handler\hand_field.h" />
+    <ClInclude Include="source\handler\hand_item.h" />
+    <ClInclude Include="source\handler\hand_pos.h" />
+    <ClInclude Include="source\handler\hand_side.h" />
+    <ClInclude Include="source\handler\hand_tokusei.h" />
+    <ClInclude Include="source\handler\hand_waza.h" />
+    <ClInclude Include="source\handler\hand_zenryoku.h" />
+    <ClInclude Include="source\tr_ai\btl_AiItemJudge.h" />
+    <ClInclude Include="source\tr_ai\btl_AiJudge.h" />
+    <ClInclude Include="source\tr_ai\btl_AiPokeChangeJudge.h" />
+    <ClInclude Include="source\tr_ai\btl_AiScript.h" />
+    <ClInclude Include="source\tr_ai\btl_AiScriptCommandHandler.h" />
+    <ClInclude Include="source\tr_ai\btl_AiScriptHandler.h" />
+    <ClInclude Include="source\tr_ai\btl_AiWazaJudge.h" />
+    <ClInclude Include="source\tr_ai\btl_BattleAi.h" />
+    <ClInclude Include="source\tr_ai\btl_BattleAiCommand.h" />
+    <ClInclude Include="source\tr_ai\btl_BattleAiSystem.h" />
+    <ClInclude Include="source\tr_ai\btl_SenarioAiZenryokuWazaSelector.h" />
+    <ClInclude Include="source\tr_ai\tr_ai_cmd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\battle_proc.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIActSelectLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIBGFrontLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIBGLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIDataManager.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIIntroEventLowerDraw.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIItemConfirmLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIPokeEntryConfirmLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIPokeListLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIPokeStatusLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIRecPlayLowerView.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUISkillSelectLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUISkillStatusLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUITargetSelectLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIWatchLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\BattleUIYesNoLowerDraw.cpp" />
+    <ClCompile Include="source\btlv\app\parts\BattleUIKoukaIconPartsLayout.cpp" />
+    <ClCompile Include="source\btlv\app\Parts\BattleUISkillButtonPartsLayout.cpp" />
+    <ClCompile Include="source\btlv\app\Parts\BattleUIZenryokuSkillButtonPartsLayout.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIActSelectFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIBGFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIIntroEventFrame.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIItemConfirmFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUiMsgWin.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIPokeEntryConfirmFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIPokeListFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIPokeStatusFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIRotom.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUISkillSelectFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUISkillStatusFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUITargetSelectFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIWatchFrame.cpp" />
+    <ClCompile Include="source\btlv\BtlvUIYesNoFrame.cpp" />
+    <ClCompile Include="source\btlv\btlv_camera.cpp" />
+    <ClCompile Include="source\btlv\btlv_convention_win.cpp" />
+    <ClCompile Include="source\btlv\btlv_core.cpp" />
+    <ClCompile Include="source\btlv\btlv_core_cmd.cpp" />
+    <ClCompile Include="source\btlv\btlv_gauge_ball.cpp" />
+    <ClCompile Include="source\btlv\btlv_gauge_levelup.cpp" />
+    <ClCompile Include="source\btlv\btlv_gauge_shotdown.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_status.cpp" />
+    <ClCompile Include="source\btlv\btlv_gauge_timer.cpp" />
+    <ClCompile Include="source\btlv\btlv_gauge_tokusei.cpp" />
+    <ClCompile Include="source\btlv\btlv_loader.cpp" />
+    <ClCompile Include="source\btlv\btlv_object.cpp" />
+    <ClCompile Include="source\btlv\btlv_object_chara.cpp" />
+    <ClCompile Include="source\btlv\btlv_object_poke.cpp" />
+    <ClCompile Include="source\btlv\btlv_seq_com.cpp" />
+    <ClCompile Include="source\btlv\btlv_seq_sys.cpp" />
+    <ClCompile Include="source\btlv\btlv_task.cpp" />
+    <ClCompile Include="source\btlv\btlv_trainer_data.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_ui.cpp" />
+    <ClCompile Include="source\btlv\render\btlv_RenderPipeLine.cpp" />
+    <ClCompile Include="source\btlv\render\btlv_RenderSystem.cpp" />
+    <ClCompile Include="source\btl_action.cpp" />
+    <ClCompile Include="source\btl_ActionPriority.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ActionRecorder.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ACTION_ORDER_WORK.cpp" />
+    <ClCompile Include="source\btl_adapter.cpp" />
+    <ClCompile Include="source\btl_AdapterCommandData.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_AdapterCommandGenerator.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_AffCounter.cpp" />
+    <ClCompile Include="source\btl_BattleResultJudge.cpp" />
+    <ClCompile Include="source\btl_BossBattle.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_Capture.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_BattleRoyalShowdown.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_Capture.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_DamageProcParamStack.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_DiarySave.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_FormChange.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_InsertWazaInfoStorage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_IntrudeSystem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_Oteire.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokeID.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokeIDRec.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_RecordSave.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ReinforceSystem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_server_TimeLimit.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_SimpleEffectFailManager.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_UltraBeast.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ZenryokuWaza.cpp" />
+    <ClCompile Include="source\btl_ZenryokuWazaStatus.cpp" />
+    <ClCompile Include="source\btl_BattleResult.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_BattleRule.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_calc.cpp" />
+    <ClCompile Include="source\btl_client.cpp" />
+    <ClCompile Include="source\btl_ClientCommunicationObserver.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientPublicInformation.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_TrainerMessage.cpp" />
+    <ClCompile Include="source\btl_ClientSeq_WinWild.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_DeadRec.cpp" />
+    <ClCompile Include="source\btl_DebugPrint.cpp" />
+    <ClCompile Include="source\btl_DebugTimer.cpp" />
+    <ClCompile Include="source\btl_DmgAffRec.cpp" />
+    <ClCompile Include="source\btl_EscapeInfo.cpp" />
+    <ClCompile Include="source\btl_Event.cpp" />
+    <ClCompile Include="source\btl_Exp.cpp" />
+    <ClCompile Include="source\btl_ExpCalculator.cpp" />
+    <ClCompile Include="source\btl_field.cpp" />
+    <ClCompile Include="source\btl_HeManager.cpp" />
+    <ClCompile Include="source\btl_Kawaigari.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_mainmodule.cpp" />
+    <ClCompile Include="source\btl_net.cpp" />
+    <ClCompile Include="source\btl_party.cpp" />
+    <ClCompile Include="source\btl_PartyAllDeadRecorder.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_pokecon.cpp" />
+    <ClCompile Include="source\btl_PokemonBattleInRegister.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokemonPosition.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_pokeparam.cpp" />
+    <ClCompile Include="source\btl_pokeselect.cpp" />
+    <ClCompile Include="source\btl_pokeset.cpp" />
+    <ClCompile Include="source\btl_PosEffect.cpp" />
+    <ClCompile Include="source\btl_PosEffectManager.cpp" />
+    <ClCompile Include="source\btl_PosEffectstatus.cpp" />
+    <ClCompile Include="source\btl_PosPoke.cpp" />
+    <ClCompile Include="source\btl_rec.cpp" />
+    <ClCompile Include="source\btl_RoyalRankingCalculator.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_RoyalRankingContainer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_SendData.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_SendDataContainer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_SendDataContainerFactory.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_server.cpp" />
+    <ClCompile Include="source\btl_ServerClientFactory.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ServerCommandCalculator.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\btl_ServerFlow.cpp" />
+    <ClCompile Include="source\btl_ServerFlowSub.cpp" />
+    <ClCompile Include="source\btl_server_cmd.cpp" />
+    <ClCompile Include="source\btl_sick.cpp" />
+    <ClCompile Include="source\btl_sickcont.cpp" />
+    <ClCompile Include="source\btl_SideEffect.cpp" />
+    <ClCompile Include="source\btl_SideEffectManager.cpp" />
+    <ClCompile Include="source\btl_SideEffectStatus.cpp" />
+    <ClCompile Include="source\btl_sound.cpp" />
+    <ClCompile Include="source\btl_str.cpp" />
+    <ClCompile Include="source\btl_tables.cpp" />
+    <ClCompile Include="source\btl_TrainerMessage.cpp" />
+    <ClCompile Include="source\btl_TrainerMessageManager.cpp" />
+    <ClCompile Include="source\btl_ui.cpp" />
+    <ClCompile Include="source\btl_WazaRec.cpp" />
+    <ClCompile Include="source\btl_WazaTargetSelector.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_common.cpp" />
+    <ClCompile Include="source\handler\hand_default_power_up.cpp" />
+    <ClCompile Include="source\handler\hand_field.cpp" />
+    <ClCompile Include="source\handler\hand_item.cpp" />
+    <ClCompile Include="source\handler\hand_pos.cpp" />
+    <ClCompile Include="source\handler\hand_side.cpp" />
+    <ClCompile Include="source\handler\hand_tokusei.cpp" />
+    <ClCompile Include="source\handler\hand_waza.cpp" />
+    <ClCompile Include="source\handler\hand_zenryoku.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiItemJudge.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiJudge.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiPokeChangeJudge.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiScript.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiScriptCommandHandler.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiScriptHandler.cpp" />
+    <ClCompile Include="source\tr_ai\btl_AiWazaJudge.cpp" />
+    <ClCompile Include="source\tr_ai\btl_BattleAi.cpp" />
+    <ClCompile Include="source\tr_ai\btl_BattleAiCommand.cpp" />
+    <ClCompile Include="source\tr_ai\btl_BattleAiSystem.cpp" />
+    <ClCompile Include="source\tr_ai\btl_SenarioAiZenryokuWazaSelector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\btlv\btlv_rotom_se_table.cdat" />
+    <None Include="source\btlv\btlv_seq_com.cdat" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

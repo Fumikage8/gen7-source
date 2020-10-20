@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\NakahiroTestProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HScroll\HScrollDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HScroll\HScrollFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HScroll\ListSmall.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HScroll\ListLarge.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HScroll\ListMiddle.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoxChatLow\BoxChatLowFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\NakahiroTestProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HScroll\HScrollDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HScroll\HScrollFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HScroll\ListSmall.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HScroll\ListLarge.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HScroll\ListMiddle.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoxChatLow\BoxChatLowFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{64aa253e-ca5f-46ad-b03d-67767d6ed750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{820d609f-7df6-4240-907a-4c2ec313881b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{3c483aae-b598-49a1-8f7f-77fe9bc2d4de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\FinderStudioCaptureProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FinderStudioCaptureWork.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderStudioCaptureHeapDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureFrameBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureFrameDefine.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureFrameManager.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureFrameSequence.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCapturePhotoListFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureShootMainFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureShootPrepareFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureViewDefine.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureBGView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureUpperView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCapturePokeListView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureBGListView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureDressupListView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureSelectButtonView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureShootView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureZMotionView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureCameraView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCapturePhotoListView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureSDCardLoadFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureSDCardSaveFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderStudioCaptureZMotionData.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderStudioCaptureViewerManager.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCapturePrepareSelectView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCapturePrepareCommonView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderStudioCapturePaneList.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureCompositionView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\FinderStudioCaptureSelectDifficultyFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureShootCommonView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureShootLayoutView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderStudioCaptureScrollBar.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\FinderStudioCaptureViewBase.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\FinderStudioCaptureDebug.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\FinderStudioCaptureDebugAutoCaptureFrame.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\FinderStudioCaptureDebugPhotoCompareFrame.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\FinderStudioCaptureDebugAgingFrame.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\FinderStudioCaptureProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureFrameManager.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureFrameSequence.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCapturePhotoListFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureShootMainFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureShootPrepareFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureBGView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureUpperView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCapturePokeListView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureBGListView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureDressupListView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureSelectButtonView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureShootView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureZMotionView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureCameraView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCapturePhotoListView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureSDCardLoadFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureSDCardSaveFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderStudioCaptureZMotionData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderStudioCaptureViewerManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCapturePrepareSelectView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCapturePrepareCommonView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderStudioCapturePaneList.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureCompositionView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\FinderStudioCaptureSelectDifficultyFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureShootCommonView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\FinderStudioCaptureShootLayoutView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderStudioCaptureScrollBar.cpp" />
+    <ClCompile Include="source\View\FinderStudioCaptureViewBase.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FinderStudioCaptureDebug.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FinderStudioCaptureDebugAutoCaptureFrame.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FinderStudioCaptureDebugPhotoCompareFrame.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FinderStudioCaptureDebugAgingFrame.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

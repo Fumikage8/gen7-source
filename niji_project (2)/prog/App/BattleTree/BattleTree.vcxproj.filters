@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{83d78b3e-8e6f-4b5d-bbcb-0fff4cc422fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\System">
+      <UniqueIdentifier>{7d32858e-089c-4781-81c6-78e18e031802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{6949a2af-664a-43cc-9b3e-26d101d882ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\BattleTreeFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BattleTreeFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BattleTreeResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeApplicationSystem.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeBuilder.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeFrameFactory.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeFrameSwitcher.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeWork.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleTreeFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleTreeAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleTreeProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeViewList.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeViewObjects.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\BattleTreeViewSystemAccessor.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleTreeLowerBGView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleTreeLowerNPCListView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleTreeLowerSelectConfirmView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleTreeUpperBGView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BattleTreeProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeApplicationSystem.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeBuilder.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeFrameFactory.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeFrameSwitcher.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeWork.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleTreeFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeViewList.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeViewObjects.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\BattleTreeViewSystemAccessor.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleTreeLowerBGView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleTreeLowerNPCListView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleTreeLowerSelectConfirmView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleTreeUpperBGView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

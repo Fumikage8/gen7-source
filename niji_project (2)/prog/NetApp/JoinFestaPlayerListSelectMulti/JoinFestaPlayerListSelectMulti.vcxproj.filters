@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\System">
+      <UniqueIdentifier>{a5515979-f143-444c-a4ab-c0ef96703d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{391d9e7c-f937-4ab8-83de-ba94deb7f7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{271733a0-1615-490b-be9c-57cb2f433982}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\JoinFestaPlayerListSelectMultiAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerListSelectMultiProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaPlayerListSelectMultiDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaPlayerListSelectMultiFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaPlayerListSelectMultiFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaPlayerListSelectMultiResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaPlayerListSelectMultiFrameBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaPlayerListSelectMultiLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiApplicationSystem.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiBuilder.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiFrameFactory.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiFrameSwitcher.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiViewList.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiViewObjects.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiViewSystemAccessor.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaPlayerListSelectMultiWork.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaPlayerListSelectMultiFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\JoinFestaPlayerListSelectMultiProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaPlayerListSelectMultiFrameBase.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaPlayerListSelectMultiLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiApplicationSystem.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiBuilder.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiFrameFactory.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiFrameSwitcher.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiViewList.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiViewObjects.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiViewSystemAccessor.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaPlayerListSelectMultiWork.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaPlayerListSelectMultiFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

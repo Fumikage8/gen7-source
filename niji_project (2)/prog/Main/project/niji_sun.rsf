@@ -1,0 +1,33 @@
+BasicInfo:
+  Title: momiji
+  ProductCode: CTR-P-A2AA
+  # メディアのサイズ
+  MediaSize: "4GB"
+TitleInfo:
+  Category: Application
+  UniqueId: 0x01B50
+  
+Rom:
+  HostRoot: "$(ROMFS_ROOT)"
+  Reject:
+    - "/data/script/*"
+    - "/data/test/*"
+    - "/map01/*"
+    - "/convert_test_data.*"
+    - "/rgba8.ctpk"
+    - "/shader.shbin"
+    - $(GF_ROMFS_REJECT)
+  SaveDataSize: 1MB   # バックアップ容量
+
+CardInfo:
+  MediaType: "$(MEDIA_TYPE)"  #
+  
+Option:
+  EnableCompress: False
+
+AccessControlInfo:
+  UseExtSaveData: true    # 拡張セーブデータの使用
+  ExtSaveDataNumber:  0x01B50   # 拡張セーブデータ番号  ここはsun moon共通
+  FileSystemAccess:             # nn::fs::MountSdmcを利用するので-Debugが必要
+   - Debug
+

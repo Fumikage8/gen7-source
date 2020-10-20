@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\lowerParts">
+      <UniqueIdentifier>{71d60c9b-fbe6-403c-a5d5-72a2826a2c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\upperParts">
+      <UniqueIdentifier>{43c39d1f-de76-482f-aaa4-a9e6edef7672}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\StatusAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StatusProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusDrawerBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusDrawListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusLowerBoxMarkDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusLowerDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusPokemonContainer.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusUpperDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StatusUpperMemoDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upperParts\StatusRibbonExplain.h">
+      <Filter>ソース\upperParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upperParts\StatusTrainerMemo.h">
+      <Filter>ソース\upperParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\upperParts\StatusWazaExplain.h">
+      <Filter>ソース\upperParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusMsgWindow.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusPokeModel.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusRibbon.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusWaza.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusWazaCursor.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusWazaExchange.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusBallPlate.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusInformation.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lowerParts\StatusInfoWindow.h">
+      <Filter>ソース\lowerParts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\StatusDrawerBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusLowerBoxMarkDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusLowerDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusPokemonContainer.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusUpperDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StatusUpperMemoDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upperParts\StatusRibbonExplain.cpp">
+      <Filter>ソース\upperParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upperParts\StatusTrainerMemo.cpp">
+      <Filter>ソース\upperParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\upperParts\StatusWazaExplain.cpp">
+      <Filter>ソース\upperParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusPokeModel.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusRibbon.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusWaza.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusWazaCursor.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusWazaExchange.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusBallPlate.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusInformation.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusInfoWindow.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lowerParts\StatusMsgWindow.cpp">
+      <Filter>ソース\lowerParts</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

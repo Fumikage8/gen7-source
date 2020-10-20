@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Debug">
+      <UniqueIdentifier>{f21adc7d-a2e3-4f75-9b44-577c01d9d64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{954c063a-e608-4202-93f9-ef348002d44b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\GTSEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LiveEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MiracleTradeEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MysteryGiftEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NBREvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NetEventBase.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegulationSelectEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TeamSelectEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2PTradeEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConnectionEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NetworkBattleEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QuickMatchEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EvolutionEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeListJoinEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaEventLinkEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaCloseEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaOpenEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoRecordingEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoPlayerEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleSpotEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaBeaconEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaSelectWordEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerListSelectEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerListSelectMultiEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerListShowEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerDetailEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerListSelectForScriptEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaAttractionListSelectEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaOpenListEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaAttractionResultEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaProfileEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameSyncEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EggHatchingEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaAttractionRetireEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaRecreateFieldPersonalListEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FatalErrorEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPlayerListPortalEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TradeDemoEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaGlobalAttractionEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QRReaderEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoCallEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VsDemoEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\JoinFestaDummySendEvent.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaPokeStatusEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PhotoViewEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\GTSEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LiveEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MiracleTradeEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MysteryGiftEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NBREvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NetEventBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegulationSelectEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TeamSelectEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2PTradeEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConnectionEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NetworkBattleEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\QuickMatchEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EvolutionEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListJoinEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaEventLinkEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaCloseEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaOpenEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleVideoRecordingEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleVideoPlayerEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleSpotEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaBeaconEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaSelectWordEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPlayerListSelectEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPlayerListSelectMultiEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPlayerListShowEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPlayerDetailEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPlayerListSelectForScriptEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaAttractionListSelectEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaOpenListEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaAttractionResultEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaProfileEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameSyncEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EggHatchingEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaAttractionRetireEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaRecreateFieldPersonalListEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FatalErrorEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPlayerListPortalEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TradeDemoEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaGlobalAttractionEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\QRReaderEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleVideoCallEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\VsDemoEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\JoinFestaDummySendEvent.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaPokeStatusEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PhotoViewEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

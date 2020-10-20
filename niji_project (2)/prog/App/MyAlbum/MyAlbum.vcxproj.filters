@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{57662ac9-7b5c-4ec1-bb85-bc911d0a139e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MyAlbumAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyAlbumProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MyAlbumDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MyAlbumFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MyAlbumPhotoData.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\MyAlbumDebug.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\MyAlbumDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MyAlbumFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MyAlbumProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MyAlbumPhotoData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\MyAlbumDebug.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

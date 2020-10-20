@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{66df83eb-e139-45dc-ba1b-ab05d0a9d4d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{22e8c1d5-80af-4c0a-a89f-91051d5aa2fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BattleVideoPlayerBaseProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleVideoPlayerLocalProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleVideoPlayerUIViewPool.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerLowRootView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerUppRootView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerTutorialFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerSDCardChkFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerUppGameInfoView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerUppGameResultView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerLowDataCtrlView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerLowDataListView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerDataCtrlBaseFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerDataCtrlLocalFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\BattleVideoPlayerLowDataPlayerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerDataDelFlow.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerDataListFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleVideoPlayerNetProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerNetTopSelectFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\BattleVideoPlayerDataCtrlNetFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\BattleVideoPlayerUIViewPool.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoPlayerBaseProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoPlayerLocalProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerLowRootView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerUppRootView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerTutorialFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerSDCardChkFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerUppGameInfoView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerUppGameResultView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerLowDataCtrlView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerLowDataListView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoPlayerProcAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerDataCtrlBaseFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerDataCtrlLocalFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\BattleVideoPlayerLowDataPlayerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerDataDelFlow.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerDataListFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleVideoPlayerNetProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerNetTopSelectFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\BattleVideoPlayerDataCtrlNetFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

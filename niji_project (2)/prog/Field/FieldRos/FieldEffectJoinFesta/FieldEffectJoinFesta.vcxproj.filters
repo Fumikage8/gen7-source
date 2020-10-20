@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectFesEffectBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectFesLevelUp.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectFesMessage.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectFesShopOpen.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectFesStartSplash.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FieldRo\source\Effect\content\FieldEffectFesWarp.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectFesEffectBase.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectFesLevelUp.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectFesMessage.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectFesShopOpen.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectFesStartSplash.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FieldRo\include\Effect\content\FieldEffectFesWarp.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

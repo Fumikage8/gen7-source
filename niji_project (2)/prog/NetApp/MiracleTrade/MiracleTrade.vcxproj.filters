@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ApplicationSystem">
+      <UniqueIdentifier>{d80aa77c-c23d-4bc1-b811-3115a4b81d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\StartConfirm">
+      <UniqueIdentifier>{6d97a4e8-2a25-4ed9-8c0b-b1a824021dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Matching">
+      <UniqueIdentifier>{536fef8a-2970-44f3-85cc-65029bae939d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\RequestSequence">
+      <UniqueIdentifier>{7c17ba15-adbd-4c69-97f5-73bdb208bbc9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MiracleTradeAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MiracleTradeProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MiracleTradeFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MiracleTradeFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MiracleTradeResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\MiracleTradeBuilder.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\MiracleTradeFrameFactory.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\MiracleTradeFrameSwitcher.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartConfirm\MiracleTradeStartConfirmFrame.h">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matching\MiracleTradeMatchingFrame.h">
+      <Filter>ソース\Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\MiracleTradeMatchingRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\MiracleTradeMatchingResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\MiracleTradeRequestFacade.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\MiracleTradeVerifyRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\MiracleTradeVerifyResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\MiracleTradeApplicationSystem.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MiracleTradeFrameBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\MiracleTradeViewObjects.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matching\MiracleTradeMatchingWaitLowerView.h">
+      <Filter>ソース\Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matching\MiracleTradePlayerInfoLowerView.h">
+      <Filter>ソース\Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matching\MiracleTradePlayerInfoLowerViewListener.h">
+      <Filter>ソース\Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matching\MiracleTradePokemonInfoUpperView.h">
+      <Filter>ソース\Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartConfirm\MiracleTradeStartConfirmLowerView.h">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartConfirm\MiracleTradeStartConfirmLowerViewListener.h">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartConfirm\MiracleTradeStartConfirmUpperView.h">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MiracleTradeDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\MiracleTradeWork.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\MiracleTradeProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\MiracleTradeBuilder.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\MiracleTradeFrameFactory.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\MiracleTradeFrameSwitcher.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartConfirm\MiracleTradeStartConfirmFrame.cpp">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Matching\MiracleTradeMatchingFrame.cpp">
+      <Filter>ソース\Matching</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\MiracleTradeMatchingRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\MiracleTradeRequestFacade.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\MiracleTradeVerifyRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\MiracleTradeApplicationSystem.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MiracleTradeFrameBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\MiracleTradeViewObjects.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Matching\MiracleTradeMatchingWaitLowerView.cpp">
+      <Filter>ソース\Matching</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Matching\MiracleTradePlayerInfoLowerView.cpp">
+      <Filter>ソース\Matching</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Matching\MiracleTradePokemonInfoUpperView.cpp">
+      <Filter>ソース\Matching</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartConfirm\MiracleTradeStartConfirmLowerView.cpp">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartConfirm\MiracleTradeStartConfirmUpperView.cpp">
+      <Filter>ソース\StartConfirm</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

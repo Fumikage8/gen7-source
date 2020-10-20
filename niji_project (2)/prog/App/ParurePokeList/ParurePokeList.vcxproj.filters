@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ParurePokeListProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParurePokeListDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParurePokeListFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ParurePokeListAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ParurePokeListDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParurePokeListFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParurePokeListProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BattleSpotProc.h" />
+    <ClInclude Include="include\BattleSpotProcParam.h" />
+    <ClInclude Include="source\BattleSpotFrameDef.h" />
+    <ClInclude Include="source\BattleSpotResource.h" />
+    <ClInclude Include="source\Debug\BattleSpotDebug_ViewTest.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_FreeAfterBattle.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_FreeBattleEntry.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_FreeBattleMatching.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_FriendAfterBattle.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_FriendBattleMatching.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_FriendMatchEntry.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_InternetAfterBattle.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_InternetBattleMatching.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_InternetMatchEntry.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_RatingAfterBattle.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_RatingAfterRuleSelect.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_RatingBattleEntry.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_RatingBattleMatching.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_UpdateDisconnectCount.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_ViewTest.h" />
+    <ClInclude Include="source\Frames\BattleSpotFrame_Welcome.h" />
+    <ClInclude Include="source\System\BattleSpotApplicationSystem.h" />
+    <ClInclude Include="source\System\BattleSpotBuilder.h" />
+    <ClInclude Include="source\System\BattleSpotFrameFactory.h" />
+    <ClInclude Include="source\System\BattleSpotFrameSwitcher.h" />
+    <ClInclude Include="source\System\BattleSpotWork.h" />
+    <ClInclude Include="source\Views\BattleSpotMessageMenu.h" />
+    <ClInclude Include="source\Views\BattleSpotViewContainer.h" />
+    <ClInclude Include="source\Views\BattleSpotViewUtility.h" />
+    <ClInclude Include="source\Views\LowerView_Card.h" />
+    <ClInclude Include="source\Views\LowerView_QR.h" />
+    <ClInclude Include="source\Views\LowerView_Selection.h" />
+    <ClInclude Include="source\Views\UpperView_Information.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BattleSpotFrameDef.cpp" />
+    <ClCompile Include="source\BattleSpotProc.cpp" />
+    <ClCompile Include="source\Debug\BattleSpotDebug_ViewTest.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_FreeAfterBattle.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_FreeBattleEntry.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_FreeBattleMatching.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_FriendAfterBattle.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_FriendBattleMatching.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_FriendMatchEntry.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_InternetAfterBattle.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_InternetBattleMatching.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_InternetMatchEntry.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_RatingAfterBattle.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_RatingAfterRuleSelect.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_RatingBattleEntry.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_RatingBattleMatching.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_UpdateDisconnectCount.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_ViewTest.cpp" />
+    <ClCompile Include="source\Frames\BattleSpotFrame_Welcome.cpp" />
+    <ClCompile Include="source\System\BattleSpotApplicationSystem.cpp" />
+    <ClCompile Include="source\System\BattleSpotBuilder.cpp" />
+    <ClCompile Include="source\System\BattleSpotFrameFactory.cpp" />
+    <ClCompile Include="source\System\BattleSpotFrameSwitcher.cpp" />
+    <ClCompile Include="source\System\BattleSpotWork.cpp" />
+    <ClCompile Include="source\Views\BattleSpotMessageMenu.cpp" />
+    <ClCompile Include="source\Views\BattleSpotViewContainer.cpp" />
+    <ClCompile Include="source\Views\BattleSpotViewUtility.cpp" />
+    <ClCompile Include="source\Views\LowerView_Card.cpp" />
+    <ClCompile Include="source\Views\LowerView_QR.cpp" />
+    <ClCompile Include="source\Views\LowerView_Selection.cpp" />
+    <ClCompile Include="source\Views\UpperView_Information.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FEF5CBF2-E079-48A2-8053-BC53CC046CA4}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

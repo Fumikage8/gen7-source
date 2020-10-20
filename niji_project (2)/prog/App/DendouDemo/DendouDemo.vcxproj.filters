@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DendouDemoProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DendouDemoPokeModel.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DendouDemoPlayerModel.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DendouDemoView.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DendouDemoFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DendouDemoDebug.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DendouDemoFileLoader.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\DendouDemoProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DendouDemoPokeModel.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DendouDemoPlayerModel.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DendouDemoView.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DendouDemoFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DendouDemoDebug.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DendouDemoFileLoader.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

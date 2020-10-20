@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SoundTestProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundContainer.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterBase.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterBGM.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterME.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterSE.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterPV.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundTestDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterPVZukan.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UpdaterPika.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\SoundTestProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundContainer.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterBGM.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterME.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterSE.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterPV.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterPVZukan.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UpdaterPika.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

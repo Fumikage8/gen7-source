@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Zone">
+      <UniqueIdentifier>{d170dba4-7575-4969-9711-2596def40775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Zone">
+      <UniqueIdentifier>{9cfac8f6-ff81-4905-969b-a54bfcb28489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="非公開インクルード">
+      <UniqueIdentifier>{92e1ab97-6da0-4d2c-a2f2-88c8e20bb1f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Event">
+      <UniqueIdentifier>{66103f71-a9f3-4d74-abcb-c9bc6aa1f07a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Event">
+      <UniqueIdentifier>{d456f369-d1e7-428b-a92d-dcde6dfbff82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="非公開インクルード\Event">
+      <UniqueIdentifier>{b5d3de3a-427d-4855-ab9e-b9104ffca0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Script">
+      <UniqueIdentifier>{a13beace-0c1c-4706-9cdf-bcdd030ca241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Script">
+      <UniqueIdentifier>{5801c2e4-1203-4063-98ee-e0080288d8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\MoveModel">
+      <UniqueIdentifier>{778c3098-45d6-4a56-b00a-cbda1f094be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\MoveModel">
+      <UniqueIdentifier>{16d25c84-8a49-4cb5-b393-a2e0aea04a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\ActionCommand">
+      <UniqueIdentifier>{3b8e7687-2900-47ad-95bb-43bec45199cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ActionCommand">
+      <UniqueIdentifier>{c2be1c93-f849-48ce-880b-5f6b2abe6152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\MoveCode">
+      <UniqueIdentifier>{8dec916e-ea1f-45a5-bc67-dfa9861fb5dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\MoveCode">
+      <UniqueIdentifier>{c4a4f999-c1b4-4675-8e34-57b110b00dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FieldResident">
+      <UniqueIdentifier>{da42664b-c17d-4294-a6ba-235c29cabf4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FieldResident">
+      <UniqueIdentifier>{af2b417b-4343-430c-9be3-0234e5a1839f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Encount">
+      <UniqueIdentifier>{388137ed-bd7f-4605-a569-733d2d9d0c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Encount">
+      <UniqueIdentifier>{3be4f59d-f991-4ab5-a3de-c6691575cbd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Time">
+      <UniqueIdentifier>{e1148ff3-0f94-420f-8ce9-81bc573301b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Time">
+      <UniqueIdentifier>{bded5541-b40a-4b2c-ac12-93e1be17e522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Launcher">
+      <UniqueIdentifier>{e5a861dc-d216-4c24-8429-96ed7cb6d812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Launcher">
+      <UniqueIdentifier>{62e78130-1131-4c0f-817f-9b614156ac5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FootSound">
+      <UniqueIdentifier>{c3f00430-f2f8-41e0-951f-56680e41ac8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FootSound">
+      <UniqueIdentifier>{c448a6e8-e262-4fff-9ee9-3e4ea19676c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="非公開インクルード\Zone">
+      <UniqueIdentifier>{8986cda8-4055-4136-a8c5-9412578baebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\EventList">
+      <UniqueIdentifier>{06bffe52-6a72-4e46-bc8c-c886783869f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\EventList">
+      <UniqueIdentifier>{d2e1d6ec-a280-4455-bf6a-be4321a2193a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Subscreen">
+      <UniqueIdentifier>{7ed72b39-75d4-442d-8c92-fc73f47ebb78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Item">
+      <UniqueIdentifier>{468e3b4b-d0c7-4759-a4bb-042699942187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Item">
+      <UniqueIdentifier>{070c18b0-25b5-4aa3-bd25-d887d7553b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\SubScreen">
+      <UniqueIdentifier>{1f3e7286-9767-4971-8311-271ec60bd668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Debug">
+      <UniqueIdentifier>{d66ee677-bc45-45f4-8c7c-c18d10c4cf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{18f1d86c-33ac-42bc-8010-d71fa965e641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Berry">
+      <UniqueIdentifier>{8286dffb-cdbe-4bc9-83a6-9d5d690d96c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Berry">
+      <UniqueIdentifier>{53eb22b6-7dde-46c7-83f6-1679994c5fbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Sodateya">
+      <UniqueIdentifier>{07b50b63-ae75-4c71-a5c7-a851cf0d53d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Sodateya">
+      <UniqueIdentifier>{9b8b7218-f772-4905-a8bb-71c94bb5adae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\PokemonSearch">
+      <UniqueIdentifier>{f0edcd47-2032-42ed-a65e-0ce2156c8d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\PokemonSearch">
+      <UniqueIdentifier>{369efec8-14ec-419b-8b02-47f1e2a2a177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\BattleInst">
+      <UniqueIdentifier>{1bc114bb-a60a-46d8-8d47-7fe4dfbef29c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BattleInst">
+      <UniqueIdentifier>{54e7528d-da80-4112-9907-b34fe055e5e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BattleFes">
+      <UniqueIdentifier>{984e6ffe-0eaf-403a-8de0-bb08a4522155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\BattleFes">
+      <UniqueIdentifier>{494325a5-7655-4f9b-bbd7-a69eb4455171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\RotomPower">
+      <UniqueIdentifier>{c04a43c3-bc54-408a-bc6b-a0f3bf216eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\RotomPower">
+      <UniqueIdentifier>{052a79d8-5719-41f5-a40b-34bfb8f03b57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Zone\ZoneDataAccessor.cpp">
+      <Filter>ソース\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Zone\ZoneDataLoader.cpp">
+      <Filter>ソース\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldWorld.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventGameStart.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventFieldmapControl.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetInit.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetInitItem.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Zone\ZoneCollision.cpp">
+      <Filter>ソース\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ActionCommand\FieldActionCommandManager.cpp">
+      <Filter>ソース\ActionCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeManager.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeNpc.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodePlayer.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldMoveModel.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldMoveModelManager.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldArea.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldResident\FieldResident.cpp">
+      <Filter>ソース\FieldResident</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventBattleCall.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Encount\FieldEncountWork.cpp">
+      <Filter>ソース\Encount</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Encount\FieldEncountPokeSet.cpp">
+      <Filter>ソース\Encount</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldAttribute.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventProcessCall.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventMapJump.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sound\FieldSound.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventBattleReturn.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Time\EvTime.cpp">
+      <Filter>ソース\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeTrainerEye.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldMoveModelPlayer.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideKentaros.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventAppCall.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventXMenu.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Launcher\FieldApplicationLauncher.cpp">
+      <Filter>ソース\Launcher</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeTraffic.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FootSound\FieldFootSoundAccessor.cpp">
+      <Filter>ソース\FootSound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldWarpData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventGameOver.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeTrainerPath.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideSamehader.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventFieldReport.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountChase.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountEscape.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountPatrol.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ScriptToolPokeDex.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldLocation.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EventList\EventListDataManager.cpp">
+      <Filter>ソース\EventList</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventAddPokemon.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldMoveModelAreaCharaAccessor.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventGimmickEncount.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetListener.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Item\FieldItemManager.cpp">
+      <Filter>ソース\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeUtility.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Subscreen\FieldSubscreen.cpp">
+      <Filter>ソース\SubScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventFieldQuickMatch.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Encount\FieldEncountEffect.cpp">
+      <Filter>ソース\Encount</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventSymbolEncount.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Debug\DebugEvent\EventDebugPokeMake\source\EventDebugPokeMake.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldMoveModelShadowManager.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FieldDebugHeapLog.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventBerryPoint.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Berry\FieldBerryManager.cpp">
+      <Filter>ソース\Berry</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeGimmickEncountCommon.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideMuurando.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldSubobject.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideLaplace.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventFishingAction.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveModel\FieldFacialAnime.cpp">
+      <Filter>ソース\MoveModel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\FieldEventPokeFinderForPlacement.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventRizaadonRide.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Debug\DebugEvent\EventDebugItemMake\source\EventDebugItemMake.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Item\FieldItemUse.cpp">
+      <Filter>ソース\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideKairiky.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveCode\FieldMoveCodeRideRoba2.cpp">
+      <Filter>ソース\MoveCode</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\FieldEventPokemonRideTool.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventBattleDll.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FieldDebugTypes.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetFieldInit.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetAppCall.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sodateya\FieldSodateya.cpp">
+      <Filter>ソース\Sodateya</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventGameClear.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugStrInput.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugAllPokeFinder.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Encount\FieldEncountUtil.cpp">
+      <Filter>ソース\Encount</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokemonSearch\FieldPokemonSearchDataAccessor.cpp">
+      <Filter>ソース\PokemonSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetInitPostman.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleInst\BattleInstManager.cpp">
+      <Filter>ソース\BattleInst</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleInst\BattleInst.cpp">
+      <Filter>ソース\BattleInst</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleInst\BattleInstTool.cpp">
+      <Filter>ソース\BattleInst</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugCharaViewer.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\BattleReturnBGM.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugKisekae.cpp" />
+    <ClCompile Include="source\Debug\EventDebugKisekaeCurrentPosition.cpp" />
+    <ClCompile Include="source\Debug\EventDebugRidePokemon.cpp" />
+    <ClCompile Include="source\Event\FieldDebugEventMapCapture.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\EventDebugAppReturn.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugCsvParser.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugStartSettingAccessor.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugZoneNameLoader.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\FieldDebugFlagWorkSearchProc.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugSymbolNameLoader.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleFes\BattleFes.cpp">
+      <Filter>ソース\BattleFes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleFes\BattleFesManager.cpp">
+      <Filter>ソース\BattleFes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleFes\BattleFesTool.cpp">
+      <Filter>ソース\BattleFes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\EventFieldRotopon.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleFes\BattleFesPokeLotterySystem.cpp">
+      <Filter>ソース\BattleFes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleFes\BattleFesDebug.cpp">
+      <Filter>ソース\BattleFes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RotomPower\RotomPowerManager.cpp">
+      <Filter>ソース\RotomPower</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RotomPower\RotomPowerTime.cpp">
+      <Filter>ソース\RotomPower</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugSodateya.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugGimmickEncount.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugFade.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugEncount.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugSignal.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\FieldNode.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldTransformNode.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field3DObjectNode.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldManagerNode.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zone\ZoneDataAccessor.h">
+      <Filter>インクルード\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zone\ZoneDataLoader.h">
+      <Filter>インクルード\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldWorld.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventGameStart.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldLocation.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Event\EventFieldmapControl.h">
+      <Filter>非公開インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\ScriptFuncSetInit.h">
+      <Filter>インクルード\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zone\ZoneCollision.h">
+      <Filter>インクルード\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ActionCommand\FieldActionCommandManager.h">
+      <Filter>インクルード\ActionCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCode_define.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeBase.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeManager.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeNpc.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodePlayer.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModel.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModel_define.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModelManager.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldWorldDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldArea.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldResident\FieldResident.h">
+      <Filter>インクルード\FieldResident</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventBattleCall.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventBattleCallDefine.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Encount\FieldEncountWork.h">
+      <Filter>インクルード\Encount</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Encount\FieldEncountPokeSet.h">
+      <Filter>インクルード\Encount</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldAttribute.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventProcessCall.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventMapJump.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sound\FieldSound.h">
+      <Filter>インクルード\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventBattleReturn.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Time\EvTime.h">
+      <Filter>インクルード\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeTrainerEye.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModelPlayer.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideKentaros.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Launcher\FieldApplicationLauncher.h">
+      <Filter>インクルード\Launcher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeTraffic.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FootSound\FieldFootSoundAccessor.h">
+      <Filter>インクルード\FootSound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldWarpData.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Zone\ZoneDataFormat.h">
+      <Filter>非公開インクルード\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventGameOver.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeTrainerPath.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideSamehader.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventFieldReport.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountChase.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountEscape.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountPatrol.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScriptToolPokeDex.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EventList\EventListDataManager.h">
+      <Filter>インクルード\EventList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Subscreen\SubscreenRequestDef.h">
+      <Filter>インクルード\Subscreen</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventAddPokemon.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModelAreaCharaAccessor.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventGimmickEncount.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncount_define.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\ScriptFuncSetListener.h">
+      <Filter>インクルード\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Item\FieldItemManager.h">
+      <Filter>インクルード\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeUtility.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Subscreen\FieldSubscreen.h">
+      <Filter>インクルード\Subscreen</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventFieldQuickMatch.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventXMenuListener.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Encount\FieldEncountEffect.h">
+      <Filter>インクルード\Encount</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventSymbolEncount.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Zone\ZoneDataLoaderTypes.h">
+      <Filter>インクルード\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Debug\DebugEvent\EventDebugPokeMake\include\EventDebugPokeMake.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldMoveModelShadowManager.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugHeapLog.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventBerryPoint.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Berry\FieldBerryManager.h">
+      <Filter>インクルード\Berry</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeGimmickEncountCommon.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideMuurando.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldSubobject.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideLaplace.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveModel\FieldFacialAnime.h">
+      <Filter>インクルード\MoveModel</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventFishingAction.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\FieldEventPokeFinderForPlacement.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\ScriptFuncSetFieldInit.h">
+      <Filter>インクルード\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventRizaadonRide.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Debug\DebugEvent\EventDebugItemMake\include\EventDebugItemMake.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Item\FieldItemUse.h">
+      <Filter>インクルード\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FieldMoveCodeRideKairiky.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MoveCode\FIeldMoveCodeRideRoba2.h">
+      <Filter>インクルード\MoveCode</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\FieldEventPokemonRideTool.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventBattleDll.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugTypes.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugSwitch.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugSwitchGroup.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\ScriptFuncSetAppCall.h">
+      <Filter>インクルード\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sodateya\FieldSodateya.h">
+      <Filter>インクルード\Sodateya</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sodateya\FieldSodateyaWalkCheckData.h">
+      <Filter>インクルード\Sodateya</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Script\ScriptPlayerModelController.h">
+      <Filter>インクルード\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventGameClear.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugStrInput.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugAllPokeFinder.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Encount\FieldEncountUtil.h">
+      <Filter>インクルード\Encount</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokemonSearch\FieldPokemonSearchDataAccessor.h">
+      <Filter>インクルード\PokemonSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleInst\BattleInstManager.h">
+      <Filter>インクルード\BattleInst</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleInst\BattleInstDefine.h">
+      <Filter>インクルード\BattleInst</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleInst\BattleInstTool.h">
+      <Filter>インクルード\BattleInst</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleInst\BattleInst.h">
+      <Filter>インクルード\BattleInst</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleInst\BattleInstData.h">
+      <Filter>インクルード\BattleInst</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugCharaViewer.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Event\BattleReturnBGM.h">
+      <Filter>非公開インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventAppCall.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventXMenu.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugKisekae.h" />
+    <ClInclude Include="include\Debug\EventDebugKisekaeCurrentPosition.h" />
+    <ClInclude Include="include\Debug\EventDebugRidePokemon.h" />
+    <ClInclude Include="include\Event\FieldDebugEventMapCapture.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\EventDebugAppReturn.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugCsvParser.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugStartSettingAccessor.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugZoneNameLoader.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\FieldDebugFlagWorkSearchProc.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\DebugSymbolNameLoader.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleFes\BattleFes.h">
+      <Filter>インクルード\BattleFes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleFes\BattleFesManager.h">
+      <Filter>インクルード\BattleFes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleFes\BattleFesDefine.h">
+      <Filter>インクルード\BattleFes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleFes\BattleFesTool.h">
+      <Filter>インクルード\BattleFes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\EventFieldRotopon.h">
+      <Filter>インクルード\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleFes\BattleFesPokeLotterySystem.h">
+      <Filter>インクルード\BattleFes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleFes\BattleFesDebug.h">
+      <Filter>インクルード\BattleFes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RotomPower\RotomPowerTime.h">
+      <Filter>インクルード\RotomPower</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RotomPower\RotomPowerManager.h">
+      <Filter>インクルード\RotomPower</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugSodateya.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugGimmickEncount.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugFade.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugEncount.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugSignal.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\BattleFes\BattleFesNoLotteryList.cdat">
+      <Filter>ソース\BattleFes</Filter>
+    </None>
+  </ItemGroup>
+</Project>

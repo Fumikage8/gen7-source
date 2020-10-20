@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\work">
+      <UniqueIdentifier>{4cee19c6-2814-4d84-8825-3c037c95646b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\parts">
+      <UniqueIdentifier>{100951ac-176c-4616-802e-519ca9086eda}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\PokeListFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\work\PokeListLocalWork.cpp">
+      <Filter>ソース\work</Filter>
+    </ClCompile>
+    <ClCompile Include="source\work\PokeListStaticWork.cpp">
+      <Filter>ソース\work</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListCursorDraw.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListDrawerBase.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListMenuWindowDraw.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListPlateDraw.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListPokeInfoDraw.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListSimpleDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListSimpleFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListJoinFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListJoinDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListPokeExchange.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListItemExchange.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListIntermediateData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListWazaSodateyaFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListWazaSodateyaDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListWindow.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListJoinUpperDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\PokeListJoinUpperParts.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListBaseDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListBaseFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeListUpperDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\PokeListAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeListProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListDrawListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListConst.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\work\PokeListLocalWork.h">
+      <Filter>ソース\work</Filter>
+    </ClInclude>
+    <ClInclude Include="source\work\PokeListModeContextDefine.h">
+      <Filter>ソース\work</Filter>
+    </ClInclude>
+    <ClInclude Include="source\work\PokeListStaticWork.h">
+      <Filter>ソース\work</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListCursorDraw.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListDrawerBase.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListMenuWindowDraw.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListPlateDraw.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListPokeInfoDraw.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListSimpleDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListSimpleFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListJoinFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListJoinDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeListSetupParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListPokeExchange.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListItemExchange.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeListIntermediateData.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListWazaSodateyaFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListWazaSodateyaDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListWindow.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListJoinUpperDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\PokeListJoinUpperParts.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListBaseDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListBaseFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PokeListUpperDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

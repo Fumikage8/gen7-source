@@ -1,0 +1,275 @@
+//======================================================================
+/**
+ * @file    BoxSearchInitialList.cdat
+ * @date    2016/02/01 21:17:10
+ * @author  fukushima_yuya
+ * @brief   ボックス検索：頭文字リスト
+ * @par Copyright
+ * (C)1995-2015 GAME FREAK inc. All Rights Reserved.
+ */
+//======================================================================
+
+//----------------------------------------------------------------------
+// @brief   日本語
+//----------------------------------------------------------------------
+// 子音リスト
+static const u32 c_ConsonantInitial[] = {
+  PARAM_NONE,   //!< －
+  initial_p0,   //!< 英数字
+  initial_00,   //!< ア
+  initial_05,   //!< カ
+  initial_10,   //!< サ
+  initial_15,   //!< タ
+  initial_20,   //!< ナ
+  initial_25,   //!< ハ
+  initial_30,   //!< マ
+  initial_35,   //!< ヤ
+  initial_38,   //!< ラ
+  initial_43,   //!< ワ
+};
+
+// 母音リスト(あ行)
+static const u32 c_VowelInitial_AA[] = {
+  initial_00,
+  initial_01,
+  initial_02,
+  initial_03,
+  initial_04,
+};
+// 母音リスト(か行)
+static const u32 c_VowelInitial_KA[] = {
+  initial_05,
+  initial_06,
+  initial_07,
+  initial_08,
+  initial_09,
+};
+// 母音リスト(さ行)
+static const u32 c_VowelInitial_SA[] = {
+  initial_10,
+  initial_11,
+  initial_12,
+  initial_13,
+  initial_14,
+};
+// 母音リスト(た行)
+static const u32 c_VowelInitial_TA[] = {
+  initial_15,
+  initial_16,
+  initial_17,
+  initial_18,
+  initial_19,
+};
+// 母音リスト(な行)
+static const u32 c_VowelInitial_NA[] = {
+  initial_20,
+  initial_21,
+  initial_22,
+  initial_23,
+  initial_24,
+};
+// 母音リスト(は行)
+static const u32 c_VowelInitial_HA[] = {
+  initial_25,
+  initial_26,
+  initial_27,
+  initial_28,
+  initial_29,
+};
+// 母音リスト(ま行)
+static const u32 c_VowelInitial_MA[] = {
+  initial_30,
+  initial_31,
+  initial_32,
+  initial_33,
+  initial_34,
+};
+// 母音リスト(や行)
+static const u32 c_VowelInitial_YA[] = {
+  initial_35,
+  initial_36,
+  initial_37,
+};
+// 母音リスト(ら行)
+static const u32 c_VowelInitial_RA[] = {
+  initial_38,
+  initial_39,
+  initial_40,
+  initial_41,
+  initial_42,
+};
+// 母音リスト(わ行)
+static const u32 c_VowelInitial_WA[] = {
+  initial_43,
+  //initial_44,
+  //initial_45,
+};
+
+// 頭文字リスト
+static const u32* c_VowelInitial_Kana[] = {
+  c_VowelInitial_AA,
+  c_VowelInitial_KA,
+  c_VowelInitial_SA,
+  c_VowelInitial_TA,
+  c_VowelInitial_NA,
+  c_VowelInitial_HA,
+  c_VowelInitial_MA,
+  c_VowelInitial_YA,
+  c_VowelInitial_RA,
+  c_VowelInitial_WA,
+};
+
+// 母音数リスト
+static const u32 c_VowelInitialNum_Kana[] = {
+  0,                              //!< 英数字
+  GFL_NELEMS(c_VowelInitial_AA),  //!< あ行
+  GFL_NELEMS(c_VowelInitial_KA),  //!< か行
+  GFL_NELEMS(c_VowelInitial_SA),  //!< さ行
+  GFL_NELEMS(c_VowelInitial_TA),  //!< た行
+  GFL_NELEMS(c_VowelInitial_NA),  //!< な行
+  GFL_NELEMS(c_VowelInitial_HA),  //!< は行
+  GFL_NELEMS(c_VowelInitial_MA),  //!< ま行
+  GFL_NELEMS(c_VowelInitial_YA),  //!< や行
+  GFL_NELEMS(c_VowelInitial_RA),  //!< ら行
+  GFL_NELEMS(c_VowelInitial_WA),  //!< わ行
+};
+
+
+//----------------------------------------------------------------------
+// @brief   英語・フランス語・イタリア語・ドイツ語・スペイン語
+//----------------------------------------------------------------------
+// 頭文字リスト
+static const u32 c_VowelInitial_Alphabet[] = {
+  PARAM_NONE,   //!< －
+  initial_p0,   //!< 英数字
+  initial_00,   //!< A
+  initial_01,   //!< B
+  initial_02,   //!< C
+  initial_03,   //!< D
+  initial_04,   //!< E
+  initial_05,   //!< F
+  initial_06,   //!< G
+  initial_07,   //!< H
+  initial_08,   //!< I
+  initial_09,   //!< J
+  initial_10,   //!< K
+  initial_11,   //!< L
+  initial_12,   //!< M
+  initial_13,   //!< N
+  initial_14,   //!< O
+  initial_15,   //!< P
+  initial_16,   //!< Q
+  initial_17,   //!< R
+  initial_18,   //!< S
+  initial_19,   //!< T
+  initial_20,   //!< U
+  initial_21,   //!< V
+  initial_22,   //!< W
+  initial_23,   //!< X
+  initial_24,   //!< Y
+  initial_25,   //!< Z
+};
+
+
+//----------------------------------------------------------------------
+// @brief   韓国語
+//----------------------------------------------------------------------
+// 頭文字リスト
+static const u32 c_VowelInitial_Hangul[] = {
+  PARAM_NONE,   //!< －
+  initial_p0,   //!< 英数字
+  initial_00,
+  initial_01,
+  initial_02,
+  initial_03,
+  initial_04,
+  initial_05,
+  initial_06,
+  initial_07,
+  initial_08,
+  initial_09,
+  initial_10,
+  initial_11,
+  initial_12,
+  initial_13,
+};
+
+
+//----------------------------------------------------------------------
+// @brief   簡体字
+//----------------------------------------------------------------------
+// 頭文字リスト
+static const u32 c_VowelInitial_Simplified[] = {
+  PARAM_NONE,   //!< －
+  initial_p0,   //!< 英数字
+  initial_00,
+  initial_01,
+  initial_02,
+  initial_03,
+  initial_04,
+  initial_05,
+  initial_06,
+  initial_07,
+  initial_08,
+  initial_09,
+  initial_10,
+  initial_11,
+  initial_12,
+  initial_13,
+  initial_14,
+  initial_15,
+  initial_16,
+  initial_17,
+  initial_18,
+  initial_19,
+  initial_20,
+  initial_21,
+  initial_22,
+};
+
+
+//----------------------------------------------------------------------
+// @brief   繁体字
+//----------------------------------------------------------------------
+// 頭文字リスト
+static const u32 c_VowelInitial_Traditonal[] = {
+  PARAM_NONE,   //!< －
+  initial_p0,   //!< 英数字
+  initial_00,
+  initial_01,
+  initial_02,
+  initial_03,
+  initial_04,
+  initial_05,
+  initial_06,
+  initial_07,
+  initial_08,
+  initial_09,
+  initial_10,
+  initial_11,
+  initial_12,
+  initial_13,
+  initial_14,
+  initial_15,
+  initial_16,
+  initial_17,
+  initial_18,
+  initial_19,
+  initial_20,
+  initial_21,
+  initial_22,
+  initial_23,
+  initial_24,
+  initial_25,
+  initial_26,
+  initial_27,
+  initial_28,
+  initial_29,
+  initial_30,
+  initial_31,
+  initial_32,
+  initial_33,
+  initial_34,
+};
+
+

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\JFDynamicLoadSystem">
+      <UniqueIdentifier>{35af15b9-ef05-49ec-a2a7-e0bba3ca2a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\JFDynamicLoadSystem">
+      <UniqueIdentifier>{792159c7-318c-45c1-808e-cce56fea3f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\JoinFestaEffectSystem">
+      <UniqueIdentifier>{d194fa3a-5f90-4afe-8235-eb411ffb6a04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\JoinFestaEffectSystem">
+      <UniqueIdentifier>{8445e811-0b2b-4316-aee7-81aee8de41a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\JoinFestaResourceManager">
+      <UniqueIdentifier>{f9e08741-823d-4452-8faf-1cb33a791ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\JoinFestaResourceManager">
+      <UniqueIdentifier>{4dffcda4-1938-449a-8b29-e6379a3c3ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\JoinFestaFacilitiesSystem">
+      <UniqueIdentifier>{c413971f-35c5-487f-99a9-c373c8c38010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\JoinFestaFacilitiesSystem">
+      <UniqueIdentifier>{9596a7d1-397d-4e6c-a5a2-60f5c580231f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\JoinFestaDataTable">
+      <UniqueIdentifier>{66d4fb17-af62-4914-b8af-d5cf9b9f8336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\JoinFestaDataTable\Info">
+      <UniqueIdentifier>{39a5714f-f7e4-434c-857d-13189fe00ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\JoinFestaDataTable">
+      <UniqueIdentifier>{04c5b4ad-d7cc-49e6-8631-8d5f5b5eadb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\JoinFestaDataTable\Info">
+      <UniqueIdentifier>{cc0da816-5f7f-4939-909e-0bf70e84207b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Script">
+      <UniqueIdentifier>{c0e041a2-e12c-4334-92ff-1b8a1f16d456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\Script">
+      <UniqueIdentifier>{a546655e-8cc0-4dea-bcb3-e831758b189d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Event">
+      <UniqueIdentifier>{38676504-c208-4749-9dfd-46fed3b4eeaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\Event">
+      <UniqueIdentifier>{9c928657-8e99-439a-b6ad-8f27808e94d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\Debug">
+      <UniqueIdentifier>{8171e612-bfe0-4d2b-ba84-a36cdea565a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{d3f9fb76-1b8a-41de-a113-b40a2d3fee5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\JFDynamicLoadSystem\JFDynamicLoadSystem.cpp">
+      <Filter>ソース\JFDynamicLoadSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JFDynamicLoadSystem\JFModel.cpp">
+      <Filter>ソース\JFDynamicLoadSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JFDynamicLoadSystem\JFModelManager.cpp">
+      <Filter>ソース\JFDynamicLoadSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JFDynamicLoadSystem\JFPoint.cpp">
+      <Filter>ソース\JFDynamicLoadSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JFDynamicLoadSystem\JFPointManager.cpp">
+      <Filter>ソース\JFDynamicLoadSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JFDynamicLoadSystem\JFFieldPlacementDataMoveModel.cpp">
+      <Filter>ソース\JFDynamicLoadSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaResourceManager\JoinFestaResourceManager.cpp">
+      <Filter>ソース\JoinFestaResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaEffectSystem\JoinFestaEffectSystem.cpp">
+      <Filter>ソース\JoinFestaEffectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaEffectSystem\JoinFestaEffectSystemDebug.cpp">
+      <Filter>ソース\JoinFestaEffectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaFacilitiesSystem\JoinFestaFacilitiesModel.cpp">
+      <Filter>ソース\JoinFestaFacilitiesSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaFacilitiesSystem\JoinFestaFacilitiesSystem.cpp">
+      <Filter>ソース\JoinFestaFacilitiesSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaFacilitiesSystem\JoinFestaFacilitiesData.cpp">
+      <Filter>ソース\JoinFestaFacilitiesSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaFacilitiesSystem\JoinFestaFacilitiesModelResourceManager.cpp">
+      <Filter>ソース\JoinFestaFacilitiesSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\JoinFestaDataTable.cpp">
+      <Filter>ソース\JoinFestaDataTable</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\Info\JoinFestaLotInfo.cpp">
+      <Filter>ソース\JoinFestaDataTable\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\Info\JoinFestaShopItemInfo.cpp">
+      <Filter>ソース\JoinFestaDataTable\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\Info\JoinFestaShopServiceInfo.cpp">
+      <Filter>ソース\JoinFestaDataTable\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaFacilitiesSystem\JoinFestaFacilitiesMoveModel.cpp">
+      <Filter>ソース\JoinFestaFacilitiesSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\Info\JoinFestaPokeTypeAttractionInfo.cpp">
+      <Filter>ソース\JoinFestaDataTable\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\Info\JoinFestaKisekaePatternInfo.cpp">
+      <Filter>ソース\JoinFestaDataTable\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\ScriptFuncSetJoinFesta.cpp">
+      <Filter>ソース\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\JoinFestaFacilitiesModelUpdateEvent.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\JoinFestaRecruiterEvent.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Event\JoinFestaTutorialEvent.cpp">
+      <Filter>ソース\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaDataTable\Info\JoinFestaAffinityAttractionInfo.cpp">
+      <Filter>ソース\JoinFestaDataTable\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\JoinFestaDebug.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\JFDynamicLoadSystem\JFDynamicLoadSystem.h">
+      <Filter>ヘッダ\JFDynamicLoadSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JFDynamicLoadSystem\JFModel.h">
+      <Filter>ヘッダ\JFDynamicLoadSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JFDynamicLoadSystem\JFModelManager.h">
+      <Filter>ヘッダ\JFDynamicLoadSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JFDynamicLoadSystem\JFPoint.h">
+      <Filter>ヘッダ\JFDynamicLoadSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JFDynamicLoadSystem\JFPointManager.h">
+      <Filter>ヘッダ\JFDynamicLoadSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JFDynamicLoadSystem\JFFieldPlacementDataMoveModel.h">
+      <Filter>ヘッダ\JFDynamicLoadSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaEffectSystem\JoinFestaEffectSystem.h">
+      <Filter>ヘッダ\JoinFestaEffectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaEffectSystem\JoinFestaEffectSystemDebug.h">
+      <Filter>ヘッダ\JoinFestaEffectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaResourceManager\JoinFestaResourceManager.h">
+      <Filter>ヘッダ\JoinFestaResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaFacilitiesSystem\JoinFestaFacilitiesModel.h">
+      <Filter>ヘッダ\JoinFestaFacilitiesSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaFacilitiesSystem\JoinFestaFacilitiesSystem.h">
+      <Filter>ヘッダ\JoinFestaFacilitiesSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaFacilitiesSystem\JoinFestaFacilitiesData.h">
+      <Filter>ヘッダ\JoinFestaFacilitiesSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaFacilitiesSystem\JoinFestaFacilitiesModelResourceManager.h">
+      <Filter>ヘッダ\JoinFestaFacilitiesSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDefine.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\JoinFestaDataTable.h">
+      <Filter>ヘッダ\JoinFestaDataTable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\Info\JoinFestaLotInfo.h">
+      <Filter>ヘッダ\JoinFestaDataTable\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\Info\JoinFestaShopItemInfo.h">
+      <Filter>ヘッダ\JoinFestaDataTable\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\Info\JoinFestaShopServiceInfo.h">
+      <Filter>ヘッダ\JoinFestaDataTable\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaFacilitiesSystem\JoinFestaFacilitiesMoveModel.h">
+      <Filter>ヘッダ\JoinFestaFacilitiesSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\Info\JoinFestaPokeTypeAttractionInfo.h">
+      <Filter>ヘッダ\JoinFestaDataTable\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\Info\JoinFestaKisekaePatternInfo.h">
+      <Filter>ヘッダ\JoinFestaDataTable\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\ScriptFuncSetJoinFesta.h">
+      <Filter>ヘッダ\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\JoinFestaFacilitiesModelUpdateEvent.h">
+      <Filter>ヘッダ\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\JoinFestaRecruiterEvent.h">
+      <Filter>ヘッダ\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event\JoinFestaTutorialEvent.h">
+      <Filter>ヘッダ\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaDataTable\Info\JoinFestaAffinityAttractionInfo.h">
+      <Filter>ヘッダ\JoinFestaDataTable\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\JoinFestaDebug.h">
+      <Filter>ヘッダ\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\JoinFestaFacilitiesSystemDebug.h">
+      <Filter>ヘッダ\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

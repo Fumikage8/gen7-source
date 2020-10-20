@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Field">
+      <UniqueIdentifier>{86233006-690d-4461-a952-1361d7820053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Field">
+      <UniqueIdentifier>{150e8355-24ed-44ee-828d-8fe5d9cc13e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\FinderAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FinderFrame.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FinderProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderDrawerBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderDrawListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderInfoWindow.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderLowerDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderUpperDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderWindow.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FinderRotomFadeDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\FinderManager.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\DebugFinderInfo.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\FinderDrawerBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderInfoWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderLowerDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderUpperDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderWindow.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderRotomFadeDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\FinderManager.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\DebugFinderInfo.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

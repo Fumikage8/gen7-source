@@ -1,0 +1,1327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E494A94B-0661-4D14-ABE2-B729E5079A72}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectName>niji</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.root.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>CARD</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>NAND</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>CARD</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>NAND</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>CARD</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>NAND</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Final|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>CARD</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'" Label="Configuration">
+    <ConfigurationType>RoApplication</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+    <CTRApplicationType>NAND</CTRApplicationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Final|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(NIJI_PROPS_MAIN_DIR)\niji.main.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Platform)'=='CTR'">
+    <TargetName>$(ProjectName)_local</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='Win32'">
+    <TargetName>$(ProjectName)_local</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='CTR'">
+    <CreateExtendedApplication>user</CreateExtendedApplication>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\WinExt\extlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalLibraryDirectories>$(NW4F_ROOT)\Library\WinExt\extlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Link />
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Condition="(exists('$(ProjectName).link.props'))" Include="$(ProjectName).link.props">
+      <SubType>Designer</SubType>
+    </None>
+    <None Condition="(exists('$(ProjectName).props'))" Include="$(ProjectName).props">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Condition="(exists('$(ProjectName).rsf'))" Include="$(ProjectName).rsf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\CommonApplication.cpp" />
+    <ClCompile Include="..\source\CTRApplication.cpp" />
+    <ClCompile Include="..\source\Main.cpp" />
+    <ClCompile Include="..\source\StartEvent.cpp" />
+    <ClCompile Include="..\source\StaticSymbolExport.cpp" />
+    <ClCompile Include="..\source\Win32Application.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Main.h" />
+    <ClInclude Include="..\source\CommonApplication.hpp" />
+    <ClInclude Include="..\source\IApplication.h" />
+    <ClInclude Include="..\source\MainHeap.hpp" />
+    <ClInclude Include="..\source\StartEvent.h" />
+    <ClInclude Include="..\source\StaticSymbolExport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\gflib2\Animation\project\Animation.vcxproj">
+      <Project>{d1cf6fb0-4d9a-4b60-8817-ecee5edc46cc}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\base\project\base.vcxproj">
+      <Project>{88058643-c29d-4dba-8c97-2ae5f8047fe3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\Collision\project\Collision.vcxproj">
+      <Project>{7ce4836a-ed9c-42ba-a78a-b178c42a6701}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\crypto\crypto.vcxproj">
+      <Project>{7293e2fb-92ac-4a7e-bfd3-353c792f2c6a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\cx\project\cx.vcxproj">
+      <Project>{af0c730a-e483-4457-a13f-b063147dae86}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\debug\project\debug.vcxproj">
+      <Project>{0648106e-79fb-41bc-a4c1-89925c7610f7}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\DeviceCamera\DeviceCamera.vcxproj">
+      <Project>{aa797794-b3a8-4bac-9d7f-df13c9952642}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\Device\Device.vcxproj">
+      <Project>{f376e362-1e93-4771-b691-82ee713f8ef3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\Effect\project\Effect.vcxproj">
+      <Project>{c2fac1cb-c0f5-45d3-99de-1ea3f9e37c55}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\Fade\Fade.vcxproj">
+      <Project>{e4f19cb0-1c83-40ef-8542-8bd10e4dc142}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\fs\project\fs.vcxproj">
+      <Project>{d36474a4-14d8-4388-86ed-72ac09c4050b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\gflnet2\project\gflnet2.vcxproj">
+      <Project>{a12eda25-0c42-44be-a331-5255062f88de}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\gfx\project\gfx.vcxproj">
+      <Project>{2023437d-172c-4e17-81eb-0b0c04519ba8}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\heap\project\heap.vcxproj">
+      <Project>{7a29db5a-8919-472d-8719-01d34e1d0fc4}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\imagedb\imagedb.vcxproj">
+      <Project>{1cd558d3-6637-43d4-87a4-e7369fed1f0b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\Layout\project\Layout.vcxproj">
+      <Project>{d3d976f1-d6e9-42dd-b5c4-dd302e84898f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\math\project\math.vcxproj">
+      <Project>{015e1faf-af27-4300-9b73-d2eba2ad0881}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\ngc\ngc.vcxproj">
+      <Project>{f04ee7e8-ad3f-4033-b9c1-c5472aea94f9}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\pawn\project\pawn.vcxproj">
+      <Project>{fff48bda-3491-4ce5-b05b-83f4425ca0f3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\proc\project\proc.vcxproj">
+      <Project>{9e8a43fa-f922-4ea3-87db-8f221a26e0c3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\qr\qr.vcxproj">
+      <Project>{518903e6-62de-418b-a1cc-8d7a43725df7}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\RenderingEngine\project\RenderingEngine.vcxproj">
+      <Project>{1433b557-f46c-401d-9121-18e2158f1810}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\ro\project\ro.vcxproj">
+      <Project>{7261b7ab-8d3a-476e-950e-4042075cb328}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\sound\project\sound.vcxproj">
+      <Project>{6394ae26-3f5e-4e27-b802-a20f36d2388a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\str\project\str.vcxproj">
+      <Project>{0e05b337-92fb-493b-b4eb-eb5dc435c75c}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\system\project\system.vcxproj">
+      <Project>{dc3e35fa-d141-40c6-837a-21e75a91ee9f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\thread\project\thread.vcxproj">
+      <Project>{5524f6bb-8dd0-4090-b9a3-be029c9b6c04}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\ui\project\ui.vcxproj">
+      <Project>{9c435ce3-aa29-4c57-9904-d4197eeb823e}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\gflib2\util\project\util.vcxproj">
+      <Project>{bab4bd42-9841-4deb-9fae-f0e17e1b2107}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\poke_3d_lib\model\model.vcxproj">
+      <Project>{c0ecd0ad-4b68-4e65-b0de-cc9527294d06}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\poke_3d_lib\renderer\renderer.vcxproj">
+      <Project>{42577450-3b6d-451b-a0c9-28a24f3b0916}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\poke_lib\pml\project\pml.vcxproj">
+      <Project>{40179925-5b04-4f2d-adf7-a3bf900b2981}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AppLib\AppLib.vcxproj">
+      <Project>{d4be7868-a533-45c9-a283-88a4a2aa8093}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\AppDemo\AppDemo.vcxproj">
+      <Project>{713d40eb-3b56-49f1-8bff-9d23ba47020a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\AppEvent\AppEvent.vcxproj">
+      <Project>{d72d7876-b788-4242-b51b-f60f2f70edba}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Bag\Bag.vcxproj">
+      <Project>{37a0d812-4b3a-493d-a340-308eb1bd15d2}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\BattleRoyalResult\BattleRoyalResult.vcxproj">
+      <Project>{f056cdb0-e4c4-4ae5-b61b-15d0ad3311dd}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\BattleTree\BattleTree.vcxproj">
+      <Project>{fa14ad08-b203-4e1c-9624-3fbe7b804e3d}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\BoxSearch\BoxSearch.vcxproj">
+      <Project>{256dc18f-5757-4c5d-92fb-847099002be5}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Box\Box.vcxproj">
+      <Project>{41906e0b-54db-4eb8-a756-846174d69042}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\CaptureTutorial\CaptureTutorial.vcxproj">
+      <Project>{bec95d17-a98d-4219-80f5-10630a4e768b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Config\Config.vcxproj">
+      <Project>{cafe452b-bab3-4e36-9572-4a62b29dea0f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\DendouDemo\DendouDemo.vcxproj">
+      <Project>{d02c6cfb-0f63-40d5-9b26-7ff67bd83d61}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\EndRoll\EndRoll.vcxproj">
+      <Project>{8d6be791-939c-44ec-9858-19de1ee4a62b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FieldBag\FieldBag.vcxproj">
+      <Project>{6b1b215e-662e-47fd-9d14-5672a8b800ec}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FieldDemo\FieldDemo.vcxproj">
+      <Project>{fe85f61f-f663-4278-a0aa-5af892be36fd}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FieldMenu\FieldMenu.vcxproj">
+      <Project>{88a80d09-d992-4858-8ea0-392e23763f97}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FinderMenu\FinderMenu.vcxproj">
+      <Project>{0b16cd89-ed13-42df-a39e-f46a8461adc3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FinderStudioCapture\FinderStudioCapture.vcxproj">
+      <Project>{560b5e8e-9ad2-4189-9972-31b269cfe53a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FinderStudioDecoration\FinderStudioDecoration.vcxproj">
+      <Project>{7b38e91a-f94a-48cd-a59d-ecf22d6e1dea}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FinderStudioStatic\FinderStudioStatic.vcxproj">
+      <Project>{6dfa0242-5596-4050-b968-d09c196e7819}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\FinderStudioViewer\FinderStudioViewer.vcxproj">
+      <Project>{126407e8-e1a2-427e-a19c-7ceb53658446}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Finder\Finder.vcxproj">
+      <Project>{71b0618c-d1b8-4550-99ec-1f4db5f08195}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\GameClearSave\GameClearSave.vcxproj">
+      <Project>{7cc0b1e7-45d1-4232-bab2-9c5a0b8a6083}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\GameOver\GameOver.vcxproj">
+      <Project>{0621e3d9-31e5-4b74-b9df-83df157f501b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\HeroSelect\HeroSelect.vcxproj">
+      <Project>{ae44d490-da31-4f84-b40f-d2f30be5a442}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Kawaigari\Kawaigari.vcxproj">
+      <Project>{1a4b7e16-e090-49da-a084-d1d2b9732415}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Kisekae\Kisekae.vcxproj">
+      <Project>{3df541f6-6f5a-43ac-80a6-b2ed9b3766f7}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\LangSelect\LangSelect.vcxproj">
+      <Project>{2c3d3ce2-5494-493c-a272-13af66a38b69}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\LunaSolDive\LunaSolDive.vcxproj">
+      <Project>{5396e5f0-7534-483e-a718-7eca70a14bac}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\MantainSurf\MantainSurf.vcxproj">
+      <Project>{52bd1e3a-e068-46c2-a4b7-0fa9004eafd9}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\MyAlbum\MyAlbum.vcxproj">
+      <Project>{14de5422-f80d-4078-998b-70542e1aba50}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\NumberInput\NumberInput.vcxproj">
+      <Project>{2ae8ff25-7ad2-4206-b331-df0ea29c4368}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\ParurePokeList\ParurePokeList.vcxproj">
+      <Project>{cf7a04a3-0544-45b7-8160-e092e7bd3285}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\PokeList\PokeList.vcxproj">
+      <Project>{289a7db5-cdce-47ec-a9b8-7b063fea7646}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\RaderChart\RaderChart.vcxproj">
+      <Project>{e0a8232d-8fa9-4667-8994-edbeb5758447}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Resort\Resort.vcxproj">
+      <Project>{a43d1e7a-0f5a-47f6-b497-23df32876ce3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Shop\Shop.vcxproj">
+      <Project>{bd949c52-bf19-4b94-af2a-813c534cc325}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\StaffList\StaffList.vcxproj">
+      <Project>{6f942978-5e42-4e13-b1ed-838e3f0956fc}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Staffroll\Staffroll.vcxproj">
+      <Project>{c41911fb-a3d1-4afa-97e1-5eaca50cf1ac}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\StatusUpper\StatusUpper.vcxproj">
+      <Project>{cf113754-6a86-403e-acd8-3c2b08f13016}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Status\Status.vcxproj">
+      <Project>{ef34350c-d243-4175-9bdd-0a2ce794000d}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\StrInput\StrInput.vcxproj">
+      <Project>{0d767315-644c-4239-bdc6-b3c8ddb86ad9}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\SuperTraining\SuperTraining.vcxproj">
+      <Project>{9a9597a9-283a-410a-8df5-d091ee6043ab}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\TitleMenu\TitleMenu.vcxproj">
+      <Project>{fcfc9bd1-ec93-4a1c-8db3-dfa600ff0c7d}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Title\Title.vcxproj">
+      <Project>{91a5a064-a14c-4c67-927f-4f15646a0534}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\TownMapParts\TownMapParts.vcxproj">
+      <Project>{c3fda1e6-a1dc-499d-8d63-a4dd08a0843a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\TownMap\TownMap.vcxproj">
+      <Project>{e7368aba-52d8-4b8d-b980-eb07983f9ea9}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\TrainerPass\TrainerPass.vcxproj">
+      <Project>{bbfbb033-8677-4391-bbea-2a4cc1e28c65}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\TrainerPhoto\TrainerPhoto.vcxproj">
+      <Project>{cdb18a6f-d404-4082-833e-d55e3abd0e23}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\WazaOmoidasi\WazaOmoidasi.vcxproj">
+      <Project>{9b013325-409a-4e9d-b081-fd580a846e5f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\WazaOshie\WazaOshie.vcxproj">
+      <Project>{f0ceeed9-83d9-4ce0-bfb0-abf1b7947ac8}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\App\Zukan\Zukan.vcxproj">
+      <Project>{9f179893-d7c5-45fb-af79-048ab6b62098}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Battle\Battle.vcxproj">
+      <Project>{c1270e9e-40cf-40d9-a4fd-88124b78ec17}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Battle\BattleDebug.vcxproj">
+      <Project>{9a2b1d79-deda-4ca8-947d-a953c331bd8f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Battle\BattleStatic.vcxproj">
+      <Project>{7801f11d-d1b8-414b-9930-08409da9d853}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Battle\Regulation\Regulation.vcxproj">
+      <Project>{ad975c7c-273b-4fb8-a6ce-707a42f3a311}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugBattle\DebugBattle.vcxproj">
+      <Project>{dbedac6b-7596-41e1-85a0-8b8a51fa98ab}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugItemMake\DebugItemMake.vcxproj">
+      <Project>{9a687a8b-ebc6-49b5-938e-25979c1178d5}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugKeyboard\DebugKeyboard.vcxproj">
+      <Project>{418b9c25-5f6a-4858-b94d-0706881539df}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugNumInput\DebugNumInput.vcxproj">
+      <Project>{c9be4d0d-09d6-456d-bcac-85128b01c994}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugPokeMake\DebugPokeMake.vcxproj">
+      <Project>{6cbab2aa-745f-49ad-9145-1a7eee4005ef}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugWin\DebugWin.vcxproj">
+      <Project>{decd5159-fec2-4ead-b928-221cdfb75e3e}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\DebugWordSet\DebugWordSet.vcxproj">
+      <Project>{f7b24125-5f6b-4b7c-ac91-af6a35baab41}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\FontViewer\FontViewer.vcxproj">
+      <Project>{5dce78d1-04af-4dc8-8725-31f1025c22ac}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\Launcher\Launcher.vcxproj">
+      <Project>{722413d0-750e-45a5-b5fa-b875cd6504df}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\PokeIconView\PokeIconView.vcxproj">
+      <Project>{6a065646-91ae-491d-bcd8-eb677cfdce5b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\SoundTest\SoundTest.vcxproj">
+      <Project>{f11a43d9-3a9a-41ad-ba8d-2e82a0a461e6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Debug\StartMenu\StartMenu.vcxproj">
+      <Project>{e5f6ed73-f68d-4a8f-ab11-c9c20a9e3ce0}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DemoLib\Object\Object.vcxproj">
+      <Project>{75784c00-ec80-40b8-9470-a6dc8337a0c3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DemoLib\SequencePlayer\SequencePlayer.vcxproj">
+      <Project>{7e3cf6c2-d787-414e-95fb-544aebd92606}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ExtSavedata\ExtSavedata.vcxproj">
+      <Project>{c1cb89b2-9462-488e-813e-c0e535ff3711}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FieldScript\FieldScript.vcxproj">
+      <Project>{01a60406-0d20-4999-b317-addcf231e209}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldBattleInstEvent\FieldBattleInstEvent.vcxproj">
+      <Project>{1ea13770-6095-405f-ad9c-6ea187dce738}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldDebug\FieldDebug.vcxproj">
+      <Project>{2fc55a00-2c56-485d-9a5b-3985ce2b9140}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldEffectCommon\FieldEffectCommon.vcxproj">
+      <Project>{18182857-56e7-408d-9ac5-14caea6ffe0c}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldEffectJoinFesta\FieldEffectJoinFesta.vcxproj">
+      <Project>{1968f0de-ce7e-441e-abd9-3b35917b3fba}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldEffectUnique\FieldEffectUnique.vcxproj">
+      <Project>{f0b6f33f-558b-401b-a4b4-9e1a6813d778}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickBattleFes\FieldGimmickBattleFes.vcxproj">
+      <Project>{851c4ea2-ebb3-4337-b722-51f1fcab0d43}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickBattleInst\FieldGimmickBattleInst.vcxproj">
+      <Project>{6fdb7e0c-fe8b-4297-8a4a-f7337053c31f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickJoinFestaRoom\FieldGimmickJoinFestaRoom.vcxproj">
+      <Project>{dda34769-876c-4087-b89a-884b2c76b8b9}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickJoinFesta\FieldGimmickJoinFesta.vcxproj">
+      <Project>{9c10abc8-7e0e-4c98-9ec2-ca07cf5b9f35}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickLift\FieldGimmickLift.vcxproj">
+      <Project>{1dc04d58-2a8b-458c-91da-b7baf87b0121}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickPokecen\FieldGimmickPokecen.vcxproj">
+      <Project>{39d18cf0-14bb-45f8-9c34-19e1ac6e04dc}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickShirenDenki\FieldGimmickShirenDenki.vcxproj">
+      <Project>{b6b5a60b-5b84-4c0b-869b-79e3bf436b3c}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRos\FieldGimmickTriggerPos\FieldGimmickTriggerPos.vcxproj">
+      <Project>{4113b26a-0ab2-42f9-a466-849a0620be66}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldRo\FieldRo.vcxproj">
+      <Project>{dfba4ab0-b485-4ee0-b272-8c4964084e46}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Field\FieldStatic\FieldStatic.vcxproj">
+      <Project>{5d499367-3299-4ee2-969e-50a29bb713e0}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GameSys\GameSys.vcxproj">
+      <Project>{be25a67f-1315-4b50-bbed-b78a26f6cbb3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\KisekaeData\KisekaeData.vcxproj">
+      <Project>{b32632a2-c729-4260-9e22-23465de84324}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Movie\MovieLib\MovieLib.vcxproj">
+      <Project>{981dddbc-0f60-4579-94f3-90ed4d757d29}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\BattleSpot\BattleSpot.vcxproj">
+      <Project>{fef5cbf2-e079-48a2-8053-bc53cc046ca4}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\BattleVideoPlayer\BattleVideoPlayer.vcxproj">
+      <Project>{7ec13dcc-ded5-448d-9433-bf4cf3227fe2}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\BattleVideoRecording\BattleVideoRecording.vcxproj">
+      <Project>{2950a92f-5c72-4ec2-a731-2027ca2f8826}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\Connection\Connection.vcxproj">
+      <Project>{8a80c5e7-287a-4010-aef6-d4ef3158bcf6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\EggHatching\EggHatching.vcxproj">
+      <Project>{b7363ad4-dec5-4e2e-a0a5-777cda43d47e}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\Evolution\Evolution.vcxproj">
+      <Project>{dc010e90-d917-423d-8de8-3a1202ccb728}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\GameSync\GameSync.vcxproj">
+      <Project>{7cada5eb-e170-4e39-89c4-48f81eb4027b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\GTS\GTS.vcxproj">
+      <Project>{24b6a3dc-6b45-4345-bbf6-bef9a3c9331a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaAttractionListSelect\JoinFestaAttractionListSelect.vcxproj">
+      <Project>{ceaefcfe-d687-41bd-805b-0221a8a749e8}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaAttractionResult\JoinFestaAttractionResult.vcxproj">
+      <Project>{6fdc920e-0ba2-4219-a5ae-b249c04906db}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaBeacon\JoinFestaBeacon.vcxproj">
+      <Project>{1cb9c521-3e13-4102-bc1c-2d45220bc34e}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaGlobalAttraction\JoinFestaGlobalAttraction.vcxproj">
+      <Project>{ef8a934c-038c-4c6c-805e-c0d501c36c86}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaOpenList\JoinFestaOpenList.vcxproj">
+      <Project>{03f36ba6-0cb4-4dd4-a59c-865f56ae70d3}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaPlayerDetail\JoinFestaPlayerDetail.vcxproj">
+      <Project>{c92c803d-7573-4dd1-ae0f-a533a9910ba2}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaPlayerListSelectForScript\JoinFestaPlayerListSelectForScript.vcxproj">
+      <Project>{6af690ed-a0be-47de-90e5-355bf692309a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaPlayerListSelectMulti\JoinFestaPlayerListSelectMulti.vcxproj">
+      <Project>{0bc1b580-b241-4446-b7be-a773c30adbe5}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaPlayerListSelect\JoinFestaPlayerListSelect.vcxproj">
+      <Project>{ee302a32-1712-461d-8654-6746e2c7957a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaPlayerListShow\JoinFestaPlayerListShow.vcxproj">
+      <Project>{1391f06b-0059-4fed-bc70-74809d3d7dc6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaProfile\JoinFestaProfile.vcxproj">
+      <Project>{54e6a18e-1065-4bb1-955f-8e15f8629e52}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaSelectWord\JoinFestaSelectWord.vcxproj">
+      <Project>{42d34444-14b9-4822-948e-30125ba75094}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFestaSubScreen\JoinFestaSubScreen.vcxproj">
+      <Project>{cdaf2459-66aa-4442-b177-65a97d4475ea}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\JoinFesta\JoinFesta.vcxproj">
+      <Project>{f9b96ac1-81e5-4cde-8007-8492c65c449e}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\Live\Live.vcxproj">
+      <Project>{82e54dd8-27dc-44ce-a3d9-2245abf463a6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\MiracleTrade\MiracleTrade.vcxproj">
+      <Project>{bf53d4bd-39f0-4e9a-bcd3-df6ca257e852}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\MysteryGift\MysteryGift.vcxproj">
+      <Project>{297022f2-a9d8-4682-9209-876fde12d59c}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\NBR\NBR.vcxproj">
+      <Project>{3b8e10e0-e7a0-4941-9031-9c2843e7a853}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\P2PTrade\P2PTrade.vcxproj">
+      <Project>{26825fb9-523f-43fd-9f0d-e32e0773335a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\PhotoView\PhotoView.vcxproj">
+      <Project>{e6cdbee1-b960-4fc8-9e90-0ef5aa30f1a8}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\QRReader\QRReader.vcxproj">
+      <Project>{d6212294-b3c9-45c0-81b5-4d593f2810b7}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\QuickMatch\QuickMatch.vcxproj">
+      <Project>{da3cb22a-0efa-4e5e-8f15-4858290f4a0a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\RegulationSelect\RegulationSelect.vcxproj">
+      <Project>{56a19f5f-ee3a-4b0f-a2db-bf6f53edf1cd}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetApp\TeamSelect\TeamSelect.vcxproj">
+      <Project>{899dd24b-d91d-4ceb-91e5-0a83b86ec129}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetStatic\NetAppLib\NetAppLib.vcxproj">
+      <Project>{0e7dab13-cba3-44fe-8786-4e45e0dedb33}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetStatic\NetEvent\NetEvent.vcxproj">
+      <Project>{62924a37-b790-44cd-9fb4-ddda9c85898f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetStatic\NetLib\NetLib.vcxproj">
+      <Project>{4b792dba-51e3-4e26-9f8d-6e177b18e6ba}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pawn\Pawn.vcxproj">
+      <Project>{74fadaeb-88bc-4c9b-bda3-b38565ec5a27}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PokeTool\PokeTool.vcxproj">
+      <Project>{13e08ee9-420d-4cec-ac58-feeda95d8f84}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Print\Print.vcxproj">
+      <Project>{8434a7d8-7bc2-447f-a270-b704f3ef02d0}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Savedata\Savedata.vcxproj">
+      <Project>{6d2d45dd-d7dc-489b-aaeb-88b2769ff6c9}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sound\Sound.vcxproj">
+      <Project>{b111225e-2e83-4b50-8c94-b65daac808c1}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\System\System.vcxproj">
+      <Project>{1b1e0344-6802-4f21-a235-3ebad584eee1}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\ArakiTest\ArakiTest.vcxproj">
+      <Project>{0d38d07f-502f-47a5-8484-49313f650bd7}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\AriizumiTest\AriizumiTest.vcxproj">
+      <Project>{c7049d66-4b85-496c-b497-b629090cd544}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\BattleFontTest\BattleFontTest.vcxproj">
+      <Project>{051b6103-4b53-4e58-a5b4-2dbc2c3972b6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\CecTest\CecTest.vcxproj">
+      <Project>{a4458174-9b03-4366-8185-778acadc830a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\CharaViewer\CharaViewer.vcxproj">
+      <Project>{c0a9ade4-9389-431e-af72-bda7b5f01b82}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\CryptoTest\CryptoTest.vcxproj">
+      <Project>{885101a3-1e7f-4965-a778-791c39c6b4d1}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\DrawUtilTextTest\DrawUtilTextTest.vcxproj">
+      <Project>{222cb2d5-04f5-44e3-bd2a-92ca42d09e81}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\FStudioDecoTest\FStudioDecoTest.vcxproj">
+      <Project>{1d5cbca0-0698-415d-80cf-be2b8ff5c572}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\FukushimaTest\FukushimaTest.vcxproj">
+      <Project>{5414beb2-fe5c-4ac6-8cca-b304f8ac6a06}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\HaradaTest\HaradaTest.vcxproj">
+      <Project>{576e8068-a933-4ea5-8588-3004e4c8a111}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\ImageDBTest\ImageDBTest.vcxproj">
+      <Project>{f60b85a6-4c18-4f7e-9a51-bc7db8da6ada}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\IshiguroTest\IshiguroTest.vcxproj">
+      <Project>{e9d153e9-0125-4c16-b604-fd4c08a28037}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\IslandTest\niji_islandtest_ro\niji_islandtest_ro.vcxproj">
+      <Project>{558b0b26-23de-4895-a5a9-2cb492f719eb}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\KawadaTest2\SimpleAppTest\SimpleAppTest.vcxproj">
+      <Project>{e579b996-dbc1-450a-8758-b0ddada00505}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\KawadaTest\KawadaTest.vcxproj">
+      <Project>{930e9d07-0f5d-4496-84e0-ae4496f1b194}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\KousakaTest\KousakaTest.vcxproj">
+      <Project>{2b0ed81a-b27c-4474-9a5d-e276a342fe53}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\LayoutArcTest\LayoutArcTest.vcxproj">
+      <Project>{5db2972a-061e-47cc-9a3c-08f51513ad35}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\MenuFrameTest\MenuFrameTest.vcxproj">
+      <Project>{38543c32-1b4c-4f6f-a4ad-dfb7ab51d994}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\MutoTest\MutoTest.vcxproj">
+      <Project>{b1df6e2c-de55-44d0-8a6d-0d471eea8962}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\NakahiroTest\NakahiroTest.vcxproj">
+      <Project>{51dd7695-6823-4097-8f92-7f565d40ab7f}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\ObataTest\ObataTest.vcxproj">
+      <Project>{cae24728-ee61-4c62-9b9d-3749f9c26d8a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\P2pConnectionManagerTest\P2pConnectionManagerTest.vcxproj">
+      <Project>{862e0e02-d1e3-423a-bcaa-45de6443e124}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\P2PTest\P2PTest.vcxproj">
+      <Project>{3484a78d-4df9-49ef-b4c2-3911fc340e8b}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\P2PTradeTest\P2PTradeTest.vcxproj">
+      <Project>{6f172c9d-b7a8-45d4-bf06-f3463fd7f1d4}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\PeteTest\PeteTest.vcxproj">
+      <Project>{d2b105f0-3e57-4c02-86c7-12d4dcc705ba}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\PokeViewer\PokeViewer.vcxproj">
+      <Project>{af4fbd12-a9ee-437c-ad5b-eb861ee9dd58}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\QRCodeTest\QRCodeTest.vcxproj">
+      <Project>{897af9fd-74c0-4cca-b631-71f1e979eab6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\RoTest\RoTest.vcxproj">
+      <Project>{1a7bc7ac-ec23-4841-815f-7e9f4e932d8e}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\SaveTest\SaveTest.vcxproj">
+      <Project>{ec235ebd-f591-4f19-9bcd-98ee0e968a5d}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\Skelton\Skelton.vcxproj">
+      <Project>{9b01f85b-9f6e-4eb9-9ae8-742809e89144}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\StlPerformanceCheck\StlPerformanceCheck.vcxproj">
+      <Project>{38b5c6ae-cf14-4e3f-b2f2-73b4f162876c}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\TakebeTest\TakebeTest.vcxproj">
+      <Project>{2e579b7b-0485-4f90-88d9-72748999e08a}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\TakedaTest\TakedaTest.vcxproj">
+      <Project>{4806a998-df1f-4f1d-a07d-0a74b26352c6}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\TestEvent\TestEvent.vcxproj">
+      <Project>{4a4263f7-32b6-45e7-994c-2d92aee3fd45}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\ThreadTest\ThreadTest.vcxproj">
+      <Project>{c9c6dc84-132c-448b-82f1-ec2096ec2d45}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\UIUnitTest\UIUnitTest.vcxproj">
+      <Project>{5a699b66-fc24-45b5-8334-2c269f941ab2}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Trainer\Trainer\Trainer.vcxproj">
+      <Project>{eec3815c-dbf9-457e-8ef7-c3150c6c38fa}</Project>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='Win32'">true</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs Condition="'$(Platform)'=='CTR'">false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" />
+    <Import Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" />
+  </ImportGroup>
+</Project>

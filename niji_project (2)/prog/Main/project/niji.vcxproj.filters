@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\source\Main.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CTRApplication.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Win32Application.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CommonApplication.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StartEvent.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StaticSymbolExport.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Main.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CommonApplication.hpp">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\IApplication.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MainHeap.hpp">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\StartEvent.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\StaticSymbolExport.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectName).props">
+      <Filter>リンク設定</Filter>
+    </None>
+    <None Include="$(ProjectName).link.props">
+      <Filter>リンク設定</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{3dd4ab57-dcdb-4e5b-a098-9b5d1d555c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リンク設定">
+      <UniqueIdentifier>{f565f16f-713d-44ad-981e-e15738212765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ロム設定">
+      <UniqueIdentifier>{dec84902-cdec-4052-9bf4-a1ef1c9fcc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{e8fcfe47-998a-461f-97ed-31340a0de13a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

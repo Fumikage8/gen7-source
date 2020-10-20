@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\Tool\app_tool_AlignmentManager.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_BoxMark.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_ButtonManager.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_DrawLytTexture.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_Gauge.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_Interpolation.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_LytTexData.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_LytTexReplaceSystem.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_MsgCursor.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_ScrollBar.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_ScrollPane.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_ScrollPaneManager.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_ScrollValue.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_TimeIcon.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_TouchPanelOperator.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_Common.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_Controller.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_heap.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_ScrollBar.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Ui\UIResponder.cpp">
+      <Filter>ソース\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Ui\UIView.cpp">
+      <Filter>ソース\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_2d.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\AppFrameManager.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\AppFrameViewCommon.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_MenuCursor.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_AppLytAccessor.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_PaneList.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\ItemIcon.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\PokeIcon.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_FileAccessor.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppRenderingManager.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_MenuWindow.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_PokeIcon.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_PaneListView.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolGaugePartsLayout.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolItemIcon.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_LytFontListAccessor.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_LytMstxtListAccessor.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\ListMenu.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sort\StringMonsName.cpp">
+      <Filter>ソース\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sort\StringTokusei.cpp">
+      <Filter>ソース\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sort\StringWaza.cpp">
+      <Filter>ソース\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sort\StringBinary.cpp">
+      <Filter>ソース\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sort\StringItem.cpp">
+      <Filter>ソース\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\TalkWindow.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppUtilFileControlState.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_CursorManager.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppRenderingManagerPokeModelRenderer.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolSlideScroll.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppRenderingManagerRaderChartRenderer.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppCommonGrpIconData.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_AppLytObject.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\CommonMessageWindowManipulator.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\CommonMessageWindowView.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_MessageMenuView.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\InfoWindow\app_tool_InfoWindowBookType.cpp">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\InfoWindow\app_tool_InfoWindowDataManager.cpp">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\InfoWindow\app_tool_InfoWindowSheetType.cpp">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\InfoWindow\app_tool_InfoWindowBase.cpp">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolTimeLimit.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolNewPaneList.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\NewPaneListPartsH.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\NewPaneListPartsV.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Fade\FadeUtil.cpp">
+      <Filter>ソース\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\NewPaneListPartsBase.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolPokeSimpleModel.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_RenderTargetTexture.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_GetPaneHelper.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolCharaTexPaneReplace.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Fade\AppFade.cpp">
+      <Filter>ソース\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Fade\FadeRenderingManager.cpp">
+      <Filter>ソース\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Fade\LayoutFade.cpp">
+      <Filter>ソース\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Fade\DemoFade.cpp">
+      <Filter>ソース\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolTrainerIconRendering.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolMapManager.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_AppDemoUtilityHelper.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolBaseGrpFont.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolCharaSimpleModel.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\app_tool_2ButtonsView.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\GeneralView\Module\ResourceLoader.cpp">
+      <Filter>ソース\Tool\GeneralView\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\GeneralView\Module\CursorController.cpp">
+      <Filter>ソース\Tool\GeneralView\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\GeneralView\GeneralLowerView.cpp">
+      <Filter>ソース\Tool\GeneralView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\app_util_KeyRepeatController.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\ModelViewerSequence.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\FingerCursor.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\TimerIconView.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\IconObject.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\PokeCapAccesser.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppCountryRegionNameUtility.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Ui\UIViewManager.cpp">
+      <Filter>ソース\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\CommonMessageObject.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppQRTextureCreateUtility.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolPokeSimpleModelInFrame.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppRenderingManagerEffectRenderer.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\EffectUtil.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\PokeIconTexPool.cpp" />
+    <ClCompile Include="source\Tool\AppToolItemEffect.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppCamera.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Util\AppOutLinePostRenderPath.cpp">
+      <Filter>ソース\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\GeneralView\Module\ResourceProvider.cpp">
+      <Filter>ソース\Tool\GeneralView\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\AppToolRotomFriendship.cpp">
+      <Filter>ソース\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\RotomToneGenerator\app_tool_RotomToneGenerator.cpp">
+      <Filter>ソース\Tool\RotomToneGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tool\RotomToneGenerator\Debug\RotomToneGeneratorDebug.cpp">
+      <Filter>ソース\Tool\RotomToneGenerator\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Tool\app_tool_AlignmentManager.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_BoxMark.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_ButtonManager.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_DrawLytTexture.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_Gauge.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_Interpolation.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_LytTexData.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_LytTexReplaceSystem.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_MsgCursor.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_ScrollBar.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_ScrollPane.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_ScrollPaneManager.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_ScrollValue.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_TimeIcon.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_TouchPanelOperator.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_Common.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_Controller.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_heap.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_ScrollBar.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ui\UIInputListener.h">
+      <Filter>インクルード\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ui\UIResponder.h">
+      <Filter>インクルード\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ui\UIView.h">
+      <Filter>インクルード\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_2d.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frame\AppFrameCellSuper.h">
+      <Filter>インクルード\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frame\AppFrameManager.h">
+      <Filter>インクルード\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frame\AppFrameViewCommon.h">
+      <Filter>インクルード\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_AppLytAccessor.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_MenuCursor.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_PaneList.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\ItemIcon.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\PokeIcon.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_FileAccessor.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\AppRenderingManager.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_MenuWindow.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_MenuWindowListener.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_PokeIcon.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_PaneListView.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolGaugePartsLayout.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolItemIcon.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\TalkWindow.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_LytMstxtListAccessor.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_LytFontListAccessor.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\ListMenu.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sort\StringTokusei.h">
+      <Filter>インクルード\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sort\StringWaza.h">
+      <Filter>インクルード\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sort\StringItem.h">
+      <Filter>インクルード\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sort\StringMonsName.h">
+      <Filter>インクルード\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sort\StringBinary.h">
+      <Filter>インクルード\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\AppUtilFileControlState.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_CursorManager.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Util\AppRenderingManagerPokeModelRenderer.h">
+      <Filter>ソース\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolSlideScroll.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Util\AppRenderingManagerRaderChartRenderer.h">
+      <Filter>ソース\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppCommonGrpIconData.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_AppLytObject.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\CommonMessageWindowManipulator.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\CommonMessageWindowView.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_MessageMenuView.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\InfoWindow\app_tool_InfoWindowSheetType.h">
+      <Filter>インクルード\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\InfoWindow\app_tool_InfoWindowSheetTypeListener.h">
+      <Filter>インクルード\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\InfoWindow\app_tool_InfoWindowBookType.h">
+      <Filter>インクルード\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\InfoWindow\app_tool_InfoWindowBookTypeListener.h">
+      <Filter>インクルード\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\InfoWindow\app_tool_InfoWindowDataManager.h">
+      <Filter>インクルード\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\InfoWindow\app_tool_InfoWindowBase.h">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\InfoWindow\app_tool_InfoWindowBaseListener.h">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\InfoWindow\app_tool_InfoWindowDefine.h">
+      <Filter>ソース\Tool\InfoWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolTimeLimit.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolNewPaneList.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\NewPaneListPartsH.h">
+      <Filter>ソース\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\NewPaneListPartsBase.h">
+      <Filter>ソース\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\NewPaneListPartsV.h">
+      <Filter>ソース\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fade\FadeUtil.h">
+      <Filter>インクルード\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolPokeSimpleModel.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_RenderTargetTexture.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_GetPaneHelper.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolCharaTexPaneReplace.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fade\AppFade.h">
+      <Filter>インクルード\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fade\FadeRenderingManager.h">
+      <Filter>インクルード\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fade\LayoutFade.h">
+      <Filter>インクルード\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fade\DemoFade.h">
+      <Filter>インクルード\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolTrainerIconRendering.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolMapManager.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_AppDemoUtilityHelper.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolBaseGrpFont.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolCharaSimpleModel.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\app_tool_2ButtonsView.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\GeneralView\Module\ResourceLoader.h">
+      <Filter>ソース\Tool\GeneralView\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\GeneralView\Module\CursorController.h">
+      <Filter>ソース\Tool\GeneralView\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\GeneralView\GeneralLowerView.h">
+      <Filter>インクルード\Tool\GeneralView</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\GeneralView\Module\IResourceIDHandler.h">
+      <Filter>インクルード\Tool\GeneralView\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\GeneralView\Module\IResourceProvider.h">
+      <Filter>インクルード\Tool\GeneralView\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\app_util_KeyRepeatController.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\ModelViewerSequence.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\FingerCursor.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\TimerIconView.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\IconObject.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\PokeCapAccesser.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\AppCountryRegionNameUtility.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\CommonMessageObject.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\AppQRTextureCreateUtility.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\TalkWindowType.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolPokeSimpleModelInFrame.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Util\AppRenderingManagerEffectRenderer.h">
+      <Filter>ソース\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\EffectUtil.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\PokeIconTexPool.h" />
+    <ClInclude Include="include\Tool\AppToolItemEffect.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Util\AppCamera.h">
+      <Filter>インクルード\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Util\AppOutLinePostRenderPath.h">
+      <Filter>ソース\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Frame\AppFrameListener.h">
+      <Filter>インクルード\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ui\UIViewManager.h">
+      <Filter>インクルード\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\GeneralView\Module\ResourceProvider.h">
+      <Filter>インクルード\Tool\GeneralView\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\AppToolRotomFriendship.h">
+      <Filter>インクルード\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Tool\RotomToneGenerator\app_tool_RotomToneGenerator.h">
+      <Filter>インクルード\Tool\RotomToneGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tool\RotomToneGenerator\Debug\RotomToneGeneratorDebug.h">
+      <Filter>ソース\Tool\RotomToneGenerator\Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a588f397-99fa-4b9c-b0b1-25a3334ca255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{927302c2-1537-415c-8ad9-5c4d7f83ebce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tool">
+      <UniqueIdentifier>{c827d66a-8ddd-421c-840e-bf49650debce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Ui">
+      <UniqueIdentifier>{86bff010-15f1-4714-b022-bb34b51d1934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Util">
+      <UniqueIdentifier>{d546f0ce-52fd-4af4-96fd-2b12b35e8374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Tool">
+      <UniqueIdentifier>{961d48b0-b578-44e1-a7f6-9bbb7bffb762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Ui">
+      <UniqueIdentifier>{ba7c101b-6dd2-42bc-a35b-0f1f7057d7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Util">
+      <UniqueIdentifier>{4872712f-90fa-4526-8dea-7752dca859ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{d121c2c6-12ec-4506-817b-be1b47fa2f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Frame">
+      <UniqueIdentifier>{ea51cae5-bd28-450b-955d-d5e4f4c1f3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Sort">
+      <UniqueIdentifier>{7dbaae86-d0f4-47cb-ae15-6851436707df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Sort">
+      <UniqueIdentifier>{1954661d-c760-413d-b077-9179684f6ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Tool\InfoWindow">
+      <UniqueIdentifier>{3716d29a-0768-4d8e-8423-2470bca2af84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tool\InfoWindow">
+      <UniqueIdentifier>{9c5b9d16-26a5-4f79-ad50-c6cc4304aa43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Fade">
+      <UniqueIdentifier>{5e17f1e9-68b7-4714-a263-44561baf149b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Fade">
+      <UniqueIdentifier>{248e8a44-cd48-438c-bf06-1c23274caaa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tool\GeneralView">
+      <UniqueIdentifier>{62e3fd99-402c-4e1c-ad39-8f874fef5c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tool\GeneralView\Module">
+      <UniqueIdentifier>{eb0b9779-ddcb-4e96-99bc-1c7bd48a3d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Tool\GeneralView">
+      <UniqueIdentifier>{4dd719f7-f35e-4c1c-9b8d-9e25d97ab703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Tool\GeneralView\Module">
+      <UniqueIdentifier>{b8944d63-a326-4679-b75a-4c93de86eb7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Util\Kisekae">
+      <UniqueIdentifier>{bd570429-ee07-48be-989e-63d39a6f2f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Util\Kiekase">
+      <UniqueIdentifier>{6bc9f37a-fded-49b1-98e0-bd197216d681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tool\RotomToneGenerator">
+      <UniqueIdentifier>{383b46c2-bd10-4450-9b0a-32bb7bca97bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Tool\RotomToneGenerator">
+      <UniqueIdentifier>{5bc54318-c999-44dd-acd9-83b70122bfb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tool\RotomToneGenerator\Debug">
+      <UniqueIdentifier>{b2dfcc27-28e1-41a2-afee-495e5e13a871}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

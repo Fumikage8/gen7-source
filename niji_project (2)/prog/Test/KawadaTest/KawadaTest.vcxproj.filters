@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestLayoutSample">
+      <UniqueIdentifier>{873ba866-197d-4e4a-9d53-1188641cbaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestModelSample">
+      <UniqueIdentifier>{86e5801f-779f-47b8-a25d-dfca8fbbcdb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestRaderChartSample">
+      <UniqueIdentifier>{9a366c64-b7e9-4a15-976b-ae15d40df46b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestZukanSample">
+      <UniqueIdentifier>{687ac3d3-ac34-4040-9d65-e003e7699064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestPokeModelSample">
+      <UniqueIdentifier>{87788569-44ef-487d-b123-21349f1f4678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestInfoWindowSample">
+      <UniqueIdentifier>{744f3e85-e01e-4e84-9bc4-a52ac4460420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestZukanRegisterSample">
+      <UniqueIdentifier>{c628a8c2-18a0-412b-8f7a-a50a6a0969cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\Camera">
+      <UniqueIdentifier>{6e6e03b5-1d7e-41a7-8703-525f81dc11be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\Camera\test">
+      <UniqueIdentifier>{0a4eb109-1dc2-435d-abc4-49e1dab22022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Camera">
+      <UniqueIdentifier>{8fe884f9-a74a-456b-b0f2-1b8079a3e2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Camera\test">
+      <UniqueIdentifier>{638e58bf-5f24-4f47-89b5-5f251d70738e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\KawadaTestKiraCardSample">
+      <UniqueIdentifier>{201df5a7-2988-49be-b26c-36c3c47327ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\KawadaTestProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestLayoutSample\KawadaTestLayoutSample.cpp">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestModelSample\KawadaTestModelSample.cpp">
+      <Filter>ソース\KawadaTestModelSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleFrame.cpp">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestRaderChartSample\KawadaTestRaderChartSample.cpp">
+      <Filter>ソース\KawadaTestRaderChartSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestZukanSample\KawadaTestZukanSample.cpp">
+      <Filter>ソース\KawadaTestZukanSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestPokeModelSample\KawadaTestPokeModelSample.cpp">
+      <Filter>ソース\KawadaTestPokeModelSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleDataManager.cpp">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleView.cpp">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleMain.cpp">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestPokeModelSample\KawadaTestPokeModelSampleMain.cpp">
+      <Filter>ソース\KawadaTestPokeModelSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSample.cpp">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleDataManager.cpp">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleFrame.cpp">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleView.cpp">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWaindowSampleMain.cpp">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestZukanRegisterSample\KawadaTestZukanRegisterSample.cpp">
+      <Filter>ソース\KawadaTestZukanRegisterSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Camera\test\pokemon_inframe_tool.cpp">
+      <Filter>ソース\Camera\test</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSample.cpp">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleDataManager.cpp">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleFrame.cpp">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleMain.cpp">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClCompile>
+    <ClCompile Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleView.cpp">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\KawadaTestProc.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KawadaTestProcParam.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleFrame.h">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestSampleBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestLayoutSample\KawadaTestLayoutSample.h">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestModelSample\KawadaTestModelSample.h">
+      <Filter>ソース\KawadaTestModelSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestRaderChartSample\KawadaTestRaderChartSample.h">
+      <Filter>ソース\KawadaTestRaderChartSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestZukanSample\KawadaTestZukanSample.h">
+      <Filter>ソース\KawadaTestZukanSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestPokeModelSample\KawadaTestPokeModelSample.h">
+      <Filter>ソース\KawadaTestPokeModelSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleDataManager.h">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleView.h">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestLayoutSample\KawadaTestLayoutSampleMain.h">
+      <Filter>ソース\KawadaTestLayoutSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestPokeModelSample\KawadaTestPokeModelSampleMain.h">
+      <Filter>ソース\KawadaTestPokeModelSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSample.h">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleDataManager.h">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleFrame.h">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleMain.h">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestInfoWindowSample\KawadaTestInfoWindowSampleView.h">
+      <Filter>ソース\KawadaTestInfoWindowSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestZukanRegisterSample\KawadaTestZukanRegisterSample.h">
+      <Filter>ソース\KawadaTestZukanRegisterSample</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Camera\test\pokemon_inframe_tool.h">
+      <Filter>ヘッダ\Camera\test</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSample.h">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleDataManager.h">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleFrame.h">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleMain.h">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleView.h">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClInclude>
+    <ClInclude Include="source\KawadaTestKiraCardSample\KawadaTestKiraCardSampleDefine.h">
+      <Filter>ソース\KawadaTestKiraCardSample</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\RequestSequence">
+      <UniqueIdentifier>{2bdc0849-9e0d-4150-85ec-7e1c6d728eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{6fcce9b5-dd77-449b-adef-8ccb01d870c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Parts">
+      <UniqueIdentifier>{b358f6a1-7e7e-4186-8634-86ea141fe5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{03537c78-8371-4a0f-9b59-ab78f54225fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\TeamSelectProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\TeamSelectRequestClient.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\TeamSelectResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\TeamSelectValidationRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TeamSelectUIViewPool.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TeamSelectAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TeamSelectShareParam.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\TeamSelectConfirmSelectPokePartyFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\TeamSelectErrorRegulationFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\TeamSelectServerRequestRegulationFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\TeamSelectTopPokePartySelectFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\TeamSelectTopSeqSelectFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\TeamSelectLowRootView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\TeamSelectLowTopPokePartySelectView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\TeamSelectLowTopSeqSelectView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\TeamSelectLowTwoItemSelectView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\TeamSelectUppEntryPokePartyView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\TeamSelectUppRootView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Parts\TeamSelectPokePartyLayoutParts.h">
+      <Filter>ソース\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TeamSelectEventAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\TeamSelectProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\TeamSelectRequestClient.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\TeamSelectValidationRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TeamSelectUIViewPool.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\TeamSelectConfirmSelectPokePartyFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\TeamSelectErrorRegulationFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\TeamSelectServerRequestRegulationFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\TeamSelectTopPokePartySelectFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\TeamSelectTopSeqSelectFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\TeamSelectLowRootView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\TeamSelectLowTopPokePartySelectView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\TeamSelectLowTopSeqSelectView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\TeamSelectLowTwoItemSelectView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\TeamSelectUppEntryPokePartyView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\TeamSelectUppRootView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Parts\TeamSelectPokePartyLayoutParts.cpp">
+      <Filter>ソース\Parts</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

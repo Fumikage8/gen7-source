@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\BaseHeader\custom_JoinFestaNetDefine.h" />
+    <ClInclude Include="source\BaseHeader\custom_JoinFestaPersonalData.h" />
+    <ClInclude Include="source\BaseHeader\custom_MyStatus.h" />
+    <ClInclude Include="source\BaseHeader\custom_Record.h" />
+    <ClInclude Include="source\BaseHeader\JoinFestaPawnDefine.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_color_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_acceye_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_acchair_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_bag_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_bngl_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_bottoms_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_face_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_hair_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_hat_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_legs_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_shoes_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_situ_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_tops_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_acceye_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_bag_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_bngl_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_bottoms_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_face_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_hair_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_hat_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_legs_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_shoes_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_situ_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_tops_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_color_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_acceye_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_acchair_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_bag_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_bngl_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_bottoms_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_face_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_hair_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_hat_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_legs_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_shoes_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_situ_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_tops_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_acceye_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_bag_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_bngl_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_bottoms_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_face_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_hair_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_hat_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_legs_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_shoes_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_situ_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_tops_item_id.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_jf_phrase.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name_out.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name_per.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name_spe.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\pokelib\itemsym.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefineMacro.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_battle_dressup.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_field_dressup.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_jf_phrase.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name_out.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name_per.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name_spe.h" />
+    <ClInclude Include="source\BaseHeader\needRedefine\savedata\RecordDefine.h" />
+    <ClInclude Include="source\BaseHeader\PokeDiaryDefine.h" />
+    <ClInclude Include="source\BaseHeader\redefines.h" />
+    <ClInclude Include="source\BaseHeader\seikaku.h" />
+    <ClInclude Include="source\BaseHeader\SoundMiddleID.h" />
+    <ClInclude Include="source\BaseHeader\tokusei_def.h" />
+    <ClInclude Include="source\BaseHeader\wazano_def.h" />
+    <ClInclude Include="source\CheckMacro.h" />
+    <ClInclude Include="source\VersionCompatibility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\VersionCompatibility.cpp" />
+    <ClCompile Include="source\VersionCompatibility_BattleDressup.cpp" />
+    <ClCompile Include="source\VersionCompatibility_FieldDressup.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3FE6A4A2-4790-4F7C-8996-95FB84C661F2}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectName>VersionCompatibility</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_LIB_DIR)\niji.lib.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Delivery">
+      <UniqueIdentifier>{0677b0ce-e6bc-4663-abdd-f1bf2debfeae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Delivery">
+      <UniqueIdentifier>{1a0d604b-8551-4cbd-9ee9-05ce112add8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Error">
+      <UniqueIdentifier>{2b0c29ff-4b14-4a3d-ab77-96bff79d75e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Error">
+      <UniqueIdentifier>{92819ee2-e272-457e-825d-f23ca1df4841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\P2P">
+      <UniqueIdentifier>{12ad4707-ff7d-41df-a785-8008fde6a021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\P2P">
+      <UniqueIdentifier>{e201b653-f7b8-41e8-9c1e-7c2901b40cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\PGL">
+      <UniqueIdentifier>{72afd768-30f1-4bb8-aa30-2538f36f2e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Wifi">
+      <UniqueIdentifier>{727d89f1-1f32-4720-ae47-3dcb6371a5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Wifi">
+      <UniqueIdentifier>{5b2ce81d-fb89-4796-97ed-f06ff4d87638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Delivery\IR">
+      <UniqueIdentifier>{55b4a3d7-65e6-420a-82b0-216210c3dbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Delivery\Wifi">
+      <UniqueIdentifier>{903af5e3-1757-4bd7-9fd7-40b75bdd02e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Delivery\Wireless">
+      <UniqueIdentifier>{7f53ae6e-8079-403a-b25a-e0995b951f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Error\Detect">
+      <UniqueIdentifier>{a8fa4835-46e1-48e5-b1b5-e10acbc2a08c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Beacon">
+      <UniqueIdentifier>{9694ac8e-a30d-4de5-ab15-4c803abe3d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Beacon">
+      <UniqueIdentifier>{e523b702-a5e1-4d63-8ee0-76288ddccb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\PGL">
+      <UniqueIdentifier>{909993e3-37be-4bf8-9008-bee9e0e929aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Validation">
+      <UniqueIdentifier>{80463cfb-887c-4a00-8926-3403b7714d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Validation">
+      <UniqueIdentifier>{f1b4f778-7edb-4bcc-888d-b90fe16fa0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\HTTP">
+      <UniqueIdentifier>{a41ff44a-bb0b-44ca-8021-99c55fa5875e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\HTTP">
+      <UniqueIdentifier>{f7c72f4c-9620-40a8-a50e-51c4a95dfa20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Debug">
+      <UniqueIdentifier>{66adf8fd-f074-4655-9549-edeb5a9a3a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{9d8d3c79-4afe-485b-8df7-4321ea75d37e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Delivery\DeliveryManager.h">
+      <Filter>インクルード\Delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Delivery\DeliveryRecvListener.h">
+      <Filter>インクルード\Delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Delivery\DeliverySendListener.h">
+      <Filter>インクルード\Delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Error\NijiNetworkErreulaApplet.h">
+      <Filter>インクルード\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Error\NijiNetworkError.h">
+      <Filter>インクルード\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Error\NijiNetworkErrorListener.h">
+      <Filter>インクルード\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Error\NijiNetworkErrorManager.h">
+      <Filter>インクルード\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2P\P2pConnectionErrorListener.h">
+      <Filter>インクルード\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2P\P2pConnectionManager.h">
+      <Filter>インクルード\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PGL\PGLDefine.h">
+      <Filter>インクルード\PGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Wifi\WifiConnectRunner.h">
+      <Filter>インクルード\Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NetDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NijiNetworkSystem.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\IR\DeliveryIRSystem.h">
+      <Filter>ソース\Delivery\IR</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wifi\DeliveryWifiSystem.h">
+      <Filter>ソース\Delivery\Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryWirelessBeaconBinder.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryWirelessBeaconDefine.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryWirelessBeaconSplitter.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryWirelessRecvThread.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryWirelessSendThread.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryWirelessSystem.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\DeliverySystem.h">
+      <Filter>ソース\Delivery</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Error\Detect\NijiNetworkErrorDetectBattleSpot.h">
+      <Filter>ソース\Error\Detect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Error\Detect\NijiNetworkErrorDetectDefault.h">
+      <Filter>ソース\Error\Detect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Error\NijiNetworkErrorDialog.h">
+      <Filter>ソース\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="source\P2P\NexRatingClient.h">
+      <Filter>ソース\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="source\P2P\NexRatingClientListener.h">
+      <Filter>ソース\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="source\P2P\P2pCommonData.h">
+      <Filter>ソース\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="source\P2P\P2pTimeout.h">
+      <Filter>ソース\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="source\P2P\P2pTimeoutListener.h">
+      <Filter>ソース\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2P\P2pConnectionMigrationListener.h">
+      <Filter>インクルード\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2P\P2pPacketTransfer.h">
+      <Filter>インクルード\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2P\P2pPacketTransferListener.h">
+      <Filter>インクルード\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="include\P2P\P2pSyncSave.h">
+      <Filter>インクルード\P2P</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Beacon\LocalBeaconTrader.h">
+      <Filter>ソース\Beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Beacon\LocalBeaconListener.h">
+      <Filter>インクルード\Beacon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Wifi\SubscriptionManager.h">
+      <Filter>インクルード\Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Wifi\SubscriptionNotificationListener.h">
+      <Filter>インクルード\Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Wifi\SubscriptionPacketListener.h">
+      <Filter>インクルード\Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PGL\PGLConnector.h">
+      <Filter>インクルード\PGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PGL\PGLConnectorListener.h">
+      <Filter>インクルード\PGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PGL\PGLMediaCreator.h">
+      <Filter>インクルード\PGL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Validation\PokemonValidation.h">
+      <Filter>インクルード\Validation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Validation\PokemonValidationDefine.h">
+      <Filter>インクルード\Validation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Validation\PokemonValidationListener.h">
+      <Filter>インクルード\Validation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HTTP\NexHttpClient.h">
+      <Filter>インクルード\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HTTP\NexHttpClientListener.h">
+      <Filter>インクルード\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HTTP\NexHttpResponse.h">
+      <Filter>インクルード\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HTTP\NexHttpConnection.h">
+      <Filter>ソース\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Error\NijiNetworkForceDisconnectListener.h">
+      <Filter>インクルード\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Debug\NetDebug.h">
+      <Filter>インクルード\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Error\NijiNetworkErrorDialogStatus.h">
+      <Filter>ソース\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Delivery\Wireless\DeliveryKeys.h">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Delivery\IR\DeliveryIRSystem.cpp">
+      <Filter>ソース\Delivery\IR</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wifi\DeliveryWifiSystem.cpp">
+      <Filter>ソース\Delivery\Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wireless\DeliveryWirelessBeaconBinder.cpp">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wireless\DeliveryWirelessBeaconSplitter.cpp">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wireless\DeliveryWirelessRecvThread.cpp">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wireless\DeliveryWirelessSendThread.cpp">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wireless\DeliveryWirelessSystem.cpp">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\DeliveryManager.cpp">
+      <Filter>ソース\Delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\DeliverySystem.cpp">
+      <Filter>ソース\Delivery</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\Detect\NijiNetworkErrorDetectBattleSpot.cpp">
+      <Filter>ソース\Error\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\Detect\NijiNetworkErrorDetectDefault.cpp">
+      <Filter>ソース\Error\Detect</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\NijiNetworkErreulaApplet.cpp">
+      <Filter>ソース\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\NijiNetworkError.cpp">
+      <Filter>ソース\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\NijiNetworkErrorDialog.cpp">
+      <Filter>ソース\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\NijiNetworkErrorManager.cpp">
+      <Filter>ソース\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NijiNetworkSystem.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2P\NexRatingClinet.cpp">
+      <Filter>ソース\P2P</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2P\P2pCommonData.cpp">
+      <Filter>ソース\P2P</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2P\P2pConnectionManager.cpp">
+      <Filter>ソース\P2P</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2P\P2pTimeout.cpp">
+      <Filter>ソース\P2P</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Wifi\WifiConnectRunner.cpp">
+      <Filter>ソース\Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2P\P2pPacketTransfer.cpp">
+      <Filter>ソース\P2P</Filter>
+    </ClCompile>
+    <ClCompile Include="source\P2P\P2pSyncSave.cpp">
+      <Filter>ソース\P2P</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Beacon\LocalBeaconTrader.cpp">
+      <Filter>ソース\Beacon</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Wifi\SubscriptionManager.cpp">
+      <Filter>ソース\Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Wifi\SubscriptionNotificationListener.cpp">
+      <Filter>ソース\Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PGL\PGLConnector.cpp">
+      <Filter>ソース\PGL</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PGL\PGLMediaCreator.cpp">
+      <Filter>ソース\PGL</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Validation\PokemonValidation.cpp">
+      <Filter>ソース\Validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HTTP\NexHttpClient.cpp">
+      <Filter>ソース\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HTTP\NexHttpConnection.cpp">
+      <Filter>ソース\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HTTP\NexHttpResponse.cpp">
+      <Filter>ソース\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\NetDebug.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Error\NijiNetworkErrorDialogStatus.cpp">
+      <Filter>ソース\Error</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Delivery\Wireless\DeliveryKeys.cpp">
+      <Filter>ソース\Delivery\Wireless</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

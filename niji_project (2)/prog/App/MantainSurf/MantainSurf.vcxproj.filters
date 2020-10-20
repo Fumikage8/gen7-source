@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\UI">
+      <UniqueIdentifier>{e942e3ab-1471-49da-94db-280ea03b1ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\UI\Views">
+      <UniqueIdentifier>{222aa7f7-b211-4ee4-b862-5c1e45bb60ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\UI\Views\Modules">
+      <UniqueIdentifier>{490f9d92-a4d2-4241-9d46-ab6434e954f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Camera">
+      <UniqueIdentifier>{a78200bf-b9d5-45e8-8611-43557f99cf43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Collision">
+      <UniqueIdentifier>{9e5dcfa4-6141-45c8-8870-c8497920b285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Course">
+      <UniqueIdentifier>{60c4f660-138d-4434-96a1-41560733ff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Effect">
+      <UniqueIdentifier>{0cfe660f-5e1d-4492-b5a7-94c66ae2e523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Model">
+      <UniqueIdentifier>{77e77f06-1e25-4867-8213-5d93bbfec911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Resource">
+      <UniqueIdentifier>{9d502707-d26f-4118-a744-45d9814a58de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Skill">
+      <UniqueIdentifier>{de88988f-d2ad-4ed8-8ca5-14d96415a8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\SkyBox">
+      <UniqueIdentifier>{955c02f5-0fd6-4980-b576-110a8aa36d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Player">
+      <UniqueIdentifier>{a05d1a66-f84c-4fa2-9476-b421328e59c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Model\Gimmick">
+      <UniqueIdentifier>{c9ac6c75-a6e7-4890-8606-b810d932f22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Nami">
+      <UniqueIdentifier>{0b43e0f6-cf0a-44a2-aa3e-cb032617346d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Background">
+      <UniqueIdentifier>{4c4ba279-32bb-4344-a176-0e893f0e1de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Debug">
+      <UniqueIdentifier>{d490c7fb-b6b4-410e-bd2e-c735651f52fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Tutorial">
+      <UniqueIdentifier>{2d3b0d5c-4211-48f0-8aa4-24951c068b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\SurfSound">
+      <UniqueIdentifier>{c2c7eb3a-9e5a-4e4b-9550-ff1f9a070824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\NpcRider">
+      <UniqueIdentifier>{feecd1f3-c84c-413a-b94a-b8324a287707}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MantainSurfAppData.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MantainSurfProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\SurfUI.h">
+      <Filter>ソース\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\SurfUIResource.h">
+      <Filter>ソース\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\NumberController.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\NumberController_ResultItem.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\NumberController_ResultTotal.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\NumberController_ResultTrick.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_Result.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_Trick.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Lower_BG.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Camera\Camera.h">
+      <Filter>ソース\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Camera\CameraController.h">
+      <Filter>ソース\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collision\ColliderBase.h">
+      <Filter>ソース\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collision\ColliderCylinder.h">
+      <Filter>ソース\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collision\ColliderSphere.h">
+      <Filter>ソース\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collision\CollisionManager.h">
+      <Filter>ソース\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Effect\EffectManager.h">
+      <Filter>ソース\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickBase.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickBaseMove.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickBaseStatic.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickCommon.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickHoeruko.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickHoeruoh.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickManager.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickMenokurage.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickReefLarge.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickReefMedium.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickReefSmall.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\Gimmick\GimmickSamehader.h">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Player\PlayerController.h">
+      <Filter>ソース\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Player\PlayerModelSet.h">
+      <Filter>ソース\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Nami\NamiController.h">
+      <Filter>ソース\Nami</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Nami\NamiModelSet.h">
+      <Filter>ソース\Nami</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Nami\NamiSamplingData.h">
+      <Filter>ソース\Nami</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Course\CourseData.h">
+      <Filter>ソース\Course</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Course\CourseDataManager.h">
+      <Filter>ソース\Course</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Effect\EffectBase.h">
+      <Filter>ソース\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Effect\EffectModel.h">
+      <Filter>ソース\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Effect\EffectPartical.h">
+      <Filter>ソース\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelBase.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelBaseChara.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelMantain.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelNami.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelPlayer.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SkyBox\SkyBoxManager.h">
+      <Filter>ソース\SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Skill\SkillSelector.h">
+      <Filter>ソース\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Resource\ResourceManager.h">
+      <Filter>ソース\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MantainSurfDrawManager.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MantainSurfRenderingPipeline.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MantainSurfAppManager.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelBackground.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelNamiEnd.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Background\BackgroundManager.h">
+      <Filter>ソース\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelSea.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Debug\DebugMenu.h">
+      <Filter>ソース\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelSkyBox.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\NumberController_TrickScore.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Lower_Tutorial.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\DigitSeparator.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_TotalScore.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Lower_TrickList.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_Tutorial.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tutorial\TutorialManager.h">
+      <Filter>ソース\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SurfSound\SurfSoundManager.h">
+      <Filter>ソース\SurfSound</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelSeaBread.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NpcRider\NpcRiderSeaBread.h">
+      <Filter>ソース\NpcRider</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Model\ModelGoalLine.h">
+      <Filter>ソース\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\Modules\SEPlayer.h">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\MantainSurfAppData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MantainSurfProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\SurfUI.cpp">
+      <Filter>ソース\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\Modules\NumberController.cpp">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\Modules\NumberController_ResultItem.cpp">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\Modules\NumberController_ResultTotal.cpp">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\Modules\NumberController_ResultTrick.cpp">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_Result.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_Trick.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Lower_BG.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Camera\Camera.cpp">
+      <Filter>ソース\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Camera\CameraController.cpp">
+      <Filter>ソース\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collision\ColliderBase.cpp">
+      <Filter>ソース\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collision\ColliderCylinder.cpp">
+      <Filter>ソース\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collision\ColliderSphere.cpp">
+      <Filter>ソース\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collision\CollisionManager.cpp">
+      <Filter>ソース\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Effect\EffectManager.cpp">
+      <Filter>ソース\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickBase.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickBaseMove.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickBaseStatic.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickCommon.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickHoeruko.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickHoeruoh.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickManager.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickMenokurage.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickReefLarge.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickReefMedium.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickReefSmall.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\Gimmick\GimmickSamehader.cpp">
+      <Filter>ソース\Model\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Player\PlayerController.cpp">
+      <Filter>ソース\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Player\PlayerModelSet.cpp">
+      <Filter>ソース\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Nami\NamiController.cpp">
+      <Filter>ソース\Nami</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Nami\NamiModelSet.cpp">
+      <Filter>ソース\Nami</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Nami\NamiSamplingData.cpp">
+      <Filter>ソース\Nami</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Course\CourseData.cpp">
+      <Filter>ソース\Course</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Course\CourseDataManager.cpp">
+      <Filter>ソース\Course</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Effect\EffectModel.cpp">
+      <Filter>ソース\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Effect\EffectPartical.cpp">
+      <Filter>ソース\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelBase.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelBaseChara.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelMantain.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelNami.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelPlayer.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SkyBox\SkyBoxManager.cpp">
+      <Filter>ソース\SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Skill\SkillSelector.cpp">
+      <Filter>ソース\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Resource\ResourceManager.cpp">
+      <Filter>ソース\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MantainSurfDrawManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MantainSurfRenderingPipeline.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MantainSurfAppManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelBackground.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelNamiEnd.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Background\BackgroundManager.cpp">
+      <Filter>ソース\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelSea.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Debug\DebugMenu.cpp">
+      <Filter>ソース\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelSkyBox.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\Modules\NumberController_TrickScore.cpp">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Lower_Tutorial.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\Modules\DigitSeparator.cpp">
+      <Filter>ソース\UI\Views\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_TotalScore.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Lower_TrickList.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_Tutorial.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tutorial\TutorialManager.cpp">
+      <Filter>ソース\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SurfSound\SurfSoundManager.cpp">
+      <Filter>ソース\SurfSound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelSeaBread.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NpcRider\NpcRiderSeaBread.cpp">
+      <Filter>ソース\NpcRider</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Model\ModelGoalLine.cpp">
+      <Filter>ソース\Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

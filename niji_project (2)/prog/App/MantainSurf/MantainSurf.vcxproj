@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDL|CTR">
+      <Configuration>DebugDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDL|Win32">
+      <Configuration>DebugDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|CTR">
+      <Configuration>Debug</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|CTR">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DevelopDL|Win32">
+      <Configuration>DevelopDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|CTR">
+      <Configuration>Develop</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|CTR">
+      <Configuration>FinalDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FinalDL|Win32">
+      <Configuration>FinalDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|CTR">
+      <Configuration>Final</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Final|Win32">
+      <Configuration>Final</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|CTR">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDL|Win32">
+      <Configuration>ReleaseDL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|CTR">
+      <Configuration>Release</Configuration>
+      <Platform>CTR</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MantainSurfAppData.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="include\MantainSurfProc.h" />
+    <ClInclude Include="source\Background\BackgroundManager.h" />
+    <ClInclude Include="source\Camera\Camera.h" />
+    <ClInclude Include="source\Camera\CameraController.h" />
+    <ClInclude Include="source\Collision\ColliderBase.h" />
+    <ClInclude Include="source\Collision\ColliderCylinder.h" />
+    <ClInclude Include="source\Collision\ColliderSphere.h" />
+    <ClInclude Include="source\Collision\CollisionManager.h" />
+    <ClInclude Include="source\Course\CourseData.h" />
+    <ClInclude Include="source\Course\CourseDataManager.h" />
+    <ClInclude Include="source\Debug\DebugMenu.h" />
+    <ClInclude Include="source\MantainSurfDrawManager.h" />
+    <ClInclude Include="source\Effect\EffectManager.h" />
+    <ClInclude Include="source\Effect\EffectBase.h" />
+    <ClInclude Include="source\Effect\EffectModel.h" />
+    <ClInclude Include="source\Effect\EffectPartical.h" />
+    <ClInclude Include="source\MantainSurfAppManager.h" />
+    <ClInclude Include="source\Model\ModelBackground.h" />
+    <ClInclude Include="source\Model\ModelBase.h" />
+    <ClInclude Include="source\Model\ModelBaseChara.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickBase.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickBaseMove.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickBaseStatic.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickCommon.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickHoeruko.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickHoeruoh.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickManager.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickMenokurage.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickReefLarge.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickReefMedium.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickReefSmall.h" />
+    <ClInclude Include="source\Model\Gimmick\GimmickSamehader.h" />
+    <ClInclude Include="source\Model\ModelGoalLine.h" />
+    <ClInclude Include="source\Model\ModelMantain.h" />
+    <ClInclude Include="source\Model\ModelNami.h" />
+    <ClInclude Include="source\Model\ModelNamiEnd.h" />
+    <ClInclude Include="source\Model\ModelPlayer.h" />
+    <ClInclude Include="source\Model\ModelSea.h" />
+    <ClInclude Include="source\Model\ModelSeaBread.h" />
+    <ClInclude Include="source\Model\ModelSkyBox.h" />
+    <ClInclude Include="source\Nami\NamiController.h" />
+    <ClInclude Include="source\Nami\NamiModelSet.h" />
+    <ClInclude Include="source\Nami\NamiSamplingData.h" />
+    <ClInclude Include="source\NpcRider\NpcRiderSeaBread.h" />
+    <ClInclude Include="source\Player\PlayerController.h" />
+    <ClInclude Include="source\Player\PlayerModelSet.h" />
+    <ClInclude Include="source\Resource\ResourceManager.h" />
+    <ClInclude Include="source\Skill\SkillSelector.h" />
+    <ClInclude Include="source\SkyBox\SkyBoxManager.h" />
+    <ClInclude Include="source\SurfSound\SurfSoundManager.h" />
+    <ClInclude Include="source\Tutorial\TutorialManager.h" />
+    <ClInclude Include="source\UI\SurfUI.h" />
+    <ClInclude Include="source\UI\SurfUIResource.h" />
+    <ClInclude Include="source\UI\Views\Modules\DigitSeparator.h" />
+    <ClInclude Include="source\UI\Views\Modules\NumberController.h" />
+    <ClInclude Include="source\UI\Views\Modules\NumberController_ResultItem.h" />
+    <ClInclude Include="source\UI\Views\Modules\NumberController_ResultTotal.h" />
+    <ClInclude Include="source\UI\Views\Modules\NumberController_ResultTrick.h" />
+    <ClInclude Include="source\UI\Views\Modules\NumberController_TrickScore.h" />
+    <ClInclude Include="source\UI\Views\Modules\SEPlayer.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Lower_BG.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Lower_TrickList.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Lower_Tutorial.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_Result.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_TotalScore.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_Trick.h" />
+    <ClInclude Include="source\MantainSurfRenderingPipeline.h" />
+    <ClInclude Include="source\UI\Views\SurfUI_Upper_Tutorial.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Background\BackgroundManager.cpp" />
+    <ClCompile Include="source\Camera\Camera.cpp" />
+    <ClCompile Include="source\Camera\CameraController.cpp" />
+    <ClCompile Include="source\Collision\ColliderBase.cpp" />
+    <ClCompile Include="source\Collision\ColliderCylinder.cpp" />
+    <ClCompile Include="source\Collision\ColliderSphere.cpp" />
+    <ClCompile Include="source\Collision\CollisionManager.cpp" />
+    <ClCompile Include="source\Course\CourseData.cpp" />
+    <ClCompile Include="source\Course\CourseDataManager.cpp" />
+    <ClCompile Include="source\Debug\DebugMenu.cpp" />
+    <ClCompile Include="source\MantainSurfDrawManager.cpp" />
+    <ClCompile Include="source\Effect\EffectManager.cpp" />
+    <ClCompile Include="source\Effect\EffectModel.cpp" />
+    <ClCompile Include="source\Effect\EffectPartical.cpp" />
+    <ClCompile Include="source\MantainSurfAppManager.cpp" />
+    <ClCompile Include="source\MantainSurfAppData.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="source\MantainSurfProc.cpp" />
+    <ClCompile Include="source\Model\ModelBackground.cpp" />
+    <ClCompile Include="source\Model\ModelBase.cpp" />
+    <ClCompile Include="source\Model\ModelBaseChara.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickBase.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickBaseMove.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickBaseStatic.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickCommon.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickHoeruko.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickHoeruoh.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickManager.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickMenokurage.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickReefLarge.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickReefMedium.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickReefSmall.cpp" />
+    <ClCompile Include="source\Model\Gimmick\GimmickSamehader.cpp" />
+    <ClCompile Include="source\Model\ModelGoalLine.cpp" />
+    <ClCompile Include="source\Model\ModelMantain.cpp" />
+    <ClCompile Include="source\Model\ModelNami.cpp" />
+    <ClCompile Include="source\Model\ModelNamiEnd.cpp" />
+    <ClCompile Include="source\Model\ModelPlayer.cpp" />
+    <ClCompile Include="source\Model\ModelSea.cpp" />
+    <ClCompile Include="source\Model\ModelSeaBread.cpp" />
+    <ClCompile Include="source\Model\ModelSkyBox.cpp" />
+    <ClCompile Include="source\Nami\NamiController.cpp" />
+    <ClCompile Include="source\Nami\NamiModelSet.cpp" />
+    <ClCompile Include="source\Nami\NamiSamplingData.cpp" />
+    <ClCompile Include="source\NpcRider\NpcRiderSeaBread.cpp" />
+    <ClCompile Include="source\Player\PlayerController.cpp" />
+    <ClCompile Include="source\Player\PlayerModelSet.cpp" />
+    <ClCompile Include="source\Resource\ResourceManager.cpp" />
+    <ClCompile Include="source\Skill\SkillSelector.cpp" />
+    <ClCompile Include="source\SkyBox\SkyBoxManager.cpp" />
+    <ClCompile Include="source\SurfSound\SurfSoundManager.cpp" />
+    <ClCompile Include="source\Tutorial\TutorialManager.cpp" />
+    <ClCompile Include="source\UI\SurfUI.cpp" />
+    <ClCompile Include="source\UI\Views\Modules\DigitSeparator.cpp" />
+    <ClCompile Include="source\UI\Views\Modules\NumberController.cpp" />
+    <ClCompile Include="source\UI\Views\Modules\NumberController_ResultItem.cpp" />
+    <ClCompile Include="source\UI\Views\Modules\NumberController_ResultTotal.cpp" />
+    <ClCompile Include="source\UI\Views\Modules\NumberController_ResultTrick.cpp" />
+    <ClCompile Include="source\UI\Views\Modules\NumberController_TrickScore.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Lower_BG.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Lower_TrickList.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Lower_Tutorial.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_Result.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_TotalScore.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_Trick.cpp" />
+    <ClCompile Include="source\MantainSurfRenderingPipeline.cpp" />
+    <ClCompile Include="source\UI\Views\SurfUI_Upper_Tutorial.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52BD1E3A-E068-46C2-A4B7-0FA9004EAFD9}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.root.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <ConfigurationType>RoModule</ConfigurationType>
+    <PlatformToolset>$(NIJI_CTRLIB_VERSION)</PlatformToolset>
+    <ARMCC_VER>$(CTRSDK_RVCT_VER)</ARMCC_VER>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.props') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.debugDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.developDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DevelopDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.develop.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.releaseDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|CTR'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.ctr.finalDL.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.final.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FinalDL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(NIJI_PROPS_RO_DIR)\niji.ro.win32.final.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets" Condition="(exists('$(VCTargetsPath)\BuildCustomizations\ctr2_asm.targets') and '$(ConfigurationType)' != 'VertexShader' and '$(ConfigurationType)' != 'PCH')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets" Condition="exists('$(VCTargetsPath)\BuildCustomizations\ctr2_items.targets')" />
+  </ImportGroup>
+</Project>

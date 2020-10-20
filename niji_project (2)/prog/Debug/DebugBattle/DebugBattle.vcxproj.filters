@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公開ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\DebugBattleProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DebugBattleSaveData.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DebugBattleProc.h">
+      <Filter>公開ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugBattleCommon.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugBattleSaveData.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

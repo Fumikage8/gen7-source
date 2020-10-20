@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ApplicationSystem">
+      <UniqueIdentifier>{f51175ef-9564-4a59-8a80-e32ad5836ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{f5e2c501-99db-411b-9da1-b9ddb289d9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{c7f960f0-67d6-4666-bb8a-962412577c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\RequestSequence">
+      <UniqueIdentifier>{3be8c923-9db3-4e76-8b54-27265622c5aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ApplicationSystem\RegulationSelectApplicationSystem.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\RegulationSelectBuilder.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\RegulationSelectFrameFactory.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\RegulationSelectFrameSwitcher.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegulationSelectProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegulationSelectFrameBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationSelectLoadFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationSelectMainFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationSelectSDCardLoadFramBase.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\RegulationSelectViewObjects.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\RegulationSelectMainLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\RegulationSelectMainUpperView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\RegulationSelectMessageMenuLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationDLLoadFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationDLMainFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\RegulationDLRequestFacade.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\RegulationDLSearchDataRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationDLSelectFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationSelectSDCardSaveFramBase.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationDLDeleteFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\RegulationSelectWork.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationDetailFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\RegulationDetailLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\RegulationSelectSDCardDeleteFramBase.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\RegulationSelectBGUpperView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\ApplicationSystem\RegulationSelectApplicationSystem.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\RegulationSelectBuilder.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\RegulationSelectFrameFactory.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\RegulationSelectFrameSwitcher.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegulationSelectAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegulationSelectProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RegulationSelectFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RegulationSelectFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RegulationSelectResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RegulationSelectFrameBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationSelectLoadFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationSelectMainFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationSelectSDCardLoadFramBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\RegulationSelectViewObjects.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationSelectMainLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationSelectMainLowerViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationSelectMainUpperView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationSelectMessageMenuLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationSelectMessageMenuLowerViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationDLLoadFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationDLMainFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\RegulationDLRequestFacade.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\RegulationDLSearchDataRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\RegulationDLSearchDataResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationDLSelectFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationSelectSDCardSaveFramBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationDLDeleteFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\RegulationSelectWork.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RegulationSelectDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationDetailFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationDetailLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\RegulationSelectSDCardDeleteFramBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RegulationSelectBGUpperView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

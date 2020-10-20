@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader">
+      <UniqueIdentifier>{b2e2441a-e828-4b8f-8a56-41442e7fbf03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader\needRedefine">
+      <UniqueIdentifier>{984e5d02-57b6-4ee7-938b-743923a16bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader\needRedefine\battle_dressup">
+      <UniqueIdentifier>{0a7e3120-815e-4962-80b8-dba2bdb30d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader\needRedefine\field_dressup">
+      <UniqueIdentifier>{7757ab48-7f61-4988-83ab-74a4a693fe99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader\needRedefine\message">
+      <UniqueIdentifier>{aedc4717-924b-4142-9750-acccee9a1e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader\needRedefine\savedata">
+      <UniqueIdentifier>{abbb9084-531e-4c6e-8f1f-fad595dc12f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BaseHeader\needRedefine\pokelib">
+      <UniqueIdentifier>{6d9b4631-888e-4675-878d-f23628d14abf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\CheckMacro.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\custom_JoinFestaNetDefine.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\JoinFestaPawnDefine.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\PokeDiaryDefine.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\redefines.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\seikaku.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\SoundMiddleID.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\tokusei_def.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\wazano_def.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_battle_dressup.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_field_dressup.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefineMacro.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_color_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_acceye_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_bag_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_bngl_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_bottoms_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_face_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_hair_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_hat_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_legs_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_shoes_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_situ_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_hero_tops_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_acceye_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_acchair_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_bag_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_bngl_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_bottoms_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_face_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_hair_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_hat_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_legs_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_shoes_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_situ_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\battle_dressup\dressup_heroine_tops_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\battle_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_color_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_acceye_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_bag_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_bngl_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_bottoms_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_face_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_hair_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_hat_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_legs_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_shoes_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_situ_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_hero_tops_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_acceye_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_acchair_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_bag_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_bngl_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_bottoms_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_face_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_hair_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_hat_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_legs_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_shoes_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_situ_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\field_dressup\dressup_heroine_tops_item_id.h">
+      <Filter>ソース\BaseHeader\needRedefine\field_dressup</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_jf_phrase.h">
+      <Filter>ソース\BaseHeader\needRedefine\message</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\savedata\RecordDefine.h">
+      <Filter>ソース\BaseHeader\needRedefine\savedata</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_jf_phrase.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\custom_JoinFestaPersonalData.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\custom_MyStatus.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\custom_Record.h">
+      <Filter>ソース\BaseHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name.h">
+      <Filter>ソース\BaseHeader\needRedefine\message</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name_out.h">
+      <Filter>ソース\BaseHeader\needRedefine\message</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name_per.h">
+      <Filter>ソース\BaseHeader\needRedefine\message</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\message\msg_place_name_spe.h">
+      <Filter>ソース\BaseHeader\needRedefine\message</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name_out.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name_per.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\redefine_msg_place_name_spe.h">
+      <Filter>ソース\BaseHeader\needRedefine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VersionCompatibility.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BaseHeader\needRedefine\pokelib\itemsym.h">
+      <Filter>ソース\BaseHeader\needRedefine\pokelib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\VersionCompatibility.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\VersionCompatibility_BattleDressup.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\VersionCompatibility_FieldDressup.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

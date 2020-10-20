@@ -1,0 +1,254 @@
+﻿//=============================================================================
+/**
+ * @file    MapManagerData.cdat
+ * @brief   マップデータテーブル
+ * @author  Hiroyuki Nakamura
+ * @date    2016.03.03
+ */
+//=============================================================================
+
+//! マップデータ
+const MapManager::MAP_DATA MapManager::MapDataTable[MapManager::MAP_DATA_MAX] =
+{
+  {
+    SUBSCREEN_MAP_TYPE_W_F0102,     // data_id;
+    GARC_NaviMap_land01_001_BFLIM,  // tex_id;
+    8,  // tex_width;
+    16, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    0,  // center_x;
+    0,  // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0201,     // data_id;
+    GARC_NaviMap_land02_001_BFLIM,  // tex_id;
+    8,  // tex_width;
+    16, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    0,  // center_x;
+    0,  // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0301,     // data_id;
+    GARC_NaviMap_land03_001_BFLIM,  // tex_id;
+    8,  // tex_width;
+    16, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    0,  // center_x;
+    0,  // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0401,     // data_id;
+    GARC_NaviMap_land04_001_BFLIM,  // tex_id;
+    8,  // tex_width;
+    16, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    0,  // center_x;
+    0,  // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0501I0101,  // data_id;
+    GARC_NaviMap_field_dungeon_124_001_BFLIM,   // tex_id;
+    5,  // tex_width;
+    6, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+
+  {
+    SUBSCREEN_MAP_TYPE_W_F0102D0401,  // data_id;
+    GARC_NaviMap_field_dungeon_021_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    4, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0102D0601,  // data_id;
+    GARC_NaviMap_field_dungeon_024_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    4, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0102I0108,  // data_id;
+    GARC_NaviMap_field_dungeon_060_001_BFLIM,   // tex_id;
+    5,  // tex_width;
+    5, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0301D0201,  // data_id;
+    GARC_NaviMap_field_dungeon_106_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5, // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0401D0101,  // data_id;
+    GARC_NaviMap_field_dungeon_107_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    6,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0301T0301,  // data_id;
+    GARC_NaviMap_field_dungeon_116_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0201D0301,  // data_id;
+    GARC_NaviMap_field_dungeon_137_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    4,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0201I1701,  // data_id;
+    GARC_NaviMap_field_dungeon_139_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0201I1702,  // data_id;
+    GARC_NaviMap_field_dungeon_140_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0201D0302,  // data_id;
+    GARC_NaviMap_field_dungeon_156_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    4,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0301D0401,  // data_id;
+    GARC_NaviMap_field_dungeon_160_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0301D0501,  // data_id;
+    GARC_NaviMap_field_dungeon_161_001_BFLIM,   // tex_id;
+    5,  // tex_width;
+    6,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0301D0601,  // data_id;
+    GARC_NaviMap_field_dungeon_162_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0401D0801,  // data_id;
+    GARC_NaviMap_field_dungeon_190_001_BFLIM,   // tex_id;
+    4,  // tex_width;
+    5,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+  {
+    SUBSCREEN_MAP_TYPE_W_F0201I2201,  // data_id;
+    GARC_NaviMap_field_dungeon_400_001_BFLIM,   // tex_id;
+    3,  // tex_width;
+    4,  // tex_height;
+    0,  // start_x;
+    0,  // start_y;
+    0,  // end_x;
+    0,  // end_y;
+    PANE_WIDTH,  // center_x;
+    PANE_HEIGHT, // center_y;
+  },
+};

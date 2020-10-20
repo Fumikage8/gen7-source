@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Common">
+      <UniqueIdentifier>{c3a72de1-d2c2-400e-95b9-be16513726e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\CTROnly">
+      <UniqueIdentifier>{31bf35c5-8738-4483-abf2-11241e9a05a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\CTROnly">
+      <UniqueIdentifier>{81d365fb-748c-40d7-bc94-7a5b84698b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\CTROnly\HIOUtil">
+      <UniqueIdentifier>{a8d80395-95ce-4cf3-aca5-d1ebcf2deb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\CTROnly\HIOViewModules">
+      <UniqueIdentifier>{f48e1aca-cef2-405d-8926-c998c6a47dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Common\Debug">
+      <UniqueIdentifier>{acb3bd5c-f4c7-4003-8b89-8710b8a19796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\UI">
+      <UniqueIdentifier>{1830ec9a-e912-4eaa-8dc5-b7a32a46ffa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\UI\Views">
+      <UniqueIdentifier>{f241faab-a532-4faf-8803-3ac4c1f4f365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\MutoTest_TestProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\TextDrawer.cpp">
+      <Filter>ソース\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTROnly\TestProc_SendTool_LiveRegulation.cpp">
+      <Filter>ソース\CTROnly</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTROnly\TestProc_Delivery.cpp">
+      <Filter>ソース\CTROnly</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTROnly\TestProc_DeviceCamera.cpp">
+      <Filter>ソース\CTROnly</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MutoTest_TestProc_GiftDemo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\EasyModel.cpp">
+      <Filter>ソース\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\EasyCamera.cpp">
+      <Filter>ソース\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\EasyLight.cpp">
+      <Filter>ソース\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTROnly\HIOViewModules\HIOViewModule_Light.cpp">
+      <Filter>ソース\CTROnly\HIOViewModules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTROnly\HIOViewModules\HIOViewModule_Model.cpp">
+      <Filter>ソース\CTROnly\HIOViewModules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\Debug\EasyModelDebug.cpp">
+      <Filter>ソース\Common\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\EasyMotion.cpp">
+      <Filter>ソース\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CTROnly\HIOViewModules\HIOViewModule_Motion.cpp">
+      <Filter>ソース\CTROnly\HIOViewModules</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Common\Scene3D.cpp" />
+    <ClCompile Include="source\CTROnly\HIOViewModules\HIOViewModuleBase.cpp" />
+    <ClCompile Include="source\CTROnly\HIOViewModules\HIOViewModule_Camera.cpp" />
+    <ClCompile Include="source\CTROnly\TestProc_HIOView.cpp" />
+    <ClCompile Include="source\MutoTest_TestProc_SurfUI.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\DiveUI.cpp">
+      <Filter>ソース\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Views\DiveUI_Lower_BG.cpp">
+      <Filter>ソース\UI\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MutoTest_TestProc_LunaSolDiveUI.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MutoTest_TestProc.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Common\TextDrawer.h">
+      <Filter>ソース\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTROnly\TestProc_Delivery.h">
+      <Filter>ヘッダ\CTROnly</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTROnly\TestProc_DeviceCamera.h">
+      <Filter>ヘッダ\CTROnly</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTROnly\TestProc_SendTool_LiveRegulation.h">
+      <Filter>ヘッダ\CTROnly</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MutoTest_TestProc_GiftDemo.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Common\EasyModel.h">
+      <Filter>ソース\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Common\EasyCamera.h">
+      <Filter>ソース\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Common\EasyLight.h">
+      <Filter>ソース\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CTROnly\HIOViewModules\HIOViewModule_Light.h">
+      <Filter>ソース\CTROnly\HIOViewModules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CTROnly\HIOViewModules\HIOViewModule_Model.h">
+      <Filter>ソース\CTROnly\HIOViewModules</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Common\Debug\EasyModelDebug.h">
+      <Filter>ソース\Common\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Common\EasyMotion.h">
+      <Filter>ソース\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CTROnly\HIOViewModules\HIOViewModule_Motion.h">
+      <Filter>ソース\CTROnly\HIOViewModules</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTROnly\TestProc_HIOView.h" />
+    <ClInclude Include="source\Common\Scene3D.h" />
+    <ClInclude Include="source\CTROnly\HIOViewModules\HIOViewModuleBase.h" />
+    <ClInclude Include="source\CTROnly\HIOViewModules\HIOViewModule_Camera.h" />
+    <ClInclude Include="include\MutoTest_TestProc_SurfUI.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\DiveUI.h">
+      <Filter>ソース\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\DiveUIResource.h">
+      <Filter>ソース\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UI\Views\DiveUI_Lower_BG.h">
+      <Filter>ソース\UI\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MutoTest_TestProc_LunaSolDiveUI.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

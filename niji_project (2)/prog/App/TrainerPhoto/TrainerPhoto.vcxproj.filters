@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\frame">
+      <UniqueIdentifier>{963b2330-3479-46cb-8533-290cc39773df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\view">
+      <UniqueIdentifier>{1f0c4584-c984-49cf-beed-c3f208176a88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\TrainerPhotoProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\frame\TrainerPhotoShootConfirmFrame.cpp">
+      <Filter>ソース\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\frame\TrainerPhotoModelShootFrame.cpp">
+      <Filter>ソース\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\frame\TrainerPhotoModelViewerFrame.cpp">
+      <Filter>ソース\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerPhotoUIViewPool.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\view\TrainerPhotoUppRootView.cpp">
+      <Filter>ソース\view</Filter>
+    </ClCompile>
+    <ClCompile Include="source\view\TrainerPhotoUppShootFrameView.cpp">
+      <Filter>ソース\view</Filter>
+    </ClCompile>
+    <ClCompile Include="source\view\TrainerPhotoLowRootView.cpp">
+      <Filter>ソース\view</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\TrainerPhotoProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\frame\TrainerPhotoShootConfirmFrame.h">
+      <Filter>ソース\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\frame\TrainerPhotoModelShootFrame.h">
+      <Filter>ソース\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\frame\TrainerPhotoModelViewerFrame.h">
+      <Filter>ソース\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TrainerPhotoUIViewPool.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\view\TrainerPhotoUppRootView.h">
+      <Filter>ソース\view</Filter>
+    </ClInclude>
+    <ClInclude Include="source\view\TrainerPhotoUppShootFrameView.h">
+      <Filter>ソース\view</Filter>
+    </ClInclude>
+    <ClInclude Include="source\view\TrainerPhotoLowRootView.h">
+      <Filter>ソース\view</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

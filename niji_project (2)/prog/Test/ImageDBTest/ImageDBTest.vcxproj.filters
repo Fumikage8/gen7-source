@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\util">
+      <UniqueIdentifier>{63b1322b-57f6-4a6f-8725-c5abe794a5cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\pic">
+      <UniqueIdentifier>{76a3472b-439c-4e94-a512-d07507f77616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\search">
+      <UniqueIdentifier>{46035683-5efd-4b45-a4c8-51b26879a02f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\debug">
+      <UniqueIdentifier>{fa48c9b5-5c69-4aba-be25-6cd84211cbb0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ImageDBTestProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageDBTestFrame.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageDBTestUpperDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageDBTestDrawListener.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\util\ImageDBTestUtility.h">
+      <Filter>ソース\util</Filter>
+    </ClInclude>
+    <ClInclude Include="source\pic\ImageDBTestSavePicture.h">
+      <Filter>ソース\pic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\search\ImageDBTestSearch.h">
+      <Filter>ソース\search</Filter>
+    </ClInclude>
+    <ClInclude Include="source\debug\ImageDBTestTick.h">
+      <Filter>ソース\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageDBTestLowerDraw.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\pic\ImageDBTestLoadPicture.h">
+      <Filter>ソース\pic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageDBTestLowerAlbum.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ImageDBTestProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageDBTestFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageDBTestUpperDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\util\ImageDBTestUtility.cpp">
+      <Filter>ソース\util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\pic\ImageDBTestSavePicture.cpp">
+      <Filter>ソース\pic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\search\ImageDBTestSearch.cpp">
+      <Filter>ソース\search</Filter>
+    </ClCompile>
+    <ClCompile Include="source\debug\ImageDBTestTick.cpp">
+      <Filter>ソース\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageDBTestLowerDraw.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\pic\ImageDBTestLoadPicture.cpp">
+      <Filter>ソース\pic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImageDBTestLowerAlbum.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

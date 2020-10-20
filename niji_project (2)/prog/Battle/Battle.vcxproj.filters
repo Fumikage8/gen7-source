@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\btlv">
+      <UniqueIdentifier>{5d2cad13-17c5-4e15-a593-affb5180bde3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\btlv\app">
+      <UniqueIdentifier>{95b4b9cb-d904-4ec2-afa0-b588914c8e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\btlv\render">
+      <UniqueIdentifier>{fe529b2b-e19f-4ea4-a580-d844b7463b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\btlv\app\parts">
+      <UniqueIdentifier>{576075a9-99ba-4c0d-a004-79080dfd82b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部生成">
+      <UniqueIdentifier>{de2d0834-d310-4906-a401-f43b25a1cefa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\server_client">
+      <UniqueIdentifier>{4b246d42-0f24-4a26-9814-4f9fa9a59de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\handler">
+      <UniqueIdentifier>{bc8f196a-6428-43cf-8fbb-679472ac8e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\tr_ai">
+      <UniqueIdentifier>{fd4a25ed-5228-49a5-a6ad-214ea0c17493}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\btlv\btlv_effect_def.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_local_def.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_object.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_types.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_core.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_proc.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIYesNoLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\render\btlv_RenderSystem.h">
+      <Filter>ソース\btlv\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIActSelectLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_ui.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUISkillSelectLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIPokeStatusLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUISkillStatusLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\render\btlv_RenderPipeLine.h">
+      <Filter>ソース\btlv\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIBGLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIActSelectFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIBGFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIPokeStatusFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUISkillSelectFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUISkillStatusFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIYesNoFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUITargetSelectFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUITargetSelectLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIItemConfirmFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIItemConfirmLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIPokeListFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIPokeListLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\parts\BattleUIKoukaIconPartsLayout.h">
+      <Filter>ソース\btlv\app\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\Parts\BattleUISkillButtonPartsLayout.h">
+      <Filter>ソース\btlv\app\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_seq_com.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_seq_sys.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIPokeEntryConfirmFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIPokeEntryConfirmLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\Parts\BattleUIZenryokuSkillButtonPartsLayout.h">
+      <Filter>ソース\btlv\app\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_action.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_adapter.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_AffCounter.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_calc.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_client.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_TrainerMessage.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_common.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_const.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_DeadRec.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_DebugPrint.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_DebugTimer.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_DmgAffRec.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_EscapeInfo.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_Event.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_EventFactor.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_Exp.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ExpCalculator.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_field.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_FieldEff.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_fieldEff_def.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_fx32.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_HeManager.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_main.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_mainmodule.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_net.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_party.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokecon.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokeparam.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokeparam_contflag.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokeselect.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_pokeset.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PosEff.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PosPoke.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_rec.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_server.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_server_cmd.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_server_const.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_server_flow_def.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ServerFlow.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ServerFlowSub.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_sick.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_sickcont.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SideEff.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_sound.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_str.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_tables.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_TrainerMessage.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_TrainerMessageManager.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ui.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_WazaRec.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_task.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIWatchFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIWatchLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUiMsgWin.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_camera.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIDataManager.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SVCL_ACTION.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ACTION_ORDER_WORK.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_object_poke.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_status.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SideEffect.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SideEffectManager.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SideEffectStatus.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PosEffectStatus.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PosEffectManager.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PosEffect.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokemonPosition.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_BattleRule.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_WazaTargetSelector.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ServerClientFactory.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientPublicInformation.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientCommunicationObserver.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIIntroEventFrame.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIIntroEventLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIViewDrawOrder.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIBGFrontLowerDraw.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_BattleResult.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_Kawaigari.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokemonBattleInRegister.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_object_chara.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendData.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendDataContainer.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendDataContainerFactory.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ServerCommandCalculator.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_AdapterCommandData.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_WinWild.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_seq_com_define.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_RoyalRankingContainer.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_RoyalRankingCalculator.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PartyAllDeadRecorder.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_ball.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ZenryokuWaza.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ZenryokuWazaStatus.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_IntrudeSystem.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_AdapterCommandGenerator.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokeID.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_levelup.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_tokusei.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_trainer_data.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_FormChange.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_BattleRoyalShowdown.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\app\BattleUIRecPlayLowerView.h">
+      <Filter>ソース\btlv\app</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_BattleResultJudge.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ReinforceSystem.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_loader.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ActionRecorder.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_UltraBeast.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ActionPriority.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_Oteire.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_BossBattle.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_Capture.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendData_ActionSelect.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SendData_ClientLimitTime.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_server_TimeLimit.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_RecordSave.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_DiarySave.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_convention_win.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_Heap.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_timer.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\btlv_gauge_shotdown.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_SimpleEffectFailManager.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_ClientSeq_Capture.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_InsertWazaInfoStorage.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_PokeIDRec.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btl_DamageProcParamStack.h">
+      <Filter>ソース\server_client</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_common.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_default_power_up.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_field.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_item.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_pos.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_side.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_tokusei.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_waza.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\handler\hand_zenryoku.h">
+      <Filter>ソース\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiItemJudge.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiJudge.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiPokeChangeJudge.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiScript.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiScriptCommandHandler.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiScriptHandler.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_AiWazaJudge.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_BattleAi.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_BattleAiCommand.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_BattleAiSystem.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\btl_SenarioAiZenryokuWazaSelector.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tr_ai\tr_ai_cmd.h">
+      <Filter>ソース\tr_ai</Filter>
+    </ClInclude>
+    <ClInclude Include="source\btlv\BtlvUIRotom.h">
+      <Filter>ソース\btlv</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\btlv\btlv_core_cmd.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_object.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_core.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIYesNoLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\render\btlv_RenderSystem.cpp">
+      <Filter>ソース\btlv\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIActSelectLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_ui.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUISkillSelectLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIPokeStatusLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUISkillStatusLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\render\btlv_RenderPipeLine.cpp">
+      <Filter>ソース\btlv\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIBGLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIActSelectFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIBGFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIPokeStatusFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUISkillSelectFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUISkillStatusFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIYesNoFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUITargetSelectFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUITargetSelectLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIItemConfirmFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIItemConfirmLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIPokeListFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIPokeListLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\parts\BattleUIKoukaIconPartsLayout.cpp">
+      <Filter>ソース\btlv\app\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\Parts\BattleUISkillButtonPartsLayout.cpp">
+      <Filter>ソース\btlv\app\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_seq_com.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_seq_sys.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIPokeEntryConfirmFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIPokeEntryConfirmLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\Parts\BattleUIZenryokuSkillButtonPartsLayout.cpp">
+      <Filter>ソース\btlv\app\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_action.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_adapter.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_AffCounter.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_calc.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_client.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_TrainerMessage.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_DeadRec.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_DebugPrint.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_DebugTimer.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_DmgAffRec.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_EscapeInfo.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_Event.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_Exp.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ExpCalculator.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_field.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_HeManager.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_mainmodule.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_net.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_party.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_pokecon.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_pokeparam.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_pokeselect.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_pokeset.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PosPoke.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_rec.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_server.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_server_cmd.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ServerFlow.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ServerFlowSub.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_sick.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_sickcont.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_sound.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_str.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_tables.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_TrainerMessage.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_TrainerMessageManager.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ui.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_WazaRec.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_task.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIWatchFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIWatchLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUiMsgWin.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_camera.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIDataManager.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ACTION_ORDER_WORK.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_object_poke.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_status.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SideEffect.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SideEffectManager.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SideEffectStatus.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PosEffectstatus.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PosEffect.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PosEffectManager.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokemonPosition.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_BattleRule.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_WazaTargetSelector.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ServerClientFactory.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientPublicInformation.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientCommunicationObserver.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIIntroEventFrame.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIIntroEventLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIBGFrontLowerDraw.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\battle_proc.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_BattleResult.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_Kawaigari.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokemonBattleInRegister.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_object_chara.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_WinWild.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SendDataContainer.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SendDataContainerFactory.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SendData.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ServerCommandCalculator.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_AdapterCommandData.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_AdapterCommandGenerator.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_RoyalRankingContainer.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_RoyalRankingCalculator.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PartyAllDeadRecorder.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_ball.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ZenryokuWaza.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ZenryokuWazaStatus.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_IntrudeSystem.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokeID.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_levelup.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_tokusei.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_trainer_data.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_FormChange.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_BattleRoyalShowdown.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\app\BattleUIRecPlayLowerView.cpp">
+      <Filter>ソース\btlv\app</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_BattleResultJudge.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ReinforceSystem.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_loader.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ActionRecorder.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_UltraBeast.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ActionPriority.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_Oteire.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_BossBattle.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_Capture.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_server_TimeLimit.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_RecordSave.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_DiarySave.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_convention_win.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_timer.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\btlv_gauge_shotdown.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_SimpleEffectFailManager.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_ClientSeq_Capture.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_InsertWazaInfoStorage.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_PokeIDRec.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btl_DamageProcParamStack.cpp">
+      <Filter>ソース\server_client</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_common.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_default_power_up.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_field.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_item.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_pos.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_side.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_tokusei.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_waza.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handler\hand_zenryoku.cpp">
+      <Filter>ソース\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiItemJudge.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiJudge.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiPokeChangeJudge.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiScript.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiScriptCommandHandler.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiScriptHandler.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_AiWazaJudge.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_BattleAi.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_BattleAiCommand.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_BattleAiSystem.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tr_ai\btl_SenarioAiZenryokuWazaSelector.cpp">
+      <Filter>ソース\tr_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="source\btlv\BtlvUIRotom.cpp">
+      <Filter>ソース\btlv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\btlv\btlv_seq_com.cdat">
+      <Filter>ソース\btlv</Filter>
+    </None>
+    <None Include="source\btlv\btlv_rotom_se_table.cdat">
+      <Filter>ソース\btlv</Filter>
+    </None>
+  </ItemGroup>
+</Project>

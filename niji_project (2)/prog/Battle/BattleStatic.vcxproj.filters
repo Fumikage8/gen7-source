@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ\btlv">
+      <UniqueIdentifier>{68c91641-5189-43a6-8a67-44a8f5cf8b54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\battle_SetupParam.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\battle_SetupTrainer.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\handicap_battle.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\battle_DefaultPowerUp.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="Background\source\BgSetupUtil.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\battle_SetupParam_Intrude.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\battle_SetupParam_Reinforce.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\handicap_battle.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_SetupParam.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Battle_SetupTrainer.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_ResultData.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_bg_def.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_def.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_encount_msg_def.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_fld_env_def.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\btlv\btlv_debug_param.h">
+      <Filter>ヘッダ\btlv</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_DefaultPowerUp.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="Background\include\BgSetupUtil.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_SetupParam_Intrude.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_SetupParam_Reinforce.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\battle_SetupParam_Record.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

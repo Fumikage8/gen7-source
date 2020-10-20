@@ -1,0 +1,244 @@
+AccessControlDescriptor: 
+  AffinityMask: 1
+  AutoGen: true
+  CoreVersion: 2
+  CpuSpeed: 804MHz
+  DescVersion: 3
+  Descriptor: |
+    AP///wAABAACAAAAAwE1GJ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIAAAAAAAAAkaGlvRklPACRo
+    b3N0aW8wJGhvc3RpbzFjZmc6dQAAAGZzOlVTRVIAZ3NwOjpHcHVoaWQ6VVNF
+    Um5kbTp1AAAAcHhpOmRldgBBUFQ6QQAAAGFjOnUAAAAAYWN0OnUAAABhbTph
+    cHAAAGJvc3M6VQAAY2FtOnUAAABjZWNkOnUAAGRscDpGS0NMZGxwOlNSVlJk
+    c3A6OkRTUGZyZDp1AAAAaHR0cDpDAABpcjpVU0VSAGxkcjpybwAAbWljOnUA
+    AABuZXdzOnUAAG5mYzp1AAAAbmltOmFvYwBud206OlVEU3B0bTp1AAAAcXRt
+    OnUAAABzb2M6VQAAAHNzbDpDAAAAeTJyOnUAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAABOn/rw/7//8ec/APIA8JH/APaR/1D/gf9Y/4H/cP+B/3j/gf8B
+    AQD/AAIA/jICAPz/////////////////////////////////////////////
+    ////////////////////////////////////////AAAAAAAAAAAAAAAAAAAA
+    AAADAAAAAAAAAAAAAAAAAAM=
+  DisableDebug: false
+  EnableInterruptNumbers: []
+  EnableL2Cache: true
+  EnableSystemCalls: 
+    ArbitrateAddress: 34
+    Break: 60
+    CancelTimer: 28
+    ClearEvent: 25
+    ClearTimer: 29
+    CloseHandle: 35
+    ConnectToPort: 45
+    ControlMemory: 1
+    CreateAddressArbiter: 33
+    CreateEvent: 23
+    CreateMemoryBlock: 30
+    CreateMutex: 19
+    CreateSemaphore: 21
+    CreateThread: 8
+    CreateTimer: 26
+    DuplicateHandle: 39
+    ExitProcess: 3
+    ExitThread: 9
+    GetCurrentProcessorNumber: 17
+    GetHandleInfo: 41
+    GetProcessId: 53
+    GetProcessIdOfThread: 54
+    GetProcessIdealProcessor: 6
+    GetProcessInfo: 43
+    GetResourceLimit: 56
+    GetResourceLimitCurrentValues: 58
+    GetResourceLimitLimitValues: 57
+    GetSystemInfo: 42
+    GetSystemTick: 40
+    GetThreadContext: 59
+    GetThreadId: 55
+    GetThreadIdealProcessor: 15
+    GetThreadInfo: 44
+    GetThreadPriority: 11
+    MapMemoryBlock: 31
+    OutputDebugString: 61
+    QueryMemory: 2
+    ReleaseMutex: 20
+    ReleaseSemaphore: 22
+    SendSyncRequest1: 46
+    SendSyncRequest2: 47
+    SendSyncRequest3: 48
+    SendSyncRequest4: 49
+    SendSyncRequest: 50
+    SetThreadPriority: 12
+    SetTimer: 27
+    SignalEvent: 24
+    SleepThread: 10
+    UnmapMemoryBlock: 32
+    WaitSynchronization1: 36
+    WaitSynchronizationN: 37
+  FileSystemAccess: 
+   - Debug
+   - DirectSdmc
+   - DirectSdmcWrite
+  HandleTableSize: 512
+  IORegisterMapping: 
+   - 1ff50000-1ff57fff
+   - 1ff70000-1ff77fff
+  IdealProcessor: 1
+  IoAccessControl: 
+   - UseDirectSdmc
+   - SdApplication
+  MemoryMapping: 
+   - 1f000000-1f5fffff:r
+  MemoryType: Application
+  Priority: 24
+  ProgramId: 0x00040000ffffff00L
+  ReleaseKernelMajor: "02"
+  ReleaseKernelMinor: "50"
+  ServiceAccessControl: 
+   - $hioFIO
+   - $hostio0
+   - $hostio1
+   - cfg:u
+   - fs:USER
+   - gsp::Gpu
+   - hid:USER
+   - ndm:u
+   - pxi:dev
+   - APT:A
+   - ac:u
+   - act:u
+   - am:app
+   - boss:U
+   - cam:u
+   - cecd:u
+   - dlp:FKCL
+   - dlp:SRVR
+   - dsp::DSP
+   - frd:u
+   - http:C
+   - ir:USER
+   - ldr:ro
+   - mic:u
+   - news:u
+   - nfc:u
+   - nim:aoc
+   - nwm::UDS
+   - ptm:u
+   - qtm:u
+   - soc:U
+   - ssl:C
+   - y2r:u
+  Signature: |
+    Bn9DrVla5EwI1PTPTnQGA2EfcJ57YQcMfPnwRFW4HxdsoyqiugmwEuiAX+cC
+    26kyfeyxlZpez0w9bOWEwJtrqCtMd9ILF7LYVRq6RbReQgWwLAab7CuECs1r
+    YIkCT5kbS0cCoSNOMhVyfkqVTzI44Z4kVJVBkj3nWkHBg1gnpNJaxSf+1to7
+    IIqZXmlOs0Jq5ifUY2iXfVcEx4JKdE841k/7nLgyMoouGpncwVJiPvNK2cCe
+    Ij3z1ZVwzXu2BH4SWpMQXBtUXyZG1HUPi4VYgBzVyHilDP8CZk5gjuSx82uN
+    fhNY3qpH5qa3Xs0bQSTU5II2paQcSdlNDbncNEMGFw==
+  StorageId: 
+   - 0
+  SystemMode: 3
+  SystemModeExt: 1
+CommonHeaderKey: 
+  D: |
+    Q0lEENAnjQ7lvGceZ3HgB3rQwnS8dRzx20u55EZHFKr7WH0rTplvMSLeqP27
+    LfESPfHMFyEZ3MEI8VAkOSV5XJl09+EORVg5i3mfD+pZOnL25sWel6yCZKbf
+    hPQGmWtgyPZyIsqwWUU2CH+WCG8TfBV2ORjNA7K0XTER7gCX7EQTW4Q3y8Ca
+    AKbE2QRn6GfgT4WnW1yCzozfeKuaGeKYYCWDfHapZWD3Ngv+RhOjiIbAcAkp
+    99lXiFVUzJ2BeUbBAQIXoahuz7QVYU08i8uNBbvl1B/6rifFsjRY+IErT2f8
+    UwY7ocOZaSq72R2LxJBVikywXGhOhTofxd7WzXTuOQ==
+  DP: |
+    Nln/l/kd1wwaBkOX5EzgxQXqx00m2H7F74wp1Z3m0M2jRP0mULFMIvFkDWvH
+    IVnUVx6T6erVpiHoXJxdaOwV55DvZAItQjJyJVNmrrVcVsRO/bEt/4V9MA5o
+    HwoBAtBVyI8mVLhlYLxJzYKcAhQfvFBzRlWGBTIeP1kqsiOdrSM=
+  DQ: |
+    kLIhQlOTWloLl/5ga14CX3bLsyS8G3d46z7MXtfMekE0tin/H0JVXi4ws3FB
+    glCYaMBUWV0A1qcwWp8mLFc1vqXs91dYYQL5Vvl415cP948qFbJrOeCclZGm
+    gskMctg9DFDKF7v1EFlf9EremwESj+i4v/Xlawm90XOqXdtIZ7E=
+  Exponent: |
+    AQAB
+  InverseQ: |
+    qbqLuTQ62KYLI0NJQXTEr0Fb3wrqpU+n221joSd5XbnLejIdE/7m7W2TseXP
+    RsqqT+fT/jpqc2iHAk2THPkNOf4sxBamFX1XVfD0B2lOAyuXluy82wWRAiwZ
+    WdhF6tuEEVglQ4t0lCzs5Tief2wFOdWzvWq97AQ/XCmeQAWwjLs=
+  Modulus: |
+    1ZPZSqgPJEW3aH7/3t+lDvnXOTCaQ+ORpx6aURDqn6YiCnI9q1Mhy0fZXQJL
+    wNF+eAvtnI0DNaLnw7SI2aV+jnLbpo3+d64nTP/Lvsye6gTm45NnEDG4bFUb
+    r0C0TEC/47iSOR6aKthaIukbF4J4+l7H7T2i4/Ztx04jrCpHgLH9e3hp1aVi
+    fUhaAde+2ysHDFJuETNr5bmKQ0WZnPabH3lMyZlpEBpvZxRoYDCv+D9yD+42
+    kCAhI2lTxe6VzV2TQb5E4NGckN7A2Sp7O30Bj5ykwuYsG1TqdwBzpMEf7NEl
+    QrpqsOQv1UOly7a4QD8ycDxPONZfMlBN1M7t2ccddw==
+  P: |
+    +uaXikzQF4x4bJTpMAh1UHP6ZV/g8UwMcqYr7AQMBaJX3PQRfPkAIWw6VH6q
+    o5E99PshyGcilbGIoz0THnukZCotD5cBLcciIWMV+6MVAnIskzdVpYGbzl5h
+    8JEfTNvI1pjtXuEc7Phh1n9w+5Wk39D3FpvEQUc7+5byTRxAtls=
+  Q: |
+    2esRgprrEXf5tJ3OH5Hz++mRyh2BEmYzLHMRMA1uumdMKwIUDmjuVLACdPaj
+    2QtJo2JSRr5uMkN7ky/kNMoZ91yqQiYqpC0NouDp6PxNjU1Plr8I5YyvrRB4
+    +netVTxDg+3G9mlC7PQqV9YhfxeWfX1bSHIc2u7Nr0uhITBw+BU=
+DefaultSpec: 
+  AccessControlInfo: 
+    AffinityMask: 1
+    FirmwareVersion: 2
+    HandleTableSize: 512
+    IORegisterMapping: 
+     - 1ff50000-1ff57fff
+     - 1ff70000-1ff77fff
+    IdealProcessor: 0
+    MemoryMapping: 
+     - 1f000000-1f5fffff:r
+    Priority: 16
+  BasicInfo: 
+    CompanyCode: "00"
+    Logo: Nintendo
+    Title: default
+  ExeFs: 
+    ReadOnly: 
+     - RO
+    ReadWrite: 
+     - RW
+    Text: 
+     - STUP_ENTRY
+  PlainRegion: 
+   - .module_id
+  Rom: 
+    DefaultReject: 
+     - .*
+    File: 
+     - "*"
+  SystemControlInfo: 
+    Dependency: 
+      ac: 0x0004013000002402L
+      act: 0x0004013000003802L
+      am: 0x0004013000001502L
+      boss: 0x0004013000003402L
+      camera: 0x0004013000001602L
+      cecd: 0x0004013000002602L
+      cfg: 0x0004013000001702L
+      codec: 0x0004013000001802L
+      csnd: 0x0004013000002702L
+      dlp: 0x0004013000002802L
+      dsp: 0x0004013000001a02L
+      friends: 0x0004013000003202L
+      gpio: 0x0004013000001b02L
+      gsp: 0x0004013000001c02L
+      hid: 0x0004013000001d02L
+      http: 0x0004013000002902L
+      i2c: 0x0004013000001e02L
+      ir: 0x0004013000003302L
+      mcu: 0x0004013000001f02L
+      mic: 0x0004013000002002L
+      ndm: 0x0004013000002b02L
+      news: 0x0004013000003502L
+      nfc: 0x0004013000004002L
+      nim: 0x0004013000002c02L
+      nwm: 0x0004013000002d02L
+      pdn: 0x0004013000002102L
+      ps: 0x0004013000003102L
+      ptm: 0x0004013000002202L
+      qtm: 0x0004013020004202L
+      ro: 0x0004013000003702L
+      socket: 0x0004013000002e02L
+      spi: 0x0004013000002302L
+      ssl: 0x0004013000002f02L
+    StackSize: 262144
+  TitleInfo: 
+    Category: Patch
+    TargetCategory: Application

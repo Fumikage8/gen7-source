@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ApplicationSystem">
+      <UniqueIdentifier>{49c71361-c708-4d91-a12e-9ef7ede635dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{81405e2e-ccee-458c-ab7a-a942858e1c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{095c33ec-d770-435e-aa7c-8dcc5c7bc3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View\SubView">
+      <UniqueIdentifier>{deb39309-253d-4b97-90e1-a9bb673b7059}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\NBRAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NBRProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\NBRApplicationSystem.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\NBRBuilder.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\NBRFrameFactory.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\NBRFrameSwitcher.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NBRFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NBRFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NBRResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\NBRParentView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NBRFrameBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRUpperViewVs.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRUpperViewPlayerInfoSimple.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRUpperViewPlayerInfoDefault.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerView2Button.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerView2ButtonListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\NBRSoundDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\NBRUpperViewBase.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\NBRViewDefine.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\NBRLowerViewBase.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewTeamSelect.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewTeamSelectListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewMultiSelect.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewMultiSelectListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRRuleSelectorDecideFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRRuleSelectorPriorityFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRBattleStartFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRContinueFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRMultiParentWaitFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRMultiPlayerSelectFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRRuleSelectAppCallFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRRuleSelectAppEndFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRRuleSelectWaitFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRTeamSelectAppEndFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRTeamSelectFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRTeamSelectWaitFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\NBRWork.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewReturnButton.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewReturnButtonListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRAppEndFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewMessageMenu.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRLowerViewMessageMenuListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\NBRUpperViewRegulation.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRRuleSelectAppEndCancelFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\NBRPokePartyCheckFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ApplicationSystem\NBRApplicationSystem.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\NBRBuilder.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\NBRFrameFactory.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\NBRFrameSwitcher.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NBRProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\NBRParentView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\NBRFrameBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRUpperViewVs.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRUpperViewPlayerInfoSimple.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRUpperViewPlayerInfoDefault.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRLowerView2Button.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\NBRUpperViewBase.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\NBRLowerViewBase.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRLowerViewTeamSelect.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRLowerViewMultiSelect.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRRuleSelectorDecideFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRRuleSelectorPriorityFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRBattleStartFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRContinueFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRMultiParentWaitFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRMultiPlayerSelectFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRRuleSelectAppCallFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRRuleSelectAppEndFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRRuleSelectWaitFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRTeamSelectAppEndFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRTeamSelectFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRTeamSelectWaitFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\NBRWork.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRLowerViewReturnButton.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRAppEndFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRLowerViewMessageMenu.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\NBRUpperViewRegulation.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRRuleSelectAppEndCancelFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\NBRPokePartyCheckFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

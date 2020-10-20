@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ApplicationSystem">
+      <UniqueIdentifier>{5077d8ed-bb9d-4be7-a89e-2f4f24601fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{028773d7-c53d-4c4f-b804-e98b1632212c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{4b8f437f-0a2e-46b5-be13-2e827a9e859e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View\SubView">
+      <UniqueIdentifier>{e93dd590-246a-4f08-acec-2e7f00a578d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\JoinFestaSubScreenProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaSubScreenAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaSubScreenFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaSubScreenFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaSubScreenResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\JoinFestaSubScreenApplicationSystem.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\JoinFestaSubScreenBuilder.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\JoinFestaSubScreenFrameFactory.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\JoinFestaSubScreenFrameSwitcher.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaSubScreenDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaSubScreenParentView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ApplicationSystem\JoinFestaSubScreenWork.h">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenMainLowerInputListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenMainLowerView.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenSelectLowerInputListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenSelectLowerView.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaSubScreenFrameBase.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenMainFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaSubScreenSoundDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenAskEndFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenTradeFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenBgLowerView.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenInvitationLowerInputListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenInvitationLowerView.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenInvitationFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenBattleFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenBattleRuleFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenAttractionLowerInputListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenAttractionLowerView.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenAttractionFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenAttractionRetireFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenAlertLowerInputListener.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\SubView\JoinFestaSubScreenAlertLowerView.h">
+      <Filter>ソース\View\SubView</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenAlertFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenTutorialFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\RotomFade.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaSubScreenBgOnlyFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\JoinFestaSubScreenProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\JoinFestaSubScreenApplicationSystem.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\JoinFestaSubScreenBuilder.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\JoinFestaSubScreenFrameFactory.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\JoinFestaSubScreenFrameSwitcher.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaSubScreenParentView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplicationSystem\JoinFestaSubScreenWork.cpp">
+      <Filter>ソース\ApplicationSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\JoinFestaSubScreenMainLowerView.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\JoinFestaSubScreenSelectLowerView.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\JoinFestaSubScreenFrameBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenMainFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenAskEndFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenTradeFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\JoinFestaSubScreenBgLowerView.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\JoinFestaSubScreenInvitationLowerView.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenInvitationFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenBattleFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenBattleRuleFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\JoinFestaSubScreenAttractionLowerView.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenAttractionFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenAttractionRetireFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\SubView\JoinFestaSubScreenAlertLowerView.cpp">
+      <Filter>ソース\View\SubView</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenAlertFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenTutorialFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\RotomFade.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaSubScreenBgOnlyFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

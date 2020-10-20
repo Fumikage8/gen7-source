@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ExpTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PersonalDataTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WazaDataTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ObataTestBase.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerTypeDataTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerDataTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerMessageTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TamagoWazaTest.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ExpTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PersonalDataTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WazaDataTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObataTestBase.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TrainerTypeDataTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TrainerDataTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TrainerMessageTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TamagoWazaTest.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

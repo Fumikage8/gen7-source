@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Zukan">
+      <UniqueIdentifier>{682104f6-c9de-496f-b49a-0d8c5f0c3422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Zukan">
+      <UniqueIdentifier>{8136b916-b9b8-4fcc-b983-bfaf9e969dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Config">
+      <UniqueIdentifier>{e3c65cd6-a763-4d96-9cb0-5a8e6a4577c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Config">
+      <UniqueIdentifier>{8f655652-4abf-4edf-90c5-d6a6da830615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Bag">
+      <UniqueIdentifier>{3a41f221-f0ab-461c-b163-daf4304d0143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Bag">
+      <UniqueIdentifier>{f24f0d60-eab8-476e-bcdf-00f1adc1b244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\PokeList">
+      <UniqueIdentifier>{eb10496a-4a74-4888-b009-1805550e12d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\PokeList">
+      <UniqueIdentifier>{266f5d03-45de-4e65-8310-8d077d1d5925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Island">
+      <UniqueIdentifier>{21f3dfd7-7010-481f-95bb-814afa324d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Island">
+      <UniqueIdentifier>{ca64f96d-80e3-4406-be00-67f6d809444a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FieldDemo">
+      <UniqueIdentifier>{d586017d-4c0a-4336-8134-ad6d3c10ca39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FieldDemo">
+      <UniqueIdentifier>{998aca77-60bb-467e-b048-233098ea8cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\CaptureTutorial">
+      <UniqueIdentifier>{1a38492c-f917-4a20-9836-ab9ec9dafc24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\CaptureTutorial">
+      <UniqueIdentifier>{3a2af1ce-271e-4c72-8b33-c401d9d5e458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Box">
+      <UniqueIdentifier>{cae4f0f6-3602-4528-bb18-d1e4797ae1f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Box">
+      <UniqueIdentifier>{dd2ed2a7-8737-41ab-9b34-df0f9fa18096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\GameOver">
+      <UniqueIdentifier>{ac267e36-dcc4-422a-b4ba-041ea27efce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\GameOver">
+      <UniqueIdentifier>{ca15f420-465a-442a-8671-6e02ebaab357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FieldMenu">
+      <UniqueIdentifier>{e22e08bf-c1cd-4339-8b3d-9900bf21e52f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FieldMenu">
+      <UniqueIdentifier>{78cb273d-134b-4308-b766-39574c5d5926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\ZukanRegister">
+      <UniqueIdentifier>{8cf66665-0ea9-421e-96a8-e11ad18600e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ZukanRegister">
+      <UniqueIdentifier>{9c8855cf-4b77-44f6-945e-40c084142a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\TrainerPhoto">
+      <UniqueIdentifier>{eb263f6c-64c1-4070-a92d-c1c91662f92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\TrainerPhoto">
+      <UniqueIdentifier>{d53aaada-799e-4a98-a81f-837a00503fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FieldPokeList">
+      <UniqueIdentifier>{2593caed-e356-47e8-8c89-eb5c1f7e3e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FieldPokeList">
+      <UniqueIdentifier>{08f0e21f-f196-4016-9cce-0162e64445e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Shop">
+      <UniqueIdentifier>{c763f132-9909-41a2-a9b2-1cacfe23ca84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Shop">
+      <UniqueIdentifier>{bf54a721-d322-4213-b900-b76a28398a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Kisekae">
+      <UniqueIdentifier>{bd8fa7a1-b250-4e6e-9111-4e99fa1b5a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Kisekae">
+      <UniqueIdentifier>{528bef18-e4f4-48e2-8ee1-c96c70ce9d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\TownMap">
+      <UniqueIdentifier>{f4a53294-b859-4b44-906a-e82b63169884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\TownMap">
+      <UniqueIdentifier>{dacedd95-804c-4828-9a2b-a33afe4c6872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Movie">
+      <UniqueIdentifier>{a81e4645-2ea5-42f2-858e-60dd78f0e3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\PokeParure">
+      <UniqueIdentifier>{d1ea7253-6bcd-4a2e-a89a-a92a990d41a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\PokeParure">
+      <UniqueIdentifier>{f2b51c48-0073-4e99-8bf2-8c7941658eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BattleRoyalResult">
+      <UniqueIdentifier>{677408db-301e-4a68-9fa3-36deddf7dfa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\BattleRoyalResult">
+      <UniqueIdentifier>{f5a562fc-cd5c-449d-a4d9-0922804147d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\TrainerPass">
+      <UniqueIdentifier>{b869f3fb-3a3b-4fb2-ac17-ad73a97095f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\TrainerPass">
+      <UniqueIdentifier>{ae1d6e49-f0d1-46a9-9ba2-22cabe39e54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Movie">
+      <UniqueIdentifier>{7898204a-fe5b-440b-beb8-eff28e90b1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\PokeTrade">
+      <UniqueIdentifier>{c8fb61da-fafd-404e-81e8-18af6cee49e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\PokeTrade">
+      <UniqueIdentifier>{6778ba53-d9b5-4492-870b-c613613c3592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\BattleTree">
+      <UniqueIdentifier>{49969c38-3fe9-4775-be9e-90fb29c0bb4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\BattleTree">
+      <UniqueIdentifier>{7181efe5-ddea-4736-967f-3ea116446c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\SuperTraining">
+      <UniqueIdentifier>{e56aacb6-7bfc-46ee-b95e-b123d5285a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\SuperTraining">
+      <UniqueIdentifier>{64e22aa0-4773-4fc4-af59-daa745252264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FieldStrInput">
+      <UniqueIdentifier>{ffafc998-75e5-4927-804f-2fa6554d3e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FieldStrInput">
+      <UniqueIdentifier>{3fc4c0ee-ebf6-4796-b92e-988cc29a3319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\WazaOmoidasi">
+      <UniqueIdentifier>{6ad99036-e106-4a28-901e-c35d3315a045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\WazaOmoidasi">
+      <UniqueIdentifier>{9348316a-848a-4dd2-93a8-1ae8dec4da93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Congrats">
+      <UniqueIdentifier>{b0cef16a-c6e0-4c07-82c0-224a3f00c6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Congrats">
+      <UniqueIdentifier>{e596fc28-d3e5-4429-bbb7-c134ae835578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\FinderStudio">
+      <UniqueIdentifier>{b65ff585-1400-4682-ae0e-a60a89d8ddc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\FinderStudio">
+      <UniqueIdentifier>{d5ae9018-d688-4aaa-bfda-f113077f84b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\MantainSurf">
+      <UniqueIdentifier>{080c9be8-a644-4224-ba88-ddaa9896ae35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\LunaSolDive">
+      <UniqueIdentifier>{621b3338-9d27-4150-a134-4a9be7195aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\MantainSurf">
+      <UniqueIdentifier>{c502f91c-b800-4fb5-8dd5-272cdc13e757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\LunaSolDive">
+      <UniqueIdentifier>{32cf6322-d6c4-41a1-b489-23808e1149e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\MyAlbum">
+      <UniqueIdentifier>{2cd0d15d-2719-4413-b89a-e5ce32ba8f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\MyAlbum">
+      <UniqueIdentifier>{649c7dd4-3aed-417d-8a1b-8407ac23b1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Staffroll">
+      <UniqueIdentifier>{e328e3a7-afe6-4e08-87d0-555ce45c412d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Staffroll">
+      <UniqueIdentifier>{e7621d6d-eeaa-4b24-bb5a-090dc7983fbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Zukan\ZukanEvent.cpp">
+      <Filter>ソース\Zukan</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Config\ConfigEvent.cpp">
+      <Filter>ソース\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Bag\BagEvent.cpp">
+      <Filter>ソース\Bag</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeList\PokeListEvent.cpp">
+      <Filter>ソース\PokeList</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeIsland\PokeIslandEvent.cpp">
+      <Filter>ソース\Island</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldDemo\FieldDemoEvent.cpp">
+      <Filter>ソース\FieldDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CaptureTutorial\CaptureTutorialEvent.cpp">
+      <Filter>ソース\CaptureTutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Bag\BagGamedata.cpp">
+      <Filter>ソース\Bag</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Box\BoxEvent.cpp">
+      <Filter>ソース\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameOver\GameOverEvent.cpp">
+      <Filter>ソース\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldMenu\FieldMenuGamedata.cpp">
+      <Filter>ソース\FieldMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ZukanRegister\ZukanRegisterEvent.cpp">
+      <Filter>ソース\ZukanRegister</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerPhoto\TrainerPhotoEven.cpp">
+      <Filter>ソース\TrainerPhoto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Box\source\BoxAppSetup.cpp">
+      <Filter>ソース\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Shop\ShopBuyEvent.cpp">
+      <Filter>ソース\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Shop\ShopSellEvent.cpp">
+      <Filter>ソース\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Kisekae\KisekaeEvent.cpp">
+      <Filter>ソース\Kisekae</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TownMap\TownMapEvent.cpp">
+      <Filter>ソース\TownMap</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Movie\MovieEvent.cpp">
+      <Filter>ソース\Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeParure\PokeParureEvent.cpp">
+      <Filter>ソース\PokeParure</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleRoyalResult\BattleRoyalResultEvent.cpp">
+      <Filter>ソース\BattleRoyalResult</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerPass\TrainerPassEvent.cpp">
+      <Filter>ソース\TrainerPass</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrainerPass\TrainerPassGamedata.cpp">
+      <Filter>ソース\TrainerPass</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeTrade\PokeTradeEvent.cpp">
+      <Filter>ソース\PokeTrade</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BattleTree\BattleTreeEvent.cpp">
+      <Filter>ソース\BattleTree</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SuperTraining\SuperTrainingEvent.cpp">
+      <Filter>ソース\SuperTraining</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldStrInput\FieldStrInputEvent.cpp">
+      <Filter>ソース\FieldStrInput</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WazaOmoidasi\WazaOmoidasiEvent.cpp">
+      <Filter>ソース\WazaOmoidasi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Congrats\CongratsEvent.cpp">
+      <Filter>ソース\Congrats</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Box\BoxEventNoNet.cpp">
+      <Filter>ソース\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldPokeList\FieldPokeListEvent.cpp">
+      <Filter>ソース\FieldPokeList</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldMenu\RideDemoEvent.cpp">
+      <Filter>ソース\FieldMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PokeIsland\ResortDataManager.cpp">
+      <Filter>ソース\Island</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinderStudio\FinderStudioCaptureEvent.cpp">
+      <Filter>ソース\FinderStudio</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MantainSurf\MantainSurfEvent.cpp">
+      <Filter>ソース\MantainSurf</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LunaSolDive\LunaSolDiveEvent.cpp">
+      <Filter>ソース\LunaSolDive</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MyAlbum\MyAlbumEvent.cpp">
+      <Filter>ソース\MyAlbum</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Staffroll\StaffrollEvent.cpp">
+      <Filter>ソース\Staffroll</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Zukan\ZukanEvent.h">
+      <Filter>インクルード\Zukan</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\ConfigEvent.h">
+      <Filter>インクルード\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Bag\BagEvent.h">
+      <Filter>インクルード\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeList\PokeListEvent.h">
+      <Filter>インクルード\PokeList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeIsland\PokeIslandEvent.h">
+      <Filter>インクルード\Island</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldDemo\FieldDemoEvent.h">
+      <Filter>インクルード\FieldDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaptureTutorial\CaptureTutorialEvent.h">
+      <Filter>インクルード\CaptureTutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Bag\BagGamedata.h">
+      <Filter>インクルード\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box\BoxEvent.h">
+      <Filter>インクルード\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameOver\GameOverEvent.h">
+      <Filter>インクルード\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldMenu\FieldMenuGamedata.h">
+      <Filter>インクルード\FieldMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ZukanRegister\ZukanRegisterEvent.h">
+      <Filter>インクルード\ZukanRegister</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TrainerPhoto\TrainerPhotoEvent.h">
+      <Filter>インクルード\TrainerPhoto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Box\include\BoxAppSetup.h">
+      <Filter>インクルード\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldPokeList\FieldPokeListEvent.h">
+      <Filter>インクルード\FieldPokeList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Shop\ShopBuyEvent.h">
+      <Filter>インクルード\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Shop\ShopSellEvent.h">
+      <Filter>インクルード\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Kisekae\KisekaeEvent.h">
+      <Filter>インクルード\Kisekae</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TownMap\TownMapEvent.h">
+      <Filter>インクルード\TownMap</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeParure\PokeParureEvent.h">
+      <Filter>インクルード\PokeParure</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleRoyalResult\BattleRoyalResultEvent.h">
+      <Filter>インクルード\BattleRoyalResult</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TrainerPass\TrainerPassEvent.h">
+      <Filter>インクルード\TrainerPass</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TrainerPass\TrainerPassGamedata.h">
+      <Filter>インクルード\TrainerPass</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box\BoxEventListener.h">
+      <Filter>インクルード\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TownMap\TownMapEventListener.h">
+      <Filter>インクルード\TownMap</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Movie\MovieAppParam.h">
+      <Filter>インクルード\Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Movie\MovieEvent.h">
+      <Filter>インクルード\Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Movie\MovieEventListener.h">
+      <Filter>インクルード\Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeTrade\PokeTradeEvent.h">
+      <Filter>インクルード\PokeTrade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BattleTree\BattleTreeEvent.h">
+      <Filter>インクルード\BattleTree</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SuperTraining\SuperTrainingEvent.h">
+      <Filter>インクルード\SuperTraining</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldStrInput\FieldStrInputEvent.h">
+      <Filter>インクルード\FieldStrInput</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WazaOmoidasi\WazaOmoidasiEvent.h">
+      <Filter>インクルード\WazaOmoidasi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Congrats\CongratsEvent.h">
+      <Filter>インクルード\Congrats</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box\BoxEventNoNet.h">
+      <Filter>インクルード\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldMenu\RideDemoEvent.h">
+      <Filter>インクルード\FieldMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PokeIsland\ResortDataManager.h">
+      <Filter>インクルード\Island</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MantainSurf\MantainSurfEvent.h">
+      <Filter>インクルード\MantainSurf</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LunaSolDive\LunaSolDiveEvent.h">
+      <Filter>インクルード\LunaSolDive</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MantainSurf\MantainSurfParam.h">
+      <Filter>インクルード\MantainSurf</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LunaSolDive\LunaSolDiveParam.h">
+      <Filter>インクルード\LunaSolDive</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MyAlbum\MyAlbumEvent.h">
+      <Filter>インクルード\MyAlbum</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Staffroll\StaffrollEvent.h">
+      <Filter>インクルード\Staffroll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FinderStudio\FinderStudioCaptureEvent.h">
+      <Filter>インクルード\FinderStudio</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

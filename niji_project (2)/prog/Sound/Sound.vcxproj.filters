@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部参照">
+      <UniqueIdentifier>{2b14d729-fcfa-455f-a5f7-0b34376b5992}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\BGMLevelManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BGMPrepareThread.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BGMManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EnvSEManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PMSoundSystem.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SELevelManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sound3D.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundBGM.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundHeap.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundPlayer.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundSE.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundVoice.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\VoicePlayer.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundMiddleIDConverter.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sound.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\soundSystem.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HioSoundEditor.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundUpdateThread.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BGMLevelManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\exec\conv_header\niji_conv_header\sound\SoundDefine.h">
+      <Filter>外部参照</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BGMPrepareThread.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BGMManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\exec\conv_header\niji_conv_header\sound\SoundMiddleID.h">
+      <Filter>外部参照</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EnvSEManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PMSoundSystem.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELevelManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundMiddleIDConverter.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sound.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundLocal.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VoicePlayer.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\exec\conv_header\niji_conv_header\sound\SoundMiddleIDTable.h">
+      <Filter>外部参照</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HioSoundEditor.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundUpdateThread.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

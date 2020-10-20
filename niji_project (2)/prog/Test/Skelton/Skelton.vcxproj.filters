@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{b073f494-6dd9-46d9-a187-ae06b4127e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{41074a46-6da3-4c0d-9348-87200a440dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Field">
+      <UniqueIdentifier>{b7b1a5c5-8584-4614-a15b-2cb4458dbfcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Field">
+      <UniqueIdentifier>{947878c1-c7d5-46fb-bd90-e09c446d2476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Field\Camera">
+      <UniqueIdentifier>{ca16b37d-3454-4b7c-b542-3495c7caf80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Field\Camera">
+      <UniqueIdentifier>{32a3a443-13e0-4e5c-b1b8-1dbb10edc51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Field\MapJump">
+      <UniqueIdentifier>{998517fd-7ff0-4a69-b582-56379ccc5f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Field\MapJump">
+      <UniqueIdentifier>{e36db208-14a5-4b4a-9e95-f47f97ad988e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\SkeltonProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\SkeltonFieldMapBlock.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SkeltonRscManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SkeltonDebugInfo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\SkeltonFieldTransform.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\SkeltonModel.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\SkeltonModelManager.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\SkeltonCodePlayer.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\SkeltonPlayerControl.cpp">
+      <Filter>ソース\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\Camera\SkeltonCamera.cpp">
+      <Filter>ソース\Field\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\Camera\SkeltonCameraDataManager.cpp">
+      <Filter>ソース\Field\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\Camera\SkeltonCameraUtility.cpp">
+      <Filter>ソース\Field\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SkeltonNameManglingManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\MapJump\SkeltonJumpDataManager.cpp">
+      <Filter>インクルード\Field\MapJump</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\MapJump\SkeltonJumpCollisionManager.cpp">
+      <Filter>インクルード\Field\MapJump</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\MapJump\SkeltonFileReader.cpp">
+      <Filter>インクルード\Field\MapJump</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Field\MapJump\SkeltonEventMapJump.cpp">
+      <Filter>インクルード\Field\MapJump</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SkeltonProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonFieldMapBlock.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonFieldTransform.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkeltonRscManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkeltonCharaDefine.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkeltonDebugInfo.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonModel.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonModelManager.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonCode.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonModelDefine.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonPlayerControl.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\SkeltonCodePlayer.h">
+      <Filter>インクルード\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\Camera\SkeltonCamera.h">
+      <Filter>インクルード\Field\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\Camera\SkeltonCameraDataManager.h">
+      <Filter>インクルード\Field\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\Camera\SkeltonCameraType.h">
+      <Filter>インクルード\Field\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\Camera\SkeltonCameraUtility.h">
+      <Filter>インクルード\Field\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkeltonNameManglingManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\MapJump\SkeltonXmlTool.h">
+      <Filter>ソース\Field\MapJump</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\MapJump\SkeltonJumpDataManager.h">
+      <Filter>ソース\Field\MapJump</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\MapJump\SkeltonFileReader.h">
+      <Filter>ソース\Field\MapJump</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\MapJump\SkeltonJumpCollisionManager.h">
+      <Filter>ソース\Field\MapJump</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Field\MapJump\SkeltonEventMapJump.h">
+      <Filter>ソース\Field\MapJump</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

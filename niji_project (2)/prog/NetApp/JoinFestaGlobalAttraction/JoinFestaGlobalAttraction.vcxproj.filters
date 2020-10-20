@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Frame">
+      <UniqueIdentifier>{6b015fd8-3106-4e66-bd29-6fa9001a5626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\View">
+      <UniqueIdentifier>{f26c7111-d6ad-4863-ad94-7598376a8f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\System">
+      <UniqueIdentifier>{d8aeaeb6-8787-46c3-b29a-f9694e3bb906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\RequestSequence">
+      <UniqueIdentifier>{9f4953c5-4aa8-48b4-8013-50b9bd773d89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\JoinFestaGlobalAttractionAppParam.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\JoinFestaGlobalAttractionProc.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaGlobalAttractionDefine.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaGlobalAttractionFrameID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaGlobalAttractionFrameResult.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\JoinFestaGlobalAttractionResourceID.h">
+      <Filter>ソース</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionApplicationSystem.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionBuilder.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionFrameFactory.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionFrameSwitcher.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionViewList.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionViewObjects.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionViewSystemAccessor.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System\JoinFestaGlobalAttractionWork.h">
+      <Filter>ソース\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaGlobalAttractionFrameBase.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Frame\JoinFestaGlobalAttractionMainFrame.h">
+      <Filter>ソース\Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionInfoUpperView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionSelectListLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionSelectListLowerViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionBGLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionBGUpperView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionDetailLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionDetailLowerViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionMessageMenuLowerView.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\View\JoinFestaGlobalAttractionMessageMenuLowerViewListener.h">
+      <Filter>ソース\View</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\JoinFestaGlobalAttractionDownloadRequestSequence.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\JoinFestaGlobalAttractionDownloadResponseListener.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RequestSequence\JoinFestaGlobalAttractionRequestFacade.h">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\JoinFestaGlobalAttractionProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionApplicationSystem.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionBuilder.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionFrameFactory.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionFrameSwitcher.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionViewList.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionViewObjects.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionViewSystemAccessor.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\System\JoinFestaGlobalAttractionWork.cpp">
+      <Filter>ソース\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaGlobalAttractionFrameBase.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Frame\JoinFestaGlobalAttractionMainFrame.cpp">
+      <Filter>ソース\Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaGlobalAttractionInfoUpperView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaGlobalAttractionSelectListLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaGlobalAttractionBGLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaGlobalAttractionBGUpperView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaGlobalAttractionDetailLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\View\JoinFestaGlobalAttractionMessageMenuLowerView.cpp">
+      <Filter>ソース\View</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\JoinFestaGlobalAttractionDownloadRequestSequence.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RequestSequence\JoinFestaGlobalAttractionRequestFacade.cpp">
+      <Filter>ソース\RequestSequence</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{ae651375-940a-4dac-b6cc-5c8c2b24ec6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダ">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\parts">
+      <UniqueIdentifier>{8b379127-0c3e-444a-a87f-bdfda78e512d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ConfigProc.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConfigFrame.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ConfigLowerUIDraw.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ConfigUpperUIDraw.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\parts\ConfigLowerUIListItemObj.cpp">
+      <Filter>ソース\parts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConfigUIViewPool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConfigProc.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigFrame.h">
+      <Filter>ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ConfigLowerUIDraw.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ConfigUpperUIDraw.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\parts\ConfigLowerUIListItemObj.h">
+      <Filter>ソース\parts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ConfigUIViewPool.h" />
+  </ItemGroup>
+</Project>

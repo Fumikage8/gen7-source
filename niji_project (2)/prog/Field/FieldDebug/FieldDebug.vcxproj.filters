@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="インクルード">
+      <UniqueIdentifier>{a723cb9d-545b-4c57-8dd3-b7ee25260a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{cafa08b6-a32e-41ed-8cf7-a80f06675b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\Menu">
+      <UniqueIdentifier>{e80b908a-94b1-4b29-b6a8-9d5dac5d5612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="インクルード\Menu">
+      <UniqueIdentifier>{166dc699-8f5f-4eb6-a877-120e2f7c8614}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugCollisionRenderManager.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugCollisionRenderPath.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugMenu.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Menu\FieldDebugMenuAttrDispEditor.cpp">
+      <Filter>ソース\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugPokeFinder.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugEffect.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugMapJump.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugInfo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldDebugTrafficInfo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugBattleInst.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugFishing.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugMenuCameraGroup.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugDispInfo.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldDebugCustomMapJumpControl.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FieldRo\source\Debug\FieldDebugRotomPower.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FieldDebugMantainRecord.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugCollisionRenderManager.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugCollisionRenderPath.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugMenu.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Menu\FieldDebugMenuAttrDispEditor.h">
+      <Filter>インクルード\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugPokeFinder.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugEffect.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugMapJump.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugInfo.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldDebugTrafficInfo.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldDebugEditorStruct.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugBattleInst.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugFishing.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugMenuCameraGroup.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugDispInfo.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldDebugCustomMapJumpControl.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FieldRo\include\Debug\FieldDebugRotomPower.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FieldDebugMantainRecord.h">
+      <Filter>インクルード</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
