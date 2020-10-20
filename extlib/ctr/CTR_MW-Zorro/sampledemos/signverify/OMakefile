@@ -1,0 +1,31 @@
+#!/usr/bin/env omake
+#----------------------------------------------------------------------------
+# Project:  zorro
+# File:     OMakefile
+#
+# Copyright (C)2009 Nintendo Co., Ltd.  All rights reserved.
+#
+# These coded instructions, statements, and computer programs contain
+# proprietary information of Nintendo of America Inc. and/or Nintendo
+# Company Ltd., and are protected by Federal copyright law. They may
+# not be disclosed to third parties or copied or duplicated in any form,
+# in whole or in part, without the prior written consent of Nintendo.
+#
+# $Rev:$
+#----------------------------------------------------------------------------
+SUPPORTED_TARGETS   =   CTR-T*.Process.MPCore.*
+
+SOURCES[]           =   \
+                        main.cpp
+
+TARGET_PROGRAM      =   signverify
+
+INCLUDES           += $(CTRMW_ZORRO_ROOT)$(DIRSEP)include
+LIBFILES    +=  $`(addprefix $(CTRMW_ZORRO_ROOT)$(DIRSEP)libraries$(DIRSEP)$(config.getTargetSubDirectory true)$(DIRSEP), libmw_zorro)
+
+TITLE       =       # Specifies the application title.
+ROMFS_ROOT  =       # Specifies the ROMFS root path.
+
+include $(ROOT_OMAKE)/modulerules
+
+build: $(DEFAULT_TARGETS)

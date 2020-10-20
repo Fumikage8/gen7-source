@@ -1,0 +1,82 @@
+#!/usr/bin/env omake
+#----------------------------------------------------------------------------
+# Project:  Horizon
+# File:     OMakeroot
+#
+# Copyright (C)2009 Nintendo Co., Ltd.  All rights reserved.
+#
+# These coded instructions, statements, and computer programs contain
+# proprietary information of Nintendo of America Inc. and/or Nintendo
+# Company Ltd., and are protected by Federal copyright law.  They may
+# not be disclosed to third parties or copied or duplicated in any form,
+# in whole or in part, without the prior written consent of Nintendo.
+#
+# $Rev:$
+#----------------------------------------------------------------------------
+
+# Description of the Directory Structure
+#
+# a) When the source code is located directly below the root directory
+#    Example:
+#     /OMakeroot
+#     /foo/bar/OMakefile
+#
+#    Result:
+#     Objects and images are generated below the same directory as OMakefile.
+#
+#     /foo/bar/objects/...
+#     /foo/bar/images/..
+#
+#
+# b) When the source code is located below 'sources'
+#    Example:
+#     /OMakeroot
+#     /sources/foo/bar/OMakefile
+#
+#    Result:
+#     Objects and images are generated below the root directory.
+#
+#     /objects/foo/bar/...
+#     /images/foo/bar/...
+#
+#
+
+# Gets the root environment variables
+public.HORIZON_ROOT =
+if $(defined-env HORIZON_ROOT)
+    HORIZON_ROOT = $(absname $(getenv HORIZON_ROOT))
+    export
+
+if $(defined-env CTRSDK_ROOT)
+    CTRSDK_ROOT = $(absname $(getenv CTRSDK_ROOT))
+    if $(and $(defined-env HORIZON_ROOT), $(not $(equal $(HORIZON_ROOT), $(CTRSDK_ROOT))))
+        eprintln(!   The HORIZON_ROOT and CTRSDK_ROOT environment variables do not match.)
+        eprintln(!   Either set them to the same value or define only one of these environment variables.)
+        exit(1)
+    HORIZON_ROOT = $(CTRSDK_ROOT)
+    export
+
+if $(not $(HORIZON_ROOT))
+    eprintln(!   The $$CTRSDK_ROOT environment variable is not defined.)
+    exit(1)
+
+
+if $(defined-env CTRMW_ZORRO_ROOT)
+   CTRMW_ZORRO_ROOT = $(absname $(getenv CTRMW_ZORRO_ROOT))
+   export
+
+if $(not $(defined CTRMW_ZORRO_ROOT))
+   eprintln(!   CTRMW_ZORRO_ROOT is not defined.)
+   exit(1)
+
+include $(HORIZON_ROOT)/build/omake/commondefs
+
+DefineCommandVars()
+
+.PHONY: all build clean clobber
+.PHONY: run run-scripts
+
+#
+# Reads the OMakefile
+#
+.SUBDIRS: signverify

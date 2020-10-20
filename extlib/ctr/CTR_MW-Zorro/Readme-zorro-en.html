@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Zorro Readme</title>
+<style type="text/css">
+<!--
+body {
+/*
+  font-size         : 10pt;
+*/
+  font-weight       : normal;
+  color             : #000000;
+  margin            : 8px;
+}
+
+div {
+  width             : 98%;
+  white-space       : nowrap;
+}
+
+div.title {
+  text-align        : left;
+  font-weight       : bold;
+/*
+  font-size         : 16pt;
+*/
+  font-size         : 150%;
+  color             : #202020;
+  border-style      : double;
+  border-width      : 8px;
+  /* Color of the title border */
+  border-color      : #cd202c;
+
+  margin            : 4px;
+  padding           : 4px;
+}
+
+h1 {
+  font-weight       : bold;
+/*
+  font-size         : 16pt;
+*/
+  font-size         : 150%;
+  border-style      : none none solid double;
+  border-width      : 0px 0px 2px 8px;
+  /* Color of the heading line */
+  border-color      : #cd202c;
+
+  margin-left       : 2px;
+  padding-left      : 4px;
+}
+
+h2 {
+  font-weight       : bold;
+  font-size         : 12pt;
+  border-style      : none none solid none;
+  border-width      : 0px 0px 1px 0px;
+  /* Color of the heading line */
+  border-color      : #cd202c;
+
+  margin-left       : 4px;
+  padding-left      : 4px;
+}
+
+p {
+  margin-left       : 4px;
+}
+
+dl {
+  margin-left       : 4px;
+}
+
+
+
+-->
+</style>
+
+</head>
+<body>
+<!-- At release, delete the comments that relate to creating the package. -->
+<a name="top"></a>
+
+<div class="title">
+Readme-Zorro-en.html<br>
+<br>
+[Zorro] 1.1.0<br>
+</div>
+
+<h1>Contents</h1>
+<ol>
+<li><a href="#ss01">Introduction</a></li>
+<li><a href="#ss02">Notes</a></li>
+<li><a href="#ss03">Copyrights and Other Legal Disclaimers</a></li>
+<li><a href="#ss04">System Requirements</a></li>
+<li><a href="#ss05">Operating Environment</a></li>
+<li><a href="#ss06">Installation</a></li>
+<li><a href="#ss07">Known Bugs</a></li>
+<li><a href="#ss08">Package Structure</a></li>
+<li><a href="#ss09">Associated Documents</a></li>
+<li><a href="#ss10">Revision History</a></li>
+</ol>
+
+<h1>1. <a name="ss01">Introduction</a></h1>
+<p>
+This package is Zorro.<br>
+This package provides functions to sign and verify unique signatures with short overhead using OPSSR style signatures, with RSA, AES-CMC for the permutation function and SHA1 for the hash function.<br>
+The signatures are unique: for a given message and key, there is only one signature of it, that is why one should not use this package for key-exchange protocols.<br>
+The signature is public, even if it seems encrypted, one can extract the message using only public information.
+</p>
+<p>
+This package may be used in the retail product.<br>
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+
+<h1>2. <a name="ss02">Notes</a></h1>
+<!-- Provide any precautions on handling the package (or patch). -->
+<!-- Always make the user aware of any precautions, particularly if misoperation can make the device inoperable. -->
+<!-- Add any notes or precautions about implementation (programming issues) to the API Reference Manual. -->
+<p>
+The perl scripts <a href="./tools/sign.pl">sign.pl</a> and <a href="./tools/verify.pl">verify.pl</a> in the tools subdirectory implement this signature scheme. To use these scripts, installation of some depedencies are required. These dependencies are not packaged within this package and must be downloaded separately. Informations on how to do this easily are present in comments at the beginning of the signing script <a href="./tools/sign.pl">sign.pl</a>.
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>3. <a name="ss03">Copyrights and Other Legal Disclaimers</a></h1>
+<p>
+<!-- Use the following text when some form of copyright notice is required and this middleware is being used in a retail product. -->
+For more information about copyright notices when embedding this middleware in an application, see the <I>Guidelines for Printed Materials</I> and the <I>E-Manual Guidelines</I>.
+</p>
+<p>
+<!-- Add notes that relate to licenses for tools, data, or other items included in the package. -->
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>4. <a name="ss04">System Requirements</a></h1>
+<!-- Describe the environment necessary to operate the package. -->
+<!-- Add a note if it is necessary only for running sample demos. -->
+<p>
+The following development environment is required in order to run this package.<br>
+<ul>
+<li>CTR-SDK</li>
+</ul>
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>5. <a name="ss05">Operating Environment</a></h1>
+<!-- Describe development environments that have been verified by the developer. -->
+<p>
+This package is confirmed to run with the following development environment versions.
+<ul>
+<li>CTR-SDK 11.4</li>
+</ul>
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>6. <a name="ss06">Installation</a></h1>
+
+<h2>Package Location</h2>
+<p>
+Extract this package to any directory.<br>Nintendo recommends that you put this package in a directory with a path that does not include spaces or double-byte characters.<br>After locating this package in the target directory, run <CODE>setup.wsf</CODE> to set the <CODE>CTRMW_ZORRO_ROOT</CODE> environment variable to the absolute path of the package's root directory.<br>
+</p>
+
+<h2>Incorporating in Applications</h2>
+<!-- Explain which files are necessary when incorporating in applications. -->
+<p>
+Link to the following header files and libraries to include this middleware in an application.<br>
+<dl>
+<dt>Header File</dt>
+<dd>include/mw/zorro/zorro.h</dd>
+<dt>Libraries</dt>
+<dd>library/(platform)/(target)/libmw_zorro.*.a (fast or small)</dd>
+<dd>
+</dl>
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>7. <a name="ss07">Known Bugs</a></h1>
+<!-- Describe any known bugs. -->
+<!-- If there are no known bugs, make a note of that. -->
+<p>
+<ul>
+</ul>
+The latest information, including bugs that have been discovered since the last release, can be viewed in the <I>Technical Information</I> section of the Developer Support website.
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>8. <a name="ss08">Package Structure</a></h1>
+<!-- Describe the main folders and files that are included in the package. -->
+<p>
+The components of this package are listed below.<br><B>Note:</B> Not all of the files are listed.<br>
+</p>
+<p>
+<pre>
+CTR_MW-Zorro/
+    |
+<!--
++- documents/
+    |    |
+    |    +- API/
+    |    |    |
+    |    |    +- index.html … API Reference Manual
+    |    |    +- html/
+    |    |
+    |    +- Manual/
+    |         |
+    |         +- MiddlewareDocument.pdf … Programming Manual
+    |
+-->
+    +- include/
+    |    |
+    |    +- mw/
+    |         |
+    |         +- zorro/
+    |               |
+    |               +- zorro.h … Header file
+    |
+    +- libraries/
+    |    |
+    |    +- (Platform)/
+    |         |
+    |         +- (target)/
+    |              |
+    |              +- libmw_zorro.fast.a … Library file
+    |              +- libmw_zorro.small.a
+    |
+    +- sampledemos/ … Sample demos (a total of one)
+    |    |
+    |    +- signverify/
+    |
+    +- tools/
+    |    |
+    |    +- sign.pl … Signing script
+    |    +- verify.pl … Verification script
+    |
+    +- Readme-Zorro-en.html … Readme file
+</pre>
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>9. <a name="ss09">Associated Documents</a></h1>
+<!-- Provide links to the API Reference and other documentation. -->
+<p>
+  For more information about this middleware's specifications and how to use the tools, see the comments in the <a href="./include/mw/zorro/zorro.h">header file</a>.<br>
+  For more information about how to run the signing and verification script, see the comments at the beginning of the <a href="./tools/sign.pl">signing</a> and <a href="./tools/verify.pl">verification</a> scripts.
+</p>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<h1>10. <a name="ss10">Revision History</a></h1>
+<!-- Describe any revisions made from the previous version. -->
+<!-- For the date, enter the day of the last revision. -->
+<!-- For new versions, add "Initial version." -->
+
+<!-- Examples -->
+<dl>
+<dt>● Version 1.0.1　[2015/09/16]</dt>
+<dd>
+<ul>
+<li>Added signature verification script.</li>
+</ul>
+</dd>
+<dt>● Version 1.0.0　[2015/09/09]</dt>
+<dd>
+<ul>
+<li>Initial version.</li>
+</ul>
+</dd>
+</dl>
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+<hr><p>CONFIDENTIAL</p></body>
+</html>
